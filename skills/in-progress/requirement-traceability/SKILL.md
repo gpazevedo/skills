@@ -72,18 +72,18 @@ If `docs/agents/traceability.md` exists, run the command it names. Otherwise do 
 ```bash
 SPEC=spec.md
 T=$(mktemp -d)
-TESTS=$(git ls-files | grep -E '(^|/)(tests?|__tests__)/|\.(test|spec)\.|(^|/)test_|_test\.' | grep -v '\.md$')
+git ls-files --cached --others --exclude-standard | grep -E '(^|/)(tests?|__tests__)/|\.(test|spec)\.|(^|/)test_|_test\.' | grep -v '\.md$' > $T/tests
 
 # IDs the spec defines (dropped ones excluded), and IDs it waives
 grep -v '(dropped)' "$SPEC" | sed -nE 's/^[[:space:]]*[0-9]+\.[[:space:]]+([A-Z]{2,5}-[0-9]+:).*/\1/p' | sort -u > $T/defined
 awk -F'|' '/^\|[[:space:]]*waived/ {print $3}' "$SPEC" | grep -oE '[A-Z]{2,5}-[0-9]+' | sed 's/$/:/' | sort -u > $T/waived
 
 # IDs tagged in tests: a quoted name that starts with an ID and a colon
-echo "$TESTS" | xargs -r -d '\n' grep -ohE "[\"'\`][A-Z]{2,5}-[0-9]+:" | tr -d "\"'\`" | sort -u > $T/tagged
+xargs -r -d '\n' grep -ohE "[\"'\`][A-Z]{2,5}-[0-9]+:" < $T/tests | tr -d "\"'\`" | sort -u > $T/tagged
 
 echo "UNTESTED (fails):";      comm -23 $T/defined $T/tagged | comm -23 - $T/waived
 echo "UNDEFINED ID (warns):";  comm -13 $T/defined $T/tagged
-echo "NO ID (warns):";         echo "$TESTS" | xargs -r -d '\n' grep -nE "\b(it|test)\(\s*[\"'\`]" | grep -vE "[\"'\`][A-Z]{2,5}-[0-9]+:"
+echo "NO ID (warns):";         xargs -r -d '\n' grep -nE "\b(it|test)\(\s*[\"'\`]" < $T/tests | grep -vE "[\"'\`][A-Z]{2,5}-[0-9]+:"
 ```
 
 Adapt the last line's declaration pattern to the repo's runner (`def test_` for pytest, `func Test` for Go); the rest is unchanged. `comm` compares whole lines, colon included, which is what keeps `CPN-1:` and `CPN-10:` apart.
