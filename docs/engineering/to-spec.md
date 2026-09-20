@@ -33,6 +33,8 @@ Before it writes anything, `to-spec` sketches the **seams** where the feature wi
 
 Other skills use those agreed seams later. [tdd](https://aihero.dev/skills-tdd) works only at seams you agreed in advance. [code-review](https://aihero.dev/skills-code-review) reviews the diff against the spec, so a seam nobody agreed to shows up as a review finding. Both connections go through this document. That is why you should take the seam conversation seriously here, and not leave it for implementation.
 
+Ask for traceable requirements and [requirement-traceability](https://aihero.dev/skills-requirement-traceability) has `to-spec` put an ID on each user story and a seam table in the testing decisions, so a requirement no seam covers shows up as a gap before any code exists.
+
 ## Common questions
 
 **Where did `/to-prd` go?**
