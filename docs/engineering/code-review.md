@@ -45,6 +45,8 @@ A generic review skill that does not know your standards is the thing this desig
 
 The **smell baseline** is the floor underneath it, twelve Fowler code smells from _Refactoring_ ch.3: Mysterious Name, Duplicated Code, Feature Envy, Data Clumps, Primitive Obsession, Repeated Switches, Shotgun Surgery, Divergent Change, Speculative Generality, Message Chains, Middle Man, Refused Bequest. Each is a labelled heuristic ("possible Feature Envy"), never a hard violation, and each is stated as *what it is* → *how to fix*, so a finding arrives with a move attached rather than a complaint. Anything your linter already enforces is skipped by both axes.
 
+When the spec carries requirement IDs, the Spec axis also receives the test files and a gap list of untested IDs, and reports tagged tests whose assertions do not check what their requirement says (see [requirement-traceability](https://aihero.dev/skills-requirement-traceability)). A spec without IDs is reviewed exactly as before.
+
 ## Common questions
 
 **It collides with Claude Code's own `/code-review`. What do I do?**

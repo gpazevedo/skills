@@ -30,6 +30,8 @@ This is the rule people break most often, and the consequences are well document
 
 Two things happen before anything is published. `to-tickets` looks for prefactoring (the principle "make the change easy, then make the easy change") and orders that work first. Then it presents the breakdown as a numbered list and quizzes you on it: is the granularity right, are the blocking edges real, should anything merge or split. Nothing reaches the tracker until you approve, and that quiz is the place to push back.
 
+When the spec carries requirement IDs, each ticket also gets a `Covers:` line naming the IDs it makes fully testable, and the quiz adds one question: is every ID covered by exactly one ticket? See [requirement-traceability](https://aihero.dev/skills-requirement-traceability).
+
 ## Blocking edges
 
 The edges are the point of the artifact. They read two ways depending on the tracker:
