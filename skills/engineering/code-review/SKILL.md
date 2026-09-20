@@ -31,6 +31,8 @@ Look for the originating spec, in this order:
 3. A spec file under `docs/`, `specs/`, or `.scratch/` matching the branch name or feature.
 4. If nothing is found, ask the user where the spec is. If they say there isn't one, the **Spec** sub-agent will skip and report "no spec available".
 
+Once the spec is fetched, check whether it carries requirement IDs: `grep -qE '^[[:space:]]*[0-9]+\.[[:space:]]+[A-Z]{2,5}-[0-9]+:' <spec>`. No match means the Spec sub-agent prompt below is used exactly as written. On a match, call the Skill tool with "requirement-traceability" and run its coverage gap check; keep the resulting gap list for step 4.
+
 ### 3. Identify the standards sources
 
 Anything in the repo that documents how code should be written, such as `CODING_STANDARDS.md` or `CONTRIBUTING.md`.
@@ -67,7 +69,9 @@ Each smell reads *what it is* → *how to fix*; match it against the diff:
 
 - The diff command and commit list.
 - The path or fetched contents of the spec.
+- When the spec carries requirement IDs (step 2): also the test files, and the gap list from step 2 pasted in full (the sub-agent has no other access to it).
 - The brief: "Report: (a) requirements the spec asked for that are missing or partial; (b) behaviour in the diff that wasn't asked for (scope creep); (c) requirements that look implemented but where the implementation looks wrong. Quote the spec line for each finding. Under 400 words."
+- When the spec carries requirement IDs (step 2): add to the brief "(d) tagged tests whose assertions do not check what the requirement says, and tests tagged with an ID the spec does not define. The gap list is given; do not compute your own."
 
 If the spec is missing, skip the Spec sub-agent and note this in the final report.
 
