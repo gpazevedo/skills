@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eval report — mattpocock-skills v1.2.3</title>
+</head>
+<body>
+<style>
+:root{--plane:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--ink-3:#6b6a64;--hairline:rgba(11,11,11,.10);--grid:#e1e0d9;--inset:rgba(11,11,11,.04);--accent:#2a78d6;--base-fill:#6b6a64;--delta-good:#006300;--good:#067d06;--warning:#8a6100;--critical:#d03b3b;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){:root{--plane:#0d0d0d;--surface:#1a1a19;--ink:#ffffff;--ink-2:#c3c2b7;--ink-3:#898781;--hairline:rgba(255,255,255,.10);--grid:#2c2c2a;--inset:rgba(255,255,255,.05);--accent:#3987e5;--base-fill:#898781;--delta-good:#0ca30c;--good:#0ca30c;--warning:#fab219;--critical:#e06c6c;color-scheme:dark}}
+:root[data-theme="dark"]{--plane:#0d0d0d;--surface:#1a1a19;--ink:#ffffff;--ink-2:#c3c2b7;--ink-3:#898781;--hairline:rgba(255,255,255,.10);--grid:#2c2c2a;--inset:rgba(255,255,255,.05);--accent:#3987e5;--base-fill:#898781;--delta-good:#0ca30c;--good:#0ca30c;--warning:#fab219;--critical:#e06c6c;color-scheme:dark}
+:root[data-theme="light"]{--plane:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--ink-3:#6b6a64;--hairline:rgba(11,11,11,.10);--grid:#e1e0d9;--inset:rgba(11,11,11,.04);--accent:#2a78d6;--base-fill:#6b6a64;--delta-good:#006300;--good:#067d06;--warning:#8a6100;--critical:#d03b3b;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--plane);color:var(--ink);
+  font:14px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:880px;margin:0 auto;padding:40px 24px 64px;display:flex;flex-direction:column;gap:20px}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+header h1{margin:2px 0 0;font-size:24px;font-weight:600;line-height:1.25;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;color:var(--ink-2);font-size:13px}
+.meta .num{font-variant-numeric:tabular-nums lining-nums}
+.banner{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:8px;
+  border:1px solid var(--hairline);background:var(--surface);font-size:13px}
+.banner .chip-warn{color:var(--warning);font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--hairline);border-radius:10px;padding:14px 16px;
+  display:flex;flex-direction:column;gap:4px}
+.tile .label{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.tile .value{font-size:26px;font-weight:600;font-variant-numeric:tabular-nums lining-nums;line-height:1.1}
+.tile.hero .value{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:48px}
+.tile .sub{font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.tile .value.delta-pos{color:var(--delta-good)}
+.tile .value.delta-neg{color:var(--critical)}
+.toolbar{display:flex;gap:8px;justify-content:flex-end}
+.toolbar button{font:12px system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--hairline);border-radius:6px;padding:4px 10px;cursor:pointer}
+.toolbar button:hover{color:var(--ink)}
+.toolbar button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.case{background:var(--surface);border:1px solid var(--hairline);border-radius:10px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:10px}
+.case-regressed{border-left:3px solid var(--critical)}
+.verdict{margin:6px 0 0;font-size:15px}
+.verdict .delta{font-size:15px}
+.flag{font-size:11px;font-weight:600;color:var(--warning);white-space:nowrap}
+.star{color:var(--warning);font-size:.45em;vertical-align:super;line-height:0;cursor:help}
+.legend summary{cursor:pointer;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2)}
+.legend-list{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:5px;font-size:13px;color:var(--ink-2)}
+.case-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.case-head h2{margin:0;font-size:16px;font-weight:600}
+.case-head .spacer{flex:1}
+.case-score{font-size:15px;font-weight:600}
+.mono{font:12px "SF Mono",ui-monospace,Menlo,Consolas,monospace}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.muted{color:var(--ink-3);font-size:12px}
+.meter{display:inline-block;position:relative;width:120px;height:6px;border-radius:4px;background:var(--grid);
+  vertical-align:middle}
+.meter>span{display:block;height:100%;border-radius:4px;max-width:100%}
+.meter .tick{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink-3);border-radius:1px}
+.m-accent>span{background:var(--accent)}
+.m-base>span{background:var(--base-fill)}
+.delta{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+.delta-pos{color:var(--delta-good)}
+.delta-neg{color:var(--critical)}
+.delta-zero{color:var(--ink-3)}
+details.section{border-top:1px solid var(--grid);padding-top:10px}
+details.section>summary{cursor:pointer;font-size:12px;font-weight:600;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--ink-2);list-style-position:outside;margin-left:2px}
+details.section>summary:hover{color:var(--ink)}
+details.section[open]>summary{margin-bottom:8px}
+.md{display:flex;flex-direction:column;gap:8px;background:var(--inset);border-radius:8px;
+  padding:12px 14px;overflow-wrap:break-word}
+.md>:first-child{margin-top:0}
+.md h1,.md h2,.md h3,.md h4,.md h5,.md h6{margin:4px 0 0;font-size:1em;font-weight:600;line-height:1.3}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre,.md hr{margin:0}
+.md ul,.md ol{display:flex;flex-direction:column;gap:4px;padding-left:20px}
+.md blockquote{border-left:2px solid var(--hairline);padding-left:10px;color:var(--ink-2)}
+.md :not(pre)>code{background:var(--inset);padding:1px 4px;border-radius:4px;
+  font:.92em "SF Mono",ui-monospace,Menlo,Consolas,monospace}
+.md pre{background:var(--inset);border:1px solid var(--hairline);padding:10px 12px;border-radius:6px;
+  overflow-x:auto;font:12px/1.5 "SF Mono",ui-monospace,Menlo,Consolas,monospace}
+.md pre code{background:none;padding:0;font:inherit}
+.md table{width:100%;border-collapse:collapse}
+.md th,.md td{padding:5px 8px;text-align:left;vertical-align:top;border-bottom:1px solid var(--grid)}
+.md th{font-weight:600;color:var(--ink-2)}
+.md a{color:var(--accent);text-decoration:none}
+.md a:hover{text-decoration:underline}
+.grader-def{display:flex;flex-direction:column;gap:6px;padding:8px 0}
+.grader-def+.grader-def{border-top:1px solid var(--grid)}
+.grader-def-head{display:flex;align-items:baseline;gap:8px}
+.grader-name{font:13px "SF Mono",ui-monospace,Menlo,Consolas,monospace;font-weight:600}
+.badge{font-size:10px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);
+  border:1px solid var(--hairline);border-radius:999px;padding:1px 8px}
+.config{display:flex;flex-direction:column;gap:2px;background:var(--inset);border-radius:8px;padding:10px 14px}
+.config code{font:12px "SF Mono",ui-monospace,Menlo,Consolas,monospace;overflow-wrap:anywhere}
+.arm{display:flex;flex-direction:column;gap:8px;padding:6px 0}
+.arm+.arm{border-top:1px dashed var(--grid);margin-top:4px;padding-top:12px}
+.arm-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.arm-label{font-size:13px;font-weight:600}
+.run{border:1px solid var(--grid);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+.run-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.run-title{font-size:12px;font-weight:600;color:var(--ink-2)}
+.run-error .explanation{color:var(--ink-2)}
+.note{font-size:12px;color:var(--ink-2)}
+.graders{display:flex;flex-direction:column;gap:4px}
+details.grader{border-radius:6px}
+details.grader>summary{cursor:pointer;display:flex;align-items:baseline;gap:8px;padding:3px 4px;
+  border-radius:6px;list-style:none}
+details.grader>summary::-webkit-details-marker{display:none}
+details.grader>summary::before{content:'▸';font-size:10px;color:var(--ink-3);flex:none;
+  transition:transform .12s ease}
+details.grader[open]>summary::before{transform:rotate(90deg)}
+details.grader>summary:hover{background:var(--inset)}
+details.grader>summary:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.grader-body{padding:6px 8px 8px 24px;display:flex;flex-direction:column;gap:6px}
+.chip{font-size:11px;font-weight:600;border-radius:999px;padding:1px 8px;white-space:nowrap}
+.chip-pass{color:var(--good);border:1px solid currentColor}
+.chip-fail{color:var(--critical);border:1px solid currentColor}
+.chip.chip-warn{color:var(--warning);border:1px solid currentColor}
+.explanation{margin:0;font-size:13px;color:var(--ink-2);white-space:pre-wrap;overflow-wrap:break-word}
+.kv{display:flex;gap:8px;font-size:12px;color:var(--ink-3)}
+.votes{font-variant-numeric:tabular-nums;letter-spacing:.1em}
+pre.evidence{margin:0;background:var(--inset);border:1px solid var(--hairline);border-radius:6px;
+  padding:8px 10px;overflow-x:auto;max-height:320px;
+  font:12px/1.5 "SF Mono",ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;overflow-wrap:break-word}
+footer{color:var(--ink-3);font-size:12px;text-align:center;padding-top:8px}
+@media (prefers-reduced-motion:no-preference){
+  details.grader>summary,.toolbar button{transition:background .12s ease,color .12s ease}
+}
+@media (prefers-reduced-motion:reduce){
+  details.grader>summary::before{transition:none}
+}
+@media print{
+  :root,:root[data-theme="dark"],:root[data-theme="light"]{--plane:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--ink-3:#6b6a64;--hairline:rgba(11,11,11,.10);--grid:#e1e0d9;--inset:rgba(11,11,11,.04);--accent:#2a78d6;--base-fill:#6b6a64;--delta-good:#006300;--good:#067d06;--warning:#8a6100;--critical:#d03b3b;color-scheme:light}
+  body{background:#fff}
+  .toolbar{display:none}
+  .case,.run,.grader-def{break-inside:avoid}
+  pre.evidence{max-height:none}
+}
+</style>
+<div class="wrap">
+<header>
+<div class="eyebrow">Plugin eval report</div>
+<h1>mattpocock-skills v1.2.3</h1>
+<p class="verdict">Plugin effect: <span class="delta delta-neg">↓ -6.7 pts</span> vs baseline — improved 0 · flat 1 · regressed 1 of 2 cases.</p>
+<div class="meta">
+<span class="mono">.</span>
+<span>Claude Code v2.1.270</span>
+<span class="num">2026-09-24 16:52 UTC</span>
+<span class="num">6m 17s</span>
+<span class="num">$1.51</span>
+<span class="num">12 runs</span>
+
+
+
+<span>judge default</span>
+<span class="num">threshold 100%</span>
+<span>filtered: --case judgement-pass-*</span>
+</div>
+</header>
+
+<section class="tiles">
+<div class="tile hero"><span class="label">Suite score · with plugin</span><span class="value">63.3%</span><span class="sub">mean of per-case scores</span></div>
+<div class="tile"><span class="label">Ablation Δ</span><span class="value num delta-neg">↓ -6.7</span><span class="sub">score points vs baseline, 2 of 2 cases</span></div>
+<div class="tile"><span class="label">Baseline score</span><span class="value num">70%</span><span class="sub">without the plugin</span></div>
+<div class="tile"><span class="label">Cases</span><span class="value num">2</span><span class="sub">1 of 2 ≥ 100% threshold</span></div>
+<div class="tile"><span class="label">Perfect runs</span><span class="value num">50%</span><span class="sub">runs where every grader passed</span></div>
+</section>
+<details class="section legend">
+<summary>How to read this report</summary>
+<ul class="legend-list">
+<li>A run's score is the weighted fraction of its graders that passed; a "perfect" run passed every grader.</li>
+<li>A case's score is the mean of its runs; a case passes when its score is at or above the 100% threshold (the tick on each case bar).</li>
+<li>The suite score is the mean of the per-case scores.</li>
+<li>Judge votes are independent samples of the LLM judge; the majority decides pass or fail.</li>
+<li>"With plugin" and "Baseline" runs are identical except for the plugin being loaded; Δ is the with-plugin score minus the baseline score.</li>
+
+</ul>
+</details>
+<div class="toolbar"><button type="button" data-act="expand">Expand all</button><button type="button" data-act="collapse">Collapse all</button></div>
+<article class="case case-regressed" id="case-1">
+<div class="case-head">
+<h2>judgement-pass-flags-weak-test</h2>
+<span class="muted mono">evals/judgement-pass-flags-weak-test</span>
+<span class="spacer"></span>
+
+<span class="delta delta-neg">↓ -13.3 pts</span>
+<span class="muted">with plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:26.7%"></span><i class="tick" style="left:100.0%"></i></span>
+<span class="num case-score">26.7%</span>
+</div>
+
+<details class="section" open>
+<summary>Results</summary>
+<section class="arm">
+<div class="arm-head">
+<span class="arm-label">With plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:26.7%"></span></span>
+<span class="num">26.7%</span>
+<span class="muted num">0% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:20.0%"></span></span>
+<span class="num">20%</span>
+<span class="muted num">12 turns · $0.16 · 16:52:26 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-sound-test-alone</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">The requirement-ID coverage check (`spec.md` uses key `CPN`) passes on presence: all three IDs — CPN-1, CPN-2, CPN-3 — have a matching tagged test in `tests/checkout.test.ts`, no untested/undefined/unlabeled gaps.
+
+The Judgement pass (which checks whether tagged tests actually assert what they claim) is skipped — `TYPESAFE_API_KEY` isn&apos;t set. But reading the file directly turns up one real problem:
+
+**`CPN-3: rejects an over-limit coupon` (tests/checkout.test.ts:11-13) has no assertion.**
+```ts
+it(&apos;CPN-3: rejects an over-limit coupon&apos;, () =&gt; {
+  applyCoupon(cart, usedUpCoupon);
+});
+```
+It calls `applyCoupon` but never checks the result — it&apos;ll pass even if the coupon is wrongly accepted. Needs an `expect(res.ok).toBe(false)` (or similar) before review, otherwise CPN-3 is untested in practice despite passing the presence check.
+
+CPN-1 and CPN-2 both assert correctly and look fine.</pre>
+</div>
+</details>
+<details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">names-the-weak-tests</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: FAIL FAIL FAIL</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✗ ✗ ✗</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">The requirement-ID coverage check (`spec.md` uses key `CPN`) passes on presence: all three IDs — CPN-1, CPN-2, CPN-3 — have a matching tagged test in `tests/checkout.test.ts`, no untested/undefined/unlabeled gaps.
+
+The Judgement pass (which checks whether tagged tests actually assert what they claim) is skipped — `TYPESAFE_API_KEY` isn&apos;t set. But reading the file directly turns up one real problem:
+
+**`CPN-3: rejects an over-limit coupon` (tests/checkout.test.ts:11-13) has no assertion.**
+```ts
+it(&apos;CPN-3: rejects an over-limit coupon&apos;, () =&gt; {
+  applyCoupon(cart, usedUpCoupon);
+});
+```
+It calls `applyCoupon` but never checks the result — it&apos;ll pass even if the coupon is wrongly accepted. Needs an `expect(res.ok).toBe(false)` (or similar) before review, otherwise CPN-3 is untested in practice despite passing the presence check.
+
+CPN-1 and CPN-2 both assert correctly and look fine.</pre>
+</div>
+</details>
+<details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">pass-ran</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">Bash called 0x (expected 1..∞)</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:60.0%"></span></span>
+<span class="num">60%</span>
+<span class="muted num">11 turns · $0.18 · 16:53:07 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-sound-test-alone</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Coverage presence check is clean — all three requirements (CPN-1, CPN-2, CPN-3) have tagged tests in `tests/checkout.test.ts`, no untested/undefined/unlabeled tests. Judgement pass skipped (no `TYPESAFE_API_KEY` set).
+
+I read the tagged tests directly, though, and one needs attention before review:
+
+- **`CPN-3: rejects an over-limit coupon`** (tests/checkout.test.ts:11-13) — calls `applyCoupon(cart, usedUpCoupon)` but has **no assertion**. It will pass regardless of whether the coupon is actually rejected, so it doesn&apos;t verify the requirement despite being correctly tagged.
+
+The other two are fine:
+- `CPN-1` asserts `res.ok === false` on an expired coupon.
+- `CPN-2` asserts `coupon.active === false` after deactivation.
+
+Fix CPN-3 by adding an assertion (e.g. `expect(res.ok).toBe(false)`, mirroring CPN-1) before review.</pre>
+</div>
+</details>
+<details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">names-the-weak-tests</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: FAIL FAIL FAIL</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✗ ✗ ✗</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Coverage presence check is clean — all three requirements (CPN-1, CPN-2, CPN-3) have tagged tests in `tests/checkout.test.ts`, no untested/undefined/unlabeled tests. Judgement pass skipped (no `TYPESAFE_API_KEY` set).
+
+I read the tagged tests directly, though, and one needs attention before review:
+
+- **`CPN-3: rejects an over-limit coupon`** (tests/checkout.test.ts:11-13) — calls `applyCoupon(cart, usedUpCoupon)` but has **no assertion**. It will pass regardless of whether the coupon is actually rejected, so it doesn&apos;t verify the requirement despite being correctly tagged.
+
+The other two are fine:
+- `CPN-1` asserts `res.ok === false` on an expired coupon.
+- `CPN-2` asserts `coupon.active === false` after deactivation.
+
+Fix CPN-3 by adding an assertion (e.g. `expect(res.ok).toBe(false)`, mirroring CPN-1) before review.</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">pass-ran</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">Bash called 1x (expected 1..∞)</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:0.0%"></span></span>
+<span class="num">0%</span>
+<span class="muted num">10 turns · $0.16 · 16:53:56 UTC</span>
+</div>
+
+<div class="graders"><details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">leaves-the-sound-test-alone</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: FAIL FAIL FAIL</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✗ ✗ ✗</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Judgement pass skipped (`TYPESAFE_API_KEY` not set).
+
+**Presence check: all clear.** All three requirements (CPN-1, CPN-2, CPN-3) are tagged in `tests/checkout.test.ts`, nothing untested, no stray/undefined IDs, no untagged tests.
+
+But reading the file by eye, one test needs attention before review:
+
+- **`CPN-3: rejects an over-limit coupon`** (tests/checkout.test.ts:11-13) — calls `applyCoupon(cart, usedUpCoupon)` but has no `expect(...)`. It asserts nothing, so it would pass no matter what the function returns. This is exactly the &quot;no assertion in the excerpt&quot; case the Judgement pass would flag as `uncertain` — worth fixing before relying on it as coverage for CPN-3.
+
+Secondary, lower-confidence concern: **`CPN-2: deactivates a coupon`** tests a bare `deactivate(coupon)` call, while the spec&apos;s seam table lists CPN-2 against `POST /admin/coupons`. Worth a quick look to confirm that&apos;s an intentional unit-level substitute for the HTTP seam rather than a mismatch — that&apos;s a judgement call `code-review`&apos;s Spec sub-agent could confirm.</pre>
+</div>
+</details>
+<details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">names-the-weak-tests</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: FAIL FAIL FAIL</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✗ ✗ ✗</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Judgement pass skipped (`TYPESAFE_API_KEY` not set).
+
+**Presence check: all clear.** All three requirements (CPN-1, CPN-2, CPN-3) are tagged in `tests/checkout.test.ts`, nothing untested, no stray/undefined IDs, no untagged tests.
+
+But reading the file by eye, one test needs attention before review:
+
+- **`CPN-3: rejects an over-limit coupon`** (tests/checkout.test.ts:11-13) — calls `applyCoupon(cart, usedUpCoupon)` but has no `expect(...)`. It asserts nothing, so it would pass no matter what the function returns. This is exactly the &quot;no assertion in the excerpt&quot; case the Judgement pass would flag as `uncertain` — worth fixing before relying on it as coverage for CPN-3.
+
+Secondary, lower-confidence concern: **`CPN-2: deactivates a coupon`** tests a bare `deactivate(coupon)` call, while the spec&apos;s seam table lists CPN-2 against `POST /admin/coupons`. Worth a quick look to confirm that&apos;s an intentional unit-level substitute for the HTTP seam rather than a mismatch — that&apos;s a judgement call `code-review`&apos;s Spec sub-agent could confirm.</pre>
+</div>
+</details>
+<details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">pass-ran</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">Bash called 0x (expected 1..∞)</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+</section><section class="arm">
+<div class="arm-head">
+<span class="arm-label">Baseline (no plugin)</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:40.0%"></span></span>
+<span class="num">40%</span>
+<span class="muted num">0% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:60.0%"></span></span>
+<span class="num">60%</span>
+<span class="muted num">5 turns · $0.10 · 16:54:32 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-sound-test-alone</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Two of the three tagged tests need attention before review:
+
+**CPN-3 (`rejects an over-limit coupon`) — no assertion at all.** It calls `applyCoupon(cart, usedUpCoupon)` but never checks the result. The test will pass regardless of whether the coupon is actually rejected, so it doesn&apos;t verify the requirement.
+
+**CPN-1 (`rejects an expired coupon`) — incomplete coverage.** The story is &quot;rejected with a reason, so that I know why it failed,&quot; but the test only asserts `res.ok === false`. It never checks that a reason/message is present, so the &quot;why it failed&quot; half of the requirement is untested.
+
+**CPN-2 (`deactivates a coupon`)** looks fine — it asserts `coupon.active === false`, matching the requirement. One minor flag: spec.md&apos;s seam table scopes CPN-2 to `POST /admin/coupons`, but the test calls `deactivate(coupon)` directly rather than going through that endpoint — worth confirming that&apos;s an intentional unit-level test rather than a missed integration point.</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">names-the-weak-tests</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Two of the three tagged tests need attention before review:
+
+**CPN-3 (`rejects an over-limit coupon`) — no assertion at all.** It calls `applyCoupon(cart, usedUpCoupon)` but never checks the result. The test will pass regardless of whether the coupon is actually rejected, so it doesn&apos;t verify the requirement.
+
+**CPN-1 (`rejects an expired coupon`) — incomplete coverage.** The story is &quot;rejected with a reason, so that I know why it failed,&quot; but the test only asserts `res.ok === false`. It never checks that a reason/message is present, so the &quot;why it failed&quot; half of the requirement is untested.
+
+**CPN-2 (`deactivates a coupon`)** looks fine — it asserts `coupon.active === false`, matching the requirement. One minor flag: spec.md&apos;s seam table scopes CPN-2 to `POST /admin/coupons`, but the test calls `deactivate(coupon)` directly rather than going through that endpoint — worth confirming that&apos;s an intentional unit-level test rather than a missed integration point.</pre>
+</div>
+</details>
+<details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">pass-ran</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">Bash called 0x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:0.0%"></span></span>
+<span class="num">0%</span>
+<span class="muted num">5 turns · $0.09 · 16:54:58 UTC</span>
+</div>
+
+<div class="graders"><details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">leaves-the-sound-test-alone</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: FAIL FAIL FAIL</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✗ ✗ ✗</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Found several issues worth flagging before review:
+
+1. **CPN-2 test is in the wrong seam** — spec.md maps CPN-2 to `POST /admin/coupons`, but the test lives in `checkout.test.ts` and calls `deactivate(coupon)` directly rather than testing the admin endpoint. It also asserts a plain object property, not an actual API response — this test doesn&apos;t cover the requirement as specified.
+
+2. **CPN-3 test has no assertion** — `it(&apos;CPN-3: rejects an over-limit coupon&apos;, ...)` calls `applyCoupon(cart, usedUpCoupon)` but never checks the result (no `expect(...)`). This test will pass even if the coupon is wrongly accepted, so it doesn&apos;t actually verify the requirement.
+
+3. **No `POST /admin/coupons` test file exists at all** — the seam is defined in spec.md but there&apos;s no corresponding test suite; CPN-2 is only (incorrectly) tested from the checkout seam.
+
+Only CPN-1 is genuinely covered as specified. Before review, I&apos;d fix the missing assertion in the CPN-3 test and either add a real `POST /admin/coupons` test for CPN-2 or confirm with the author whether `deactivate()` is meant to stand in for that endpoint.</pre>
+</div>
+</details>
+<details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">names-the-weak-tests</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: FAIL FAIL FAIL</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✗ ✗ ✗</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Found several issues worth flagging before review:
+
+1. **CPN-2 test is in the wrong seam** — spec.md maps CPN-2 to `POST /admin/coupons`, but the test lives in `checkout.test.ts` and calls `deactivate(coupon)` directly rather than testing the admin endpoint. It also asserts a plain object property, not an actual API response — this test doesn&apos;t cover the requirement as specified.
+
+2. **CPN-3 test has no assertion** — `it(&apos;CPN-3: rejects an over-limit coupon&apos;, ...)` calls `applyCoupon(cart, usedUpCoupon)` but never checks the result (no `expect(...)`). This test will pass even if the coupon is wrongly accepted, so it doesn&apos;t actually verify the requirement.
+
+3. **No `POST /admin/coupons` test file exists at all** — the seam is defined in spec.md but there&apos;s no corresponding test suite; CPN-2 is only (incorrectly) tested from the checkout seam.
+
+Only CPN-1 is genuinely covered as specified. Before review, I&apos;d fix the missing assertion in the CPN-3 test and either add a real `POST /admin/coupons` test for CPN-2 or confirm with the author whether `deactivate()` is meant to stand in for that endpoint.</pre>
+</div>
+</details>
+<details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">pass-ran</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">Bash called 0x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:60.0%"></span></span>
+<span class="num">60%</span>
+<span class="muted num">6 turns · $0.10 · 16:55:22 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-sound-test-alone</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Checked `spec.md` against `tests/checkout.test.ts` (the only test file). Three issues, in order of severity:
+
+1. **CPN-3** (`tests/checkout.test.ts:11-13`) — no assertion at all. It calls `applyCoupon(cart, usedUpCoupon)` but never checks the result, so it can&apos;t actually fail. This test needs an `expect(...)` before it verifies anything.
+
+2. **CPN-1** (`tests/checkout.test.ts:1-4`) — only asserts `res.ok === false`. The user story explicitly requires the shopper receive *a reason* (&quot;rejected with a reason, so that I know why it failed&quot;), but the test never checks for a reason/message field. Incomplete coverage of the requirement.
+
+3. **CPN-2** (`tests/checkout.test.ts:6-9`) — per the spec&apos;s Testing Decisions table, CPN-2 belongs to the `POST /admin/coupons` seam, but this test lives in `checkout.test.ts` and calls `deactivate(coupon)` directly rather than exercising that endpoint. Either it&apos;s misplaced/mis-tagged, or it&apos;s not testing the seam the spec assigned it to.</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">names-the-weak-tests</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Checked `spec.md` against `tests/checkout.test.ts` (the only test file). Three issues, in order of severity:
+
+1. **CPN-3** (`tests/checkout.test.ts:11-13`) — no assertion at all. It calls `applyCoupon(cart, usedUpCoupon)` but never checks the result, so it can&apos;t actually fail. This test needs an `expect(...)` before it verifies anything.
+
+2. **CPN-1** (`tests/checkout.test.ts:1-4`) — only asserts `res.ok === false`. The user story explicitly requires the shopper receive *a reason* (&quot;rejected with a reason, so that I know why it failed&quot;), but the test never checks for a reason/message field. Incomplete coverage of the requirement.
+
+3. **CPN-2** (`tests/checkout.test.ts:6-9`) — per the spec&apos;s Testing Decisions table, CPN-2 belongs to the `POST /admin/coupons` seam, but this test lives in `checkout.test.ts` and calls `deactivate(coupon)` directly rather than exercising that endpoint. Either it&apos;s misplaced/mis-tagged, or it&apos;s not testing the seam the spec assigned it to.</pre>
+</div>
+</details>
+<details class="grader" open>
+<summary><span class="chip chip-fail">✗ fail</span> <span class="grader-name">pass-ran</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">Bash called 0x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+</section>
+</details>
+<details class="section" open>
+<summary>Prompt</summary>
+<div class="md"><p>The tests in this repo are tagged with requirement IDs from <code>spec.md</code>. Which tests need attention before review?</p>
+</div>
+</details>
+<details class="section" open>
+<summary>Graders — what "good" means for this case</summary>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">leaves-the-sound-test-alone</span><span class="badge">llm</span></div>
+<div class="md"><p>Judge one thing only: whether the reply leaves <code>CPN-2</code> off its list of tests that need attention.</p>
+<p>It passes unless the reply says the <code>CPN-2</code> test needs fixing, is weak, or must be re-read. Saying <code>CPN-2</code> is fine, sound, or judged ok passes. Everything else in the reply is out of scope for this grader.</p>
+</div>
+</div>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">names-the-weak-tests</span><span class="badge">llm</span><span class="muted">weight ×2</span></div>
+<div class="md"><p>The reply lists which tagged tests need attention before review.</p>
+<p>It passes only if both of these hold:</p>
+<ul>
+<li><code>CPN-1</code> is named as needing attention, because its test checks the rejection but not the reason.</li>
+<li><code>CPN-3</code> is named as needing attention, because its test has no assertion.</li>
+</ul>
+</div>
+</div>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">pass-ran</span><span class="badge">tool_used</span><span class="muted">weight ×2</span></div>
+<div class="config"><div class="kv"><span>tool</span><code>&quot;Bash&quot;</code></div><div class="kv"><span>input_match</span><code>&quot;judge.mjs&quot;</code></div></div>
+</div>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">skill-fired</span><span class="badge">tool_used</span></div>
+<div class="config"><div class="kv"><span>tool</span><code>&quot;Skill&quot;</code></div><div class="kv"><span>input_match</span><code>&quot;requirement-traceability&quot;</code></div></div>
+</div>
+</details>
+</article>
+<article class="case" id="case-2">
+<div class="case-head">
+<h2>judgement-pass-needs-opt-in</h2>
+<span class="muted mono">evals/judgement-pass-needs-opt-in</span>
+<span class="spacer"></span>
+
+<span class="delta delta-zero">· 0.0 pts</span>
+<span class="muted">with plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span><i class="tick" style="left:100.0%"></i></span>
+<span class="num case-score">100%</span>
+</div>
+
+<details class="section" open>
+<summary>Results</summary>
+<section class="arm">
+<div class="arm-head">
+<span class="arm-label">With plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">100% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">9 turns · $0.16 · 16:55:46 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-model-verdicts</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">8 turns · $0.14 · 16:56:24 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-model-verdicts</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">10 turns · $0.17 · 16:56:55 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-model-verdicts</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+</section><section class="arm">
+<div class="arm-head">
+<span class="arm-label">Baseline (no plugin)</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">100% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">7 turns · $0.09 · 16:57:52 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-model-verdicts</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">6 turns · $0.08 · 16:58:10 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-model-verdicts</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">4 turns · $0.08 · 16:58:26 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-model-verdicts</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+</section>
+</details>
+<details class="section" open>
+<summary>Prompt</summary>
+<div class="md"><p>The tests in this repo are tagged with requirement IDs from <code>spec.md</code>. Which tests need attention before review?</p>
+</div>
+</details>
+<details class="section" open>
+<summary>Graders — what "good" means for this case</summary>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">no-model-verdicts</span><span class="badge">regex</span><span class="muted">weight ×2</span></div>
+<div class="config"><div class="kv"><span>target</span><code>&quot;last_message&quot;</code></div><div class="kv"><span>pattern</span><code>&quot;\\b0\\.[0-9]{2}\\b&quot;</code></div><div class="kv"><span>flags</span><code>&quot;&quot;</code></div><div class="kv"><span>match</span><code>&quot;not_contains&quot;</code></div></div>
+</div>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">skill-fired</span><span class="badge">tool_used</span></div>
+<div class="config"><div class="kv"><span>tool</span><code>&quot;Skill&quot;</code></div><div class="kv"><span>input_match</span><code>&quot;requirement-traceability&quot;</code></div></div>
+</div>
+</details>
+</article>
+<footer>Generated by <code>claude plugin eval</code> · schema v1 · scores are not comparable across different suites</footer>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var bar=document.querySelector('.toolbar');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target&&e.target.closest('button');
+    if(!b)return;
+    var open=b.dataset.act==='expand';
+    document.querySelectorAll('details.section, details.grader').forEach(function(d){d.open=open});
+  });
+});
+// Collapsed details vanish from print/PDF; these pages are share artifacts.
+window.addEventListener('beforeprint',function(){
+  document.querySelectorAll('details').forEach(function(d){
+    if(!d.open){d.dataset.printOpened='1';d.open=true}
+  });
+});
+window.addEventListener('afterprint',function(){
+  document.querySelectorAll('details[data-print-opened]').forEach(function(d){
+    d.open=false;delete d.dataset.printOpened;
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-24T21:16:47.340Z",
+  "durationSeconds": 161,
+  "costUsd": 0.738486,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "with-without",
+    "caseFilter": "prefix-collision-not-coverage",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "prefix-collision-not-coverage",
+      "dir": "evals/prefix-collision-not-coverage",
+      "source": "mixed",
+      "promptMarkdown": "Is every requirement in `spec.md` covered by a test? I need to be sure before I ship.",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 20,
+      "graders": [
+        {
+          "name": "catches-cpn-1",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "Exactly one requirement, `CPN-1`, has no test. Every other ID from `CPN-2` to `CPN-12` is tagged on a test.\n\nIt passes only if both hold:\n\n- The reply names `CPN-1` as a requirement with no test of its own.\n- The reply does not answer that every requirement is covered, and does not claim some other ID is the untested one.\n\nJudge only the coverage question. Remarks about how good the existing tests are, or about anything else in the repo, neither pass nor fail the reply.",
+          "config": {
+            "criteria": "Exactly one requirement, `CPN-1`, has no test. Every other ID from `CPN-2` to `CPN-12` is tagged on a test.\n\nIt passes only if both hold:\n\n- The reply names `CPN-1` as a requirement with no test of its own.\n- The reply does not answer that every requirement is covered, and does not claim some other ID is the untested one.\n\nJudge only the coverage question. Remarks about how good the existing tests are, or about anything else in the repo, neither pass nor fail the reply.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 10,
+            "costUsd": 0.1593574,
+            "judgeCostUsd": 0.001185,
+            "durationSeconds": 38,
+            "startedAt": "2026-09-24T21:16:47.404Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-yibPHy/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No — **CPN-1 is not covered.** The gap check confirms it:\n\n- **Untested (fails):** `CPN-1` — \"As a shopper, I want to apply a coupon at checkout, so that I pay less.\" No test in `tests/checkout.test.ts` or `tests/coupon.test.ts` tags it.\n- **CPN-2 through CPN-12** are all covered, one test each, correctly tagged (`\"CPN-N: ...\"`).\n- No undefined-ID or untagged-test warnings — everything else is clean.\n\nYou need a test like `it('CPN-1: applies a coupon at checkout', ...)` before this ships."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 9,
+            "costUsd": 0.1532548,
+            "judgeCostUsd": 0.001341,
+            "durationSeconds": 38,
+            "startedAt": "2026-09-24T21:17:25.482Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-lsADnn/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No — **CPN-1 is untested**, and it's the one you'd most want covered before shipping.\n\n- **CPN-1** (\"apply a coupon at checkout, so that I pay less\") — no test tagged `CPN-1:` anywhere in `tests/checkout.test.ts` or `tests/coupon.test.ts`.\n- **CPN-2 through CPN-12** — all have at least one correctly tagged test (verified with colon-anchored matching, so `CPN-1` isn't falsely credited by `CPN-10`/`CPN-11`/`CPN-12`).\n- No waived requirements, no stale/undefined IDs in tests, no untagged tests.\n\nBefore you ship, add a test tagged `CPN-1: ...` that actually exercises applying a coupon and confirming the reduced total — that's the core happy-path requirement and it's currently the only gap."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 8,
+            "costUsd": 0.13679560000000002,
+            "judgeCostUsd": 0.0011490000000000003,
+            "durationSeconds": 34,
+            "startedAt": "2026-09-24T21:18:03.889Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-YVOVmD/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No, not every requirement is covered — **CPN-1 is untested**.\n\n- CPN-2 through CPN-12 each have a matching tagged test.\n- **CPN-1** (\"As a shopper, I want to apply a coupon at checkout, so that I pay less\") has no test anywhere in `tests/checkout.test.ts` or `tests/coupon.test.ts` — no test name starts with `CPN-1:`.\n- No undefined/stray IDs, no untagged tests.\n\nYou'll want a test like `it('CPN-1: applies a valid coupon and reduces the total', ...)` before shipping."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 6,
+            "costUsd": 0.0880888,
+            "judgeCostUsd": 0.0019349999999999992,
+            "durationSeconds": 20,
+            "startedAt": "2026-09-24T21:18:37.405Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-3OOxng/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No, there's a gap: **CPN-1 has no test.** Every other requirement (CPN-2 through CPN-12) has exactly one corresponding test across the two files, but CPN-1 (\"apply a coupon at checkout, so that I pay less\") is never tested.\n\nCoverage summary:\n\n| Req | Covered? | Test |\n|---|---|---|\n| CPN-1 | ❌ **No** | — |\n| CPN-2 | ✅ | coupon.test.ts:1 |\n| CPN-3 | ✅ | coupon.test.ts:2 |\n| CPN-4 | ✅ | coupon.test.ts:3 |\n| CPN-5 | ✅ | coupon.test.ts:4 |\n| CPN-6 | ✅ | coupon.test.ts:5 |\n| CPN-7 | ✅ | checkout.test.ts:1 |\n| CPN-8 | ✅ | checkout.test.ts:2 |\n| CPN-9 | ✅ | checkout.test.ts:3 |\n| CPN-10 | ✅ | checkout.test.ts:4 |\n| CPN-11 | ✅ | checkout.test.ts:5 |\n| CPN-12 | ✅ | checkout.test.ts:6 |\n\nDon't ship yet — the core happy-path requirement, successfully applying a valid coupon and getting a reduced total (CPN-1), has no test at all. Everything downstream (rejection, rounding, display) is covered, but the basic \"coupon reduces the price\" case is not."
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 8,
+            "costUsd": 0.10801560000000002,
+            "judgeCostUsd": 0.001047000000000001,
+            "durationSeconds": 18,
+            "startedAt": "2026-09-24T21:18:57.471Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-3UjD9r/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No — **CPN-1 is not covered.** Requirements CPN-2 through CPN-12 each have exactly one matching test, but there's no test for CPN-1 (\"As a shopper, I want to apply a coupon at checkout, so that I pay less\") anywhere in `tests/checkout.test.ts` or `tests/coupon.test.ts`, and no other test files reference it.\n\nYou'll want to add a test asserting a valid coupon actually reduces the order total when applied before shipping."
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 7,
+            "costUsd": 0.09297380000000001,
+            "judgeCostUsd": 0.001008000000000001,
+            "durationSeconds": 13,
+            "startedAt": "2026-09-24T21:19:15.292Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-qLHqQv/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No — **CPN-1 is not covered**. All 12 requirements are represented except CPN-1 (\"apply a coupon at checkout, so that I pay less\"), which has no corresponding test in either `tests/coupon.test.ts` or `tests/checkout.test.ts`. CPN-2 through CPN-12 each have exactly one matching test. I'd add a basic \"successfully applies a valid coupon and reduces the total\" test before shipping."
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1,
+        "scoreWithout": 1,
+        "passRateWithout": 1,
+        "delta": 0
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 1,
+    "overallScore": 1,
+    "overallPassRate": 1,
+    "meanDelta": 0
+  }
+}

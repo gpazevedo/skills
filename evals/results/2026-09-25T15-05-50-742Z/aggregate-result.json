@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-25T15:05:50.742Z",
+  "durationSeconds": 138,
+  "costUsd": 0.6095394000000001,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "none",
+    "caseFilter": "prefix-collision-not-coverage",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "prefix-collision-not-coverage",
+      "dir": "evals/prefix-collision-not-coverage",
+      "source": "mixed",
+      "promptMarkdown": "Is every requirement in `spec.md` covered by a test? I need to be sure before I ship.",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 20,
+      "graders": [
+        {
+          "name": "catches-cpn-1",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "Exactly one requirement, `CPN-1`, has no test. Every other ID from `CPN-2` to `CPN-12` is tagged on a test.\n\nIt passes only if both hold:\n\n- The reply names `CPN-1` as a requirement with no test of its own.\n- The reply does not answer that every requirement is covered, and does not claim some other ID is the untested one.\n\nJudge only the coverage question. Remarks about how good the existing tests are, or about anything else in the repo, neither pass nor fail the reply.",
+          "config": {
+            "criteria": "Exactly one requirement, `CPN-1`, has no test. Every other ID from `CPN-2` to `CPN-12` is tagged on a test.\n\nIt passes only if both hold:\n\n- The reply names `CPN-1` as a requirement with no test of its own.\n- The reply does not answer that every requirement is covered, and does not claim some other ID is the untested one.\n\nJudge only the coverage question. Remarks about how good the existing tests are, or about anything else in the repo, neither pass nor fail the reply.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "ran-check-script",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Bash",
+            "input_match": "check.mjs",
+            "arm": "with-only"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 22,
+            "costUsd": 0.21741960000000002,
+            "judgeCostUsd": 0.001443,
+            "durationSeconds": 54,
+            "startedAt": "2026-09-25T15:05:50.761Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-vQNFYV/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No — one requirement is missing a test.\n\n**Gap: CPN-1** — \"As a shopper, I want to apply a coupon at checkout, so that I pay less\" has no tagged test anywhere in `tests/coupon.test.ts` or `tests/checkout.test.ts`. It's not marked `(dropped)` in the spec and there's no waived-row in a seam table, so it's a genuine untested requirement, not an intentional exclusion.\n\nEverything else checks out cleanly:\n- CPN-2 through CPN-12 each have exactly one tagged test (`coupon.test.ts` covers CPN-2–6, `checkout.test.ts` covers CPN-7–12).\n- No stray/undefined IDs tagged in the tests.\n- No untagged tests either — every `it(...)` block carries a valid ID.\n\nBefore you ship, add a test tagged `CPN-1:` that actually applies a valid coupon at checkout and asserts the discount is applied — right now that's the one basic \"happy path\" story with no coverage."
+              },
+              {
+                "name": "ran-check-script",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Bash called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 0.75,
+            "passed": false,
+            "turns": 15,
+            "costUsd": 0.1828926,
+            "judgeCostUsd": 0.00138,
+            "durationSeconds": 44,
+            "startedAt": "2026-09-25T15:06:44.502Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-a7mYcR/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No — **CPN-1 is untested.** All 11 other requirements (CPN-2 through CPN-12) have a tagged test in `tests/coupon.test.ts` or `tests/checkout.test.ts`, but CPN-1 (\"As a shopper, I want to apply a coupon at checkout, so that I pay less\") has no matching test anywhere in the suite.\n\nNote: Bash is broken in this environment right now (a sandbox networking bug — even `echo hello` fails), so I couldn't run the skill's `check.mjs` script and instead verified this manually via Grep/Read. Worth confirming with a working shell before you fully rely on this, but the grep results are unambiguous: `spec.md` defines CPN-1...CPN-12, and only CPN-2...CPN-12 appear as test tags.\n\nFix: add a test tagged `CPN-1:` covering the basic \"apply a coupon at checkout\" happy path before shipping."
+              },
+              {
+                "name": "ran-check-script",
+                "passed": false,
+                "weight": 1,
+                "explanation": "Bash called 0x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 18,
+            "costUsd": 0.2092272,
+            "judgeCostUsd": 0.0015059999999999995,
+            "durationSeconds": 40,
+            "startedAt": "2026-09-25T15:07:28.885Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-1Xfzt2/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**No — CPN-1 is not covered.** All other requirements (CPN-2 through CPN-12) have a matching tagged test; CPN-1 (\"apply a coupon at checkout\") has no test tagged `CPN-1:` anywhere in `tests/`.\n\nOne caveat: I couldn't run the skill's `check.mjs` script to confirm this programmatically — the Bash tool is failing on every command in this session (even `echo hello`) due to a sandbox restriction (`bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted`). That's worth flagging to whoever manages this environment. I did the check manually by reading `spec.md` and both test files directly, so the result should be reliable, but you may want to re-run `node <skill-dir>/check.mjs spec.md` once Bash is working to double-check test tagging conventions (skipped tests, docstring-based tags, etc.) that a manual read could miss.\n\n**Before shipping:** add a test tagged `CPN-1:` that verifies applying a coupon at checkout actually works (the happy path) — right now that's the one requirement with no direct coverage."
+              },
+              {
+                "name": "ran-check-script",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Bash called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 0.9166666666666666,
+        "passRate": 0.6666666666666666
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 0,
+    "overallScore": 0.9166666666666666,
+    "overallPassRate": 0.6666666666666666
+  }
+}

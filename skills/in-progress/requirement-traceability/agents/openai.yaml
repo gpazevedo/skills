@@ -1,0 +1,3 @@
+interface:
+  display_name: "Requirement Traceability"
+  short_description: "Tie each spec requirement to a test, and check it"

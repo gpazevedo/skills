@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-25T14:44:23.335Z",
+  "durationSeconds": 96,
+  "costUsd": 0.5409168000000001,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "none",
+    "caseFilter": "spec-with-ids-gap-check",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "spec-with-ids-gap-check",
+      "dir": "evals/spec-with-ids-gap-check",
+      "source": "mixed",
+      "promptMarkdown": "Which requirements in `spec.md` have no test yet?",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 20,
+      "graders": [
+        {
+          "name": "names-the-untested-id",
+          "type": "regex",
+          "weight": 1,
+          "config": {
+            "target": "last_message",
+            "pattern": "CPN-1\\b",
+            "flags": "",
+            "match": "contains"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        },
+        {
+          "name": "switched-off-test-is-not-coverage",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "The reply reports that `CPN-1` has no test.\n\nIt passes only if all of these hold:\n\n- `CPN-1` is named as untested, missing a test, or uncovered.\n- The commented-out `it('CPN-1: ...')` line is not treated as a test. A reply that calls `CPN-1` covered, tested, or done fails, even if it mentions the comment.\n- `CPN-2` and `CPN-3` are not reported as untested.\n- `CPN-4` is either left out of the untested list or described as waived. Listing `CPN-4` as a plain gap, with no mention that the spec waives it, fails.",
+          "config": {
+            "criteria": "The reply reports that `CPN-1` has no test.\n\nIt passes only if all of these hold:\n\n- `CPN-1` is named as untested, missing a test, or uncovered.\n- The commented-out `it('CPN-1: ...')` line is not treated as a test. A reply that calls `CPN-1` covered, tested, or done fails, even if it mentions the comment.\n- `CPN-2` and `CPN-3` are not reported as untested.\n- `CPN-4` is either left out of the untested list or described as waived. Listing `CPN-4` as a plain gap, with no mention that the spec waives it, fails.",
+            "focus": "last_message"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 12,
+            "costUsd": 0.1574186,
+            "judgeCostUsd": 0.001176,
+            "durationSeconds": 30,
+            "startedAt": "2026-09-25T14:44:23.353Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-C7nr2H/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**CPN-1** (\"apply a coupon at checkout\") has no test — its only test in `tests/checkout.test.ts:3` is commented out, so it doesn't count as coverage. It's also the one ID missing from the spec's seam table, which flags the gap even before looking at tests.\n\nThe other three are accounted for:\n- **CPN-2** and **CPN-3** have active tests.\n- **CPN-4** is explicitly waived (needs a real payment provider), not untested."
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 14,
+            "costUsd": 0.1819204,
+            "judgeCostUsd": 0.0014070000000000003,
+            "durationSeconds": 31,
+            "startedAt": "2026-09-25T14:44:53.280Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-khcmrb/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "I can't run shell commands here (the sandbox's `bwrap` networking setup is failing on every Bash call, even `echo hello`), so I checked coverage manually against `spec.md` and `tests/checkout.test.ts`.\n\n**Untested — needs a test:**\n- **CPN-1** (apply a coupon at checkout) — its only test is commented out (`tests/checkout.test.ts:3`), so it doesn't count as coverage. It's also missing from the spec's seam table entirely.\n\n**Not a gap, but worth noting:**\n- **CPN-4** (refund restores coupon) has no test either, but the spec explicitly waives it (\"needs a real payment provider\") — that's an intentional, documented exclusion, not an oversight.\n\nCPN-2 and CPN-3 are both covered by active tests."
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 17,
+            "costUsd": 0.20157780000000008,
+            "judgeCostUsd": 0.0013709999999999998,
+            "durationSeconds": 35,
+            "startedAt": "2026-09-25T14:45:24.087Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-i2gwzY/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "The gap check found one uncovered requirement:\n\n**CPN-1** — \"As a shopper, I want to apply a coupon at checkout\" — **untested**. `tests/checkout.test.ts:3` has a test for it, but it's commented out:\n```ts\n// it('CPN-1: applies a coupon at checkout', () => {});\n```\n\nEverything else is accounted for:\n- **CPN-2** and **CPN-3** are tested (`tests/checkout.test.ts:1-2`).\n- **CPN-4** has no test either, but it's explicitly waived in the spec's seam table (\"needs a real payment provider\"), so it's not a gap.\n\nTo close it: un-comment (and implement) the CPN-1 test."
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 1,
+    "overallScore": 1,
+    "overallPassRate": 1
+  }
+}

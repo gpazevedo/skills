@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-24T20:57:27.567Z",
+  "durationSeconds": 414,
+  "costUsd": 1.42454,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "with-without",
+    "caseFilter": "annotate-spec-and-tickets",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "annotate-spec-and-tickets",
+      "dir": "evals/annotate-spec-and-tickets",
+      "source": "mixed",
+      "promptMarkdown": "Make the requirements in `spec.md` traceable to tests. The tickets are in `.scratch/coupons/issues/`.",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 25,
+      "graders": [
+        {
+          "name": "annotated",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "The user asked for the requirements in a three-story spec to be made traceable, with two tickets: ticket 01 builds applying a coupon and case-insensitive codes; ticket 02 builds refusing an expired coupon.\n\nJudge one thing only: whether the reply shows the spec and tickets annotated.\n\nIt passes when the reply shows all of these:\n\n- Each of the three user stories carries an ID of the form `<KEY>-<n>:` with one shared KEY of 2 to 5 uppercase letters.\n- Each ticket has a `Covers:` line.\n- Every ID appears on exactly one ticket's `Covers:` line: the apply and case stories on ticket 01, the expiry story on ticket 02.\n\nAnything else (wording, a seam table's exact shape, extra advice) neither passes nor fails it.",
+          "config": {
+            "criteria": "The user asked for the requirements in a three-story spec to be made traceable, with two tickets: ticket 01 builds applying a coupon and case-insensitive codes; ticket 02 builds refusing an expired coupon.\n\nJudge one thing only: whether the reply shows the spec and tickets annotated.\n\nIt passes when the reply shows all of these:\n\n- Each of the three user stories carries an ID of the form `<KEY>-<n>:` with one shared KEY of 2 to 5 uppercase letters.\n- Each ticket has a `Covers:` line.\n- Every ID appears on exactly one ticket's `Covers:` line: the apply and case stories on ticket 01, the expiry story on ticket 02.\n\nAnything else (wording, a seam table's exact shape, extra advice) neither passes nor fails it.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 15,
+            "costUsd": 0.255457,
+            "judgeCostUsd": 0.001539,
+            "durationSeconds": 39,
+            "startedAt": "2026-09-24T20:57:27.628Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-SVg9LJ/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "Every requirement ID lands on exactly one ticket: CPN-1 and CPN-3 on `01-apply-coupon`, CPN-2 on `02-expired-coupon`, and the seam table shows all three IDs tested through `POST /checkout` with no gaps.\n\n**Is every requirement covered by exactly one ticket?** That's what I need you to confirm — please check:\n- **CPN-1** (apply coupon, total drops) → `01-apply-coupon`\n- **CPN-2** (expired coupon rejected with reason) → `02-expired-coupon`\n- **CPN-3** (case-insensitive codes) → `01-apply-coupon`\n\nIf that split looks right, the next step is tagging tests with `CPN-1:`, `CPN-2:`, `CPN-3:` prefixes as they're written, so the coverage-gap check can verify presence later."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 12,
+            "costUsd": 0.1616916,
+            "judgeCostUsd": 0.0013799999999999997,
+            "durationSeconds": 37,
+            "startedAt": "2026-09-24T20:58:06.820Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-6V2aR9/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "Every ID is covered by exactly one ticket:\n\n| ID | Story | Ticket |\n|---|---|---|\n| CPN-1 | Apply a coupon at checkout | 01-apply-coupon |\n| CPN-2 | Expired coupon rejected with reason | 02-expired-coupon |\n| CPN-3 | Case-insensitive codes | 01-apply-coupon |\n\n`spec.md` now has a `Requirement key: CPN` line, IDs on each user story, and a seam table under Testing Decisions. Both tickets got `Covers:` lines. No gaps — is this coverage split how you want it, or should CPN-3 move to its own ticket?"
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 12,
+            "costUsd": 0.17723300000000003,
+            "judgeCostUsd": 0.001536,
+            "durationSeconds": 35,
+            "startedAt": "2026-09-24T20:58:43.956Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-26fsFG/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Every ID lands on exactly one ticket, and every ID appears in the seam table — no gaps to report.\n\n**Spec.md** now has:\n- `Requirement key: CPN`\n- `CPN-1` — apply coupon at checkout\n- `CPN-2` — expired coupon rejected with reason\n- `CPN-3` — case-insensitive codes\n- Seam table: `POST /checkout` → CPN-1, CPN-2, CPN-3\n\n**Tickets**:\n- `01-apply-coupon.md` — `Covers: CPN-1, CPN-3`\n- `02-expired-coupon.md` — `Covers: CPN-2`\n\nIs every requirement covered by exactly one ticket, as intended — or should CPN-3 (case insensitivity) get split into its own ticket rather than riding along in `01-apply-coupon`?"
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 23,
+            "costUsd": 0.3990734,
+            "judgeCostUsd": 0.002051999999999999,
+            "durationSeconds": 131,
+            "startedAt": "2026-09-24T20:59:18.885Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-no0bls/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Good, nothing got staged — that's unrelated sandbox artifacts, not my changes. I won't commit since that wasn't requested.\n\n## Summary\n\nSince the repo had only `spec.md` and two tickets with no code, I built a minimal `POST /checkout` implementation and wired traceability end-to-end:\n\n- **`spec.md`** — tagged each user story with a stable ID (`REQ-1/2/3`), linked to a new `TRACEABILITY.md`.\n- **Tickets** (`01-apply-coupon.md`, `02-expired-coupon.md`) — tagged each acceptance criterion (`AC-1`, `AC-2`) with its `REQ-*` ID and checked them off now that a test covers each.\n- **`TRACEABILITY.md`** — one table: requirement → ticket → acceptance criterion → exact test name.\n- **`src/`** — `coupons.js` (case-insensitive lookup), `checkout.js` (discount/expiry logic), `server.js` (plain `node:http` server exposing `POST /checkout`, per the spec's \"test through `POST /checkout` only\" decision).\n- **`test/checkout.test.js`** — 3 tests using Node's built-in test runner (no deps needed), each named and comment-tagged with its `REQ-*`/ticket/AC-*, hitting the real HTTP endpoint via `fetch`.\n\nAll 3 tests pass (`npm test`). Note: had to set `package.json`'s test script to `node --test` (no path arg) — passing `test/` explicitly hit a CJS module-resolution bug in this Node build."
+              }
+            ]
+          },
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 7,
+            "costUsd": 0.1252886,
+            "judgeCostUsd": 0.0013620000000000004,
+            "durationSeconds": 37,
+            "startedAt": "2026-09-24T21:01:30.306Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-1dXkt5/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "All three user stories in `spec.md` map onto the two tickets (case-insensitivity is AC #2 of ticket 01). Since there's no existing codebase — no source, no test framework, nothing beyond `spec.md` and the two ticket files — I'll need to set one up from scratch to make these requirements traceable to actual passing/failing tests.\n\nQuick question before I build anything: what language/stack do you want for the `POST /checkout` endpoint and its tests (e.g., Node/Express + Jest, or Python/Flask + pytest)? Or would you prefer I just write the test suite against a stack you already have in mind elsewhere, rather than scaffolding new application code here?"
+              }
+            ]
+          },
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 15,
+            "costUsd": 0.3057964,
+            "judgeCostUsd": 0.0016980000000000016,
+            "durationSeconds": 134,
+            "startedAt": "2026-09-24T21:02:07.630Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-A5RBUB/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "The untracked dotfiles (`.bashrc`, `.idea`, `.mcp.json`, etc.) are sandbox artifacts unrelated to this change — only `spec.md`, the two tickets, and `features/checkout.feature` are what I touched.\n\nSummary of the traceability chain now in place:\n\n- **spec.md** — each user story gets a stable ID (`COUP-1/2/3`) plus a Traceability table pointing to the scenario and ticket that cover it.\n- **features/checkout.feature** — one Gherkin scenario per acceptance criterion, tagged with the matching requirement ID, all driven through `POST /checkout` as `spec.md` mandates.\n- **Tickets** — each acceptance-criteria checkbox now cites its requirement ID and the exact scenario name that verifies it.\n\nI used Gherkin rather than a specific test runner since the repo has no code or framework yet (no package.json, no source) — this keeps the tests real and inspectable without presuming a stack. Once ticket 01 is implemented, someone can wire these scenarios to any BDD runner (Cucumber, `behave`, `jest-cucumber`, etc.) with step definitions against the real `/checkout` endpoint."
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 0.3333333333333333,
+        "passRate": 0.3333333333333333,
+        "scoreWithout": 0.3333333333333333,
+        "passRateWithout": 0.3333333333333333,
+        "delta": 0
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 0,
+    "overallScore": 0.3333333333333333,
+    "overallPassRate": 0.3333333333333333,
+    "meanDelta": 0
+  }
+}

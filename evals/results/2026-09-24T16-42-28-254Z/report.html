@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eval report — mattpocock-skills v1.2.3</title>
+</head>
+<body>
+<style>
+:root{--plane:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--ink-3:#6b6a64;--hairline:rgba(11,11,11,.10);--grid:#e1e0d9;--inset:rgba(11,11,11,.04);--accent:#2a78d6;--base-fill:#6b6a64;--delta-good:#006300;--good:#067d06;--warning:#8a6100;--critical:#d03b3b;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){:root{--plane:#0d0d0d;--surface:#1a1a19;--ink:#ffffff;--ink-2:#c3c2b7;--ink-3:#898781;--hairline:rgba(255,255,255,.10);--grid:#2c2c2a;--inset:rgba(255,255,255,.05);--accent:#3987e5;--base-fill:#898781;--delta-good:#0ca30c;--good:#0ca30c;--warning:#fab219;--critical:#e06c6c;color-scheme:dark}}
+:root[data-theme="dark"]{--plane:#0d0d0d;--surface:#1a1a19;--ink:#ffffff;--ink-2:#c3c2b7;--ink-3:#898781;--hairline:rgba(255,255,255,.10);--grid:#2c2c2a;--inset:rgba(255,255,255,.05);--accent:#3987e5;--base-fill:#898781;--delta-good:#0ca30c;--good:#0ca30c;--warning:#fab219;--critical:#e06c6c;color-scheme:dark}
+:root[data-theme="light"]{--plane:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--ink-3:#6b6a64;--hairline:rgba(11,11,11,.10);--grid:#e1e0d9;--inset:rgba(11,11,11,.04);--accent:#2a78d6;--base-fill:#6b6a64;--delta-good:#006300;--good:#067d06;--warning:#8a6100;--critical:#d03b3b;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--plane);color:var(--ink);
+  font:14px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:880px;margin:0 auto;padding:40px 24px 64px;display:flex;flex-direction:column;gap:20px}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+header h1{margin:2px 0 0;font-size:24px;font-weight:600;line-height:1.25;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;color:var(--ink-2);font-size:13px}
+.meta .num{font-variant-numeric:tabular-nums lining-nums}
+.banner{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:8px;
+  border:1px solid var(--hairline);background:var(--surface);font-size:13px}
+.banner .chip-warn{color:var(--warning);font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--hairline);border-radius:10px;padding:14px 16px;
+  display:flex;flex-direction:column;gap:4px}
+.tile .label{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.tile .value{font-size:26px;font-weight:600;font-variant-numeric:tabular-nums lining-nums;line-height:1.1}
+.tile.hero .value{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:48px}
+.tile .sub{font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.tile .value.delta-pos{color:var(--delta-good)}
+.tile .value.delta-neg{color:var(--critical)}
+.toolbar{display:flex;gap:8px;justify-content:flex-end}
+.toolbar button{font:12px system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--hairline);border-radius:6px;padding:4px 10px;cursor:pointer}
+.toolbar button:hover{color:var(--ink)}
+.toolbar button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.case{background:var(--surface);border:1px solid var(--hairline);border-radius:10px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:10px}
+.case-regressed{border-left:3px solid var(--critical)}
+.verdict{margin:6px 0 0;font-size:15px}
+.verdict .delta{font-size:15px}
+.flag{font-size:11px;font-weight:600;color:var(--warning);white-space:nowrap}
+.star{color:var(--warning);font-size:.45em;vertical-align:super;line-height:0;cursor:help}
+.legend summary{cursor:pointer;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2)}
+.legend-list{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:5px;font-size:13px;color:var(--ink-2)}
+.case-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.case-head h2{margin:0;font-size:16px;font-weight:600}
+.case-head .spacer{flex:1}
+.case-score{font-size:15px;font-weight:600}
+.mono{font:12px "SF Mono",ui-monospace,Menlo,Consolas,monospace}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.muted{color:var(--ink-3);font-size:12px}
+.meter{display:inline-block;position:relative;width:120px;height:6px;border-radius:4px;background:var(--grid);
+  vertical-align:middle}
+.meter>span{display:block;height:100%;border-radius:4px;max-width:100%}
+.meter .tick{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink-3);border-radius:1px}
+.m-accent>span{background:var(--accent)}
+.m-base>span{background:var(--base-fill)}
+.delta{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+.delta-pos{color:var(--delta-good)}
+.delta-neg{color:var(--critical)}
+.delta-zero{color:var(--ink-3)}
+details.section{border-top:1px solid var(--grid);padding-top:10px}
+details.section>summary{cursor:pointer;font-size:12px;font-weight:600;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--ink-2);list-style-position:outside;margin-left:2px}
+details.section>summary:hover{color:var(--ink)}
+details.section[open]>summary{margin-bottom:8px}
+.md{display:flex;flex-direction:column;gap:8px;background:var(--inset);border-radius:8px;
+  padding:12px 14px;overflow-wrap:break-word}
+.md>:first-child{margin-top:0}
+.md h1,.md h2,.md h3,.md h4,.md h5,.md h6{margin:4px 0 0;font-size:1em;font-weight:600;line-height:1.3}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre,.md hr{margin:0}
+.md ul,.md ol{display:flex;flex-direction:column;gap:4px;padding-left:20px}
+.md blockquote{border-left:2px solid var(--hairline);padding-left:10px;color:var(--ink-2)}
+.md :not(pre)>code{background:var(--inset);padding:1px 4px;border-radius:4px;
+  font:.92em "SF Mono",ui-monospace,Menlo,Consolas,monospace}
+.md pre{background:var(--inset);border:1px solid var(--hairline);padding:10px 12px;border-radius:6px;
+  overflow-x:auto;font:12px/1.5 "SF Mono",ui-monospace,Menlo,Consolas,monospace}
+.md pre code{background:none;padding:0;font:inherit}
+.md table{width:100%;border-collapse:collapse}
+.md th,.md td{padding:5px 8px;text-align:left;vertical-align:top;border-bottom:1px solid var(--grid)}
+.md th{font-weight:600;color:var(--ink-2)}
+.md a{color:var(--accent);text-decoration:none}
+.md a:hover{text-decoration:underline}
+.grader-def{display:flex;flex-direction:column;gap:6px;padding:8px 0}
+.grader-def+.grader-def{border-top:1px solid var(--grid)}
+.grader-def-head{display:flex;align-items:baseline;gap:8px}
+.grader-name{font:13px "SF Mono",ui-monospace,Menlo,Consolas,monospace;font-weight:600}
+.badge{font-size:10px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);
+  border:1px solid var(--hairline);border-radius:999px;padding:1px 8px}
+.config{display:flex;flex-direction:column;gap:2px;background:var(--inset);border-radius:8px;padding:10px 14px}
+.config code{font:12px "SF Mono",ui-monospace,Menlo,Consolas,monospace;overflow-wrap:anywhere}
+.arm{display:flex;flex-direction:column;gap:8px;padding:6px 0}
+.arm+.arm{border-top:1px dashed var(--grid);margin-top:4px;padding-top:12px}
+.arm-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.arm-label{font-size:13px;font-weight:600}
+.run{border:1px solid var(--grid);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+.run-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.run-title{font-size:12px;font-weight:600;color:var(--ink-2)}
+.run-error .explanation{color:var(--ink-2)}
+.note{font-size:12px;color:var(--ink-2)}
+.graders{display:flex;flex-direction:column;gap:4px}
+details.grader{border-radius:6px}
+details.grader>summary{cursor:pointer;display:flex;align-items:baseline;gap:8px;padding:3px 4px;
+  border-radius:6px;list-style:none}
+details.grader>summary::-webkit-details-marker{display:none}
+details.grader>summary::before{content:'▸';font-size:10px;color:var(--ink-3);flex:none;
+  transition:transform .12s ease}
+details.grader[open]>summary::before{transform:rotate(90deg)}
+details.grader>summary:hover{background:var(--inset)}
+details.grader>summary:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.grader-body{padding:6px 8px 8px 24px;display:flex;flex-direction:column;gap:6px}
+.chip{font-size:11px;font-weight:600;border-radius:999px;padding:1px 8px;white-space:nowrap}
+.chip-pass{color:var(--good);border:1px solid currentColor}
+.chip-fail{color:var(--critical);border:1px solid currentColor}
+.chip.chip-warn{color:var(--warning);border:1px solid currentColor}
+.explanation{margin:0;font-size:13px;color:var(--ink-2);white-space:pre-wrap;overflow-wrap:break-word}
+.kv{display:flex;gap:8px;font-size:12px;color:var(--ink-3)}
+.votes{font-variant-numeric:tabular-nums;letter-spacing:.1em}
+pre.evidence{margin:0;background:var(--inset);border:1px solid var(--hairline);border-radius:6px;
+  padding:8px 10px;overflow-x:auto;max-height:320px;
+  font:12px/1.5 "SF Mono",ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;overflow-wrap:break-word}
+footer{color:var(--ink-3);font-size:12px;text-align:center;padding-top:8px}
+@media (prefers-reduced-motion:no-preference){
+  details.grader>summary,.toolbar button{transition:background .12s ease,color .12s ease}
+}
+@media (prefers-reduced-motion:reduce){
+  details.grader>summary::before{transition:none}
+}
+@media print{
+  :root,:root[data-theme="dark"],:root[data-theme="light"]{--plane:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--ink-3:#6b6a64;--hairline:rgba(11,11,11,.10);--grid:#e1e0d9;--inset:rgba(11,11,11,.04);--accent:#2a78d6;--base-fill:#6b6a64;--delta-good:#006300;--good:#067d06;--warning:#8a6100;--critical:#d03b3b;color-scheme:light}
+  body{background:#fff}
+  .toolbar{display:none}
+  .case,.run,.grader-def{break-inside:avoid}
+  pre.evidence{max-height:none}
+}
+</style>
+<div class="wrap">
+<header>
+<div class="eyebrow">Plugin eval report</div>
+<h1>mattpocock-skills v1.2.3</h1>
+<p class="verdict">Plugin effect: <span class="delta delta-zero">· 0.0 pts</span> vs baseline — improved 0 · flat 3 · regressed 0 of 3 cases.</p>
+<div class="meta">
+<span class="mono">.</span>
+<span>Claude Code v2.1.270</span>
+<span class="num">2026-09-24 16:42 UTC</span>
+<span class="num">7m 22s</span>
+<span class="num">$1.94</span>
+<span class="num">18 runs</span>
+
+
+
+<span>judge default</span>
+<span class="num">threshold 100%</span>
+
+</div>
+</header>
+
+<section class="tiles">
+<div class="tile hero"><span class="label">Suite score · with plugin</span><span class="value">100%</span><span class="sub">mean of per-case scores</span></div>
+<div class="tile"><span class="label">Ablation Δ</span><span class="value num delta-zero">0.0</span><span class="sub">score points vs baseline, 3 of 3 cases</span></div>
+<div class="tile"><span class="label">Baseline score</span><span class="value num">100%</span><span class="sub">without the plugin</span></div>
+<div class="tile"><span class="label">Cases</span><span class="value num">3</span><span class="sub">3 of 3 ≥ 100% threshold</span></div>
+<div class="tile"><span class="label">Perfect runs</span><span class="value num">100%</span><span class="sub">runs where every grader passed</span></div>
+</section>
+<details class="section legend">
+<summary>How to read this report</summary>
+<ul class="legend-list">
+<li>A run's score is the weighted fraction of its graders that passed; a "perfect" run passed every grader.</li>
+<li>A case's score is the mean of its runs; a case passes when its score is at or above the 100% threshold (the tick on each case bar).</li>
+<li>The suite score is the mean of the per-case scores.</li>
+<li>Judge votes are independent samples of the LLM judge; the majority decides pass or fail.</li>
+<li>"With plugin" and "Baseline" runs are identical except for the plugin being loaded; Δ is the with-plugin score minus the baseline score.</li>
+
+</ul>
+</details>
+<div class="toolbar"><button type="button" data-act="expand">Expand all</button><button type="button" data-act="collapse">Collapse all</button></div>
+<article class="case" id="case-1">
+<div class="case-head">
+<h2>prefix-collision-not-coverage</h2>
+<span class="muted mono">evals/prefix-collision-not-coverage</span>
+<span class="spacer"></span>
+
+<span class="delta delta-zero">· 0.0 pts</span>
+<span class="muted">with plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span><i class="tick" style="left:100.0%"></i></span>
+<span class="num case-score">100%</span>
+</div>
+
+<details class="section" open>
+<summary>Results</summary>
+<section class="arm">
+<div class="arm-head">
+<span class="arm-label">With plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">100% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">9 turns · $0.20 · 16:42:28 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">catches-cpn-1</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">No — **CPN-1 is untested.** Everything else (CPN-2 through CPN-12) has a tagged test, and there are no undefined-ID or no-ID warnings.
+
+- **CPN-1**: &quot;As a shopper, I want to apply a coupon at checkout, so that I pay less.&quot; — no test tagged `CPN-1:` in `tests/checkout.test.ts` or `tests/coupon.test.ts`, and no waiver for it in spec.md.
+
+You need a test like `it(&apos;CPN-1: applies a valid coupon at checkout&apos;, ...)` before you can call this fully covered.</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">11 turns · $0.16 · 16:43:02 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">catches-cpn-1</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">**No — CPN-1 is not covered.**
+
+spec.md defines 12 requirements (CPN-1 through CPN-12), none waived. Checking `tests/checkout.test.ts` and `tests/coupon.test.ts`:
+
+| Status | IDs |
+|---|---|
+| **Untested** | **CPN-1** (&quot;apply a coupon at checkout&quot;) |
+| Tested (2–12) | CPN-2 through CPN-12, all present with correctly tagged tests |
+| Undefined/No-ID warnings | none |
+
+CPN-1 is the basic &quot;apply a coupon at checkout&quot; story — everything downstream of it (CPN-2 through CPN-12) is tested, but the core happy-path apply itself has no test tagged `CPN-1:`. Worth adding before shipping, or explicitly waiving in a Testing Decisions table if it&apos;s covered implicitly elsewhere and you just want to document that.</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">9 turns · $0.15 · 16:43:31 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">catches-cpn-1</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">No — **CPN-1 is not covered by any test.**
+
+Requirement key `CPN` in spec.md, 12 requirements defined (CPN-1 through CPN-12). Checked `tests/checkout.test.ts` and `tests/coupon.test.ts`:
+
+- CPN-2 through CPN-12: each has a matching tagged test ✓
+- **CPN-1** (&quot;apply a coupon at checkout, so that I pay less&quot;) — no test tagged `CPN-1:` anywhere ✗
+
+Worth flagging: a naive substring search for `&quot;CPN-1&quot;` would have falsely matched `CPN-10`, `CPN-11`, `CPN-12` and hidden this gap — the check here anchors on the colon (`CPN-1:`) specifically to avoid that.
+
+No `waived:` row in spec.md excuses this, so it&apos;s a genuine gap, not an accepted exception. Add a test for CPN-1 (applying a valid coupon and confirming the discount is applied) before shipping.</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details></div>
+</div>
+</section><section class="arm">
+<div class="arm-head">
+<span class="arm-label">Baseline (no plugin)</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">100% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">6 turns · $0.08 · 16:44:11 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">catches-cpn-1</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">No — **CPN-1 has no test.** All 12 requirements in `spec.md` (CPN-1 through CPN-12) are listed, but only CPN-2 through CPN-12 are covered across `coupon.test.ts` and `checkout.test.ts`. CPN-1 (&quot;apply a coupon at checkout, so that I pay less&quot;) is missing — no test asserts that a valid coupon actually reduces the price paid.
+
+Note also that `apply(&apos;save10&apos;)` in CPN-3 checks `.ok` but never checks the discount amount, so the &quot;pay less&quot; behavior isn&apos;t verified anywhere. You&apos;ll want a test for CPN-1 before shipping.</pre>
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">6 turns · $0.09 · 16:44:25 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">catches-cpn-1</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Checking coverage: spec has CPN-1 through CPN-12; tests cover CPN-2–12, but **CPN-1 is missing** — no test exercises &quot;apply a coupon at checkout so that I pay less&quot; (the basic happy-path apply).
+
+**Gaps found:**
+- **CPN-1** — not covered anywhere in either test file. Nothing tests that a valid coupon actually reduces the amount paid on a successful apply (existing tests check discount display CPN-4, rounding CPN-9, rejection cases, etc., but not a straightforward successful-apply-reduces-total case).
+
+Everything else (CPN-2 through CPN-12) has a corresponding test. I&apos;d add a test like `apply(&apos;SAVE10&apos;)` succeeding and reflecting in the payable total before shipping.</pre>
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">6 turns · $0.08 · 16:44:41 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">catches-cpn-1</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">No — CPN-1 is not covered. All other requirements (CPN-2 through CPN-12) have a matching test, but there&apos;s no test that a valid, non-expired coupon actually applies a discount to the order (the core &quot;apply a coupon at checkout&quot; story). Don&apos;t ship until that&apos;s added.
+
+- CPN-1 (apply a coupon → pay less): **missing**. `coupon.test.ts:2` only checks that a lowercase code is *accepted* (`ok: true`), not that it reduces the price. Add something like `apply(&apos;SAVE10&apos;, order).total` reflecting the discount.
+- CPN-2 through CPN-12: each has exactly one corresponding test, spread across `coupon.test.ts` and `checkout.test.ts`.</pre>
+</div>
+</details></div>
+</div>
+</section>
+</details>
+<details class="section" open>
+<summary>Prompt</summary>
+<div class="md"><p>Is every requirement in <code>spec.md</code> covered by a test? I need to be sure before I ship.</p>
+</div>
+</details>
+<details class="section" open>
+<summary>Graders — what "good" means for this case</summary>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">catches-cpn-1</span><span class="badge">llm</span><span class="muted">weight ×2</span></div>
+<div class="md"><p>Exactly one requirement, <code>CPN-1</code>, has no test. Every other ID from <code>CPN-2</code> to <code>CPN-12</code> is tagged on a test.</p>
+<p>It passes only if both hold:</p>
+<ul>
+<li>The reply names <code>CPN-1</code> as a requirement with no test of its own.</li>
+<li>The reply does not answer that every requirement is covered, and does not claim some other ID is the untested one.</li>
+</ul>
+<p>Judge only the coverage question. Remarks about how good the existing tests are, or about anything else in the repo, neither pass nor fail the reply.</p>
+</div>
+</div>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">skill-fired</span><span class="badge">tool_used</span></div>
+<div class="config"><div class="kv"><span>tool</span><code>&quot;Skill&quot;</code></div><div class="kv"><span>input_match</span><code>&quot;requirement-traceability&quot;</code></div></div>
+</div>
+</details>
+</article>
+<article class="case" id="case-2">
+<div class="case-head">
+<h2>spec-with-ids-gap-check</h2>
+<span class="muted mono">evals/spec-with-ids-gap-check</span>
+<span class="spacer"></span>
+
+<span class="delta delta-zero">· 0.0 pts</span>
+<span class="muted">with plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span><i class="tick" style="left:100.0%"></i></span>
+<span class="num case-score">100%</span>
+</div>
+
+<details class="section" open>
+<summary>Results</summary>
+<section class="arm">
+<div class="arm-head">
+<span class="arm-label">With plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">100% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">8 turns · $0.13 · 16:44:54 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">names-the-untested-id</span>  </summary>
+<div class="grader-body">
+<p class="explanation">matched CPN-1\b</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">switched-off-test-is-not-coverage</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">**CPN-1** has no test yet: &quot;As a shopper, I want to apply a coupon at checkout, so that I pay less.&quot;
+
+It&apos;s also missing from the seam table entirely (only CPN-2 and CPN-3 are mapped to `POST /checkout`), so it was never assigned a seam. CPN-4 is untested too, but that&apos;s expected — it&apos;s explicitly waived (&quot;needs a real payment provider&quot;). `tests/checkout.test.ts` currently only tags `CPN-2:` and `CPN-3:`.</pre>
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">8 turns · $0.13 · 16:45:16 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">names-the-untested-id</span>  </summary>
+<div class="grader-body">
+<p class="explanation">matched CPN-1\b</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">switched-off-test-is-not-coverage</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">**CPN-1** (&quot;apply a coupon at checkout&quot;) has no test — it&apos;s not in the seam table, and the only matching test in `tests/checkout.test.ts:3` is commented out, so it doesn&apos;t count as coverage.
+
+Everything else is accounted for: CPN-2 and CPN-3 are tested, and CPN-4 is explicitly waived (needs a real payment provider).</pre>
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">8 turns · $0.13 · 16:45:37 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">names-the-untested-id</span>  </summary>
+<div class="grader-body">
+<p class="explanation">matched CPN-1\b</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">skill-fired</span>  <span class="badge">plugin-fired indicator</span></summary>
+<div class="grader-body">
+<p class="explanation">Skill called 1x (expected 1..∞)</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">switched-off-test-is-not-coverage</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">**CPN-1** (&quot;apply a coupon at checkout&quot;) has no test yet.
+
+- CPN-2 and CPN-3 are tagged in `tests/checkout.test.ts`.
+- CPN-4 is explicitly waived (needs a real payment provider).
+- CPN-1 is defined in the spec but appears in no seam-table row and has no tagged test — it&apos;s the gap.</pre>
+</div>
+</details></div>
+</div>
+</section><section class="arm">
+<div class="arm-head">
+<span class="arm-label">Baseline (no plugin)</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">100% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">6 turns · $0.09 · 16:45:56 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">names-the-untested-id</span>  </summary>
+<div class="grader-body">
+<p class="explanation">matched CPN-1\b</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">switched-off-test-is-not-coverage</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">**CPN-1** (apply a coupon at checkout) has no test yet.
+
+It&apos;s missing from the spec&apos;s Testing Decisions table entirely (only CPN-2/CPN-3 are mapped to `POST /checkout`, and CPN-4 is explicitly waived). Confirming in `tests/checkout.test.ts:3`, the CPN-1 test is commented out, so it doesn&apos;t run.</pre>
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">5 turns · $0.09 · 16:46:12 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">names-the-untested-id</span>  </summary>
+<div class="grader-body">
+<p class="explanation">matched CPN-1\b</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">switched-off-test-is-not-coverage</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">**CPN-1** has no test — it&apos;s not in the spec&apos;s Testing Decisions table, and its test in `tests/checkout.test.ts:3` is commented out.
+
+The other three are accounted for:
+- CPN-2, CPN-3 — implemented and active in `checkout.test.ts`.
+- CPN-4 — explicitly waived in `spec.md:17` (needs a real payment provider), so its lack of a test is a documented decision, not a gap.</pre>
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">5 turns · $0.09 · 16:46:36 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">names-the-untested-id</span>  </summary>
+<div class="grader-body">
+<p class="explanation">matched CPN-1\b</p>
+
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">switched-off-test-is-not-coverage</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">**CPN-1** (&quot;apply a coupon at checkout, so that I pay less&quot;) has no test — it&apos;s not in the Testing Decisions table at all, and its test in `tests/checkout.test.ts:3` is commented out.
+
+CPN-4 is also untested but is explicitly waived (needs a real payment provider), so that&apos;s accounted for. CPN-2 and CPN-3 have active tests.</pre>
+</div>
+</details></div>
+</div>
+</section>
+</details>
+<details class="section" open>
+<summary>Prompt</summary>
+<div class="md"><p>Which requirements in <code>spec.md</code> have no test yet?</p>
+</div>
+</details>
+<details class="section" open>
+<summary>Graders — what "good" means for this case</summary>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">names-the-untested-id</span><span class="badge">regex</span></div>
+<div class="config"><div class="kv"><span>target</span><code>&quot;last_message&quot;</code></div><div class="kv"><span>pattern</span><code>&quot;CPN-1\\b&quot;</code></div><div class="kv"><span>flags</span><code>&quot;&quot;</code></div><div class="kv"><span>match</span><code>&quot;contains&quot;</code></div></div>
+</div>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">skill-fired</span><span class="badge">tool_used</span></div>
+<div class="config"><div class="kv"><span>tool</span><code>&quot;Skill&quot;</code></div><div class="kv"><span>input_match</span><code>&quot;requirement-traceability&quot;</code></div></div>
+</div>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">switched-off-test-is-not-coverage</span><span class="badge">llm</span><span class="muted">weight ×2</span></div>
+<div class="md"><p>The reply reports that <code>CPN-1</code> has no test.</p>
+<p>It passes only if all of these hold:</p>
+<ul>
+<li><code>CPN-1</code> is named as untested, missing a test, or uncovered.</li>
+<li>The commented-out <code>it(&#39;CPN-1: ...&#39;)</code> line is not treated as a test. A reply that calls <code>CPN-1</code> covered, tested, or done fails, even if it mentions the comment.</li>
+<li><code>CPN-2</code> and <code>CPN-3</code> are not reported as untested.</li>
+<li><code>CPN-4</code> is either left out of the untested list or described as waived. Listing <code>CPN-4</code> as a plain gap, with no mention that the spec waives it, fails.</li>
+</ul>
+</div>
+</div>
+</details>
+</article>
+<article class="case" id="case-3">
+<div class="case-head">
+<h2>spec-without-ids-untouched</h2>
+<span class="muted mono">evals/spec-without-ids-untouched</span>
+<span class="spacer"></span>
+
+<span class="delta delta-zero">· 0.0 pts</span>
+<span class="muted">with plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span><i class="tick" style="left:100.0%"></i></span>
+<span class="num case-score">100%</span>
+</div>
+
+<details class="section" open>
+<summary>Results</summary>
+<section class="arm">
+<div class="arm-head">
+<span class="arm-label">With plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">100% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">4 turns · $0.10 · 16:46:51 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">**Not ready.** The repo has no existing checkout/cart/coupon code to anchor against (it&apos;s an empty repo — no tracked source files), so this spec is the only source of truth, and it&apos;s too thin to implement without guessing at business rules.
+
+**Blocking gaps:**
+- **Discount mechanics undefined** — percentage vs. fixed amount vs. free shipping? Applies to subtotal, total, or specific line items? Before/after tax?
+- **Rejection reasons incomplete** — story 2 only covers &quot;expired,&quot; but any real coupon system also needs invalid code, already-redeemed, usage-limit-exceeded, minimum-purchase-not-met, not-yet-active. Is &quot;expired&quot; the only reason in scope for this slice, or a placeholder for the general pattern?
+- **Case-insensitivity scope** — just casing, or also whitespace/unicode normalization? Where does normalization happen (storage vs. lookup)?
+- **Stacking/uniqueness** — one coupon per order, or multiple? Can a coupon be swapped/removed?
+- **No acceptance criteria** — no Given/When/Then, no example inputs/outputs, no error message format (user-facing copy vs. error code).
+- **Data model unspecified** — no fields for expiry, discount type/value, usage limits, so &quot;expired&quot; can&apos;t even be defined precisely (date-only? timestamp? timezone?).
+
+I&apos;d send this back for at least: discount type(s) in scope, the full list of rejection reasons for this slice, and one worked example (cart total + coupon → expected total).
+
+**What I&apos;d test once it&apos;s tighter:**
+- Valid coupon applies correct discount to a representative cart.
+- Expired coupon rejected with the specific &quot;expired&quot; reason (not a generic error).
+- Coupon expiring exactly at the boundary (last valid second/day) is accepted; one moment past is rejected.
+- Code matched regardless of case (`SAVE10`, `save10`, `SaVe10`).
+- Unknown/malformed code rejected with a distinct reason from &quot;expired.&quot;
+- Empty/whitespace-only code handled without crashing.
+- Discount doesn&apos;t take the total negative (if fixed-amount coupons are in scope).
+- Re-applying the same coupon twice in one checkout (idempotency/duplicate handling).</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">1 turns · $0.07 · 16:47:25 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Looking at this spec, it&apos;s not ready to implement — it&apos;s too thin to build or test against confidently. Here&apos;s what&apos;s missing:
+
+**Gaps that need answers before coding:**
+
+1. **Discount mechanics undefined.** &quot;Pay less&quot; doesn&apos;t say how — percentage off, fixed amount, free shipping? Multiple coupon types? What does it apply to (subtotal, line items, shipping, tax)?
+2. **No data model for a coupon.** What fields exist — code, type, value, expiry date, min-order threshold, usage limits (per-user, total), active/inactive flag?
+3. **&quot;Expired&quot; is the only rejection reason mentioned**, but story 2 implies there could be others (invalid code, already used, below minimum spend, not yet active). Should the API return a generic reason enum, or is expiry truly the only failure mode in this slice?
+4. **Case insensitivity mechanics.** Normalize on storage (uppercase in DB) or on lookup? Are codes allowed to have surrounding whitespace trimmed too?
+5. **Stacking/uniqueness.** Can a shopper apply more than one coupon? Replace an existing applied coupon, or reject a second attempt?
+6. **What &quot;expired&quot; means precisely.** Is there a start date too (not-yet-valid), or just an end date? Timezone for the expiry comparison?
+7. **No mention of persistence/interface.** Is this an API endpoint (`POST /cart/coupon`), a function/service call, or UI-level? Determines what &quot;done&quot; looks like.
+8. **No acceptance criteria** — no example codes, no example error message text/format, no numeric expectations (e.g., &quot;SAVE10 = 10% off&quot;).
+
+**What I&apos;d test once these are resolved:**
+- Valid, active coupon applies correct discount to the total.
+- Expired coupon is rejected with a specific, distinguishable &quot;expired&quot; reason (not just a generic failure).
+- Applying with lowercase/mixed-case input matches a stored uppercase code (`save10`, `Save10`, `SAVE10` all succeed).
+- Non-existent code is rejected (and with what reason, once defined).
+- Boundary case: coupon expiring exactly at &quot;now&quot; (is the expiry inclusive or exclusive?).
+- Whitespace-padded input (` save10 `) — accepted or rejected?
+- Re-applying a coupon to a cart that already has one (whatever the resolved stacking rule is).
+- Discount math correctness including rounding (e.g., percentage off producing fractional cents).
+
+I&apos;d send this back for at least: the discount type(s) in scope for this slice, the coupon data model/fields, the full set of rejection reasons, and one or two concrete worked examples (input code + cart → expected output). Want me to draft clarifying questions to send back, or do you have answers to these so I can proceed?</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">3 turns · $0.09 · 16:47:43 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Not ready — this reads more like a feature title than an implementable spec. It&apos;s missing the pieces that actually determine behavior:
+
+**Gaps to resolve first**
+
+1. **Discount mechanics** — Story 1 just says &quot;pay less.&quot; Percentage off, fixed amount, or both? Can it exceed the order total (negative total)? Rounding rule for cents?
+2. **Coupon data source** — where do valid codes, discount values, and expiry dates come from? Not specified (in-memory list, DB, config?). Implementation can&apos;t start without a shape for a `Coupon`.
+3. **Rejection reasons, plural** — spec only covers &quot;expired,&quot; but a real apply-coupon flow needs at least: unknown code, expired, and arguably not-yet-active, already-redeemed, or below-minimum-spend if those exist. If the slice is deliberately expired-only, say so explicitly so &quot;unknown code&quot; doesn&apos;t silently get the wrong reason.
+4. **Expiry boundary** — is the expiry date inclusive or exclusive? What clock/timezone is &quot;now&quot; measured against? This is a classic off-by-one-day bug source.
+5. **Case-insensitivity scope** — just A/Z case folding, or also whitespace trimming (`&quot; SAVE10 &quot;`)? Unicode considerations are probably overkill here, but trimming is a very likely real-world need worth deciding now.
+6. **One coupon or many per checkout** — can a shopper apply more than one code? Not stated; assume single for this slice unless told otherwise.
+7. **Interface** — is this a pure function (`applyCoupon(code, order) -&gt; Result`), an endpoint, or a method on a checkout object? Determines how &quot;rejected with a reason&quot; is expressed (exception, error enum, result object).
+
+None of these are hard to answer, but each changes the code shape, so I&apos;d get them settled (even informally, &quot;just pick reasonable defaults and note them&quot;) before writing anything.
+
+**What I&apos;d test once those are answered**
+
+- Valid, unexpired coupon lowers the total by the correct amount (percentage and/or fixed, per whatever&apos;s chosen).
+- Expired coupon is rejected with a reason identifying it as expired (not a generic error).
+- Coupon expiring exactly &quot;today&quot;/at the boundary instant — confirms which side of the boundary is valid.
+- Unknown/nonexistent code is rejected with a distinct reason from &quot;expired.&quot;
+- Code submitted in different casing (`save10`, `SAVE10`, `SaVe10`) all resolve to the same coupon.
+- (If trimming is in scope) leading/trailing whitespace in the code still matches.
+- Discount never produces a negative order total, if that&apos;s a real constraint.
+- Applying a coupon twice / two coupons at once — behavior matches whatever single-vs-stacking decision was made.
+
+Want me to draft the missing acceptance criteria as questions to send back, or do you want to just pick reasonable defaults now and move to implementation?</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+</section><section class="arm">
+<div class="arm-head">
+<span class="arm-label">Baseline (no plugin)</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">100% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">4 turns · $0.09 · 16:48:17 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">The repo here is empty — no existing checkout/cart code to anchor this against, so this is a pure spec review.
+
+**Not ready to implement as written.** It&apos;s three good user-facing intents but no acceptance criteria, so two engineers would build different things from it. Gaps I&apos;d want closed first:
+
+**Missing coupon model**
+- Discount type: percentage vs. fixed amount vs. free shipping?
+- Does it apply to subtotal, or after tax/shipping?
+- Rounding rule when discount doesn&apos;t divide evenly.
+- Minimum order value, category/product restrictions, per-user or global usage limits — none of this is in scope per the stories, but worth an explicit &quot;out of scope&quot; note if so.
+
+**Story 2 (expiration) is underspecified**
+- &quot;Expired&quot; is only one rejection reason. What about: unknown code, already-used, not-yet-active, usage limit reached? If those exist, story 3&apos;s &quot;with a reason&quot; pattern implies they all need distinct, user-facing messages — spec should enumerate them or explicitly defer.
+- Boundary: is a coupon valid *through* its expiry date or *until* it? Timezone for comparison (server UTC vs. user local)?
+
+**Story 3 (case insensitivity) is almost complete but silent on**
+- Storage/normalization: uppercase on save, or case-insensitive comparison at lookup? Matters for uniqueness constraints.
+- Leading/trailing whitespace trimming — usually bundled with this story and often forgotten.
+
+**Interaction/edge cases not covered**
+- Can more than one coupon be applied to an order?
+- What happens if the cart total drops below the coupon&apos;s minimum after the discount is applied, or if quantities change after a coupon is applied — does it get re-validated?
+- Response contract: what does a successful apply return (new total? discount line item?), and what does a rejection return (error code vs. plain string)?
+
+None of this needs to be exhaustive, but I&apos;d want at least one concrete example per story (e.g., &quot;coupon SAVE10 = 10% off subtotal, expires 2026-01-01 23:59 UTC, code &apos;save10&apos; or &apos; SAVE10 &apos; both apply&quot;) before writing code — otherwise the tests I write will just encode my own guesses as the spec.
+
+**What I&apos;d test once those are pinned down:**
+- Valid coupon reduces total by the correct, correctly-rounded amount.
+- Expired coupon → rejected with the expiration-specific reason (and boundary test: exactly at expiry instant).
+- Unknown/malformed code → rejected with a *different* reason than expired (proves reasons aren&apos;t collapsed into one generic error).
+- Code entered in mixed case / with stray whitespace → still applies.
+- Re-applying the same coupon twice in one checkout (idempotency / no double-discount).
+- Coupon valid at apply time but cart changes afterward (if re-validation is in scope) — confirm re-check on final checkout, not just on apply.
+- If usage limits exist: applying a coupon at its limit is rejected with the right reason, not misreported as &quot;expired&quot; or &quot;invalid.&quot;
+
+Want me to turn the open questions above into a short list to send back to whoever wrote the spec, or do you have answers to them already so I can draft acceptance criteria directly?</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">2 turns · $0.08 · 16:48:51 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Short answer: not ready — it&apos;s missing the details that would let two engineers build the same thing independently. Here&apos;s what&apos;s underspecified:
+
+**Gaps to fill before implementation:**
+
+1. **Coupon data model** — undefined. Percentage or fixed-amount discount (or both)? Minimum order value? Max discount cap? Per-user or global usage limits? Single-use vs multi-use? Active/inactive flag?
+2. **Rejection reasons beyond &quot;expired&quot;** — story 2 only covers expiry, but &quot;applied at checkout&quot; implies other failure modes: unknown code, already-redeemed, not-yet-active, minimum-purchase-not-met, stacking with another coupon already applied. Each needs its own reason string/code.
+3. **What &quot;apply less&quot; means arithmetically** — discount applies to subtotal, total, or a subset of line items (e.g., excluding sale items)? Rounding rule? Can discount exceed order value (floor at $0)?
+4. **Expiry semantics** — is &quot;expired&quot; exclusive or inclusive of the expiry date/time? What timezone is the comparison done in — server UTC, or store-local? Is there also a &quot;not yet started&quot; state?
+5. **Case-insensitivity mechanics** — normalize on write (store uppercase) or normalize on read/compare? Matters for uniqueness constraints if two codes differ only by case.
+6. **Interface** — is this a checkout API endpoint, a cart mutation, or a pure function? No request/response shape given.
+7. **Idempotency/removal** — can a shopper remove or swap a coupon after applying one? What happens if cart contents change after a coupon is applied (does it get re-validated)?
+
+**What I&apos;d test once those are answered:**
+- Valid, active coupon reduces total by the correct amount (percentage and fixed-amount cases separately).
+- Expired coupon is rejected with a specific &quot;expired&quot; reason, not a generic error.
+- Coupon exactly at the expiry boundary (second before/after) to pin down inclusive/exclusive semantics.
+- Mixed-case and whitespace-padded input (`&quot; save10 &quot;` vs `&quot;SAVE10&quot;`) all resolve to the same coupon.
+- Unknown/malformed code rejected with a distinct &quot;not found&quot; reason (not confused with &quot;expired&quot;).
+- Discount doesn&apos;t drive order total negative.
+- Reapplying the same coupon, or applying two coupons at once, behaves per whatever stacking rule gets defined.
+- Coupon on an empty cart / cart below minimum purchase (once that rule exists).
+
+I&apos;d send it back for the model, error-reason taxonomy, and interface shape before writing code — those choices touch the schema and API contract, so guessing now means rework later.</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">4 turns · $0.09 · 16:49:20 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">No existing coupon/checkout code in this repo — this would be greenfield. Given that, here&apos;s my read on the spec itself.
+
+**Not ready to implement as written.** It&apos;s missing the details that actually determine the design:
+
+**Coupon model — undefined**
+- What does a coupon discount: percentage off, fixed amount off, free shipping? Multiple types?
+- Fields: min order value, per-user usage limit, total redemption limit, applicable products/categories, start date vs expiry date?
+- Can a code be redeemed more than once (by one user, or globally)?
+
+**Story 1 (apply coupon) — underspecified**
+- Where does the discount apply — cart subtotal, per-line-item, post-tax or pre-tax?
+- Rounding rule for percentage discounts (e.g., round half up, to the cent)?
+- Can more than one coupon be applied at once? If yes, stacking order matters for the result.
+- What&apos;s the response contract — updated cart total, or just a discount amount?
+
+**Story 2 (rejection reason) — only covers &quot;expired,&quot; but that&apos;s clearly not the only failure**
+- What are all rejection reasons (expired, not found/invalid code, already used, minimum order not met, not yet active)? Each needs a distinct message/code, not just free text.
+- Is &quot;expired&quot; a hard cutoff at midnight, a specific timestamp, and in what timezone? Is the boundary inclusive or exclusive (expires exactly at 23:59:59 — does it work that instant)?
+
+**Story 3 (case insensitivity) — mostly fine but has an edge**
+- Is normalization on store (uppercase at creation) or on lookup (uppercase both sides at compare time)? Matters for how codes are seeded/displayed.
+- Should leading/trailing whitespace also be trimmed? Usually goes hand-in-hand with &quot;easier typing.&quot;
+
+None of these are exotic — they&apos;re the normal gaps in a one-paragraph-per-story spec — but each one changes the data model or the validation order, so I&apos;d rather get answers than guess and rework later.
+
+**What I&apos;d test once it&apos;s filled in:**
+- Valid, unexpired coupon reduces total by the correct, correctly-rounded amount.
+- Expired coupon → rejected with an &quot;expired&quot; reason, not a generic error.
+- Nonexistent code → rejected with a distinct &quot;not found&quot;/&quot;invalid&quot; reason (to confirm it isn&apos;t lumped in with &quot;expired&quot;).
+- Boundary case: coupon expiring exactly at the current instant.
+- Case variants (`SAVE10`, `save10`, `Save10`, and with stray whitespace) all resolve to the same coupon.
+- If usage limits exist: a coupon at its redemption cap is rejected with the right reason.
+- If stacking is disallowed: applying a second coupon either replaces the first or is rejected — whichever the spec says.
+
+Want me to draft the missing details as a proposal so you can just confirm/edit rather than starting from a blank page?</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+</section>
+</details>
+<details class="section" open>
+<summary>Prompt</summary>
+<div class="md"><p>Here is the spec for the next slice. Tell me whether it is ready to implement, and what you would test.</p>
+<h1>Coupons</h1>
+<h2>User Stories</h2>
+<ol>
+<li>As a shopper, I want to apply a coupon at checkout, so that I pay less.</li>
+<li>As a shopper, I want an expired coupon rejected with a reason, so that I know why it failed.</li>
+<li>As a shopper, I want codes to be case insensitive, so that typing is easier.</li>
+</ol>
+</div>
+</details>
+<details class="section" open>
+<summary>Graders — what "good" means for this case</summary>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">leaves-the-convention-off</span><span class="badge">llm</span></div>
+<div class="md"><p>The spec carries no requirement IDs, and the user did not ask for traceability.</p>
+<p>Judge one thing only: whether the reply leaves the traceability convention switched off.</p>
+<p>It passes unless the reply does one of these:</p>
+<ul>
+<li>Assigns identifiers such as <code>CPN-1:</code> or <code>REQ-2:</code> to the user stories, or rewrites the spec to carry them.</li>
+<li>Adds a <code>Covers:</code> line, a seam table keyed by requirement ID, or a coverage gap report.</li>
+</ul>
+<p>Everything else is out of scope for this grader. How good the spec review is, how long it is, and whether it names tests at all neither pass nor fail it. Offering traceability as a suggestion passes; applying it unasked does not.</p>
+</div>
+</div>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">no-invented-ids</span><span class="badge">regex</span><span class="muted">weight ×2</span></div>
+<div class="config"><div class="kv"><span>target</span><code>&quot;last_message&quot;</code></div><div class="kv"><span>pattern</span><code>&quot;\\b[A-Z]{2,5}-[0-9]+:&quot;</code></div><div class="kv"><span>flags</span><code>&quot;&quot;</code></div><div class="kv"><span>match</span><code>&quot;not_contains&quot;</code></div></div>
+</div>
+</details>
+</article>
+<footer>Generated by <code>claude plugin eval</code> · schema v1 · scores are not comparable across different suites</footer>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var bar=document.querySelector('.toolbar');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target&&e.target.closest('button');
+    if(!b)return;
+    var open=b.dataset.act==='expand';
+    document.querySelectorAll('details.section, details.grader').forEach(function(d){d.open=open});
+  });
+});
+// Collapsed details vanish from print/PDF; these pages are share artifacts.
+window.addEventListener('beforeprint',function(){
+  document.querySelectorAll('details').forEach(function(d){
+    if(!d.open){d.dataset.printOpened='1';d.open=true}
+  });
+});
+window.addEventListener('afterprint',function(){
+  document.querySelectorAll('details[data-print-opened]').forEach(function(d){
+    d.open=false;delete d.dataset.printOpened;
+  });
+});
+</script>
+</body>
+</html>

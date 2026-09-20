@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-24T15:03:33.351Z",
+  "durationSeconds": 126,
+  "costUsd": 0.38186100000000006,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "with-without",
+    "caseFilter": "spec-without-ids-untouched",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "spec-without-ids-untouched",
+      "dir": "evals/spec-without-ids-untouched",
+      "source": "prose",
+      "promptMarkdown": "Here is the spec for the next slice. Tell me whether it is ready to implement, and what you would test.\n\n# Coupons\n\n## User Stories\n\n1. As a shopper, I want to apply a coupon at checkout, so that I pay less.\n2. As a shopper, I want an expired coupon rejected with a reason, so that I know why it failed.\n3. As a shopper, I want codes to be case insensitive, so that typing is easier.",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 15,
+      "graders": [
+        {
+          "name": "leaves-the-convention-off",
+          "type": "llm",
+          "weight": 1,
+          "graderMarkdown": "The spec carries no requirement IDs, and the user did not ask for traceability.\n\nJudge one thing only: whether the reply leaves the traceability convention switched off.\n\nIt passes unless the reply does one of these:\n\n- Assigns identifiers such as `CPN-1:` or `REQ-2:` to the user stories, or rewrites the spec to carry them.\n- Adds a `Covers:` line, a seam table keyed by requirement ID, or a coverage gap report.\n\nEverything else is out of scope for this grader. How good the spec review is, how long it is, and whether it names tests at all neither pass nor fail it. Offering traceability as a suggestion passes; applying it unasked does not.",
+          "config": {
+            "criteria": "The spec carries no requirement IDs, and the user did not ask for traceability.\n\nJudge one thing only: whether the reply leaves the traceability convention switched off.\n\nIt passes unless the reply does one of these:\n\n- Assigns identifiers such as `CPN-1:` or `REQ-2:` to the user stories, or rewrites the spec to carry them.\n- Adds a `Covers:` line, a seam table keyed by requirement ID, or a coverage gap report.\n\nEverything else is out of scope for this grader. How good the spec review is, how long it is, and whether it names tests at all neither pass nor fail it. Offering traceability as a suggestion passes; applying it unasked does not.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "no-invented-ids",
+          "type": "regex",
+          "weight": 2,
+          "config": {
+            "target": "last_message",
+            "pattern": "\\b[A-Z]{2,5}-[0-9]+:",
+            "flags": "",
+            "match": "not_contains"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 4,
+            "costUsd": 0.07508780000000001,
+            "judgeCostUsd": 0.002712,
+            "durationSeconds": 25,
+            "startedAt": "2026-09-24T15:03:33.367Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-aKg3hZ/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-convention-off",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Empty repo, no existing checkout/coupon code — this is a greenfield slice. Here's my assessment.\n\n**Not ready to implement yet.** It reads more like a set of goals than a spec — the acceptance criteria are missing in the places that actually drive design decisions:\n\n**Gaps that need answers before coding:**\n- **Discount mechanics** — percentage vs. fixed amount vs. free shipping? Capped at order total? How does it interact with tax (pre-tax or post-tax discount)?\n- **Rejection reasons, plural** — spec only names \"expired,\" but a real coupon check needs a full reason taxonomy: not found/invalid code, already redeemed, below minimum spend, not yet active, usage limit reached. Is \"expired\" the only one in scope for this slice, or should the mechanism be built to carry any reason?\n- **\"Expired\" boundary** — expires at a specific instant? End of a calendar day? Whose timezone — server, shopper, or store?\n- **Case-insensitivity normalization** — store canonically (e.g. uppercase) and compare case-insensitively, or normalize on lookup? Also worth deciding now: is whitespace trimmed too (a very common paired bug)?\n- **Uniqueness/reuse** — single-use per shopper, single-use globally, or unlimited? Not stated, and it affects the data model.\n- **Where coupons come from** — is creating/seeding a coupon in scope for this slice, or are they assumed to pre-exist (fixtures/seed data)?\n- **One coupon per checkout, or stacking?** Not stated — assume one unless told otherwise, but worth confirming.\n\nNone of these need to be fully speced with edge-case exhaustiveness, but at minimum the discount type and the \"expired\" boundary rule need to be pinned down, since they determine the core data shape and the first test cases.\n\n**What I'd test once it's clarified:**\n- Valid, active coupon applies the expected discount to checkout total.\n- Expired coupon is rejected, and the response reason is specifically \"expired\" (not a generic failure).\n- Code entered in mixed/upper/lower case still matches (`SAVE10`, `save10`, `SaVe10`).\n- Unknown/nonexistent code is rejected with a distinct reason from \"expired\" (tests that the mechanism generalizes, not just handles one hardcoded case).\n- Boundary case: coupon expiring exactly \"now\" — confirms which side of the boundary counts as expired.\n- Whitespace around a pasted code (`\" SAVE10 \"`) — common real-world input, not explicitly in scope but worth flagging.\n\nWant me to draft the missing acceptance criteria as questions to send back, or pick reasonable defaults and note them as assumptions so we can start building?"
+              },
+              {
+                "name": "no-invented-ids",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 4,
+            "costUsd": 0.0668892,
+            "judgeCostUsd": 0.0028709999999999994,
+            "durationSeconds": 20,
+            "startedAt": "2026-09-24T15:03:58.084Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-7eBs1j/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-convention-off",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Empty repo — no existing checkout/coupon code to anchor this against. Based on the spec alone: **not ready to implement.** It reads as three one-line user stories with no acceptance criteria, so a lot of behavior is left to guesswork.\n\n**Gaps that need answers before coding:**\n\n1. **Discount mechanics** — percentage vs. fixed amount? Any cap on percentage discounts? Can a coupon reduce the total below zero/free?\n2. **\"Apply less\"** — story 1 doesn't say what makes a coupon valid beyond \"not expired.\" Is there a minimum cart total, per-product/category restriction, single-use vs. multi-use, per-customer limits, stackability with other coupons?\n3. **Expiry semantics** — is expiry a date, datetime, or date+timezone? Inclusive or exclusive boundary (does the coupon work *on* the expiry date)? What about \"not yet started\" coupons (future start date) — same rejection path or different reason?\n4. **Rejection reasons beyond expiry** — spec only calls out expired, but \"reason\" implies a general concept. What about unknown code, already-redeemed, below minimum spend? Are these in scope for this slice or deferred?\n5. **Case insensitivity scope** — just ASCII a-z, or full Unicode case folding? Does storage normalize to one case, or is comparison done at lookup time? What about leading/trailing whitespace — also normalized?\n6. **Error contract** — what shape does \"rejected with a reason\" take? A specific error code/enum per reason, or a free-text message? This matters for a client to branch on it.\n7. **Idempotency/concurrency** — can the same coupon be validated twice in a session without being consumed until checkout completes?\n\nI'd send this back for one round of clarification rather than start coding — particularly #1–#3, since they change the data model (coupon needs a discount type, value, expiry timestamp, and possibly a status/usage-limit field).\n\n**What I'd test once it's clarified:**\n\n- Valid, non-expired coupon reduces total correctly (both discount types if both exist)\n- Expired coupon is rejected, and the rejection surfaces a reason (not just a generic false/error)\n- Coupon expiring exactly *now* / at the boundary instant — confirm which side of the line it falls on\n- Case variants of the same code (`SAVE10`, `save10`, `SaVe10`) all resolve to the same coupon\n- Unknown/garbage code — distinct rejection reason from \"expired,\" if the API distinguishes them\n- Whitespace-padded input (`\" save10 \"`) — decide and test whether it's trimmed\n- Discount doesn't push the order total negative\n- Re-applying the same coupon twice in one checkout (double-counting guard)\n\nWant me to draft the clarifying questions back to whoever owns this spec, or would you rather just make the calls yourself so I can start building?"
+              },
+              {
+                "name": "no-invented-ids",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 3,
+            "costUsd": 0.0596952,
+            "judgeCostUsd": 0.0026309999999999997,
+            "durationSeconds": 19,
+            "startedAt": "2026-09-24T15:04:18.169Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-9nfcxE/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-convention-off",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No existing coupon/checkout code in this repo, so this is a greenfield spec. My read: **not ready yet** — it describes intent but leaves out the details an implementation actually hinges on.\n\n**Gaps to resolve first:**\n\n1. **Discount mechanics** — percentage vs. fixed amount? Caps (e.g., max $X off)? Can it apply to shipping/tax or just subtotal? Rounding rule?\n2. **\"Expired\" is only one rejection reason** — what about: code doesn't exist, already used (single-use vs. multi-use), usage limit reached, minimum order value not met, not yet active (start date), restricted to certain products/users, one-per-customer? The story only names expiry, but \"reject with a reason\" implies a general error taxonomy — needs enumerating now or it'll get bolted on ad hoc later.\n3. **Case insensitivity** — does normalization happen on storage (codes stored uppercase) or on lookup (normalize input before compare)? Also: leading/trailing whitespace trimming isn't mentioned but is the same class of \"typing is easier\" problem — worth deciding now.\n4. **Stacking** — can multiple coupons apply at once, or is it one-at-a-time? Not stated.\n5. **What happens at expiry boundary** — is \"expires at\" inclusive or exclusive (expires_at == now)? Timezone for comparison?\n6. **Where does validation run** — server-side only presumably, but does the spec assume an existing checkout/cart total calculation to hook into? None exists in this repo yet, so this slice may need to define that interface too.\n7. **No acceptance criteria** — no examples of input/output pairs, no error message format/shape.\n\n**What I'd test once scoped:**\n- Valid coupon applies correct discount to a sample cart total.\n- Expired coupon rejected with a specific, checkable reason/code (not just a generic error).\n- Code matching is case-insensitive (`SAVE10`, `save10`, `SaVe10` all match) — plus whitespace trimming if you decide to include it.\n- Non-existent code rejected with a distinct reason from \"expired.\"\n- Boundary case: coupon expiring exactly at \"now.\"\n- Discount doesn't produce a negative or zero-clamped-incorrectly total (e.g., percentage-off exceeding cart value).\n\nI'd send the discount-type, error-taxonomy, and case/whitespace-normalization questions back before writing code — they change the data model (coupon schema) and the function signature for validation, so guessing now means rework later."
+              },
+              {
+                "name": "no-invented-ids",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 4,
+            "costUsd": 0.06213600000000001,
+            "judgeCostUsd": 0.0030539999999999994,
+            "durationSeconds": 20,
+            "startedAt": "2026-09-24T15:04:37.079Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-4GIO6a/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-convention-off",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Empty repo — no existing checkout/pricing code to anchor this against. Given that, my answer is based purely on the spec text itself.\n\n**Not ready to implement.** It reads like a one-pager of intent rather than a spec — the three stories don't pin down enough for someone to build against without guessing. Gaps I'd want closed first:\n\n**Missing definitions**\n- Discount mechanics: fixed amount vs. percentage? Cap on percentage discounts? Applied to subtotal, post-tax, per-line-item, or shipping?\n- Coupon scope: one per order, or stackable? Any priority/conflict rule if stacking is allowed?\n- Eligibility beyond dates: minimum order value, specific SKUs/categories, per-customer usage limits, one-time-use codes, account/new-customer restrictions?\n- \"Expired\" is called out, but what about *not-yet-active* (future start date), *invalid/unknown code*, *usage limit exhausted*, *already applied*? Story 2 only names one rejection reason — the others need the same \"reject with a reason\" treatment, and each needs its own message/error code.\n- Case-insensitivity (story 3): does normalization also need to handle whitespace trimming? What's the canonical stored form — are codes stored uppercase, or compared case-insensitively at lookup time?\n- What happens if a coupon is applied, then the cart changes (items removed, total drops below minimum)? Does it silently stay applied, get revalidated, or auto-remove?\n- Currency/rounding rules for the discount calculation.\n\n**Missing non-functional detail**\n- API shape: is this a REST endpoint (`POST /checkout/coupon`), a field on an existing checkout resource, or something else? What's the response contract for success vs. each failure reason?\n- Data model: where do coupon definitions live, who authors them (admin tooling out of scope here?).\n\nI'd send this back with those questions rather than start coding — particularly the discount-type and stacking questions, since they change the data model, not just validation logic.\n\n**What I'd test once it's filled in:**\n- Valid coupon applies the correct discount amount (fixed and percentage cases).\n- Expired coupon → rejected with the specific \"expired\" reason, order total unchanged.\n- Future-dated (not-yet-active) coupon → rejected with its own reason.\n- Unknown/invalid code → rejected with its own reason.\n- Case variants (`SAVE10`, `save10`, `Save10`) all resolve to the same coupon.\n- Leading/trailing whitespace in the entered code (edge case worth confirming in/out of scope).\n- Boundary dates: applying exactly at expiry timestamp, exactly at start timestamp.\n- Minimum-order or other eligibility rule (once defined) — just-under and just-at threshold.\n- Re-applying the same coupon twice / applying a second coupon (once stacking rule is defined).\n- Discount doesn't push order total negative (e.g., fixed-amount coupon larger than cart value).\n- Cart mutation after coupon applied (remove item that made it eligible) — confirm defined behavior.\n\nWant me to draft clarifying questions to send back, or sketch a data model once you've settled the discount-type/stacking questions?"
+              },
+              {
+                "name": "no-invented-ids",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 4,
+            "costUsd": 0.06026000000000001,
+            "judgeCostUsd": 0.0026130000000000007,
+            "durationSeconds": 22,
+            "startedAt": "2026-09-24T15:04:57.333Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-fRsANY/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-convention-off",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Empty repo — no existing checkout/pricing code to anchor this against. Given that, here's my read of the spec itself.\n\n**Not ready to implement.** It reads like a feature pitch, not a spec — it's missing the details that determine behavior at the edges:\n\n- **Discount mechanics undefined**: percent off, fixed amount, free shipping? Stacking rules (multiple coupons, or one per order)? Applied to subtotal, post-tax, or per-item? Minimum order value?\n- **Coupon lifecycle undefined**: who creates codes, do they have usage limits (total redemptions, per-user limit), start dates as well as expiry?\n- **\"Rejected with a reason\" is only specified for expiry.** What about: code doesn't exist, already used, below minimum spend, not valid for items in cart, coupon not yet active? Story 2 implies a general reason-code mechanism but only describes one case.\n- **Case insensitivity edge cases**: what about leading/trailing whitespace? Unicode? Is the canonical stored form upper/lowercase, and does that affect uniqueness constraints on code creation?\n- **Expiry boundary**: is expiry a date or datetime, and what timezone governs \"expired\" — server time, user's local time, store's timezone? Off-by-one on the exact expiry instant is a classic bug source.\n- **No acceptance criteria / no error contract** (e.g., does rejection return an HTTP 4xx with a machine-readable reason code, or a user-facing string only?).\n\nI'd send this back with those questions before writing code — particularly discount type/stacking and the full set of rejection reasons, since those drive the data model.\n\n**What I'd test once it's filled in:**\n- Valid, non-expired coupon applies the correct discount to the total.\n- Expired coupon rejected with the *specific* expiry reason (not a generic error).\n- Code matching is case-insensitive (`SAVE10`, `save10`, `SaVe10` all match) and I'd also check whitespace handling.\n- Boundary case: coupon expiring exactly at \"now\" — confirm which side of the boundary is valid.\n- Unknown/nonexistent code rejected with its own distinct reason (not confused with \"expired\").\n- Non-happy-path: empty cart, coupon with no matching items (if item-scoped), re-applying after removing it.\n- If usage limits exist: exhausted coupon rejected with distinct reason; concurrent redemption doesn't overrun the limit.\n\nWant me to draft the missing acceptance criteria as questions to send back, or do you have answers to the open questions so we can proceed?"
+              },
+              {
+                "name": "no-invented-ids",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 3,
+            "costUsd": 0.057792800000000005,
+            "judgeCostUsd": 0.0027300000000000015,
+            "durationSeconds": 19,
+            "startedAt": "2026-09-24T15:05:19.780Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-0eEink/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-convention-off",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No existing checkout/coupon code in this repo, so this would be greenfield. My take: **not ready** — it's too thin to implement without guessing on several load-bearing details.\n\n**Gaps to resolve first:**\n\n1. **Discount mechanics** — percentage vs. fixed amount? Stacking multiple coupons? Rounding rules? Minimum order value? Applies to subtotal, shipping, or both?\n2. **Rejection reasons beyond \"expired\"** — spec only names one failure mode, but any real implementation needs the full list: unknown code, already used (per-user or globally), not-yet-active, usage-limit reached, minimum-spend not met, excluded items/categories. Story 2 as written is really \"invalid coupon\" handling in disguise.\n3. **\"Case insensitive\" scope** — codes stored normalized (upper/lower) at creation, or normalized only at lookup? What about surrounding whitespace? Unicode edge cases (likely irrelevant, but worth a one-line decision).\n4. **Data model** — is there a Coupon entity already, or does this spec include creating one? Who creates/manages coupons (admin story missing entirely)?\n5. **One coupon per order or multiple?** Spec doesn't say.\n6. **API/UI contract** — what does \"reject with a reason\" return — HTTP status + error code, or a UI message? Consumers (frontend) need a stable error shape.\n7. **Concurrency** — if a coupon has a usage limit, what happens on simultaneous redemptions?\n\nNone of these are exotic — they're the normal \"what exactly is a coupon\" questions — but as written the spec would force me to invent business rules, which is the kind of thing that should come back to you rather than be silently decided in code.\n\n**What I'd test once scoped:**\n- Valid, active coupon reduces total correctly (percentage and fixed, if both exist)\n- Expired coupon → rejected with \"expired\" reason, cart total unchanged\n- Not-yet-valid (future start date) coupon → rejected with appropriate reason\n- Unknown/mistyped code → rejected with \"invalid code\" reason\n- Case variants (`SAVE10`, `save10`, `SaVe10`) all resolve to the same coupon\n- Whitespace-padded input (` save10 `) — decide and test trim behavior\n- Boundary expiry (coupon expires exactly at checkout timestamp — inclusive/exclusive?)\n- Order total below minimum spend (if that rule exists) → rejected\n- Reapplying same coupon twice in one order (if stacking is disallowed)\n- Coupon usage-limit exhausted → rejected\n\nWant me to draft the missing rules as options for you to pick from, or do you already have answers to feed back into the spec?"
+              },
+              {
+                "name": "no-invented-ids",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1,
+        "scoreWithout": 1,
+        "passRateWithout": 1,
+        "delta": 0
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 1,
+    "overallScore": 1,
+    "overallPassRate": 1,
+    "meanDelta": 0
+  }
+}

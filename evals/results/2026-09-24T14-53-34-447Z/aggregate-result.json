@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-24T14:53:34.447Z",
+  "durationSeconds": 91,
+  "costUsd": 0.4841184,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "with-without",
+    "caseFilter": "prefix-collision-not-coverage",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "prefix-collision-not-coverage",
+      "dir": "evals/prefix-collision-not-coverage",
+      "source": "mixed",
+      "promptMarkdown": "Is every requirement in `spec.md` covered by a test? I need to be sure before I ship.",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 20,
+      "graders": [
+        {
+          "name": "catches-cpn-1",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "Exactly one requirement, `CPN-1`, has no test. Every other ID from `CPN-2` to `CPN-12` is tagged on a test.\n\nIt passes only if both hold:\n\n- The reply names `CPN-1` as the requirement with no test.\n- The reply does not report any other ID as untested, and does not answer that everything is covered.",
+          "config": {
+            "criteria": "Exactly one requirement, `CPN-1`, has no test. Every other ID from `CPN-2` to `CPN-12` is tagged on a test.\n\nIt passes only if both hold:\n\n- The reply names `CPN-1` as the requirement with no test.\n- The reply does not report any other ID as untested, and does not answer that everything is covered.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 10,
+            "costUsd": 0.13780659999999997,
+            "judgeCostUsd": 0.0010019999999999999,
+            "durationSeconds": 23,
+            "startedAt": "2026-09-24T14:53:34.467Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-PRGZR2/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**No — CPN-1 is not covered.**\n\n- CPN-2 through CPN-12 all have a tagged test (11/12 requirements).\n- **CPN-1** (\"As a shopper, I want to apply a coupon at checkout, so that I pay less\") has no test in `tests/checkout.test.ts` or `tests/coupon.test.ts`, and isn't waived anywhere in the spec.\n\nYou need a test tagged `CPN-1:` before this ships — e.g. something like `it('CPN-1: applies a coupon at checkout', ...)`."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 12,
+            "costUsd": 0.1617556,
+            "judgeCostUsd": 0.0014820000000000002,
+            "durationSeconds": 29,
+            "startedAt": "2026-09-24T14:53:57.804Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-iHSUOO/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Confirmed — **CPN-1 has no test anywhere.**\n\n**No, not every requirement is covered.** 11 of 12 are tested; CPN-1 is missing:\n\n| ID | Requirement | Test |\n|---|---|---|\n| CPN-1 | Apply a coupon at checkout | **missing** |\n| CPN-2–CPN-12 | (expiry, case-insensitivity, discount display, one-per-order, refresh survival, unknown code, recalc on removal, rounding, midnight UTC expiry, reuse rejection, receipt) | present in `tests/coupon.test.ts` / `tests/checkout.test.ts` |\n\nNo `Testing Decisions` seam table with waivers exists in `spec.md`, so CPN-1 isn't an intentional gap — it's untested. All other tests carry correct `CPN-n:` tags with no typos or stray/no-ID tests.\n\nBefore shipping, add a test for CPN-1 (applying a coupon at checkout), e.g. `it('CPN-1: applies a coupon at checkout', ...)` in `tests/coupon.test.ts`, or add a `waived: <reason>` row to spec.md if it's deliberately out of scope."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 6,
+            "costUsd": 0.09159360000000001,
+            "judgeCostUsd": 0.0017959999999999999,
+            "durationSeconds": 15,
+            "startedAt": "2026-09-24T14:54:26.637Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-XLrONV/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "No, don't ship yet. Two problems:\n\n1. **CPN-1 has no test at all** (\"apply a coupon at checkout\") — it's missing entirely from both test files.\n2. **Every test body is empty** — `() => {}` for all 11 listed tests, including CPN-2 through CPN-12. They're named placeholders with no assertions, so they pass regardless of behavior. None of them actually verify anything yet.\n\nSo the honest count is 0 of 12 requirements meaningfully covered: 11 have empty stub tests, 1 (CPN-1) doesn't even have a stub."
+              }
+            ]
+          },
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 7,
+            "costUsd": 0.09296259999999998,
+            "judgeCostUsd": 0.0019370000000000004,
+            "durationSeconds": 23,
+            "startedAt": "2026-09-24T14:54:42.114Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-S50Ki4/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "No — there are two problems, one of which is easy to miss with a quick grep.\n\n**1. CPN-1 has no test at all.**\n\"As a shopper, I want to apply a coupon at checkout\" is never tested. If you search for `CPN-1` with a plain substring match, you'll get false hits on `CPN-10`, `CPN-11`, `CPN-12` (they all contain the substring \"CPN-1\"), which makes it look covered when it isn't. Checked the actual test names — there's no test titled `CPN-1:` anywhere.\n\n**2. Every single test body is empty (`() => {}`).**\nBoth `tests/coupon.test.ts` and `tests/checkout.test.ts` contain only stub `it(...)` blocks with no assertions:\n```\nit('CPN-2: rejects an expired coupon with a reason', () => {});\n```\nThese will pass unconditionally no matter what the implementation does. So even the 11 requirements that have a named test (CPN-2 through CPN-12) have zero actual verification — no `expect`, no calls into any coupon/checkout logic.\n\n**Bottom line:** 0 of 12 requirements are actually covered by a real test. 11 have empty placeholder stubs, and CPN-1 doesn't even have a stub. I would not ship on this test suite as-is."
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1,
+        "scoreWithout": 0,
+        "passRateWithout": 0,
+        "delta": 1
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 1,
+    "overallScore": 1,
+    "overallPassRate": 1,
+    "meanDelta": 1
+  }
+}

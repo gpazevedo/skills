@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-24T21:14:16.309Z",
+  "durationSeconds": 150,
+  "costUsd": 0.6814768,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "with-without",
+    "caseFilter": "spec-with-ids-gap-check",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "spec-with-ids-gap-check",
+      "dir": "evals/spec-with-ids-gap-check",
+      "source": "mixed",
+      "promptMarkdown": "Which requirements in `spec.md` have no test yet?",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 20,
+      "graders": [
+        {
+          "name": "names-the-untested-id",
+          "type": "regex",
+          "weight": 1,
+          "config": {
+            "target": "last_message",
+            "pattern": "CPN-1\\b",
+            "flags": "",
+            "match": "contains"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        },
+        {
+          "name": "switched-off-test-is-not-coverage",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "The reply reports that `CPN-1` has no test.\n\nIt passes only if all of these hold:\n\n- `CPN-1` is named as untested, missing a test, or uncovered.\n- The commented-out `it('CPN-1: ...')` line is not treated as a test. A reply that calls `CPN-1` covered, tested, or done fails, even if it mentions the comment.\n- `CPN-2` and `CPN-3` are not reported as untested.\n- `CPN-4` is either left out of the untested list or described as waived. Listing `CPN-4` as a plain gap, with no mention that the spec waives it, fails.",
+          "config": {
+            "criteria": "The reply reports that `CPN-1` has no test.\n\nIt passes only if all of these hold:\n\n- `CPN-1` is named as untested, missing a test, or uncovered.\n- The commented-out `it('CPN-1: ...')` line is not treated as a test. A reply that calls `CPN-1` covered, tested, or done fails, even if it mentions the comment.\n- `CPN-2` and `CPN-3` are not reported as untested.\n- `CPN-4` is either left out of the untested list or described as waived. Listing `CPN-4` as a plain gap, with no mention that the spec waives it, fails.",
+            "focus": "last_message"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 8,
+            "costUsd": 0.1390022,
+            "judgeCostUsd": 0.0012150000000000002,
+            "durationSeconds": 36,
+            "startedAt": "2026-09-24T21:14:16.363Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-R1K9ak/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**CPN-1** (apply a coupon at checkout) has no test yet.\n\n- CPN-2 and CPN-3 are tagged and tested in `tests/checkout.test.ts`.\n- CPN-4 is explicitly waived in the spec (needs a real payment provider).\n- CPN-1 is defined in the spec but its only \"test\" is commented out (`// it('CPN-1: ...')`), so it doesn't count as coverage — it's also missing from the spec's own seam table, which only lists CPN-2/3/4."
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 7,
+            "costUsd": 0.12915700000000002,
+            "judgeCostUsd": 0.001089,
+            "durationSeconds": 25,
+            "startedAt": "2026-09-24T21:14:52.265Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-gmKP31/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**CPN-1** has no test yet:\n\n> CPN-1: As a shopper, I want to apply a coupon at checkout, so that I pay less.\n\nCPN-2 and CPN-3 are covered in `tests/checkout.test.ts`. CPN-4 is explicitly waived (needs a real payment provider), so it's not a gap — just not tested by design."
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 8,
+            "costUsd": 0.14644620000000003,
+            "judgeCostUsd": 0.0010949999999999996,
+            "durationSeconds": 26,
+            "startedAt": "2026-09-24T21:15:17.568Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-SMgClD/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**CPN-1** (\"apply a coupon at checkout\") has no test — it's not in the seam table, and its only test in `tests/checkout.test.ts:3` is commented out, so it doesn't count as coverage.\n\nEverything else is accounted for: CPN-2 and CPN-3 are tested, and CPN-4 is explicitly waived (needs a real payment provider)."
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 5,
+            "costUsd": 0.0912586,
+            "judgeCostUsd": 0.0012869999999999995,
+            "durationSeconds": 24,
+            "startedAt": "2026-09-24T21:15:43.960Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-wISDH0/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Checked `spec.md` against `tests/checkout.test.ts`.\n\n**CPN-1** (apply coupon at checkout) — no test. It's not listed in the Testing Decisions table at all (no seam, no waiver), and the only corresponding test is commented out in `tests/checkout.test.ts:3`. This is the real gap.\n\nFor completeness, **CPN-4** (refund restores coupon) also has no test, but that's accounted for — it's explicitly waived in the table (\"needs a real payment provider\").\n\nCPN-2 and CPN-3 both have active tests under the `POST /checkout` seam, matching the table."
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 5,
+            "costUsd": 0.0890092,
+            "judgeCostUsd": 0.001187999999999999,
+            "durationSeconds": 21,
+            "startedAt": "2026-09-24T21:16:07.765Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-YR7aBR/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**CPN-1** (\"apply a coupon at checkout\") has no test — it's not listed in the Testing Decisions table, and the only reference to it in `tests/checkout.test.ts:3` is a commented-out stub, not an actual test.\n\nThe other requirements are accounted for:\n- CPN-2, CPN-3 — tested in `tests/checkout.test.ts` (lines 1–2)\n- CPN-4 — explicitly waived in `spec.md:17` (\"needs a real payment provider\")"
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 5,
+            "costUsd": 0.08660360000000002,
+            "judgeCostUsd": 0.0013380000000000006,
+            "durationSeconds": 17,
+            "startedAt": "2026-09-24T21:16:28.791Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-YZCuXt/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Of the four requirements in `spec.md`:\n\n- **CPN-1** (apply a coupon at checkout) — **no test.** It's not listed in the Testing Decisions table at all, and its test in `tests/checkout.test.ts:3` is commented out, so it doesn't run. This is a gap, not a documented waiver.\n- CPN-2 and CPN-3 — covered by active tests in `tests/checkout.test.ts`.\n- CPN-4 (refund restores coupon) — has no test, but it's explicitly waived in the spec (\"needs a real payment provider\"), so it's a documented exclusion rather than a gap.\n\n**CPN-1 is the requirement with no test and no waiver.**"
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1,
+        "scoreWithout": 1,
+        "passRateWithout": 1,
+        "delta": 0
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 1,
+    "overallScore": 1,
+    "overallPassRate": 1,
+    "meanDelta": 0
+  }
+}

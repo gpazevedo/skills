@@ -1,0 +1,604 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-24T14:57:54.621Z",
+  "durationSeconds": 297,
+  "costUsd": 1.2608492,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "with-without",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "prefix-collision-not-coverage",
+      "dir": "evals/prefix-collision-not-coverage",
+      "source": "mixed",
+      "promptMarkdown": "Is every requirement in `spec.md` covered by a test? I need to be sure before I ship.",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 20,
+      "graders": [
+        {
+          "name": "catches-cpn-1",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "Exactly one requirement, `CPN-1`, has no test. Every other ID from `CPN-2` to `CPN-12` is tagged on a test.\n\nIt passes only if both hold:\n\n- The reply names `CPN-1` as a requirement with no test of its own.\n- The reply does not answer that every requirement is covered, and does not claim some other ID is the untested one.\n\nJudge only the coverage question. Remarks about how good the existing tests are, or about anything else in the repo, neither pass nor fail the reply.",
+          "config": {
+            "criteria": "Exactly one requirement, `CPN-1`, has no test. Every other ID from `CPN-2` to `CPN-12` is tagged on a test.\n\nIt passes only if both hold:\n\n- The reply names `CPN-1` as a requirement with no test of its own.\n- The reply does not answer that every requirement is covered, and does not claim some other ID is the untested one.\n\nJudge only the coverage question. Remarks about how good the existing tests are, or about anything else in the repo, neither pass nor fail the reply.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 11,
+            "costUsd": 0.1525888,
+            "judgeCostUsd": 0.001089,
+            "durationSeconds": 27,
+            "startedAt": "2026-09-24T14:57:54.640Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-mnT6iG/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**No — CPN-1 is not covered.** Everything else is.\n\n- **Untested (fails):** `CPN-1` — \"apply a coupon at checkout\" has no test tagged with that ID anywhere in `tests/`.\n- **Undefined ID / No ID (warns):** none — every test maps cleanly to a defined requirement.\n- CPN-2 through CPN-12 all have exactly one tagged test each.\n\nAdd a test like `it('CPN-1: applies a coupon at checkout', ...)` before shipping — that's the one gap."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 11,
+            "costUsd": 0.14628259999999998,
+            "judgeCostUsd": 0.0013620000000000001,
+            "durationSeconds": 44,
+            "startedAt": "2026-09-24T14:58:21.826Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-NJuV59/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No, and there's a real gap: **CPN-1 (\"apply a coupon at checkout\") has no test.**\n\nVerified coverage of `spec.md`'s 12 requirement IDs (CPN-1 through CPN-12) against `tests/checkout.test.ts` and `tests/coupon.test.ts`:\n\n- **Untested: CPN-1** — \"As a shopper, I want to apply a coupon at checkout, so that I pay less.\" No test in either file is tagged `CPN-1:`, and I confirmed directly with a grep that no test even mentions applying a coupon in the success case.\n- CPN-2 through CPN-12: each has a matching tagged test.\n- No undefined IDs (no stale/typo'd test tags) and no untagged tests (no scope creep).\n\nYou have a real gap on the happy path — coupon application itself — before shipping. Want me to write that test now?"
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 8,
+            "costUsd": 0.09557280000000001,
+            "judgeCostUsd": 0.001128,
+            "durationSeconds": 21,
+            "startedAt": "2026-09-24T14:59:05.678Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-YeXNsR/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No — **CPN-1 has no test.** Out of 12 requirements, 11 (CPN-2 through CPN-12) have a corresponding test across `tests/coupon.test.ts` and `tests/checkout.test.ts`, but CPN-1 (\"apply a coupon at checkout, so that I pay less\" — the core happy-path apply-and-discount flow) is never referenced by name or behavior in either file.\n\nBefore shipping, add a test for CPN-1, e.g. something like `apply('SAVE10')` resulting in a reduced total/price paid — that's the one gap."
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 9,
+            "costUsd": 0.1002334,
+            "judgeCostUsd": 0.0010770000000000003,
+            "durationSeconds": 22,
+            "startedAt": "2026-09-24T14:59:26.251Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-6uEX07/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No — **CPN-1 is not covered**.\n\nThe two test files cover CPN-2 through CPN-12 (11 tests, one per requirement), but there's no test for CPN-1 (\"As a shopper, I want to apply a coupon at checkout, so that I pay less\" — i.e., the basic happy-path apply-and-discount case). Every other requirement (CPN-2 to CPN-12) has exactly one matching test. I'd add a test asserting a valid coupon successfully applies and reduces the total before shipping."
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1,
+        "scoreWithout": 1,
+        "passRateWithout": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "spec-with-ids-gap-check",
+      "dir": "evals/spec-with-ids-gap-check",
+      "source": "mixed",
+      "promptMarkdown": "Which requirements in `spec.md` have no test yet?",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 20,
+      "graders": [
+        {
+          "name": "names-the-untested-id",
+          "type": "regex",
+          "weight": 1,
+          "config": {
+            "target": "last_message",
+            "pattern": "CPN-1\\b",
+            "flags": "",
+            "match": "contains"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        },
+        {
+          "name": "switched-off-test-is-not-coverage",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "The reply reports that `CPN-1` has no test.\n\nIt passes only if all of these hold:\n\n- `CPN-1` is named as untested, missing a test, or uncovered.\n- The commented-out `it('CPN-1: ...')` line is not treated as a test. A reply that calls `CPN-1` covered, tested, or done fails, even if it mentions the comment.\n- `CPN-2` and `CPN-3` are not reported as untested.\n- `CPN-4` is either left out of the untested list or described as waived. Listing `CPN-4` as a plain gap, with no mention that the spec waives it, fails.",
+          "config": {
+            "criteria": "The reply reports that `CPN-1` has no test.\n\nIt passes only if all of these hold:\n\n- `CPN-1` is named as untested, missing a test, or uncovered.\n- The commented-out `it('CPN-1: ...')` line is not treated as a test. A reply that calls `CPN-1` covered, tested, or done fails, even if it mentions the comment.\n- `CPN-2` and `CPN-3` are not reported as untested.\n- `CPN-4` is either left out of the untested list or described as waived. Listing `CPN-4` as a plain gap, with no mention that the spec waives it, fails.",
+            "focus": "last_message"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 9,
+            "costUsd": 0.1286274,
+            "judgeCostUsd": 0.0012210000000000007,
+            "durationSeconds": 21,
+            "startedAt": "2026-09-24T14:59:48.513Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-9QQbcL/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**CPN-1 has no test yet** — \"As a shopper, I want to apply a coupon at checkout, so that I pay less.\"\n\nIts test exists in `tests/checkout.test.ts` but is commented out (`// it('CPN-1: applies a coupon at checkout', ...)`), so it doesn't count as coverage.\n\nThe other requirements are accounted for:\n- **CPN-2** and **CPN-3** — tested (`tests/checkout.test.ts`)\n- **CPN-4** — explicitly waived in the spec (\"needs a real payment provider\")"
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 8,
+            "costUsd": 0.125175,
+            "judgeCostUsd": 0.0011339999999999996,
+            "durationSeconds": 20,
+            "startedAt": "2026-09-24T15:00:09.943Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-Upbo7r/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**CPN-1** (\"As a shopper, I want to apply a coupon at checkout, so that I pay less\") has no test yet — its only test in `tests/checkout.test.ts:3` is commented out, so it doesn't count as coverage.\n\nThe other three are accounted for: CPN-2 and CPN-3 are tested, and CPN-4 is explicitly waived in the spec's seam table (needs a real payment provider)."
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 4,
+            "costUsd": 0.0835284,
+            "judgeCostUsd": 0.0011399999999999995,
+            "durationSeconds": 19,
+            "startedAt": "2026-09-24T15:00:29.644Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-JQcDXB/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**CPN-1** (apply a coupon at checkout) has no test — it's absent from the Testing Decisions table entirely, and its test in `tests/checkout.test.ts:3` is commented out.\n\nFor contrast: CPN-2 and CPN-3 are tested (real, active tests in `tests/checkout.test.ts`), and CPN-4 is explicitly waived (needs a real payment provider) — that's a documented decision, not a gap."
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 5,
+            "costUsd": 0.08909180000000003,
+            "judgeCostUsd": 0.0014220000000000014,
+            "durationSeconds": 24,
+            "startedAt": "2026-09-24T15:00:48.847Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-ScwKln/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Checking `spec.md` against `tests/checkout.test.ts`:\n\n- **CPN-1** (apply coupon at checkout) — no test. It's commented out in the test file (`// it('CPN-1...')`) and isn't listed in the spec's Testing Decisions table at all, so it's an undocumented gap, not a deliberate waiver.\n- **CPN-4** (refund restores coupon) — no test, but this one *is* documented: the spec explicitly waives it (\"needs a real payment provider\").\n- CPN-2 and CPN-3 have `it()` blocks, but both bodies are empty — they run and pass without asserting anything, so they aren't real coverage yet either.\n\nSo the one true unaccounted-for gap is **CPN-1**; CPN-4 is a known/accepted gap."
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1,
+        "scoreWithout": 1,
+        "passRateWithout": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "spec-without-ids-untouched",
+      "dir": "evals/spec-without-ids-untouched",
+      "source": "prose",
+      "promptMarkdown": "Here is the spec for the next slice. Tell me whether it is ready to implement, and what you would test.\n\n# Coupons\n\n## User Stories\n\n1. As a shopper, I want to apply a coupon at checkout, so that I pay less.\n2. As a shopper, I want an expired coupon rejected with a reason, so that I know why it failed.\n3. As a shopper, I want codes to be case insensitive, so that typing is easier.",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 15,
+      "graders": [
+        {
+          "name": "leaves-the-convention-off",
+          "type": "llm",
+          "weight": 1,
+          "graderMarkdown": "The spec carries no requirement IDs, and the user asked only whether it is ready to implement and what to test.\n\nIt passes only if all of these hold:\n\n- The reply does not assign identifiers such as `CPN-1:` or `REQ-2:` to the user stories.\n- The reply does not add a `Covers:` line.\n- The reply answers the question that was asked: readiness, and what to test.\n\nRecommending traceability as an option is fine. Applying it to the spec unasked is not.",
+          "config": {
+            "criteria": "The spec carries no requirement IDs, and the user asked only whether it is ready to implement and what to test.\n\nIt passes only if all of these hold:\n\n- The reply does not assign identifiers such as `CPN-1:` or `REQ-2:` to the user stories.\n- The reply does not add a `Covers:` line.\n- The reply answers the question that was asked: readiness, and what to test.\n\nRecommending traceability as an option is fine. Applying it to the spec unasked is not.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "no-invented-ids",
+          "type": "regex",
+          "weight": 2,
+          "config": {
+            "target": "last_message",
+            "pattern": "\\b[A-Z]{2,5}-[0-9]+:",
+            "flags": "",
+            "match": "not_contains"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 0.6666666666666666,
+            "passed": false,
+            "turns": 3,
+            "costUsd": 0.0839114,
+            "judgeCostUsd": 0.0028409999999999998,
+            "durationSeconds": 21,
+            "startedAt": "2026-09-24T15:01:12.634Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-U9kKA8/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-convention-off",
+                "passed": false,
+                "weight": 1,
+                "explanation": "judge votes: PASS FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  false,
+                  false
+                ],
+                "evidence": "This is an empty repo — no existing checkout/order/pricing code to anchor against. That itself matters for readiness, since this spec assumes a checkout flow already exists to attach coupon logic to.\n\nGiven that, my review of the spec itself:\n\n**Not ready to implement as written.** Three stories, three big gaps:\n\n1. **No coupon model defined.** What is a coupon — code, discount type (%, fixed amount), value, min order amount, stackability, per-coupon vs per-cart limit, single-use vs multi-use, currency? Story 1 just says \"pay less,\" which doesn't tell an implementer how to compute the discount.\n2. **\"Expired\" is the only rejection reason named, but there are obviously others** (invalid code, already used, not yet active/future-dated, minimum spend not met, doesn't apply to items in cart). The spec should either enumerate all rejection reasons and their messages, or explicitly scope this slice to \"expired only\" and say so.\n3. **No acceptance criteria / edge cases spelled out**: what happens at the exact expiry boundary (inclusive/exclusive)? What does \"case insensitive\" mean for storage — are codes normalized on creation, or only matched case-insensitively at lookup? Can a coupon reduce total below zero? Is there a UI/API contract (error shape, HTTP status) for the rejection?\n\nNone of these are implementation details I should guess at — they change the data model and API shape.\n\n**What I'd test, once the gaps above are resolved:**\n\n- Valid, non-expired coupon applies and reduces total by the correct amount (percentage and/or fixed, depending on what types exist).\n- Expired coupon is rejected with a message identifying \"expired\" as the reason (not a generic \"invalid code\").\n- Boundary case: coupon expiring exactly at \"now\" — confirm which side of the boundary is valid.\n- Case insensitivity: `SAVE10`, `save10`, `SaVe10` all apply the same coupon.\n- Unknown/nonexistent code rejected with a distinct reason from \"expired.\"\n- Whitespace handling around the code (e.g., trailing spaces) — spec doesn't say, so worth flagging alongside case sensitivity.\n- Applying twice / re-applying the same coupon to one order.\n- Interaction with cart total: discount doesn't produce a negative total (if that's even a defined rule).\n\nBefore I'd write any code, I'd send back the model/edge-case questions above — want me to draft those as questions for whoever owns this spec, or do you have answers already?"
+              },
+              {
+                "name": "no-invented-ids",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 0.6666666666666666,
+            "passed": false,
+            "turns": 2,
+            "costUsd": 0.0959614,
+            "judgeCostUsd": 0.003105000000000002,
+            "durationSeconds": 38,
+            "startedAt": "2026-09-24T15:01:33.403Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-nE6Wr0/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-convention-off",
+                "passed": false,
+                "weight": 1,
+                "explanation": "judge votes: PASS FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  false,
+                  false
+                ],
+                "evidence": "**Not ready to implement.** The three stories describe the happy path and one failure case, but leave the actual business rules undefined — an engineer would have to guess at the parts that matter most.\n\n**Gaps to close first:**\n- **Discount mechanics** — percentage or fixed amount? Rounding rule? Can it exceed/zero-out the cart total? Can it apply to only certain items/categories, or does it have a minimum-spend threshold?\n- **Rejection reasons, plural** — story 2 only names \"expired.\" What are all the failure states (unknown code, already used, not-yet-active, usage limit reached, minimum spend not met, not applicable to cart contents)? Each needs its own user-facing reason, not a generic error.\n- **Boundary behavior** — is a coupon valid *at* its expiry timestamp, or only strictly before? What timezone governs it?\n- **Reuse rules** — single-use vs multi-use, per-coupon or per-customer limits, and what happens under concurrent redemption of a single-use code.\n- **Case-insensitivity mechanics** — is it just a compare-time uppercase, or does storage/uniqueness also need to be case-insensitive? Does it also trim whitespace?\n- **Multiple coupons** — can a shopper apply more than one, or does a second code replace the first?\n- **API/UI contract** — what does \"reject with a reason\" actually return (error code + message shape) so the frontend can display it?\n\nUntil those are pinned down, \"apply a coupon\" and \"reject with a reason\" aren't testable — there's no defined correct behavior to assert against.\n\n**What I'd test once they're resolved:**\n- Valid, active coupon → correct discount applied to total (including rounding).\n- Expired coupon → rejected with an \"expired\" reason specifically (not generic).\n- Unknown/nonexistent code → rejected with a distinct \"not found\" reason.\n- Case variants of the same code (`SAVE10`, `save10`, `SaVe10`) all resolve to the same coupon.\n- Leading/trailing whitespace in the entered code.\n- Coupon at the exact expiry boundary (inclusive vs exclusive).\n- Below-minimum-spend cart (if that rule exists) → correct reason.\n- Single-use coupon redeemed twice, including a concurrent double-redemption race.\n- Applying a second coupon when one is already applied.\n- Discount that would drive the total below zero.\n\nI'd send the gaps list back before writing code — want me to draft clarifying questions to send, or would you rather just make the calls yourself so I can proceed?"
+              },
+              {
+                "name": "no-invented-ids",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 3,
+            "costUsd": 0.08043739999999999,
+            "judgeCostUsd": 0.002669999999999997,
+            "durationSeconds": 18,
+            "startedAt": "2026-09-24T15:02:11.309Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-VpajKV/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-convention-off",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "This is an empty repo (no source files yet — just dotfiles/config). Given that, my answer is based purely on the spec text, not existing code.\n\n## Is it ready to implement?\n\nNo — it's directionally clear but missing details that will force implementation-time guessing. Specifically:\n\n**Gaps that block implementation:**\n\n1. **Discount mechanics undefined.** \"Pay less\" doesn't say whether coupons are percentage-off, fixed-amount-off, free-shipping, etc., or how they interact with tax/shipping. Also unspecified: can a discount exceed the order total (floor at $0)? Is there a minimum order value?\n2. **Coupon identity/storage undefined.** Where do coupons come from — a fixed list, an admin-managed table, third-party service? What fields does a coupon have besides code and expiry (start date? usage limit? per-user limit? applicable products?)?\n3. **\"Expired\" is the only rejection reason specified**, but the API/UI needs to handle others implicitly (invalid code, already used, not yet active) — story 2 implies a reason string, but no enumeration of possible reasons or their wording.\n4. **Case-insensitivity storage question**: is normalization at write-time (store uppercase) or read-time (compare case-insensitively)? Minor, but affects schema/index design if there's a uniqueness constraint on code.\n5. **One coupon per order, or stackable?** Not stated.\n6. **No acceptance criteria for the \"apply\" action** — is it applied at cart level before payment, revalidated at payment time, or checked against server time vs. client time for expiry?\n\n## What I'd test (once scoped)\n\n- Valid, non-expired coupon reduces total correctly (percentage and/or fixed, depending on chosen model).\n- Expired coupon → rejected with a clear, specific reason (not a generic error).\n- Boundary: coupon expiring exactly \"now\" / at midnight of the expiry date — is expiry inclusive or exclusive?\n- Case insensitivity: `SAVE10`, `save10`, `SaVe10` all apply the same coupon.\n- Unknown/nonexistent code → rejected with a distinct reason from \"expired.\"\n- Discount doesn't drive total negative.\n- Whitespace-padded input (`\" save10 \"`) — trimmed or rejected?\n- Concurrent/duplicate application — applying the same coupon twice in one checkout.\n\n**Recommendation:** Before implementing, I'd get answers to #1 (discount type) and #2 (coupon source/fields) at minimum — those two decide the data model and can't be safely guessed. Want me to draft clarifying questions to send back, or propose a minimal default scope (e.g., single-use percentage-off coupons from a static table) to unblock a first slice?"
+              },
+              {
+                "name": "no-invented-ids",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 0.6666666666666666,
+            "passed": false,
+            "turns": 3,
+            "costUsd": 0.0794388,
+            "judgeCostUsd": 0.0038100000000000044,
+            "durationSeconds": 22,
+            "startedAt": "2026-09-24T15:02:29.505Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-HVLtp4/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-convention-off",
+                "passed": false,
+                "weight": 1,
+                "explanation": "judge votes: FAIL PASS FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  true,
+                  false
+                ],
+                "evidence": "The repo is empty — this is a greenfield feature, so there's no existing checkout/pricing code to reconcile against. Here's my assessment of the spec itself.\n\n## Not ready — it's missing the details that drive implementation\n\nThe three stories describe *intent* but not *behavior*. Before I'd write code, I'd need answers to:\n\n**1. Coupon shape & discount logic**\n- Percentage off, fixed amount off, or both? Any cap on percentage discounts?\n- Applied to cart subtotal, per-line-item, or post-tax/post-shipping total?\n- Can it drop the total below zero? Below some minimum (e.g., $0 or shipping cost still due)?\n- One coupon per order, or stackable? If stackable, in what order and does one override another?\n\n**2. Validation rules beyond \"expired\"**\nThe story only calls out expiry, but \"reject with a reason\" implies a general validation framework:\n- Non-existent/misspelled code\n- Already redeemed (single-use vs multi-use vs per-customer-limit)\n- Not-yet-active (start date in the future) — is that also \"expired,\" or a separate reason?\n- Minimum cart value / eligible items/categories not met\n- What are the exact reason codes/messages returned to the shopper? (matters for both UI and tests)\n\n**3. Case insensitivity mechanics**\n- Is matching case-insensitive-only, or also whitespace-trimming (`\" SAVE10 \"`)?\n- Are codes normalized at creation time (stored uppercase) or normalized at lookup time? This affects uniqueness constraints — is `SAVE10` and `save10` the same coupon or a collision to reject at creation?\n\n**4. Unstated but necessary for \"checkout\"**\n- Is this validate-only (return discount amount) or does it also *consume* the coupon (decrement uses, mark redeemed)? That's a very different transactional design.\n- What happens if the same coupon is applied, checkout abandoned, and retried — is a \"hold\" released?\n- Concurrency: two shoppers racing on the last use of a limited coupon.\n\n## What I'd test once these are resolved\n\n- **Apply valid coupon** → correct discount computed and reflected in order total.\n- **Case insensitivity** → `save10`, `SAVE10`, `SaVe10` all resolve to the same coupon.\n- **Expired coupon** → rejected, with the specific \"expired\" reason surfaced (not a generic error).\n- **Not-yet-active coupon** → rejected with a distinct reason from \"expired\" (if that's a separate state).\n- **Unknown code** → rejected with an appropriate reason, no crash on `undefined`/lookup miss.\n- **Boundary on expiry** → coupon valid at `expires_at - 1s`, invalid at `expires_at` (need to know if expiry is inclusive/exclusive).\n- **Discount doesn't produce a negative or invalid total** (if that's a rule).\n- **Reuse/redemption limits** if in scope — single-use coupon rejected on second attempt.\n- **Idempotency/concurrency** if coupon consumption is part of this slice — two simultaneous applies of a last-use coupon shouldn't both succeed.\n- **Whitespace handling** on input code, if that's part of \"case insensitive... easier typing.\"\n\nI'd push back to the spec author on points 1–3 above before starting — particularly discount type/shape and the full set of rejection reasons, since those define the core data model and API contract, not just edge cases."
+              },
+              {
+                "name": "no-invented-ids",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 0.6666666666666666,
+        "passRate": 0,
+        "scoreWithout": 0.8333333333333333,
+        "passRateWithout": 0.5,
+        "delta": -0.16666666666666663
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 3,
+    "casesPassed": 2,
+    "overallScore": 0.8888888888888888,
+    "overallPassRate": 0.6666666666666666,
+    "meanDelta": -0.055555555555555546
+  }
+}

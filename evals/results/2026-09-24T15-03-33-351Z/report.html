@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eval report — mattpocock-skills v1.2.3</title>
+</head>
+<body>
+<style>
+:root{--plane:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--ink-3:#6b6a64;--hairline:rgba(11,11,11,.10);--grid:#e1e0d9;--inset:rgba(11,11,11,.04);--accent:#2a78d6;--base-fill:#6b6a64;--delta-good:#006300;--good:#067d06;--warning:#8a6100;--critical:#d03b3b;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){:root{--plane:#0d0d0d;--surface:#1a1a19;--ink:#ffffff;--ink-2:#c3c2b7;--ink-3:#898781;--hairline:rgba(255,255,255,.10);--grid:#2c2c2a;--inset:rgba(255,255,255,.05);--accent:#3987e5;--base-fill:#898781;--delta-good:#0ca30c;--good:#0ca30c;--warning:#fab219;--critical:#e06c6c;color-scheme:dark}}
+:root[data-theme="dark"]{--plane:#0d0d0d;--surface:#1a1a19;--ink:#ffffff;--ink-2:#c3c2b7;--ink-3:#898781;--hairline:rgba(255,255,255,.10);--grid:#2c2c2a;--inset:rgba(255,255,255,.05);--accent:#3987e5;--base-fill:#898781;--delta-good:#0ca30c;--good:#0ca30c;--warning:#fab219;--critical:#e06c6c;color-scheme:dark}
+:root[data-theme="light"]{--plane:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--ink-3:#6b6a64;--hairline:rgba(11,11,11,.10);--grid:#e1e0d9;--inset:rgba(11,11,11,.04);--accent:#2a78d6;--base-fill:#6b6a64;--delta-good:#006300;--good:#067d06;--warning:#8a6100;--critical:#d03b3b;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--plane);color:var(--ink);
+  font:14px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:880px;margin:0 auto;padding:40px 24px 64px;display:flex;flex-direction:column;gap:20px}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+header h1{margin:2px 0 0;font-size:24px;font-weight:600;line-height:1.25;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;color:var(--ink-2);font-size:13px}
+.meta .num{font-variant-numeric:tabular-nums lining-nums}
+.banner{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:8px;
+  border:1px solid var(--hairline);background:var(--surface);font-size:13px}
+.banner .chip-warn{color:var(--warning);font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--hairline);border-radius:10px;padding:14px 16px;
+  display:flex;flex-direction:column;gap:4px}
+.tile .label{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.tile .value{font-size:26px;font-weight:600;font-variant-numeric:tabular-nums lining-nums;line-height:1.1}
+.tile.hero .value{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:48px}
+.tile .sub{font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.tile .value.delta-pos{color:var(--delta-good)}
+.tile .value.delta-neg{color:var(--critical)}
+.toolbar{display:flex;gap:8px;justify-content:flex-end}
+.toolbar button{font:12px system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--hairline);border-radius:6px;padding:4px 10px;cursor:pointer}
+.toolbar button:hover{color:var(--ink)}
+.toolbar button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.case{background:var(--surface);border:1px solid var(--hairline);border-radius:10px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:10px}
+.case-regressed{border-left:3px solid var(--critical)}
+.verdict{margin:6px 0 0;font-size:15px}
+.verdict .delta{font-size:15px}
+.flag{font-size:11px;font-weight:600;color:var(--warning);white-space:nowrap}
+.star{color:var(--warning);font-size:.45em;vertical-align:super;line-height:0;cursor:help}
+.legend summary{cursor:pointer;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2)}
+.legend-list{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:5px;font-size:13px;color:var(--ink-2)}
+.case-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.case-head h2{margin:0;font-size:16px;font-weight:600}
+.case-head .spacer{flex:1}
+.case-score{font-size:15px;font-weight:600}
+.mono{font:12px "SF Mono",ui-monospace,Menlo,Consolas,monospace}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.muted{color:var(--ink-3);font-size:12px}
+.meter{display:inline-block;position:relative;width:120px;height:6px;border-radius:4px;background:var(--grid);
+  vertical-align:middle}
+.meter>span{display:block;height:100%;border-radius:4px;max-width:100%}
+.meter .tick{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink-3);border-radius:1px}
+.m-accent>span{background:var(--accent)}
+.m-base>span{background:var(--base-fill)}
+.delta{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+.delta-pos{color:var(--delta-good)}
+.delta-neg{color:var(--critical)}
+.delta-zero{color:var(--ink-3)}
+details.section{border-top:1px solid var(--grid);padding-top:10px}
+details.section>summary{cursor:pointer;font-size:12px;font-weight:600;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--ink-2);list-style-position:outside;margin-left:2px}
+details.section>summary:hover{color:var(--ink)}
+details.section[open]>summary{margin-bottom:8px}
+.md{display:flex;flex-direction:column;gap:8px;background:var(--inset);border-radius:8px;
+  padding:12px 14px;overflow-wrap:break-word}
+.md>:first-child{margin-top:0}
+.md h1,.md h2,.md h3,.md h4,.md h5,.md h6{margin:4px 0 0;font-size:1em;font-weight:600;line-height:1.3}
+.md p,.md ul,.md ol,.md blockquote,.md table,.md pre,.md hr{margin:0}
+.md ul,.md ol{display:flex;flex-direction:column;gap:4px;padding-left:20px}
+.md blockquote{border-left:2px solid var(--hairline);padding-left:10px;color:var(--ink-2)}
+.md :not(pre)>code{background:var(--inset);padding:1px 4px;border-radius:4px;
+  font:.92em "SF Mono",ui-monospace,Menlo,Consolas,monospace}
+.md pre{background:var(--inset);border:1px solid var(--hairline);padding:10px 12px;border-radius:6px;
+  overflow-x:auto;font:12px/1.5 "SF Mono",ui-monospace,Menlo,Consolas,monospace}
+.md pre code{background:none;padding:0;font:inherit}
+.md table{width:100%;border-collapse:collapse}
+.md th,.md td{padding:5px 8px;text-align:left;vertical-align:top;border-bottom:1px solid var(--grid)}
+.md th{font-weight:600;color:var(--ink-2)}
+.md a{color:var(--accent);text-decoration:none}
+.md a:hover{text-decoration:underline}
+.grader-def{display:flex;flex-direction:column;gap:6px;padding:8px 0}
+.grader-def+.grader-def{border-top:1px solid var(--grid)}
+.grader-def-head{display:flex;align-items:baseline;gap:8px}
+.grader-name{font:13px "SF Mono",ui-monospace,Menlo,Consolas,monospace;font-weight:600}
+.badge{font-size:10px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);
+  border:1px solid var(--hairline);border-radius:999px;padding:1px 8px}
+.config{display:flex;flex-direction:column;gap:2px;background:var(--inset);border-radius:8px;padding:10px 14px}
+.config code{font:12px "SF Mono",ui-monospace,Menlo,Consolas,monospace;overflow-wrap:anywhere}
+.arm{display:flex;flex-direction:column;gap:8px;padding:6px 0}
+.arm+.arm{border-top:1px dashed var(--grid);margin-top:4px;padding-top:12px}
+.arm-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.arm-label{font-size:13px;font-weight:600}
+.run{border:1px solid var(--grid);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+.run-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.run-title{font-size:12px;font-weight:600;color:var(--ink-2)}
+.run-error .explanation{color:var(--ink-2)}
+.note{font-size:12px;color:var(--ink-2)}
+.graders{display:flex;flex-direction:column;gap:4px}
+details.grader{border-radius:6px}
+details.grader>summary{cursor:pointer;display:flex;align-items:baseline;gap:8px;padding:3px 4px;
+  border-radius:6px;list-style:none}
+details.grader>summary::-webkit-details-marker{display:none}
+details.grader>summary::before{content:'▸';font-size:10px;color:var(--ink-3);flex:none;
+  transition:transform .12s ease}
+details.grader[open]>summary::before{transform:rotate(90deg)}
+details.grader>summary:hover{background:var(--inset)}
+details.grader>summary:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.grader-body{padding:6px 8px 8px 24px;display:flex;flex-direction:column;gap:6px}
+.chip{font-size:11px;font-weight:600;border-radius:999px;padding:1px 8px;white-space:nowrap}
+.chip-pass{color:var(--good);border:1px solid currentColor}
+.chip-fail{color:var(--critical);border:1px solid currentColor}
+.chip.chip-warn{color:var(--warning);border:1px solid currentColor}
+.explanation{margin:0;font-size:13px;color:var(--ink-2);white-space:pre-wrap;overflow-wrap:break-word}
+.kv{display:flex;gap:8px;font-size:12px;color:var(--ink-3)}
+.votes{font-variant-numeric:tabular-nums;letter-spacing:.1em}
+pre.evidence{margin:0;background:var(--inset);border:1px solid var(--hairline);border-radius:6px;
+  padding:8px 10px;overflow-x:auto;max-height:320px;
+  font:12px/1.5 "SF Mono",ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;overflow-wrap:break-word}
+footer{color:var(--ink-3);font-size:12px;text-align:center;padding-top:8px}
+@media (prefers-reduced-motion:no-preference){
+  details.grader>summary,.toolbar button{transition:background .12s ease,color .12s ease}
+}
+@media (prefers-reduced-motion:reduce){
+  details.grader>summary::before{transition:none}
+}
+@media print{
+  :root,:root[data-theme="dark"],:root[data-theme="light"]{--plane:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--ink-3:#6b6a64;--hairline:rgba(11,11,11,.10);--grid:#e1e0d9;--inset:rgba(11,11,11,.04);--accent:#2a78d6;--base-fill:#6b6a64;--delta-good:#006300;--good:#067d06;--warning:#8a6100;--critical:#d03b3b;color-scheme:light}
+  body{background:#fff}
+  .toolbar{display:none}
+  .case,.run,.grader-def{break-inside:avoid}
+  pre.evidence{max-height:none}
+}
+</style>
+<div class="wrap">
+<header>
+<div class="eyebrow">Plugin eval report</div>
+<h1>mattpocock-skills v1.2.3</h1>
+<p class="verdict">Plugin effect: <span class="delta delta-zero">· 0.0 pts</span> vs baseline — improved 0 · flat 1 · regressed 0 of 1 case.</p>
+<div class="meta">
+<span class="mono">.</span>
+<span>Claude Code v2.1.270</span>
+<span class="num">2026-09-24 15:03 UTC</span>
+<span class="num">2m 6s</span>
+<span class="num">$0.38</span>
+<span class="num">6 runs</span>
+
+
+
+<span>judge default</span>
+<span class="num">threshold 100%</span>
+<span>filtered: --case spec-without-ids-untouched</span>
+</div>
+</header>
+
+<section class="tiles">
+<div class="tile hero"><span class="label">Suite score · with plugin</span><span class="value">100%</span><span class="sub">mean of per-case scores</span></div>
+<div class="tile"><span class="label">Ablation Δ</span><span class="value num delta-zero">0.0</span><span class="sub">score points vs baseline, 1 of 1 case</span></div>
+<div class="tile"><span class="label">Baseline score</span><span class="value num">100%</span><span class="sub">without the plugin</span></div>
+<div class="tile"><span class="label">Cases</span><span class="value num">1</span><span class="sub">1 of 1 ≥ 100% threshold</span></div>
+<div class="tile"><span class="label">Perfect runs</span><span class="value num">100%</span><span class="sub">runs where every grader passed</span></div>
+</section>
+<details class="section legend">
+<summary>How to read this report</summary>
+<ul class="legend-list">
+<li>A run's score is the weighted fraction of its graders that passed; a "perfect" run passed every grader.</li>
+<li>A case's score is the mean of its runs; a case passes when its score is at or above the 100% threshold (the tick on each case bar).</li>
+<li>The suite score is the mean of the per-case scores.</li>
+<li>Judge votes are independent samples of the LLM judge; the majority decides pass or fail.</li>
+<li>"With plugin" and "Baseline" runs are identical except for the plugin being loaded; Δ is the with-plugin score minus the baseline score.</li>
+
+</ul>
+</details>
+<div class="toolbar"><button type="button" data-act="expand">Expand all</button><button type="button" data-act="collapse">Collapse all</button></div>
+<article class="case" id="case-1">
+<div class="case-head">
+<h2>spec-without-ids-untouched</h2>
+<span class="muted mono">evals/spec-without-ids-untouched</span>
+<span class="spacer"></span>
+
+<span class="delta delta-zero">· 0.0 pts</span>
+<span class="muted">with plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span><i class="tick" style="left:100.0%"></i></span>
+<span class="num case-score">100%</span>
+</div>
+
+<details class="section" open>
+<summary>Results</summary>
+<section class="arm">
+<div class="arm-head">
+<span class="arm-label">With plugin</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">100% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">4 turns · $0.08 · 15:03:33 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Empty repo, no existing checkout/coupon code — this is a greenfield slice. Here&apos;s my assessment.
+
+**Not ready to implement yet.** It reads more like a set of goals than a spec — the acceptance criteria are missing in the places that actually drive design decisions:
+
+**Gaps that need answers before coding:**
+- **Discount mechanics** — percentage vs. fixed amount vs. free shipping? Capped at order total? How does it interact with tax (pre-tax or post-tax discount)?
+- **Rejection reasons, plural** — spec only names &quot;expired,&quot; but a real coupon check needs a full reason taxonomy: not found/invalid code, already redeemed, below minimum spend, not yet active, usage limit reached. Is &quot;expired&quot; the only one in scope for this slice, or should the mechanism be built to carry any reason?
+- **&quot;Expired&quot; boundary** — expires at a specific instant? End of a calendar day? Whose timezone — server, shopper, or store?
+- **Case-insensitivity normalization** — store canonically (e.g. uppercase) and compare case-insensitively, or normalize on lookup? Also worth deciding now: is whitespace trimmed too (a very common paired bug)?
+- **Uniqueness/reuse** — single-use per shopper, single-use globally, or unlimited? Not stated, and it affects the data model.
+- **Where coupons come from** — is creating/seeding a coupon in scope for this slice, or are they assumed to pre-exist (fixtures/seed data)?
+- **One coupon per checkout, or stacking?** Not stated — assume one unless told otherwise, but worth confirming.
+
+None of these need to be fully speced with edge-case exhaustiveness, but at minimum the discount type and the &quot;expired&quot; boundary rule need to be pinned down, since they determine the core data shape and the first test cases.
+
+**What I&apos;d test once it&apos;s clarified:**
+- Valid, active coupon applies the expected discount to checkout total.
+- Expired coupon is rejected, and the response reason is specifically &quot;expired&quot; (not a generic failure).
+- Code entered in mixed/upper/lower case still matches (`SAVE10`, `save10`, `SaVe10`).
+- Unknown/nonexistent code is rejected with a distinct reason from &quot;expired&quot; (tests that the mechanism generalizes, not just handles one hardcoded case).
+- Boundary case: coupon expiring exactly &quot;now&quot; — confirms which side of the boundary counts as expired.
+- Whitespace around a pasted code (`&quot; SAVE10 &quot;`) — common real-world input, not explicitly in scope but worth flagging.
+
+Want me to draft the missing acceptance criteria as questions to send back, or pick reasonable defaults and note them as assumptions so we can start building?</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">4 turns · $0.07 · 15:03:58 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Empty repo — no existing checkout/coupon code to anchor this against. Based on the spec alone: **not ready to implement.** It reads as three one-line user stories with no acceptance criteria, so a lot of behavior is left to guesswork.
+
+**Gaps that need answers before coding:**
+
+1. **Discount mechanics** — percentage vs. fixed amount? Any cap on percentage discounts? Can a coupon reduce the total below zero/free?
+2. **&quot;Apply less&quot;** — story 1 doesn&apos;t say what makes a coupon valid beyond &quot;not expired.&quot; Is there a minimum cart total, per-product/category restriction, single-use vs. multi-use, per-customer limits, stackability with other coupons?
+3. **Expiry semantics** — is expiry a date, datetime, or date+timezone? Inclusive or exclusive boundary (does the coupon work *on* the expiry date)? What about &quot;not yet started&quot; coupons (future start date) — same rejection path or different reason?
+4. **Rejection reasons beyond expiry** — spec only calls out expired, but &quot;reason&quot; implies a general concept. What about unknown code, already-redeemed, below minimum spend? Are these in scope for this slice or deferred?
+5. **Case insensitivity scope** — just ASCII a-z, or full Unicode case folding? Does storage normalize to one case, or is comparison done at lookup time? What about leading/trailing whitespace — also normalized?
+6. **Error contract** — what shape does &quot;rejected with a reason&quot; take? A specific error code/enum per reason, or a free-text message? This matters for a client to branch on it.
+7. **Idempotency/concurrency** — can the same coupon be validated twice in a session without being consumed until checkout completes?
+
+I&apos;d send this back for one round of clarification rather than start coding — particularly #1–#3, since they change the data model (coupon needs a discount type, value, expiry timestamp, and possibly a status/usage-limit field).
+
+**What I&apos;d test once it&apos;s clarified:**
+
+- Valid, non-expired coupon reduces total correctly (both discount types if both exist)
+- Expired coupon is rejected, and the rejection surfaces a reason (not just a generic false/error)
+- Coupon expiring exactly *now* / at the boundary instant — confirm which side of the line it falls on
+- Case variants of the same code (`SAVE10`, `save10`, `SaVe10`) all resolve to the same coupon
+- Unknown/garbage code — distinct rejection reason from &quot;expired,&quot; if the API distinguishes them
+- Whitespace-padded input (`&quot; save10 &quot;`) — decide and test whether it&apos;s trimmed
+- Discount doesn&apos;t push the order total negative
+- Re-applying the same coupon twice in one checkout (double-counting guard)
+
+Want me to draft the clarifying questions back to whoever owns this spec, or would you rather just make the calls yourself so I can start building?</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-accent" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">3 turns · $0.06 · 15:04:18 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">No existing coupon/checkout code in this repo, so this is a greenfield spec. My read: **not ready yet** — it describes intent but leaves out the details an implementation actually hinges on.
+
+**Gaps to resolve first:**
+
+1. **Discount mechanics** — percentage vs. fixed amount? Caps (e.g., max $X off)? Can it apply to shipping/tax or just subtotal? Rounding rule?
+2. **&quot;Expired&quot; is only one rejection reason** — what about: code doesn&apos;t exist, already used (single-use vs. multi-use), usage limit reached, minimum order value not met, not yet active (start date), restricted to certain products/users, one-per-customer? The story only names expiry, but &quot;reject with a reason&quot; implies a general error taxonomy — needs enumerating now or it&apos;ll get bolted on ad hoc later.
+3. **Case insensitivity** — does normalization happen on storage (codes stored uppercase) or on lookup (normalize input before compare)? Also: leading/trailing whitespace trimming isn&apos;t mentioned but is the same class of &quot;typing is easier&quot; problem — worth deciding now.
+4. **Stacking** — can multiple coupons apply at once, or is it one-at-a-time? Not stated.
+5. **What happens at expiry boundary** — is &quot;expires at&quot; inclusive or exclusive (expires_at == now)? Timezone for comparison?
+6. **Where does validation run** — server-side only presumably, but does the spec assume an existing checkout/cart total calculation to hook into? None exists in this repo yet, so this slice may need to define that interface too.
+7. **No acceptance criteria** — no examples of input/output pairs, no error message format/shape.
+
+**What I&apos;d test once scoped:**
+- Valid coupon applies correct discount to a sample cart total.
+- Expired coupon rejected with a specific, checkable reason/code (not just a generic error).
+- Code matching is case-insensitive (`SAVE10`, `save10`, `SaVe10` all match) — plus whitespace trimming if you decide to include it.
+- Non-existent code rejected with a distinct reason from &quot;expired.&quot;
+- Boundary case: coupon expiring exactly at &quot;now.&quot;
+- Discount doesn&apos;t produce a negative or zero-clamped-incorrectly total (e.g., percentage-off exceeding cart value).
+
+I&apos;d send the discount-type, error-taxonomy, and case/whitespace-normalization questions back before writing code — they change the data model (coupon schema) and the function signature for validation, so guessing now means rework later.</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+</section><section class="arm">
+<div class="arm-head">
+<span class="arm-label">Baseline (no plugin)</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">100% of runs perfect</span>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 1</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">4 turns · $0.06 · 15:04:37 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Empty repo — no existing checkout/pricing code to anchor this against. Given that, my answer is based purely on the spec text itself.
+
+**Not ready to implement.** It reads like a one-pager of intent rather than a spec — the three stories don&apos;t pin down enough for someone to build against without guessing. Gaps I&apos;d want closed first:
+
+**Missing definitions**
+- Discount mechanics: fixed amount vs. percentage? Cap on percentage discounts? Applied to subtotal, post-tax, per-line-item, or shipping?
+- Coupon scope: one per order, or stackable? Any priority/conflict rule if stacking is allowed?
+- Eligibility beyond dates: minimum order value, specific SKUs/categories, per-customer usage limits, one-time-use codes, account/new-customer restrictions?
+- &quot;Expired&quot; is called out, but what about *not-yet-active* (future start date), *invalid/unknown code*, *usage limit exhausted*, *already applied*? Story 2 only names one rejection reason — the others need the same &quot;reject with a reason&quot; treatment, and each needs its own message/error code.
+- Case-insensitivity (story 3): does normalization also need to handle whitespace trimming? What&apos;s the canonical stored form — are codes stored uppercase, or compared case-insensitively at lookup time?
+- What happens if a coupon is applied, then the cart changes (items removed, total drops below minimum)? Does it silently stay applied, get revalidated, or auto-remove?
+- Currency/rounding rules for the discount calculation.
+
+**Missing non-functional detail**
+- API shape: is this a REST endpoint (`POST /checkout/coupon`), a field on an existing checkout resource, or something else? What&apos;s the response contract for success vs. each failure reason?
+- Data model: where do coupon definitions live, who authors them (admin tooling out of scope here?).
+
+I&apos;d send this back with those questions rather than start coding — particularly the discount-type and stacking questions, since they change the data model, not just validation logic.
+
+**What I&apos;d test once it&apos;s filled in:**
+- Valid coupon applies the correct discount amount (fixed and percentage cases).
+- Expired coupon → rejected with the specific &quot;expired&quot; reason, order total unchanged.
+- Future-dated (not-yet-active) coupon → rejected with its own reason.
+- Unknown/invalid code → rejected with its own reason.
+- Case variants (`SAVE10`, `save10`, `Save10`) all resolve to the same coupon.
+- Leading/trailing whitespace in the entered code (edge case worth confirming in/out of scope).
+- Boundary dates: applying exactly at expiry timestamp, exactly at start timestamp.
+- Minimum-order or other eligibility rule (once defined) — just-under and just-at threshold.
+- Re-applying the same coupon twice / applying a second coupon (once stacking rule is defined).
+- Discount doesn&apos;t push order total negative (e.g., fixed-amount coupon larger than cart value).
+- Cart mutation after coupon applied (remove item that made it eligible) — confirm defined behavior.
+
+Want me to draft clarifying questions to send back, or sketch a data model once you&apos;ve settled the discount-type/stacking questions?</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 2</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">4 turns · $0.06 · 15:04:57 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">Empty repo — no existing checkout/pricing code to anchor this against. Given that, here&apos;s my read of the spec itself.
+
+**Not ready to implement.** It reads like a feature pitch, not a spec — it&apos;s missing the details that determine behavior at the edges:
+
+- **Discount mechanics undefined**: percent off, fixed amount, free shipping? Stacking rules (multiple coupons, or one per order)? Applied to subtotal, post-tax, or per-item? Minimum order value?
+- **Coupon lifecycle undefined**: who creates codes, do they have usage limits (total redemptions, per-user limit), start dates as well as expiry?
+- **&quot;Rejected with a reason&quot; is only specified for expiry.** What about: code doesn&apos;t exist, already used, below minimum spend, not valid for items in cart, coupon not yet active? Story 2 implies a general reason-code mechanism but only describes one case.
+- **Case insensitivity edge cases**: what about leading/trailing whitespace? Unicode? Is the canonical stored form upper/lowercase, and does that affect uniqueness constraints on code creation?
+- **Expiry boundary**: is expiry a date or datetime, and what timezone governs &quot;expired&quot; — server time, user&apos;s local time, store&apos;s timezone? Off-by-one on the exact expiry instant is a classic bug source.
+- **No acceptance criteria / no error contract** (e.g., does rejection return an HTTP 4xx with a machine-readable reason code, or a user-facing string only?).
+
+I&apos;d send this back with those questions before writing code — particularly discount type/stacking and the full set of rejection reasons, since those drive the data model.
+
+**What I&apos;d test once it&apos;s filled in:**
+- Valid, non-expired coupon applies the correct discount to the total.
+- Expired coupon rejected with the *specific* expiry reason (not a generic error).
+- Code matching is case-insensitive (`SAVE10`, `save10`, `SaVe10` all match) and I&apos;d also check whitespace handling.
+- Boundary case: coupon expiring exactly at &quot;now&quot; — confirm which side of the boundary is valid.
+- Unknown/nonexistent code rejected with its own distinct reason (not confused with &quot;expired&quot;).
+- Non-happy-path: empty cart, coupon with no matching items (if item-scoped), re-applying after removing it.
+- If usage limits exist: exhausted coupon rejected with distinct reason; concurrent redemption doesn&apos;t overrun the limit.
+
+Want me to draft the missing acceptance criteria as questions to send back, or do you have answers to the open questions so we can proceed?</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+<div class="run">
+<div class="run-head">
+<span class="run-title">Run 3</span>
+<span class="meter m-base" aria-hidden="true"><span style="width:100.0%"></span></span>
+<span class="num">100%</span>
+<span class="muted num">3 turns · $0.06 · 15:05:19 UTC</span>
+</div>
+
+<div class="graders"><details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">leaves-the-convention-off</span>  </summary>
+<div class="grader-body">
+<p class="explanation">judge votes: PASS PASS PASS</p>
+<div class="kv"><span>Judge votes</span><span class="votes">✓ ✓ ✓</span></div><div class="kv"><span>Evidence (what the judge was shown; for an image, a description of what was sent)</span></div><pre class="evidence">No existing checkout/coupon code in this repo, so this would be greenfield. My take: **not ready** — it&apos;s too thin to implement without guessing on several load-bearing details.
+
+**Gaps to resolve first:**
+
+1. **Discount mechanics** — percentage vs. fixed amount? Stacking multiple coupons? Rounding rules? Minimum order value? Applies to subtotal, shipping, or both?
+2. **Rejection reasons beyond &quot;expired&quot;** — spec only names one failure mode, but any real implementation needs the full list: unknown code, already used (per-user or globally), not-yet-active, usage-limit reached, minimum-spend not met, excluded items/categories. Story 2 as written is really &quot;invalid coupon&quot; handling in disguise.
+3. **&quot;Case insensitive&quot; scope** — codes stored normalized (upper/lower) at creation, or normalized only at lookup? What about surrounding whitespace? Unicode edge cases (likely irrelevant, but worth a one-line decision).
+4. **Data model** — is there a Coupon entity already, or does this spec include creating one? Who creates/manages coupons (admin story missing entirely)?
+5. **One coupon per order or multiple?** Spec doesn&apos;t say.
+6. **API/UI contract** — what does &quot;reject with a reason&quot; return — HTTP status + error code, or a UI message? Consumers (frontend) need a stable error shape.
+7. **Concurrency** — if a coupon has a usage limit, what happens on simultaneous redemptions?
+
+None of these are exotic — they&apos;re the normal &quot;what exactly is a coupon&quot; questions — but as written the spec would force me to invent business rules, which is the kind of thing that should come back to you rather than be silently decided in code.
+
+**What I&apos;d test once scoped:**
+- Valid, active coupon reduces total correctly (percentage and fixed, if both exist)
+- Expired coupon → rejected with &quot;expired&quot; reason, cart total unchanged
+- Not-yet-valid (future start date) coupon → rejected with appropriate reason
+- Unknown/mistyped code → rejected with &quot;invalid code&quot; reason
+- Case variants (`SAVE10`, `save10`, `SaVe10`) all resolve to the same coupon
+- Whitespace-padded input (` save10 `) — decide and test trim behavior
+- Boundary expiry (coupon expires exactly at checkout timestamp — inclusive/exclusive?)
+- Order total below minimum spend (if that rule exists) → rejected
+- Reapplying same coupon twice in one order (if stacking is disallowed)
+- Coupon usage-limit exhausted → rejected
+
+Want me to draft the missing rules as options for you to pick from, or do you already have answers to feed back into the spec?</pre>
+</div>
+</details>
+<details class="grader">
+<summary><span class="chip chip-pass">✓ pass</span> <span class="grader-name">no-invented-ids</span> <span class="muted">×2</span> </summary>
+<div class="grader-body">
+<p class="explanation">pattern absent as expected</p>
+
+</div>
+</details></div>
+</div>
+</section>
+</details>
+<details class="section" open>
+<summary>Prompt</summary>
+<div class="md"><p>Here is the spec for the next slice. Tell me whether it is ready to implement, and what you would test.</p>
+<h1>Coupons</h1>
+<h2>User Stories</h2>
+<ol>
+<li>As a shopper, I want to apply a coupon at checkout, so that I pay less.</li>
+<li>As a shopper, I want an expired coupon rejected with a reason, so that I know why it failed.</li>
+<li>As a shopper, I want codes to be case insensitive, so that typing is easier.</li>
+</ol>
+</div>
+</details>
+<details class="section" open>
+<summary>Graders — what "good" means for this case</summary>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">leaves-the-convention-off</span><span class="badge">llm</span></div>
+<div class="md"><p>The spec carries no requirement IDs, and the user did not ask for traceability.</p>
+<p>Judge one thing only: whether the reply leaves the traceability convention switched off.</p>
+<p>It passes unless the reply does one of these:</p>
+<ul>
+<li>Assigns identifiers such as <code>CPN-1:</code> or <code>REQ-2:</code> to the user stories, or rewrites the spec to carry them.</li>
+<li>Adds a <code>Covers:</code> line, a seam table keyed by requirement ID, or a coverage gap report.</li>
+</ul>
+<p>Everything else is out of scope for this grader. How good the spec review is, how long it is, and whether it names tests at all neither pass nor fail it. Offering traceability as a suggestion passes; applying it unasked does not.</p>
+</div>
+</div>
+<div class="grader-def">
+<div class="grader-def-head"><span class="grader-name">no-invented-ids</span><span class="badge">regex</span><span class="muted">weight ×2</span></div>
+<div class="config"><div class="kv"><span>target</span><code>&quot;last_message&quot;</code></div><div class="kv"><span>pattern</span><code>&quot;\\b[A-Z]{2,5}-[0-9]+:&quot;</code></div><div class="kv"><span>flags</span><code>&quot;&quot;</code></div><div class="kv"><span>match</span><code>&quot;not_contains&quot;</code></div></div>
+</div>
+</details>
+</article>
+<footer>Generated by <code>claude plugin eval</code> · schema v1 · scores are not comparable across different suites</footer>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var bar=document.querySelector('.toolbar');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target&&e.target.closest('button');
+    if(!b)return;
+    var open=b.dataset.act==='expand';
+    document.querySelectorAll('details.section, details.grader').forEach(function(d){d.open=open});
+  });
+});
+// Collapsed details vanish from print/PDF; these pages are share artifacts.
+window.addEventListener('beforeprint',function(){
+  document.querySelectorAll('details').forEach(function(d){
+    if(!d.open){d.dataset.printOpened='1';d.open=true}
+  });
+});
+window.addEventListener('afterprint',function(){
+  document.querySelectorAll('details[data-print-opened]').forEach(function(d){
+    d.open=false;delete d.dataset.printOpened;
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-25T00:23:04.043Z",
+  "durationSeconds": 465,
+  "costUsd": 1.560294,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "with-without",
+    "caseFilter": "annotate-spec-and-tickets",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "annotate-spec-and-tickets",
+      "dir": "evals/annotate-spec-and-tickets",
+      "source": "mixed",
+      "promptMarkdown": "Make the requirements in `spec.md` traceable to tests. The tickets are in `.scratch/coupons/issues/`.",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 25,
+      "graders": [
+        {
+          "name": "annotated",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "The user asked for the requirements in a three-story spec to be made traceable, with two tickets: ticket 01 builds applying a coupon and case-insensitive codes; ticket 02 builds refusing an expired coupon.\n\nJudge one thing only: whether the reply shows the spec and tickets annotated.\n\nIt passes when the reply shows all of these:\n\n- Each of the three user stories carries an ID of the form `<KEY>-<n>:` with one shared KEY of 2 to 5 uppercase letters.\n- Each ticket has a `Covers:` line.\n- Every ID appears on exactly one ticket's `Covers:` line: the apply and case stories on ticket 01, the expiry story on ticket 02.\n\nAnything else (wording, a seam table's exact shape, extra advice) neither passes nor fails it.",
+          "config": {
+            "criteria": "The user asked for the requirements in a three-story spec to be made traceable, with two tickets: ticket 01 builds applying a coupon and case-insensitive codes; ticket 02 builds refusing an expired coupon.\n\nJudge one thing only: whether the reply shows the spec and tickets annotated.\n\nIt passes when the reply shows all of these:\n\n- Each of the three user stories carries an ID of the form `<KEY>-<n>:` with one shared KEY of 2 to 5 uppercase letters.\n- Each ticket has a `Covers:` line.\n- Every ID appears on exactly one ticket's `Covers:` line: the apply and case stories on ticket 01, the expiry story on ticket 02.\n\nAnything else (wording, a seam table's exact shape, extra advice) neither passes nor fails it.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 16,
+            "costUsd": 0.25916160000000005,
+            "judgeCostUsd": 0.001848,
+            "durationSeconds": 40,
+            "startedAt": "2026-09-25T00:23:04.160Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-x4VgZm/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No `docs/agents/traceability.md` exists, so the default grep-based check applies (already done above) — no code exists yet so there's nothing to run the coverage gap check against; that will apply once tests are written. Here's the annotated spec and tickets:\n\n**spec.md**\n```\nRequirement key: CPN\n\n1. CPN-1: As a shopper, I want to apply a coupon at checkout, so that I pay less.\n2. CPN-2: As a shopper, I want an expired coupon rejected with a reason, so that I know why it failed.\n3. CPN-3: As a shopper, I want codes to be case insensitive, so that typing is easier.\n```\nSeam table added under Testing Decisions mapping all three IDs to `POST /checkout`.\n\n**01-apply-coupon.md**\n```\nCovers: CPN-1, CPN-3\n```\n\n**02-expired-coupon.md**\n```\nCovers: CPN-2\n```\n\nThe structural check passed clean (no ID on zero tickets, none on several, none undefined). No tests exist yet in the repo, so the coverage gap check is a no-op for now — it'll bite once `POST /checkout` tests are written; each test should be tagged with its ID, e.g. `CPN-1: reduces total for a valid code`."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 15,
+            "costUsd": 0.2308896,
+            "judgeCostUsd": 0.0016500000000000002,
+            "durationSeconds": 48,
+            "startedAt": "2026-09-25T00:23:43.964Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-Akp5Ck/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "All three classes are empty — the structural check passes: every requirement ID maps to exactly one ticket, with no gaps or mismatches.\n\n**Annotated spec (`spec.md`):**\n```\nRequirement key: CPN\n\n1. CPN-1: As a shopper, I want to apply a coupon at checkout, so that I pay less.\n2. CPN-2: As a shopper, I want an expired coupon rejected with a reason, so that I know why it failed.\n3. CPN-3: As a shopper, I want codes to be case insensitive, so that typing is easier.\n```\n\n**Tickets:**\n- `01-apply-coupon.md` — `Covers: CPN-1, CPN-3`\n- `02-expired-coupon.md` — `Covers: CPN-2`\n\nNo code or tests exist yet, so there's nothing to run the coverage gap check against — that will apply once `/implement` (or TDD) starts tagging tests with these IDs (e.g. `CPN-1: a valid code reduces the total`)."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 13,
+            "costUsd": 0.1825242,
+            "judgeCostUsd": 0.001674000000000001,
+            "durationSeconds": 42,
+            "startedAt": "2026-09-25T00:24:31.983Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-WXu8QM/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "All three checks pass clean — every requirement ID lands on exactly one ticket, no orphans, no undefined IDs.\n\nAnnotated spec and tickets:\n\n**spec.md** — `Requirement key: CPN`\n1. CPN-1: As a shopper, I want to apply a coupon at checkout, so that I pay less.\n2. CPN-2: As a shopper, I want an expired coupon rejected with a reason, so that I know why it failed.\n3. CPN-3: As a shopper, I want codes to be case insensitive, so that typing is easier.\n\nSeam table added under Testing Decisions: `POST /checkout` → CPN-1, CPN-2, CPN-3.\n\n**Tickets:**\n- `01-apply-coupon.md` → `Covers: CPN-1, CPN-3`\n- `02-expired-coupon.md` → `Covers: CPN-2`\n\nWhen you write the tests, tag each with its ID (e.g. `CPN-1: a valid code reduces the total`) so the gap check can confirm coverage later."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 28,
+            "costUsd": 0.39051779999999997,
+            "judgeCostUsd": 0.0014790000000000011,
+            "durationSeconds": 155,
+            "startedAt": "2026-09-25T00:25:13.626Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-5w4LQE/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "All 3 tests pass. Summary:\n\n- Implemented a minimal `POST /checkout` endpoint (`src/server.js`, `src/coupons.js`, `src/index.js`) with an in-memory coupon store, case-insensitive matching, and expired-coupon rejection — using Node's built-in `http`/`fetch`/`node:test`, no dependencies.\n- Added `test/checkout.test.js` with one black-box HTTP test per acceptance criterion, named `US-n / ticket-ACn: ...` so each test's identity encodes which requirement it proves.\n- Cross-linked `spec.md` (each user story → ticket + test name) and both ticket files (each checkbox → spec ID + test name), and checked off the now-verified acceptance criteria.\n\nNot committed — let me know if you'd like these staged/committed."
+              }
+            ]
+          },
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 21,
+            "costUsd": 0.3512982,
+            "judgeCostUsd": 0.0015539999999999998,
+            "durationSeconds": 120,
+            "startedAt": "2026-09-25T00:27:48.489Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-ZUtdrV/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "All three tests pass. Summary of what's in place:\n\n- **`src/server.js`** — minimal `POST /checkout` HTTP server (no external deps) implementing coupon lookup, case-insensitive matching, and expiry rejection.\n- **`test/checkout.test.js`** — three tests using Node's built-in test runner, hitting `POST /checkout` only (per spec's testing decision). Each test name is copied verbatim from a ticket's acceptance criteria.\n- **`spec.md`** — user stories tagged with IDs (US-1/2/3) and a new Traceability table linking each story → ticket → exact test name.\n- **`.scratch/coupons/issues/01-apply-coupon.md` and `02-expired-coupon.md`** — checkboxes marked done, with a new \"Tests\" section pointing back to the specific test.\n\nNot committed — let me know if you'd like me to commit these changes."
+              }
+            ]
+          },
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 11,
+            "costUsd": 0.14590260000000002,
+            "judgeCostUsd": 0.0018429999999999992,
+            "durationSeconds": 60,
+            "startedAt": "2026-09-25T00:29:48.773Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-ymbN49/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "annotated",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "This repo currently has no application code at all — just `spec.md` and the two ticket files. Before I build anything, two quick questions so I don't guess wrong in a greenfield repo:\n\n1. **Stack**: what language/framework should the `POST /checkout` endpoint and its tests use (e.g., Node/Express + Jest, Python/Flask + pytest, something else)?\n2. **Scope**: since neither ticket is implemented yet, do you want me to (a) implement the coupon logic now and write passing tests against it, or (b) just scaffold the tests/traceability matrix (tests can fail/pending until the tickets are actually built)?"
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1,
+        "scoreWithout": 0,
+        "passRateWithout": 0,
+        "delta": 1
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 1,
+    "overallScore": 1,
+    "overallPassRate": 1,
+    "meanDelta": 1
+  }
+}

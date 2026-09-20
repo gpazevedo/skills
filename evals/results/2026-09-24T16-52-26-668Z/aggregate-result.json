@@ -1,0 +1,617 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-24T16:52:26.668Z",
+  "durationSeconds": 377,
+  "costUsd": 1.5053010000000002,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "with-without",
+    "caseFilter": "judgement-pass-*",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "judgement-pass-flags-weak-test",
+      "dir": "evals/judgement-pass-flags-weak-test",
+      "source": "mixed",
+      "promptMarkdown": "The tests in this repo are tagged with requirement IDs from `spec.md`. Which tests need attention before review?",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 25,
+      "graders": [
+        {
+          "name": "leaves-the-sound-test-alone",
+          "type": "llm",
+          "weight": 1,
+          "graderMarkdown": "Judge one thing only: whether the reply leaves `CPN-2` off its list of tests that need attention.\n\nIt passes unless the reply says the `CPN-2` test needs fixing, is weak, or must be re-read. Saying `CPN-2` is fine, sound, or judged ok passes. Everything else in the reply is out of scope for this grader.",
+          "config": {
+            "criteria": "Judge one thing only: whether the reply leaves `CPN-2` off its list of tests that need attention.\n\nIt passes unless the reply says the `CPN-2` test needs fixing, is weak, or must be re-read. Saying `CPN-2` is fine, sound, or judged ok passes. Everything else in the reply is out of scope for this grader.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "names-the-weak-tests",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "The reply lists which tagged tests need attention before review.\n\nIt passes only if both of these hold:\n\n- `CPN-1` is named as needing attention, because its test checks the rejection but not the reason.\n- `CPN-3` is named as needing attention, because its test has no assertion.",
+          "config": {
+            "criteria": "The reply lists which tagged tests need attention before review.\n\nIt passes only if both of these hold:\n\n- `CPN-1` is named as needing attention, because its test checks the rejection but not the reason.\n- `CPN-3` is named as needing attention, because its test has no assertion.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "pass-ran",
+          "type": "tool_used",
+          "weight": 2,
+          "config": {
+            "tool": "Bash",
+            "input_match": "judge.mjs"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 0.2,
+            "passed": false,
+            "turns": 12,
+            "costUsd": 0.1618798,
+            "judgeCostUsd": 0.002766,
+            "durationSeconds": 41,
+            "startedAt": "2026-09-24T16:52:26.789Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-7mKYUm/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-sound-test-alone",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "The requirement-ID coverage check (`spec.md` uses key `CPN`) passes on presence: all three IDs — CPN-1, CPN-2, CPN-3 — have a matching tagged test in `tests/checkout.test.ts`, no untested/undefined/unlabeled gaps.\n\nThe Judgement pass (which checks whether tagged tests actually assert what they claim) is skipped — `TYPESAFE_API_KEY` isn't set. But reading the file directly turns up one real problem:\n\n**`CPN-3: rejects an over-limit coupon` (tests/checkout.test.ts:11-13) has no assertion.**\n```ts\nit('CPN-3: rejects an over-limit coupon', () => {\n  applyCoupon(cart, usedUpCoupon);\n});\n```\nIt calls `applyCoupon` but never checks the result — it'll pass even if the coupon is wrongly accepted. Needs an `expect(res.ok).toBe(false)` (or similar) before review, otherwise CPN-3 is untested in practice despite passing the presence check.\n\nCPN-1 and CPN-2 both assert correctly and look fine."
+              },
+              {
+                "name": "names-the-weak-tests",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "The requirement-ID coverage check (`spec.md` uses key `CPN`) passes on presence: all three IDs — CPN-1, CPN-2, CPN-3 — have a matching tagged test in `tests/checkout.test.ts`, no untested/undefined/unlabeled gaps.\n\nThe Judgement pass (which checks whether tagged tests actually assert what they claim) is skipped — `TYPESAFE_API_KEY` isn't set. But reading the file directly turns up one real problem:\n\n**`CPN-3: rejects an over-limit coupon` (tests/checkout.test.ts:11-13) has no assertion.**\n```ts\nit('CPN-3: rejects an over-limit coupon', () => {\n  applyCoupon(cart, usedUpCoupon);\n});\n```\nIt calls `applyCoupon` but never checks the result — it'll pass even if the coupon is wrongly accepted. Needs an `expect(res.ok).toBe(false)` (or similar) before review, otherwise CPN-3 is untested in practice despite passing the presence check.\n\nCPN-1 and CPN-2 both assert correctly and look fine."
+              },
+              {
+                "name": "pass-ran",
+                "passed": false,
+                "weight": 2,
+                "explanation": "Bash called 0x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 0.6,
+            "passed": false,
+            "turns": 11,
+            "costUsd": 0.17739339999999998,
+            "judgeCostUsd": 0.0026579999999999985,
+            "durationSeconds": 49,
+            "startedAt": "2026-09-24T16:53:07.303Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-21nky2/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-sound-test-alone",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Coverage presence check is clean — all three requirements (CPN-1, CPN-2, CPN-3) have tagged tests in `tests/checkout.test.ts`, no untested/undefined/unlabeled tests. Judgement pass skipped (no `TYPESAFE_API_KEY` set).\n\nI read the tagged tests directly, though, and one needs attention before review:\n\n- **`CPN-3: rejects an over-limit coupon`** (tests/checkout.test.ts:11-13) — calls `applyCoupon(cart, usedUpCoupon)` but has **no assertion**. It will pass regardless of whether the coupon is actually rejected, so it doesn't verify the requirement despite being correctly tagged.\n\nThe other two are fine:\n- `CPN-1` asserts `res.ok === false` on an expired coupon.\n- `CPN-2` asserts `coupon.active === false` after deactivation.\n\nFix CPN-3 by adding an assertion (e.g. `expect(res.ok).toBe(false)`, mirroring CPN-1) before review."
+              },
+              {
+                "name": "names-the-weak-tests",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "Coverage presence check is clean — all three requirements (CPN-1, CPN-2, CPN-3) have tagged tests in `tests/checkout.test.ts`, no untested/undefined/unlabeled tests. Judgement pass skipped (no `TYPESAFE_API_KEY` set).\n\nI read the tagged tests directly, though, and one needs attention before review:\n\n- **`CPN-3: rejects an over-limit coupon`** (tests/checkout.test.ts:11-13) — calls `applyCoupon(cart, usedUpCoupon)` but has **no assertion**. It will pass regardless of whether the coupon is actually rejected, so it doesn't verify the requirement despite being correctly tagged.\n\nThe other two are fine:\n- `CPN-1` asserts `res.ok === false` on an expired coupon.\n- `CPN-2` asserts `coupon.active === false` after deactivation.\n\nFix CPN-3 by adding an assertion (e.g. `expect(res.ok).toBe(false)`, mirroring CPN-1) before review."
+              },
+              {
+                "name": "pass-ran",
+                "passed": true,
+                "weight": 2,
+                "explanation": "Bash called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 10,
+            "costUsd": 0.15931620000000002,
+            "judgeCostUsd": 0.0032960000000000003,
+            "durationSeconds": 37,
+            "startedAt": "2026-09-24T16:53:56.354Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-sAeDeA/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-sound-test-alone",
+                "passed": false,
+                "weight": 1,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "Judgement pass skipped (`TYPESAFE_API_KEY` not set).\n\n**Presence check: all clear.** All three requirements (CPN-1, CPN-2, CPN-3) are tagged in `tests/checkout.test.ts`, nothing untested, no stray/undefined IDs, no untagged tests.\n\nBut reading the file by eye, one test needs attention before review:\n\n- **`CPN-3: rejects an over-limit coupon`** (tests/checkout.test.ts:11-13) — calls `applyCoupon(cart, usedUpCoupon)` but has no `expect(...)`. It asserts nothing, so it would pass no matter what the function returns. This is exactly the \"no assertion in the excerpt\" case the Judgement pass would flag as `uncertain` — worth fixing before relying on it as coverage for CPN-3.\n\nSecondary, lower-confidence concern: **`CPN-2: deactivates a coupon`** tests a bare `deactivate(coupon)` call, while the spec's seam table lists CPN-2 against `POST /admin/coupons`. Worth a quick look to confirm that's an intentional unit-level substitute for the HTTP seam rather than a mismatch — that's a judgement call `code-review`'s Spec sub-agent could confirm."
+              },
+              {
+                "name": "names-the-weak-tests",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "Judgement pass skipped (`TYPESAFE_API_KEY` not set).\n\n**Presence check: all clear.** All three requirements (CPN-1, CPN-2, CPN-3) are tagged in `tests/checkout.test.ts`, nothing untested, no stray/undefined IDs, no untagged tests.\n\nBut reading the file by eye, one test needs attention before review:\n\n- **`CPN-3: rejects an over-limit coupon`** (tests/checkout.test.ts:11-13) — calls `applyCoupon(cart, usedUpCoupon)` but has no `expect(...)`. It asserts nothing, so it would pass no matter what the function returns. This is exactly the \"no assertion in the excerpt\" case the Judgement pass would flag as `uncertain` — worth fixing before relying on it as coverage for CPN-3.\n\nSecondary, lower-confidence concern: **`CPN-2: deactivates a coupon`** tests a bare `deactivate(coupon)` call, while the spec's seam table lists CPN-2 against `POST /admin/coupons`. Worth a quick look to confirm that's an intentional unit-level substitute for the HTTP seam rather than a mismatch — that's a judgement call `code-review`'s Spec sub-agent could confirm."
+              },
+              {
+                "name": "pass-ran",
+                "passed": false,
+                "weight": 2,
+                "explanation": "Bash called 0x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 0.6,
+            "passed": false,
+            "turns": 5,
+            "costUsd": 0.0983516,
+            "judgeCostUsd": 0.0026459999999999973,
+            "durationSeconds": 25,
+            "startedAt": "2026-09-24T16:54:32.988Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-kaleRE/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-sound-test-alone",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Two of the three tagged tests need attention before review:\n\n**CPN-3 (`rejects an over-limit coupon`) — no assertion at all.** It calls `applyCoupon(cart, usedUpCoupon)` but never checks the result. The test will pass regardless of whether the coupon is actually rejected, so it doesn't verify the requirement.\n\n**CPN-1 (`rejects an expired coupon`) — incomplete coverage.** The story is \"rejected with a reason, so that I know why it failed,\" but the test only asserts `res.ok === false`. It never checks that a reason/message is present, so the \"why it failed\" half of the requirement is untested.\n\n**CPN-2 (`deactivates a coupon`)** looks fine — it asserts `coupon.active === false`, matching the requirement. One minor flag: spec.md's seam table scopes CPN-2 to `POST /admin/coupons`, but the test calls `deactivate(coupon)` directly rather than going through that endpoint — worth confirming that's an intentional unit-level test rather than a missed integration point."
+              },
+              {
+                "name": "names-the-weak-tests",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Two of the three tagged tests need attention before review:\n\n**CPN-3 (`rejects an over-limit coupon`) — no assertion at all.** It calls `applyCoupon(cart, usedUpCoupon)` but never checks the result. The test will pass regardless of whether the coupon is actually rejected, so it doesn't verify the requirement.\n\n**CPN-1 (`rejects an expired coupon`) — incomplete coverage.** The story is \"rejected with a reason, so that I know why it failed,\" but the test only asserts `res.ok === false`. It never checks that a reason/message is present, so the \"why it failed\" half of the requirement is untested.\n\n**CPN-2 (`deactivates a coupon`)** looks fine — it asserts `coupon.active === false`, matching the requirement. One minor flag: spec.md's seam table scopes CPN-2 to `POST /admin/coupons`, but the test calls `deactivate(coupon)` directly rather than going through that endpoint — worth confirming that's an intentional unit-level test rather than a missed integration point."
+              },
+              {
+                "name": "pass-ran",
+                "passed": false,
+                "weight": 2,
+                "explanation": "Bash called 0x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 0,
+            "passed": false,
+            "turns": 5,
+            "costUsd": 0.08973680000000002,
+            "judgeCostUsd": 0.0030060000000000035,
+            "durationSeconds": 24,
+            "startedAt": "2026-09-24T16:54:58.424Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-ncbq1m/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-sound-test-alone",
+                "passed": false,
+                "weight": 1,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "Found several issues worth flagging before review:\n\n1. **CPN-2 test is in the wrong seam** — spec.md maps CPN-2 to `POST /admin/coupons`, but the test lives in `checkout.test.ts` and calls `deactivate(coupon)` directly rather than testing the admin endpoint. It also asserts a plain object property, not an actual API response — this test doesn't cover the requirement as specified.\n\n2. **CPN-3 test has no assertion** — `it('CPN-3: rejects an over-limit coupon', ...)` calls `applyCoupon(cart, usedUpCoupon)` but never checks the result (no `expect(...)`). This test will pass even if the coupon is wrongly accepted, so it doesn't actually verify the requirement.\n\n3. **No `POST /admin/coupons` test file exists at all** — the seam is defined in spec.md but there's no corresponding test suite; CPN-2 is only (incorrectly) tested from the checkout seam.\n\nOnly CPN-1 is genuinely covered as specified. Before review, I'd fix the missing assertion in the CPN-3 test and either add a real `POST /admin/coupons` test for CPN-2 or confirm with the author whether `deactivate()` is meant to stand in for that endpoint."
+              },
+              {
+                "name": "names-the-weak-tests",
+                "passed": false,
+                "weight": 2,
+                "explanation": "judge votes: FAIL FAIL FAIL",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  false,
+                  false,
+                  false
+                ],
+                "evidence": "Found several issues worth flagging before review:\n\n1. **CPN-2 test is in the wrong seam** — spec.md maps CPN-2 to `POST /admin/coupons`, but the test lives in `checkout.test.ts` and calls `deactivate(coupon)` directly rather than testing the admin endpoint. It also asserts a plain object property, not an actual API response — this test doesn't cover the requirement as specified.\n\n2. **CPN-3 test has no assertion** — `it('CPN-3: rejects an over-limit coupon', ...)` calls `applyCoupon(cart, usedUpCoupon)` but never checks the result (no `expect(...)`). This test will pass even if the coupon is wrongly accepted, so it doesn't actually verify the requirement.\n\n3. **No `POST /admin/coupons` test file exists at all** — the seam is defined in spec.md but there's no corresponding test suite; CPN-2 is only (incorrectly) tested from the checkout seam.\n\nOnly CPN-1 is genuinely covered as specified. Before review, I'd fix the missing assertion in the CPN-3 test and either add a real `POST /admin/coupons` test for CPN-2 or confirm with the author whether `deactivate()` is meant to stand in for that endpoint."
+              },
+              {
+                "name": "pass-ran",
+                "passed": false,
+                "weight": 2,
+                "explanation": "Bash called 0x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 0.6,
+            "passed": false,
+            "turns": 6,
+            "costUsd": 0.09516619999999999,
+            "judgeCostUsd": 0.0028440000000000028,
+            "durationSeconds": 24,
+            "startedAt": "2026-09-24T16:55:22.748Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-wiKZCO/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "leaves-the-sound-test-alone",
+                "passed": true,
+                "weight": 1,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Checked `spec.md` against `tests/checkout.test.ts` (the only test file). Three issues, in order of severity:\n\n1. **CPN-3** (`tests/checkout.test.ts:11-13`) — no assertion at all. It calls `applyCoupon(cart, usedUpCoupon)` but never checks the result, so it can't actually fail. This test needs an `expect(...)` before it verifies anything.\n\n2. **CPN-1** (`tests/checkout.test.ts:1-4`) — only asserts `res.ok === false`. The user story explicitly requires the shopper receive *a reason* (\"rejected with a reason, so that I know why it failed\"), but the test never checks for a reason/message field. Incomplete coverage of the requirement.\n\n3. **CPN-2** (`tests/checkout.test.ts:6-9`) — per the spec's Testing Decisions table, CPN-2 belongs to the `POST /admin/coupons` seam, but this test lives in `checkout.test.ts` and calls `deactivate(coupon)` directly rather than exercising that endpoint. Either it's misplaced/mis-tagged, or it's not testing the seam the spec assigned it to."
+              },
+              {
+                "name": "names-the-weak-tests",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "Checked `spec.md` against `tests/checkout.test.ts` (the only test file). Three issues, in order of severity:\n\n1. **CPN-3** (`tests/checkout.test.ts:11-13`) — no assertion at all. It calls `applyCoupon(cart, usedUpCoupon)` but never checks the result, so it can't actually fail. This test needs an `expect(...)` before it verifies anything.\n\n2. **CPN-1** (`tests/checkout.test.ts:1-4`) — only asserts `res.ok === false`. The user story explicitly requires the shopper receive *a reason* (\"rejected with a reason, so that I know why it failed\"), but the test never checks for a reason/message field. Incomplete coverage of the requirement.\n\n3. **CPN-2** (`tests/checkout.test.ts:6-9`) — per the spec's Testing Decisions table, CPN-2 belongs to the `POST /admin/coupons` seam, but this test lives in `checkout.test.ts` and calls `deactivate(coupon)` directly rather than exercising that endpoint. Either it's misplaced/mis-tagged, or it's not testing the seam the spec assigned it to."
+              },
+              {
+                "name": "pass-ran",
+                "passed": false,
+                "weight": 2,
+                "explanation": "Bash called 0x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 0.26666666666666666,
+        "passRate": 0,
+        "scoreWithout": 0.39999999999999997,
+        "passRateWithout": 0,
+        "delta": -0.1333333333333333
+      }
+    },
+    {
+      "name": "judgement-pass-needs-opt-in",
+      "dir": "evals/judgement-pass-needs-opt-in",
+      "source": "mixed",
+      "promptMarkdown": "The tests in this repo are tagged with requirement IDs from `spec.md`. Which tests need attention before review?",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 25,
+      "graders": [
+        {
+          "name": "no-model-verdicts",
+          "type": "regex",
+          "weight": 2,
+          "config": {
+            "target": "last_message",
+            "pattern": "\\b0\\.[0-9]{2}\\b",
+            "flags": "",
+            "match": "not_contains"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 9,
+            "costUsd": 0.1559184,
+            "judgeCostUsd": 0,
+            "durationSeconds": 37,
+            "startedAt": "2026-09-24T16:55:46.776Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-PCsQub/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "no-model-verdicts",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 8,
+            "costUsd": 0.14255980000000001,
+            "judgeCostUsd": 0,
+            "durationSeconds": 31,
+            "startedAt": "2026-09-24T16:56:24.194Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-sBdpyh/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "no-model-verdicts",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 10,
+            "costUsd": 0.1722214,
+            "judgeCostUsd": 0,
+            "durationSeconds": 57,
+            "startedAt": "2026-09-24T16:56:55.203Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-qI2m1c/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "no-model-verdicts",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 7,
+            "costUsd": 0.0907074,
+            "judgeCostUsd": 0,
+            "durationSeconds": 18,
+            "startedAt": "2026-09-24T16:57:52.101Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-JgsWnC/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "no-model-verdicts",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 6,
+            "costUsd": 0.0835312,
+            "judgeCostUsd": 0,
+            "durationSeconds": 16,
+            "startedAt": "2026-09-24T16:58:10.464Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-IIZizZ/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "no-model-verdicts",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 4,
+            "costUsd": 0.0785188,
+            "judgeCostUsd": 0,
+            "durationSeconds": 17,
+            "startedAt": "2026-09-24T16:58:26.213Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-zm6f09/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "no-model-verdicts",
+                "passed": true,
+                "weight": 2,
+                "explanation": "pattern absent as expected",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1,
+        "scoreWithout": 1,
+        "passRateWithout": 1,
+        "delta": 0
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 2,
+    "casesPassed": 1,
+    "overallScore": 0.6333333333333333,
+    "overallPassRate": 0.5,
+    "meanDelta": -0.06666666666666665
+  }
+}

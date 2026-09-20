@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-24T14:52:19.994Z",
+  "durationSeconds": 35,
+  "costUsd": 0.2742574,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "with-without",
+    "caseFilter": "spec-with-ids-gap-check",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "spec-with-ids-gap-check",
+      "dir": "evals/spec-with-ids-gap-check",
+      "source": "mixed",
+      "promptMarkdown": "Which requirements in `spec.md` have no test yet?",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 20,
+      "graders": [
+        {
+          "name": "names-the-untested-id",
+          "type": "regex",
+          "weight": 1,
+          "config": {
+            "target": "last_message",
+            "pattern": "CPN-1\\b",
+            "flags": "",
+            "match": "contains"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        },
+        {
+          "name": "switched-off-test-is-not-coverage",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "The reply reports that `CPN-1` has no test.\n\nIt passes only if all of these hold:\n\n- `CPN-1` is named as untested, missing a test, or uncovered.\n- The commented-out `it('CPN-1: ...')` line is not treated as a test. A reply that calls `CPN-1` covered, tested, or done fails, even if it mentions the comment.\n- `CPN-2` and `CPN-3` are not reported as untested.\n- `CPN-4` is either left out of the untested list or described as waived. Listing `CPN-4` as a plain gap, with no mention that the spec waives it, fails.",
+          "config": {
+            "criteria": "The reply reports that `CPN-1` has no test.\n\nIt passes only if all of these hold:\n\n- `CPN-1` is named as untested, missing a test, or uncovered.\n- The commented-out `it('CPN-1: ...')` line is not treated as a test. A reply that calls `CPN-1` covered, tested, or done fails, even if it mentions the comment.\n- `CPN-2` and `CPN-3` are not reported as untested.\n- `CPN-4` is either left out of the untested list or described as waived. Listing `CPN-4` as a plain gap, with no mention that the spec waives it, fails.",
+            "focus": "last_message"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 7,
+            "costUsd": 0.17906479999999997,
+            "judgeCostUsd": 0.0011220000000000002,
+            "durationSeconds": 19,
+            "startedAt": "2026-09-24T14:52:20.013Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-WZPQgk/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": true,
+                "scored": false
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "**CPN-1** (\"apply a coupon at checkout\") has no test — it's not in the seam table, and the only matching test in `tests/checkout.test.ts` is commented out (line 3), so it doesn't count as coverage.\n\nThe other requirements are accounted for:\n- CPN-2 and CPN-3 are tagged and tested.\n- CPN-4 is explicitly waived (needs a real payment provider)."
+              }
+            ]
+          }
+        ],
+        "without": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 6,
+            "costUsd": 0.0951926,
+            "judgeCostUsd": 0.0011549999999999998,
+            "durationSeconds": 16,
+            "startedAt": "2026-09-24T14:52:39.240Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-sHcVeC/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "names-the-untested-id",
+                "passed": true,
+                "weight": 1,
+                "explanation": "matched CPN-1\\b",
+                "withOnly": false,
+                "scored": true
+              },
+              {
+                "name": "switched-off-test-is-not-coverage",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "`CPN-1` (apply a coupon at checkout) has no test. It's missing from the Testing Decisions table in `spec.md`, and the corresponding test in `tests/checkout.test.ts:3` is commented out, so it doesn't actually run.\n\nFor reference: `CPN-2` and `CPN-3` have real tests, and `CPN-4` is deliberately waived (documented reason: needs a real payment provider) — that's an intentional exception, not a gap."
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1,
+        "scoreWithout": 1,
+        "passRateWithout": 1,
+        "delta": 0
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 1,
+    "overallScore": 1,
+    "overallPassRate": 1,
+    "meanDelta": 0
+  }
+}

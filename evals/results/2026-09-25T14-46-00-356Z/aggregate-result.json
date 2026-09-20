@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.270",
+  "startedAt": "2026-09-25T14:46:00.356Z",
+  "durationSeconds": 100,
+  "costUsd": 0.5308074,
+  "partial": false,
+  "suite": {
+    "root": "/home/gpazevedo/ai-native/skills",
+    "ablation": "none",
+    "caseFilter": "prefix-collision-not-coverage",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "mattpocock-skills",
+        "version": "1.2.3",
+        "path": "/home/gpazevedo/ai-native/skills"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "name": "prefix-collision-not-coverage",
+      "dir": "evals/prefix-collision-not-coverage",
+      "source": "mixed",
+      "promptMarkdown": "Is every requirement in `spec.md` covered by a test? I need to be sure before I ship.",
+      "runsPerCase": 3,
+      "timeoutSeconds": 300,
+      "maxTurns": 20,
+      "graders": [
+        {
+          "name": "catches-cpn-1",
+          "type": "llm",
+          "weight": 2,
+          "graderMarkdown": "Exactly one requirement, `CPN-1`, has no test. Every other ID from `CPN-2` to `CPN-12` is tagged on a test.\n\nIt passes only if both hold:\n\n- The reply names `CPN-1` as a requirement with no test of its own.\n- The reply does not answer that every requirement is covered, and does not claim some other ID is the untested one.\n\nJudge only the coverage question. Remarks about how good the existing tests are, or about anything else in the repo, neither pass nor fail the reply.",
+          "config": {
+            "criteria": "Exactly one requirement, `CPN-1`, has no test. Every other ID from `CPN-2` to `CPN-12` is tagged on a test.\n\nIt passes only if both hold:\n\n- The reply names `CPN-1` as a requirement with no test of its own.\n- The reply does not answer that every requirement is covered, and does not claim some other ID is the untested one.\n\nJudge only the coverage question. Remarks about how good the existing tests are, or about anything else in the repo, neither pass nor fail the reply.",
+            "focus": "last_message"
+          }
+        },
+        {
+          "name": "skill-fired",
+          "type": "tool_used",
+          "weight": 1,
+          "config": {
+            "tool": "Skill",
+            "input_match": "requirement-traceability"
+          }
+        }
+      ],
+      "arms": {
+        "with": [
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 15,
+            "costUsd": 0.17801000000000003,
+            "judgeCostUsd": 0.0011489999999999998,
+            "durationSeconds": 29,
+            "startedAt": "2026-09-25T14:46:00.373Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-hTw5gh/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No — **CPN-1 is untested**, and it's not a minor one: \"As a shopper, I want to apply a coupon at checkout\" is the core apply-coupon flow.\n\nCPN-2 through CPN-12 all have a tagged test (`coupon.test.ts` covers CPN-2–6, `checkout.test.ts` covers CPN-7–12), none skipped. Only CPN-1 has no matching `CPN-1:` test anywhere in the repo.\n\nAdd a test for CPN-1 (basic successful coupon application at checkout) before shipping — that's the one gap standing between you and full coverage."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 12,
+            "costUsd": 0.1660252,
+            "judgeCostUsd": 0.0013680000000000003,
+            "durationSeconds": 40,
+            "startedAt": "2026-09-25T14:46:29.201Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-fGMyxN/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "I checked every `CPN-*` ID from `spec.md` against the test tags in `tests/coupon.test.ts` and `tests/checkout.test.ts` (11 tests total, `Covers`/tag format `CPN-n: ...` in each `it(...)` name).\n\n**Not covered:**\n- **CPN-1** — \"As a shopper, I want to apply a coupon at checkout, so that I pay less.\" No test tagged `CPN-1:` in either file.\n\n**Covered (11/12):** CPN-2 through CPN-12 each have a tagged test matching them exactly at the colon (so CPN-1 isn't accidentally \"covered\" by CPN-10/11/12 matching as a prefix).\n\nBefore you ship, add a test tagged `CPN-1:` that exercises actually applying a coupon at checkout and confirming the price reduction — right now nothing asserts that core happy-path behavior."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          },
+          {
+            "score": 1,
+            "passed": true,
+            "turns": 16,
+            "costUsd": 0.18677220000000003,
+            "judgeCostUsd": 0.0014520000000000002,
+            "durationSeconds": 32,
+            "startedAt": "2026-09-25T14:47:08.789Z",
+            "error": null,
+            "tracePath": "/tmp/claude-eval-Zv80OT/out/trace.jsonl",
+            "skippedPaidGraders": false,
+            "graders": [
+              {
+                "name": "catches-cpn-1",
+                "passed": true,
+                "weight": 2,
+                "explanation": "judge votes: PASS PASS PASS",
+                "withOnly": false,
+                "scored": true,
+                "judgeVotes": [
+                  true,
+                  true,
+                  true
+                ],
+                "evidence": "No — one gap. **CPN-1** (\"apply a coupon at checkout\") has no tagged test and isn't waived anywhere in the spec. Every other requirement, CPN-2 through CPN-12, has a matching test in `tests/coupon.test.ts` or `tests/checkout.test.ts`.\n\nI couldn't run the skill's `check.mjs` script to confirm this automatically — Bash is failing in this sandbox on every command (even `echo test`), hitting a `bwrap: loopback: Failed RTM_NEWADDR` sandbox error unrelated to the command itself. I did the same check manually via Grep/Read instead, so the result should be reliable, but you may want to re-run `node <skill-dir>/check.mjs spec.md` yourself once Bash is working to double-confirm before shipping.\n\nDon't ship until CPN-1 has a test — the core \"apply a coupon\" happy path is exactly the kind of gap that's easy to miss when all the edge cases (expired, case-insensitive, one-per-order, etc.) are covered."
+              },
+              {
+                "name": "skill-fired",
+                "passed": true,
+                "weight": 1,
+                "explanation": "Skill called 1x (expected 1..∞)",
+                "withOnly": false,
+                "scored": true
+              }
+            ]
+          }
+        ]
+      },
+      "aggregates": {
+        "score": 1,
+        "passRate": 1
+      }
+    }
+  ],
+  "aggregates": {
+    "casesTotal": 1,
+    "casesPassed": 1,
+    "overallScore": 1,
+    "overallPassRate": 1
+  }
+}
