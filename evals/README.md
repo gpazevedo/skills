@@ -17,6 +17,7 @@ claude plugin eval . --scaffold --allow-tools Bash --trust-plugin
 | `spec-with-ids-gap-check` | A spec carrying IDs fires `requirement-traceability`, and a commented-out `it('CPN-1: ...')` is not counted as coverage. The regression guard for the fix in `SKILL.md`. |
 | `prefix-collision-not-coverage` | Twelve requirements where only `CPN-1` is untested and its ID is a prefix of `CPN-10`, `CPN-11` and `CPN-12`. The claim the whole convention is built on. |
 | `spec-without-ids-untouched` | A spec with no IDs is left alone: no IDs invented, no `Covers:` line, the question actually answered. The opt-in promise, stated as a negative. |
+| `judgement-pass-off-without-key` | A repo with weak tests and no key: the Judgement pass stays off and no model verdicts or confidences reach the reply. |
 
 ## What the ablation says, and what it does not
 
@@ -27,12 +28,19 @@ Recorded 2026-09-24, two runs per arm for the fixture cases and three for the ne
 | `spec-with-ids-gap-check` | 1.00 | 1.00 | 0.00 |
 | `prefix-collision-not-coverage` | 1.00 | 1.00 | 0.00 |
 | `spec-without-ids-untouched` | 1.00 | 1.00 | 0.00 |
+| `judgement-pass-off-without-key` | 1.00 | 1.00 | 0.00 |
 
 Every case passes with the plugin. **All three also pass without it.** That is worth stating plainly: on fixtures this size, a current model answers "which requirement has no test" correctly on its own, and these cases do not show the skill adding accuracy.
 
 They are still worth running. They pin behaviour against a model or skill change that breaks it, they prove the skill fires when a spec carries IDs and stays quiet when it does not, and the negative case guards the property the design leans on hardest, that a spec without IDs is untouched.
 
 What they do not measure is where the convention actually earns its keep: IDs written into the spec and the tickets before any code exists, a check that returns the same answer whatever the model's attention is doing that day, and specs far larger than twelve stories. Sizing a case to show that is open work.
+
+## What these cannot cover: the Judgement pass itself
+
+The eval sandbox carries no `TYPESAFE_API_KEY` and the harness has no way to pass one in, so the pass cannot run inside a case. A case written for the opt-in path (a repo with a `Judgement: jev` line, one partial test and one assertion-free test) failed for that reason alone: the agent reported "Judgement pass skipped (`TYPESAFE_API_KEY` not set)". It was removed rather than kept as a permanent red. For the same reason `judgement-pass-off-without-key` covers the no-key path; the missing `Judgement: jev` line is covered by running `judge.mjs` directly.
+
+The pass is checked outside the harness instead: `judge.mjs` was run against a fixture repo built from twelve hand-made cases (partial, no assertion, assertion in a helper, prefix collision, dropped and waived stories), and against the no-key, no-opt-in and bad-key paths. What no test covers end to end is the model following the skill through `/implement` or `/code-review` with the pass live.
 
 ## Two lessons about graders, both learned the hard way here
 
