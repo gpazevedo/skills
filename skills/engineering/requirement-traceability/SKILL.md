@@ -78,15 +78,26 @@ git ls-files --cached --others --exclude-standard | grep -E '(^|/)(tests?|__test
 grep -v '(dropped)' "$SPEC" | sed -nE 's/^[[:space:]]*[0-9]+\.[[:space:]]+([A-Z]{2,5}-[0-9]+:).*/\1/p' | sort -u > $T/defined
 awk -F'|' '/^\|[[:space:]]*waived/ {print $3}' "$SPEC" | grep -oE '[A-Z]{2,5}-[0-9]+' | sed 's/$/:/' | sort -u > $T/waived
 
-# IDs tagged in tests: a quoted name that starts with an ID and a colon
-xargs -r -d '\n' grep -ohE "[\"'\`][A-Z]{2,5}-[0-9]+:" < $T/tests | tr -d "\"'\`" | sort -u > $T/tagged
+# IDs tagged in tests: a quoted name that starts with an ID and a colon.
+# A commented-out or skipped test is not coverage, so drop those lines first.
+xargs -r -d '\n' grep -hE "[\"'\`][A-Z]{2,5}-[0-9]+:" < $T/tests \
+  | grep -vE "^[[:space:]]*(//|/\*|\*|#)" \
+  | grep -vE "(^|[^[:alnum:]_])(xit|xtest)\(|\.(skip|todo|failing)\(" \
+  | grep -ohE "[\"'\`][A-Z]{2,5}-[0-9]+:" | tr -d "\"'\`" | sort -u > $T/tagged
 
 echo "UNTESTED (fails):";      comm -23 $T/defined $T/tagged | comm -23 - $T/waived
 echo "UNDEFINED ID (warns):";  comm -13 $T/defined $T/tagged
 echo "NO ID (warns):";         xargs -r -d '\n' grep -nE "\b(it|test)\(\s*[\"'\`]" < $T/tests | grep -vE "[\"'\`][A-Z]{2,5}-[0-9]+:"
 ```
 
-Adapt the last line's declaration pattern to the repo's runner (`def test_` for pytest, `func Test` for Go); the rest is unchanged. `comm` compares whole lines, colon included, which is what keeps `CPN-1:` and `CPN-10:` apart.
+`comm` compares whole lines, colon included, which is what keeps `CPN-1:` and `CPN-10:` apart.
+
+Adapt the last line's declaration pattern to the repo's runner. Where the ID sits in the test name, swapping the pattern is the whole change (`func Test` for Go). Where it sits in a docstring, the tag is on the line **after** the declaration, so a line-by-line filter reports every correctly tagged test as missing one. Pair each declaration with the next line first (pytest):
+
+```bash
+echo "NO ID (warns):"; xargs -r -d '\n' grep -nE -A1 'def test_' < $T/tests \
+  | grep -v '^--$' | paste -d' ' - - | grep -vE "[\"'\`][A-Z]{2,5}-[0-9]+:"
+```
 
 Report three classes:
 
@@ -94,7 +105,9 @@ Report three classes:
 - **Undefined ID**: a tagged test whose ID the spec does not define (or has dropped). Warn: a typo or a stale test.
 - **No ID**: a test with no ID. Warn: possible scope creep, or a test worth tying to a requirement.
 
-For one issue's check, replace `defined` with the IDs on that issue's `Covers:` line and report only untested:
+The check reads text, so it errs in both directions, unevenly. A commented-out or skipped test does not count as coverage, so its ID is reported untested: the safe direction. A string that merely starts with an ID and a colon does count, so keep IDs out of string literals that are not test names.
+
+For one issue's check, replace `defined` with the IDs on that issue's `Covers:` line, then re-run the `UNTESTED` line above unchanged. It still subtracts `waived`, which matters because every ID lands on some issue's `Covers:` line, waived ones included:
 
 ```bash
 grep -E '^Covers:' issue.md | grep -oE '[A-Z]{2,5}-[0-9]+' | sed 's/$/:/' | sort -u > $T/defined

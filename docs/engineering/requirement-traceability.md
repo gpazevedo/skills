@@ -46,6 +46,10 @@ If your repo has its own check command, name it in `docs/agents/traceability.md`
 
 No. The check confirms that each requirement has a test that names it; it cannot tell whether that test asserts the right thing. That judgement stays with [code-review](https://aihero.dev/skills-code-review), whose Spec [subagent](https://www.aihero.dev/ai-coding-dictionary/subagent) is handed the gap list and the tagged tests and flags assertions that do not check what the requirement says. No third review axis is added.
 
+**Does a commented-out or skipped test still count as coverage?**
+
+No. The check reads test files as text, so it deliberately ignores lines that are commented out and tests marked `it.skip`, `it.todo`, `xit` or `xtest`. A requirement whose only test is switched off is reported untested, which is the point: a skipped test is not a passing one. The reverse case is the known blind spot, and it is narrow: a string that *starts* with an ID and a colon counts even if it is not a test name, so keep IDs out of string literals that are not test names.
+
 **Does it catch a decision from a grilling session that never made it into the spec?**
 
 No. It starts at the spec, so a decision that never became a story has no ID and is invisible to the check. It closes the spec-to-test half of the gap reported in [issue #341](https://github.com/mattpocock/skills/issues/341) (resolved answers are not traceable through spec, issues and implementation). The answer-to-spec half is still open, and [issue #959](https://github.com/mattpocock/skills/issues/959) covers commitments lost when a spec is split into tickets. Until those close, re-reading the spec against your own answers is still your job.
@@ -60,6 +64,7 @@ No. A spec with no IDs is left alone: the chain runs exactly as it did, and no s
 - The seam table has no requirement missing from every row unless it is marked `waived` with a reason.
 - Test names begin with their ID, and a gap list names an intentionally untested ID before the code review runs.
 - Adding a test for `CPN-10` does not make `CPN-1` look covered.
+- Commenting a test out, or marking it `skip`, puts its requirement straight back on the untested list.
 - Each issue carries a `Covers:` line, and every ID appears on exactly one of them.
 - A spec with no IDs produces no gap list and no `Covers:` lines anywhere in the flow.
 
