@@ -23,7 +23,7 @@ A stable identifier for one requirement in a spec, written `<KEY>-<n>:` at the s
 _Avoid_: acceptance criterion ID, story number, requirement number
 
 **Judgement pass**:
-The optional first tier of judging whether a tagged test asserts what its requirement says: one Jev call per **Requirement ID**, sorted into ok, flag, uncertain or not judged. It runs only when a key is set and the repo's `docs/agents/traceability.md` has a `Judgement: jev` line; `code-review`'s Spec sub-agent then reads the flagged and uncertain tests.
+The optional first tier of judging whether a tagged test asserts what its requirement says: one Jev call per **Requirement ID**, sorted into ok, flag, uncertain or not judged. It runs only when a key is set and the repo's `docs/agents/traceability.md` has a `Judgement: jev` line. For a flagged requirement the agent adds the missing tests and re-runs, at most three rounds before asking the user.
 _Avoid_: LLM check, AI grading
 
 ## Relationships

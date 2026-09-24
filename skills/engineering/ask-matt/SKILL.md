@@ -31,7 +31,7 @@ The route most work travels. You have an idea and want it built.
 
 4. **`/retro`** closes the loop. After a build, and especially one that went sideways, it looks back over the session and suggests changes to the agent's **environment**, not the code: navigation pointers, automated checks, the coding standards `/code-review` enforces, steering files, tooling. Mechanical mistakes become deterministic checks; judgement calls become coding standards. The next build then starts from a better environment.
 
-   Optionally, ask `/to-spec` for traceable requirements. A spec that carries requirement IDs turns on traceability through `/tdd`, `/implement` and `/code-review`, so every requirement is checked against a test.
+   Optionally, run **`/requirement-traceability`** after `/to-tickets` (or after `/to-spec` for a one-session build). It adds requirement IDs to the spec and a `Covers:` line to each ticket, and a spec that carries IDs turns on traceability through `/tdd` and `/implement`, so every requirement is checked against its tests before review.
 
 ### Context hygiene
 
