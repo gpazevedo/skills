@@ -1,0 +1,7 @@
+UNTESTED (fails):
+CPN-1:
+CPN-5:
+UNDEFINED ID (warns):
+CPN-99:
+NO ID (warns):
+tests/checkout.test.ts:4:it('applies a discount', () => {});

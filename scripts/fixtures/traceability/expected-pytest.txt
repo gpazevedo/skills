@@ -1,0 +1,2 @@
+NO ID (warns):
+tests/test_refresh.py:6:def test_refresh_without_a_tag(): tests/test_refresh.py-7-    assert True
