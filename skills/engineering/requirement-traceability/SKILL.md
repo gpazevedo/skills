@@ -67,7 +67,7 @@ When the spec has IDs, each issue `to-tickets` produces carries a line `Covers: 
 
 ## Coverage gap check
 
-If `docs/agents/traceability.md` exists, run the command it names. Otherwise do it by hand. Save the spec text to a file first (for a tracker issue, `gh issue view N --json body -q .body > spec.md`), then:
+If `docs/agents/traceability.md` has a `Check command:` line, run that command. Otherwise do it by hand. Save the spec text to a file first (for a tracker issue, `gh issue view N --json body -q .body > spec.md`), then:
 
 ```bash
 SPEC=spec.md
@@ -113,15 +113,35 @@ For one issue's check, replace `defined` with the IDs on that issue's `Covers:` 
 grep -E '^Covers:' issue.md | grep -oE '[A-Z]{2,5}-[0-9]+' | sed 's/$/:/' | sort -u > $T/defined
 ```
 
-The script and the grep check presence only. Whether a tagged test asserts what its requirement says is judgement, and belongs to `code-review`'s Spec sub-agent.
+The check confirms presence only. Whether a tagged test asserts what its requirement says is judgement, in two tiers: the Judgement pass below reads every tagged test cheaply, and `code-review`'s Spec sub-agent reads the tests it flags or is unsure of (every tagged test when the pass is off).
 
-### `docs/agents/traceability.md`
+## `docs/agents/traceability.md`
 
-Optional, hand-written, absent by default: the grep above is the normal path. It names a repo's own check command in two lines:
+Optional, hand-written, absent by default: the grep above is the normal path. Each line is independently optional:
 
 ```
 Check command: `<command>`
 Spec input: `stdin` or `path`
+Judgement: jev
 ```
 
-The command exits 0 when every ID is covered and 1 when any is untested, and takes IDs as trailing arguments to narrow the check to them. When the user names such a command, offer to write the file.
+`Check command:` names the repo's own presence check. With no such line, the grep block stays the presence check. The command exits 0 when every ID is covered and 1 when any is untested, and takes IDs as trailing arguments to narrow the check to them. `Judgement: jev` opts the repo in to the Judgement pass. When the user names a check command, or mentions Jev, offer to write the matching line.
+
+## Judgement pass
+
+The first tier of judging whether a tagged test asserts what its requirement says. It sends spec lines and tagged test excerpts (at most 60 lines each) to `api.typesafe.ai`, so it runs only when `TYPESAFE_API_KEY` is set **and** `docs/agents/traceability.md` has a `Judgement: jev` line. If either is missing, say "Judgement pass skipped" in one line and stop; do not point the user at setup.
+
+Run [judge.mjs](judge.mjs) (Node, no packages) from the repo root, after the gap check. `-` reads the spec from stdin. Trailing IDs narrow the run: for one issue, take them from its `Covers:` line.
+
+```bash
+node <this skill's directory>/judge.mjs spec.md [ID...]
+```
+
+Exit 2 means it skipped, with the reason on stderr: report "skipped" and carry on. Otherwise it prints one row per ID, `ID | class | choice | confidence | test`, then the answering model and token use:
+
+- **ok**: high-confidence `asserts`. Do not re-read.
+- **flag**: high-confidence `partial` or `unrelated`. Fix the test, or let `code-review`'s Spec sub-agent confirm.
+- **uncertain**: low confidence, or no assertion call in the excerpt (an assertion inside a helper counts as none). Read the test yourself.
+- **not judged**: no tagged test. The gap check owns presence.
+
+The pass gates nothing: a flag or an uncertain row is a lead. Confidence moves about 0.03 between runs, so a row near 0.8 can switch between ok and uncertain.
