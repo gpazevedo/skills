@@ -22,12 +22,17 @@ A canonical state-machine label applied to an **Issue** during triage (e.g. `nee
 A stable identifier for one requirement in a spec, written `<KEY>-<n>:` at the start of a user story (`CPN-3:`) and repeated as a prefix on the tests that cover it. The trailing colon is part of the ID: it keeps `CPN-1` from matching `CPN-10`. A spec that carries them turns on `requirement-traceability`.
 _Avoid_: acceptance criterion ID, story number, requirement number
 
+**Judgement pass**:
+The optional first tier of judging whether a tagged test asserts what its requirement says: one Jev call per **Requirement ID**, sorted into ok, flag, uncertain or not judged. It runs only when a key is set and the repo's `docs/agents/traceability.md` has a `Judgement: jev` line; `code-review`'s Spec sub-agent then reads the flagged and uncertain tests.
+_Avoid_: LLM check, AI grading
+
 ## Relationships
 
 - An **Issue tracker** holds many **Issues**
 - An **Issue** carries one **Triage role** at a time
 - A **Decision ticket** is an **Issue** (a child of a `wayfinder:map`)
 - An **Issue** covers zero or more **Requirement IDs**
+- The **Judgement pass** judges the tests tagged with each **Requirement ID**
 
 ## Flagged ambiguities
 
