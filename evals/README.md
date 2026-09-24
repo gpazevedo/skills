@@ -40,7 +40,14 @@ What they do not measure is where the convention actually earns its keep: IDs wr
 
 The eval sandbox carries no `TYPESAFE_API_KEY` and the harness has no way to pass one in, so the pass cannot run inside a case. A case written for the opt-in path (a repo with a `Judgement: jev` line, one partial test and one assertion-free test) failed for that reason alone: the agent reported "Judgement pass skipped (`TYPESAFE_API_KEY` not set)". It was removed rather than kept as a permanent red. For the same reason `judgement-pass-off-without-key` covers the no-key path; the missing `Judgement: jev` line is covered by running `judge.mjs` directly.
 
-The pass is checked outside the harness instead: `judge.mjs` was run against a fixture repo built from twelve hand-made cases (partial, no assertion, assertion in a helper, prefix collision, dropped and waived stories), and against the no-key, no-opt-in and bad-key paths. What no test covers end to end is the model following the skill through `/implement` or `/code-review` with the pass live.
+The pass is checked outside the harness instead: `judge.mjs` was run against a fixture repo built from twelve hand-made cases (partial, no assertion, assertion in a helper, prefix collision, dropped and waived stories), and against the no-key, no-opt-in and bad-key paths. The model following the skill was checked by hand on 2026-09-24, once per path, with a nested `claude -p --plugin-dir .` in a scratch repo and the key inherited from the shell (three tagged tests: partial, sound, no assertion):
+
+| Repo | Result |
+| --- | --- |
+| Key set, `Judgement: jev` line, no `Check command:` line | The pass ran. `CPN-1` flagged partial at 0.98, `CPN-3` (no assertion) reported, `CPN-2` uncertain at 0.43. |
+| Key set, no `Judgement: jev` line | The pass was skipped for lack of the opt-in line, and nothing was sent. |
+
+Two single runs, not a suite: the harness cannot repeat them without the key. Re-run them by hand after changing the pass or the wiring. The wiring in `/implement` and `/code-review` themselves is exercised only through the skill, not through those two commands.
 
 ## Two lessons about graders, both learned the hard way here
 
