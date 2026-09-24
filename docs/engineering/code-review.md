@@ -45,7 +45,7 @@ This design exists to avoid a generic review skill that does not know your stand
 
 The **smell baseline** sits under the repo's standards. It is twelve code smells from chapter 3 of Fowler's _Refactoring_: Mysterious Name, Duplicated Code, Feature Envy, Data Clumps, Primitive Obsession, Repeated Switches, Shotgun Surgery, Divergent Change, Speculative Generality, Message Chains, Middle Man, Refused Bequest. Each is a labelled heuristic ("possible Feature Envy"), never a hard violation. Each states what the smell is and how to fix it, so a finding comes with a fix attached rather than only a complaint. Both axes skip anything your linter already enforces.
 
-When the spec carries requirement IDs, the Spec axis also receives the test files and a gap list of untested IDs, and reports tagged tests whose assertions do not check what their requirement says (see [requirement-traceability](https://aihero.dev/skills-requirement-traceability)). A spec without IDs is reviewed exactly as before.
+When the spec carries requirement IDs, the Spec axis also receives the test files and a gap list of untested IDs, and reports tagged tests whose assertions do not check what their requirement says (see [requirement-traceability](https://aihero.dev/skills-requirement-traceability)). If the repo also opted in to the Judgement pass, the Spec axis is handed only the flagged and uncertain IDs and reads those tests, not every tagged one. A spec without IDs is reviewed exactly as before.
 
 ## Common questions
 
