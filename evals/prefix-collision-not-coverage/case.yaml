@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: prefix-collision-not-coverage
+description: >
+  CPN-1 is the only untested requirement, and its ID is a prefix of CPN-10, CPN-11 and CPN-12.
+  Evidences the claim the convention is built on: a match that skips the colon reports it covered.
+tags: [traceability]
+context:
+  scaffold_script: scaffold.sh

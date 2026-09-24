@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: judgement-pass-off-without-key
+description: >
+  A repo with weak tests and no way to run the Judgement pass: the eval sandbox carries no
+  TYPESAFE_API_KEY, and the repo has no "Judgement: jev" line. Evidences that the pass stays off
+  and no model verdicts or confidences reach the reply.
+tags: [traceability, judgement]
+context:
+  scaffold_script: scaffold.sh

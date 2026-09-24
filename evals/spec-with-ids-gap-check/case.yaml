@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: spec-with-ids-gap-check
+description: >
+  A spec carrying requirement IDs, where CPN-1's only test is commented out.
+  Evidences that the skill fires on the IDs and that a switched-off test is not coverage.
+tags: [traceability]
+context:
+  scaffold_script: scaffold.sh

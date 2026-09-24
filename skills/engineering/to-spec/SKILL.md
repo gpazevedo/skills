@@ -16,6 +16,8 @@ The issue tracker and triage label vocabulary should have been provided to you. 
 
 Check with the user that these seams match their expectations.
 
+If the user or the repo's `CLAUDE.md`/`AGENTS.md` asks for traceable requirements, call the Skill tool with "requirement-traceability" and write the User Stories and the seam table to its format.
+
 3. Write the spec using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label - no need for additional triage.
 
 <spec-template>
@@ -40,6 +42,8 @@ A LONG, numbered list of user stories. Each user story should be in the format o
 
 This list of user stories should be extremely extensive and cover all aspects of the feature.
 
+If traceable requirements were asked for (step 2), put each story's requirement ID after its list number and keep the list numbered: `1. CPN-1: As a mobile bank customer, I want ...`.
+
 ## Implementation Decisions
 
 A list of implementation decisions that were made. This can include:
@@ -63,6 +67,7 @@ A list of testing decisions that were made. Include:
 - A description of what makes a good test (only test external behavior, not implementation details)
 - Which modules will be tested
 - Prior art for the tests (i.e. similar types of tests in the codebase)
+- If traceable requirements were asked for (step 2): a seam table mapping each seam to the requirement IDs it covers
 
 ## Out of Scope
 
