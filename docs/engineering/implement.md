@@ -38,7 +38,7 @@ A run is five beats, in order:
 4. Run the full test suite once, at the end.
 5. Run [code-review](https://aihero.dev/skills-code-review), then commit to the current branch.
 
-When the spec carries requirement IDs, a coverage check runs between the full test run and the review, so an untested requirement is fixed before [code-review](https://aihero.dev/skills-code-review) sees it (see [requirement-traceability](https://aihero.dev/skills-requirement-traceability)). If the repo opted in to its Judgement pass, that runs too, so a test that asserts nothing is flagged before review.
+When the spec carries requirement IDs, a coverage check runs between the full test run and the review, so an untested requirement is fixed before [code-review](https://aihero.dev/skills-code-review) sees it (see [requirement-traceability](https://aihero.dev/skills-requirement-traceability)). If the repo opted in to its Judgement pass, that runs too, so a requirement its tests only partly check is flagged, and the missing tests are added before review (at most three rounds, then it asks you).
 
 One run covers one ticket. The tickets [to-tickets](https://aihero.dev/skills-to-tickets) produces are tracer-bullet vertical slices sized to fit a single fresh [context window](https://www.aihero.dev/ai-coding-dictionary/context-window), so the intended rhythm is: clear context, implement one ticket, commit, clear again. Each ticket is self-contained, which is what makes the previous ticket's context disposable.
 

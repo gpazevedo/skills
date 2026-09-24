@@ -25,7 +25,7 @@ The route most work travels. You have an idea and want it built.
 
    Either way, **`/implement`** builds each issue by driving **`/tdd`** internally (one red-green slice at a time), then closes out by running **`/code-review`**, a two-axis review (Standards + Spec) of the diff, before committing. Reach for **`/tdd`** on its own when you just want to build a concrete behaviour test-first without a full spec, and **`/code-review`** on its own whenever you want to review a branch or PR against a fixed point.
 
-   Optionally, ask `/to-spec` for traceable requirements. A spec that carries requirement IDs turns on traceability through `/tdd`, `/implement` and `/code-review`, so every requirement is checked against a test.
+   Optionally, run **`/requirement-traceability`** after `/to-tickets` (or after `/to-spec` for a one-session build). It adds requirement IDs to the spec and a `Covers:` line to each ticket, and a spec that carries IDs turns on traceability through `/tdd` and `/implement`, so every requirement is checked against its tests before review.
 
 ### Context hygiene
 

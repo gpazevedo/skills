@@ -2,20 +2,20 @@
 
 `requirement-traceability` ties each requirement in a [spec](https://www.aihero.dev/ai-coding-dictionary/spec) to a test, and checks the tie. Requirements get stable IDs like `CPN-3:`, tests carry the ID as a name prefix, and a coverage gap check reports every requirement that no test names. That turns "covers all requirements" from a judgement call into something you can run.
 
-It is opt-in, and the switch is the spec itself. A spec that carries requirement IDs turns the rest on; a spec without them changes nothing downstream, and the skill stops after one line if it is pointed at one. To get IDs, ask for them when you run [to-spec](https://aihero.dev/skills-to-spec), or say so once in your repo's `CLAUDE.md` or `AGENTS.md`. There is no config and no setup question.
+It is opt-in, and the switch is the spec itself. To get IDs, type `/requirement-traceability` once, after [to-spec](https://aihero.dev/skills-to-spec) and [to-tickets](https://aihero.dev/skills-to-tickets). It adds the IDs and a seam table to the spec and a `Covers:` line to each ticket. A spec that carries IDs then turns the rest on; a spec without them changes nothing downstream. `to-spec`, `to-tickets` and `code-review` are untouched by this convention. There is no config and no setup question.
 
-An optional second step, the **Judgement pass**, goes a level further. It asks [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a small fast model from TypeSafe, whether each tagged test asserts what its requirement says, and sorts the tests into ok, flagged and uncertain. It is a first tier, not a gate: it never fails anything, and [code-review](https://aihero.dev/skills-code-review) reads only the flagged and uncertain tests instead of all of them. It stays off unless the repo opts in.
+An optional second step, the **Judgement pass**, goes a level further. It asks [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a small fast model from TypeSafe, whether the tests tagged with each requirement check all of what it says, and sorts requirements into ok, flagged and uncertain. A flagged requirement is not fully covered, so the agent names the part no assertion checks, adds tests for it, and re-runs the pass. After three rounds with the requirement still flagged, it stops and asks you how to proceed. It never fails a build, and [code-review](https://aihero.dev/skills-code-review) still reviews the tests against the spec as it always did. It stays off unless the repo opts in.
 
 ## When to reach for it
 
-Type `/requirement-traceability`, or the agent reaches for it automatically when a spec already carries IDs, or when you ask for a spec's requirements to be traceable to tests. The skills in the main chain call it themselves once the spec has IDs, so you will rarely type it.
+Type `/requirement-traceability` once per feature, right after `/to-tickets` (or after `/to-spec` for a one-session build, which has no tickets). From then on [tdd](https://aihero.dev/skills-tdd) and [implement](https://aihero.dev/skills-implement) call it themselves, because the spec carries IDs.
 
 | Your situation | Where to go |
 | --- | --- |
 | You want every requirement provably tested, and can check it | `requirement-traceability` |
 | The spec has no IDs and you don't need that guarantee | Nothing: skip it, and nothing in the chain changes |
-| You want the test seams agreed before code exists | [to-spec](https://aihero.dev/skills-to-spec), which the seam table extends |
-| You want to know whether a tagged test really asserts the requirement | The Judgement pass, then [code-review](https://aihero.dev/skills-code-review), whose Spec axis reads what it flags |
+| You want the test seams agreed before code exists | [to-spec](https://aihero.dev/skills-to-spec); annotation then maps each seam to IDs |
+| You want to know whether a requirement's tests really cover it | The Judgement pass, then [code-review](https://aihero.dev/skills-code-review)'s Spec axis |
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ The leading word is the **requirement ID**, and it always ends in a colon. Four 
 | Requirement ID | The spec's user stories, after the list number | `1. CPN-1: As a shopper, I want to apply a coupon, so that I pay less.` |
 | Seam table | The spec's testing decisions | `Seam` and `Requirement IDs` columns; an ID that won't be tested gets a `waived: <reason>` row |
 | Test tag | The test name | `CPN-3: rejects expired coupons` |
-| `Covers:` line | Each issue `to-tickets` produces | `Covers: CPN-1, CPN-4` |
+| `Covers:` line | Each ticket, added by annotation | `Covers: CPN-1, CPN-4` |
 
 The colon is load-bearing. `CPN-1` is a prefix of `CPN-10`, so a match without the colon reports an untested `CPN-1` as covered the moment `CPN-10` gets a test. A false "covered" is the one failure this convention exists to prevent, so every grep and every runner filter anchors on the colon.
 
@@ -48,13 +48,13 @@ The check needs no tooling. By default it is a handful of colon-anchored greps t
 | Undefined ID | A test tagged with an ID the spec does not define | Warns: a typo or a stale test |
 | No ID | A test with no ID | Warns: possible scope creep |
 
-If your repo has its own check command, name it in `docs/agents/traceability.md` and the skills run that instead. Each line of that file is optional, so a repo can opt in to the Judgement pass without a check command.
+If your repo has its own check command, name it in `docs/agents/traceability.md` and `implement` runs that instead. Each line of that file is optional, so a repo can opt in to the Judgement pass without a check command.
 
 ## Common questions
 
 **Does a passing check mean every requirement is tested properly?**
 
-No. The check confirms that each requirement has a test that names it; it cannot tell whether that test asserts the right thing. That judgement is split in two: the optional Judgement pass reads every tagged test, and [code-review](https://aihero.dev/skills-code-review)'s Spec [subagent](https://www.aihero.dev/ai-coding-dictionary/subagent) reads the tests it flags or is unsure of, or every tagged test when the pass is off. No third review axis is added.
+No. The check confirms that each requirement has at least one test that names it; it cannot tell whether those tests, together, assert everything the requirement says. A requirement can need several tests, each tagged with the same ID. That judgement is split in two: the optional Judgement pass reads every tagged test before review, and [code-review](https://aihero.dev/skills-code-review)'s Spec [subagent](https://www.aihero.dev/ai-coding-dictionary/subagent) reads the tests against the spec as it always does. No third review axis is added.
 
 **Does my code leave my machine?**
 
@@ -74,7 +74,7 @@ No. It starts at the spec, so a decision that never became a story has no ID and
 
 **Will it change how my existing specs behave?**
 
-No. A spec with no IDs is left alone: the chain runs exactly as it did, and no skill adds IDs to a spec that does not use them. Retrofitting IDs onto existing specs is deliberately out of scope.
+No. A spec with no IDs is left alone: the chain runs exactly as it did, and IDs are only ever added when you run `/requirement-traceability` on a spec. It is meant for a spec and tickets you have just written, before any `/implement`; retrofitting IDs onto a spec whose code already exists is out of scope.
 
 ## It's working if
 
@@ -83,10 +83,10 @@ No. A spec with no IDs is left alone: the chain runs exactly as it did, and no s
 - Test names begin with their ID, and a gap list names an intentionally untested ID before the code review runs.
 - Adding a test for `CPN-10` does not make `CPN-1` look covered.
 - Commenting a test out, or marking it `skip`, puts its requirement straight back on the untested list.
-- Each issue carries a `Covers:` line, and every ID appears on exactly one of them.
+- After annotation, each ticket carries a `Covers:` line, and every ID appears on exactly one of them.
 - A spec with no IDs produces no gap list and no `Covers:` lines anywhere in the flow.
-- With the Judgement pass on, a test that asserts nothing shows up as flagged or uncertain before review, and the review's Spec report covers only those tests.
+- With the Judgement pass on, a requirement whose tests check only part of it shows up as flagged before review, and the agent adds the missing tests instead of passing the flag on, for at most three rounds before it asks you what to do.
 
 ## Where it fits
 
-`requirement-traceability` is a **cross-cutting reference** that sits underneath the main chain rather than in it, the way [codebase-design](https://aihero.dev/skills-codebase-design) sits underneath the design skills. [to-spec](https://aihero.dev/skills-to-spec) writes the IDs and the seam table, [to-tickets](https://aihero.dev/skills-to-tickets) puts `Covers:` on each issue, [tdd](https://aihero.dev/skills-tdd) tags the tests, [implement](https://aihero.dev/skills-implement) runs the gap check (and the Judgement pass, if the repo opted in) before review, and [code-review](https://aihero.dev/skills-code-review) judges whether the tests assert what the requirements say, starting from what the pass flagged. When you are unsure which skill fits your situation, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.
+`requirement-traceability` is a **cross-cutting reference** that sits underneath the main chain rather than in it, the way [codebase-design](https://aihero.dev/skills-codebase-design) sits underneath the design skills. You run it once after [to-spec](https://aihero.dev/skills-to-spec) and [to-tickets](https://aihero.dev/skills-to-tickets), neither of which knows about it: it adds the IDs, the seam table and the `Covers:` lines to what they wrote. After that, [tdd](https://aihero.dev/skills-tdd) tags the tests and [implement](https://aihero.dev/skills-implement) runs the gap check (and the Judgement pass, if the repo opted in) before [code-review](https://aihero.dev/skills-code-review), which reviews as it always did. Only `tdd` and `implement` carry a line about it. When you are unsure which skill fits your situation, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.
