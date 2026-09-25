@@ -5,3 +5,4 @@ UNDEFINED ID (warns):
 CPN-99:
 NO ID (warns):
 tests/checkout.test.ts:4:it('applies a discount', () => {});
+tests/test_refresh.py:6:def test_refresh_without_a_tag():
