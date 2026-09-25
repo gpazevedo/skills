@@ -1,6 +1,6 @@
 # Eval suite
 
-Behaviour checks for the skills, run with `claude plugin eval`. They complement `scripts/test-traceability-check.sh`, which tests the coverage gap check as shell; these test what the model does with the skill in front of it.
+Behaviour checks for the skills, run with `claude plugin eval`. They complement `scripts/test-traceability-check.sh`, which tests the coverage gap check (`check.mjs`) and the `Covers:` structural check on a fixture; these test what the model does with the skill in front of it.
 
 Run the whole suite:
 
@@ -35,6 +35,8 @@ Recorded 2026-09-24, two runs per arm for the fixture cases and three for the ne
 Every case passes with the plugin. **The four checking cases also pass without it.** That is worth stating plainly: on fixtures this size, a current model answers "which requirement has no test" correctly on its own, and these cases do not show the skill adding accuracy.
 
 `annotate-spec-and-tickets` (added 2026-09-24, three runs per arm) is the only positive delta, and it measures the convention, not accuracy: without the skill the model does make the spec traceable, but in a format of its own (`REQ-1` IDs, Gherkin tags, a separate `TRACEABILITY.md`), with no `Covers:` lines for `implement` to narrow its check by. Its first run scored 0.33 with the plugin: the annotation was right every time, but two replies summarised it instead of showing the lines, and the grader sees only the reply. The skill now asks for the annotated lines verbatim. A re-run after the confirmation question was replaced by the structural check scored 1.00 again, and every reply reported the check clean instead of asking.
+
+Because the model can answer by reading, a correct reply does not show that the check ran. Both checking cases therefore carry a `check-script-output` grader: a regex over the run's trace for `check.mjs`'s own output, `UNTESTED (fails):` followed by `CPN-1:` (`arm: with-only`, since the baseline has no script). A first version used `tool_used: Bash` with `input_match: check.mjs`, and it passed runs whose call failed: on 2026-09-25 every Bash call in all six runs failed with `bwrap: loopback: Failed RTM_NEWADDR`, a sandbox error in the eval runner that no skill change can cause or fix ([anthropics/claude-code#97171](https://github.com/anthropics/claude-code/issues/97171)), yet four runs scored the grader for attempting the call. Add `--keep-temp` when chasing it: the traces are deleted after a run otherwise.
 
 They are still worth running. They pin behaviour against a model or skill change that breaks it, they prove the skill fires when a spec carries IDs and stays quiet when it does not, and the negative case guards the property the design leans on hardest, that a spec without IDs is untouched.
 
