@@ -5,3 +5,9 @@ def test_coupon_survives_refresh():
 
 def test_refresh_without_a_tag():
     assert True
+
+
+@pytest.mark.skip
+def test_records_analytics():
+    """CPN-5: records coupon analytics."""
+    assert True
