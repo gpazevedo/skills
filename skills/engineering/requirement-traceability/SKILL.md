@@ -25,9 +25,9 @@ Run once, after `/to-spec` and `/to-tickets`, before any `/implement`. `to-spec`
 1. Choose the KEY (below) and add a `Requirement key:` line above the spec's User Stories.
 2. Put an ID on each user story. Split compound stories first: one behaviour per ID.
 3. Add the seam table to the spec's Testing Decisions. Report any ID in no row: that is a gap, visible before any code.
-4. Add a `Covers:` line to each ticket (the [issue line](#issue-line)). Report any ID no ticket makes testable: a slicing gap for the user to settle. With no tickets (a one-session build), skip this step: `implement` then checks every ID.
+4. Add a `Covers:` line to each ticket (the [issue line](#issue-line)), then run the [structural check](#structural-check) and fix what it reports yourself. Ask the user only about an ID that fits no ticket at all: that is a slicing gap. With no tickets (a one-session build), skip this step: `implement` then checks every ID.
 
-Write the spec and tickets back where they live: files under `.scratch/<feature>/`, or the tracker via `docs/agents/issue-tracker.md`. Then show the user, verbatim, each annotated story (`1. CPN-1: As a ...`) and each ticket's `Covers:` line under the ticket's name, and ask: is every requirement covered by exactly one ticket?
+Write the spec and tickets back where they live: files under `.scratch/<feature>/`, or the tracker via `docs/agents/issue-tracker.md`. Then show the user, verbatim, each annotated story (`1. CPN-1: As a ...`) and each ticket's `Covers:` line under the ticket's name. This is a report, not a question: the structural check already holds.
 
 ## Requirement ID
 
@@ -81,6 +81,29 @@ When the spec has IDs, each issue carries a line `Covers: CPN-1, CPN-4`, and eve
 
 `Covers:` means **the IDs this issue makes fully testable**, not the IDs it touches. A requirement built across two slices goes on the last one in blocking order only, so the earlier slice's check passes honestly.
 
+### Structural check
+
+Every defined ID on exactly one ticket, and no ticket naming an ID the spec does not define. Waived IDs still land on a ticket; dropped ones on none. With the tickets as files in one directory (save tracker issues to files first):
+
+```bash
+SPEC=spec.md
+TICKETS=.scratch/coupons/issues
+T=$(mktemp -d)
+grep -v '(dropped)' "$SPEC" | sed -nE 's/^[[:space:]]*[0-9]+\.[[:space:]]+([A-Z]{2,5}-[0-9]+:).*/\1/p' | sort -u > $T/defined
+grep -hE '^Covers:' "$TICKETS"/*.md | grep -oE '[A-Z]{2,5}-[0-9]+' | sed 's/$/:/' | sort | uniq -c > $T/counts
+awk '{print $2}' $T/counts > $T/covered
+
+echo "ON NO TICKET:";   comm -23 $T/defined $T/covered
+echo "ON SEVERAL:";     awk '$1 > 1 {print $2}' $T/counts
+echo "UNDEFINED ID:";   comm -13 $T/defined $T/covered
+```
+
+Fix each class yourself, then re-run until all three are empty:
+
+- **On several**: keep it on the last of those tickets in blocking order; remove it from the others.
+- **Undefined ID**: a typo or a dropped ID. Correct it or remove it.
+- **On no ticket**: add it to the ticket that completes it. Only when no ticket builds that behaviour at all, ask the user: that is a slicing gap, not a mapping error.
+
 ## Coverage gap check
 
 If `docs/agents/traceability.md` has a `Check command:` line, run that command. Otherwise do it by hand. Save the spec text to a file first (for a tracker issue, `gh issue view N --json body -q .body > spec.md`), then:
@@ -128,6 +151,10 @@ For one issue's check, replace `defined` with the IDs on that issue's `Covers:` 
 ```bash
 grep -E '^Covers:' issue.md | grep -oE '[A-Z]{2,5}-[0-9]+' | sed 's/$/:/' | sort -u > $T/defined
 ```
+
+**The whole-spec check is required once per spec**: when the ticket being implemented is the last one still open for the spec (per `docs/agents/issue-tracker.md`, counting the current ticket as done), run the check unnarrowed, over every defined ID. It must pass before review, like the per-ticket check. It catches what a per-ticket check cannot: an ID whose `Covers:` line sat on a ticket that never wrote its test, or a test removed by a later ticket. With no tickets, every check is already unnarrowed.
+
+When other tickets are still open, say in one line that the whole-spec check did not run and name them. `implement` never closes a ticket, so one left open by mistake would keep this check from ever running; the line makes that visible.
 
 The check confirms presence only. Whether a tagged test asserts what its requirement says is judgement, in two tiers: the Judgement pass below reads every tagged test cheaply, and `code-review`'s Spec sub-agent reads the tests against the spec as it always does.
 
