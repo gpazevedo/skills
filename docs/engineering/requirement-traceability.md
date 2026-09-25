@@ -2,7 +2,7 @@
 
 `requirement-traceability` ties each requirement in a [spec](https://www.aihero.dev/ai-coding-dictionary/spec) to a test, and checks the tie. Requirements get stable IDs like `CPN-3:`, tests carry the ID as a name prefix, and a coverage gap check reports every requirement that no test names. That turns "covers all requirements" from a judgement call into something you can run.
 
-It is opt-in, and the switch is the spec itself. To get IDs, type `/requirement-traceability` once, after [to-spec](https://aihero.dev/skills-to-spec) and [to-tickets](https://aihero.dev/skills-to-tickets). It adds the IDs and a seam table to the spec and a `Covers:` line to each ticket. A spec that carries IDs then turns the rest on; a spec without them changes nothing downstream. `to-spec`, `to-tickets` and `code-review` are untouched by this convention. There is no config and no setup question.
+It is opt-in, and the switch is the spec itself. To get IDs, type `/requirement-traceability` once, after [to-spec](https://aihero.dev/skills-to-spec) and [to-tickets](https://aihero.dev/skills-to-tickets). It adds the IDs and a seam table to the spec and a `Covers:` line to each ticket, and checks structurally that every ID sits on exactly one ticket, fixing what it can itself and asking you only about a requirement no ticket builds. A spec that carries IDs then turns the rest on; a spec without them changes nothing downstream. `to-spec`, `to-tickets` and `code-review` are untouched by this convention. There is no config and no setup question.
 
 An optional second step, the **Judgement pass**, goes a level further. It asks [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a small fast model from TypeSafe, whether the tests tagged with each requirement check all of what it says, and sorts requirements into ok, flagged and uncertain. A flagged requirement is not fully covered, so the agent names the part no assertion checks, adds tests for it, and re-runs the pass. After three rounds with the requirement still flagged, it stops and asks you how to proceed. It never fails a build, and [code-review](https://aihero.dev/skills-code-review) still reviews the tests against the spec as it always did. It stays off unless the repo opts in.
 
@@ -83,7 +83,8 @@ No. A spec with no IDs is left alone: the chain runs exactly as it did, and IDs 
 - Test names begin with their ID, and a gap list names an intentionally untested ID before the code review runs.
 - Adding a test for `CPN-10` does not make `CPN-1` look covered.
 - Commenting a test out, or marking it `skip`, puts its requirement straight back on the untested list.
-- After annotation, each ticket carries a `Covers:` line, and every ID appears on exactly one of them.
+- After annotation, each ticket carries a `Covers:` line, every ID appears on exactly one of them, and you were asked nothing unless a requirement fit no ticket.
+- On the last open ticket, `implement` checks every ID in the spec, not just the ticket's; on any earlier one it names the tickets still open.
 - A spec with no IDs produces no gap list and no `Covers:` lines anywhere in the flow.
 - With the Judgement pass on, a requirement whose tests check only part of it shows up as flagged before review, and the agent adds the missing tests instead of passing the flag on, for at most three rounds before it asks you what to do.
 
