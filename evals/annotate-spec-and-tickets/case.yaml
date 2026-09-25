@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: annotate-spec-and-tickets
+description: >
+  A spec and two tickets written without requirement IDs, and the user asks for traceability.
+  Evidences that the skill annotates them: IDs on the stories and one Covers: line per ticket.
+tags: [traceability]
+context:
+  scaffold_script: scaffold.sh

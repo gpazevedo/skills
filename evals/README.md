@@ -18,6 +18,7 @@ claude plugin eval . --scaffold --allow-tools Bash --trust-plugin
 | `prefix-collision-not-coverage` | Twelve requirements where only `CPN-1` is untested and its ID is a prefix of `CPN-10`, `CPN-11` and `CPN-12`. The claim the whole convention is built on. |
 | `spec-without-ids-untouched` | A spec with no IDs is left alone: no IDs invented, no `Covers:` line, the question actually answered. The opt-in promise, stated as a negative. |
 | `judgement-pass-off-without-key` | A repo with weak tests and no key: the Judgement pass stays off and no model verdicts or confidences reach the reply. |
+| `annotate-spec-and-tickets` | A spec and two tickets written with no IDs, as `to-spec` and `to-tickets` leave them: asking for traceability puts an ID on each story and one `Covers:` line per ticket, each ID on exactly one. The path that replaced the hooks in `to-spec` and `to-tickets`. |
 
 ## What the ablation says, and what it does not
 
@@ -29,8 +30,11 @@ Recorded 2026-09-24, two runs per arm for the fixture cases and three for the ne
 | `prefix-collision-not-coverage` | 1.00 | 1.00 | 0.00 |
 | `spec-without-ids-untouched` | 1.00 | 1.00 | 0.00 |
 | `judgement-pass-off-without-key` | 1.00 | 1.00 | 0.00 |
+| `annotate-spec-and-tickets` | 1.00 | 0.00 | +1.00 |
 
-Every case passes with the plugin. **All three also pass without it.** That is worth stating plainly: on fixtures this size, a current model answers "which requirement has no test" correctly on its own, and these cases do not show the skill adding accuracy.
+Every case passes with the plugin. **The four checking cases also pass without it.** That is worth stating plainly: on fixtures this size, a current model answers "which requirement has no test" correctly on its own, and these cases do not show the skill adding accuracy.
+
+`annotate-spec-and-tickets` (added 2026-09-24, three runs per arm) is the only positive delta, and it measures the convention, not accuracy: without the skill the model does make the spec traceable, but in a format of its own (`REQ-1` IDs, Gherkin tags, a separate `TRACEABILITY.md`), with no `Covers:` lines for `implement` to narrow its check by. Its first run scored 0.33 with the plugin: the annotation was right every time, but two replies summarised it instead of showing the lines, and the grader sees only the reply. The skill now asks for the annotated lines verbatim. A re-run after the confirmation question was replaced by the structural check scored 1.00 again, and every reply reported the check clean instead of asking.
 
 They are still worth running. They pin behaviour against a model or skill change that breaks it, they prove the skill fires when a spec carries IDs and stays quiet when it does not, and the negative case guards the property the design leans on hardest, that a spec without IDs is untouched.
 
@@ -47,7 +51,7 @@ The pass is checked outside the harness instead: `judge.mjs` was run against a f
 | Key set, `Judgement: jev` line, no `Check command:` line | The pass ran. `CPN-1` flagged partial at 0.98, `CPN-3` (no assertion) reported, `CPN-2` uncertain at 0.43. |
 | Key set, no `Judgement: jev` line | The pass was skipped for lack of the opt-in line, and nothing was sent. |
 
-Two single runs, not a suite: the harness cannot repeat them without the key. Re-run them by hand after changing the pass or the wiring. The wiring in `/implement` and `/code-review` themselves is exercised only through the skill, not through those two commands.
+Two single runs, not a suite: the harness cannot repeat them without the key. Re-run them by hand after changing the pass or the wiring. The wiring in `/implement` itself is exercised only through the skill, not through that command.
 
 ## Two lessons about graders, both learned the hard way here
 
