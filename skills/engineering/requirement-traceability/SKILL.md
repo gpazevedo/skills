@@ -106,50 +106,24 @@ Fix each class yourself, then re-run until all three are empty:
 
 ## Coverage gap check
 
-If `docs/agents/traceability.md` has a `Check command:` line, run that command. Otherwise do it by hand. Save the spec text to a file first (for a tracker issue, `gh issue view N --json body -q .body > spec.md`), then:
+If `docs/agents/traceability.md` has a `Check command:` line, run that command. Otherwise run [check.mjs](check.mjs) (Node, no packages) from the repo root. Save the spec text to a file first (for a tracker issue, `gh issue view N --json body -q .body > spec.md`), or pass `-` to read it from stdin:
 
 ```bash
-SPEC=spec.md
-T=$(mktemp -d)
-git ls-files --cached --others --exclude-standard | grep -E '(^|/)(tests?|__tests__)/|\.(test|spec)\.|(^|/)test_|_test\.' | grep -v '\.md$' > $T/tests
-
-# IDs the spec defines (dropped ones excluded), and IDs it waives
-grep -v '(dropped)' "$SPEC" | sed -nE 's/^[[:space:]]*[0-9]+\.[[:space:]]+([A-Z]{2,5}-[0-9]+:).*/\1/p' | sort -u > $T/defined
-awk -F'|' '/^\|[[:space:]]*waived/ {print $3}' "$SPEC" | grep -oE '[A-Z]{2,5}-[0-9]+' | sed 's/$/:/' | sort -u > $T/waived
-
-# IDs tagged in tests: a quoted name that starts with an ID and a colon.
-# A commented-out or skipped test is not coverage, so drop those lines first.
-xargs -r -d '\n' grep -hE "[\"'\`][A-Z]{2,5}-[0-9]+:" < $T/tests \
-  | grep -vE "^[[:space:]]*(//|/\*|\*|#)" \
-  | grep -vE "(^|[^[:alnum:]_])(xit|xtest)\(|\.(skip|todo|failing)\(" \
-  | grep -ohE "[\"'\`][A-Z]{2,5}-[0-9]+:" | tr -d "\"'\`" | sort -u > $T/tagged
-
-echo "UNTESTED (fails):";      comm -23 $T/defined $T/tagged | comm -23 - $T/waived
-echo "UNDEFINED ID (warns):";  comm -13 $T/defined $T/tagged
-echo "NO ID (warns):";         xargs -r -d '\n' grep -nE "\b(it|test)\(\s*[\"'\`]" < $T/tests | grep -vE "[\"'\`][A-Z]{2,5}-[0-9]+:"
+node <this skill's directory>/check.mjs spec.md [ID...]
 ```
 
-`comm` compares whole lines, colon included, which is what keeps `CPN-1:` and `CPN-10:` apart.
-
-Adapt the last line's declaration pattern to the repo's runner. Where the ID sits in the test name, swapping the pattern is the whole change (`func Test` for Go). Where it sits in a docstring, the tag is on the line **after** the declaration, so a line-by-line filter reports every correctly tagged test as missing one. Pair each declaration with the next line first (pytest):
-
-```bash
-echo "NO ID (warns):"; xargs -r -d '\n' grep -nE -A1 'def test_' < $T/tests \
-  | grep -v '^--$' | paste -d' ' - - | grep -vE "[\"'\`][A-Z]{2,5}-[0-9]+:"
-```
-
-Report three classes:
+It exits 1 when any ID is untested, and prints three classes:
 
 - **Untested**: a defined, non-waived ID with no tagged test. This fails the check.
 - **Undefined ID**: a tagged test whose ID the spec does not define (or has dropped). Warn: a typo or a stale test.
-- **No ID**: a test with no ID. Warn: possible scope creep, or a test worth tying to a requirement.
+- **No ID**: a test with no ID, as `file:line:text`. Warn: possible scope creep, or a test worth tying to a requirement.
 
-The check reads text, so it errs in both directions, unevenly. A commented-out or skipped test does not count as coverage, so its ID is reported untested: the safe direction. A string that merely starts with an ID and a colon does count, so keep IDs out of string literals that are not test names.
+IDs are compared whole, colon included, which is what keeps `CPN-1:` and `CPN-10:` apart. A quoted ID counts only where a test name sits: the first argument of `it(`, `test(` or Go's `t.Run(`, or the first line of a `def test_` docstring. An ID inside an assertion value is not coverage. In other languages any quoted string that starts with an ID counts, so there keep IDs out of string literals that are not test names. A commented-out or skipped test is not coverage, including a skip whose test name wraps onto the next line and a Python test under `@pytest.mark.skip` or `@unittest.skip`, so its ID is reported untested. The check knows JS/TS (`it(`, `test(`), pytest (the tag on the docstring's first line) and Go (`t.Run(` subtests) without configuration.
 
-For one issue's check, replace `defined` with the IDs on that issue's `Covers:` line, then re-run the `UNTESTED` line above unchanged. It still subtracts `waived`, which matters because every ID lands on some issue's `Covers:` line, waived ones included:
+For one issue's check, pass the IDs on its `Covers:` line. Waived IDs are still subtracted, which matters because every ID lands on some issue's `Covers:` line, waived ones included:
 
 ```bash
-grep -E '^Covers:' issue.md | grep -oE '[A-Z]{2,5}-[0-9]+' | sed 's/$/:/' | sort -u > $T/defined
+node <this skill's directory>/check.mjs spec.md $(grep -E '^Covers:' issue.md | grep -oE '[A-Z]{2,5}-[0-9]+')
 ```
 
 **The whole-spec check is required once per spec**: when the ticket being implemented is the last one still open for the spec (per `docs/agents/issue-tracker.md`, counting the current ticket as done), run the check unnarrowed, over every defined ID. It must pass before review, like the per-ticket check. It catches what a per-ticket check cannot: an ID whose `Covers:` line sat on a ticket that never wrote its test, or a test removed by a later ticket. With no tickets, every check is already unnarrowed.
@@ -160,7 +134,7 @@ The check confirms presence only. Whether a tagged test asserts what its require
 
 ## `docs/agents/traceability.md`
 
-Optional, hand-written, absent by default: the grep above is the normal path. Each line is independently optional:
+Optional, hand-written, absent by default: `check.mjs` is the normal path. Each line is independently optional:
 
 ```
 Check command: `<command>`
@@ -168,11 +142,11 @@ Spec input: `stdin` or `path`
 Judgement: jev
 ```
 
-`Check command:` names the repo's own presence check. With no such line, the grep block stays the presence check. The command exits 0 when every ID is covered and 1 when any is untested, and takes IDs as trailing arguments to narrow the check to them. `Judgement: jev` opts the repo in to the Judgement pass. When the user names a check command, or mentions Jev, offer to write the matching line.
+`Check command:` names the repo's own presence check. With no such line, `check.mjs` stays the presence check. The command exits 0 when every ID is covered and 1 when any is untested, and takes IDs as trailing arguments to narrow the check to them. `Judgement: jev` opts the repo in to the Judgement pass. When the user names a check command, or mentions Jev, offer to write the matching line.
 
 ## Judgement pass
 
-The first tier of judging whether a tagged test asserts what its requirement says. It sends spec lines and tagged test excerpts (at most 60 lines each) to `api.typesafe.ai`, so it runs only when `TYPESAFE_API_KEY` is set **and** `docs/agents/traceability.md` has a `Judgement: jev` line. If either is missing, say "Judgement pass skipped" in one line and stop; do not point the user at setup.
+The first tier of judging whether a tagged test asserts what its requirement says. It sends spec lines and the tagged tests themselves (each cut at 200 lines) to `api.typesafe.ai`, so it runs only when `TYPESAFE_API_KEY` is set **and** `docs/agents/traceability.md` has a `Judgement: jev` line. If either is missing, say "Judgement pass skipped" in one line and stop; do not point the user at setup.
 
 Run [judge.mjs](judge.mjs) (Node, no packages) from the repo root, after the gap check. `-` reads the spec from stdin. Trailing IDs narrow the run: for one issue, take them from its `Covers:` line.
 
@@ -188,5 +162,7 @@ Exit 2 means it skipped, with the reason on stderr: report "skipped" and carry o
   **At most 3 rounds** of adding tests and re-running. If an ID is still flagged after the third re-run, stop and ask the user how to proceed: list each such ID, the behaviour you judge still unchecked, and what you tried. Do not start a fourth round unless the user says so.
 - **uncertain**: low confidence, or no assertion call in the excerpt (an assertion inside a helper counts as none). Read the test yourself.
 - **not judged**: no tagged test. The gap check owns presence.
+
+A test file marked `(cut)` held a tagged test longer than 200 lines, so Jev saw only its first 200. On a flag or uncertain row with a `(cut)` file, read the whole test before adding anything: the unchecked part may be past the cut.
 
 The pass gates nothing: a flag or an uncertain row is a lead. Confidence moves about 0.03 between runs, so a row near 0.8 can switch between ok and uncertain.

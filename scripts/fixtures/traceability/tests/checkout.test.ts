@@ -4,3 +4,7 @@ it('CPN-99: does something the spec never asked for', () => {});
 it('applies a discount', () => {});
 // it('CPN-1: applies a coupon at checkout', () => {});
 it.skip('CPN-5: records coupon analytics', () => {});
+it.skip(
+  'CPN-1: applies a coupon with a name long enough to wrap',
+  () => {},
+);

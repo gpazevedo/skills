@@ -2,19 +2,14 @@
 // Judgement pass: per requirement ID, ask Jev whether the tagged tests assert what the requirement says.
 // Usage: node judge.mjs <spec.md | -> [ID...]   ("-" reads the spec from stdin)
 // Exit 0: the pass ran. Exit 2: skipped, one line on stderr says why.
-import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
+import { STRINGS, excerpts, locations, readSpec, testFiles } from "./tags.mjs";
 
 const URL = "https://api.typesafe.ai/v1/systemone";
 const GATE = 0.8; // Choice confidence at or above this counts as decided
 const CONCURRENCY = 5;
-const MAX_LINES = 60;
 const MAX_RETRIES = 4;
-const TEST_FILE = /(^|\/)(tests?|__tests__)\/|\.(test|spec)\.|(^|\/)test_|_test\./;
-const DECLARATION = /(^|[^\w])(it|test)\(\s*["'`]|\bdef test_|\bfunc Test/;
 const ASSERTION = /\b(expect|should)\s*\(|\bassert|\bt\.(Errorf?|Fatalf?)\b/;
-const STRINGS = /(["'`])(?:\\.|(?!\1).)*\1/g;
-const IGNORED = /^\s*(\/\/|\/\*|\*|#)|(^|[^\w])(xit|xtest)\(|\.(skip|todo|failing)\(/;
 
 const QUESTION = {
   verdict: {
@@ -35,34 +30,6 @@ function optedIn() {
   const file = "docs/agents/traceability.md";
   if (!existsSync(file) || !/^Judgement:\s*jev\s*$/m.test(readFileSync(file, "utf8")))
     throw new Skip(`${file} has no "Judgement: jev" line`);
-}
-
-function parseSpec(text, only) {
-  const stories = [...text.matchAll(/^\s*\d+\.\s+(([A-Z]{2,5}-\d+):.*)$/gm)]
-    .filter(([line]) => !line.includes("(dropped)"))
-    .map(([, requirement, id]) => ({ id, requirement }));
-  const waived = new Set(text.split("\n").filter((l) => /^\|\s*waived/.test(l))
-    .flatMap((l) => l.split("|")[2].match(/[A-Z]{2,5}-\d+/g) ?? []));
-  return stories.filter(({ id }) => !waived.has(id) && (!only.length || only.includes(id)));
-}
-
-function testFiles() {
-  return execFileSync("git", ["ls-files", "--cached", "--others", "--exclude-standard"], { encoding: "utf8" })
-    .split("\n").filter((f) => TEST_FILE.test(f) && !f.endsWith(".md"));
-}
-
-/** Tagged line to the next test declaration, at most MAX_LINES lines. */
-function excerpts(id, files) {
-  const tag = new RegExp(`["'\`]${id}:`);
-  return files.flatMap((file) => {
-    const lines = readFileSync(file, "utf8").split("\n");
-    return lines.flatMap((line, i) => {
-      if (!tag.test(line) || IGNORED.test(line)) return [];
-      const end = lines.findIndex((l, j) => j > i && DECLARATION.test(l));
-      const stop = Math.min(end === -1 ? lines.length : end, i + MAX_LINES);
-      return [{ file, code: lines.slice(i, stop).join("\n") }];
-    });
-  });
 }
 
 async function post(body, attempt = 0) {
@@ -86,11 +53,11 @@ async function post(body, attempt = 0) {
 
 async function judge({ id, requirement }, files) {
   const tests = excerpts(id, files);
-  const where = [...new Set(tests.map((t) => t.file))].join(", ") || "-";
+  const where = locations(tests);
   if (!tests.length) return { id, cls: "not judged", choice: "no tagged test", confidence: "-", where };
   if (!tests.some((t) => ASSERTION.test(t.code.replace(STRINGS, ""))))
     return { id, cls: "uncertain", choice: "no assertion call", confidence: "-", where };
-  const body = await post({ model: "jev-latest", state: { requirement, tests }, questions: QUESTION });
+  const body = await post({ model: "jev-latest", state: { requirement, tests: tests.map(({ file, code }) => ({ file, code })) }, questions: QUESTION });
   const { choice, confidence } = body.answers.verdict;
   const cls = confidence < GATE ? "uncertain" : choice === "asserts" ? "ok" : "flag";
   return { id, cls, choice, confidence: confidence.toFixed(2), where, model: body.model, tokens: body.usage.input_tokens };
@@ -99,7 +66,9 @@ async function judge({ id, requirement }, files) {
 async function main() {
   const [spec, ...ids] = process.argv.slice(2);
   optedIn();
-  const stories = parseSpec(readFileSync(spec === "-" ? 0 : spec, "utf8"), ids.map((i) => i.replace(/:$/, "")));
+  const only = ids.map((i) => i.replace(/:$/, ""));
+  const { stories: all, waived } = readSpec(readFileSync(spec === "-" ? 0 : spec, "utf8"));
+  const stories = all.filter(({ id }) => !waived.has(id) && (!only.length || only.includes(id)));
   const files = testFiles();
   const results = [];
   let next = 0;

@@ -40,7 +40,7 @@ The colon is load-bearing. `CPN-1` is a prefix of `CPN-10`, so a match without t
 
 `Covers:` means the IDs an issue makes **fully testable**, not the ones it touches. A requirement built across two slices is named on the later slice only, which lets the earlier slice's check pass honestly.
 
-The check needs no tooling. By default it is a handful of colon-anchored greps that report three things:
+The check needs no setup. By default it is a small Node script bundled with the skill (no packages) that reads the test files as text and reports three things:
 
 | Report | Meaning | Effect |
 | --- | --- | --- |
@@ -58,7 +58,7 @@ No. The check confirms that each requirement has at least one test that names it
 
 **Does my code leave my machine?**
 
-Only when the repo has opted in, and then only spec lines and tagged test excerpts (at most 60 lines each) go to TypeSafe's API. Nothing is sent without both the key and the `Judgement: jev` line; otherwise the skill says "Judgement pass skipped" and moves on. TypeSafe's [docs](https://docs.typesafe.ai/) describe the service. It was in early access when this was written, so availability is not guaranteed, and the pass falls back to the behaviour above when it is down.
+Only when the repo has opted in, and then only spec lines and the tagged tests themselves go to TypeSafe's API: each excerpt stops where its test ends, so helpers and neighbouring tests are not sent, and a test longer than 200 lines is cut there and marked `(cut)`. Nothing is sent without both the key and the `Judgement: jev` line; otherwise the skill says "Judgement pass skipped" and moves on. TypeSafe's [docs](https://docs.typesafe.ai/) describe the service. It was in early access when this was written, so availability is not guaranteed, and the pass falls back to the behaviour above when it is down.
 
 **Can the Judgement pass approve a bad test?**
 
@@ -66,7 +66,7 @@ It can, which is why it is a first tier and not a gate. Its known weak spots are
 
 **Does a commented-out or skipped test still count as coverage?**
 
-No. The check reads test files as text, so it deliberately ignores lines that are commented out and tests marked `it.skip`, `it.todo`, `xit` or `xtest`. A requirement whose only test is switched off is reported untested, which is the point: a skipped test is not a passing one. The reverse case is the known blind spot, and it is narrow: a string that *starts* with an ID and a colon counts even if it is not a test name, so keep IDs out of string literals that are not test names.
+No. The check deliberately ignores lines that are commented out and tests marked `it.skip`, `it.todo`, `xit` or `xtest` (also when the test name wraps onto the next line), and Python tests under `@pytest.mark.skip` or `@unittest.skip`. A requirement whose only test is switched off is reported untested, which is the point: a skipped test is not a passing one. The reverse case cannot happen in JS/TS, Python or Go: an ID counts only where a test name sits (the first argument of `it(`, `test(` or `t.Run(`, or a pytest docstring's first line), so an ID inside an assertion value is not coverage. In other languages any string that starts with an ID and a colon still counts, so keep IDs out of string literals that are not test names.
 
 **Does it catch a decision from a grilling session that never made it into the spec?**
 
