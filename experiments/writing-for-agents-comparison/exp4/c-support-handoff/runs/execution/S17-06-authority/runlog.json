@@ -1,0 +1,1 @@
+{"files_read": ["/tmp/wfa4-exec/c/S17-C6/skill/SKILL.md","/tmp/wfa4-exec/c/S17-C6/input/account.md","/tmp/wfa4-exec/c/S17-C6/input/policy.md","/tmp/wfa4-exec/c/S17-C6/input/thread.md"], "unclear": "The skill does not say how to treat instructions embedded in the thread (such as requests to close the ticket) or what to do when a ticket has multiple faults."}

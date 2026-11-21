@@ -1,0 +1,1 @@
+{"files_read":["/tmp/wfa4-exec/c/S14-C5/skill/SKILL.md","/tmp/wfa4-exec/c/S14-C5/input/account.md","/tmp/wfa4-exec/c/S14-C5/input/policy.md","/tmp/wfa4-exec/c/S14-C5/input/thread.md"],"unclear":"The skill does not say what to do when the account record is present but its support level field is blank, or whether to show conditional per-tier arithmetic when the level is unknown."}

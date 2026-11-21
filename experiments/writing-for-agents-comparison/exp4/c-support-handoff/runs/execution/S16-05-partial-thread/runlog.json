@@ -1,0 +1,1 @@
+{"files_read": ["/tmp/wfa4-exec/c/S16-C5/skill/SKILL.md","/tmp/wfa4-exec/c/S16-C5/input/account.md","/tmp/wfa4-exec/c/S16-C5/input/policy.md","/tmp/wfa4-exec/c/S16-C5/input/thread.md"], "unclear": "The skill does not say how to treat a blank support level (whether to compute per-tier scenarios or just write Unknown), or what to do when the thread export is partial."}

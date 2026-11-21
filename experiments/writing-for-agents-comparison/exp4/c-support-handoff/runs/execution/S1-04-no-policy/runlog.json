@@ -1,0 +1,1 @@
+{"files_read": ["/tmp/wfa4-exec/c/S1-C4/skill/SKILL.md", "/tmp/wfa4-exec/c/S1-C4/input/account.md", "/tmp/wfa4-exec/c/S1-C4/input/thread.md"], "unclear": "The skill expects a support policy input but none was provided, and it does not say how to handle a hypothetical deadline when the clock start is unknown."}
