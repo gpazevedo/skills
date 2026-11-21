@@ -1,0 +1,16 @@
+{
+  "run": "S4-C4",
+  "tokens": 71880,
+  "tool_uses": 3,
+  "duration_ms": 47540,
+  "files_read": [
+    "/tmp/wfa-exec/S4-C4/skill/SKILL.md",
+    "/tmp/wfa-exec/S4-C4/notes.md"
+  ],
+  "unclear": "Flatly recorded statements with no agreed wording; whether an unconfirmed reassignment settles a contradiction.",
+  "label": "S4",
+  "case": "04-conflicts",
+  "launch_position": 3,
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "extra_files_in_sandbox": []
+}

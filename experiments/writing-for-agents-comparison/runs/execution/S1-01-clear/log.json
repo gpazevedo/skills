@@ -1,0 +1,16 @@
+{
+  "run": "S1-C1",
+  "tokens": 71505,
+  "tool_uses": 5,
+  "duration_ms": 44884,
+  "files_read": [
+    "/tmp/wfa-exec/S1-C1/skill/SKILL.md",
+    "/tmp/wfa-exec/S1-C1/notes.md"
+  ],
+  "unclear": "Outcome words outside the list ('Parked'); whether a replaced plan counts as a reversed decision.",
+  "label": "S1",
+  "case": "01-clear",
+  "launch_position": 6,
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "extra_files_in_sandbox": []
+}
