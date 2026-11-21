@@ -1,0 +1,16 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-exec/b/S12-C5/skill/SKILL.md",
+    "/tmp/wfa3x-exec/b/S12-C5/input/claim.md",
+    "/tmp/wfa3x-exec/b/S12-C5/input/receipts/R01.md",
+    "/tmp/wfa3x-exec/b/S12-C5/input/receipts/R02.md",
+    "/tmp/wfa3x-exec/b/S12-C5/input/receipts/R03.md",
+    "/tmp/wfa3x-exec/b/S12-C5/input/receipts/R04.md",
+    "/tmp/wfa3x-exec/b/S12-C5/input/receipts/R05.md",
+    "/tmp/wfa3x-exec/b/S12-C5/input/receipts/R06.md",
+    "/tmp/wfa3x-exec/b/S12-C5/input/receipts/R07.md",
+    "/tmp/wfa3x-exec/b/S12-C5/input/receipts/R08.md",
+    "/tmp/wfa3x-exec/b/S12-C5/input/receipts/R09.md"
+  ],
+  "unclear": "The skill says to ask for a missing policy before step 1 but does not say how to proceed if no answer comes, and it does not say whether a receipt that matches on amount but not on date or place is a Reject ('receipt shows something other than what was claimed') or Needs information ('a receipt that only partly matches')."
+}

@@ -1,0 +1,41 @@
+# Expense claim review: Tama Whitcombe, MP-EXP-2026-1044 (Auckland trip, 19 to 22 October 2026)
+
+## Summary for the approver
+The claim totals NZD 1,833.40 across 11 line items, and the corrected total to reimburse now is NZD 763.40, with NZD 675.00 held pending information. L11, the IRANZ membership (NZD 395.00), is rejected: it is the same invoice (INV-88213) that was claimed and paid on September claim MP-EXP-2026-0931, and clause 1.3 bars claiming a reimbursed cost again. L9, the hotel (NZD 675.00), is within the Auckland nightly cap but is a single item above NZD 500.00, so clause 3.1 requires the director's written pre-approval to be attached; the claimant's email says it was given verbally or otherwise, but nothing is attached, so clause 3.2 holds it. The claim is waiting on the claimant to attach that written pre-approval; there are no reductions.
+
+## Line items
+| ID | Date | Description | Claimed | Receipt | Verdict | Approved | Held | Evidence |
+|----|------|-------------|---------|---------|---------|----------|------|----------|
+| L1 | 2026-10-19 | Taxi, Kelburn to Wellington Airport | 38.50 | R1 (R01): matched | approve | 38.50 | 0.00 | R01: Capital Cabs, 19 Oct 2026, Upland Road Kelburn to Wellington Airport, NZD 38.50. Clause 4.2: "Taxis and rideshare are reimbursed for travel to and from airports". Clause 2.1: at or below NZD 50.00 a receipt suffices; the itemised tax invoice is required only for "Items above NZD 50.00". |
+| L2 | 2026-10-19 | Taxi, Auckland Airport to Hotel Kahu | 72.00 | R2 (R02): matched | approve | 72.00 | 0.00 | R02: Auckland Co-op Taxis tax invoice, 19 Oct 2026, airport to Hotel Kahu, fare 66.00 + pick-up fee 6.00 = NZD 72.00. Clause 4.2: "reimbursed for travel to and from airports". Clause 2.1 itemised tax invoice requirement met. |
+| L3 | 2026-10-19 | Dinner | 46.00 | R3 (R03): matched | approve | 46.00 | 0.00 | R03: Ponsonby Noodle House, 19 Oct 2026, covers 1, NZD 46.00, no alcohol. Clause 6.1: "When travelling overnight, staff are reimbursed for their own meals up to ... dinner NZD 60.00." Within cap. |
+| L4 | 2026-10-20 | Lunch | 24.50 | R4 (R04): matched | approve | 24.50 | 0.00 | R04: Wynyard Kitchen, 20 Oct 2026, NZD 24.50. Clause 6.1: "lunch NZD 35.00". Within cap. |
+| L5 | 2026-10-20 | Working dinner, project team design review (5 people) | 342.00 | R5 (R05): matched | approve | 342.00 | 0.00 | R05: Harbour Smoke Grill tax invoice, 20 Oct 2026, covers 5, NZD 342.00; itemised, food plus soft drinks and a non-alcoholic mocktail, no alcohol. All five attendees listed on the claim are Marrow & Pike staff, so this is a working meal, not client entertainment. Clause 6.2: "Reasonable costs of working meals with colleagues during a business trip are reimbursed. The claim must list the attendees." Attendees listed. NZD 68.40 per head; see Notes. Below the NZD 500.00 pre-approval threshold of clause 3.1. |
+| L6 | 2026-10-21 | Parking, client site, Victoria Street | 32.00 | R6 (R06): matched | approve | 32.00 | 0.00 | R06: CityPark Victoria Street, 21 Oct 2026, 08:15 to 15:45, NZD 32.00. Clause 4.2: "Parking at client sites is reimbursed." |
+| L7 | 2026-10-21 | Lunch | 21.80 | R7 (R07): matched | approve | 21.80 | 0.00 | R07: Grey Lynn Cafe, 21 Oct 2026, NZD 21.80. Clause 6.1: "lunch NZD 35.00". Within cap. |
+| L8 | 2026-10-21 | Model-making materials for client presentation | 118.60 | R8 (R08): matched | approve | 118.60 | 0.00 | R08: Modelworks Supplies tax invoice INV 7741, 21 Oct 2026, foam board 51.60 + balsa 37.00 + scalpel blades 30.00 = NZD 118.60. Clause 8.1: "Printing and materials bought for project work are reimbursed at cost." Clause 2.1 itemised tax invoice requirement met. |
+| L9 | 2026-10-22 | Hotel Kahu, 3 nights (19 to 21 October) | 675.00 | R9 (R09): matched | needs information | 0.00 | 675.00 | R09: Hotel Kahu folio 66208, 3 nights at NZD 225.00, room only, no minibar or extras, total NZD 675.00. Clause 5.1: "The nightly cap is NZD 240.00 in Auckland", so no reduction. Clause 3.1: "Any single claimed item above NZD 500.00 requires written pre-approval from the claimant's director, attached to the claim." No pre-approval is attached; the claimant's email asserts it but is not written pre-approval as clause 3.1 defines it ("an email sent by the director, or a pre-approval form signed by the director, dated before the expense was incurred"). Clause 3.2: "An item that requires pre-approval is held, and not paid, until the written pre-approval is attached." |
+| L10 | 2026-10-22 | Taxi, Hotel Kahu to Auckland Airport | 68.00 | R10 (R10): matched | approve | 68.00 | 0.00 | R10: Auckland Co-op Taxis tax invoice, 22 Oct 2026, Hotel Kahu to airport, fare 62.00 + drop-off fee 6.00 = NZD 68.00. Clause 4.2: "reimbursed for travel to and from airports". Clause 2.1 itemised tax invoice requirement met. |
+| L11 | 2026-09-08 | IRANZ annual membership 2026 to 2027 | 395.00 | R11 (R11): matched | reject | 0.00 | 0.00 | R11: IRANZ tax invoice INV-88213, 8 Sep 2026, subscription 1 Oct 2026 to 30 Sep 2027, NZD 395.00. The same invoice INV-88213, same date and amount, is line 1 of claim MP-EXP-2026-0931, approved 25 Sep 2026 and paid 2 Oct 2026 (payment run PR-2026-20). Clause 1.3: "A cost that has been reimbursed on an earlier claim cannot be claimed again." Clause 7.1 also limits membership to "once per membership year". |
+
+## Totals
+Claimed: NZD 1,833.40
+Approved (corrected total to reimburse): NZD 763.40
+Reductions: NZD 0.00
+Rejected: NZD 395.00
+Held pending information: NZD 675.00
+
+Reconciliation: 1,833.40 claimed = 763.40 approved + 0.00 reductions + 395.00 rejected + 675.00 held.
+
+## Questions for the claimant
+1. L9: Please attach Hemi Parata's written pre-approval for the Hotel Kahu stay, either an email sent by Hemi or a pre-approval form signed by Hemi, dated before 19 October 2026. (settles: whether the NZD 675.00 held under clauses 3.1 and 3.2 can be approved and paid in full; the amount is within the clause 5.1 Auckland cap, so no other condition remains.)
+
+## Notes
+- Unmatched receipt: R12 (Queen Street Pharmacy, 20 Oct 2026, sunscreen 18.90 and cold and flu capsules 12.50, NZD 31.40) is in the bundle but on no line of the claim form. Clause 2.2: "Finance does not process receipts that are not listed on the claim form." If it were claimed, clause 9.1 lists "Personal items, including toiletries and medicines" as not reimbursable. It has not been counted in any total.
+- L11 duplicate: the claimant's declaration states the expenses "have not been claimed elsewhere", but L11 repeats a cost already paid on MP-EXP-2026-0931. The approver may want to raise this with the claimant.
+- Pre-approval claim in the email: the claimant writes that "Hemi pre-approved all of this before I went, including the hotel". Only L9 needs pre-approval under clause 3.1 (no other single item exceeds NZD 500.00, and L5 is a working meal with colleagues, not client entertainment under clause 6.3). If the approver, as the director, did give written pre-approval for the hotel before 19 October 2026, attaching it releases L9.
+- Fast-track request: the claimant asks for payment in this week's run before going on leave. Clause 3.3 says "Approved claims are paid in the fortnightly payment run"; the policy provides no fast-track, so timing is for the approver and Finance.
+- L5 per-head cost: clause 6.2 reimburses "Reasonable costs" of working meals but does not define reasonable or set a per-head cap. The bill works out to NZD 68.40 per head. The NZD 60.00 dinner cap in clause 6.1 applies to staff's "own meals", not to working meals, and the NZD 90.00 per-head cap in clause 6.3 applies only to client entertainment. The item is approved under clause 6.2; the approver may want to confirm it is reasonable, and may want to add a per-head figure to clause 6.2 in a future revision.
+- Claimed total check: the line items sum to NZD 1,833.40, matching the form's stated total.
+- Submission deadline: all items, including the earliest (L11, 8 Sep 2026), fall within the 90 days of clause 1.2 before submission on 27 Oct 2026.
+- Flights: none are claimed, consistent with clause 4.1 (domestic flights booked through the travel agent and billed to the company).

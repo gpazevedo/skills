@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-exec/b/S12-C3/skill/SKILL.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/claim.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/policy.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/receipts/R01.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/receipts/R02.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/receipts/R03.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/receipts/R04.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/receipts/R05.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/receipts/R06.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/receipts/R07.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/receipts/R08.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/receipts/R09.md",
+    "/tmp/wfa3x-exec/b/S12-C3/input/receipts/R11.md"
+  ],
+  "unclear": "The skill does not say whether a row whose attached receipt is a copy of another row's receipt but carries a different claimed date should be rejected as a duplicate claim or held as having no receipt, since both the 'one receipt attached to two rows' rule and the 'claims the same expense as another row' reject rule seem to apply."
+}

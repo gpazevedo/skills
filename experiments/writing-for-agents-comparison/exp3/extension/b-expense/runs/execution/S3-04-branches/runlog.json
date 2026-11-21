@@ -1,0 +1,19 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-exec/b/S3-C4/skill/SKILL.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/policy.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/claim.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R01.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R02.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R03.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R04.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R05.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R06.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R07.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R08.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R09.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R10.md",
+    "/tmp/wfa3x-exec/b/S3-C4/input/receipts/R11.md"
+  ],
+  "unclear": "The skill does not say how to label receipts that the claim form already numbers (R01 to R11 versus R1, R2, ...), nor whether a discrepancy the claimant already explained on the form (such as the card-rate conversion) still counts as an unexplained discrepancy that needs a question."
+}
