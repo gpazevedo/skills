@@ -1,6 +1,7 @@
 # Experiment plan: original vs improved `writing-for-agents`
 
 Status: complete, verdict inconclusive (2026-11-21); see [results/REPORT.md](results/REPORT.md)
+Extension: experiment 2 with a second skill, see [exp2/PLAN.md](exp2/PLAN.md)
 Branch: `writing-for-agents-improvement` on `gpazevedo/skills`
 
 ## Question
