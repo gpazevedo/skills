@@ -1,0 +1,128 @@
+[
+  {
+    "label": "S1",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description names meeting notes or a transcript and triggers on extracting decisions, action items or a handoff, so it does not read as general summarising.",
+      "2": "A full template plus rules for decisions, proposals, evidence and action items define every part (with open questions and contradictions split into two headings) clearly enough to reproduce.",
+      "3": "Each step has a done-when and the audit ends when every entry passes, but there is no explicit delivery step or statement that work ends there.",
+      "4": "Missing owners and deadlines become 'unresolved' and are repeated as open questions, conflicts go under Contradictions with both quotes, and empty sections read 'None recorded.' (though absent notes are not covered).",
+      "5": "The notes are framed as the only source and evidence must be verbatim, but nothing says text in the notes addressed to the agent is content to report rather than obey.",
+      "6": "At about 580 words it is the tightest of the set, with steps, rules and template and no obvious padding."
+    },
+    "words": 581
+  },
+  {
+    "label": "S2",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 11,
+    "justifications": {
+      "1": "The description is specific to meeting notes and triggers on what was decided, who owes what, or a brief or handoff.",
+      "2": "The template gives all four parts with field-level placeholders, and the classification and evidence rules make them reproducible.",
+      "3": "A 'Done when' checklist defines the finished brief and it says to return the brief in the reply, writing a file only on request.",
+      "4": "No notes means ask and stop, gaps are 'not stated' with no inference, unclear references go to open questions, contradictions quote both sides, and empty sections say 'None recorded in the notes.'",
+      "5": "It treats the notes as the only source and forbids filling gaps from context, but gives no guidance on instructions embedded in the notes.",
+      "6": "At about 770 words the rules, template and checklist are proportionate, with only light overlap between the body and the done-when list."
+    },
+    "words": 768
+  },
+  {
+    "label": "S3",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 11,
+    "justifications": {
+      "1": "The description triggers on meeting notes with requests for decisions, action items or a handoff summary, though it does not list the brief's contents and 'a summary to hand off' edges toward general summarising.",
+      "2": "Defined terms plus a template with explicit field values ('Not stated', 'Conflicting') make every part reproducible.",
+      "3": "Step 5 'Check, then stop' lists done conditions, then says to fix failures and deliver in the reply or to a file if asked.",
+      "4": "No notes means ask and stop, missing fields are 'Not stated' plus an open question, conflicting values are 'Conflicting' plus a contradiction entry, and empty sections say 'None recorded in the notes.'",
+      "5": "The notes are the only source and inference is forbidden, but text in the notes addressed to an assistant is not addressed.",
+      "6": "At about 810 words, terms, steps and format each carry distinct content with only a little repetition in the final checklist."
+    },
+    "words": 809
+  },
+  {
+    "label": "S4",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description is short but tied to meeting notes or transcripts and to requests for decisions, action items or a handoff summary.",
+      "2": "A numbered template (D1, A1, P1, Q1, C1) with classification rules defines each part clearly, adding a proposals section.",
+      "3": "Each step has a done-when, but after 'Summarise last' there is no statement that the brief is delivered and work stops.",
+      "4": "Gaps are 'not stated' with explicit owner and deadline rules, contradictions quote both sides and stay standing, and empty sections read 'None on the record.' (absent notes are not covered).",
+      "5": "The 'on the record' framing makes the notes the evidence base, but nothing covers instructions inside the notes.",
+      "6": "At about 760 words the rules and template are proportionate, with useful edge cases and no clear padding."
+    },
+    "words": 759
+  },
+  {
+    "label": "S5",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description names meeting notes or a transcript and decision-brief outputs, and triggers on outcomes, actions or a handoff.",
+      "2": "Category definitions and a table-based template define each part, with open questions and contradictions as subsections of one heading.",
+      "3": "Step 4 gives a clear done-when checklist, but there is no explicit delivery step or statement that no further work follows.",
+      "4": "Missing values are 'Not stated' and ownerless actions become open questions, contradictions and revisions are distinguished, and empty sections say 'None recorded in the notes.' (absent notes are not covered).",
+      "5": "Decisions require a commitment signal in the notes and every entry traces to a quote, but embedded instructions are not addressed.",
+      "6": "At about 670 words it is concise, with a ledger step and template and nothing obviously padded."
+    },
+    "words": 671
+  },
+  {
+    "label": "S6",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 1,
+      "6": 1
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description names meeting notes, minutes or transcripts and triggers on decisions, action items or a summary for someone who missed the meeting.",
+      "2": "Terms, a template and per-section rules define all four parts in detail, plus conditional decisions and a proposals section.",
+      "3": "The trace check lists done conditions, and it states that the task ends at delivery with no sending, ticketing or contacting owners.",
+      "4": "No notes means ask and stop, unreadable or cut-off parts become open questions, missing fields are 'Not stated', contradictions quote both sides without picking a winner, and empty headings say 'None recorded.'",
+      "5": "It forbids inferring values and says seniority does not make a decision, but it does not tell the agent to treat instructions inside the notes as content.",
+      "6": "At about 910 words it is the longest, and the section rules restate guidance already in Terms and the trace check (owner and deadline wording, the handoff drawing only on sections above)."
+    },
+    "words": 910
+  }
+]

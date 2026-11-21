@@ -1,0 +1,165 @@
+[
+  {
+    "brief_id": "ahjc",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.67,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 91.7,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.33,
+        "key_id": "D2",
+        "quote": "Proposals (not decided) / P1. If Fri 20 Nov is rained out, the pour falls back to Mon 23 Nov. ... Status: no decision recorded (stated as a fallback, not marked as agreed or attributed to anyone)",
+        "reason": "D2 (Mon 23 Nov rain fallback, Steve calls by 4am) is presented as a proposal not decided, so it is not captured as a decision: 0 of 1 for D2. Recall = 25 x 2/3 = 16.67."
+      }
+    ]
+  },
+  {
+    "brief_id": "eeen",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.67,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 91.7,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.33,
+        "key_id": "D2",
+        "quote": "Proposals not decided / 1. Fallback pour date of Mon 23 Nov if Fri 20 Nov is rained out. The notes record it as the fallback but do not show it was agreed",
+        "reason": "D2 (Mon 23 Nov rain fallback, Steve calls by 4am) is presented as a proposal not decided, so it is not captured as a decision: 0 of 1 for D2. Recall = 25 x 2/3 = 16.67."
+      },
+      {
+        "criterion": "actions",
+        "points": 0,
+        "key_id": "A2",
+        "quote": "Finish L3 formwork | Ivan | Fri",
+        "reason": "Not a key action, but the notes contain it ('Ivan expects it finished Fri') with that owner and vague deadline, so it is not an action the notes do not contain; no deduction."
+      }
+    ]
+  },
+  {
+    "brief_id": "hszf",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.67,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 91.7,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.33,
+        "key_id": "D2",
+        "quote": "Proposals not decided / Fallback pour date of Mon 23 Nov if Fri 20 Nov is rained out: raised by Not stated; status: recorded without decision wording or a speaker",
+        "reason": "D2 (Mon 23 Nov rain fallback, Steve calls by 4am) is presented as a proposal not decided, so it is not captured as a decision: 0 of 1 for D2. Recall = 25 x 2/3 = 16.67."
+      }
+    ]
+  },
+  {
+    "brief_id": "mosm",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.67,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 91.7,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.33,
+        "key_id": "D2",
+        "quote": "Proposals (not decided) | Fallback pour date of Mon 23 Nov if Fri 20 Nov is rained out. | Not stated | No commitment signal recorded",
+        "reason": "D2 (Mon 23 Nov rain fallback, Steve calls by 4am) is presented as a proposal not decided, so it is not captured as a decision: 0 of 1 for D2. Recall = 25 x 2/3 = 16.67."
+      }
+    ]
+  },
+  {
+    "brief_id": "wgjd",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.67,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 91.7,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.33,
+        "key_id": "D2",
+        "quote": "Proposals (not decided) / If Fri 20 Nov is rained out, the pour falls back to Mon 23 Nov, raised by unresolved.",
+        "reason": "D2 (Mon 23 Nov rain fallback, Steve calls by 4am) is presented as a proposal not decided, so it is not captured as a decision: 0 of 1 for D2. Recall = 25 x 2/3 = 16.67."
+      }
+    ]
+  },
+  {
+    "brief_id": "zopp",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 25.0,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "actions",
+        "points": 0,
+        "key_id": "A4",
+        "quote": "\"by Wed 11 Nov\" (Jenna had earlier said \"by Fri 13 Nov\"; Brian moved it after council said they need it by Wed 11 Nov)",
+        "reason": "Leads with Wed 11 Nov and states 'No contradictions recorded in the notes that the notes leave unresolved', but both dates are shown and the open item says Jenna has not confirmed Wed 11 Nov, so the conflict is still shown (key grading note: recommending the earlier date is acceptable if the conflict is shown). No deduction; reflected in usefulness."
+      }
+    ]
+  }
+]

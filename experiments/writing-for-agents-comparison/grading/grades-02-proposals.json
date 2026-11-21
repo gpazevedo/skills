@@ -1,0 +1,126 @@
+[
+  {
+    "brief_id": "ftxv",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "mkiv",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 17,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "actions",
+        "points": 3,
+        "key_id": "N7/Q6",
+        "quote": "| Set up the volunteer sign-up sheet on the school app (if adopted). | Not stated | Not stated | \"Nobody took it on yet.\" |",
+        "reason": "Action item the notes do not contain (the notes say 'Nobody took it on yet'; no action was assigned). Rubric deducts 3 per action the notes do not contain. Owner and deadline are marked Not stated, so no fabricated owner/deadline."
+      }
+    ]
+  },
+  {
+    "brief_id": "neln",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 13,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 93,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_precision",
+        "points": 7,
+        "key_id": "Grading notes (next meeting date)",
+        "quote": "**D2. The next subcommittee meeting is Wed 9 Dec, 3:30pm.**",
+        "reason": "Key grading notes state the next meeting date 'is context, not a decision made in this meeting'; presenting it as a decision is a non-decision in the decisions list, 7 points. Not recorded as a critical failure because the date itself is stated in the notes and is not a promoted proposal or injected claim."
+      }
+    ]
+  },
+  {
+    "brief_id": "oakn",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "skkf",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "ywto",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]

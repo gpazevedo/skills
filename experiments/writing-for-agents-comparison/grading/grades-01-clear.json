@@ -1,0 +1,177 @@
+[
+  {
+    "brief_id": "fgpk",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "lqxk",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "phta",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "How much time regression actually gets is Not stated.",
+        "reason": "Invented open question about regression timing / staging; not raised as unresolved in the notes. The key lists no open questions and calls invented unresolved issues padding; the rubric leaves the size open, so 3 points are deducted per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "N3",
+        "quote": "The old pricing v1 endpoint \"stays up until Android catches up\"; no date or owner for the Android move to v2 is stated.",
+        "reason": "Invented open question built on existing behaviour (N3, 'no change there'). The key lists no open questions and calls invented unresolved issues padding; the rubric leaves the size open, so 3 points are deducted per item, as for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "svgu",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12,
+      "handoff": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "N3",
+        "quote": "Old v1 pricing endpoint: was keeping it up until Android catches up decided, and when is that expected?",
+        "reason": "Invented open question; the notes report existing behaviour ('no change there'), not an unresolved issue. The key lists no open questions and calls invented unresolved issues padding; the rubric leaves the size open, so 3 points are deducted per item, as for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "tudv",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 10
+    },
+    "total": 91,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "N1",
+        "quote": "Was leaving dark mode out of 4.2 a group decision? The notes record it only as \"Parked, not for 4.2\", with no recorded agreement.",
+        "reason": "Goes beyond noting dark mode is parked (acceptable) and manufactures doubt about whether it was agreed. The key lists no open questions and calls invented unresolved issues padding; the rubric leaves the size open, so 3 points are deducted per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "When will everything be on staging so Marcus can start regression?",
+        "reason": "Invented open question about staging timing; not raised as unresolved in the notes. The key lists no open questions and calls invented unresolved issues padding; the rubric leaves the size open, so 3 points are deducted per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "D1",
+        "quote": "4.2 release date: \"4.2 was meant to go Mon 9 Nov.\" (1. Release date, Priya) vs \"Agreed: 4.2 release moves to Mon 16 Nov.\"",
+        "reason": "Listed under Contradictions, but the notes record an explicit change (D1), not a contradiction; the key has none. The rubric says 15 unless a contradiction is invented without giving the size, so 3 points per item is applied."
+      }
+    ]
+  },
+  {
+    "brief_id": "vpyh",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 10
+    },
+    "total": 91,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Q1. Who owns raising the minimum iOS version to 16 (D3), including removing the old map workaround (\"about 400 lines\", line 23)? No owner or deadline on the record.",
+        "reason": "Invented ownership gap; the key flags map-workaround work as not an action item. The key lists no open questions and calls invented unresolved issues padding; the rubric leaves the size open, so 3 points are deducted per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Q2. Who owns the Apple Pay work moved to 4.3 (D2), given the SDK update is \"still failing review on the sandbox account\" (line 19)? No owner or deadline on the record.",
+        "reason": "Invented open question; 4.3 work is outside this meeting's scope. The key lists no open questions and calls invented unresolved issues padding; the rubric leaves the size open, so 3 points are deducted per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Q3. Who produces the 4.2 release candidate, and by when, so Marcus can start regression (A4)?",
+        "reason": "Invented open question; not raised as unresolved in the notes. The key lists no open questions and calls invented unresolved issues padding; the rubric leaves the size open, so 3 points are deducted per item, as for an invented action."
+      }
+    ]
+  }
+]

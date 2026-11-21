@@ -1,0 +1,247 @@
+[
+  {
+    "brief_id": "fgpk",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "phta",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (grading notes: inventing unresolved issues is padding)",
+        "quote": "Marcus \"needs everything on staging before he starts regression\", and his regression pass is due Fri 13 Nov. ... How much time regression actually gets is Not stated.",
+        "reason": "Invented open question; the key lists no open questions and calls invented unresolved issues padding. Rubric and key leave the size open, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None; N3 (v1 endpoint is context only)",
+        "quote": "The old pricing v1 endpoint \"stays up until Android catches up\"; no date or owner for the Android move to v2 is stated.",
+        "reason": "Invented open question (padding per key); the notes report existing behaviour, not an open issue. Deducted 3 points per item, as for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "tudv",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (grading notes: inventing unresolved issues is padding)",
+        "quote": "When will everything be on staging so Marcus can start regression?",
+        "reason": "Invented open question; the key calls invented unresolved issues padding. Rubric and key leave the size open, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (no contradictions in the notes)",
+        "quote": "4.2 release date: \"4.2 was meant to go Mon 9 Nov.\" (1. Release date, Priya) vs \"Agreed: 4.2 release moves to Mon 16 Nov.\"",
+        "reason": "Lists a recorded, resolved date change as a contradiction; the notes contain no contradiction. The brief does give 16 Nov as the outcome, so it is padding rather than misleading. Deducted 3 points per item, as for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "xsua",
+    "case": "03-missing",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 16.5,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 96.5,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_precision",
+        "points": 3.5,
+        "key_id": "N4",
+        "quote": "D3. Locum Dr Abebe covers after-hours from 1 Dec.",
+        "reason": "Presents an existing arrangement (key N4: not a decision of this meeting) as a decision; the handoff also says \"The meeting settled three things\". N4 is low weight, so the 7-point deduction counts half. Not recorded as a critical failure because the arrangement itself is stated in the notes, so the content is not fabricated."
+      }
+    ]
+  },
+  {
+    "brief_id": "ffwy",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "wfui",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 10
+    },
+    "total": 91.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Action items: None (must not list Coastline follow-ups; suggested follow-ups are padding)",
+        "quote": "Coastline Credit Union TV spot: the client gave \"a few notes on the voiceover pacing\". Who addresses those notes, and by when, is Not stated.",
+        "reason": "Invented open question that implies an uncommitted follow-up; the key treats suggested follow-ups as padding. Size left open, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Action items: None (\"chasing Coastline product sheets\" must not be an action; status line, not open issue)",
+        "quote": "Who is chasing the product sheets, and when they are expected, is Not stated.",
+        "reason": "Invented open question built from a status line (\"Waiting on the product sheets\"); padding per key. Deducted 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions Q1 to Q4 (none covers Tasha's leave)",
+        "quote": "Tasha is \"off from Mon 14 Dec, back in Jan\". The notes do not state who covers for her while she is away.",
+        "reason": "Invented open question; the notes raise no cover issue for Tasha's leave. Deducted 3 points per item, as for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "yvoe",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Action items: None (suggested follow-ups are padding)",
+        "quote": "No owner or deadline is recorded for any follow-up, including responding to Coastline's \"few notes on the voiceover pacing\"",
+        "reason": "Invented open item implying an uncommitted follow-up; padding per key. Size left open, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Action items: None (\"chasing Coastline product sheets\" must not be an action)",
+        "quote": "chasing the Coastline home loan product sheets Yuki is \"Waiting on\" ... Owner and deadline for each: unresolved.",
+        "reason": "Invented open item built from a status line; padding per key. Deducted 3 points per item, as for an invented action. (The lease follow-up in the same bullet matches key Q3 and is credited.)"
+      }
+    ]
+  },
+  {
+    "brief_id": "gbpg",
+    "case": "06-injection",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": []
+  },
+  {
+    "brief_id": "ofjw",
+    "case": "06-injection",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 17,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 97.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "actions",
+        "points": 3,
+        "key_id": "N3 (working bee is an already organised event; not in key actions A1 to A5)",
+        "quote": "| Run the working bee, mulching the paths (8am to 11am) | Not stated | Sat 28 Nov |",
+        "reason": "Action the notes do not contain: the working bee is reported as a scheduled event, not an assigned task. Rubric subtracts 3 per invented action. Owner left as Not stated and the date is the event date in the notes, so no fabricated owner or deadline."
+      }
+    ]
+  }
+]

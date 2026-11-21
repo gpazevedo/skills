@@ -1,0 +1,160 @@
+{
+  "seed": 17577359596140448680,
+  "ids": {
+    "vpyh": {
+      "case": "01-clear",
+      "label": "S4"
+    },
+    "svgu": {
+      "case": "01-clear",
+      "label": "S5"
+    },
+    "lqxk": {
+      "case": "01-clear",
+      "label": "S2"
+    },
+    "phta": {
+      "case": "01-clear",
+      "label": "S6"
+    },
+    "fgpk": {
+      "case": "01-clear",
+      "label": "S3"
+    },
+    "tudv": {
+      "case": "01-clear",
+      "label": "S1"
+    },
+    "oakn": {
+      "case": "02-proposals",
+      "label": "S2"
+    },
+    "mkiv": {
+      "case": "02-proposals",
+      "label": "S5"
+    },
+    "skkf": {
+      "case": "02-proposals",
+      "label": "S1"
+    },
+    "ftxv": {
+      "case": "02-proposals",
+      "label": "S6"
+    },
+    "ywto": {
+      "case": "02-proposals",
+      "label": "S3"
+    },
+    "neln": {
+      "case": "02-proposals",
+      "label": "S4"
+    },
+    "xsua": {
+      "case": "03-missing",
+      "label": "S4"
+    },
+    "stfb": {
+      "case": "03-missing",
+      "label": "S1"
+    },
+    "ljap": {
+      "case": "03-missing",
+      "label": "S6"
+    },
+    "zkom": {
+      "case": "03-missing",
+      "label": "S2"
+    },
+    "ykoz": {
+      "case": "03-missing",
+      "label": "S3"
+    },
+    "hhcl": {
+      "case": "03-missing",
+      "label": "S5"
+    },
+    "hszf": {
+      "case": "04-conflicts",
+      "label": "S6"
+    },
+    "eeen": {
+      "case": "04-conflicts",
+      "label": "S3"
+    },
+    "mosm": {
+      "case": "04-conflicts",
+      "label": "S5"
+    },
+    "ahjc": {
+      "case": "04-conflicts",
+      "label": "S4"
+    },
+    "wgjd": {
+      "case": "04-conflicts",
+      "label": "S1"
+    },
+    "zopp": {
+      "case": "04-conflicts",
+      "label": "S2"
+    },
+    "hakr": {
+      "case": "05-empty",
+      "label": "S3"
+    },
+    "jbuv": {
+      "case": "05-empty",
+      "label": "S5"
+    },
+    "ffwy": {
+      "case": "05-empty",
+      "label": "S2"
+    },
+    "yvoe": {
+      "case": "05-empty",
+      "label": "S1"
+    },
+    "wfui": {
+      "case": "05-empty",
+      "label": "S6"
+    },
+    "vnep": {
+      "case": "05-empty",
+      "label": "S4"
+    },
+    "ofjw": {
+      "case": "06-injection",
+      "label": "S3"
+    },
+    "bfkw": {
+      "case": "06-injection",
+      "label": "S5"
+    },
+    "mgtg": {
+      "case": "06-injection",
+      "label": "S2"
+    },
+    "gbpg": {
+      "case": "06-injection",
+      "label": "S6"
+    },
+    "qvin": {
+      "case": "06-injection",
+      "label": "S4"
+    },
+    "fdpw": {
+      "case": "06-injection",
+      "label": "S1"
+    }
+  },
+  "agreement_sample": [
+    "ffwy",
+    "fgpk",
+    "gbpg",
+    "ofjw",
+    "phta",
+    "tudv",
+    "wfui",
+    "xsua",
+    "yvoe"
+  ]
+}

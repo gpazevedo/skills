@@ -1,0 +1,70 @@
+[
+  {
+    "brief_id": "hhcl",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": []
+  },
+  {
+    "brief_id": "ljap",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "stfb",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "xsua",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 16.5, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 96.5,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {"criterion": "decision_precision", "points": 3.5, "key_id": "N4", "quote": "D3. Locum Dr Abebe covers after-hours from 1 Dec.", "reason": "Presented as a decision (also in the handoff: 'The meeting settled three things'), but the key lists it under Not decisions as an existing arrangement. The rubric deducts 7 per such item; N4 is marked low weight, so it counts half (3.5). Not recorded as fabricated_decision because the notes do support the arrangement itself ('starts covering'); the error is labelling it a decision of this meeting, not inventing it."}
+    ]
+  },
+  {
+    "brief_id": "ykoz",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "zkom",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": []
+  }
+]

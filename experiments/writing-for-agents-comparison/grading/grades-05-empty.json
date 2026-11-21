@@ -1,0 +1,199 @@
+[
+  {
+    "brief_id": "ffwy",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "hakr",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "[whole brief, about 529 words]",
+        "reason": "the notes are 399 words; this brief is about 529 words, noticeably longer than the notes (over 25% longer). The key says such a brief 'loses the conciseness mark'; the rubric's only conciseness mark is the handoff's, so the handoff scores 5 (key-specific rule applied inside the criterion). The handoff itself is concise and consistent."
+      }
+    ]
+  },
+  {
+    "brief_id": "jbuv",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12,
+      "handoff": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "N7",
+        "quote": "Was replacing the kitchen coffee machine decided?: the notes record agreement only that the current machine is bad, not a commitment to replace it",
+        "reason": "Manufactures doubt about N7, which the notes and key treat as clearly not a decision; the handoff repeats it as 'still unresolved ... whether replacing the coffee machine was actually agreed'. Not an open question in the key or raised in the notes; the key treats brief-writer follow-ups as padding. Size of deduction not fixed by rubric or key, so 3 points per item, as for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "vnep",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "[whole brief, about 528 words]",
+        "reason": "the notes are 399 words; this brief is about 528 words, noticeably longer than the notes (over 25% longer). The key says such a brief 'loses the conciseness mark'; the rubric's only conciseness mark is the handoff's, so the handoff scores 5 (key-specific rule applied inside the criterion). The handoff itself is concise and consistent."
+      }
+    ]
+  },
+  {
+    "brief_id": "wfui",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 5
+    },
+    "total": 86,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (no actions; status is not action)",
+        "quote": "Coastline Credit Union TV spot: the client gave \"a few notes on the voiceover pacing\". Who addresses those notes, and by when, is Not stated.",
+        "reason": "Turns a status line into an unowned follow-up. Not an open question in the key or raised in the notes; the key treats brief-writer follow-ups as padding. Size of deduction not fixed by rubric or key, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Action items: None (chasing Coastline product sheets must not be an action)",
+        "quote": "Who is chasing the product sheets, and when they are expected, is Not stated.",
+        "reason": "Turns the 'Waiting on the product sheets' status into an unowned follow-up; the key names this as status, not an action. Not an open question in the key or raised in the notes; the key treats brief-writer follow-ups as padding. Size of deduction not fixed by rubric or key, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (padding)",
+        "quote": "Tasha is \"off from Mon 14 Dec, back in Jan\". The notes do not state who covers for her while she is away.",
+        "reason": "Invented question about cover; nothing in the notes raises it. Not an open question in the key or raised in the notes; the key treats brief-writer follow-ups as padding. Size of deduction not fixed by rubric or key, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "[whole brief, about 586 words]",
+        "reason": "the notes are 399 words; this brief is about 586 words, noticeably longer than the notes (over 25% longer). The key says such a brief 'loses the conciseness mark'; the rubric's only conciseness mark is the handoff's, so the handoff scores 5 (key-specific rule applied inside the criterion). The handoff itself is concise and consistent."
+      }
+    ]
+  },
+  {
+    "brief_id": "yvoe",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 3,
+      "handoff": 5
+    },
+    "total": 83,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "N7",
+        "quote": "Was the better coffee machine decided? The notes record \"General agreement that the current one is bad\", which agrees on the problem but not on buying a replacement.",
+        "reason": "Manufactures doubt about N7, which the notes and key treat as clearly not a decision. Not an open question in the key or raised in the notes; the key treats brief-writer follow-ups as padding. Size of deduction not fixed by rubric or key, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "N6",
+        "quote": "Was the fortnightly \"show and tell\" decided? The notes say only that \"People liked the idea in theory.\"",
+        "reason": "Manufactures doubt about N6, which the notes and key treat as clearly not a decision. Not an open question in the key or raised in the notes; the key treats brief-writer follow-ups as padding. Size of deduction not fixed by rubric or key, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (no actions; status is not action)",
+        "quote": "No owner or deadline is recorded for any follow-up, including responding to Coastline's \"few notes on the voiceover pacing\"",
+        "reason": "Creates an unowned follow-up from a status line; the handoff calls these 'next step[s]'. Not an open question in the key or raised in the notes; the key treats brief-writer follow-ups as padding. Size of deduction not fixed by rubric or key, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Action items: None (chasing Coastline product sheets must not be an action)",
+        "quote": "chasing the Coastline home loan product sheets Yuki is \"Waiting on\"",
+        "reason": "Creates an unowned follow-up from a status line the key names as status, not an action. (The lease item in the same bullet is credited as Q3, not deducted.) Not an open question in the key or raised in the notes; the key treats brief-writer follow-ups as padding. Size of deduction not fixed by rubric or key, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "[whole brief, about 562 words]",
+        "reason": "the notes are 399 words; this brief is about 562 words, noticeably longer than the notes (over 25% longer). The key says such a brief 'loses the conciseness mark'; the rubric's only conciseness mark is the handoff's, so the handoff scores 5 (key-specific rule applied inside the criterion). The handoff itself is concise and consistent."
+      }
+    ]
+  }
+]
