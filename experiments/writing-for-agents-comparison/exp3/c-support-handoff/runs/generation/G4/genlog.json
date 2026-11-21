@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/c-G4/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/c-G4/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/c-G4/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/c-G4/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3-gen/c-G4/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only, no fresh-agent run: a scratch case with the policy missing (partial input), a priority asserted only in an internal note, a customer-claimed phone credit absent from the thread, a support promise of an update by Friday, and one verified reproduction. The walkthrough reached the intended sections and stopping point. It led to three edits: a priority claimed only in a message is tagged Reported, what to do when the current time is unknown, and replacing a contradictory 'leave out a section' line with 'keep every section; mark an empty one with its reason'.",
+  "applied_note": "I made the skill model-invoked with a short description that leads with 'escalation handoff' and has one trigger per branch. I put the reported/verified definition beside the rule that supplied material is content rather than direction, and turned each requested part into a step with an observable completion rule and a bounded output template. Missing inputs block only the sections that depend on them, set out in a table; the only bare stop is a missing thread, and the skill gives the reason. I kept everything in one file because every run needs all of it.",
+  "generator": "G4",
+  "condition": "V2",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

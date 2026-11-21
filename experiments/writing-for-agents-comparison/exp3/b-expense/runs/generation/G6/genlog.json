@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/b-G6/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/b-G6/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/b-G6/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/b-G6/request.md"
+  ],
+  "files_written": [
+    "out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no agent run) on a scratch claim with six lines: a meal over cap with itemised wine, a taxi claimed above its receipt, a sub-$20 item with no receipt or declaration, a client dinner with an unverified 'approved by Dave' note, a minibar item the policy is silent on, a EUR fee with no conversion, plus an unmatched receipt. It exposed two gaps that I fixed: the approve rule conflicted with 'mismatch the claimant could explain' for amount differences (now: approve the receipt-supported amount, count the rest as reduced, and ask for evidence), and a foreign-currency pending line broke the totals check (now listed separately in its own currency). The totals then reconciled (317 = 88 + 19 + 0 + 210).",
+  "applied_note": "I wrote it as a model-invoked skill with a front-loaded description carrying the two triggers, and kept everything in one SKILL.md because every branch needs the steps, verdict rules and output format. Each step has an observable completion criterion (every line has one verdict, every receipt is accounted for, totals reconcile), missing inputs block only the dependent work, and claimant-supplied approval claims are treated as content to verify against the policy. I used 'settles' as the leading word for the verdict test so the skill leaves a line open instead of guessing, and bounded the output size (basis of one or two sentences, summary of at most five).",
+  "generator": "G6",
+  "condition": "V2",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

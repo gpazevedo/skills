@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/c-G5/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/c-G5/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/c-G5/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/c-G5/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3-gen/c-G5/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Wrote a small scratch case (ticket thread with a support agent paraphrasing the customer's claim, an internal hypothesis note, a 'check with billing about a credit' reply, an update promise, a Business-plan policy with business hours and both response and update targets) and walked it through the steps by hand. Changes: commitments are now recorded at the strength they were made and only from customer-facing messages; the service-level step and format now handle several applicable targets each with its own deadline and status (including 'met'), and ambiguous terms such as time zone or 'business day' are quoted with the reading used stated.",
+  "applied_note": "I made the skill model-invoked with a short description that front-loads the leading word 'escalation handoff' and lists only distinct trigger branches. The body is ordered steps, each ending on a checkable, exhaustive completion criterion (every message read, every support-side message checked for promises, every line traced to an input), with the provenance tags co-located as in-file reference and leading words (Reported, Verified, Hypothesis, provenance) carrying the reported-versus-verified rule. The no-invention guardrail is phrased positively as 'every term comes from a policy quote' plus explicit 'Policy does not state' and 'Not determinable' fallbacks, and everything stays in one file because every branch needs the template.",
+  "generator": "G5",
+  "condition": "O",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

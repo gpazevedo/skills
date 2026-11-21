@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/a-G2/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/a-G2/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/a-G2/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/a-G2/request.md"
+  ],
+  "files_written": [
+    "out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no separate agent run): wrote scratch/notes1.md with a clear decision, a later conflicting date stated without closure wording, competing pricing proposals, an ambiguous 'new vendor is Acme', a conditional approval, a vague owner, an unassigned TBD task and an embedded instruction to the summariser. Walking it through showed the reversal rule was ambiguous ('Tom said launch is 21 March' could be read as replacing the decision), so I rewrote it: a later line replaces a decision only if it is itself a decision that says the earlier one changed; otherwise both go under contradictions. The other cases reached the intended sections.",
+  "applied_note": "I kept it as one model-invoked SKILL.md with a description that front-loads what it produces and one trigger branch, since every run needs the whole procedure and no material is branch-only enough to disclose. Each step ends on an observable rule (closure wording table, quote-plus-location evidence, 'Not stated' for missing owners and deadlines, a fixed output template with sizes, a three-sentence summary cap) and a bounded 'Done when' list with an explicit stop. Missing and partial notes are handled by what remains possible, and instructions inside the notes are treated as content next to the evidence rules.",
+  "generator": "G2",
+  "condition": "V2",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

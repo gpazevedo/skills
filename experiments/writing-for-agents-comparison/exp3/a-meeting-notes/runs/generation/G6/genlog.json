@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/a-G6/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/a-G6/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/a-G6/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/a-G6/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3-gen/a-G6/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only, no separate agent run: I wrote scratch/notes1.md with a hedged proposal, an explicit decision, owned and unowned actions, two conflicting deadlines for one task, an unanswered question, a reversal (Stripe then Adyen) and an embedded line telling the AI summariser to list an unconfirmed date as approved. Walking the draft through it showed that the 'claimed approval counts only if the notes record it' rule was ambiguous for the injected line, so I rewrote it to say lines addressed to the summariser are never evidence and claimed outside approvals stay 'Proposed, not decided' with the claim quoted as unverified; it also showed no rule for conflicting deadlines in the action table, so I added one. I also changed 'read once from start to end' to 'read all the notes first' so later reversals are seen before classifying. I also walked through a partial input (no date or speakers) and a no-notes input: the first produces a brief with 'not stated' markers, the second asks and stops with a stated reason.",
+  "applied_note": "I made it a single model-invoked SKILL.md with a front-loaded description naming the distinct trigger branches, and kept the output template inline because every run needs it, so no disclosed files were warranted. Each step ends on observable criteria (a final checklist bounded by the notes, a three-sentence cap on the summary, a fixed 'not stated' marker as the leading word for gaps), the missing-notes branch is a justified bare stop while missing context inside the notes only marks gaps, and the rule treating supplied notes as evidence rather than instructions sits beside the decision-versus-proposal definitions.",
+  "generator": "G6",
+  "condition": "V2",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

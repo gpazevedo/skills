@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/a-G5/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/a-G5/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/a-G5/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/a-G5/request.md"
+  ],
+  "files_written": [
+    "out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Wrote scratch/notes1.md (product sync notes with a 'leaning towards' pricing proposal, an agreed launch date, an action with owner and relative deadline, an ownerless 'someone needs to' action, a legal task reassigned to a second owner with a different deadline, an open vendor question, and a free-trial decision reversed later in the notes) and walked the skill over it by hand. As a result I added a separate Proposals section instead of routing proposals into Open questions, extended the ownerless-action rule to cover 'someone', added a rule for how an action caught in a contradiction shows its conflicting owners and deadlines, and adjusted the final check to match.",
+  "applied_note": "I made the skill model-invoked with a short description that front-loads the leading word 'decision brief' and lists only distinct triggers, and kept everything in one file because every run needs the classification rules, the steps and the output format (no branch only some runs reach). Each step ends on a checkable completion criterion, with an exhaustive final check tying every brief line back to the notes, and leading words (decision, proposal, evidence, unresolved, `unstated`) anchor the behaviour. The no-guessing guardrail is phrased positively as writing `unstated` plus an open question, and I left out no-op instructions such as general advice to be accurate or concise.",
+  "generator": "G5",
+  "condition": "O",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

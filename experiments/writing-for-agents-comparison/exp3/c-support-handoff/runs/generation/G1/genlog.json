@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/c-G1/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/c-G1/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/c-G1/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/c-G1/request.md"
+  ],
+  "files_written": [
+    "out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Wrote a scratch case (CSV export timeouts, a P2 ticket with a 'waiting on customer' pause, a customer claiming a sales rep promised a 24h fix, a policy with business hours in 'customer local time' but an account record giving only a region, and no stated clock-start event) and walked it through the skill by hand. Three changes followed: a labelled-assumption deadline is allowed beside an Undetermined one when the policy omits the clock-start event; a mismatch between reported impact and the assigned priority is flagged; commitment due times keep the promise's own wording ('end of day tomorrow') instead of a guessed timestamp.",
+  "applied_note": "I made it model-invoked with a short description front-loaded on 'escalation handoff' and one trigger branch, and kept everything in a single SKILL.md because every run needs the provenance rules, the service-level procedure and the format, so nothing qualified for disclosure. The leading words 'reported' and 'verified' carry the customer-versus-support distinction throughout, the no-invention guardrails are phrased positively (quote verbatim with author; write 'Undetermined' and name the missing input), and each step ends on a checkable, exhaustive completion criterion such as 'every message in the thread has a ledger line'.",
+  "generator": "G1",
+  "condition": "O",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

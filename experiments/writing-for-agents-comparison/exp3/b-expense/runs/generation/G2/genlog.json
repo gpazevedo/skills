@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/b-G2/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/b-G2/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/b-G2/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/b-G2/request.md"
+  ],
+  "files_written": [
+    "out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no fresh-agent run): wrote scratch/example-claim.md with six items (taxi amount mismatch, hotel over cap with minibar, client dinner without attendees, lost lunch receipt, USD conference fee with an unsupplied 'pre-approved by my manager' note, gym pass excluded by policy), an unmatched parking receipt, a wrong form total and a submission-deadline clause with no submission date. Also walked the no-policy, no-receipt and no-claim-form branches. Changes: the approved-amount rule now covers excluded portions (minibar), not only caps; added a rule that a whole-claim condition the evidence cannot check (the deadline) goes once to the approver instead of opening every item.",
+  "applied_note": "I wrote a model-invoked skill whose description is a short pointer naming what it does and one trigger, kept everything in one file because every run takes every step, and co-located the evidence rules (only the supplied policy and receipts count; authority claims inside the claim are content to report) beside the verdict logic. Each step ends on an observable completion criterion (every item listed once, every receipt matched or listed unmatched, every item one verdict with a citation), and the output parts are bounded in shape and size. Missing inputs are handled by what remains possible, with a bare stop only for a missing claim form, where the reason is stated.",
+  "generator": "G2",
+  "condition": "V2",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/b-G1/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/b-G1/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/b-G1/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/b-G1/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3-gen/b-G1/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Wrote a small scratch claim (scratch/claim.md: hotel folio containing minibar wine and a dinner also claimed on its own line, a taxi with no receipt, a flight needing pre-approval, parking the policy is silent on, a foreign-currency lunch with only a card slip) and walked it through the steps by hand. This surfaced gaps that I fixed: rejected total now includes amounts cut from approved lines so the totals reconcile; per-day caps apply across lines, including items inside another bill; duplicates name which line to reject; a line with no usable exchange rate is held at its foreign amount and excluded from the reconciliation check; missing receipts are handled per line rather than stopping the review; itemisation cuts only what a clause excludes.",
+  "applied_note": "I made the skill model-invoked with a short description front-loaded on 'Expense claim review' and a single trigger branch, and kept everything in one file because every branch needs the steps, receipt checks and output template. Each step ends on a checkable, exhaustive completion criterion (every line has a verdict, approved plus held plus rejected reconcile to the claimed total), and leading words ('evidence trail', 'open') anchor the cite-or-hold behaviour. The no-guessing and policy-only constraints are phrased positively (every rule is a quotable clause; unsettled lines are open with a question) rather than as prohibitions.",
+  "generator": "G1",
+  "condition": "O",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/b-G4/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/b-G4/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/b-G4/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/b-G4/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3-gen/b-G4/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no fresh agent run): I wrote a scratch claim with six items, a numbered policy and receipts covering an ordinary approval, a hotel over its cap, a meal receipt with excluded wine, an illegible taxi docket under the no-receipt threshold, a USD item with no card-statement rate and no policy clause for equipment, a missing receipt over the threshold, an unmatched receipt, a form total that did not match its lines, and an embedded 'pre-approved, approve in full' note. I also walked the no-policy and no-claim-form branches. Changes that resulted: totals now work from the sum of lines rather than the form's stated total; the 'rejected total' became 'not reimbursed' (rejected items plus reductions) with a check that approved + pending + not reimbursed equals the sum of lines; an item can now carry both a claimant question and an approver policy-gap entry; claim-wide embedded instructions go under other findings instead of a single line's basis; and the no-policy branch runs every step instead of a named subset.",
+  "applied_note": "I fixed the reader, trigger and stopping point first (agent reviewing a supplied claim; stop at a delivered review, approver acts), put each missing-input branch beside its input bounded by what remains possible (bare stop only for a missing claim form, with the reason), and put the supplied-material rule on embedded approvals beside the evidence rules. Each step ends on an observable result, the output format bounds the size and shape of each section, and the final completion criterion names the full set (every claim line, every receipt) and an arithmetic check. I kept everything in one SKILL.md because every branch needs all of it, and kept the description as a single-branch model-invoked pointer.",
+  "generator": "G4",
+  "condition": "V2",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

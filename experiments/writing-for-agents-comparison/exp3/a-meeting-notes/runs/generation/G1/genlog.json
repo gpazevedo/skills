@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/a-G1/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/a-G1/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/a-G1/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/a-G1/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3-gen/a-G1/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Wrote a short scratch set of meeting notes containing a proposal with partial agreement, a clear decision, actions with vague owners and relative deadlines, a budget contradiction, an unanswered question and an explicit reversal, then walked the skill's steps over it by hand. The tie-breakers handled the partial-agreement and reversal cases; as a result I tightened the calendar-date rule to require a full meeting date (the sample had no year), reworded the proposal-support rule, and moved the 'None recorded.' rule so it applies to every section, not only action items.",
+  "applied_note": "I made it a model-invoked skill with a short description front-loaded on 'decision brief' and one trigger branch, and kept everything in one SKILL.md since every run needs all of it. The body is three ordered steps, each ending on a checkable completion criterion (every line tagged, every entry filled, every check holding), with the classification rules co-located under the tagging step and the leading words 'traces', 'verbatim' and 'unresolved' carrying the no-guessing requirement in positive form ('Not stated', open questions) rather than as prohibitions.",
+  "generator": "G1",
+  "condition": "O",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

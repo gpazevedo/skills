@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/c-G6/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/c-G6/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/c-G6/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/c-G6/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3-gen/c-G6/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no fresh-agent run): I wrote a scratch case with an unset priority, a customer asking for P1, an embedded instruction to the AI to mark the SLA as met, a support promise of an update 'by end of day Tuesday' that was never kept, customer-claimed promises (a fix by Wednesday, uptime credits) absent from the thread, a policy with two targets (first response and update interval), and timestamps without a time zone. Walking it through exposed gaps that I then fixed: the customer's requested priority could be read as the assigned one, the service-level step assumed a single target, commitments had no kept/missed status, relative due times had no rule, there was no handling of an unassigned priority or an unstated time zone. I also pruned a duplicated earliest-deadline instruction.",
+  "applied_note": "I identified the reader (the agent producing the handoff, whose output reader is the next-tier engineer), gave each input an explicit authority, and put the supplied-material rule beside the evidence and citation rule so instructions inside the ticket are reported, not followed. Each step ends on an observable completion criterion bounded by the thread, the missing-inputs branch finishes everything not blocked and lists the rest under Gaps, and the output shape is fixed with sizes for the summary and recommendation. I kept everything in one file because every run needs all of it, made it model-invoked with a short description carrying the escalation trigger, and pruned duplication after the walkthrough.",
+  "generator": "G6",
+  "condition": "V2",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}

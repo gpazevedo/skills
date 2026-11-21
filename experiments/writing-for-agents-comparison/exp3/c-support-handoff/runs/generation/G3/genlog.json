@@ -1,0 +1,18 @@
+{
+  "files_read": [
+    "/tmp/wfa3-gen/c-G3/writing-for-agents/SKILL.md",
+    "/tmp/wfa3-gen/c-G3/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3-gen/c-G3/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3-gen/c-G3/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3-gen/c-G3/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Wrote a scratch case (empty CSV export ticket with a customer-claimed uptime promise, an agent's unauthorised credit promise, a P2 policy in business hours with an EU region but no exact time zone) and walked the steps by hand. Changes: removed an invented 'at risk' threshold (25% of window) since it was itself a made-up service-level term, replacing it with met/open/breached/cannot determine plus any policy-defined status; added the rule that a status identical under every plausible value of a missing term may be given with the term named; added a policy note beside commitments that the policy limits (credits only via Account Management); made customer-attributed promises explicitly [reported] claims; allowed one service-level block per clock.",
+  "applied_note": "I made it a model-invoked skill with a short description that front-loads the leading words 'escalation handoff' and carries one trigger branch, and kept it in a single file because every case needs the tags, steps and template (no branch justified disclosure). The reported/verified distinction rides on co-located provenance tags used as leading words throughout, each step ends on a checkable, exhaustive completion criterion, and the no-invention rules are phrased positively (every line traces to a source; a commitment exists only where the thread's words made it; missing terms are named) and enforced by a final trace pass.",
+  "generator": "G3",
+  "condition": "O",
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox": []
+}
