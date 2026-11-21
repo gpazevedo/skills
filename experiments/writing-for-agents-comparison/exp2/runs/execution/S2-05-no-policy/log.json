@@ -1,0 +1,13 @@
+{
+  "run": "S2-C5",
+  "tokens": 74570,
+  "tool_uses": 3,
+  "duration_ms": 49913,
+  "unclear": "What to do if nobody answers the missing-policy question; amounts above receipt without a policy.",
+  "label": "S2",
+  "case": "05-no-policy",
+  "launch_position": 9,
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox_reported": false,
+  "extra_files_in_sandbox": []
+}

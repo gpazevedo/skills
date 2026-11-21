@@ -1,0 +1,13 @@
+{
+  "run": "S2-C4",
+  "tokens": 87991,
+  "tool_uses": 6,
+  "duration_ms": 79585,
+  "unclear": "Empty questions section; where claim-level points go.",
+  "label": "S2",
+  "case": "04-branches",
+  "launch_position": 25,
+  "model": "claude-opus-5-5 (inherited by a fresh general-purpose subagent)",
+  "reads_outside_sandbox_reported": false,
+  "extra_files_in_sandbox": []
+}
