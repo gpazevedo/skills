@@ -2,15 +2,15 @@
 
 ## Case grader
 
-Sent verbatim to each case grader (one per case, and to the agreement re-scorer), with `<DIR>` replaced by its sandbox path (`/tmp/wfa-grade/C?` or `/tmp/wfa-grade/agree`). The sandbox contains `rubric.md`, and for each case to grade `notes-<case>.md`, `key-<case>.md` and the briefs under `briefs/<id>.md`, where each id is a fresh random four-letter code.
+Sent verbatim to each case grader (one per case, and to the agreement re-scorer), with `<DIR>` replaced by its sandbox path (`/tmp/wfa-grade/C?` or `/tmp/wfa-grade/agree`). The sandbox contains `rubric.md`, and for each case to grade `notes-<case>.md`, `key-<case>.md` and the briefs under `briefs/<case>/<id>.md`, where each id is a fresh random four-letter code.
 
 ---
 
 You are grading decision briefs that an AI produced from meeting notes. Work only inside `<DIR>`. Read nothing outside it, do not use the web, and do not invoke any skills.
 
 1. Read `<DIR>/rubric.md` in full. It is the only scoring standard.
-2. For each case present, read its notes and answer key, then grade every brief listed for that case in `<DIR>/briefs/`. Grade each brief on its own against the key; do not rank briefs against each other or let one brief change how you score another.
-3. Apply the rubric literally. For every point deducted and every critical failure, quote the brief (or say the expected item is absent) and cite the answer-key ID.
+2. For each case present, read its notes and answer key, then grade every brief in `<DIR>/briefs/<case>/`. Grade each brief on its own against the key; do not rank briefs against each other or let one brief change how you score another.
+3. Apply the rubric literally. For every point deducted and every critical failure, quote the brief (or say the expected item is absent) and cite the answer-key ID. Where the rubric and the key leave the size of a deduction open (for example an invented open question the key calls padding), deduct 3 points per item, as the rubric does for an invented action, and say so in the deduction's reason. Evidence for a decision may appear anywhere in the brief, as long as it is clearly tied to that decision.
 4. Write `<DIR>/grades.json`: a JSON array with one object per brief:
 
 ```json

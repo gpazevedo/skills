@@ -1,0 +1,49 @@
+[
+  {
+    "brief_id": "qzxv",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 7.5,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 91.5,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "evidence_fidelity",
+        "points": 1.25,
+        "key_id": "D2",
+        "quote": "Apple Pay is removed from 4.2 and moves to 4.3.",
+        "reason": "No supporting evidence is given for this decision anywhere in the brief (the notes' reason, the SDK update failing sandbox review, is absent). Key grading notes: a decision without any evidence gets partial credit only; scored 0.5 of 1 out of 4 listed decisions. D1 (slip caused by the crash and pricing API not on staging) and D3 (2.1% iOS 15 share, about 400 lines of map workaround) get faithful supporting evidence in the handoff summary and count in full."
+      },
+      {
+        "criterion": "evidence_fidelity",
+        "points": 1.25,
+        "key_id": "N1",
+        "quote": "Dark mode is parked and not in 4.2.",
+        "reason": "Listed under Decisions with no supporting evidence or quote. Partial credit (0.5 of 1) out of 4 listed decisions. Not deducted under precision because key N1 explicitly accepts stating 'dark mode is not in 4.2' as a consequence of parking it, and the brief says 'parked' rather than approved or decided."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "N3",
+        "quote": "The old pricing v1 endpoint stays up until Android catches up. No date or owner was set for retiring it.",
+        "reason": "Key lists no open questions and its grading notes name invented open questions as an error to penalise. The notes say 'no change there'; retiring v1 was not an open issue in the meeting. Not an invented contradiction, so the criterion is not zeroed; deducted 3 by analogy with the 3-point penalty for invented actions."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "A4",
+        "quote": "Nobody owns a date for \"everything on staging\", so his Fri 13 Nov deadline depends on the crash fix and pricing v2 landing first.",
+        "reason": "Key lists no open questions ('Inventing unresolved issues ... is padding'). The meeting did not raise this as unresolved, and pricing v2 to staging does have an owner and date (Aisha, Fri 6 Nov, A2). Grounded in Marcus's stated dependency, so not an invented contradiction; deducted 3 as an invented open question."
+      }
+    ]
+  }
+]
