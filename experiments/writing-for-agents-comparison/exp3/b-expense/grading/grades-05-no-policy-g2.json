@@ -1,0 +1,172 @@
+[
+  {
+    "review_id": "jbug",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "jjsk",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "No expense policy was supplied, so no item can be approved or rejected; the corrected total is not determinable and all nine items (AUD 2,102.50 by line sum, ...",
+        "reason": "Summary is about 182 words, well over the roughly 120-word limit: clearly bloated, so 5 instead of 10."
+      }
+    ]
+  },
+  {
+    "review_id": "nrjk",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 5,
+      "questions": 5,
+      "summary": 0
+    },
+    "total": 55,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 15,
+        "item": "Items 4 and 8 (receipt problems); key case-specific scoring for a review that only asks for the policy",
+        "quote": "Review stopped at Step 1 (Inventory). ... No verdicts, approved amounts, corrected total or approver summary are given",
+        "reason": "Key says such a review earns grounds credit only for receipt problems it actually reports. The inventory lists R04 at 21.90 and R08 dated 4 October 2026 but never identifies either as a discrepancy against items 4 or 8 (key grounds: R04 total 21.90 vs claimed 24.90; R08 dated 4 Oct at Osborne Park)."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "Expected total: receipt-supported AUD 2,046.80 (max 2,099.50)",
+        "quote": "No verdicts, approved amounts, corrected total ... are given until the policy is supplied.",
+        "reason": "No corrected, held or receipt-supported total is given, and no per-item supported amounts (item 8 is listed at 52.70 without being flagged). The 2,012.50 vs 2,102.50 error is detected, but the total component cannot be awarded without any total."
+      },
+      {
+        "criterion": "questions",
+        "points": 10,
+        "item": "Q2 [essential], Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 (the policy) is asked. Q2 (R08 date/location), Q3 (lunch 24.90 vs 21.90) are absent; Q4 total mismatch is stated in the inventory but not raised as a question or to the approver. 15 x 2/6 = 5."
+      },
+      {
+        "criterion": "summary",
+        "points": 10,
+        "item": "Summary for the approver",
+        "quote": "No verdicts, approved amounts, corrected total or approver summary are given",
+        "reason": "Summary absent."
+      }
+    ]
+  },
+  {
+    "review_id": "ovah",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "Sean Whitlock claims AUD 2,102.50 by line sum (the form states AUD 2,012.50, a AUD 90.00 understatement); approved total is AUD 0.00 ...",
+        "reason": "Summary is about 150 words, clearly over the roughly 120-word limit: 5 instead of 10."
+      }
+    ]
+  },
+  {
+    "review_id": "svqa",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 9,
+      "summary": 10
+    },
+    "total": 94,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Padding (no key question; item 2)",
+        "quote": "Line 2: please confirm the hire car class and supply any pre-approval for car hire, if required.",
+        "reason": "R02 already states the vehicle class (Toyota Corolla or similar, compact) and nothing in the files suggests pre-approval is needed; no basis in the files. Rubric: subtract 3."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Padding (no key question; item 5)",
+        "quote": "Line 5: please confirm this fuel was for the hire car under agreement RA-220917.",
+        "reason": "R05 is South Hedland on 3 Nov during the hire, matching the claim; the files give no basis to doubt it. Rubric: subtract 3."
+      }
+    ]
+  },
+  {
+    "review_id": "zlym",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "Sean Whitlock claims AUD 2,012.50 on the form, but its lines sum to AUD 2,102.50 ... The items most likely to be cut once the policy arrives are the Business-class return flight ...",
+        "reason": "Summary is about 172 words, clearly over the roughly 120-word limit: 5 instead of 10."
+      }
+    ]
+  }
+]

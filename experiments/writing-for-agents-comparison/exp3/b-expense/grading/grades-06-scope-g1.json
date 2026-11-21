@@ -1,0 +1,208 @@
+[
+  {
+    "review_id": "fvjy",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 12,
+      "summary": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2 (IRANZ duplicate, weight 1)",
+        "quote": "absent",
+        "reason": "No question to the claimant asks them to remove or explain line 11; it appears only as a verdict/summary statement. 15 x 4/5 = 12."
+      }
+    ]
+  },
+  {
+    "review_id": "kxwc",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 12,
+      "summary": 5
+    },
+    "total": 92,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2 (IRANZ duplicate, weight 1)",
+        "quote": "absent",
+        "reason": "No claimant question on line 11. Weights: Q1 2 + Q2 1 + approver item-5 question 1 (verdict Approve) + optional fast-track 1 (included); raised 4/5 -> 12."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "Tama Whitcombe claims NZD 1,833.40; the corrected total to reimburse now is NZD 763.40 ...",
+        "reason": "summary length 154 words, above roughly 120 and judged clearly bloated (threshold used: more than ~145 words)"
+      }
+    ]
+  },
+  {
+    "review_id": "mttc",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "The claim totals NZD 1,833.40; NZD 763.40 is approved for payment ...",
+        "reason": "summary length 165 words, above roughly 120 and judged clearly bloated (threshold used: more than ~145 words)"
+      }
+    ]
+  },
+  {
+    "review_id": "nrjj",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 27.27,
+      "grounds": 10,
+      "amounts": 10,
+      "questions": 12,
+      "summary": 10
+    },
+    "total": 84.3,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "verdict_accuracy",
+        "points": 2.73,
+        "item": "Item 5 working dinner",
+        "quote": "| 5. Working dinner, design review, 5 people, 2026-10-20 | NZD 342.00 | Approve | NZD 342.00 |",
+        "reason": "Key expects Needs information; Approve is accepted only if the review states 6.2 sets no cap, that 'reasonable' is the approver's judgement, and gives the per-head figure. None of the three appears anywhere in the review. 30 x 10/11."
+      },
+      {
+        "criterion": "grounds",
+        "points": 5,
+        "item": "Item 5 working dinner",
+        "quote": "clause 6.2 applies (attendees listed) and clause 6.3 client entertainment does not",
+        "reason": "The key's ground is the 'reasonable costs' judgement under 6.2 (68.40 per head); the review treats 6.2 as satisfied by the attendee list alone. 15 x 2/3."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "Expected total",
+        "quote": "Corrected total (approved now): NZD 763.40 (items 1 to 8 and 10)",
+        "reason": "Key pay-now total is 421.40 (763.40 only under the accepted alternative, not met). Wrong only because of the item 5 verdict error and consistent with the review's own verdicts: 5 instead of 10; partial amounts none invented: +5."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Approver question on item 5 (weight 1, verdict Approve)",
+        "quote": "absent",
+        "reason": "No question or prompt to the approver on whether 342.00 is 'reasonable'. Weights: Q1 2 + Q2 1 + approver 1 + fast-track 1 (included); raised 4/5 -> 12."
+      }
+    ]
+  },
+  {
+    "review_id": "vynq",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 28.64,
+      "grounds": 15,
+      "amounts": 10,
+      "questions": 12,
+      "summary": 5
+    },
+    "total": 85.6,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "verdict_accuracy",
+        "points": 1.36,
+        "item": "Item 5 working dinner",
+        "quote": "the working dinner (item 5) costs NZD 68.40 per head, which is approved as a \"reasonable\" working meal under clause 6.2 unless you judge otherwise",
+        "reason": "Approve alternative requires an explicit statement that 6.2 sets no cap; the review asserts the meal is reasonable and never says the policy gives no figure. It does give the per-head figure and route the call to the approver, so counted as uncertain-and-routed: 0.5. 30 x 10.5/11."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "Expected total",
+        "quote": "Approved: NZD 763.40 = 38.50 + 72.00 + 46.00 + 24.50 + 342.00 + ...",
+        "reason": "Key pay-now total 421.40 (763.40 only under the fully met alternative). Wrong only because of the item 5 verdict issue and arithmetically consistent: 5 instead of 10; +5 for no invented partial amounts."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2 (IRANZ duplicate, weight 1)",
+        "quote": "absent",
+        "reason": "Line 11 appears in the summary and 'Other findings' (declaration note) but no question asks the claimant to remove or explain it. Weights: Q1 2 + Q2 1 + approver 1 + fast-track 1 (included); raised 4/5 -> 12."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "Tama Whitcombe's claim MP-EXP-2026-1044 claims NZD 1,833.40; NZD 763.40 is approved ...",
+        "reason": "summary length 167 words, above roughly 120 and judged clearly bloated (threshold used: more than ~145 words)"
+      }
+    ]
+  },
+  {
+    "review_id": "xeqa",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 12,
+      "summary": 5
+    },
+    "total": 92,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2 (IRANZ duplicate, weight 1)",
+        "quote": "absent",
+        "reason": "No claimant question on line 11. Weights: Q1 2 + Q2 1 + approver item-5 question 1 + fast-track 1 (included); raised 4/5 -> 12. R12 question not counted as padding (files give a basis)."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "Of the NZD 1,833.40 claimed, NZD 763.40 is approved to reimburse now ...",
+        "reason": "summary length 155 words, above roughly 120 and judged clearly bloated (threshold used: more than ~145 words)"
+      }
+    ]
+  }
+]

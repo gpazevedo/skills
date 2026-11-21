@@ -1,0 +1,72 @@
+[
+  {
+    "brief_id": "ajed",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 5},
+    "total": 95.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {"criterion": "handoff", "points": 5, "key_id": "n/a", "quote": "The meeting agreed to move SMS appointment reminders from 24h to 48h before the appointment ... and the accreditation visit date, which the surveyor has not confirmed.", "reason": "Handoff summary is 184 words, well over the rubric's roughly 150-word limit and restates nearly every action and open item; scored as present but bloated (5)."}
+    ]
+  },
+  {
+    "brief_id": "biya",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 16.5, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 96.5,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {"criterion": "decision_precision", "points": 3.5, "key_id": "N4", "quote": "3. Locum Dr Abebe covers after-hours from 1 December.", "reason": "Listed under Decisions, but the key's Not decisions list has the locum arrangement as an existing arrangement, not a decision of this meeting. N4 is marked low weight, so the 7-point deduction counts half (3.5)."}
+    ]
+  },
+  {
+    "brief_id": "dwma",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "ifey",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "jasi",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "nuxq",
+    "case": "03-missing",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]

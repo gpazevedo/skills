@@ -1,0 +1,148 @@
+{
+  "ids": {
+    "rjtt": {
+      "case": "01-clear",
+      "label": "S6"
+    },
+    "hhmy": {
+      "case": "01-clear",
+      "label": "S3"
+    },
+    "vzcf": {
+      "case": "01-clear",
+      "label": "S5"
+    },
+    "bhox": {
+      "case": "01-clear",
+      "label": "S2"
+    },
+    "vdhb": {
+      "case": "01-clear",
+      "label": "S1"
+    },
+    "wmwo": {
+      "case": "01-clear",
+      "label": "S4"
+    },
+    "ypni": {
+      "case": "02-reported-vs-verified",
+      "label": "S5"
+    },
+    "tuys": {
+      "case": "02-reported-vs-verified",
+      "label": "S1"
+    },
+    "bucx": {
+      "case": "02-reported-vs-verified",
+      "label": "S6"
+    },
+    "mfio": {
+      "case": "02-reported-vs-verified",
+      "label": "S3"
+    },
+    "acvp": {
+      "case": "02-reported-vs-verified",
+      "label": "S2"
+    },
+    "snjp": {
+      "case": "02-reported-vs-verified",
+      "label": "S4"
+    },
+    "bgen": {
+      "case": "03-sla-clock",
+      "label": "S4"
+    },
+    "ivqa": {
+      "case": "03-sla-clock",
+      "label": "S2"
+    },
+    "cpzi": {
+      "case": "03-sla-clock",
+      "label": "S6"
+    },
+    "feht": {
+      "case": "03-sla-clock",
+      "label": "S1"
+    },
+    "edub": {
+      "case": "03-sla-clock",
+      "label": "S3"
+    },
+    "xaks": {
+      "case": "03-sla-clock",
+      "label": "S5"
+    },
+    "ctbc": {
+      "case": "04-no-policy",
+      "label": "S5"
+    },
+    "nqxe": {
+      "case": "04-no-policy",
+      "label": "S2"
+    },
+    "ibor": {
+      "case": "04-no-policy",
+      "label": "S4"
+    },
+    "vxbs": {
+      "case": "04-no-policy",
+      "label": "S1"
+    },
+    "aieq": {
+      "case": "04-no-policy",
+      "label": "S6"
+    },
+    "twjt": {
+      "case": "04-no-policy",
+      "label": "S3"
+    },
+    "xsbv": {
+      "case": "05-partial-thread",
+      "label": "S1"
+    },
+    "axpn": {
+      "case": "05-partial-thread",
+      "label": "S6"
+    },
+    "yynw": {
+      "case": "05-partial-thread",
+      "label": "S2"
+    },
+    "zoud": {
+      "case": "05-partial-thread",
+      "label": "S3"
+    },
+    "cwjv": {
+      "case": "05-partial-thread",
+      "label": "S5"
+    },
+    "qoux": {
+      "case": "05-partial-thread",
+      "label": "S4"
+    },
+    "lcmw": {
+      "case": "06-authority",
+      "label": "S2"
+    },
+    "gqez": {
+      "case": "06-authority",
+      "label": "S3"
+    },
+    "kboc": {
+      "case": "06-authority",
+      "label": "S1"
+    },
+    "plbh": {
+      "case": "06-authority",
+      "label": "S5"
+    },
+    "bpxc": {
+      "case": "06-authority",
+      "label": "S6"
+    },
+    "amjp": {
+      "case": "06-authority",
+      "label": "S4"
+    }
+  }
+}

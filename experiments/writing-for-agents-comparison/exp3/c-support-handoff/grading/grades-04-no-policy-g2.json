@@ -1,0 +1,239 @@
+[
+  {
+    "handoff_id": "aieq",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 0,
+      "next_action": 5,
+      "questions": 6.7,
+      "concision": 0
+    },
+    "total": 61.7,
+    "critical_failures": [
+      {
+        "type": "invented_service_term",
+        "item": "Service level / critical-failure trigger: deadline from the customer's 24 hours",
+        "quote": "Deadline: cannot compute from policy. If the customer's figure were calendar hours: 2026-11-09 10:47 + 24 h = 2026-11-10 10:47 UTC, passed at now"
+      }
+    ],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1006,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 20,
+        "item": "Service level (status and deadline unknown; case-specific: any computed deadline fails this criterion)",
+        "quote": "Clock: resolution clock claimed by the customer ... would start at ticket creation, 2026-11-09 10:47 UTC ... 2026-11-09 10:47 + 24 h = 2026-11-10 10:47 UTC, passed at now",
+        "reason": "Computes a deadline from the unverified 24-hour claim and judges it passed; key's case-specific scoring says any computed deadline fails the criterion."
+      },
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action: engineering investigation plus summary due today",
+        "quote": "Send the customer the promised written summary ... owner Tom Reyes (Tier 1), by 17:00 UTC 2026-11-10.",
+        "reason": "Covers the summary only; no engineering investigation of the EUR rounding fault, scope or recalculation. Partly right: 5."
+      },
+      {
+        "criterion": "questions",
+        "points": 3.3,
+        "item": "Q2 (important): who now owns sending the written summary due 17:00 UK time",
+        "quote": "absent (next action simply assigns 'owner Tom Reyes (Tier 1)' without raising ownership after escalation)",
+        "reason": "Q2 not raised; score 10 x 2/3 = 6.7."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 1006 words of own prose (quotes and timestamps excluded)",
+        "reason": "Beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "ctbc",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 17,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 6.7,
+      "concision": 0
+    },
+    "total": 83.7,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 992,
+    "deductions": [
+      {
+        "criterion": "commitments",
+        "points": 3,
+        "item": "C1: written summary by 17:00 UK time, open at handoff (case-specific: full credit needs the fact that it is still open)",
+        "quote": "due 10 Nov 17:00 UTC (UK is on GMT) | missed per the thread",
+        "reason": "C1 captured with Tom Reyes and the deadline but marked missed (as of 21 Nov) rather than open at the escalation time the key uses; size not set by rubric or key, so 3 points."
+      },
+      {
+        "criterion": "questions",
+        "points": 3.3,
+        "item": "Q2 (important): who now owns sending the written summary due 17:00 UK time",
+        "quote": "absent (asks 'was the written summary promised for 10 Nov sent?' and assigns it to Tom; does not raise who owns it after escalation)",
+        "reason": "Q2 not raised; score 10 x 2/3 = 6.7."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 992 words of own prose (quotes and timestamps excluded)",
+        "reason": "Beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "ibor",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 5,
+      "questions": 6.7,
+      "concision": 0
+    },
+    "total": 81.7,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1505,
+    "deductions": [
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action: engineering investigation (cause, scope, recalculation) plus summary due today",
+        "quote": "Reproduce the sandbox example in NOK ... owner Tier 2 Product Engineering Support, by 2026-11-10 16:30 UTC ... Tom Reyes must send the summary by 17:00 UTC whether or not the result is in.",
+        "reason": "Summary covered, but engineering work is limited to a NOK repro; no root-cause investigation of why per-line rounding is skipped for EUR and no recalculation question. Partly right: 5."
+      },
+      {
+        "criterion": "questions",
+        "points": 3.3,
+        "item": "Q2 (important): who now owns sending the written summary due 17:00 UK time",
+        "quote": "absent ('Tom Reyes must send the summary by 17:00 UTC' asserts ownership rather than raising it)",
+        "reason": "Q2 not raised; score 10 x 2/3 = 6.7."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 1505 words of own prose (quotes and timestamps excluded)",
+        "reason": "Beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "nqxe",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 6.7,
+      "concision": 0
+    },
+    "total": 86.7,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1398,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3.3,
+        "item": "Q2 (important): who now owns sending the written summary due 17:00 UK time",
+        "quote": "absent ('Make sure the written summary Tom Reyes promised reaches Marta Kowalczyk by 17:00 UTC' does not raise who sends it now)",
+        "reason": "Q2 not raised; score 10 x 2/3 = 6.7."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 1398 words of own prose (quotes and timestamps excluded)",
+        "reason": "Beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "twjt",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 0,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 70,
+    "critical_failures": [
+      {
+        "type": "invented_service_term",
+        "item": "Service level / critical-failure trigger: deadline from the customer's 24 hours",
+        "quote": "For reference only: if the customer's reported 24-hour fix term applied from ticket creation, it would have passed at 2026-11-10 10:47 UTC"
+      }
+    ],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1111,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 20,
+        "item": "Service level (status and deadline unknown; case-specific: any computed deadline fails this criterion)",
+        "quote": "if the customer's reported 24-hour fix term applied from ticket creation, it would have passed at 2026-11-10 10:47 UTC",
+        "reason": "Computes the exact deadline the key names as a trigger (2026-11-10 10:47 UTC from the 24-hour claim) and says it has passed; the hedge does not remove it. Criterion fails."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 1111 words of own prose (quotes and timestamps excluded)",
+        "reason": "Beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "vxbs",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 954,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 954 words of own prose (quotes and timestamps excluded)",
+        "reason": "Beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {"review_id": "biqa",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 6, "summary": 5},
+   "total": 86.0,
+   "critical_failures": [],
+   "extra_content": false, "unneeded_clarification": false, "usefulness": 4,
+   "deductions": [
+     {"criterion": "questions", "points": 3, "item": "Q2 (item 4 Leeds ticket in Ms Priya Natarajan's name; recommended, weight 1 since verdict is Reject)", "quote": "absent (only question raised is on line 10)", "reason": "Weight 1 of 5 missing: 15 x 2/5 = 6 overall."},
+     {"criterion": "questions", "points": 3, "item": "Q3 (item 11 receipt dated 18 October; recommended, weight 1 since verdict is Reject)", "quote": "absent", "reason": "Weight 1 of 5 missing."},
+     {"criterion": "questions", "points": 3, "item": "Q4 (items 5 and 8 same Station Deli receipt; recommended, weight 1)", "quote": "absent", "reason": "Weight 1 of 5 missing. Q5 is optional and not included, so not counted."},
+     {"criterion": "summary", "points": 5, "item": "Summary for the approver", "quote": "Daniel Reyes claimed GBP 539.35 ... the policy leaves no other decision to the approver.", "reason": "Consistent with verdicts and total but about 161 words, well beyond the roughly 120-word limit; scored as bloated."}
+   ]},
+  {"review_id": "cngg",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 9, "summary": 10},
+   "total": 94.0,
+   "critical_failures": [],
+   "extra_content": false, "unneeded_clarification": false, "usefulness": 4,
+   "deductions": [
+     {"criterion": "questions", "points": 3, "item": "Q2 (item 4 ticket in Ms Priya Natarajan's name; weight 1 since verdict is Reject)", "quote": "absent", "reason": "Raised Q1 (2) and Q4 (1, line 8 question asks for an 8 October lunch receipt) of total weight 5: 15 x 3/5 = 9."},
+     {"criterion": "questions", "points": 3, "item": "Q3 (item 11 receipt dated 18 October; weight 1 since verdict is Reject)", "quote": "absent", "reason": "Weight 1 of 5 missing."}
+   ]},
+  {"review_id": "dkae",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 10, "summary": 10},
+   "total": 95.0,
+   "critical_failures": [],
+   "extra_content": false, "unneeded_clarification": false, "usefulness": 5,
+   "deductions": [
+     {"criterion": "questions", "points": 2.5, "item": "Q2 (item 4 ticket in Ms Priya Natarajan's name; weight 1 since verdict is Reject)", "quote": "absent", "reason": "Item 11 is Needs information so Q3 is essential (weight 2) and raised; Q1 raised. Total weight 6, raised 4: 15 x 4/6 = 10."},
+     {"criterion": "questions", "points": 2.5, "item": "Q4 (items 5 and 8 same receipt; recommended, weight 1)", "quote": "absent", "reason": "Weight 1 of 6 missing."}
+   ]},
+  {"review_id": "lwqz",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 10.71, "summary": 10},
+   "total": 95.7,
+   "critical_failures": [],
+   "extra_content": false, "unneeded_clarification": false, "usefulness": 5,
+   "deductions": [
+     {"criterion": "questions", "points": 2.14, "item": "Q2 (item 4 ticket in Ms Priya Natarajan's name; weight 1 since verdict is Reject)", "quote": "absent", "reason": "Raised Q1 (2), Q3 (2, essential because item 11 is Needs information) and optional Q5 (1, included so counted). Total weight 7, raised 5: 15 x 5/7 = 10.71."},
+     {"criterion": "questions", "points": 2.14, "item": "Q4 (items 5 and 8 same receipt; recommended, weight 1)", "quote": "absent", "reason": "Weight 1 of 7 missing."}
+   ]},
+  {"review_id": "mdwc",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 9, "summary": 10},
+   "total": 94.0,
+   "critical_failures": [],
+   "extra_content": true, "unneeded_clarification": false, "usefulness": 4,
+   "deductions": [
+     {"criterion": "questions", "points": 3, "item": "Q2 (item 4 ticket in Ms Priya Natarajan's name; weight 1 since verdict is Reject)", "quote": "absent", "reason": "Raised Q1 (2) and Q4 (1) of total weight 5: 15 x 3/5 = 9."},
+     {"criterion": "questions", "points": 3, "item": "Q3 (item 11 receipt dated 18 October; weight 1 since verdict is Reject)", "quote": "absent", "reason": "Weight 1 of 5 missing."}
+   ]},
+  {"review_id": "yvpt",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 10, "summary": 10},
+   "total": 95.0,
+   "critical_failures": [],
+   "extra_content": false, "unneeded_clarification": false, "usefulness": 4,
+   "deductions": [
+     {"criterion": "questions", "points": 2.5, "item": "Q2 (item 4 ticket in Ms Priya Natarajan's name; weight 1 since verdict is Reject)", "quote": "absent", "reason": "Raised Q1 (2), Q4 (1) and optional Q5 (1, included so counted). Total weight 6, raised 4: 15 x 4/6 = 10."},
+     {"criterion": "questions", "points": 2.5, "item": "Q3 (item 11 receipt dated 18 October; weight 1 since verdict is Reject)", "quote": "absent", "reason": "Weight 1 of 6 missing."}
+   ]}
+]

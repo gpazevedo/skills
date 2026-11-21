@@ -1,0 +1,192 @@
+[
+  {
+    "handoff_id": "acvp",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2025,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is 2025 words in total)",
+        "reason": "Own prose, after excluding quoted evidence and timestamps, is still well above roughly 600 words, so the score is 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "bucx",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2167,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is 2167 words in total)",
+        "reason": "Own prose, after excluding quoted evidence and timestamps, is still well above roughly 600 words, so the score is 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "mfio",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2066,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is 2066 words in total)",
+        "reason": "Own prose, after excluding quoted evidence and timestamps, is still well above roughly 600 words, so the score is 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "snjp",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": true,
+    "usefulness": 4,
+    "handoff_words": 2444,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is 2444 words in total)",
+        "reason": "Own prose, after excluding quoted evidence and timestamps, is still well above roughly 600 words, so the score is 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "tuys",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 10,
+      "next_action": 10,
+      "questions": 7,
+      "concision": 0
+    },
+    "total": 77,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1296,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 10,
+        "item": "Service level: Status within target (as of escalation, 2026-11-16 03:50 UTC)",
+        "quote": "Status: Breached: 17 h 25 min business hours over at 2026-11-21 15:22 UTC, if still unresolved",
+        "reason": "The grading notes judge the handoff as of escalation. This handoff uses the system clock (21 Nov) and gives the headline status as breached, not within target. The deadline is correct, so only the status half is lost."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Questions and requests (no basis in files)",
+        "quote": "Is the ticket still unresolved, and was the 17 Nov 04:00 UTC update sent outside this export?",
+        "reason": "The files give no basis for assuming time has passed beyond the escalation at 03:50 UTC; the question comes from the system clock, not the files. Rubric deduction of 3 for a request with no basis in the files."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is 1296 words in total)",
+        "reason": "Own prose, after excluding quoted evidence and timestamps, is still well above roughly 600 words, so the score is 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "ypni",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 10,
+      "next_action": 5,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 75,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1356,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 10,
+        "item": "Service level: Status within target (as of escalation, 2026-11-16 03:50 UTC)",
+        "quote": "Resolution ... deadline Thu 19 Nov 01:05 UTC / 09:05 AWST ... | breached by 17h25m business hours (Thu 8h25m + Fri 9h)",
+        "reason": "The grading notes judge the handoff as of escalation. This handoff uses the system clock (21 Nov) and gives the headline status as breached, not within target. The deadline is correct, so only the status half is lost."
+      },
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action (send update promised for 17 Nov 04:00 UTC; investigate G4-C modem / MX-31.4; check buffered readings)",
+        "quote": "The Tier 2 (Field Systems Engineering) owner should email Grant Tobias now, copying Lina Petrakis, acknowledging the missed 17 Nov update ... because the promised update, the daily-update obligation and the resolution target have all lapsed",
+        "reason": "Partly right. The investigation and buffering steps match the key, but the lead action rests on a false premise as of escalation time: the 17 Nov update is not yet due and has not been missed. Also no recovery path is proposed."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is 1356 words in total)",
+        "reason": "Own prose, after excluding quoted evidence and timestamps, is still well above roughly 600 words, so the score is 0."
+      }
+    ]
+  }
+]

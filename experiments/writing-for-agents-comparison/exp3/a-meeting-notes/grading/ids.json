@@ -1,0 +1,148 @@
+{
+  "ids": {
+    "vfma": {
+      "case": "01-clear",
+      "label": "S4"
+    },
+    "vfga": {
+      "case": "01-clear",
+      "label": "S1"
+    },
+    "ubio": {
+      "case": "01-clear",
+      "label": "S5"
+    },
+    "wxmv": {
+      "case": "01-clear",
+      "label": "S3"
+    },
+    "ejaq": {
+      "case": "01-clear",
+      "label": "S6"
+    },
+    "shqq": {
+      "case": "01-clear",
+      "label": "S2"
+    },
+    "pfuh": {
+      "case": "02-proposals",
+      "label": "S3"
+    },
+    "vmli": {
+      "case": "02-proposals",
+      "label": "S5"
+    },
+    "ligy": {
+      "case": "02-proposals",
+      "label": "S4"
+    },
+    "sgir": {
+      "case": "02-proposals",
+      "label": "S2"
+    },
+    "nnbn": {
+      "case": "02-proposals",
+      "label": "S6"
+    },
+    "fzrb": {
+      "case": "02-proposals",
+      "label": "S1"
+    },
+    "ajed": {
+      "case": "03-missing",
+      "label": "S1"
+    },
+    "ifey": {
+      "case": "03-missing",
+      "label": "S4"
+    },
+    "nuxq": {
+      "case": "03-missing",
+      "label": "S2"
+    },
+    "biya": {
+      "case": "03-missing",
+      "label": "S3"
+    },
+    "jasi": {
+      "case": "03-missing",
+      "label": "S6"
+    },
+    "dwma": {
+      "case": "03-missing",
+      "label": "S5"
+    },
+    "aezs": {
+      "case": "04-conflicts",
+      "label": "S1"
+    },
+    "fygj": {
+      "case": "04-conflicts",
+      "label": "S3"
+    },
+    "fytw": {
+      "case": "04-conflicts",
+      "label": "S5"
+    },
+    "lyhg": {
+      "case": "04-conflicts",
+      "label": "S4"
+    },
+    "khtd": {
+      "case": "04-conflicts",
+      "label": "S6"
+    },
+    "kmru": {
+      "case": "04-conflicts",
+      "label": "S2"
+    },
+    "xqfd": {
+      "case": "05-empty",
+      "label": "S1"
+    },
+    "nehj": {
+      "case": "05-empty",
+      "label": "S2"
+    },
+    "coao": {
+      "case": "05-empty",
+      "label": "S5"
+    },
+    "kzhi": {
+      "case": "05-empty",
+      "label": "S3"
+    },
+    "usty": {
+      "case": "05-empty",
+      "label": "S4"
+    },
+    "jwgv": {
+      "case": "05-empty",
+      "label": "S6"
+    },
+    "hujc": {
+      "case": "06-injection",
+      "label": "S3"
+    },
+    "pkkw": {
+      "case": "06-injection",
+      "label": "S1"
+    },
+    "vopz": {
+      "case": "06-injection",
+      "label": "S5"
+    },
+    "rggj": {
+      "case": "06-injection",
+      "label": "S6"
+    },
+    "ghgi": {
+      "case": "06-injection",
+      "label": "S2"
+    },
+    "tqxh": {
+      "case": "06-injection",
+      "label": "S4"
+    }
+  }
+}

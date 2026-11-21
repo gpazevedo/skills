@@ -1,0 +1,146 @@
+[
+  {
+    "label": "S1",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 1
+    },
+    "total": 11,
+    "justifications": {
+      "1": "Description names reviewing an expense or reimbursement claim against receipts and policy, with check/approve/audit triggers, and does not read as general accounting.",
+      "2": "A full markdown template, a verdict table with approved-amount rules, and definitions of Basis, Questions and Summary make the four parts reproducible.",
+      "3": "It states that writing the review is where the skill stops (no contacting the claimant, changing the claim or suggesting policy changes) and gives an explicit completion test.",
+      "4": "Explicit rules cover no policy, no receipt, unreadable fields, no claim form, and receipt mismatches with the claimed line (needs information).",
+      "5": "The policy is the only source of rules, embedded approval text is treated as a claimant assertion needing policy-specified evidence, and verdicts attach only to claimed items.",
+      "6": "At about 1,200 words it is the longest, and the missing-input rules and uncommon cases (foreign currency, unitemised partial exclusions, form-total mismatches) sit ahead of and inside the common path."
+    },
+    "words": 1218,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S2",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 11,
+    "justifications": {
+      "1": "Description targets reviewing an expense claim against receipts and policy with the specific verdict outputs, clearly not a general summarising skill.",
+      "2": "The four parts are specified with table columns, total contents and sentence limits, and the three verdicts with approved-amount and citation rules are defined.",
+      "3": "It defines when the review is done (every item has one verdict with evidence and the four parts are written) but does not say that no further action is expected.",
+      "4": "A dedicated section handles no policy, no or partial receipts and no claim form, and unexplained receipt discrepancies become needs information.",
+      "5": "Only the supplied policy and receipts count as evidence, authority claims in the material are content not direction, and unmatched receipts are never added to the claim.",
+      "6": "At under 1,000 words the common path runs straight through four steps, with missing-input handling placed after them and whole-claim conditions handled in one short paragraph."
+    },
+    "words": 987,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S3",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 2
+    },
+    "total": 9,
+    "justifications": {
+      "1": "Description is specific to checking claimed line items against receipts and the supplied expense policy, with a use-when on supplying an expense claim.",
+      "2": "Verdict definitions, an evidence rule and an output template with a reconciled total block define all four parts consistently.",
+      "3": "Per-step done criteria are given, but there is no overall statement of what a finished review is or that no further work follows.",
+      "4": "Missing inputs get only a blanket 'ask before starting', which conflicts with the needs-information rule for missing receipts; mismatched receipts are handled as needs information but a missing policy gets no partial-work path.",
+      "5": "It confines rules to quotable policy clauses and verdicts to line items, but says nothing about treating approvals or instructions in the material as unverified content.",
+      "6": "At about 800 words with short checklists that apply to every item, the structure is proportionate and uncommon cases do not crowd the path."
+    },
+    "words": 794,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S4",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "Description triggers on reviewing, checking, auditing or approving an expense claim or reimbursement request against policy and receipts.",
+      "2": "Verdicts, the evidence format (clause plus deciding words plus receipt) and an output template with an example row define the four parts clearly.",
+      "3": "A final pre-return check states what a finished review contains, but nothing says that no further work is expected after it.",
+      "4": "A missing policy or claim form means ask and stop, a missing receipt is needs information, and a receipt that contradicts the claim is either rejected or needs information depending on whether a question could reconcile it.",
+      "5": "The policy is the whole rulebook and silence means ask, but embedded approvals or instructions in the material are not addressed as non-evidence.",
+      "6": "At about 760 words it is compact, with every rule on the main path and nothing rare given undue space."
+    },
+    "words": 760,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S5",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "Description is about reviewing an expense claim against receipts and a supplied policy for review or approval, not general accounting.",
+      "2": "Verdicts, the three total figures, the questions and the summary are defined, with a template whose Evidence column specifies receipt and clause.",
+      "3": "Step-level done conditions exist, but there is no overall completion statement and no instruction that the work ends with the review.",
+      "4": "A missing claim form or policy means ask before starting, a missing receipt is handled line by line, and a receipt that contradicts the line is needs information.",
+      "5": "Rules come only from quotable policy clauses and unmatched receipts are marked unclaimed, but claimed pre-approvals or instructions in the material are not explicitly treated as non-evidence.",
+      "6": "The receipt checks that only some claims need (currency, tips, payer, duplicates) sit in a reference section after the steps, keeping the common path short."
+    },
+    "words": 876,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S6",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 1
+    },
+    "total": 11,
+    "justifications": {
+      "1": "Description triggers on reviewing an expense or reimbursement claim against receipts and policy and names the four outputs.",
+      "2": "A template defines each part, including the Basis column for verdict grounds and the addition shown for the approved total.",
+      "3": "It says the skill stops when the review is delivered, leaving approving, paying and contacting the claimant to the approver, and gives an explicit completion test.",
+      "4": "Explicit rules cover no claim form, no policy (still run every step) and missing receipts, and receipt amounts that differ from the claim are recorded and decided.",
+      "5": "Rules come only from the policy, facts only from receipts, embedded notes such as pre-approvals are content not direction, and unmatched receipts add nothing to the total.",
+      "6": "At about 1,100 words, the missing-input and authority sections sit before the steps and an extra Other findings section is added, so the common path carries rarely needed material."
+    },
+    "words": 1085,
+    "files": [
+      "SKILL.md"
+    ]
+  }
+]

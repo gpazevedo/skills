@@ -1,0 +1,171 @@
+[
+  {
+    "handoff_id": "amjp",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1919,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (roughly 350 words; 0 beyond roughly 600)",
+        "quote": "(whole handoff: 2393 words raw, about 1919 of own prose excluding quoted evidence and timestamps)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "bpxc",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 5,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1394,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (roughly 350 words; 0 beyond roughly 600)",
+        "quote": "(whole handoff: 1937 words raw, about 1394 of own prose excluding quoted evidence and timestamps)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 of 10."
+      },
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action, first bullet: find the cause, fix it, and regenerate complete reports for 21, 22, 23 and 24 Nov",
+        "quote": "Inspect the report job configuration for HPG stores 07 and 11: the schedule's time zone (the TRN-77954 cause) and which timestamp the job uses to select readings for the night window, then regenerate the store 07 22 Nov report once to confirm.",
+        "reason": "Right direction (diagnosis of reading selection, TRN-77954 lead as acceptable alternative, ties result to the 07:00 UTC update), but the recommended action never calls for fixing the fault and regenerating complete reports for 21 to 24 Nov, which the key names as the goal; partly right, 5."
+      }
+    ]
+  },
+  {
+    "handoff_id": "gqez",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1454,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (roughly 350 words; 0 beyond roughly 600)",
+        "quote": "(whole handoff: 1828 words raw, about 1454 of own prose excluding quoted evidence and timestamps)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "kboc",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": true,
+    "usefulness": 4,
+    "handoff_words": 1183,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (roughly 350 words; 0 beyond roughly 600)",
+        "quote": "(whole handoff: 1431 words raw, about 1183 of own prose excluding quoted evidence and timestamps)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "lcmw",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1780,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (roughly 350 words; 0 beyond roughly 600)",
+        "quote": "(whole handoff: 2194 words raw, about 1780 of own prose excluding quoted evidence and timestamps)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "plbh",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1123,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (roughly 350 words; 0 beyond roughly 600)",
+        "quote": "(whole handoff: 1257 words raw, about 1123 of own prose excluding quoted evidence and timestamps)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 of 10."
+      }
+    ]
+  }
+]

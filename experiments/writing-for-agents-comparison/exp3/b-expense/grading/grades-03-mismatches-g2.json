@@ -1,0 +1,208 @@
+[
+  {
+    "review_id": "biqa",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 6.0,
+      "summary": 5
+    },
+    "total": 86.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3.0,
+        "item": "Q2",
+        "quote": "absent",
+        "reason": "No question about the R04 ticket in Ms Priya Natarajan's name; Q2 recommended (weight 1 of 5) since item 4 rejected."
+      },
+      {
+        "criterion": "questions",
+        "points": 3.0,
+        "item": "Q3",
+        "quote": "absent",
+        "reason": "No question about R11 dated 18 October; Q3 recommended (weight 1 of 5) since item 11 rejected."
+      },
+      {
+        "criterion": "questions",
+        "points": 3.0,
+        "item": "Q4",
+        "quote": "absent",
+        "reason": "No question asking whether there was a separate 8 October lunch receipt (items 5/8); Q4 recommended, weight 1 of 5."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "Daniel Reyes claimed GBP 539.35 ... the policy leaves no other decision to the approver.",
+        "reason": "Summary is about 161 words, well beyond roughly 120; consistent with verdicts but bloated, so 5 not 10."
+      }
+    ]
+  },
+  {
+    "review_id": "cngg",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 9.0,
+      "summary": 10
+    },
+    "total": 94.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3.0,
+        "item": "Q2",
+        "quote": "absent",
+        "reason": "No question about the R04 ticket in Ms Priya Natarajan's name; Q2 recommended (weight 1 of 5) since item 4 rejected."
+      },
+      {
+        "criterion": "questions",
+        "points": 3.0,
+        "item": "Q3",
+        "quote": "absent",
+        "reason": "No question about R11 dated 18 October; Q3 recommended (weight 1 of 5) since item 11 rejected."
+      }
+    ]
+  },
+  {
+    "review_id": "dkae",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 10.0,
+      "summary": 10
+    },
+    "total": 95.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 2.5,
+        "item": "Q2",
+        "quote": "absent",
+        "reason": "No question about the R04 ticket in another name; Q2 recommended (weight 1 of 6; Q3 essential weight 2 because item 11 is needs information)."
+      },
+      {
+        "criterion": "questions",
+        "points": 2.5,
+        "item": "Q4",
+        "quote": "absent",
+        "reason": "Duplicate is identified in item 8 verdict but no question asks whether a separate 8 October lunch existed; Q4 recommended, weight 1 of 6."
+      }
+    ]
+  },
+  {
+    "review_id": "lwqz",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 10.7,
+      "summary": 10
+    },
+    "total": 95.7,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 2.14,
+        "item": "Q2",
+        "quote": "absent",
+        "reason": "No question about the R04 ticket in Ms Priya Natarajan's name; Q2 recommended (weight 1 of 7; optional Q5 included and counted, Q3 essential weight 2 since item 11 is needs information)."
+      },
+      {
+        "criterion": "questions",
+        "points": 2.14,
+        "item": "Q4",
+        "quote": "absent",
+        "reason": "No question asking whether a separate 8 October lunch existed; Q4 recommended, weight 1 of 7."
+      }
+    ]
+  },
+  {
+    "review_id": "mdwc",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 9.0,
+      "summary": 10
+    },
+    "total": 94.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3.0,
+        "item": "Q2",
+        "quote": "absent",
+        "reason": "No question to the claimant about the R04 ticket in Ms Priya Natarajan's name (only noted under 'Other findings'); Q2 recommended (weight 1 of 5)."
+      },
+      {
+        "criterion": "questions",
+        "points": 3.0,
+        "item": "Q3",
+        "quote": "absent",
+        "reason": "No question about R11 dated 18 October; Q3 recommended (weight 1 of 5) since item 11 rejected."
+      }
+    ]
+  },
+  {
+    "review_id": "yvpt",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 10.0,
+      "summary": 10
+    },
+    "total": 95.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 2.5,
+        "item": "Q2",
+        "quote": "absent",
+        "reason": "No question about the R04 ticket in Ms Priya Natarajan's name; Q2 recommended (weight 1 of 6; optional Q5 included and counted)."
+      },
+      {
+        "criterion": "questions",
+        "points": 2.5,
+        "item": "Q3",
+        "quote": "absent",
+        "reason": "No question to the claimant about R11 dated 18 October (summary only suggests the approver may query it); Q3 recommended, weight 1 of 6."
+      }
+    ]
+  }
+]

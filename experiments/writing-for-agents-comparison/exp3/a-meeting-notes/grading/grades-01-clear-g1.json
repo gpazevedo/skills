@@ -1,0 +1,199 @@
+[
+  {
+    "brief_id": "ejaq",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 10
+    },
+    "total": 91,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Q1. Who cuts the 4.2 release candidate, and by when, so that \"everything\" is on staging before Marcus starts regression? Owner and date are unresolved.",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (see grading note on map workaround)",
+        "quote": "Q2. Who carries out the iOS 16 minimum change for 4.2 (including removing the old map workaround Tom mentioned)? Owner and deadline are unresolved.",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3 context)",
+        "quote": "Q3. When will Android \"catch up\" so the old pricing v1 endpoint can be retired? Date and owner are unresolved.",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "shqq",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12,
+      "handoff": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Apple Pay's SDK update is still failing review on the sandbox account; the notes record no owner or next step for fixing it ahead of 4.3.",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "ubio",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 10
+    },
+    "total": 91,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3 context)",
+        "quote": "Question: Was keeping the v1 pricing endpoint up until Android catches up a decision, and when is Android expected to catch up?",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Question: Is the next sync on Tue 10 Nov confirmed?",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Question: How will the Apple Pay SDK update that is failing review on the sandbox account be resolved for 4.3?",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "vfga",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 10
+    },
+    "total": 91,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Who works on the Apple Pay SDK update that is failing review, now that it moves to 4.3? No owner or next step is recorded.",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3 context)",
+        "quote": "When will the v1 pricing endpoint be retired? The notes tie it to Android with no date.",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (see grading note on map workaround)",
+        "quote": "Who removes the old map workaround that dropping iOS 15 allows, and when? No action is recorded.",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "vfma",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Marcus needs everything on staging before he starts regression, but the notes give no date by which the full 4.2 release candidate (including the PW-1182 fix, due in TestFlight Wed 11 Nov) will be on staging",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3 context)",
+        "quote": "The old pricing v1 endpoint stays up \"until Android catches up\"; no date for that is stated",
+        "reason": "Key says no open questions; inventing unresolved issues is padding. Deducted 3 points per item, as the rubric does for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "wxmv",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]

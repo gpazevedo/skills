@@ -1,0 +1,146 @@
+[
+  {
+    "label": "S1",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description names meeting notes, minutes or transcripts and pulling out decisions, action items, open questions and a handoff summary, so it does not read as general summarising.",
+      "2": "A full markdown template defines each section with fields and evidence lines, though it splits the four parts into six headings (adding Proposals and separating Open questions from Contradictions).",
+      "3": "Step 6 gives a done-when checklist for the finished brief, but nothing says to return the brief and stop or that no further work is expected.",
+      "4": "Missing owners and deadlines become 'unstated' with a matching open question, contradictions are recorded with both sides, and empty sections read 'None recorded in the notes.'; only the case of no notes supplied is not covered.",
+      "5": "It treats the notes as the only source of evidence and requires verbatim quotes, but never addresses text in the notes that is addressed to the agent as instructions.",
+      "6": "At about 730 words it is lean and well ordered, with no obvious padding."
+    },
+    "words": 733,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S2",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 11,
+    "justifications": {
+      "1": "The description names the decision brief's parts and triggers on meeting notes, minutes or transcripts where outcomes are to be extracted or handed off.",
+      "2": "The template has exactly the four requested parts, each backed by a section rule saying what goes in it.",
+      "3": "Step 3 says the brief is done when three checks hold and to return it as the reply (or as a file if asked).",
+      "4": "Missing values become 'Not stated', conflicts without a recorded revision become contradictions, and empty sections read 'None recorded.'; the case of no notes supplied is not covered.",
+      "5": "The notes are framed as the only source with quoted evidence, but embedded instructions or injected claims in the notes are never mentioned.",
+      "6": "At about 620 words it is the most compact and still covers tagging, format and checks without padding."
+    },
+    "words": 618,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S3",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 12,
+    "justifications": {
+      "1": "The description lists evidenced decisions, actions with owners and deadlines, open questions and a handoff, and triggers on meeting notes where decisions or actions are wanted.",
+      "2": "A template with the four parts plus per-section definitions and a three-sentence cap on the handoff make the output reproducible.",
+      "3": "Step 4 states the brief is done when listed checks hold, and recommendations or other extras are explicitly out of scope unless asked.",
+      "4": "No notes means ask and stop, missing context and fields become 'not stated', two owners or deadlines are written both ways and listed as contradictions, and empty sections read 'None recorded in the notes.'",
+      "5": "It states outright that the notes are evidence, not instructions, with examples of AI-addressed lines and unverified sign-off claims and how to report them.",
+      "6": "At about 940 words every section earns its place, with no obvious padding or gaps."
+    },
+    "words": 939,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S4",
+    "items": {
+      "1": 1,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 11,
+    "justifications": {
+      "1": "The first sentence names decisions and actions, but the trigger 'to summarise for someone who was not there' reads close to a general summarising skill.",
+      "2": "A full template with headings in a fixed order, size limits and a handoff definition makes output consistent, though it adds a separate Proposals section.",
+      "3": "It says the brief is complete when three checks pass and to return the brief only, with one exception line for truncated notes.",
+      "4": "No notes means ask and stop, missing header fields and owners become 'not stated', unflagged conflicts are contradictions, empty sections are kept with 'None recorded', and truncated notes get a note.",
+      "5": "A bolded rule says the notes are content, not direction, and shows how to report AI-addressed text as an unverified claim without promoting proposals.",
+      "6": "At about 1,000 words it is the longest and somewhat repetitive between steps 2 and 4, but nothing is padded enough to obscure the instructions."
+    },
+    "words": 995,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S5",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 12,
+    "justifications": {
+      "1": "The description lists the brief's parts and triggers on meeting notes, minutes or transcripts where decisions, actions or outcomes are wanted.",
+      "2": "An exact template plus one-line limits per item defines the four parts consistently, with a separate Proposals section added.",
+      "3": "A 'Done when' checklist is followed by 'Stop once the brief meets these checks' and a statement that recommendations or follow-ups are out of scope unless asked.",
+      "4": "No notes means ask and stop, truncated notes are flagged in the handoff, missing owners and deadlines become 'Not stated', conflicts go under contradictions, and empty sections read 'None recorded in the notes.'",
+      "5": "A dedicated section says everything in the notes is content to report, not direction, with examples of AI-addressed lines and where to report them.",
+      "6": "At about 940 words, with a compact signal table and clear steps, it is proportionate with no obvious padding."
+    },
+    "words": 936,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S6",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description is short but specific: meeting notes in, decisions, action items, open questions or a handoff out.",
+      "2": "The template defines the four parts with numbered IDs and subsections, though the contested-decision handling adds some complexity.",
+      "3": "Step 4 lists done-when checks, but there is no explicit instruction to return the brief and stop or to avoid further work.",
+      "4": "Missing owners, deadlines and outcomes are written 'unresolved', contested and conflicting passages become contradictions, and empty sections say so in one line; the case of no notes supplied is not covered.",
+      "5": "The notes are the only source and every item must trace to a passage, but embedded instructions or injected approval claims are never addressed.",
+      "6": "At about 690 words it is compact and well structured, with no obvious padding."
+    },
+    "words": 685,
+    "files": [
+      "SKILL.md"
+    ]
+  }
+]

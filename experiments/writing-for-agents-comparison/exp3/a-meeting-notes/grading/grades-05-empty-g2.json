@@ -1,0 +1,155 @@
+[
+  {
+    "brief_id": "coao",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "jwgv",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": []
+  },
+  {
+    "brief_id": "kzhi",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "nehj",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12,
+      "handoff": 5
+    },
+    "total": 92,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "N7",
+        "quote": "Decided or proposed? Better coffee machine for the kitchen, proposed by Felix.",
+        "reason": "Invents an ambiguity over whether N7 was decided; the key says 'General agreement that the current one is bad' is agreement about a fact, not a decision. Size not set by rubric or key, so 3 points, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "(whole brief: about 528 words against about 424 words of notes)",
+        "reason": "Key: 'a brief noticeably longer than the notes ... loses the conciseness mark'; applied to the handoff criterion's 'concise' condition (5 instead of 10). Brief roughly 25% longer than the notes, mostly from repeated source quotes."
+      }
+    ]
+  },
+  {
+    "brief_id": "usty",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "none (status line, Ben: Coastline voiceover notes)",
+        "quote": "Who will address the Coastline client's notes on voiceover pacing? No task or owner is recorded",
+        "reason": "Invented open question: turns a status line into an unowned task (key: status lines are 'status, not actions'); the key does not size this deduction, so 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "none (key 'must NOT be listed as actions': chasing Coastline product sheets)",
+        "quote": "Coastline website copy (about 60% done) is waiting on the new home loan product sheets; no one is named to chase them",
+        "reason": "Invented open question: turns a status line into an unowned task (key: status lines are 'status, not actions'); the key does not size this deduction, so 3 points per item, as the rubric does for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "xqfd",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12,
+      "handoff": 5
+    },
+    "total": 92,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "none (key 'must NOT be listed as actions': chasing Coastline product sheets)",
+        "quote": "Who is chasing the product sheets for the new home loan that the Coastline website copy is waiting on?",
+        "reason": "Invented open question: turns a status line into an unowned task (key: status lines are 'status, not actions'); the key does not size this deduction, so 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "(whole brief: about 707 words against about 424 words of notes)",
+        "reason": "Key: 'a brief noticeably longer than the notes ... loses the conciseness mark'; applied to the handoff criterion's 'concise' condition (5 instead of 10). Brief about 67% longer than the notes."
+      }
+    ]
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "handoff_id": "acvp",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2025,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is about 2025 words by wc; own prose well above 600 even excluding quotes and timestamps)",
+        "reason": "Beyond roughly 600 words of own prose: 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "bucx",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2167,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is about 2167 words by wc; own prose well above 600 even excluding quotes and timestamps)",
+        "reason": "Beyond roughly 600 words of own prose: 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "mfio",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2066,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is about 2066 words by wc; own prose well above 600 even excluding quotes and timestamps)",
+        "reason": "Beyond roughly 600 words of own prose: 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "snjp",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2444,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is about 2444 words by wc; own prose well above 600 even excluding quotes and timestamps)",
+        "reason": "Beyond roughly 600 words of own prose: 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "tuys",
+    "scores": {
+      "problem": 18.75,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 10,
+      "next_action": 10,
+      "questions": 7,
+      "concision": 0
+    },
+    "total": 75.8,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": true,
+    "usefulness": 3,
+    "handoff_words": 1296,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 1.25,
+        "item": "P7 (Darwin LED state is customer-reported; modem state not verified)",
+        "quote": "The SIMs are active on the carrier side, the units show a flashing amber NET light, and the modems appear not to register on the mobile network.",
+        "reason": "Summary states the customer-reported LED observation as fact and extends it to all 14 units (Katherine units were never checked); the bullet tags it [Reported], so counted as wrong status: 0.5 of 2.5."
+      },
+      {
+        "criterion": "service_level",
+        "points": 10,
+        "item": "Service level: Status within target (as of escalation 2026-11-16 03:50 UTC, per grading notes)",
+        "quote": "Status: Breached: 17 h 25 min business hours over at 2026-11-21 15:22 UTC, if still unresolved",
+        "reason": "Status reported as breached, measured from a later system-clock time; key status is within target at the escalation time. Deadline 2026-11-19 01:05 UTC matches (10 kept)."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Request with no basis in the files (no key item)",
+        "quote": "Is the ticket still unresolved, and was the 17 Nov 04:00 UTC update sent outside this export?",
+        "reason": "thread.md is labelled 'Export of the full ticket history' and the handoff is judged as of escalation; general rubric deduction of 3 for a request the files give no basis for."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is about 1296 words by wc; own prose well above 600 even excluding quotes and timestamps)",
+        "reason": "Beyond roughly 600 words of own prose: 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "ypni",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 10,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 80,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1356,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 10,
+        "item": "Service level: Status within target (as of escalation 2026-11-16 03:50 UTC, per grading notes)",
+        "quote": "deadline Thu 19 Nov 01:05 UTC / 09:05 AWST ... | breached by 17h25m business hours (Thu 8h25m + Fri 9h)",
+        "reason": "Status reported as breached, measured from a later system-clock time; key status is within target at the escalation time. Deadline 2026-11-19 01:05 UTC matches (10 kept)."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(handoff is about 1356 words by wc; own prose well above 600 even excluding quotes and timestamps)",
+        "reason": "Beyond roughly 600 words of own prose: 0 of 10."
+      }
+    ]
+  }
+]

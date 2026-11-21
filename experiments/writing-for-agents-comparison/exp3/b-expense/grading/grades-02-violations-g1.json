@@ -1,0 +1,128 @@
+[
+  {
+    "review_id": "chop",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "erzx",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "fupy",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "The policy leaves one decision to the approver: cl. 2.1 requires General Manager approval for \"a claim totalling more than AUD 2,000.00\", and the claim as lodged totals AUD 3,266.70 while the reimbursable amount stays below AUD 2,000.00, so the approver should decide whether General Manager sign-off is needed in addition to the line manager (Grant Holloway).",
+        "reason": "Summary is present and consistent with the verdicts and the AUD 1,438.30 total, but at about 173 words it is well beyond the rubric's roughly 120-word limit, so it scores 5 as clearly bloated."
+      }
+    ]
+  },
+  {
+    "review_id": "hant",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "the policy does not say whether this threshold applies to the claimed or the corrected total, so you need to decide whether the claim goes to the General Manager (the corrected total is AUD 1,438.30, or AUD 1,946.70 if both pending items are later approved in full). No pre-approval claims, instructions or duplicate receipts were found.",
+        "reason": "Summary is present and consistent with the verdicts and the AUD 1,438.30 total, but at about 154 words it is well beyond the rubric's roughly 120-word limit, so it scores 5 as clearly bloated."
+      }
+    ]
+  },
+  {
+    "review_id": "liyo",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "wzlz",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "The claim was lodged on 22 September, within the 60-day limit of cl. 1.2, and no instructions or approval claims were found in the claim documents. Only the approver can decide whether cl. 2.1's \"claim totalling more than AUD 2,000.00\" means the amount claimed ... or the amount payable",
+        "reason": "Summary is present and consistent with the verdicts and the AUD 1,438.30 total, but at about 168 words it is well beyond the rubric's roughly 120-word limit, so it scores 5 as clearly bloated."
+      }
+    ]
+  }
+]

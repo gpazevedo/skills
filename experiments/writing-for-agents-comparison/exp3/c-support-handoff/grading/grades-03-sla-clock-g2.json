@@ -1,0 +1,234 @@
+[
+  {
+    "handoff_id": "bgen",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2698,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly' (weight 1 of 2)",
+        "quote": "absent",
+        "reason": "Joel Brandt response is raised ('The thread records no response from Joel Brandt on the customer's request to cover the cost of the milk.'), but the replacement-hosting question is not raised anywhere, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 2698 words",
+        "reason": "Well beyond roughly 600 words of own prose even excluding quoted evidence and timestamps, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "cpzi",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 8,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 83,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2156,
+    "deductions": [
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Next action bullet 2: find why NTP fails for GW-01 to 03 so GW-01 and 02 do not drift again; interim vat 3 alarm cover",
+        "quote": "Tier 2 (Field Systems Engineering) to confirm or rule out the suspected hardware fault behind GW-03's \"TIME_SET_REJECTED: RTC write error\" and settle how vat 3's alarm will be restored, then report the outcome to Aroha Ngata in the committed update",
+        "reason": "Right direction on GW-03 and the 09:30 UTC update, but no NTP follow-up and no interim cover for vat 3, so partly right (5)."
+      },
+      {
+        "criterion": "next_action",
+        "points": -3,
+        "item": "Grading note: 5.2 Team Lead notification earns extra credit within next action",
+        "quote": "The ticket was an at-risk P2 when escalated at 06:00 UTC; no Team Lead notification is recorded in the thread.",
+        "reason": "Extra credit of 3 (rubric default size, since the key does not size it) added back; net next action 8."
+      },
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly' (weight 1 of 2)",
+        "quote": "absent",
+        "reason": "Joel Brandt response is raised ('passed to Joel Brandt (Hannah Odum, 2026-11-23 02:20 UTC), no answer recorded'), but the replacement-hosting question is not raised anywhere, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 2156 words",
+        "reason": "Well beyond roughly 600 words of own prose even excluding quoted evidence and timestamps, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "edub",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1796,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly' (weight 1 of 2)",
+        "quote": "absent",
+        "reason": "Joel Brandt response is raised ('Has Joel Brandt picked up the compensation request?'), but the replacement-hosting question is not raised anywhere, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 1796 words",
+        "reason": "Well beyond roughly 600 words of own prose even excluding quoted evidence and timestamps, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "feht",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 15,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 80,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1538,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 5,
+        "item": "Service level status: at risk",
+        "quote": "Status at 2026-11-24 06:00 UTC: Within target: 6 h 20 min business time remaining, which policy 4.4 classes as \"at risk\"",
+        "reason": "Deadline correct (03:20 UTC) with full computation, but the status label is 'Within target', contradicting the at-risk classification in the same sentence; case-specific scoring gives partial credit for 'within target', so 5 of 10 on status."
+      },
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly' (weight 1 of 2)",
+        "quote": "absent",
+        "reason": "Joel Brandt response is raised ('Has Joel Brandt responded to the compensation request?'), but the replacement-hosting question is not raised anywhere, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 1538 words",
+        "reason": "Well beyond roughly 600 words of own prose even excluding quoted evidence and timestamps, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "ivqa",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1904,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly' (weight 1 of 2)",
+        "quote": "absent",
+        "reason": "Joel Brandt response is raised ('No response from Joel Brandt recorded'), but the replacement-hosting question is not raised anywhere, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 1904 words",
+        "reason": "Well beyond roughly 600 words of own prose even excluding quoted evidence and timestamps, so 0 of 10."
+      }
+    ]
+  },
+  {
+    "handoff_id": "xaks",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 2,
+      "concision": 0
+    },
+    "total": 82,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": true,
+    "usefulness": 4,
+    "handoff_words": 1372,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly' (weight 1 of 2)",
+        "quote": "absent",
+        "reason": "Joel Brandt item is covered ('Hannah Odum passed it to Joel Brandt (Account Manager); no offer is recorded on the ticket'), replacement-hosting question absent: 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Request without basis in the files (rubric: subtract 3)",
+        "quote": "Clarifying question: What is the current date and time? The environment clock reads 2026-11-21 15:26 UTC, which is earlier than the last thread entry",
+        "reason": "The request rests on the environment clock, not the files; the files fix the as-of time at the 06:00 UTC escalation (key grading notes)."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is about 1372 words",
+        "reason": "Well beyond roughly 600 words of own prose even excluding quoted evidence and timestamps, so 0 of 10."
+      }
+    ]
+  }
+]

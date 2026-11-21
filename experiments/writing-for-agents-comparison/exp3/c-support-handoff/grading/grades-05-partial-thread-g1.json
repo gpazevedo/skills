@@ -1,0 +1,90 @@
+[
+  {
+    "handoff_id": "axpn",
+    "scores": {"problem": 20, "tried": 10, "commitments": 17, "service_level": 20, "next_action": 10, "questions": 10, "concision": 0},
+    "total": 87.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1575,
+    "deductions": [
+      {"criterion": "commitments", "points": 3, "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific scoring)", "quote": "absent: the only reference is to the credit claim, \"The message it would be in is not in this export.\"", "reason": "No general note that commitments made in messages 1 to 6 are unknown. Size not set by rubric or key, so 3 points."},
+      {"criterion": "concision", "points": 10, "item": "Concision", "quote": "about 1,575 words of own prose (about 2,225 in total)", "reason": "Far beyond roughly 600 words."}
+    ]
+  },
+  {
+    "handoff_id": "cwjv",
+    "scores": {"problem": 20, "tried": 10, "commitments": 17, "service_level": 7, "next_action": 5, "questions": 7, "concision": 0},
+    "total": 66.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "handoff_words": 966,
+    "deductions": [
+      {"criterion": "commitments", "points": 3, "item": "C1 (update by 16:00 UTC 5 Nov; open, owned by Tier 2)", "quote": "missed as far as the supplied thread shows (no update recorded; export ends 5 Nov 11:00)", "reason": "Handoff is judged as of escalation (5 Nov 11:00 UTC), when C1 is open; it uses an as-of time of 21 Nov that is not in the files. Size not set, so 3 points."},
+      {"criterion": "service_level", "points": 10, "item": "Service level status: unknown (depends on support level)", "quote": "For reference, the P2 target has passed at every level ... tell the Support Duty Manager the P2 is breached (policy 5.3; breached at any support level)", "reason": "Gives a single definitive status (breached at every level), which the case-specific scoring says fails; as of escalation only the Enterprise branch is breached."},
+      {"criterion": "service_level", "points": 3, "item": "Conditional deadline, Enterprise: 2026-11-04 19:50 UTC", "quote": "3 Nov 14:20 + 24h + 5h30 paused = 5 Nov 19:50 UTC", "reason": "Wrong date for the Enterprise conditional deadline (key: 4 Nov 19:50 UTC); Business and Standard conditionals correct. Size not set, so 3 points."},
+      {"criterion": "next_action", "points": 5, "item": "Recommended next action: investigate pre-1-Nov tokens and send the 16:00 UTC update", "quote": "update Sunil Mehta now (no later than Mon 23 Nov 08:00 UTC) ... Then: tell the Support Duty Manager the P2 is breached", "reason": "Token investigation is present but secondary; the 16:00 UTC update is treated as already missed and the action adds a Duty Manager notification that is not warranted at escalation. Partly right."},
+      {"criterion": "questions", "points": 3, "item": "Requests with no basis in the files", "quote": "and any ticket events after 2026-11-05 11:00 UTC?", "reason": "The files end at escalation and give no basis for later events; the request comes from the invented 21 Nov as-of time. Rubric: 3 points per request."},
+      {"criterion": "concision", "points": 10, "item": "Concision", "quote": "about 966 words of own prose (about 1,125 in total)", "reason": "Beyond roughly 600 words."}
+    ]
+  },
+  {
+    "handoff_id": "qoux",
+    "scores": {"problem": 20, "tried": 10, "commitments": 20, "service_level": 20, "next_action": 10, "questions": 10, "concision": 0},
+    "total": 90.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1658,
+    "deductions": [
+      {"criterion": "concision", "points": 10, "item": "Concision", "quote": "about 1,658 words of own prose (about 2,309 in total)", "reason": "Far beyond roughly 600 words. (Minor non-key error noted, not deducted: Business first-response deadline given as \"2026-11-03 18:00 UTC\", should be 4 Nov 08:20 UTC; status 'met' unaffected.)"}
+    ]
+  },
+  {
+    "handoff_id": "xsbv",
+    "scores": {"problem": 20, "tried": 10, "commitments": 17, "service_level": 20, "next_action": 10, "questions": 10, "concision": 0},
+    "total": 87.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "handoff_words": 1050,
+    "deductions": [
+      {"criterion": "commitments", "points": 3, "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific scoring)", "quote": "absent: only \"Messages 1-6 of the thread are also missing; with them, the earlier attempts and the October credit claim could be checked.\"", "reason": "No note that commitments made in messages 1 to 6 are unknown. Size not set, so 3 points."},
+      {"criterion": "concision", "points": 10, "item": "Concision", "quote": "about 1,050 words of own prose (about 1,295 in total)", "reason": "Beyond roughly 600 words."}
+    ]
+  },
+  {
+    "handoff_id": "yynw",
+    "scores": {"problem": 20, "tried": 10, "commitments": 17, "service_level": 20, "next_action": 10, "questions": 10, "concision": 0},
+    "total": 87.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1543,
+    "deductions": [
+      {"criterion": "commitments", "points": 3, "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific scoring)", "quote": "absent: Gaps lists \"the original report, the reconnect instructions, anything else tried, and the 3 Nov message where the customer says a credit was promised\" but not earlier commitments", "reason": "No note that commitments made in messages 1 to 6 are unknown. Size not set, so 3 points."},
+      {"criterion": "concision", "points": 10, "item": "Concision", "quote": "about 1,543 words of own prose (about 1,938 in total)", "reason": "Far beyond roughly 600 words. (Minor non-key errors noted, not deducted: at-risk times \"from 2026-11-05 15:00 UTC\" (Business, should be after 14:50) and \"from 2026-11-09 08:00 UTC\" (Standard, should be 09:50); key deadlines all correct.)"}
+    ]
+  },
+  {
+    "handoff_id": "zoud",
+    "scores": {"problem": 20, "tried": 10, "commitments": 10, "service_level": 20, "next_action": 10, "questions": 10, "concision": 0},
+    "total": 80.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1417,
+    "deductions": [
+      {"criterion": "commitments", "points": 7, "item": "X1 (October credit: not a commitment)", "quote": "- [Reported, unconfirmed] October's subscription fee to be credited: ... Due: no time stated; open.", "reason": "Listed inside 'Commitments to the customer' with status 'open'; the key says the credit must not be listed as a commitment. Labelled unconfirmed with the policy reasons against it, so no invented_commitment critical failure recorded."},
+      {"criterion": "commitments", "points": 3, "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific scoring)", "quote": "absent: the gap note covers \"The original report, the reconnect steps Priya sent and anything else tried\" but not earlier commitments", "reason": "No note that commitments made in messages 1 to 6 are unknown. Size not set, so 3 points."},
+      {"criterion": "concision", "points": 10, "item": "Concision", "quote": "about 1,417 words of own prose (about 1,817 in total)", "reason": "Far beyond roughly 600 words."}
+    ]
+  }
+]

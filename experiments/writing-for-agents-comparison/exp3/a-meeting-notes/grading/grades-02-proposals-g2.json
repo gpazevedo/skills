@@ -1,0 +1,70 @@
+[
+  {
+    "brief_id": "fzrb",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "ligy",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "nnbn",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "pfuh",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": []
+  },
+  {
+    "brief_id": "sgir",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "vmli",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 17, "open_questions": 15, "handoff": 10},
+    "total": 97.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {"criterion": "actions", "points": 3, "key_id": "N7", "quote": "| Set up a volunteer sign-up sheet on the school app | Not stated | Not stated |", "reason": "Action the notes do not contain: the app sign-up sheet is only Daniel's suggestion and 'Nobody took it on yet' (N7); rubric subtracts 3 per invented action. Owner and deadline are marked not stated, so no fabricated owner/deadline deduction."}
+    ]
+  }
+]

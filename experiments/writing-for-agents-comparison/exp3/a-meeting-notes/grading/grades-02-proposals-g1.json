@@ -1,0 +1,84 @@
+[
+  {
+    "brief_id": "fzrb",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "ligy",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "nnbn",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "pfuh",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_precision",
+        "points": 0,
+        "key_id": "Grading notes (next meeting date)",
+        "quote": "2. The next subcommittee meeting is Wed 9 Dec at 3:30pm.",
+        "reason": "The key calls the next meeting date context, not a decision. Recorded for transparency but not deducted: the rubric's 7-point deduction applies only to items in the 'Not decisions' list (N1 to N8) or unsupported by the notes, and this fact is stated in the notes. Not misleading, so no critical failure; usefulness lowered by 1."
+      }
+    ]
+  },
+  {
+    "brief_id": "sgir",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 20, "open_questions": 15, "handoff": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "vmli",
+    "case": "02-proposals",
+    "scores": {"decision_recall": 25, "decision_precision": 20, "evidence_fidelity": 10, "actions": 17, "open_questions": 15, "handoff": 10},
+    "total": 97.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "actions",
+        "points": 3,
+        "key_id": "N7",
+        "quote": "| Set up a volunteer sign-up sheet on the school app | Not stated | Not stated |",
+        "reason": "The notes contain no such action (\"Nobody took it on yet\"); the rubric deducts 3 for each action the notes do not contain. Owner and deadline are marked not stated, so no 5-point fill-in deduction and no fabricated_owner/deadline. Not counted as a promotion of N7 under decision_precision because the brief labels the app sign-up 'not decided' in its Proposals and Open questions sections."
+      }
+    ]
+  }
+]

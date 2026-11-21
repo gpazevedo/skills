@@ -1,0 +1,178 @@
+[
+  {
+    "handoff_id": "amjp",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1748,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Rubric concision (roughly 600-word limit for 5 points)",
+        "reason": "Handoff's own prose, excluding quotes and timestamps, is about 1748 words, well beyond roughly 600, so 0.",
+        "quote": "Whole handoff (2,393 words total), including an 18-row fact table and a four-row service-level table"
+      }
+    ]
+  },
+  {
+    "handoff_id": "bpxc",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 5,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1305,
+    "deductions": [
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action: find cause, fix it, and regenerate complete reports for 21 to 24 Nov (plus interim evidence of readings)",
+        "quote": "Inspect the report job configuration for HPG stores 07 and 11: the schedule's time zone (the TRN-77954 cause) and which timestamp the job uses to select readings for the night window, then regenerate the store 07 22 Nov report once to confirm.",
+        "reason": "Right direction (diagnose report selection, send the 07:00 UTC update) but the action never extends to fixing the fault or producing complete reports for 21 to 24 Nov for the customer's cold-chain records, a key element of the key's action; partly right, 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Rubric concision (roughly 600-word limit for 5 points)",
+        "reason": "Handoff's own prose, excluding quotes and timestamps, is about 1305 words, well beyond roughly 600, so 0.",
+        "quote": "Whole handoff (1,937 words total)"
+      }
+    ]
+  },
+  {
+    "handoff_id": "gqez",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1423,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Rubric concision (roughly 600-word limit for 5 points)",
+        "reason": "Handoff's own prose, excluding quotes and timestamps, is about 1423 words, well beyond roughly 600, so 0.",
+        "quote": "Whole handoff (1,828 words total)"
+      }
+    ]
+  },
+  {
+    "handoff_id": "kboc",
+    "scores": {
+      "problem": 18.3,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 88.3,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": true,
+    "usefulness": 4,
+    "handoff_words": 1131,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 1.7,
+        "item": "P6: compliance impact (gaps treated as a cold-chain break) | status: customer-reported",
+        "quote": "The customer needs complete reports for those nights for vaccine cold-chain records; a report with gaps is treated as a cold-chain break.",
+        "reason": "Impact captured, but the cold-chain-break rule is stated as plain fact with no [Reported] tag (every other evidence item carries a tag); wrong/unmarked status counts 0.5, so 20 x 5.5/6 = 18.3."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Rubric concision (roughly 600-word limit for 5 points)",
+        "reason": "Handoff's own prose, excluding quotes and timestamps, is about 1131 words, well beyond roughly 600, so 0.",
+        "quote": "Whole handoff (1,431 words total)"
+      }
+    ]
+  },
+  {
+    "handoff_id": "lcmw",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1609,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Rubric concision (roughly 600-word limit for 5 points)",
+        "reason": "Handoff's own prose, excluding quotes and timestamps, is about 1609 words, well beyond roughly 600, so 0.",
+        "quote": "Whole handoff (2,194 words total), including a separate nine-item Gaps section"
+      }
+    ]
+  },
+  {
+    "handoff_id": "plbh",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1098,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Rubric concision (roughly 600-word limit for 5 points)",
+        "reason": "Handoff's own prose, excluding quotes and timestamps, is about 1098 words, well beyond roughly 600, so 0.",
+        "quote": "Whole handoff (1,257 words total)"
+      }
+    ]
+  }
+]

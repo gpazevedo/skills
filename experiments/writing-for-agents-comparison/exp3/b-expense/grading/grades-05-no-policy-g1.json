@@ -1,0 +1,41 @@
+[
+  {"review_id": "jbug",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 15, "summary": 10},
+   "total": 100.0, "critical_failures": [], "extra_content": false, "unneeded_clarification": false, "usefulness": 5,
+   "deductions": []},
+  {"review_id": "jjsk",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 15, "summary": 5},
+   "total": 95.0, "critical_failures": [], "extra_content": true, "unneeded_clarification": false, "usefulness": 4,
+   "deductions": [
+     {"criterion": "summary", "points": 5, "item": "Summary for the approver", "quote": "No expense policy was supplied, so no item can be approved or rejected; the corrected total is not determinable and all nine items (AUD 2,102.50 by line sum, ...", "reason": "Summary is about 182 words, well over the rubric's roughly 120 words: clearly bloated, so 5 instead of 10."}
+   ]},
+  {"review_id": "nrjk",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 0, "amounts": 5, "questions": 5, "summary": 0},
+   "total": 55.0, "critical_failures": [], "extra_content": true, "unneeded_clarification": false, "usefulness": 2,
+   "deductions": [
+     {"criterion": "grounds", "points": 15, "item": "Items 4 and 8 (key line items; Grading notes receipt problems)", "quote": "Review stopped at Step 1 (Inventory). ... No verdicts, approved amounts, corrected total or approver summary are given", "reason": "Per case-specific scoring, a policy-request-only review earns grounds only for receipt problems it reports. The inventory lists R04 at 21.90 and R08 dated 4 October 2026 but never ties them to items 4 and 8 or states the discrepancy; 0 of 2 non-plain items have grounds."},
+     {"criterion": "amounts", "points": 5, "item": "Expected total (receipt-supported AUD 2,046.80)", "quote": "The nine line amounts sum to AUD 2,102.50, so the form's stated total is AUD 90.00 lower than its own line items.", "reason": "Detects the 2,012.50 vs 2,102.50 error (one of the two things case-specific scoring judges amounts against) but gives no receipt-supported total or per-item supported amounts; 5 of 10 awarded for the total part (judgement under the case-specific override)."},
+     {"criterion": "amounts", "points": 5, "item": "Item 4 approved amount 21.90", "quote": "absent", "reason": "No statement that item 4 is supported only at 21.90."},
+     {"criterion": "questions", "points": 10, "item": "Q2 [essential], Q3, Q4", "quote": "absent", "reason": "Only Q1 (request for the policy) is raised: weight 2 of 6, 15 x 2/6 = 5."},
+     {"criterion": "summary", "points": 10, "item": "Summary for the approver", "quote": "No verdicts, approved amounts, corrected total or approver summary are given until the policy is supplied.", "reason": "Summary absent."}
+   ]},
+  {"review_id": "ovah",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 15, "summary": 5},
+   "total": 95.0, "critical_failures": [], "extra_content": false, "unneeded_clarification": false, "usefulness": 4,
+   "deductions": [
+     {"criterion": "summary", "points": 5, "item": "Summary for the approver", "quote": "Sean Whitlock claims AUD 2,102.50 by line sum (the form states AUD 2,012.50, a AUD 90.00 understatement); approved total is AUD 0.00 ...", "reason": "Summary is about 153 words, beyond roughly 120: bloated, so 5 instead of 10."}
+   ]},
+  {"review_id": "svqa",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 9, "summary": 10},
+   "total": 94.0, "critical_failures": [], "extra_content": false, "unneeded_clarification": false, "usefulness": 4,
+   "deductions": [
+     {"criterion": "questions", "points": 3, "item": "Padding (no key question; item 2)", "quote": "Line 2: please confirm the hire car class and supply any pre-approval for car hire, if required.", "reason": "R02 already states the class (Toyota Corolla or similar, compact) and nothing in the files suggests pre-approval is needed; no basis in the files. 3 points per padding question as the rubric states."},
+     {"criterion": "questions", "points": 3, "item": "Padding (no key question; item 5)", "quote": "Line 5: please confirm this fuel was for the hire car under agreement RA-220917.", "reason": "R05 is South Hedland on 3 Nov during the hire period and matches the line; the files give no basis for doubt. 3 points per padding question."}
+   ]},
+  {"review_id": "zlym",
+   "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 15, "summary": 5},
+   "total": 95.0, "critical_failures": [], "extra_content": false, "unneeded_clarification": false, "usefulness": 4,
+   "deductions": [
+     {"criterion": "summary", "points": 5, "item": "Summary for the approver", "quote": "Sean Whitlock claims AUD 2,012.50 on the form, but its lines sum to AUD 2,102.50, an understatement of AUD 90.00. ...", "reason": "Summary is about 172 words, well over roughly 120: clearly bloated, so 5 instead of 10."}
+   ]}
+]

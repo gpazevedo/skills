@@ -1,0 +1,241 @@
+[
+  {
+    "handoff_id": "bgen",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 7,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 82,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2698,
+    "deductions": [
+      {
+        "criterion": "next_action",
+        "points": 3,
+        "item": "Recommended next action: 'meanwhile a reliable interim measure for vat 3 alarms (for example a temporary or spare gateway, or a cloud-side alarm ...)'",
+        "quote": "Tier 2 (Field Systems Engineering) should determine whether GW-03's \"TIME_SET_REJECTED: RTC write error\" is a hardware fault ... decide between a remote fix and replacing the G4-E unit. ... The VLAN 30 NTP failure can come second",
+        "reason": "Right direction (diagnose GW-03 RTC error, repair or replace, send 09:30 UTC update) but the interim alarm cover for vat 3 is absent, so partly right = 5; +2 extra credit for flagging the policy 5.2 Team Lead notification (key grading note), giving 7."
+      },
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+        "quote": "(absent)",
+        "reason": "Key lists two useful items (weight 1 each); only the Joel Brandt compensation follow-up is raised, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 2698 words, roughly 2072 words of own prose after removing quotes and timestamps)",
+        "reason": "Far beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "cpzi",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 7,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 82,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2156,
+    "deductions": [
+      {
+        "criterion": "next_action",
+        "points": 3,
+        "item": "Recommended next action: 'meanwhile a reliable interim measure for vat 3 alarms (for example a temporary or spare gateway, or a cloud-side alarm ...)'",
+        "quote": "Tier 2 (Field Systems Engineering) to confirm or rule out the suspected hardware fault behind GW-03's \"TIME_SET_REJECTED: RTC write error\" and settle how vat 3's alarm will be restored",
+        "reason": "Right direction (diagnose GW-03 RTC error, repair or replace, send 09:30 UTC update) but the interim alarm cover for vat 3 is absent, so partly right = 5 (the separate NTP follow-up for GW-01/02 is also absent from the next action); +2 extra credit for flagging the policy 5.2 Team Lead notification (key grading note), giving 7."
+      },
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+        "quote": "(absent)",
+        "reason": "Key lists two useful items (weight 1 each); only the Joel Brandt compensation follow-up is raised, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 2156 words, roughly 1608 words of own prose after removing quotes and timestamps)",
+        "reason": "Far beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "edub",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1796,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+        "quote": "(absent)",
+        "reason": "Key lists two useful items (weight 1 each); only the Joel Brandt compensation follow-up is raised, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 1796 words, roughly 1464 words of own prose after removing quotes and timestamps)",
+        "reason": "Far beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "feht",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 15,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 80,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1538,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 5,
+        "item": "Service level: Status 'at risk' (key); case-specific scoring: correct deadline with status 'within target' gets partial credit",
+        "quote": "Status at 2026-11-24 06:00 UTC: Within target: 6 h 20 min business time remaining, which policy 4.4 classes as \"at risk\"",
+        "reason": "Deadline correct (10). Status line is labelled 'Within target' and then 'at risk'; self-contradictory, so partial credit 5 of 10 for status."
+      },
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+        "quote": "(absent)",
+        "reason": "Key lists two useful items (weight 1 each); only the Joel Brandt compensation follow-up is raised, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 1538 words, roughly 1325 words of own prose after removing quotes and timestamps)",
+        "reason": "Far beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "ivqa",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1904,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+        "quote": "(absent)",
+        "reason": "Key lists two useful items (weight 1 each); only the Joel Brandt compensation follow-up is raised, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 1904 words, roughly 1598 words of own prose after removing quotes and timestamps)",
+        "reason": "Far beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "xaks",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 7,
+      "questions": 2,
+      "concision": 0
+    },
+    "total": 79,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": true,
+    "usefulness": 4,
+    "handoff_words": 1372,
+    "deductions": [
+      {
+        "criterion": "next_action",
+        "points": 3,
+        "item": "Recommended next action: 'meanwhile a reliable interim measure for vat 3 alarms (for example a temporary or spare gateway, or a cloud-side alarm ...)'",
+        "quote": "Diagnose the GW-03 \"RTC write error\" (hardware versus firmware) and restore a working vat 3 alarm, for example by replacing the gateway, before Wed 25 Nov 03:20 UTC.",
+        "reason": "Right direction (diagnose GW-03 RTC error, repair or replace, send 09:30 UTC update) but the interim alarm cover for vat 3 is absent, so partly right = 5; +2 extra credit for flagging the policy 5.2 Team Lead notification (key grading note), giving 7."
+      },
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+        "quote": "(absent)",
+        "reason": "Key lists two useful items (weight 1 each); only the Joel Brandt compensation follow-up is raised, so 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Questions: request with no basis in the files (general rule, 3 points per item)",
+        "quote": "Clarifying question: What is the current date and time? The environment clock reads 2026-11-21 15:26 UTC",
+        "reason": "The as-of time is the escalation event in the thread (key grading notes); the question rests on the environment clock, not the files. Deducted 3 per the rubric's unbased-request rule."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 1372 words, roughly 1233 words of own prose after removing quotes and timestamps)",
+        "reason": "Far beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  }
+]

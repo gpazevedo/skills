@@ -1,0 +1,163 @@
+[
+  {
+    "brief_id": "coao",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12,
+      "handoff": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "none (Q1-Q4 list; grading note on padding)",
+        "quote": "Question: Who will follow up on any of the blue-sky ideas? No owner is named for any of them.",
+        "reason": "Invented open question not raised in the notes; it frames an unassigned follow-up (the key lists such follow-ups as padding, not actions). Size not fixed by rubric or key, so 3 points per item, as for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "jwgv",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "kzhi",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "nehj",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "grading notes (conciseness)",
+        "quote": "Brief is 528 words against 424 words of notes (about 25% longer), mainly from full source quotes under every item.",
+        "reason": "Key grading note: a brief noticeably longer than the notes loses the conciseness mark. The rubric's only conciseness mark is in the handoff criterion, so handoff drops from 10 to 5."
+      }
+    ]
+  },
+  {
+    "brief_id": "usty",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "none (Q1-Q4 list; grading note on padding)",
+        "quote": "Who will address the Coastline client's notes on voiceover pacing? No task or owner is recorded (Ben)",
+        "reason": "Invented open question not raised in the notes; it frames an unassigned follow-up (the key lists such follow-ups as padding, not actions). Size not fixed by rubric or key, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "none (Q1-Q4 list; key's non-action 'chasing Coastline product sheets')",
+        "quote": "Coastline website copy (about 60% done) is waiting on the new home loan product sheets; no one is named to chase them (Yuki)",
+        "reason": "Invented open question not raised in the notes; it frames an unassigned follow-up (the key lists such follow-ups as padding, not actions). Size not fixed by rubric or key, so 3 points per item, as for an invented action. The key says 'Waiting on the product sheets' is status, not an open task."
+      }
+    ]
+  },
+  {
+    "brief_id": "xqfd",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 5
+    },
+    "total": 89,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "none (Q1-Q4 list; key's non-action 'chasing Coastline product sheets')",
+        "quote": "Who is chasing the product sheets for the new home loan that the Coastline website copy is waiting on? ... No owner is recorded.",
+        "reason": "Invented open question not raised in the notes; it frames an unassigned follow-up (the key lists such follow-ups as padding, not actions). Size not fixed by rubric or key, so 3 points per item, as for an invented action. The key says 'Waiting on the product sheets' is status, not an open task."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "none (Q1-Q4 list; grading note on padding)",
+        "quote": "Will any of the proposals above (open studio night, podcast, newsletter, show and tell, coffee machine) go ahead, and who would own them?",
+        "reason": "Invented open question not raised in the notes; it frames an unassigned follow-up (the key lists such follow-ups as padding, not actions). Size not fixed by rubric or key, so 3 points per item, as for an invented action."
+      },
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "grading notes (conciseness)",
+        "quote": "Brief is 707 words against 424 words of notes (about 67% longer), with a separate evidence-quoted proposals section and a seven-item open questions list.",
+        "reason": "Key grading note: a brief noticeably longer than the notes loses the conciseness mark. The rubric's only conciseness mark is in the handoff criterion, so handoff drops from 10 to 5."
+      }
+    ]
+  }
+]

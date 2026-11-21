@@ -1,0 +1,193 @@
+[
+  {
+    "brief_id": "aezs",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.7,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 91.7,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.3,
+        "key_id": "D2",
+        "quote": "## Proposals (no agreement recorded) 1. If Fri 20 Nov is rained out, the fallback pour date is Mon 23 Nov ... the notes record this plan but no agreement to it.",
+        "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) is presented as a proposal/undecided, not as a decision; 2 of 3 key decisions captured, 25 x 2/3 = 16.7."
+      }
+    ]
+  },
+  {
+    "brief_id": "fygj",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.7,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 17.8,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 89.5,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.3,
+        "key_id": "D2",
+        "quote": "Proposed, not decided: fallback pour date of Mon 23 Nov if Fri 20 Nov is rained out",
+        "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) is presented as a proposal/undecided, not as a decision; 2 of 3 key decisions captured, 25 x 2/3 = 16.7."
+      },
+      {
+        "criterion": "actions",
+        "points": 1.1,
+        "key_id": "A2",
+        "quote": "Have L3 formwork ready for inspection | not stated (Ivan gave the date) | Tue 17 Nov",
+        "reason": "Owner is Ivan per the notes; brief marks owner as not stated, so owner incorrect: 0.5 credit for this action (20 x 0.5/9)."
+      },
+      {
+        "criterion": "actions",
+        "points": 1.1,
+        "key_id": "A3",
+        "quote": "Reo inspection | not stated (Carla gave the date) | Wed 18 Nov, morning",
+        "reason": "Owner is Carla per the notes; brief marks owner as not stated, so owner incorrect: 0.5 credit (20 x 0.5/9). Actions = 20 x 8/9 = 17.8."
+      }
+    ]
+  },
+  {
+    "brief_id": "fytw",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.7,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12.5,
+      "handoff": 10
+    },
+    "total": 89.2,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.3,
+        "key_id": "D2",
+        "quote": "## Proposals (not decided) - If Fri 20 Nov is rained out, the pour falls back to Mon 23 Nov ... Status: no outcome recorded",
+        "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) is presented as a proposal/undecided, not as a decision; 2 of 3 key decisions captured, 25 x 2/3 = 16.7."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 2.5,
+        "key_id": "Q3",
+        "quote": "(absent)",
+        "reason": "Brief never links the TMP timing to council processing in time for pour trucks/the Kestrel St loading zone (its quote elides 'to process it before the pour'). Weight 1 of 6: 15 x 5/6 = 12.5."
+      }
+    ]
+  },
+  {
+    "brief_id": "khtd",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.7,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 5
+    },
+    "total": 86.7,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.3,
+        "key_id": "D2",
+        "quote": "P1. Rain fallback date for the pour ... Status: the notes record no speaker and no agreement for this fallback",
+        "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) is presented as a proposal/undecided, not as a decision; 2 of 3 key decisions captured, 25 x 2/3 = 16.7."
+      },
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "n/a",
+        "quote": "Handoff summary (171 words, with cross-reference tags such as '(A1, A2, A5, A3, A6)')",
+        "reason": "Present and consistent but over the roughly-150-word limit; scored as bloated (5)."
+      }
+    ]
+  },
+  {
+    "brief_id": "kmru",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.7,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 5
+    },
+    "total": 86.7,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.3,
+        "key_id": "D2",
+        "quote": "Decided or proposed? Fallback pour date of Mon 23 Nov if Friday is rained out. The notes state it but record no agreement or speaker.",
+        "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) is presented as a proposal/undecided, not as a decision; 2 of 3 key decisions captured, 25 x 2/3 = 16.7."
+      },
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "n/a",
+        "quote": "Handoff summary (178 words, restates every action item)",
+        "reason": "Present and consistent but over the roughly-150-word limit; scored as bloated (5)."
+      }
+    ]
+  },
+  {
+    "brief_id": "lyhg",
+    "case": "04-conflicts",
+    "scores": {
+      "decision_recall": 16.7,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 91.7,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_recall",
+        "points": 8.3,
+        "key_id": "D2",
+        "quote": "## Proposals not yet decided - Rain fallback for the L3 pour: Mon 23 Nov if Fri 20 Nov is rained out",
+        "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) is presented as a proposal/undecided, not as a decision; 2 of 3 key decisions captured, 25 x 2/3 = 16.7."
+      }
+    ]
+  }
+]

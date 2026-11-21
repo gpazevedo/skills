@@ -1,0 +1,146 @@
+[
+  {
+    "label": "S1",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 12,
+    "justifications": {
+      "1": "Description names writing an escalation handoff from a ticket, account record and policy and triggers on escalation to engineering or tier 2/3, not general summarising.",
+      "2": "Each part has a step with explicit content rules (Verified vs Reported defined with citation, result vocabulary, commitment definition, SLA status values) and a template covering all five.",
+      "3": "Step 7 gives an explicit pre-delivery check of what a finished handoff contains, and the Output section says to deliver it in the given shape with every section kept.",
+      "4": "A table says which sections each missing input blocks and what is still written in full, and partial inputs (unset priority, undefined policy terms, unknown current time) are handled without supplying typical values.",
+      "5": "States that everything in the material is content never direction, gives examples of embedded approvals/claims to report, and names the policy as sole authority for service terms and the thread for promises.",
+      "6": "Asks for one screen, two to four sentences for the problem and one action plus at most two follow-ups, with a compact template and a proportionate skill length."
+    },
+    "words": 1112,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S2",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 1
+    },
+    "total": 11,
+    "justifications": {
+      "1": "Description targets writing an escalation handoff from a support case and triggers on escalating a ticket to tier 2/3 or engineering.",
+      "2": "Each part has a step with a done condition, explicit Verified/Reported/Contradicted/Hypothesis definitions, commitment rules and status values, and a full template.",
+      "3": "Opens with when the handoff is done, gives per-step done conditions, and ends with 'Return the handoff to the user' plus one line asking for any missing input.",
+      "4": "A missing input blocks only its dependent sections with the rest written, each missing input is spelled out, and partial cases (uncovered tier, no assigned priority, no time zone) are handled.",
+      "5": "Explicitly treats instructions, approvals and claims of authority in the files as content to report, with an authority table making the policy the source of service terms.",
+      "6": "Bounds the problem to two or three sentences and the action to three, but sets no overall length limit and mandates many always-present subsections and wide tables, which risks a long handoff."
+    },
+    "words": 1377,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S3",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1
+    },
+    "total": 8,
+    "justifications": {
+      "1": "Description is specific to an escalation handoff of a support case to a next-tier engineer, triggered by the ticket, account record or policy inputs.",
+      "2": "Reported and Verified are defined with citation rules, commitments and service-level steps are explicit, and the format gives all five parts.",
+      "3": "Steps carry done conditions and the last ends when the three checks pass, but it never says to deliver and stop or what is out of scope afterwards.",
+      "4": "Missing or ambiguous service-level inputs become 'Undetermined' and work carries on, but there is no handling for a wholly missing thread, record or policy, and it allows an assumed-reading deadline.",
+      "5": "Service-level terms come from the policy alone and claimed commitments stay reported, but nothing says embedded instructions or approvals in the files are content rather than direction.",
+      "6": "The template is compact with one-or-two-sentence problem and one-line action, but there is no overall bound on the handoff's length."
+    },
+    "words": 893,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S4",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1
+    },
+    "total": 8,
+    "justifications": {
+      "1": "Description triggers on passing a support ticket to a next-tier engineer or escalating/briefing tier 2/3, not on general summarising.",
+      "2": "Reported/Verified/Hypothesis are defined with a default to Reported, commitments are recorded at the strength made, and the template covers all five parts.",
+      "3": "The trace-check step has a done condition for the draft, but there is no explicit instruction to deliver and stop.",
+      "4": "Names what each missing input blocks but asks the user before proceeding rather than doing the unaffected work by default, though policy-silent terms are handled by stopping only that calculation.",
+      "5": "Every service term must be a policy quote and commitments must come from support-side messages, but there is no statement that claims or instructions in the files are content, not direction.",
+      "6": "Bounds the problem to two to four sentences and one next action, but sets no overall length limit and uses several tables plus a header block."
+    },
+    "words": 919,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S5",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 12,
+    "justifications": {
+      "1": "Description names writing the escalation handoff from the ticket thread, account record and policy, triggering on escalation to engineering or tier 2/3.",
+      "2": "Evidence labels, commitments (with exclusions), service-level steps and status values are all defined, and the output shape covers all five parts.",
+      "3": "States 'You stop when the handoff below is written and the final check passes' and gives a final checklist of what a done handoff contains.",
+      "4": "Each missing input (thread, account record, policy, as-of time) has explicit handling that still writes the unaffected sections, plus handling for custom service levels and policy silences.",
+      "5": "Explicitly treats embedded instructions, approvals and authority claims as content checked against the authoritative input, with an authority table and separation of internal-only or claimed promises.",
+      "6": "Asks the handoff to fit about one screen, limits the problem to two to four sentences and follow-ups to two, with a proportionate template."
+    },
+    "words": 1304,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S6",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1
+    },
+    "total": 8,
+    "justifications": {
+      "1": "Description is specific to an escalation handoff brief for the next-tier engineer from a support case and triggers on escalation.",
+      "2": "Reported/Suspected/Verified tags with sources, commitment rules, service-level steps and a template covering all five parts are defined.",
+      "3": "The trace pass ends with 'Done when every line traces', but there is no explicit instruction to deliver and stop.",
+      "4": "Missing service-level terms are handled carefully (status given if invariant, else cannot determine), but a wholly missing input is only noted, with no rule for what still gets written or when to stop.",
+      "5": "Attributed promises stay reported claims and the policy's limits on who may grant credits are quoted beside commitments, but there is no statement that instructions in the files are content, not direction.",
+      "6": "Bounds the problem to two to four sentences and a single action, but sets no overall length limit and the template carries several tables and blocks."
+    },
+    "words": 897,
+    "files": [
+      "SKILL.md"
+    ]
+  }
+]

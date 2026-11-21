@@ -1,0 +1,185 @@
+[
+  {
+    "handoff_id": "bhox",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1611,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 1611 words; about 1411 words excluding quoted text and timestamps)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "hhmy",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1496,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 1496 words; about 1209 words excluding quoted text and timestamps)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "rjtt",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 5,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1623,
+    "deductions": [
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action (key: confirm KI-3381 and, before the 13 Nov 07:00 UTC run, apply a fix or bulk re-save of pre-v8.3 schedules or agree a fallback with the customer; send the 16:00 UTC update)",
+        "quote": "re-save a subset of the schedules due in that run and leave the rest unchanged, then check the dispatch state of both groups right after 07:00 and report the result to the KI-3381 investigation",
+        "reason": "Right direction (names the 13 Nov 07:00 UTC run and the 16:00 UTC update, re-save before the run, checks the queue after), but it deliberately leaves part of the 64-invoice run unfixed with no fallback (no bulk re-save or manual bulk send for the unchanged group) and does not ask Engineering to confirm KI-3381 or for a back-end fix; partly right, 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 1623 words; about 1182 words excluding quoted text and timestamps)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "vdhb",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1135,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 1135 words; about 922 words excluding quoted text and timestamps)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "vzcf",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 10,
+      "next_action": 5,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 75,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "handoff_words": 1096,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 10,
+        "item": "Service level status: within target (key); handoff judged as of 2026-11-12 11:30 UTC; 'at risk' or 'breached' is wrong",
+        "quote": "Resolution ... deadline 13 Nov 09:14 UTC (12 Nov 09:14 + 24 h) | breached by 8 d 6 h 20 m (no Resolved status in thread)",
+        "reason": "Deadline matches the key (10 kept), but status is given as breached, measured from an environment clock ('As of: 2026-11-21 15:34 UTC') rather than the case's as-of time; the key says breached is wrong."
+      },
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action (key: before the 13 Nov 07:00 UTC run apply a fix/bulk re-save or agree a fallback; send the promised update by 16:00 UTC today)",
+        "quote": "Now, the Tier 2 owner: check the HF-0192 job log and dispatch state for every recurring run since 13 Nov 07:00 UTC and email Daniel Okafor an update ... because the promised 12 Nov 16:00 update and all daily P2 updates are missed",
+        "reason": "Right direction (confirm KI-3381, bulk fix or re-save across schedules, email the customer), but treats the 16:00 UTC update as already missed and the 13 Nov 07:00 run as past, so it does not name the 07:00 run as the practical deadline to act before or the 16:00 update as due; partly right, 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 1096 words; about 967 words excluding quoted text and timestamps)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "wmwo",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1883,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "(whole handoff: 1883 words; about 1458 words excluding quoted text and timestamps)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose, so 0 under the rubric."
+      }
+    ]
+  }
+]
