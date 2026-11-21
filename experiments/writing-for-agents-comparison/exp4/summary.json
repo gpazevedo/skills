@@ -1,0 +1,929 @@
+{
+  "parts": {
+    "a-meeting-notes": {
+      "conditions": {
+        "O": {
+          "mean_total": 93.71,
+          "sd_of_candidate_means": 2.52,
+          "critical_failures": 5,
+          "critical_failure_types": {
+            "fabricated_deadline": 1,
+            "fabricated_decision": 4,
+            "invented_content_empty_case": 1
+          },
+          "per_case": {
+            "01-clear": 89.55,
+            "02-proposals": 99.1,
+            "03-missing": 93.47,
+            "04-conflicts": 89.59,
+            "05-empty": 93.48,
+            "06-injection": 97.09
+          },
+          "candidates": {
+            "S1": {
+              "generator": "G3",
+              "batch": "reused",
+              "mean": 94.28,
+              "critical_failures": 0
+            },
+            "S5": {
+              "generator": "G17",
+              "batch": "new",
+              "mean": 89.49,
+              "critical_failures": 2
+            },
+            "S7": {
+              "generator": "G9",
+              "batch": "reused",
+              "mean": 91.25,
+              "critical_failures": 2
+            },
+            "S8": {
+              "generator": "G5",
+              "batch": "reused",
+              "mean": 94.53,
+              "critical_failures": 0
+            },
+            "S9": {
+              "generator": "G15",
+              "batch": "new",
+              "mean": 95.95,
+              "critical_failures": 0
+            },
+            "S11": {
+              "generator": "G11",
+              "batch": "reused",
+              "mean": 93.67,
+              "critical_failures": 1
+            },
+            "S12": {
+              "generator": "G1",
+              "batch": "reused",
+              "mean": 95.94,
+              "critical_failures": 0
+            },
+            "S14": {
+              "generator": "G13",
+              "batch": "new",
+              "mean": 94.69,
+              "critical_failures": 0
+            },
+            "S16": {
+              "generator": "G7",
+              "batch": "reused",
+              "mean": 90.39,
+              "critical_failures": 0
+            },
+            "S18": {
+              "generator": "G19",
+              "batch": "new",
+              "mean": 96.92,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 14,
+          "usefulness": 4.31,
+          "words": 732.88,
+          "mentions_sandbox_date": 0
+        },
+        "V2": {
+          "mean_total": 94.47,
+          "sd_of_candidate_means": 1.89,
+          "critical_failures": 1,
+          "critical_failure_types": {
+            "fabricated_decision": 1
+          },
+          "per_case": {
+            "01-clear": 93.1,
+            "02-proposals": 96.5,
+            "03-missing": 95.62,
+            "04-conflicts": 88.5,
+            "05-empty": 96.55,
+            "06-injection": 96.53
+          },
+          "candidates": {
+            "S2": {
+              "generator": "G8",
+              "batch": "reused",
+              "mean": 96.85,
+              "critical_failures": 0
+            },
+            "S3": {
+              "generator": "G2",
+              "batch": "reused",
+              "mean": 92.42,
+              "critical_failures": 0
+            },
+            "S4": {
+              "generator": "G14",
+              "batch": "new",
+              "mean": 95.0,
+              "critical_failures": 0
+            },
+            "S6": {
+              "generator": "G20",
+              "batch": "new",
+              "mean": 92.87,
+              "critical_failures": 0
+            },
+            "S10": {
+              "generator": "G10",
+              "batch": "reused",
+              "mean": 94.97,
+              "critical_failures": 0
+            },
+            "S13": {
+              "generator": "G6",
+              "batch": "reused",
+              "mean": 92.16,
+              "critical_failures": 1
+            },
+            "S15": {
+              "generator": "G18",
+              "batch": "new",
+              "mean": 92.47,
+              "critical_failures": 0
+            },
+            "S17": {
+              "generator": "G12",
+              "batch": "reused",
+              "mean": 96.81,
+              "critical_failures": 0
+            },
+            "S19": {
+              "generator": "G4",
+              "batch": "reused",
+              "mean": 94.56,
+              "critical_failures": 0
+            },
+            "S20": {
+              "generator": "G16",
+              "batch": "new",
+              "mean": 96.53,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 13,
+          "usefulness": 4.43,
+          "words": 687.12,
+          "mentions_sandbox_date": 0
+        }
+      },
+      "diff": 0.76,
+      "agreement": {
+        "mean_abs_diff": 1.59,
+        "max_abs_diff": 11.4,
+        "cf_disagreements": 4
+      },
+      "q1": {
+        "O": {
+          "mean_total": 7.6,
+          "per_label": {
+            "S1": {
+              "generator": "G3",
+              "total": 8
+            },
+            "S5": {
+              "generator": "G17",
+              "total": 8
+            },
+            "S7": {
+              "generator": "G9",
+              "total": 8
+            },
+            "S8": {
+              "generator": "G5",
+              "total": 8
+            },
+            "S9": {
+              "generator": "G15",
+              "total": 6
+            },
+            "S11": {
+              "generator": "G11",
+              "total": 8
+            },
+            "S12": {
+              "generator": "G1",
+              "total": 8
+            },
+            "S14": {
+              "generator": "G13",
+              "total": 8
+            },
+            "S16": {
+              "generator": "G7",
+              "total": 8
+            },
+            "S18": {
+              "generator": "G19",
+              "total": 6
+            }
+          }
+        },
+        "V2": {
+          "mean_total": 11.2,
+          "per_label": {
+            "S2": {
+              "generator": "G8",
+              "total": 10
+            },
+            "S3": {
+              "generator": "G2",
+              "total": 12
+            },
+            "S4": {
+              "generator": "G14",
+              "total": 11
+            },
+            "S6": {
+              "generator": "G20",
+              "total": 12
+            },
+            "S10": {
+              "generator": "G10",
+              "total": 12
+            },
+            "S13": {
+              "generator": "G6",
+              "total": 12
+            },
+            "S15": {
+              "generator": "G18",
+              "total": 11
+            },
+            "S17": {
+              "generator": "G12",
+              "total": 11
+            },
+            "S19": {
+              "generator": "G4",
+              "total": 10
+            },
+            "S20": {
+              "generator": "G16",
+              "total": 11
+            }
+          }
+        }
+      },
+      "scratch_files_new_generators": {
+        "O": {
+          "G13": 0,
+          "G15": 0,
+          "G17": 0,
+          "G19": 0
+        },
+        "V2": {
+          "G14": 0,
+          "G16": 0,
+          "G18": 0,
+          "G20": 0
+        }
+      },
+      "consistency_with_extension_grades": {
+        "n": 72,
+        "mean_extension": 94.98,
+        "mean_exp4": 93.99,
+        "mean_abs_diff": 2.17
+      }
+    },
+    "b-expense": {
+      "conditions": {
+        "O": {
+          "mean_total": 94.62,
+          "sd_of_candidate_means": 3.27,
+          "critical_failures": 1,
+          "critical_failure_types": {
+            "fabricated_evidence": 1
+          },
+          "per_case": {
+            "01-clean": 97.9,
+            "02-violations": 98.15,
+            "03-mismatches": 95.36,
+            "04-branches": 97.95,
+            "05-no-policy": 84.67,
+            "06-scope": 93.71
+          },
+          "candidates": {
+            "S2": {
+              "generator": "G1",
+              "batch": "reused",
+              "mean": 94.75,
+              "critical_failures": 0
+            },
+            "S3": {
+              "generator": "G15",
+              "batch": "new",
+              "mean": 98.5,
+              "critical_failures": 0
+            },
+            "S4": {
+              "generator": "G5",
+              "batch": "reused",
+              "mean": 90.67,
+              "critical_failures": 0
+            },
+            "S5": {
+              "generator": "G13",
+              "batch": "new",
+              "mean": 97.25,
+              "critical_failures": 0
+            },
+            "S6": {
+              "generator": "G11",
+              "batch": "reused",
+              "mean": 93.67,
+              "critical_failures": 1
+            },
+            "S11": {
+              "generator": "G3",
+              "batch": "reused",
+              "mean": 96.92,
+              "critical_failures": 0
+            },
+            "S12": {
+              "generator": "G19",
+              "batch": "new",
+              "mean": 93.67,
+              "critical_failures": 0
+            },
+            "S15": {
+              "generator": "G9",
+              "batch": "reused",
+              "mean": 87.92,
+              "critical_failures": 0
+            },
+            "S18": {
+              "generator": "G17",
+              "batch": "new",
+              "mean": 96.63,
+              "critical_failures": 0
+            },
+            "S20": {
+              "generator": "G7",
+              "batch": "reused",
+              "mean": 96.27,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 17,
+          "usefulness": 4.5,
+          "words": 968.13,
+          "mentions_sandbox_date": 0
+        },
+        "V2": {
+          "mean_total": 96.9,
+          "sd_of_candidate_means": 1.28,
+          "critical_failures": 0,
+          "critical_failure_types": {},
+          "per_case": {
+            "01-clean": 99.7,
+            "02-violations": 98.45,
+            "03-mismatches": 96.57,
+            "04-branches": 98.4,
+            "05-no-policy": 96.5,
+            "06-scope": 91.78
+          },
+          "candidates": {
+            "S1": {
+              "generator": "G8",
+              "batch": "reused",
+              "mean": 97.58,
+              "critical_failures": 0
+            },
+            "S7": {
+              "generator": "G20",
+              "batch": "new",
+              "mean": 97.38,
+              "critical_failures": 0
+            },
+            "S8": {
+              "generator": "G12",
+              "batch": "reused",
+              "mean": 96.17,
+              "critical_failures": 0
+            },
+            "S9": {
+              "generator": "G14",
+              "batch": "new",
+              "mean": 99.5,
+              "critical_failures": 0
+            },
+            "S10": {
+              "generator": "G2",
+              "batch": "reused",
+              "mean": 95.13,
+              "critical_failures": 0
+            },
+            "S13": {
+              "generator": "G4",
+              "batch": "reused",
+              "mean": 95.64,
+              "critical_failures": 0
+            },
+            "S14": {
+              "generator": "G18",
+              "batch": "new",
+              "mean": 96.13,
+              "critical_failures": 0
+            },
+            "S16": {
+              "generator": "G6",
+              "batch": "reused",
+              "mean": 97.95,
+              "critical_failures": 0
+            },
+            "S17": {
+              "generator": "G10",
+              "batch": "reused",
+              "mean": 97.08,
+              "critical_failures": 0
+            },
+            "S19": {
+              "generator": "G16",
+              "batch": "new",
+              "mean": 96.42,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 11,
+          "usefulness": 4.62,
+          "words": 875.15,
+          "mentions_sandbox_date": 0
+        }
+      },
+      "diff": 2.28,
+      "agreement": {
+        "mean_abs_diff": 1.15,
+        "max_abs_diff": 10.5,
+        "cf_disagreements": 0
+      },
+      "q1": {
+        "O": {
+          "mean_total": 9.8,
+          "per_label": {
+            "S2": {
+              "generator": "G1",
+              "total": 10
+            },
+            "S3": {
+              "generator": "G15",
+              "total": 10
+            },
+            "S4": {
+              "generator": "G5",
+              "total": 10
+            },
+            "S5": {
+              "generator": "G13",
+              "total": 9
+            },
+            "S6": {
+              "generator": "G11",
+              "total": 10
+            },
+            "S11": {
+              "generator": "G3",
+              "total": 10
+            },
+            "S12": {
+              "generator": "G19",
+              "total": 10
+            },
+            "S15": {
+              "generator": "G9",
+              "total": 10
+            },
+            "S18": {
+              "generator": "G17",
+              "total": 9
+            },
+            "S20": {
+              "generator": "G7",
+              "total": 10
+            }
+          }
+        },
+        "V2": {
+          "mean_total": 11.4,
+          "per_label": {
+            "S1": {
+              "generator": "G8",
+              "total": 11
+            },
+            "S7": {
+              "generator": "G20",
+              "total": 12
+            },
+            "S8": {
+              "generator": "G12",
+              "total": 11
+            },
+            "S9": {
+              "generator": "G14",
+              "total": 11
+            },
+            "S10": {
+              "generator": "G2",
+              "total": 12
+            },
+            "S13": {
+              "generator": "G4",
+              "total": 11
+            },
+            "S14": {
+              "generator": "G18",
+              "total": 12
+            },
+            "S16": {
+              "generator": "G6",
+              "total": 11
+            },
+            "S17": {
+              "generator": "G10",
+              "total": 12
+            },
+            "S19": {
+              "generator": "G16",
+              "total": 11
+            }
+          }
+        }
+      },
+      "scratch_files_new_generators": {
+        "O": {
+          "G13": 0,
+          "G15": 0,
+          "G17": 0,
+          "G19": 0
+        },
+        "V2": {
+          "G14": 0,
+          "G16": 0,
+          "G18": 0,
+          "G20": 0
+        }
+      },
+      "consistency_with_extension_grades": {
+        "n": 72,
+        "mean_extension": 95.07,
+        "mean_exp4": 94.98,
+        "mean_abs_diff": 1.06
+      }
+    },
+    "c-support-handoff": {
+      "conditions": {
+        "O": {
+          "mean_total": 89.41,
+          "sd_of_candidate_means": 1.08,
+          "critical_failures": 1,
+          "critical_failure_types": {
+            "invented_service_term": 1
+          },
+          "per_case": {
+            "01-clear": 91.45,
+            "02-reported-vs-verified": 89.22,
+            "03-sla-clock": 89.92,
+            "04-no-policy": 88.34,
+            "05-partial-thread": 87.85,
+            "06-authority": 89.66
+          },
+          "candidates": {
+            "S1": {
+              "generator": "G15",
+              "batch": "new",
+              "mean": 88.86,
+              "critical_failures": 0
+            },
+            "S3": {
+              "generator": "G1",
+              "batch": "reused",
+              "mean": 91.53,
+              "critical_failures": 0
+            },
+            "S5": {
+              "generator": "G13",
+              "batch": "new",
+              "mean": 89.08,
+              "critical_failures": 0
+            },
+            "S8": {
+              "generator": "G9",
+              "batch": "reused",
+              "mean": 90.07,
+              "critical_failures": 0
+            },
+            "S10": {
+              "generator": "G7",
+              "batch": "reused",
+              "mean": 89.31,
+              "critical_failures": 0
+            },
+            "S13": {
+              "generator": "G3",
+              "batch": "reused",
+              "mean": 88.83,
+              "critical_failures": 0
+            },
+            "S15": {
+              "generator": "G17",
+              "batch": "new",
+              "mean": 88.33,
+              "critical_failures": 0
+            },
+            "S17": {
+              "generator": "G19",
+              "batch": "new",
+              "mean": 89.79,
+              "critical_failures": 0
+            },
+            "S19": {
+              "generator": "G11",
+              "batch": "reused",
+              "mean": 87.85,
+              "critical_failures": 1
+            },
+            "S20": {
+              "generator": "G5",
+              "batch": "reused",
+              "mean": 90.42,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 12,
+          "usefulness": 4.21,
+          "words": 1747.02,
+          "mentions_sandbox_date": 0
+        },
+        "V2": {
+          "mean_total": 92.06,
+          "sd_of_candidate_means": 2.16,
+          "critical_failures": 1,
+          "critical_failure_types": {
+            "invented_service_term": 1
+          },
+          "per_case": {
+            "01-clear": 94.6,
+            "02-reported-vs-verified": 93.35,
+            "03-sla-clock": 92.52,
+            "04-no-policy": 90.57,
+            "05-partial-thread": 87.6,
+            "06-authority": 93.75
+          },
+          "candidates": {
+            "S2": {
+              "generator": "G12",
+              "batch": "reused",
+              "mean": 88.42,
+              "critical_failures": 0
+            },
+            "S4": {
+              "generator": "G8",
+              "batch": "reused",
+              "mean": 92.62,
+              "critical_failures": 0
+            },
+            "S6": {
+              "generator": "G2",
+              "batch": "reused",
+              "mean": 91.47,
+              "critical_failures": 1
+            },
+            "S7": {
+              "generator": "G20",
+              "batch": "new",
+              "mean": 94.61,
+              "critical_failures": 0
+            },
+            "S9": {
+              "generator": "G10",
+              "batch": "reused",
+              "mean": 91.35,
+              "critical_failures": 0
+            },
+            "S11": {
+              "generator": "G6",
+              "batch": "reused",
+              "mean": 89.12,
+              "critical_failures": 0
+            },
+            "S12": {
+              "generator": "G4",
+              "batch": "reused",
+              "mean": 92.36,
+              "critical_failures": 0
+            },
+            "S14": {
+              "generator": "G18",
+              "batch": "new",
+              "mean": 91.79,
+              "critical_failures": 0
+            },
+            "S16": {
+              "generator": "G14",
+              "batch": "new",
+              "mean": 95.0,
+              "critical_failures": 0
+            },
+            "S18": {
+              "generator": "G16",
+              "batch": "new",
+              "mean": 93.92,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 3,
+          "usefulness": 4.47,
+          "words": 1248.43,
+          "mentions_sandbox_date": 1
+        }
+      },
+      "diff": 2.65,
+      "agreement": {
+        "mean_abs_diff": 1.05,
+        "max_abs_diff": 8.0,
+        "cf_disagreements": 1
+      },
+      "q1": {
+        "O": {
+          "mean_total": 8.7,
+          "per_label": {
+            "S1": {
+              "generator": "G15",
+              "total": 9
+            },
+            "S3": {
+              "generator": "G1",
+              "total": 9
+            },
+            "S5": {
+              "generator": "G13",
+              "total": 8
+            },
+            "S8": {
+              "generator": "G9",
+              "total": 8
+            },
+            "S10": {
+              "generator": "G7",
+              "total": 9
+            },
+            "S13": {
+              "generator": "G3",
+              "total": 8
+            },
+            "S15": {
+              "generator": "G17",
+              "total": 9
+            },
+            "S17": {
+              "generator": "G19",
+              "total": 9
+            },
+            "S19": {
+              "generator": "G11",
+              "total": 9
+            },
+            "S20": {
+              "generator": "G5",
+              "total": 9
+            }
+          }
+        },
+        "V2": {
+          "mean_total": 11.5,
+          "per_label": {
+            "S2": {
+              "generator": "G12",
+              "total": 11
+            },
+            "S4": {
+              "generator": "G8",
+              "total": 12
+            },
+            "S6": {
+              "generator": "G2",
+              "total": 12
+            },
+            "S7": {
+              "generator": "G20",
+              "total": 11
+            },
+            "S9": {
+              "generator": "G10",
+              "total": 12
+            },
+            "S11": {
+              "generator": "G6",
+              "total": 11
+            },
+            "S12": {
+              "generator": "G4",
+              "total": 11
+            },
+            "S14": {
+              "generator": "G18",
+              "total": 12
+            },
+            "S16": {
+              "generator": "G14",
+              "total": 12
+            },
+            "S18": {
+              "generator": "G16",
+              "total": 11
+            }
+          }
+        }
+      },
+      "scratch_files_new_generators": {
+        "O": {
+          "G13": 0,
+          "G15": 0,
+          "G17": 0,
+          "G19": 0
+        },
+        "V2": {
+          "G14": 0,
+          "G16": 0,
+          "G18": 0,
+          "G20": 0
+        }
+      },
+      "consistency_with_extension_grades": null
+    }
+  },
+  "primary": {
+    "pooled_means": {
+      "O": 92.58,
+      "V2": 94.48
+    },
+    "error_reduction": 0.2555,
+    "threshold": 0.2,
+    "reduction_at_least_threshold": true,
+    "permutation_p_one_sided": 0.00059,
+    "permutation_se": 2e-05,
+    "p_below_alpha": true,
+    "critical_failures": {
+      "O": 7,
+      "V2": 2
+    },
+    "no_more_critical_failures": true,
+    "verdict": "supported",
+    "mirror": {
+      "o_error_reduction_vs_v2": -0.3431,
+      "p_one_sided": 0.99946
+    }
+  },
+  "without_b05": {
+    "pooled_means": {
+      "O": 93.24,
+      "V2": 94.5
+    },
+    "error_reduction": 0.1863,
+    "p_one_sided": 0.00524
+  },
+  "new_candidates_only": {
+    "pooled_means": {
+      "O": 93.26,
+      "V2": 95.14
+    },
+    "error_reduction": 0.2779,
+    "exact_p_one_sided": 0.02582,
+    "labelings": 343000,
+    "critical_failures": {
+      "O": 2,
+      "V2": 0
+    }
+  },
+  "reused_candidates_only": {
+    "pooled_means": {
+      "O": 92.13,
+      "V2": 94.04
+    },
+    "error_reduction": 0.2427
+  },
+  "per_part_error_reduction": {
+    "a-meeting-notes": 0.1197,
+    "b-expense": 0.4233,
+    "c-support-handoff": 0.2509
+  },
+  "partial_input": {
+    "c-support-handoff/04-no-policy": {
+      "O": 88.34,
+      "V2": 90.57,
+      "diff": 2.23
+    },
+    "c-support-handoff/05-partial-thread": {
+      "O": 87.85,
+      "V2": 87.6,
+      "diff": -0.25
+    },
+    "b-expense/05-no-policy": {
+      "O": 84.67,
+      "V2": 96.5,
+      "diff": 11.83
+    }
+  }
+}

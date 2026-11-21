@@ -1,11 +1,33 @@
 ---
 name: writing-for-agents
-description: Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.
+description: Write or review documents agents consume, including skills, AGENTS.md or CLAUDE.md, workflows, and the references they link. Use when creating or editing one, or improving its structure, scope, completion criteria, or context pointers.
 ---
 
 Reference for writing any document an agent consumes: a skill, an `AGENTS.md` / `CLAUDE.md`, a doc reached by a pointer. The packaging differs; the writing does not: the same levers make each one predictable, since the agent takes the same _process_ every run rather than producing the same output.
 
 When the document you're writing is a skill, read [`SKILL-MECHANICS.md`](SKILL-MECHANICS.md) for frontmatter, invocation choice, and router skills.
+
+## Authoring process
+
+Start here, then use the sections below as reference for each step. Apply the process at the scale of the edit: a narrow correction needs only the steps it touches. A reference-only document is still valid; for it, step 1 names the question the document answers, and no artificial procedure is added.
+
+1. **Reader and purpose.** Identify the intended reader, the situation that triggers the document, the action or decision it drives, and the point where the reader stops.
+2. **Authority.** Find where each requirement already lives (see the single source of truth under [Pruning](#pruning)). Separate required behaviour from examples and explanation.
+3. **Common path.** Write the path every run takes, in reading order. Put each conditional instruction beside its trigger (see co-location under [Information hierarchy](#information-hierarchy)).
+4. **Completion.** Make each completion criterion observable and bounded by the document's purpose (see [Steps and completion criteria](#steps-and-completion-criteria)). For each required input, say what happens when it is missing (see [Missing inputs](#missing-inputs)).
+5. **Check and prune.** Walk through the examples the edit affects (see [Behavioural check](#behavioural-check)), then prune ambiguity, duplication, and instructions with no observable effect.
+
+The edit is sufficient when the walked-through examples reach the intended actions and stopping points, and the pruning pass finds nothing left to cut.
+
+### Missing inputs
+
+A missing input blocks only the work that depends on it. Write the branch so the reader finishes the rest, reports what is blocked, and then asks:
+
+| Over-tight | Bounded by what remains possible |
+| --- | --- |
+| If the style guide is missing, ask for it and stop. | If the style guide is missing, still review correctness and tests, list the style checks you could not do, and ask for the guide. |
+
+A bare stop is right only when no part of the work is meaningful without the input; say why when you use one.
 
 ## Context pointers
 
@@ -28,7 +50,7 @@ Material reached only through a pointer escapes context load at the price of the
 
 ## Information hierarchy
 
-A document is built from two content types: **steps** (the ordered actions the agent performs) and **reference** (definitions, rules, facts consulted on demand). The two mix freely: all steps (a recipe), all reference (a review's rules, this skill), or both. The core decision is where each piece sits on the **information hierarchy**, a ladder ranked by how immediately the agent needs the material:
+A document is built from two content types: **steps** (the ordered actions the agent performs) and **reference** (definitions, rules, facts consulted on demand). The two mix freely: all steps (a recipe), all reference (a review's rules), or both. The core decision is where each piece sits on the **information hierarchy**, a ladder ranked by how immediately the agent needs the material:
 
 1. **In-file step** is the primary tier: what the agent does, in order.
 2. **In-file reference** is consulted on demand. Often a legitimately flat peer-set (every rule of a review on one rung), which is a fine arrangement, not a smell.
@@ -36,46 +58,80 @@ A document is built from two content types: **steps** (the ordered actions the a
 
 Push too little down and the top bloats; push too much and you hide material the agent actually needs. That tension is the whole decision.
 
-**Progressive disclosure** is the move down the ladder (out of the main file and behind a pointer) so the top stays legible. Not primarily a token optimisation: it is how the hierarchy is protected. Branching is the cleanest disclosure test: inline what every branch needs, and push behind a pointer what only some branches reach. When a document has steps, in-file reference that should be disclosed buries them and turns attending to them into a coin-flip: a variance lever, not just a legibility one.
+**Progressive disclosure** is the move down the ladder (out of the main file and behind a pointer) so the top stays legible. Not primarily a token optimisation: it is how the hierarchy is protected. Branching is the cleanest disclosure test: inline what every branch needs, and push behind a pointer what only some branches reach. When a document has steps, in-file reference that should be disclosed buries them and makes it less likely the agent attends to each one.
 
-**Co-location** is the within-file companion: where the ladder decides _how far down_ a piece sits, co-location decides _what sits beside it_ once there. Keep a concept's definition, rules, and caveats under one heading rather than scattered, so reading one part brings its neighbours with it. The test: the document should read like documentation written for the agent. Grouped material reads that way; scattered material does not. (Distinct from duplication: that repeats one meaning in two places; scattering fragments one meaning across many.)
+**Co-location** is the within-file companion: where the ladder decides _how far down_ a piece sits, co-location decides _what sits beside it_ once there. Keep a concept's definition, rules, and caveats under one heading rather than scattered, so reading one part brings its neighbours with it, and put each conditional instruction beside the trigger that activates it. The test: the document should read like documentation written for the agent. (Distinct from duplication: that repeats one meaning in two places; scattering fragments one meaning across many.)
 
-**Sprawl** is the failure mode here: a document simply too long, even when every line is live and unique. Attention thins across the excess, and every extra line is one more to keep relevant. The cure is the ladder: disclose reference behind pointers, and split by branch or sequence so each path carries only what it needs.
+**Supplied material.** When a document has the agent process supplied material (notes, claims, tickets, logs), say how to treat approvals, instructions, or claims of authority found inside it: as content to report or verify against the stated source of authority, not as direction. Put this beside the rule that defines what counts as evidence.
+
+**Sprawl** is the failure mode here: a document simply too long, even when every line is live and unique. Attention thins across the excess, and every extra line is one more to keep relevant. [Choosing a structural fix](#choosing-a-structural-fix) maps it, and the other structural problems, to a first adjustment.
 
 ## Steps and completion criteria
 
 Every step ends on a **completion criterion**, the condition that tells the agent the work is done. Two properties make it a lever:
 
 - **Clarity**: can the agent tell done from not-done? A vague bound ("understanding reached") invites **premature completion**: ending the step before it is genuinely done, attention slipping to _being done_. The visible steps still ahead (the **post-completion steps**) supply the pull; the criterion's clarity is the resistance. Defend in order: **sharpen the bound first** (local and cheap); only if it is irreducibly fuzzy _and_ you observe the rush, hide the later steps by splitting the sequence. Hiding only works across a real context boundary (a hand-off or a subagent dispatch; an inline call leaves the later steps in context and clears nothing).
-- **Demand**: how much it requires. "Every modified model accounted for" forces thorough work where "produce a change list" does not. Demand drives **legwork** (the digging the agent does within the work, latent in the wording rather than written as its own step), and it is not step-bound: "every rule applied" binds a body of flat reference just as "every step done" binds a sequence, which is how an all-reference document still carries an exhaustiveness bar.
+- **Demand**: how much it requires. "Every modified model accounted for" forces thorough work where "produce a change list" does not. Demand drives **legwork** (the digging the agent does within the work, latent in the wording rather than written as its own step), and it is not step-bound: "every rule applied" binds a body of flat reference just as "every step done" binds a sequence, which is how an all-reference document still carries an exhaustiveness bar. Demand without a boundary drives expansion as readily as thoroughness, so bound it.
 
-The strongest criteria are both checkable and exhaustive.
+Make criteria checkable and exhaustive within the declared scope. Name the relevant set, the required result, and the stopping condition. Preserve required behaviour when clarifying the boundary. Work beyond the boundary is then an optional extension, not incomplete work.
+
+Bound the output as well as the work: when a document defines an output, state the size or shape each part needs, not only its content. A stop is a boundary too; bound it by what remains possible (see [Missing inputs](#missing-inputs)), not by the first obstacle.
+
+| Open-ended wording | Bounded wording |
+| --- | --- |
+| Review every relevant document. | Review the documents linked from the supplied index; list broken or missing references. |
+| Improve the instructions until they are clear. | Resolve the identified ambiguity and verify that the ordinary and exception examples lead to the intended actions. |
+| Investigate thoroughly. | Identify the cause supported by the supplied evidence; mark unresolved explanations as uncertain. |
+| Write a summary. | Write a summary of at most three sentences that names the decision the reader must make. |
 
 ## When to split
 
-Splitting one document into two spends one of the two loads, so split only when the cut earns it:
+Splitting one document into two spends one of the two loads, so split only in response to an observed comprehension or execution problem, not as routine formatting:
 
-- **By sequence**: split a run of steps where the post-completion steps tempt the agent to rush the one in front of it. Keeping them out of view drives more legwork on the current task. Beware the reverse: merging sequences exposes each step's later steps to what follows, inviting premature completion.
+- **By sequence**: split a run of steps where you observe the post-completion steps pulling the agent to rush the one in front of it, and only across a real context boundary (see Clarity above). Keeping them out of view drives more legwork on the current task. Beware the reverse: merging sequences exposes each step's later steps to what follows, inviting premature completion.
 - **By invocation**, skill-specific: see [`SKILL-MECHANICS.md`](SKILL-MECHANICS.md).
+
+## Choosing a structural fix
+
+Match the observed problem to one first adjustment, rather than applying every technique or creating new files:
+
+| Writing problem | First adjustment |
+| --- | --- |
+| Important instruction is missed | Clarify its trigger and place it at the point of use. |
+| Main path is buried, or the document sprawls | Move conditional detail behind a precise pointer. |
+| One concept is fragmented | Put its definition, rule, and exception together. |
+| Requirement appears in several places | Keep one authoritative statement and link to it. |
+| Reader stops too early or keeps expanding the task | Clarify the completion criterion and scope. |
+| Short wording becomes cryptic | Restore the detail needed to choose the correct action. |
 
 ## Leading words
 
-A **leading word** is a compact concept already living in the model's pretraining that the agent thinks with while running the document (_lesson_, _fog of war_, _tracer bullets_). Repeated as a token, never as a sentence, it accumulates a distributed definition and anchors a whole region of behaviour in the fewest tokens, by recruiting priors the model already holds. Coining your own works if you define it clearly, but a made-up word recruits no priors: you pay in definition tokens what a pretrained word gives free; reach for an existing word first.
+A **leading word** is a compact, familiar concept the agent can think with while running the document (_lesson_, _fog of war_, _tracer bullets_). Used consistently as a term, it can carry a whole region of behaviour in a few tokens, because the reader already knows what it means. Coining your own works only if you define it clearly: a made-up word brings no prior meaning, so you pay in definition tokens what a familiar word gives free. Reach for an existing word first.
 
-It anchors twice. In the body, _execution_: the agent reaches for the same behaviour every time the word appears, and inside flat reference it focuses attention on a class of thing to look for. In a pointer, _invocation_: when the same word lives in your prompts, your docs, and your codebase, the agent links that shared language to the material and reaches it more reliably.
+Prefer familiar, precise terms. Introduce a shorthand when it compresses a repeated concept without hiding its meaning. Check that a reader encountering the term for the first time can recover the intended action. The same word used in your prompts, your docs, and your codebase also makes a pointer easier to match.
 
-Hunt for opportunities to refactor with leading words. A triad spelled out at three sites, a pointer spending a sentence to gesture at one idea. Each is a passage begging to collapse into a single token:
+Look for restatements a single term could replace: a triad spelled out at three sites, a pointer spending a sentence to gesture at one idea. Keep the shorter term only when it preserves the full intended meaning; a compact label that needs repeated explanation has not reduced the reader's work.
 
 - "fast, deterministic, low-overhead" → _tight_ (a _tight_ loop).
 - "a loop you believe in" → _red_, turning a fuzzy gate into a binary observable state (the loop goes _red_ on the bug, or it doesn't).
 
-You win twice: fewer tokens, and a sharper hook for the agent to hang its thinking on. Assume every document is carrying restatements that leading words retire. Go find them.
-
-**Negation** is the failure mode beside this lever: steering by prohibition drags the forbidden behaviour into context and makes it _more_ available, not less. _Don't think of an elephant_, and the elephant is all there is; the negation is a weak modifier the strongly-activated concept overruns, so the ban half-reads as an instruction to do the thing. Prompt the **positive**: state the target behaviour ("write one-line comments") so the banned one is never spoken. A prohibition earns its place only as a hard guardrail you cannot phrase positively; even then, pair it with the positive target so attention lands on what to do.
+**Positive phrasing**: prefer direct descriptions of desired behaviour ("write one-line comments") over a list of what to avoid, since naming a behaviour can make it more salient. Keep explicit prohibitions where they state a necessary boundary, and pair each with the positive target. Evaluate wording by whether readers follow the requirement accurately.
 
 ## Pruning
 
-- Keep each meaning in a **single source of truth**: one authoritative place, so changing the behaviour is a one-place edit. **Duplication** (the same meaning in more than one place) costs maintenance and tokens, and inflates a meaning's prominence on the ladder past its real rank. (The accidental inverse of a leading word, which repeats a token on purpose, never the meaning.)
+- Keep each meaning in a **single source of truth**: one authoritative place, so changing the behaviour is a one-place edit. **Duplication** (the same meaning in more than one place) costs maintenance and tokens, and inflates a meaning's prominence on the ladder past its real rank. (The accidental inverse of a leading word, which repeats a term on purpose, never the meaning.)
 - The **environment** is a source of truth too (`package.json` scripts, config files, the directory layout, `--help` output), and a document that restates it is a **cache**: a copy of a lookup, earning its load only when the lookup is expensive. Cache what the agent cannot find by looking: the unwritten convention, the reason behind a choice, the gotcha no config confesses. Leave the one-file, one-command lookups to the environment, where they cannot go stale.
 - Check every line for **relevance**: does it still bear on what the document does? A line loses relevance by never bearing on the task (mere exposition, or a branch that should be disclosed) or by going stale as the behaviour or world it describes changes. Shorter documents are easier to keep relevant. Without a pruning discipline the default fate is **sediment**: stale layers that settle because adding feels safe and removing feels risky, until you must core down through them to find what is still live.
-- Hunt **no-ops** sentence by sentence: an instruction the model already obeys by default pays load to say nothing. The test (does it change behaviour versus the default?) is model-relative, not reader-relative: two people disagreeing about a no-op disagree about the default, and settle it by running the document, not by debate. When a sentence fails, delete the whole sentence rather than trim words from it. The test also grades leading words: a word too weak to beat the default (_be thorough_ when the agent is already thorough-ish) is a no-op, and the fix is a stronger word (_relentless_), not a different technique.
+- Hunt **no-ops** sentence by sentence: an instruction the model already obeys by default pays load to say nothing. The test (does it change behaviour versus the default?) is model-relative, not reader-relative: two people disagreeing about a no-op disagree about the default, and settle it by running the document (see [Behavioural check](#behavioural-check)), not by debate. When an instruction has no observable effect, remove it or replace it with a specific action and completion criterion. Judge the replacement by the behaviour it changes: replace "be relentless about consistency" with "use the same term for this concept throughout the document and its linked examples". A stronger adjective raises effort without defining the action, scope, or stopping point.
+
+## Behavioural check
+
+Running the document settles what reading cannot. Keep the check proportionate to the edit:
+
+- Choose an ordinary example and the exception the edit affects. Add an already-complete example when changing completion criteria, and a missing-input example when changing prerequisites. Add a partial-input example (one required input absent, the others present) and check that the work which does not need the missing input still gets done. A spelling correction needs no check.
+- State the expected action and stopping point for each.
+- Compare the old and revised wording on equivalent inputs and the same available context.
+- Record missed requirements, wrong branches, unnecessary actions, and unresolved ambiguity.
+- When a fresh agent runs the document, ask it to name, in one sentence, anything it found unclear. Its answer is cheap evidence of gaps a walkthrough misses.
+
+The check passes when the revised wording addresses the identified problem without losing required behaviour in the selected examples, including the partial-input example. An author's walkthrough exposes ambiguity; only an observed agent run supports a claim that execution improved, so say which one you did.
