@@ -1,0 +1,63 @@
+The strongest improvements would be:
+
+Bounded completion criteria: reduce open-ended investigation and unnecessary expansion.
+Precise actions instead of stronger adjectives: make “enough” observable.
+A short authoring process: make skill rewrites more consistent.
+Behavioral evaluation: catch ambiguous branches and stopping rules before accepting a rewritten skill.
+These changes should improve the instructions produced during adaptation. They could reduce review corrections caused by unclear wording or scope.
+
+They would have less effect on the major integration defects, dependency renames, runtime verification, and evidence repairs seen in extract-seam. Those require changes beyond writing-for-agents.
+
+I’d implement the bounded-completion and precision changes first, then compare the original and revised skill on the same small adaptation task. The expected benefit is credible; a substantial reduction in adaptation time is still unproven.
+
+
+I want to compare the results of the improved writing-for-agents version versus the original one. I want to write a new skill using both versions to compare them. This new skill should be unrelated to this repository. What are your suggestions?
+
+
+I’d use a meeting-notes-to-decision-brief skill. It is unrelated to this repository, needs no external services, and has enough ambiguity to expose differences in instruction quality.
+
+Give it supplied meeting notes and ask it to produce:
+
+Decisions, with supporting evidence.
+Action items, preserving stated owners and deadlines.
+Open questions and contradictions.
+A concise handoff summary.
+Require it to distinguish proposals from decisions and leave missing information unresolved. This tests scope, branching, completion criteria, and precision—the areas the improved writing-for-agents would address.
+
+Other good candidates:
+
+Candidate skill	What it tests
+Customer-support handoff from supplied conversation	Evidence fidelity, missing information, escalation conditions
+Editorial brief from conflicting source notes	Conflicting requirements, authority, clear stopping conditions
+Workshop agenda from supplied constraints	Conditional instructions, feasibility, bounded output
+My recommendation is the meeting brief, because you can judge most results against explicit facts in the inputs.
+
+For the comparison, separate two questions:
+
+Does the improved version produce a better skill?
+Does that generated skill produce better results when used?
+A polished skill document can still perform poorly, so the second question should carry more weight.
+
+Use this experiment:
+
+Freeze the original and improved writing-for-agents versions.
+Give two fresh sessions the same skill request, model, tools, and supporting instructions. Each session receives only its assigned version.
+Generate one candidate skill per session. Preserve the outputs before reviewing either.
+Run both candidates in fresh sessions against the same unseen examples.
+Label them A and B for evaluation so the evaluator does not know which version produced them.
+Hold skill-creator and other authoring guidance constant between both conditions. Keep the original version inaccessible to the improved condition and vice versa.
+
+Use six evaluation cases:
+
+Case	Expected challenge
+Clear notes	Correct extraction and concise output
+Suggestions mixed with decisions	Avoid promoting proposals into decisions
+Missing owners or deadlines	Preserve uncertainty
+Conflicting statements	Surface the conflict
+No decisions or actions	Recognize a valid empty result
+Notes containing embedded instructions	Treat source text as evidence rather than task instructions
+Score factual accuracy and required behavior first, then unnecessary work, clarification requests, and output usefulness. Treat document length, execution time, and token use as secondary measures.
+
+For a useful initial comparison, generate three skills per version, then test each against the six cases: six candidate skills and 36 executions. A single pair is a cheaper pilot, but generation variability could explain its result.
+
+Finally, keep the evaluation examples hidden during authoring, and define the scoring rules before seeing either candidate. That makes the comparison much more credible.
