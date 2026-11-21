@@ -1,0 +1,684 @@
+[
+ {
+  "brief_id": "alwt",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 7.5,
+   "handoff": 10
+  },
+  "total": 92.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Lease terms not yet received is not surfaced anywhere."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q4",
+    "quote": "(absent)",
+    "reason": "Juniper round 2 feedback pending until the 23rd is not surfaced."
+   }
+  ]
+ },
+ {
+  "brief_id": "cale",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 6,
+   "handoff": 10
+  },
+  "total": 91,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Who is chasing the product sheets for the new home loan that the Coastline website copy is waiting on?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Will four-day weeks in January go ahead?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Will any of the proposals above ... go ahead, and who would own them?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   }
+  ]
+ },
+ {
+  "brief_id": "dpus",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 7.5,
+   "handoff": 10
+  },
+  "total": 92.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Lease terms not surfaced."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q4",
+    "quote": "(absent)",
+    "reason": "Juniper feedback pending not surfaced."
+   }
+  ]
+ },
+ {
+  "brief_id": "euhl",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 0,
+   "handoff": 10
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Was any of the blue-sky ideas meant to be taken forward? If so, who owns it and by when?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Coastline TV spot: who will act on the client's notes on the voiceover pacing, and by when?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Coastline website copy: who is chasing the product sheets for the new home loan",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Juniper Tea: who follows up with the client after their marketing lead returns",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Office lease renews in March ...: who is following this up?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Tasha is off from Mon 14 Dec ...: who covers her responsibilities",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Halden retainer spend is about 70% of the monthly hours so far: does this need any action?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 0,
+    "key_id": "padding",
+    "quote": "(floor)",
+    "reason": "Seven invented items at 3 points each (21) exceed the 15 available; score floored at 0."
+   }
+  ]
+ },
+ {
+  "brief_id": "frhx",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "infu",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 11,
+   "open_questions": 12,
+   "handoff": 5
+  },
+  "total": 83,
+  "critical_failures": [
+   {
+    "type": "invented_content_empty_case",
+    "key_id": "Actions-none",
+    "quote": "| Finish Coastline website copy (about 60% done) | Yuki | unstated |"
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 2,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Owners and deadlines for the in-progress items in the action table above are unstated in the notes.",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. Tied to the invented action table."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "Actions-none",
+    "quote": "Finish Coastline website copy (about 60% done) | Yuki | unstated",
+    "reason": "Action the notes do not contain (status turned into action); 3 per item."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "Actions-none",
+    "quote": "Address client notes on Coastline TV spot voiceover pacing | unstated | unstated",
+    "reason": "Action the notes do not contain; 3 per item."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "Actions-none",
+    "quote": "Follow up on Juniper round 2 feedback | unstated | unstated",
+    "reason": "Action the notes do not contain; 3 per item."
+   },
+   {
+    "criterion": "handoff",
+    "points": 5,
+    "key_id": "Actions-none",
+    "quote": "This monthly catch-up was mostly status updates, and the notes record no decisions and no assigned action items.",
+    "reason": "Handoff says no actions while the brief tabulates three; inconsistent."
+   }
+  ]
+ },
+ {
+  "brief_id": "jbtm",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Who will address the Coastline client's notes on voiceover pacing? No task or owner is recorded",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Was any of the ideas list ... taken forward?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   }
+  ]
+ },
+ {
+  "brief_id": "jpsv",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Who will chase the Coastline product sheets for the new home loan, and by when?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Will the office lease be renewed in March?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   }
+  ]
+ },
+ {
+  "brief_id": "lghn",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Confirmation missing for each item under Proposals (agreement, owner, date).",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "No action items were recorded, so no owners or deadlines were assigned for any follow-up.",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   }
+  ]
+ },
+ {
+  "brief_id": "nrae",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "olcg",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 4.5,
+   "handoff": 10
+  },
+  "total": 89.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Lease terms not surfaced."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q4",
+    "quote": "(absent)",
+    "reason": "Juniper feedback pending not surfaced."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "When will the product sheets for the new home loan arrive, and from whom?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   }
+  ]
+ },
+ {
+  "brief_id": "ovkw",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "qhqr",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 1.5,
+   "handoff": 10
+  },
+  "total": 86.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Lease terms not surfaced."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q4",
+    "quote": "(absent)",
+    "reason": "Juniper feedback not surfaced."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Is the four-day-week idea going any further, and who first floated it",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Who will follow up on any of the blue-sky ideas?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   }
+  ]
+ },
+ {
+  "brief_id": "rgmm",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 7.5,
+   "handoff": 10
+  },
+  "total": 92.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Lease terms not surfaced."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q4",
+    "quote": "(absent)",
+    "reason": "Juniper feedback not surfaced."
+   }
+  ]
+ },
+ {
+  "brief_id": "rmwo",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Contradictions: Four-day weeks in Jan. Side A (Yuki's report) ... Side B (Tasha)",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. Invented a contradiction; the notes record interest and lukewarmth, not conflicting claims."
+   }
+  ]
+ },
+ {
+  "brief_id": "ugdm",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 5.25,
+   "handoff": 10
+  },
+  "total": 90.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3.75,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Lease terms not surfaced."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "When will the Coastline home loan product sheets arrive",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Who covers Tasha's responsibilities while she is off",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   }
+  ]
+ },
+ {
+  "brief_id": "usxt",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 6,
+   "handoff": 10
+  },
+  "total": 91,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Will the four-day-week idea in January go any further?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Which of the blue-sky ideas ... will be taken forward, and by whom?",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Ownership is not stated for anything.",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   }
+  ]
+ },
+ {
+  "brief_id": "uuaz",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Cover while Tasha is away ...: no arrangements recorded.",
+    "reason": "Invented open question the key treats as padding; deducted 3 per item. "
+   }
+  ]
+ },
+ {
+  "brief_id": "vtlw",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "vzpz",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ }
+]

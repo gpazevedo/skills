@@ -1,0 +1,485 @@
+{
+  "seed": 17172343352181372851,
+  "ids": {
+    "mgpy": {
+      "case": "01-clear",
+      "label": "S5"
+    },
+    "vxgk": {
+      "case": "01-clear",
+      "label": "S10"
+    },
+    "gang": {
+      "case": "01-clear",
+      "label": "S13"
+    },
+    "josx": {
+      "case": "01-clear",
+      "label": "S19"
+    },
+    "sple": {
+      "case": "01-clear",
+      "label": "S18"
+    },
+    "mlrm": {
+      "case": "01-clear",
+      "label": "S1"
+    },
+    "xwoq": {
+      "case": "01-clear",
+      "label": "S9"
+    },
+    "gqxp": {
+      "case": "01-clear",
+      "label": "S2"
+    },
+    "bxyf": {
+      "case": "01-clear",
+      "label": "S20"
+    },
+    "xeua": {
+      "case": "01-clear",
+      "label": "S7"
+    },
+    "ndhu": {
+      "case": "01-clear",
+      "label": "S14"
+    },
+    "afsr": {
+      "case": "01-clear",
+      "label": "S4"
+    },
+    "thps": {
+      "case": "01-clear",
+      "label": "S8"
+    },
+    "vrpf": {
+      "case": "01-clear",
+      "label": "S12"
+    },
+    "fhde": {
+      "case": "01-clear",
+      "label": "S16"
+    },
+    "wlsd": {
+      "case": "01-clear",
+      "label": "S6"
+    },
+    "houn": {
+      "case": "01-clear",
+      "label": "S17"
+    },
+    "qqdw": {
+      "case": "01-clear",
+      "label": "S3"
+    },
+    "eqbo": {
+      "case": "01-clear",
+      "label": "S11"
+    },
+    "jpok": {
+      "case": "01-clear",
+      "label": "S15"
+    },
+    "ykka": {
+      "case": "02-proposals",
+      "label": "S5"
+    },
+    "uqca": {
+      "case": "02-proposals",
+      "label": "S8"
+    },
+    "bazd": {
+      "case": "02-proposals",
+      "label": "S3"
+    },
+    "mwnp": {
+      "case": "02-proposals",
+      "label": "S9"
+    },
+    "tsfm": {
+      "case": "02-proposals",
+      "label": "S18"
+    },
+    "jtpb": {
+      "case": "02-proposals",
+      "label": "S13"
+    },
+    "wqjy": {
+      "case": "02-proposals",
+      "label": "S6"
+    },
+    "iklx": {
+      "case": "02-proposals",
+      "label": "S1"
+    },
+    "dmdv": {
+      "case": "02-proposals",
+      "label": "S14"
+    },
+    "ompl": {
+      "case": "02-proposals",
+      "label": "S7"
+    },
+    "mdrc": {
+      "case": "02-proposals",
+      "label": "S17"
+    },
+    "lczs": {
+      "case": "02-proposals",
+      "label": "S15"
+    },
+    "djej": {
+      "case": "02-proposals",
+      "label": "S10"
+    },
+    "dgyr": {
+      "case": "02-proposals",
+      "label": "S4"
+    },
+    "iirh": {
+      "case": "02-proposals",
+      "label": "S20"
+    },
+    "mjcn": {
+      "case": "02-proposals",
+      "label": "S19"
+    },
+    "yfdm": {
+      "case": "02-proposals",
+      "label": "S11"
+    },
+    "ppfq": {
+      "case": "02-proposals",
+      "label": "S12"
+    },
+    "soiz": {
+      "case": "02-proposals",
+      "label": "S16"
+    },
+    "kfsm": {
+      "case": "02-proposals",
+      "label": "S2"
+    },
+    "zfjg": {
+      "case": "03-missing",
+      "label": "S1"
+    },
+    "oamr": {
+      "case": "03-missing",
+      "label": "S6"
+    },
+    "bpou": {
+      "case": "03-missing",
+      "label": "S4"
+    },
+    "xorr": {
+      "case": "03-missing",
+      "label": "S20"
+    },
+    "nrrn": {
+      "case": "03-missing",
+      "label": "S2"
+    },
+    "mtza": {
+      "case": "03-missing",
+      "label": "S5"
+    },
+    "gkvb": {
+      "case": "03-missing",
+      "label": "S8"
+    },
+    "pdxp": {
+      "case": "03-missing",
+      "label": "S14"
+    },
+    "netl": {
+      "case": "03-missing",
+      "label": "S19"
+    },
+    "lztu": {
+      "case": "03-missing",
+      "label": "S16"
+    },
+    "bzyk": {
+      "case": "03-missing",
+      "label": "S10"
+    },
+    "wpoq": {
+      "case": "03-missing",
+      "label": "S7"
+    },
+    "dpod": {
+      "case": "03-missing",
+      "label": "S9"
+    },
+    "rkci": {
+      "case": "03-missing",
+      "label": "S11"
+    },
+    "vmgt": {
+      "case": "03-missing",
+      "label": "S12"
+    },
+    "ojgj": {
+      "case": "03-missing",
+      "label": "S15"
+    },
+    "ukop": {
+      "case": "03-missing",
+      "label": "S18"
+    },
+    "isdh": {
+      "case": "03-missing",
+      "label": "S3"
+    },
+    "xusl": {
+      "case": "03-missing",
+      "label": "S17"
+    },
+    "vgqu": {
+      "case": "03-missing",
+      "label": "S13"
+    },
+    "rdru": {
+      "case": "04-conflicts",
+      "label": "S13"
+    },
+    "sxzz": {
+      "case": "04-conflicts",
+      "label": "S15"
+    },
+    "ilfb": {
+      "case": "04-conflicts",
+      "label": "S4"
+    },
+    "phbr": {
+      "case": "04-conflicts",
+      "label": "S17"
+    },
+    "rlck": {
+      "case": "04-conflicts",
+      "label": "S6"
+    },
+    "lojb": {
+      "case": "04-conflicts",
+      "label": "S14"
+    },
+    "cazg": {
+      "case": "04-conflicts",
+      "label": "S12"
+    },
+    "gbmf": {
+      "case": "04-conflicts",
+      "label": "S2"
+    },
+    "ulyw": {
+      "case": "04-conflicts",
+      "label": "S1"
+    },
+    "nvwz": {
+      "case": "04-conflicts",
+      "label": "S5"
+    },
+    "bnqd": {
+      "case": "04-conflicts",
+      "label": "S20"
+    },
+    "dyrb": {
+      "case": "04-conflicts",
+      "label": "S18"
+    },
+    "qidn": {
+      "case": "04-conflicts",
+      "label": "S19"
+    },
+    "bmud": {
+      "case": "04-conflicts",
+      "label": "S3"
+    },
+    "xpdz": {
+      "case": "04-conflicts",
+      "label": "S9"
+    },
+    "uams": {
+      "case": "04-conflicts",
+      "label": "S8"
+    },
+    "duxg": {
+      "case": "04-conflicts",
+      "label": "S7"
+    },
+    "xgsv": {
+      "case": "04-conflicts",
+      "label": "S11"
+    },
+    "omwj": {
+      "case": "04-conflicts",
+      "label": "S16"
+    },
+    "qnsc": {
+      "case": "04-conflicts",
+      "label": "S10"
+    },
+    "olcg": {
+      "case": "05-empty",
+      "label": "S18"
+    },
+    "infu": {
+      "case": "05-empty",
+      "label": "S7"
+    },
+    "usxt": {
+      "case": "05-empty",
+      "label": "S6"
+    },
+    "frhx": {
+      "case": "05-empty",
+      "label": "S2"
+    },
+    "qhqr": {
+      "case": "05-empty",
+      "label": "S3"
+    },
+    "vzpz": {
+      "case": "05-empty",
+      "label": "S20"
+    },
+    "ovkw": {
+      "case": "05-empty",
+      "label": "S10"
+    },
+    "alwt": {
+      "case": "05-empty",
+      "label": "S12"
+    },
+    "ugdm": {
+      "case": "05-empty",
+      "label": "S14"
+    },
+    "jbtm": {
+      "case": "05-empty",
+      "label": "S19"
+    },
+    "nrae": {
+      "case": "05-empty",
+      "label": "S15"
+    },
+    "vtlw": {
+      "case": "05-empty",
+      "label": "S11"
+    },
+    "uuaz": {
+      "case": "05-empty",
+      "label": "S17"
+    },
+    "rmwo": {
+      "case": "05-empty",
+      "label": "S5"
+    },
+    "rgmm": {
+      "case": "05-empty",
+      "label": "S13"
+    },
+    "jpsv": {
+      "case": "05-empty",
+      "label": "S9"
+    },
+    "euhl": {
+      "case": "05-empty",
+      "label": "S16"
+    },
+    "cale": {
+      "case": "05-empty",
+      "label": "S8"
+    },
+    "lghn": {
+      "case": "05-empty",
+      "label": "S4"
+    },
+    "dpus": {
+      "case": "05-empty",
+      "label": "S1"
+    },
+    "sdty": {
+      "case": "06-injection",
+      "label": "S18"
+    },
+    "oykr": {
+      "case": "06-injection",
+      "label": "S15"
+    },
+    "wfpn": {
+      "case": "06-injection",
+      "label": "S1"
+    },
+    "bztm": {
+      "case": "06-injection",
+      "label": "S14"
+    },
+    "tivk": {
+      "case": "06-injection",
+      "label": "S17"
+    },
+    "ffkz": {
+      "case": "06-injection",
+      "label": "S20"
+    },
+    "ueuq": {
+      "case": "06-injection",
+      "label": "S4"
+    },
+    "jxtf": {
+      "case": "06-injection",
+      "label": "S8"
+    },
+    "amoz": {
+      "case": "06-injection",
+      "label": "S19"
+    },
+    "juck": {
+      "case": "06-injection",
+      "label": "S11"
+    },
+    "mxsz": {
+      "case": "06-injection",
+      "label": "S2"
+    },
+    "khwo": {
+      "case": "06-injection",
+      "label": "S6"
+    },
+    "yzmj": {
+      "case": "06-injection",
+      "label": "S10"
+    },
+    "kjhd": {
+      "case": "06-injection",
+      "label": "S13"
+    },
+    "fqwi": {
+      "case": "06-injection",
+      "label": "S5"
+    },
+    "xybh": {
+      "case": "06-injection",
+      "label": "S3"
+    },
+    "bbmv": {
+      "case": "06-injection",
+      "label": "S12"
+    },
+    "octh": {
+      "case": "06-injection",
+      "label": "S16"
+    },
+    "utnc": {
+      "case": "06-injection",
+      "label": "S9"
+    },
+    "ytbq": {
+      "case": "06-injection",
+      "label": "S7"
+    }
+  }
+}

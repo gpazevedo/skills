@@ -1,0 +1,777 @@
+[
+ {
+  "brief_id": "afsr",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 6,
+   "handoff": 10
+  },
+  "total": 91,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Date of the \"Jan planning\" session is not stated",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Apple Pay: ... no owner or date is given for resolving this",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Android catch-up: ... no date or owner stated",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "bxyf",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Apple Pay SDK update \"still failing review on the sandbox account\"; no one is recorded as owning the fix",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "eqbo",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 6,
+   "handoff": 10
+  },
+  "total": 91,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Apple Pay: ... No owner or deadline is recorded",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "The old v1 pricing endpoint ... no date or owner is recorded for retiring it",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "the notes do not say whether that window is enough",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "fhde",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 0,
+   "handoff": 10
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Who cuts the 4.2 release candidate, and by when?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Who submits 4.2 to the App Store",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "When does 4.3 ship, and who owns getting the Apple Pay SDK update through review",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Is removing the old map workaround part of 4.2",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "How long does the v1 pricing endpoint stay up?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "gang",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "gqxp",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "houn",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Apple Pay: ... the notes give no owner or plan",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Regression start depends on staging ... the notes do not say when everything is expected to be on staging",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "josx",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Marcus needs everything on staging ... the notes give no date by which the full 4.2 release candidate ... will be on staging",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "The old pricing v1 endpoint ... no date for that is stated",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "jpok",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 3,
+   "handoff": 10
+  },
+  "total": 88,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Apple Pay: ... No owner or action is stated",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Android: ... No date or owner is stated",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Regression: ... The notes do not say when regression starts",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Release notes: the notes do not say who supplies the iOS 16 wording",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "mgpy",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 13,
+   "evidence_fidelity": 8,
+   "actions": 17,
+   "open_questions": 0,
+   "handoff": 10
+  },
+  "total": 73,
+  "critical_failures": [
+   {
+    "type": "fabricated_decision",
+    "key_id": "none",
+    "quote": "The pricing v2 and crash fix commitments are recorded as owner-stated deliverables"
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Apple Pay SDK update ... cause, owner and target date are Not stated",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Jan planning: the date of the meeting is Not stated",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Android catching up ... no date or owner",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Release candidate: the notes do not say who cuts the 4.2 release candidate or when",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Whether the support team has been or will be told ... earlier than the Fri 13 Nov release notes: Not stated",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "none (no support as decision)",
+    "quote": "The pricing v2 and crash fix commitments are recorded as owner-stated deliverables",
+    "reason": "Actions listed as a fifth decision"
+   },
+   {
+    "criterion": "evidence_fidelity",
+    "points": 2,
+    "key_id": "none",
+    "quote": "The pricing v2 and crash fix commitments are recorded as owner-stated deliverables",
+    "reason": "Evidence given supports actions, not a decision (4 of 5 listed decisions supported)"
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "A-none",
+    "quote": "Resolve the Apple Pay SDK review failure on the sandbox account | Not stated | Not stated",
+    "reason": "Action not in notes (self-flagged as not explicit)"
+   }
+  ]
+ },
+ {
+  "brief_id": "mlrm",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 6,
+   "handoff": 5
+  },
+  "total": 86,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Q1. Who cuts the 4.2 release candidate, and by when",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Q2. Who carries out the iOS 16 minimum change for 4.2",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Q3. When will Android \"catch up\"",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "handoff",
+    "points": 5,
+    "key_id": "n/a",
+    "quote": "(\u00a71 line 15; \u00a72 lines 21, 24) ...",
+    "reason": "About 174 words with line-citation clutter; clearly bloated"
+   }
+  ]
+ },
+ {
+  "brief_id": "ndhu",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 3,
+   "handoff": 10
+  },
+  "total": 88,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Who owns moving Apple Pay to 4.3 and fixing the SDK sandbox review failure?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Who produces the release candidate, and by when?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Who updates the app's minimum iOS setting and removes the old map workaround?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "who communicates anything to riders?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "qqdw",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 6,
+   "handoff": 10
+  },
+  "total": 91,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Was keeping the v1 pricing endpoint up until Android catches up a decision, and when is Android expected to catch up?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Is the next sync on Tue 10 Nov confirmed?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "How will the Apple Pay SDK update ... be resolved for 4.3?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "sple",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "thps",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 6,
+   "handoff": 10
+  },
+  "total": 91,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Who works on the Apple Pay SDK update",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "When will the v1 pricing endpoint be retired?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Who removes the old map workaround",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "vrpf",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Apple Pay's SDK update is still failing review ... no recorded owner or next step",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "vxgk",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "When the old v1 pricing endpoint can be retired",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "How the Apple Pay SDK review failure ... will be resolved for 4.3",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "wlsd",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 0,
+   "handoff": 10
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Apple Pay: ... The notes do not say who will resolve this",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "The old v1 pricing endpoint ... No Android date or owner",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Marcus ... The notes do not say when the regression starts",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "The date of the Jan planning session is not stated",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "next sync ... no agenda or owner for it is stated",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "xeua",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 3,
+   "handoff": 10
+  },
+  "total": 88,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Regression timing ... The notes do not say whether the crash fix counts",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Apple Pay for 4.3 ... no owner or deadline",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Removing the old map workaround ... no owner or deadline",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Pricing API v1 retirement",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ },
+ {
+  "brief_id": "xwoq",
+  "case": "01-clear",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "Apple Pay SDK update ... Who resolves this, and when?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "Open questions (none)",
+    "quote": "What is the target date for 4.3?",
+    "reason": "Invented open question; key says none and calls these padding; 3 points per item"
+   }
+  ]
+ }
+]

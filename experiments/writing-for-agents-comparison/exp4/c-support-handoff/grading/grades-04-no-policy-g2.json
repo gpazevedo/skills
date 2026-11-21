@@ -1,0 +1,667 @@
+[
+ {
+  "handoff_id": "avix",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1319,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1319 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bxob",
+  "scores": {
+   "problem": 20,
+   "tried": 8,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 93,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 886,
+  "deductions": [
+   {
+    "criterion": "tried",
+    "points": 2,
+    "item": "T5",
+    "quote": "(absent)",
+    "reason": "The workaround Tom offered (switch to per-invoice rounding) and the customer's rejection are not listed under what was tried; only the customer's auditor requirement appears. 1 of 5 T items missing."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 886 words by wc -w after removing quoted strings and timestamps (801-1200 so 5)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "cbqy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 5
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 985,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 985 words by wc -w after removing quoted strings and timestamps (801-1200 so 5)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "doyq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1439,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1439 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ekij",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1220,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1220 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "erkb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1272,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1272 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "faws",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1870,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1870 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "jotw",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1366,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1366 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "krif",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 17,
+   "next_action": 10,
+   "questions": 3.3,
+   "concision": 5
+  },
+  "total": 85.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1013,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q1",
+    "quote": "Support policy not supplied: priority definitions, response, update and resolution targets and clock rules unknown; no deadline computed.",
+    "reason": "Missing policy is only noted in Gaps; no request to obtain it. Counted as half of Q1 (weight 1 of 2)."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Service level (policy requested)",
+    "quote": "(absent)",
+    "reason": "Case-specific scoring wants the policy requested; krif does not ask for it or name who should supply it. Deducted 3 (open size)."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1013 words by wc -w after removing quoted strings and timestamps (801-1200 so 5)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "lmud",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1437,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1437 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mvda",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1093,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1093 words by wc -w after removing quoted strings and timestamps (801-1200 so 5)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "odzq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1302,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1302 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "olgi",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1367,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1367 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "pwyb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 990,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 990 words by wc -w after removing quoted strings and timestamps (801-1200 so 5)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qxyr",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 5
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 846,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 846 words by wc -w after removing quoted strings and timestamps (801-1200 so 5)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "rylp",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 5,
+   "questions": 6.7,
+   "concision": 5
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 915,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "next_action",
+    "points": 5,
+    "item": "Next action",
+    "quote": "Primary action: send the customer the promised written summary before 2026-11-10 17:00 UTC.",
+    "reason": "Summary covered, but no engineering investigation of the EUR rounding path is recommended (only 'engineering is investigating' as customer message text). Partly right."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 915 words by wc -w after removing quoted strings and timestamps (801-1200 so 5)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "utwj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1419,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1419 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "uwau",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 14,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 80.7,
+  "critical_failures": [
+   {
+    "type": "invented_service_term",
+    "item": "Service level",
+    "quote": "Conditional: would be breached at the as-of time (14:20 UTC is 3h33m past). Not confirmed"
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 1690,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "service_level",
+    "points": 6,
+    "item": "Service level (no computed deadline or status)",
+    "quote": "Conditional: would be breached at the as-of time (14:20 UTC is 3h33m past)",
+    "reason": "Puts a computed deadline (2026-11-10 10:47 UTC) and a 'would be breached' status into the resolution row's Deadline and Status cells from the customer's unverified claim. Deducted 3 for status and 3 for deadline."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1690 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "wcgh",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 839,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 839 words by wc -w after removing quoted strings and timestamps (801-1200 so 5)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ypby",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1308,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent)",
+    "reason": "Key Q2 (who now owns sending the written summary due 17:00 UK time) is not raised as a question or coordination point; the handoff simply assigns or asserts an owner."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(prose word count)",
+    "reason": "Own prose about 1308 words by wc -w after removing quoted strings and timestamps (>1200 so 0)."
+   }
+  ]
+ }
+]

@@ -1,0 +1,577 @@
+[
+ {
+  "handoff_id": "bccg",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1683,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1683 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bftm",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1149,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "own prose about 1149 words after removing quotes/timestamps",
+    "reason": "801-1,200 words -> 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bnhi",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1257,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1257 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bxhx",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1480,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1480 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "dpxg",
+  "scores": {
+   "problem": 20,
+   "tried": 9.17,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1917,
+  "deductions": [
+   {
+    "criterion": "tried",
+    "points": 0.83,
+    "item": "T6",
+    "quote": "\"Is the night shift still checking the dashboard every hour\"",
+    "reason": "Hourly manual checks appear only as a question; their result (did not prevent the 22 Nov loss) is not stated as a tried measure. Half credit for the item."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1917 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "htgq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1700,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1700 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ljbu",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1277,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1277 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "nhrc",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1704,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1704 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "nxpj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1465,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1465 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ohge",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1187,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "own prose about 1187 words after removing quotes/timestamps",
+    "reason": "801-1,200 words -> 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "otmt",
+  "scores": {
+   "problem": 20,
+   "tried": 9.17,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 94.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1006,
+  "deductions": [
+   {
+    "criterion": "tried",
+    "points": 0.83,
+    "item": "T6",
+    "quote": "\"manual checks should continue for vat 3\"",
+    "reason": "Hourly checks mentioned only as advice; no result recorded as a tried workaround. Half credit."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "own prose about 1006 words after removing quotes/timestamps",
+    "reason": "801-1,200 words -> 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qqfc",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1619,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1619 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qysv",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 5,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1551,
+  "deductions": [
+   {
+    "criterion": "next_action",
+    "points": 5,
+    "item": "Recommended next action",
+    "quote": "\"ask Peter Dunn (customer IT) to test outbound UDP 123 ... If UDP 123 is confirmed open, the NTP failure is a gateway or DNS issue and GW-03's RTC write error should be treated as a probable hardware fault\"",
+    "reason": "Primary action is the NTP/UDP check; GW-03 diagnosis/replacement is only conditional and no interim vat 3 cover is recommended in the action. Right direction, missing key element (5/10)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1551 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tzlm",
+  "scores": {
+   "problem": 20,
+   "tried": 8.33,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 93.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 874,
+  "deductions": [
+   {
+    "criterion": "tried",
+    "points": 1.67,
+    "item": "T6",
+    "quote": "(absent) hourly dashboard checks not mentioned anywhere",
+    "reason": "Key T6 missing."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "own prose about 874 words after removing quotes/timestamps",
+    "reason": "801-1,200 words -> 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "unfa",
+  "scores": {
+   "problem": 17.14,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 92.1,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1138,
+  "deductions": [
+   {
+    "criterion": "problem",
+    "points": 2.86,
+    "item": "P1",
+    "quote": "(absent) no statement that the 19 Nov test had vats 4-9 sending SMS and vats 1-3 not",
+    "reason": "Key P1 not captured; only the post-sync test (vats 1 and 2) is given."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "own prose about 1138 words after removing quotes/timestamps",
+    "reason": "801-1,200 words -> 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "uski",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1549,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1549 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "uzvz",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1259,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1259 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "vhha",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1508,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1508 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "xgpv",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1828,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1828 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "yftk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1761,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "own prose about 1761 words after removing quotes/timestamps",
+    "reason": "Over 1,200 words -> 0."
+   }
+  ]
+ }
+]

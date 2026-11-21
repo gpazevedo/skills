@@ -1,0 +1,482 @@
+[
+ {
+  "label": "S1",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 1
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Names expense claim review against receipts and the supplied policy.",
+   "2": "Output template with per-item verdict, cited basis, totals, questions and a sentence-capped summary.",
+   "3": "States the review ends when every item has a verdict, totals reconcile and questions exist, and that the approver decides.",
+   "4": "Explicit cases for missing policy, missing receipt (by clause type) and receipt mismatches.",
+   "5": "Authority per input, policy-only, and pre-approval notes treated as claims to verify.",
+   "6": "Thorough but about 1,200 words with the missing-input rules ahead of the steps, which crowds the common path."
+  },
+  "words": 1224,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S2",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 2
+  },
+  "total": 10,
+  "justifications": {
+   "1": "Clearly scoped to expense claim review against a supplied policy.",
+   "2": "Table, totals and per-line evidence trail with questions and summary defined.",
+   "3": "Per-step done-when conditions but no statement that nothing further is expected.",
+   "4": "Missing claim form or policy halts with a request; missing receipts and mismatches become needs-information lines.",
+   "5": "Policy-only rulebook stated, but nothing on notes or approvals inside the files.",
+   "6": "Compact; receipt checks sit after the main steps."
+  },
+  "words": 876,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S3",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 2
+  },
+  "total": 10,
+  "justifications": {
+   "1": "Triggers on claim form, receipts and policy to check or approve.",
+   "2": "Verdict rules, basis format, total arithmetic and summary content are all specified.",
+   "3": "Step done-whens only; no explicit end state.",
+   "4": "Missing inputs prompt a request; missing or mismatched receipts have explicit handling.",
+   "5": "Policy-only and unmatched receipts not reimbursed, but no handling of approvals or instructions in the files.",
+   "6": "Short and well proportioned."
+  },
+  "words": 525,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S4",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 2
+  },
+  "total": 10,
+  "justifications": {
+   "1": "Names reviewing, checking or auditing an expense claim against policy.",
+   "2": "Verdict definitions, evidence line, total with reductions, questions and summary are defined.",
+   "3": "Ends with a check against the inventory but never says no further work is expected.",
+   "4": "Asks for missing policy or form; missing, illegible and conflicting receipts handled via verdict rules.",
+   "5": "Policy as whole rulebook, but no rule on treating pre-approval notes or embedded instructions as non-authoritative.",
+   "6": "Proportionate, with a single closing check."
+  },
+  "words": 760,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S5",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 1,
+   "6": 2
+  },
+  "total": 9,
+  "justifications": {
+   "1": "Triggers on claim form, receipts and policy to check or approve.",
+   "2": "Output skeleton is present but the summary and total definitions are thinner.",
+   "3": "Done-when per step, with the summary's done condition vague and no end statement.",
+   "4": "Missing inputs vaguely handled by proceeding on what can be settled; mismatches only a finding or reject.",
+   "5": "Closed policy and receipts-only evidence, but nothing on approvals or instructions in the files.",
+   "6": "Very short and clear."
+  },
+  "words": 470,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S6",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 2
+  },
+  "total": 10,
+  "justifications": {
+   "1": "Names line-by-line expense claim review against receipts and policy.",
+   "2": "Ledger, verdict, format with example row, totals and summary all defined.",
+   "3": "Done-when lines per step but no explicit finish statement.",
+   "4": "Asks for missing policy or receipts; partial matches and missing receipts become open verdicts.",
+   "5": "Policy is only authority, but approvals or instructions inside the files are not addressed beyond requiring pre-approval evidence.",
+   "6": "Moderate length with the verdict section after the steps."
+  },
+  "words": 899,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S7",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Triggers on reviewing a claim form against receipts and policy.",
+   "2": "Four outputs with headings and sentence caps and evidence per row.",
+   "3": "States the review ends when every line has a verdict and the four outputs exist.",
+   "4": "Detailed treatment of missing policy, missing receipt and no form; mismatches noted.",
+   "5": "Policy-only, and notes such as pre-approved are evidence to verify, never approval.",
+   "6": "Compact and ordered, with missing-input rules brief."
+  },
+  "words": 661,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S8",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 1
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Names expense claim review against supplied policy and receipts.",
+   "2": "Verdict table, totals reconciliation, questions and summary defined precisely.",
+   "3": "Done when written and passes a completion check; the approver decides.",
+   "4": "Missing policy, receipts and form handled, plus foreign currency and ambiguous clauses.",
+   "5": "Strong: only the supplied evidence and policy, embedded notes and instructions treated as content to verify.",
+   "6": "About 1,300 words with a long missing-inputs section and a completion check, heavy for the task."
+  },
+  "words": 1335,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S9",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Triggers on claim form, receipts and policy, check, audit or approve.",
+   "2": "Four sections with verdicts, totals incl. pending and rejected, questions and summary specified.",
+   "3": "Step 6 completeness check but no explicit statement that nothing more is expected.",
+   "4": "Explicit handling for missing policy, receipt and form, plus mismatches rejected.",
+   "5": "Policy and receipts only, and embedded instructions or approval claims are content to check.",
+   "6": "Concise and well structured."
+  },
+  "words": 673,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S10",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Names reviewing an expense or reimbursement claim with approve, reject or needs-information verdicts.",
+   "2": "Output order and shape, approved amount rule, totals and summary are well defined.",
+   "3": "Review is done when every item has a verdict and the four parts are written.",
+   "4": "Explicit missing policy, receipts and form cases, and receipt discrepancies prompt questions.",
+   "5": "Strong evidence section handling pre-approval claims and instructions, plus whole-claim conditions.",
+   "6": "Near 1,000 words but well sectioned, edge cases placed after the steps."
+  },
+  "words": 987,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S11",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 2
+  },
+  "total": 10,
+  "justifications": {
+   "1": "Triggers on reviewing a claim against receipts and supplied policy.",
+   "2": "Verdicts, reconciliation, questions and summary are defined with a template.",
+   "3": "Done-when per step and no explicit stop.",
+   "4": "Missing inputs prompt a request; missing receipts, unreadable and conflicting receipts become open.",
+   "5": "Policy as whole rulebook and grounds required, but no rule on embedded approvals or instructions.",
+   "6": "Proportionate with checklists in the steps."
+  },
+  "words": 794,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S12",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 2
+  },
+  "total": 10,
+  "justifications": {
+   "1": "Triggers on reviewing a claim against receipts and policy.",
+   "2": "Verdict rules, template, totals, questions and summary specified.",
+   "3": "Final check before returning but no explicit end statement.",
+   "4": "Missing inputs stop or mark lines open; mismatches are rejected or open.",
+   "5": "Policy only and guessing barred, but no handling of approval claims or instructions in files.",
+   "6": "Compact with a clear template."
+  },
+  "words": 729,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S13",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 1
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Names reviewing an expense or reimbursement claim.",
+   "2": "Format, totals decomposition, questions and summary specified.",
+   "3": "Stop when delivered, approving and contacting belong to approver, plus a completion statement.",
+   "4": "Missing form, policy and receipts handled, plus receipt mismatches and currency.",
+   "5": "Explicit rules for policy-only, facts from receipts, instructions inside material as content.",
+   "6": "Over 1,000 words with missing-input rules before the steps."
+  },
+  "words": 1085,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S14",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Triggers on a claim form, receipts and policy to check.",
+   "2": "Four sections with verdict, totals incl. hold, questions and summary defined.",
+   "3": "Explicitly stops after delivery with no approving, contacting or policy suggestions.",
+   "4": "Explicit cases for missing form, policy and receipts, and mismatches recorded.",
+   "5": "Policy-only, and notes claiming pre-approval are claims to verify.",
+   "6": "Concise and sensibly ordered."
+  },
+  "words": 695,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S15",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 2
+  },
+  "total": 10,
+  "justifications": {
+   "1": "Triggers on reviewing or approving a claim or reimbursement request.",
+   "2": "Verdicts, total reconciliation, questions and summary well defined with template.",
+   "3": "Done-when conditions but no end statement.",
+   "4": "Asks for missing input and stops; missing receipts and mismatches open.",
+   "5": "Policy as whole rulebook, but no rule for approval claims or instructions in the files.",
+   "6": "Proportionate with optional findings section."
+  },
+  "words": 812,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S16",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 1
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Triggers on reviewing, approving or auditing an expense claim.",
+   "2": "Table, totals reconciliation, questions and summary precisely defined.",
+   "3": "Skill stops at writing the review, with no contacting or policy suggestions, plus a completion statement.",
+   "4": "Missing form, policy, receipt and unreadable fields handled, mismatches open.",
+   "5": "Strong authority section with claimed approvals treated as claims, not rules.",
+   "6": "Over 1,200 words, long for the task."
+  },
+  "words": 1218,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S17",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Triggers on checking or approving an expense claim.",
+   "2": "Four sections, cap application, totals and summary defined.",
+   "3": "Finished when completion check passes and stop once delivered.",
+   "4": "Explicit missing form, policy and receipts, plus differing receipts open.",
+   "5": "Evidence section treats approvals and embedded instructions as claims or content.",
+   "6": "Near 1,000 words but structured with a completion check."
+  },
+  "words": 984,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S18",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 1,
+   "6": 2
+  },
+  "total": 9,
+  "justifications": {
+   "1": "Triggers on reviewing a claim against receipts and policy.",
+   "2": "Four sections defined tersely with less guidance on totals and basis.",
+   "3": "Closes the audit by recount but gives no stop statement.",
+   "4": "Missing inputs handled briefly; mismatches only reject.",
+   "5": "Strict policy and receipts only, but nothing on embedded approvals or instructions.",
+   "6": "Very short, perhaps thin but proportionate."
+  },
+  "words": 393,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S19",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Triggers on claim form, receipts and policy check.",
+   "2": "Four sections with verdicts, total, questions and summary defined.",
+   "3": "Done-when only, no explicit stop.",
+   "4": "Explicit missing policy, receipt, form and mismatch handling.",
+   "5": "Policy-only, pre-approval or approve all notes treated as evidence to check.",
+   "6": "Concise."
+  },
+  "words": 628,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S20",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 2
+  },
+  "total": 10,
+  "justifications": {
+   "1": "Triggers on reviewing, checking or approving an expense claim.",
+   "2": "Detailed template with held amounts, totals, questions and notes.",
+   "3": "Done-when per step, open verdict stated as correct but no end statement.",
+   "4": "Missing input asks first; missing receipts and discrepancies become open with questions.",
+   "5": "Policy is rulebook, but no rule on instructions or approvals in the files.",
+   "6": "About 950 words with step-by-step done-whens, acceptable."
+  },
+  "words": 951,
+  "files": [
+   "SKILL.md"
+  ]
+ }
+]

@@ -1,0 +1,406 @@
+[
+ {
+  "review_id": "ajli",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "bugn",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "evkj",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "eznm",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "fhtl",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section)",
+    "reason": "Summary is about 169 words, well over the roughly 120-word guide."
+   }
+  ]
+ },
+ {
+  "review_id": "gzmd",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "idrr",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "Eight items are approved in full or at a corrected amount (items 2 and 3 and 11 exactly as claimed; items 1, 4, 5, 6, 8 and 9 corrected)",
+    "reason": "Lists nine approved items but says eight; inconsistent with the verdicts."
+   }
+  ]
+ },
+ {
+  "review_id": "khnv",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section)",
+    "reason": "Summary is about 160 words, over the roughly 120-word guide."
+   }
+  ]
+ },
+ {
+  "review_id": "mrgt",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "pkgw",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "qbnd",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "ubbb",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section)",
+    "reason": "Summary is about 159 words and says '10 approve (7 of them at a reduced amount)', but the verdicts are 9 approve (6 reduced) and 3 reject, so it is inconsistent and bloated."
+   }
+  ]
+ },
+ {
+  "review_id": "ubmd",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "vibk",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "vjyk",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "wqwn",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12,
+   "summary": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Key: no questions needed",
+    "quote": "Please confirm who will provide them, or the approver should obtain them before payment.",
+    "reason": "Asks claimant about approvals the files give no basis to request from her; padding. Deducted 3 per rubric."
+   }
+  ]
+ },
+ {
+  "review_id": "wxsi",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 12,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "grounds",
+    "points": 3,
+    "item": "Item 8 poster printing (ordinary item, approve)",
+    "quote": "Policy gap the approver may want to clarify: clause 9.1 does not say whether carrying items such as the poster tube ... count as 'materials'",
+    "reason": "Attaches an unsupported concern to an ordinary approved item (R07 itemised poster and tube; 9.1 covers printing and materials). Deducted 3 per rubric."
+   }
+  ]
+ },
+ {
+  "review_id": "xser",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section)",
+    "reason": "Summary is about 160 words, over the roughly 120-word guide."
+   }
+  ]
+ },
+ {
+  "review_id": "ycbj",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12,
+   "summary": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Key: no questions needed; every verdict settled by files",
+    "quote": "Please confirm that you departed the UK on 12 Oct and returned on 15 Oct",
+    "reason": "Padding question; R03 and R10 already settle departure and return dates. Deducted 3 per rubric."
+   }
+  ]
+ },
+ {
+  "review_id": "zyws",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ }
+]

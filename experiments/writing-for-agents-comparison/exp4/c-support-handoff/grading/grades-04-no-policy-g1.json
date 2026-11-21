@@ -1,0 +1,661 @@
+[
+ {
+  "handoff_id": "avix",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1466,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) not raised",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) not raised"
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1313 words (raw 1466) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "bxob",
+  "scores": {
+   "problem": 20,
+   "tried": 8,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10.0,
+   "concision": 5
+  },
+  "total": 93.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 911,
+  "deductions": [
+   {
+    "criterion": "tried",
+    "points": 2,
+    "item": "T5",
+    "quote": "(absent: no row for the per-invoice workaround Tom offered; only \"per-invoice rounding is not acceptable\" appears under customer-reported)",
+    "reason": "Workaround offered by Tom and rejected by customer not captured as something tried; 2 points per key T item"
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "cleaned prose 882 words (raw 911) after removing quoted strings, blockquotes, timestamps",
+    "reason": "801-1200 words scores 5"
+   }
+  ]
+ },
+ {
+  "handoff_id": "cbqy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 8.3,
+   "concision": 5
+  },
+  "total": 93.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1110,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 1.7,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight"
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "cleaned prose 977 words (raw 1110) after removing quoted strings, blockquotes, timestamps",
+    "reason": "801-1200 words scores 5"
+   }
+  ]
+ },
+ {
+  "handoff_id": "doyq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 8.3,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1575,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 1.7,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight"
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1432 words (raw 1575) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "ekij",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 8.3,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1392,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 1.7,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight"
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1211 words (raw 1392) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "erkb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 8.3,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1418,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 1.7,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight"
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1264 words (raw 1418) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "faws",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10.0,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2016,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1844 words (raw 2016) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "jotw",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 8.3,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1512,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 1.7,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight"
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1361 words (raw 1512) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "krif",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 8.3,
+   "concision": 5
+  },
+  "total": 93.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1065,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 1.7,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight"
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "cleaned prose 1002 words (raw 1065) after removing quoted strings, blockquotes, timestamps",
+    "reason": "801-1200 words scores 5"
+   }
+  ]
+ },
+ {
+  "handoff_id": "lmud",
+  "scores": {
+   "problem": 20,
+   "tried": 9,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 8.3,
+   "concision": 0
+  },
+  "total": 87.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1622,
+  "deductions": [
+   {
+    "criterion": "tried",
+    "points": 1,
+    "item": "T5",
+    "quote": "\"Tom's workaround, 14:45 UTC on 9 Nov) may not work\"",
+    "reason": "Workaround appears only in Gaps without the customer rejection result tied to it; counted as half an item"
+   },
+   {
+    "criterion": "questions",
+    "points": 1.7,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight"
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1419 words (raw 1622) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "mvda",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10.0,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1229,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "cleaned prose 1086 words (raw 1229) after removing quoted strings, blockquotes, timestamps",
+    "reason": "801-1200 words scores 5"
+   }
+  ]
+ },
+ {
+  "handoff_id": "odzq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10.0,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1492,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1290 words (raw 1492) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "olgi",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10.0,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1580,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1353 words (raw 1580) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "pwyb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10.0,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1131,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "cleaned prose 988 words (raw 1131) after removing quoted strings, blockquotes, timestamps",
+    "reason": "801-1200 words scores 5"
+   }
+  ]
+ },
+ {
+  "handoff_id": "qxyr",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 5
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 954,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) not raised",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) not raised"
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "cleaned prose 843 words (raw 954) after removing quoted strings, blockquotes, timestamps",
+    "reason": "801-1200 words scores 5"
+   }
+  ]
+ },
+ {
+  "handoff_id": "rylp",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 5,
+   "questions": 8.3,
+   "concision": 5
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 1004,
+  "deductions": [
+   {
+    "criterion": "next_action",
+    "points": 5,
+    "item": "Next action: engineering investigation",
+    "quote": "(absent: next action is only to send the summary and tell the customer engineering is investigating)",
+    "reason": "Key requires engineering investigation of the EUR rounding path plus the summary; the investigation is not recommended"
+   },
+   {
+    "criterion": "questions",
+    "points": 1.7,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight"
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "cleaned prose 910 words (raw 1004) after removing quoted strings, blockquotes, timestamps",
+    "reason": "801-1200 words scores 5"
+   }
+  ]
+ },
+ {
+  "handoff_id": "utwj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1649,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) not raised",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) not raised"
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1409 words (raw 1649) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "uwau",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 17,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 83.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1982,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Service level status",
+    "quote": "\"Conditional: would be breached at the as-of time (14:20 UTC is 3h33m past). Not confirmed\"",
+    "reason": "Status field for the resolution clock carries a conditional breach computed from the customer's 24h claim, although labelled unconfirmed and headline status is Not determinable; deducted 3 (open size). Not treated as a critical failure because it is explicitly conditional."
+   },
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) not raised",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) not raised"
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1657 words (raw 1982) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ },
+ {
+  "handoff_id": "wcgh",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10.0,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 883,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "cleaned prose 832 words (raw 883) after removing quoted strings, blockquotes, timestamps",
+    "reason": "801-1200 words scores 5"
+   }
+  ]
+ },
+ {
+  "handoff_id": "ypby",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 8.3,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1493,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 1.7,
+    "item": "Q2",
+    "quote": "(absent as a question) Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight",
+    "reason": "Q1 raised; Q2 (who now sends the 17:00 summary) only assigned an owner, not raised as a question; half weight"
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "cleaned prose 1296 words (raw 1493) after removing quoted strings, blockquotes, timestamps",
+    "reason": "over 1200 words scores 0"
+   }
+  ]
+ }
+]

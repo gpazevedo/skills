@@ -1,0 +1,605 @@
+[
+ {
+  "handoff_id": "acsj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1363,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1363 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "akkn",
+  "scores": {
+   "problem": 18.33,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 93.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 989,
+  "deductions": [
+   {
+    "criterion": "Problem and evidence",
+    "points": 1.67,
+    "item": "P2",
+    "quote": "Daily compliance reports for store 07 ... show \"No data\" for 01:00 to 05:00 AWST, although the readings are in TernCloud",
+    "reason": "Customer-reported 21-23 Nov gap for stores 07/11 is stated flat with no customer-reported label (half credit, 0.5 of 6 items)."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "989 words by wc -w after removing quoted strings and timestamps; 801-1200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bhky",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1450,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1450 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "crey",
+  "scores": {
+   "problem": 18.33,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 10
+  },
+  "total": 98.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 769,
+  "deductions": [
+   {
+    "criterion": "Problem and evidence",
+    "points": 1.67,
+    "item": "P2",
+    "quote": "The open fault is that the daily compliance reports for stores 07 and 11 ... show \"No data\" for 01:00 to 05:00",
+    "reason": "Customer-reported 21-23 Nov gap for stores 07/11 is stated flat with no customer-reported label (half credit, 0.5 of 6 items)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fufh",
+  "scores": {
+   "problem": 18.33,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1534,
+  "deductions": [
+   {
+    "criterion": "Problem and evidence",
+    "points": 1.67,
+    "item": "P2",
+    "quote": "Fault 2, report gaps (open): ... no bullet attributes the 21-23 Nov gap to the customer",
+    "reason": "Customer-reported 21-23 Nov gap for stores 07/11 is stated flat with no customer-reported label (half credit, 0.5 of 6 items)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1534 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fwza",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1534,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1534 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "gsev",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1612,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1612 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hucy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 901,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "901 words by wc -w after removing quoted strings and timestamps; 801-1200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ijdx",
+  "scores": {
+   "problem": 16.66,
+   "tried": 7.5,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1086,
+  "deductions": [
+   {
+    "criterion": "Problem and evidence",
+    "points": 1.67,
+    "item": "P1",
+    "quote": "[Verified] Login fault fixed: HPG-StoreManagers mapped to Site Viewer; 9 successful sign-ins",
+    "reason": "Fix and verification captured but the cause (no role mapping for the new group) is never stated; half credit."
+   },
+   {
+    "criterion": "Problem and evidence",
+    "points": 1.67,
+    "item": "P2",
+    "quote": "Daily compliance reports for stores 07 and 11 show \"No data\" for 01:00 to 05:00 AWST on 21, 22 and 23 Nov, although the readings are in TernCloud",
+    "reason": "Customer-reported 21-23 Nov gap for stores 07/11 is stated flat with no customer-reported label (half credit, 0.5 of 6 items)."
+   },
+   {
+    "criterion": "What has been tried",
+    "points": 2.5,
+    "item": "T1",
+    "quote": "(absent) Tried section lists data explorer check, regeneration, customer update only",
+    "reason": "SSO configuration and sign-in log review (T1) is absent from the handoff; 3 of 4 T items."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1086 words by wc -w after removing quoted strings and timestamps; 801-1200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "isms",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1382,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1382 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "iyuh",
+  "scores": {
+   "problem": 18.33,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1437,
+  "deductions": [
+   {
+    "criterion": "Problem and evidence",
+    "points": 1.67,
+    "item": "P6",
+    "quote": "every other open item (the reports the customer needs for 21 to 24 Nov, the cold-chain record) depends on it",
+    "reason": "Compliance impact only alluded to; never stated that a gapped report is treated as a cold-chain break, and no status given; half credit."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1437 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "kgiy",
+  "scores": {
+   "problem": 18.33,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 93.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1088,
+  "deductions": [
+   {
+    "criterion": "Problem and evidence",
+    "points": 1.67,
+    "item": "P2",
+    "quote": "show \"No data\" for 01:00-05:00 AWST every night, while the readings exist in TernCloud",
+    "reason": "Customer-reported 21-23 Nov gap for stores 07/11 is stated flat with no customer-reported label (half credit, 0.5 of 6 items)."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1088 words by wc -w after removing quoted strings and timestamps; 801-1200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "lfzu",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 895,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "895 words by wc -w after removing quoted strings and timestamps; 801-1200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "lukw",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1010,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1010 words by wc -w after removing quoted strings and timestamps; 801-1200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mxlk",
+  "scores": {
+   "problem": 18.33,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "handoff_words": 1279,
+  "deductions": [
+   {
+    "criterion": "Problem and evidence",
+    "points": 1.67,
+    "item": "P6",
+    "quote": "the customer needs complete reports for 21 to 23 Nov for cold-chain (vaccine) records",
+    "reason": "Impact mentioned only as a need; the customer's claim that gaps count as a cold-chain break is not stated or labelled; half credit."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1279 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "niwr",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1407,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1407 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qjiy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1607,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1607 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "rfsb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1004,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1004 words by wc -w after removing quoted strings and timestamps; 801-1200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "zkda",
+  "scores": {
+   "problem": 18.33,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1313,
+  "deductions": [
+   {
+    "criterion": "Problem and evidence",
+    "points": 1.67,
+    "item": "P6",
+    "quote": "The customer needs the records because a gap is treated as a cold-chain break.",
+    "reason": "Stated as a fact in the next-action reason, not labelled customer-reported; half credit."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1313 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "zobk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1344,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(handoff prose, quoted strings/timestamps/blockquotes removed)",
+    "reason": "1344 words by wc -w after removing quoted strings and timestamps; over 1200 words."
+   }
+  ]
+ }
+]

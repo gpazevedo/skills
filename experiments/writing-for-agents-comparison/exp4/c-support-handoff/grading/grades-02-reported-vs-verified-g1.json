@@ -1,0 +1,570 @@
+[
+ {
+  "handoff_id": "cixb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1119,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1119 prose words after removing quoted strings, timestamps and bare punctuation tokens; 801-1,200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "cpdm",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 881,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 881 prose words after removing quoted strings, timestamps and bare punctuation tokens; 801-1,200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "eztk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1530,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1530 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fqgq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 953,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 953 prose words after removing quoted strings, timestamps and bare punctuation tokens; 801-1,200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fxzr",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1462,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1462 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hcma",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1075,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1075 prose words after removing quoted strings, timestamps and bare punctuation tokens; 801-1,200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hgkk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1010,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1010 prose words after removing quoted strings, timestamps and bare punctuation tokens; 801-1,200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hrvp",
+  "scores": {
+   "problem": 18.75,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 88.8,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1495,
+  "deductions": [
+   {
+    "criterion": "problem",
+    "points": 1.25,
+    "item": "P7",
+    "quote": "Flashing amber NET light means a G4-C modem is not registered on the mobile network. Verified (from the LED guide, as quoted)",
+    "reason": "Key P7: LED meaning is support's interpretation and the modem state is not verified; the handoff labels the interpretation Verified. Observation itself is correctly Reported, so half credit on P7 (20/8 x 0.5)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1495 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ilfy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1327,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1327 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "meuf",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1557,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1557 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mhjy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1768,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1768 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "moyd",
+  "scores": {
+   "problem": 20,
+   "tried": 8,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 83.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1469,
+  "deductions": [
+   {
+    "criterion": "tried",
+    "points": 2,
+    "item": "T5",
+    "quote": "(absent)",
+    "reason": "No entry anywhere says the customer was told not to factory-reset; T5 missing, 4/5 of 10."
+   },
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q1",
+    "quote": "The state of the Katherine units: lights not yet reported (asked of Darwin by Marcus Lee, 01:32 ...)",
+    "reason": "Open questions are listed as history, not raised as a request for local diagnostics or data from a unit; Q1 not raised. Only Q2 (engineer's identity) is listed, so 5/10."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1469 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "odpa",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1459,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1459 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qmat",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "handoff_words": 1051,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1051 prose words after removing quoted strings, timestamps and bare punctuation tokens; 801-1,200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "roaw",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1383,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1383 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tgxy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1396,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1396 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tlfu",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1125,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1125 prose words after removing quoted strings, timestamps and bare punctuation tokens; 801-1,200 band."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tqxu",
+  "scores": {
+   "problem": 18.75,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 88.8,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1443,
+  "deductions": [
+   {
+    "criterion": "problem",
+    "points": 1.25,
+    "item": "P7",
+    "quote": "Per Tern's LED guide, flashing amber NET on a G4-C means the modem is not registered on the mobile network. [Verified: Marcus Lee 03:40 citing the LED guide",
+    "reason": "Key P7: LED meaning is support's interpretation and the modem state is not verified; the handoff labels the interpretation Verified. Observation itself is correctly Reported, so half credit on P7 (20/8 x 0.5)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1443 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "vojv",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1265,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 1265 prose words after removing quoted strings, timestamps and bare punctuation tokens; over 1,200."
+   }
+  ]
+ },
+ {
+  "handoff_id": "wjut",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 922,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(whole handoff)",
+    "reason": "About 922 prose words after removing quoted strings, timestamps and bare punctuation tokens; 801-1,200 band."
+   }
+  ]
+ }
+]

@@ -1,0 +1,710 @@
+[
+ {
+  "handoff_id": "aurg",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1622,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1622 words after removing quotes/timestamps)",
+    "reason": "Prose 1622 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bfra",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1091,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(prose count 1091 words after removing quotes/timestamps)",
+    "reason": "Prose 1091 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "brlw",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 14,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 89,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1020,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: conditionals",
+    "quote": "Deadline: Not determinable, for the same reason.",
+    "reason": "No conditional deadlines per level for the resolution target; key gives partial credit for 'unknown' alone. Deducted 3 per item (rubric leaves size open)."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: first response met",
+    "quote": "(absent: first response 15:02 never stated as met)",
+    "reason": "First response not stated as met at every level; key requires first response stated as met. Deducted 3."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(prose count 1020 words after removing quotes/timestamps)",
+    "reason": "Prose 1020 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "cmuj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 17,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 87,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1350,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: conditionals",
+    "quote": "Resolution deadline and status: cannot determine: support level missing.",
+    "reason": "No conditional deadlines per level for the resolution target; key gives partial credit for 'unknown' alone. Deducted 3 per item (rubric leaves size open)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1350 words after removing quotes/timestamps)",
+    "reason": "Prose 1350 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "dikl",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1811,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1811 words after removing quotes/timestamps)",
+    "reason": "Prose 1811 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fehd",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 14,
+   "next_action": 10,
+   "questions": 8,
+   "concision": 10
+  },
+  "total": 92,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 780,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: conditionals",
+    "quote": "Deadline: not determined. Status: not determined.",
+    "reason": "No conditional deadlines per level for the resolution target; key gives partial credit for 'unknown' alone. Deducted 3 per item (rubric leaves size open)."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: first response met",
+    "quote": "(absent)",
+    "reason": "First response not stated as met at every level; key requires first response stated as met. Deducted 3."
+   },
+   {
+    "criterion": "questions",
+    "points": 2,
+    "item": "Q3 CSM response on credit (weight 1 of 5)",
+    "quote": "(absent: only asks CSM to confirm support level, not to answer the credit request)",
+    "reason": "Q3 not raised; 10 x 4/5 = 8."
+   }
+  ]
+ },
+ {
+  "handoff_id": "gezz",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 14,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 84,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1308,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: conditionals",
+    "quote": "Not determinable: support level not recorded",
+    "reason": "No conditional deadlines per level for the resolution target; key gives partial credit for 'unknown' alone. Deducted 3 per item (rubric leaves size open)."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: first response met",
+    "quote": "Not determinable. Fact: first agent reply was 15:02 UTC, 42 minutes after creation",
+    "reason": "First response not stated as met at every level; key requires first response stated as met. Deducted 3."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1308 words after removing quotes/timestamps)",
+    "reason": "Prose 1308 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "gmen",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 10,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 1160,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: conditional correctness",
+    "quote": "If Business, it would be breached by 8h50m of business time",
+    "reason": "Wrong: Business has 8h50m remaining and is within target (key step 5). Misleading conditional."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: conditional deadlines",
+    "quote": "Deadline: not determinable",
+    "reason": "No conditional deadline timestamps given (key: 4 Nov 19:50 / 6 Nov 09:50 / 10 Nov 09:50)."
+   },
+   {
+    "criterion": "service_level",
+    "points": 4,
+    "item": "Case-specific: first response met",
+    "quote": "(absent)",
+    "reason": "First response not stated as met; deducted 3 plus 1 for the incorrect Business conditional compounding the error."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(prose count 1160 words after removing quotes/timestamps)",
+    "reason": "Prose 1160 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "guuc",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 17,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 87,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1474,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Key step 4 Enterprise deadline",
+    "quote": "3 Nov 14:20 + 24h + 5h30m pause = 5 Nov 01:50 UTC",
+    "reason": "Enterprise deadline timestamp wrong (key: 4 Nov 19:50 UTC); 'breached by about 15h10m' is right."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1474 words after removing quotes/timestamps)",
+    "reason": "Prose 1474 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "kftk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1550,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1550 words after removing quotes/timestamps)",
+    "reason": "Prose 1550 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mjyj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1548,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1548 words after removing quotes/timestamps)",
+    "reason": "Prose 1548 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ntfr",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 14,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 84,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1761,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Key step 6 Standard deadline",
+    "quote": "2026-11-09 09:50 UTC",
+    "reason": "Counts 7 Nov (Saturday) as a business day; key deadline is 2026-11-10 09:50 UTC."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "First response (Business)",
+    "quote": "18:20 UTC on 3 Nov (within business hours)",
+    "reason": "Wrong deadline (should be 08:20 on 4 Nov); status 'Met' is still right."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1761 words after removing quotes/timestamps)",
+    "reason": "Prose 1761 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qmdk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1622,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1622 words after removing quotes/timestamps)",
+    "reason": "Prose 1622 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "stuj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 970,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(prose count 970 words after removing quotes/timestamps)",
+    "reason": "Prose 970 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tsju",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 14,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 89,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 964,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: conditional deadlines",
+    "quote": "Business: 20 business hours. 8h50 left ... within target; (no deadline times)",
+    "reason": "Conditionals give remaining time/status but no deadline timestamps."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: first response met",
+    "quote": "whether that met target also depends on tier",
+    "reason": "First response not stated as met at every level (it is)."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(prose count 964 words after removing quotes/timestamps)",
+    "reason": "Prose 964 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tvkf",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1410,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1410 words after removing quotes/timestamps)",
+    "reason": "Prose 1410 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "udcb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 14,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 84,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1439,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: conditionals",
+    "quote": "No deadline is given.",
+    "reason": "No conditional deadlines per level for the resolution target; key gives partial credit for 'unknown' alone. Deducted 3 per item (rubric leaves size open)."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: first response met",
+    "quote": "cannot be compared to any target",
+    "reason": "First response not stated as met at every level; key requires first response stated as met. Deducted 3."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1439 words after removing quotes/timestamps)",
+    "reason": "Prose 1439 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "vluq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 14,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 84,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1439,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: conditionals",
+    "quote": "Deadline: Not determinable: support level missing.",
+    "reason": "No conditional deadlines per level for the resolution target; key gives partial credit for 'unknown' alone. Deducted 3 per item (rubric leaves size open)."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: first response met",
+    "quote": "its target is also not determinable",
+    "reason": "First response not stated as met at every level; key requires first response stated as met. Deducted 3."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1439 words after removing quotes/timestamps)",
+    "reason": "Prose 1439 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "xatq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 14,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 84,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1375,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: conditionals",
+    "quote": "No deadline or status is given, because each depends on the tier.",
+    "reason": "No conditional deadlines per level for the resolution target; key gives partial credit for 'unknown' alone. Deducted 3 per item (rubric leaves size open)."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Case-specific: first response met",
+    "quote": "The first agent response was sent at 15:02 UTC, 42 minutes later.",
+    "reason": "First response not stated as met at every level; key requires first response stated as met. Deducted 3."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length",
+    "quote": "(prose count 1375 words after removing quotes/timestamps)",
+    "reason": "Prose 1375 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "yexn",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 11,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 86,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1193,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Key step 4 Enterprise deadline",
+    "quote": "breached since about 3 Nov 14:20 + 24h + 5h30 = 5 Nov 07:50 UTC",
+    "reason": "Wrong; key is 4 Nov 19:50 UTC."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "First response met",
+    "quote": "Whether it met the target depends on the level.",
+    "reason": "Incorrect: met at every level."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Standard deadline",
+    "quote": "Standard P2: 40 business hours. 28h50 remaining, within target.",
+    "reason": "No Standard deadline (10 Nov 09:50 UTC)."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length",
+    "quote": "(prose count 1193 words after removing quotes/timestamps)",
+    "reason": "Prose 1193 words; rubric: 801-1200 -> 5, over 1200 -> 0."
+   }
+  ]
+ }
+]

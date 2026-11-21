@@ -1,0 +1,575 @@
+[
+ {
+  "handoff_id": "acrd",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 837,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 837 words (wc), over 800; scored 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ahxy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 832,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 832 words (wc), over 800; scored 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "aifg",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1150,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1150 words (wc), over 800; scored 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "cdlx",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1028,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1028 words (wc), over 800; scored 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ebze",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 937,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 937 words (wc), over 800; scored 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "egfv",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 7,
+   "concision": 0
+  },
+  "total": 87,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "handoff_words": 1239,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1239 words (wc), over 800 and over 1,200; scored 0."
+   },
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "no basis in files",
+    "quote": "whether the customer was told that re-saving may work (Priya mentioned it, but the customer said it is not realistic at 340 schedules)",
+    "reason": "Thread 10:34 shows Priya told the customer about the re-save; the files already answer this. Key lists no essential questions. Deducted 3 per rubric."
+   }
+  ]
+ },
+ {
+  "handoff_id": "gbky",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1245,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1245 words (wc), over 800 and over 1,200; scored 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "iacq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 7,
+   "concision": 5
+  },
+  "total": 92,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "handoff_words": 837,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 837 words (wc), over 800; scored 5."
+   },
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "no basis in files",
+    "quote": "Error text, product version/build for the account, and why the dispatcher shows no attempts and no errors: none recorded in the case.",
+    "reason": "Files already state the dispatcher shows no errors; version/build request has no basis. Deducted 3 per rubric."
+   }
+  ]
+ },
+ {
+  "handoff_id": "inlt",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 756,
+  "deductions": []
+ },
+ {
+  "handoff_id": "joij",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1250,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1250 words (wc), over 800 and over 1,200; scored 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mfjl",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 5,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1155,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1155 words (wc), over 800; scored 5."
+   },
+   {
+    "criterion": "next_action",
+    "points": 5,
+    "item": "Next action",
+    "quote": "Tier 2 engineer to test KI-3381 directly: ... re-save a small subset of them ... while an untouched pre-10 Nov schedule does not",
+    "reason": "Right direction and names 13 Nov 07:00 run and 16:00 update, but is a diagnostic test; no bulk fix, re-queue or customer fallback for the 64 invoices (key next-action element missing)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mxrx",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1330,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1330 words (wc), over 800 and over 1,200; scored 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "pfum",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1056,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1056 words (wc), over 800; scored 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "pibv",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1001,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1001 words (wc), over 800; scored 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "teek",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 10,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 85,
+  "critical_failures": [
+   {
+    "type": "invented_service_term",
+    "item": "Key: deadline other than 2026-11-13 09:14 UTC",
+    "quote": "the evidence points to P3 ... Computed for P3 as the supported priority ... deadline 17 Nov 09:14"
+   }
+  ],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 948,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 948 words (wc), over 800; scored 5."
+   },
+   {
+    "criterion": "service_level",
+    "points": 10,
+    "item": "Service level deadline 2026-11-13 09:14 UTC",
+    "quote": "Computed for P3 as the supported priority, with P2 shown ... P3 resolution, 30 business hours (3.1, 3.3): deadline 17 Nov 09:14",
+    "reason": "Leads with an unrecorded P3 and a 17 Nov deadline; the correct 13 Nov 09:14 appears only as 'If P2 stands'. Policy 2.5 says priority changes only when recorded. Deadline scored 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ubsl",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 949,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 949 words (wc), over 800; scored 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "vlkc",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1212,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1212 words (wc), over 800 and over 1,200; scored 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "wuvy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 814,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 814 words (wc), over 800; scored 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ysas",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 865,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 865 words (wc), over 800; scored 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ywsg",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 7,
+   "concision": 5
+  },
+  "total": 92,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1169,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "word limit",
+    "quote": "(whole handoff)",
+    "reason": "Prose after removing quoted strings, timestamps and blockquotes is about 1169 words (wc), over 800; scored 5."
+   },
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "no basis in files",
+    "quote": "are any of the 64 and 90 invoices tied to time-sensitive clients? / Are the two clients who rang the same as ones awaiting invoices?",
+    "reason": "Requests with no basis in the files and no bearing on the key's next action. Deducted 3 per rubric."
+   }
+  ]
+ }
+]

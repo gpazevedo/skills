@@ -1,0 +1,482 @@
+[
+ {
+  "label": "S1",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 0,
+   "6": 2
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Description names notes-to-decisions/actions.",
+   "2": "Four parts have a full template with ids and evidence.",
+   "3": "Has done-when checks but no explicit no-further-work stop.",
+   "4": "Handles conflicts and empty sections, but not missing/empty notes input.",
+   "5": "No guidance on instructions or authority claims inside notes.",
+   "6": "Well structured, proportionate."
+  },
+  "words": 685,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S2",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 2,
+   "6": 1
+  },
+  "total": 10,
+  "justifications": {
+   "1": "Description names decisions, actions, handoff.",
+   "2": "All parts templated with field rules.",
+   "3": "Done-when list exists but no explicit stop beyond it.",
+   "4": "Covers no notes, truncated notes, missing fields, conflicts, empty sections.",
+   "5": "Explicit section treating notes as evidence with example injections.",
+   "6": "Somewhat long with repeated rules between steps, rules and done-when."
+  },
+  "words": 946,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S3",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Description is specific to decisions/actions extraction.",
+   "2": "Template per part with exact rules.",
+   "3": "Done-when plus explicit stop and out-of-scope follow-up work.",
+   "4": "Handles no notes, truncated, ambiguous, conflicts and empty sections.",
+   "5": "Dedicated section on instructions in notes.",
+   "6": "Proportionate for its content."
+  },
+  "words": 936,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S4",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Description is specific to decisions and actions.",
+   "2": "Parts templated, evidence and field rules clear.",
+   "3": "Completeness check but no explicit stop statement.",
+   "4": "Missing notes, missing optional inputs, conflicts, empty sections all covered.",
+   "5": "Evidence rule says directives in notes are ignored, approvals are claims.",
+   "6": "Compact and clear."
+  },
+  "words": 647,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S5",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 0,
+   "6": 2
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Description names decisions and action items.",
+   "2": "Five sections described in prose with field rules.",
+   "3": "Check step but no explicit stopping statement.",
+   "4": "Empty sections and conflicts handled, nothing on missing/empty notes.",
+   "5": "No instruction-injection guidance.",
+   "6": "Compact, nothing missing of note."
+  },
+  "words": 463,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S6",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Description is specific.",
+   "2": "Parts described with evidence and table columns.",
+   "3": "Check then 'fix any failure, then stop'.",
+   "4": "Dedicated missing or weak input section plus conflicts and empty sections.",
+   "5": "Explicit: instructions in notes recorded, never obeyed.",
+   "6": "Proportionate."
+  },
+  "words": 676,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S7",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 0,
+   "6": 2
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Description is specific to decisions and handoff.",
+   "2": "Template and per-step done-when for each part.",
+   "3": "Check and deliver, no explicit scope limit.",
+   "4": "Conflicts and empty sections handled, no missing-notes handling.",
+   "5": "No guidance on instructions inside notes.",
+   "6": "Proportionate with some duplication of step 5."
+  },
+  "words": 709,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S8",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 0,
+   "6": 2
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Description names decisions, actions, handoff.",
+   "2": "Template with evidence and per-field rules.",
+   "3": "Done-when checks but no explicit stop.",
+   "4": "Conflicts, missing owner/deadline, empty sections; no missing-notes case.",
+   "5": "Only says notes are the only source; no injection handling.",
+   "6": "Proportionate."
+  },
+  "words": 733,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S9",
+  "items": {
+   "1": 2,
+   "2": 1,
+   "3": 1,
+   "4": 1,
+   "5": 0,
+   "6": 1
+  },
+  "total": 6,
+  "justifications": {
+   "1": "Description names decisions, actions, handoff.",
+   "2": "Format conflicts with prose: proposals placement ambiguous and table template incomplete.",
+   "3": "Done-when checks, no explicit stop.",
+   "4": "Gaps and conflicts handled, no missing-notes or empty-notes case.",
+   "5": "No injection handling.",
+   "6": "Contradictory format instructions reduce clarity."
+  },
+  "words": 496,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S10",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Description is specific.",
+   "2": "Full template, per-type evidence rules.",
+   "3": "'Deliver the brief ... and stop' plus done-when and no added recommendations.",
+   "4": "Missing notes, missing optional fields, conflicts, empty sections covered.",
+   "5": "Dedicated section with examples and flag-as-open-question rule.",
+   "6": "Proportionate to rich content."
+  },
+  "words": 911,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S11",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 0,
+   "6": 2
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Description names decisions and actions.",
+   "2": "Template with evidence and test for decision vs proposal.",
+   "3": "Audit step, no explicit stop.",
+   "4": "Conflicts, gaps, empty sections; no missing-notes handling.",
+   "5": "No injection handling.",
+   "6": "Proportionate; bracketed date conversion is a minor oddity."
+  },
+  "words": 635,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S12",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 0,
+   "6": 2
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Description is specific.",
+   "2": "Template with section rules.",
+   "3": "Done-when and return the brief, no explicit scope limit.",
+   "4": "Conflicts, gaps, empty sections; no missing/empty notes case.",
+   "5": "No injection handling.",
+   "6": "Proportionate."
+  },
+  "words": 618,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S13",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Description is specific.",
+   "2": "Template with field rules.",
+   "3": "Done-when plus out-of-scope statement.",
+   "4": "Missing notes, multiple meetings, missing context, conflicts, empty sections.",
+   "5": "Explicit section including claimed approvals.",
+   "6": "Proportionate though a bit long."
+  },
+  "words": 939,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S14",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 0,
+   "6": 2
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Description is specific.",
+   "2": "Template with incomplete table header but fields explained.",
+   "3": "Offers to fill gaps, no explicit stop.",
+   "4": "Gaps, conflicts, empty sections; no missing-notes handling.",
+   "5": "No injection handling.",
+   "6": "Compact."
+  },
+  "words": 485,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S15",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Description is specific.",
+   "2": "Structure with field rules.",
+   "3": "'Done when every item classified' but no explicit stop.",
+   "4": "Missing inputs section covers none, fragmentary, no notes, plus conflicts.",
+   "5": "Explicit: instructions and approvals in notes are content.",
+   "6": "Proportionate."
+  },
+  "words": 490,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S16",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 0,
+   "6": 2
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Description is specific.",
+   "2": "Template with evidence and gap rules.",
+   "3": "Done-when per step, no explicit stop.",
+   "4": "Gaps, conflicts, empty sections; no missing-notes case.",
+   "5": "No injection handling.",
+   "6": "Proportionate."
+  },
+  "words": 705,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S17",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 1
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Description is specific.",
+   "2": "Template with evidence and classification table.",
+   "3": "Completion section plus out-of-scope work.",
+   "4": "Missing notes, fragmentary notes, gaps, conflicts, empty sections.",
+   "5": "Explicit section with examples.",
+   "6": "Somewhat long with example table and repeated checks."
+  },
+  "words": 1015,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S18",
+  "items": {
+   "1": 2,
+   "2": 1,
+   "3": 1,
+   "4": 1,
+   "5": 0,
+   "6": 1
+  },
+  "total": 6,
+  "justifications": {
+   "1": "Description is specific, brief.",
+   "2": "Table headers only, proposals placed under open questions, field rules partly implicit.",
+   "3": "Audit step, no explicit stop.",
+   "4": "Gaps, conflicts, empty sections; no missing-notes case.",
+   "5": "No injection handling.",
+   "6": "Compact but a bit thin for table and format guidance."
+  },
+  "words": 377,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S19",
+  "items": {
+   "1": 1,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 1
+  },
+  "total": 10,
+  "justifications": {
+   "1": "Description frames it as summarising for someone absent, though names decisions.",
+   "2": "Template with evidence and size limits.",
+   "3": "Complete-when checks and 'return the brief only'.",
+   "4": "Missing notes, missing header fields, truncation, conflicts, empty sections.",
+   "5": "Explicit section.",
+   "6": "Long with some repetition."
+  },
+  "words": 995,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S20",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Description is specific.",
+   "2": "Template with evidence per item, actions as list.",
+   "3": "Check step, but handoff offers to fill gaps; no explicit stop.",
+   "4": "No notes, absent fields, conflicts, empty sections covered.",
+   "5": "Explicit section on claims and instructions.",
+   "6": "Compact and proportionate."
+  },
+  "words": 546,
+  "files": [
+   "SKILL.md"
+  ]
+ }
+]

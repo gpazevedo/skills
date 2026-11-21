@@ -1,0 +1,429 @@
+[
+ {
+  "review_id": "acav",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "amxd",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": []
+ },
+ {
+  "review_id": "asdg",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": []
+ },
+ {
+  "review_id": "biwe",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, about 157 words)",
+    "reason": "Rubric: 5 if present but clearly bloated (roughly 120 words or fewer expected); judged bloated at 150+ words"
+   }
+  ]
+ },
+ {
+  "review_id": "dlqf",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, about 154 words)",
+    "reason": "Rubric: 5 if present but clearly bloated (roughly 120 words or fewer expected); judged bloated at 150+ words"
+   }
+  ]
+ },
+ {
+  "review_id": "duxo",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, about 162 words)",
+    "reason": "Rubric: 5 if present but clearly bloated (roughly 120 words or fewer expected); judged bloated at 150+ words"
+   }
+  ]
+ },
+ {
+  "review_id": "efjt",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "fjco",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": []
+ },
+ {
+  "review_id": "iqnn",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, about 160 words)",
+    "reason": "Rubric: 5 if present but clearly bloated (roughly 120 words or fewer expected); judged bloated at 150+ words"
+   }
+  ]
+ },
+ {
+  "review_id": "isbn",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12,
+   "summary": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Q padding",
+    "quote": "Is there any other document for this line, such as a fare breakdown showing an economy fare?",
+    "reason": "No basis in files; clause 4.2 bars any partial payment, so an economy fare breakdown is irrelevant (key item 1)"
+   }
+  ]
+ },
+ {
+  "review_id": "kiom",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, about 173 words)",
+    "reason": "Rubric: 5 if present but clearly bloated (roughly 120 words or fewer expected); judged bloated at 150+ words"
+   }
+  ]
+ },
+ {
+  "review_id": "klmk",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "nhyh",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 9,
+   "summary": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Q padding",
+    "quote": "Item 4 (R04): No question; gym fees are not reimbursable under cl. 10.1. Please confirm the item is withdrawn.",
+    "reason": "No basis for a question; 3 points deducted per padded question"
+   },
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Q padding",
+    "quote": "Item 9 (R09): No document needed ... Please confirm you accept the reduction.",
+    "reason": "No basis for a question; also 'Was an economy fare available?' on item 1 is unneeded"
+   }
+  ]
+ },
+ {
+  "review_id": "rohv",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "uowu",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, about 168 words)",
+    "reason": "Rubric: 5 if present but clearly bloated (roughly 120 words or fewer expected); judged bloated at 150+ words"
+   }
+  ]
+ },
+ {
+  "review_id": "uqzc",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "uzls",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, about 186 words)",
+    "reason": "Rubric: 5 if present but clearly bloated (roughly 120 words or fewer expected); judged bloated at 150+ words"
+   }
+  ]
+ },
+ {
+  "review_id": "viha",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "vsyx",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "yieu",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, about 159 words)",
+    "reason": "Rubric: 5 if present but clearly bloated (roughly 120 words or fewer expected); judged bloated at 150+ words"
+   }
+  ]
+ }
+]

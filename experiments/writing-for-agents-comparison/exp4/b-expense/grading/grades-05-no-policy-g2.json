@@ -1,0 +1,551 @@
+[
+ {
+  "review_id": "atso",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "bjvj",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Expected total (receipt-supported 2,046.80 or max 2,099.50)",
+    "quote": "Corrected total: not determinable (no policy supplied)",
+    "reason": "No receipt-supported total reported; only 0.00 payable and 2,102.50 held (key Expected total section). Detection of the 90.00 form error is credited."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "No expense policy was supplied, so no item can be approved or rejected;...",
+    "reason": "Summary about 182 words, clearly beyond roughly 120 words."
+   }
+  ]
+ },
+ {
+  "review_id": "glcd",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": []
+ },
+ {
+  "review_id": "imro",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Expected total",
+    "quote": "Held pending information: AUD 2,049.80",
+    "reason": "Held figure uses 24.90 for item 4, not receipt-supported 21.90 (key item 4 / Expected total); 2,046.80 not given."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "The pattern of an unrelated receipt for item 8 and an inflated amount for item 4 may warrant a closer look",
+    "reason": "Summary about 200 words, clearly beyond roughly 120 words."
+   }
+  ]
+ },
+ {
+  "review_id": "kcto",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "The line items add up to AUD 2,102.50...",
+    "reason": "Summary about 173 words, clearly beyond roughly 120 words."
+   }
+  ]
+ },
+ {
+  "review_id": "kkpf",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "kuot",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "ojey",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Expected total (receipt-supported 2,046.80 or max 2,099.50)",
+    "quote": "Approved: AUD 0.00 ... Pending (needs information): AUD 2,102.50",
+    "reason": "No receipt-supported total reported; only 0.00 payable and 2,102.50 held (key Expected total section). Detection of the 90.00 form error is credited."
+   }
+  ]
+ },
+ {
+  "review_id": "pjvj",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Expected total (receipt-supported 2,046.80 or max 2,099.50)",
+    "quote": "Held on `needs information` items: AUD 2,102.50 (by line sum)",
+    "reason": "No receipt-supported total reported; only 0.00 payable and 2,102.50 held (key Expected total section). Detection of the 90.00 form error is credited."
+   }
+  ]
+ },
+ {
+  "review_id": "ripe",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 9,
+   "summary": 10
+  },
+  "total": 89,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Expected total (receipt-supported 2,046.80 or max 2,099.50)",
+    "quote": "Corrected total to reimburse: AUD 0.00 ... Held: AUD 2,102.50",
+    "reason": "No receipt-supported total reported; only 0.00 payable and 2,102.50 held (key Expected total section). Detection of the 90.00 form error is credited."
+   },
+   {
+    "criterion": "questions",
+    "points": 6,
+    "item": "Padding",
+    "quote": "3. Line 2: please confirm the hire car class ... 6. Line 5: please confirm this fuel was for the hire car under agreement RA-220917.",
+    "reason": "Files give no basis for these questions (R02 and R05 match the claim); 3 points each."
+   }
+  ]
+ },
+ {
+  "review_id": "sfbt",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Expected total (receipt-supported 2,046.80 or max 2,099.50)",
+    "quote": "Approved (corrected total to reimburse): not computed, policy not supplied",
+    "reason": "No receipt-supported total reported; only 0.00 payable and 2,102.50 held (key Expected total section). Detection of the 90.00 form error is credited."
+   }
+  ]
+ },
+ {
+  "review_id": "snqs",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Expected total (receipt-supported 2,046.80 or max 2,099.50)",
+    "quote": "Approved now (corrected total to reimburse): AUD 0.00 ... Held pending information: AUD 2,102.50",
+    "reason": "No receipt-supported total reported; only 0.00 payable and 2,102.50 held (key Expected total section). Detection of the 90.00 form error is credited."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "Sean Whitlock claims AUD 2,012.50 on the form, but its lines sum to AUD 2,102.50...",
+    "reason": "Summary about 172 words, clearly beyond roughly 120 words."
+   }
+  ]
+ },
+ {
+  "review_id": "svag",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": []
+ },
+ {
+  "review_id": "tgoo",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 3,
+   "amounts": 5,
+   "questions": 5,
+   "summary": 0
+  },
+  "total": 58,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 2,
+  "deductions": [
+   {
+    "criterion": "grounds",
+    "points": 12,
+    "item": "Items 4 and 8",
+    "quote": "R04 ... AUD 21.90 / R08 ... 4 October 2026 (inventory table only)",
+    "reason": "Receipt problems on items 4 and 8 are visible in a table but never flagged as discrepancies; no reasons given (key items 4, 8)."
+   },
+   {
+    "criterion": "amounts",
+    "points": 10,
+    "item": "Expected total",
+    "quote": "Review stopped at Step 1",
+    "reason": "No receipt-supported total or per-item supported amounts; only the 90.00 form-total error is reported."
+   },
+   {
+    "criterion": "questions",
+    "points": 10,
+    "item": "Q2-Q4",
+    "quote": "absent",
+    "reason": "Only the policy request (Q1) is raised; no question on R08, R04 or total."
+   },
+   {
+    "criterion": "summary",
+    "points": 10,
+    "item": "Summary",
+    "quote": "No ... approver summary are given",
+    "reason": "Absent."
+   }
+  ]
+ },
+ {
+  "review_id": "ujxa",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 0,
+   "amounts": 0,
+   "questions": 5,
+   "summary": 0
+  },
+  "total": 50,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 1,
+  "deductions": [
+   {
+    "criterion": "grounds",
+    "points": 15,
+    "item": "All items",
+    "quote": "absent",
+    "reason": "No receipt evidence or grounds at all."
+   },
+   {
+    "criterion": "amounts",
+    "points": 15,
+    "item": "Expected total",
+    "quote": "absent",
+    "reason": "No amounts, no detection of 2,012.50 vs 2,102.50."
+   },
+   {
+    "criterion": "questions",
+    "points": 10,
+    "item": "Q2-Q4",
+    "quote": "absent",
+    "reason": "Only policy requested."
+   },
+   {
+    "criterion": "summary",
+    "points": 10,
+    "item": "Summary",
+    "quote": "The review is on hold until the expense policy is supplied.",
+    "reason": "No approver summary."
+   }
+  ]
+ },
+ {
+  "review_id": "xfsn",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": []
+ },
+ {
+  "review_id": "yama",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 12,
+   "amounts": 5,
+   "questions": 5,
+   "summary": 0
+  },
+  "total": 67,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 2,
+  "deductions": [
+   {
+    "criterion": "grounds",
+    "points": 3,
+    "item": "Items 1, 5, 6",
+    "quote": "absent",
+    "reason": "Items 1, 5, 6 get no individual reason; policy-missing reason only given globally."
+   },
+   {
+    "criterion": "amounts",
+    "points": 10,
+    "item": "Expected total",
+    "quote": "Review not completed ... no corrected total",
+    "reason": "No receipt-supported total or supported amounts (item 4 only noted as 21.90 receipt)."
+   },
+   {
+    "criterion": "questions",
+    "points": 10,
+    "item": "Q2-Q4",
+    "quote": "absent",
+    "reason": "Only the policy request; items 4, 8 and total appear as findings, not questions."
+   },
+   {
+    "criterion": "summary",
+    "points": 10,
+    "item": "Summary",
+    "quote": "absent",
+    "reason": "No approver summary section."
+   }
+  ]
+ },
+ {
+  "review_id": "yerc",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Expected total",
+    "quote": "Pending (needs information): AUD 2,049.80",
+    "reason": "Pending uses 24.90 for item 4; 2,046.80 not reported."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "The claim form states a total of AUD 2,012.50...",
+    "reason": "Summary about 168 words, clearly beyond roughly 120 words."
+   }
+  ]
+ },
+ {
+  "review_id": "ywkd",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Expected total (receipt-supported 2,046.80 or max 2,099.50)",
+    "quote": "Corrected total (approved) Not computable without the policy",
+    "reason": "No receipt-supported total reported; only 0.00 payable and 2,102.50 held (key Expected total section). Detection of the 90.00 form error is credited."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "No expense policy was supplied, so the corrected total is not computable...",
+    "reason": "Summary about 166 words, clearly beyond roughly 120 words."
+   }
+  ]
+ },
+ {
+  "review_id": "zxnt",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ }
+]

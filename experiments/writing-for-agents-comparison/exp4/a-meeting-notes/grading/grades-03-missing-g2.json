@@ -1,0 +1,734 @@
+[
+ {
+  "brief_id": "bpou",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 16.36,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 96.4,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A5",
+    "quote": "absent from action table; only under 'Proposals (not decided)'",
+    "reason": "A5 scored 0"
+   },
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A8",
+    "quote": "absent from action table; only in open questions",
+    "reason": "A8 scored 0"
+   }
+  ]
+ },
+ {
+  "brief_id": "bzyk",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.18,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 92.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A5",
+    "quote": "absent from action items (only under proposals/open questions)",
+    "reason": "Key action A5 (roster Saturday sessions) not listed as an action; scored 0 for that item (20/11 each)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe covering after-hours from 1 Dec is stated as fact, with no record of when or by whom it was arranged",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Next meeting is stated as the first Thursday in Dec; no time or exact date is given",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "dpod",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "gkvb",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 5
+  },
+  "total": 92,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Should the after-hours voicemail show the locum's number from 9 Nov when the locum only starts covering from 1 Dec?",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "handoff",
+    "points": 5,
+    "key_id": "-",
+    "quote": "handoff is about 184 words",
+    "reason": "Clearly over the ~150 word guide"
+   }
+  ]
+ },
+ {
+  "brief_id": "isdh",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "N4",
+    "quote": "Was Dr Abebe's after-hours cover from 1 Dec decided at this meeting or already arranged?",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Is the next meeting confirmed for the first Thursday in Dec?",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "lztu",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.18,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 92.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A5",
+    "quote": "absent from action items (only under proposals/open questions)",
+    "reason": "Key action A5 (roster Saturday sessions) not listed as an action; scored 0 for that item (20/11 each)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "N4",
+    "quote": "Is Locum Dr Abebe's after-hours cover from 1 Dec confirmed?",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "who tells patients and staff, and who adjusts bookings for that afternoon?",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "mtza",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 6,
+   "evidence_fidelity": 5,
+   "actions": 18.18,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 76.2,
+  "critical_failures": [
+   {
+    "type": "fabricated_decision",
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe covers after-hours from 1 Dec."
+   },
+   {
+    "type": "fabricated_decision",
+    "key_id": "-",
+    "quote": "Next meeting is the first Thursday in December."
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe covers after-hours from 1 Dec.",
+    "reason": "Presented as a decision; notes state it as an existing arrangement"
+   },
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "-",
+    "quote": "Next meeting is the first Thursday in December.",
+    "reason": "Not a decision in the notes"
+   },
+   {
+    "criterion": "evidence_fidelity",
+    "points": 5,
+    "key_id": "-",
+    "quote": "Decisions 3 and 4 evidence quotes",
+    "reason": "Quotes do not support them as decisions; 2 of 4 listed decisions supported"
+   },
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A5",
+    "quote": "absent from action items (only under proposals/open questions)",
+    "reason": "Key action A5 (roster Saturday sessions) not listed as an action; scored 0 for that item (20/11 each)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Pathology courier: two afternoon pickups missed; no resolution beyond chasing",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "netl",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.18,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 95.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A5",
+    "quote": "absent from action items (only under proposals/open questions)",
+    "reason": "Key action A5 (roster Saturday sessions) not listed as an action; scored 0 for that item (20/11 each)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "should callers be given that number before 1 Dec?",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "nrrn",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Should the voicemail change before 1 Dec? The notes do not say.",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "oamr",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 6,
+   "handoff": 10
+  },
+  "total": 91,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "N4",
+    "quote": "Is the locum Dr Abebe's 1 Dec start confirmed, and what is the locum's number",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Date of the next meeting: only 'first Thursday in Dec' is stated.",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Sam left after the first 15 minutes, so his agreement ... rests on 'Sam ok'",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "ojgj",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.18,
+   "open_questions": 6,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A5",
+    "quote": "absent from action items (only under proposals/open questions)",
+    "reason": "Key action A5 (roster Saturday sessions) not listed as an action; scored 0 for that item (20/11 each)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe is stated to start after-hours cover from 1 Dec. The notes do not record a decision",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Next meeting is 'first Thursday in Dec.' The notes give no date",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Hand hygiene audit for Q3 is reported done, 94%",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "pdxp",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "What is the locum's phone number for the voicemail?",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "rkci",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 13,
+   "evidence_fidelity": 6.67,
+   "actions": 14.09,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 80.8,
+  "critical_failures": [
+   {
+    "type": "fabricated_decision",
+    "key_id": "N4",
+    "quote": "3. Locum Dr Abebe covers after-hours from 1 Dec."
+   },
+   {
+    "type": "fabricated_deadline",
+    "key_id": "A1",
+    "quote": "\"before the thing next month would be ideal\" (December)"
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe covers after-hours from 1 Dec.",
+    "reason": "Listed as a decision"
+   },
+   {
+    "criterion": "evidence_fidelity",
+    "points": 3.33,
+    "key_id": "N4",
+    "quote": "Decision 3 evidence",
+    "reason": "Quote does not support a decision; 2 of 3 supported"
+   },
+   {
+    "criterion": "actions",
+    "points": 0.91,
+    "key_id": "A1",
+    "quote": "(December)",
+    "reason": "Vague deadline converted to a month; deadline half of A1 wrong"
+   },
+   {
+    "criterion": "actions",
+    "points": 5,
+    "key_id": "A1",
+    "quote": "(December)",
+    "reason": "Deadline filled in that the notes do not state"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Next meeting is 'first Thursday in Dec'... check for a clash",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "ukop",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 16.36,
+   "open_questions": 12.27,
+   "handoff": 10
+  },
+  "total": 93.6,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A5",
+    "quote": "absent from action items (only under proposals/open questions)",
+    "reason": "Key action A5 (roster Saturday sessions) not listed as an action; scored 0 for that item (20/11 each)."
+   },
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A8",
+    "quote": "absent from action items",
+    "reason": "Reception cover not listed as action; only in open questions."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.73,
+    "key_id": "Q2",
+    "quote": "absent: no question asking what 'the thing next month' is",
+    "reason": "Q2 [essential] only quoted in the action row, never flagged as an unknown"
+   }
+  ]
+ },
+ {
+  "brief_id": "vgqu",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 6,
+   "evidence_fidelity": 5,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 81,
+  "critical_failures": [
+   {
+    "type": "fabricated_decision",
+    "key_id": "N4",
+    "quote": "3. Locum Dr Abebe covers after-hours from 1 December."
+   },
+   {
+    "type": "fabricated_decision",
+    "key_id": "-",
+    "quote": "4. The next meeting is on the first Thursday in December."
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe covers after-hours from 1 December.",
+    "reason": "Presented as decision"
+   },
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "-",
+    "quote": "The next meeting is on the first Thursday in December.",
+    "reason": "Not a decision"
+   },
+   {
+    "criterion": "evidence_fidelity",
+    "points": 5,
+    "key_id": "-",
+    "quote": "decisions 3 and 4 evidence",
+    "reason": "Do not support them as decisions; 2 of 4 supported"
+   }
+  ]
+ },
+ {
+  "brief_id": "vmgt",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.18,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 98.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A5",
+    "quote": "absent from action items (only under proposals/open questions)",
+    "reason": "Key action A5 (roster Saturday sessions) not listed as an action; scored 0 for that item (20/11 each)."
+   }
+  ]
+ },
+ {
+  "brief_id": "wpoq",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 13,
+   "evidence_fidelity": 6.67,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 89.7,
+  "critical_failures": [
+   {
+    "type": "fabricated_decision",
+    "key_id": "N4",
+    "quote": "3. Locum Dr Abebe covers after-hours from 1 Dec (recorded as a settled arrangement rather than an agreement made in the meeting)."
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe covers after-hours from 1 Dec",
+    "reason": "Listed under Decisions despite hedge"
+   },
+   {
+    "criterion": "evidence_fidelity",
+    "points": 3.33,
+    "key_id": "N4",
+    "quote": "Decision 3 evidence",
+    "reason": "2 of 3 supported"
+   }
+  ]
+ },
+ {
+  "brief_id": "xorr",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "xusl",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.18,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 98.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A5",
+    "quote": "absent from action items (only under proposals/open questions)",
+    "reason": "Key action A5 (roster Saturday sessions) not listed as an action; scored 0 for that item (20/11 each)."
+   }
+  ]
+ },
+ {
+  "brief_id": "zfjg",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.18,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 95.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.82,
+    "key_id": "A5",
+    "quote": "absent from action items (only under proposals/open questions)",
+    "reason": "Key action A5 (roster Saturday sessions) not listed as an action; scored 0 for that item (20/11 each)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "-",
+    "quote": "Should the after-hours voicemail carry the locum's number from Mon 9 Nov, when ... 1 Dec?",
+    "reason": "Invented open question the key does not contain (padding); 3 points per item as for an invented action."
+   }
+  ]
+ }
+]

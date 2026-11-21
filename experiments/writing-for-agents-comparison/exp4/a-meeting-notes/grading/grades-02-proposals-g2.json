@@ -1,0 +1,463 @@
+[
+ {
+  "brief_id": "bazd",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "A1-A5",
+    "quote": "| Set up a volunteer sign-up sheet on the school app | Not stated | Not stated |",
+    "reason": "Action not in the notes (the key lists no volunteer sign-up action; notes say 'Nobody took it on yet'). 3 points per invented action, owner/deadline marked unstated so no extra 5."
+   }
+  ]
+ },
+ {
+  "brief_id": "dgyr",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "none (padding)",
+    "quote": "Apologies from Kerry-Ann Moss: the notes record no decisions or follow-up for her.",
+    "reason": "Invented/padding open question not in key; 3 points per item, as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "djej",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 13,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 93,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "N/A (next meeting is context, key grading notes)",
+    "quote": "The next meeting is Wed 9 Dec, 3:30pm.",
+    "reason": "Next meeting date presented as a decision; key says it is context, not a decision made in this meeting."
+   }
+  ]
+ },
+ {
+  "brief_id": "dmdv",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "iirh",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "A1-A5",
+    "quote": "Volunteer sign-up (about 25 volunteers needed) - Owner: not stated",
+    "reason": "Action not in the notes (the key lists no volunteer sign-up action; notes say 'Nobody took it on yet'). 3 points per invented action, owner/deadline marked unstated so no extra 5."
+   }
+  ]
+ },
+ {
+  "brief_id": "iklx",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "jtpb",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 13,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 93,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "N/A (next meeting is context, key grading notes)",
+    "quote": "The next subcommittee meeting is Wed 9 Dec at 3:30pm.",
+    "reason": "Next meeting date presented as a decision; key says it is context, not a decision made in this meeting."
+   }
+  ]
+ },
+ {
+  "brief_id": "kfsm",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "A1-A5",
+    "quote": "Arrange roughly 25 volunteers across the day | not stated | not stated",
+    "reason": "Action not in the notes (the key lists no volunteer sign-up action; notes say 'Nobody took it on yet'). 3 points per invented action, owner/deadline marked unstated so no extra 5."
+   },
+   {
+    "criterion": "handoff",
+    "points": 0,
+    "key_id": "none",
+    "quote": "These items are due back at the next meeting on Wed 9 Dec, 3:30pm.",
+    "reason": "Unsupported claim that open items are due back at next meeting; noted but handoff kept at 10 (ambiguous reference)."
+   }
+  ]
+ },
+ {
+  "brief_id": "lczs",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "none (padding)",
+    "quote": "Possible tension, not resolved: Daniel gives the $8 reason as \"Costs for rides went up about 30%\", while Raj \"Thinks the deficit was mostly the ride hire\"",
+    "reason": "Invented/padding open question not in key; 3 points per item, as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "none (padding)",
+    "quote": "Apologies: Kerry-Ann Moss was absent. The notes assign her nothing.",
+    "reason": "Invented/padding open question not in key; 3 points per item, as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "mdrc",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "mjcn",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "mwnp",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "ompl",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "ppfq",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "soiz",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "none (padding)",
+    "quote": "The decided date (Sat 20 Mar 2027) has no start or finish time stated, and its venue is still open.",
+    "reason": "Invented/padding open question not in key; 3 points per item, as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "none (padding)",
+    "quote": "Ride pricing for this year was not discussed; last year rides were \"extra\".",
+    "reason": "Invented/padding open question not in key; 3 points per item, as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "tsfm",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "uqca",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "wqjy",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "none (padding)",
+    "quote": "Kerry-Ann Moss sent apologies. The notes do not say whether she has a role in any item.",
+    "reason": "Invented/padding open question not in key; 3 points per item, as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "yfdm",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "ykka",
+  "case": "02-proposals",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "A1-A5",
+    "quote": "| Set up volunteer sign-up (if adopted) | Not stated | Not stated |",
+    "reason": "Action not in the notes (the key lists no volunteer sign-up action; notes say 'Nobody took it on yet'). 3 points per invented action, owner/deadline marked unstated so no extra 5."
+   }
+  ]
+ }
+]

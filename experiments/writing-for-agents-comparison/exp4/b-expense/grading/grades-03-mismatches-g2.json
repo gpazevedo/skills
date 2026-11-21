@@ -1,0 +1,459 @@
+[
+ {
+  "review_id": "ctpr",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 7.5,
+   "summary": 10
+  },
+  "total": 92.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 7.5,
+    "item": "Q2/Q3/Q4",
+    "quote": "absent",
+    "reason": "No question on Leeds ticket name (Q2), R11 date (Q3) or duplicate lunch (Q4); only Q1 and optional Q5 raised (weights 3 of 6)."
+   }
+  ]
+ },
+ {
+  "review_id": "ecgm",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12.5,
+   "summary": 10
+  },
+  "total": 97.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 2.5,
+    "item": "Q2",
+    "quote": "absent",
+    "reason": "No question on R04 name (item 4 rejected, so recommended weight 1 of 6); 15x1/6=2.5"
+   }
+  ]
+ },
+ {
+  "review_id": "efoo",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 10
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 2,
+    "item": "Q2, Q3",
+    "quote": "absent",
+    "reason": "No question on R04 name or R11 date (weight 1 each of 6); 15x2/6=5 would be 5, applied as 10/15 score: raised weight 4 of 6 -> 10"
+   }
+  ]
+ },
+ {
+  "review_id": "hwqc",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 6,
+   "summary": 5
+  },
+  "total": 86,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 9,
+    "item": "Q2,Q3,Q4",
+    "quote": "Questions for the claimant: only 'Line 10: Please send a missing-receipt declaration...'",
+    "reason": "Only one question (line 10 declaration); no question on R04 name, R11 date or duplicate lunch (3 of 5 weight missing)."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary length",
+    "quote": "Summary for the approver (161 words)",
+    "reason": "Clearly over roughly 120 words; bloated with resubmission advice."
+   }
+  ]
+ },
+ {
+  "review_id": "ipod",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 9,
+   "summary": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 6,
+    "item": "Q2, Q3",
+    "quote": "absent",
+    "reason": "No question on R04 name or R11 date (weight 2 of 5 missing)."
+   }
+  ]
+ },
+ {
+  "review_id": "kmnq",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 9,
+   "summary": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 6,
+    "item": "Q2, Q3",
+    "quote": "absent",
+    "reason": "No question on R04 name or R11 date (weight 2 of 5 missing)."
+   }
+  ]
+ },
+ {
+  "review_id": "qfyz",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "tkdn",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "trjb",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "tsjs",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "ttmy",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "vkno",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12.5,
+   "summary": 5
+  },
+  "total": 92.5,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 2.5,
+    "item": "Q2",
+    "quote": "absent",
+    "reason": "No question on R04 name (weight 1 of 6)."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary length",
+    "quote": "170-word summary",
+    "reason": "Clearly bloated beyond roughly 120 words."
+   }
+  ]
+ },
+ {
+  "review_id": "vsee",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10.7,
+   "summary": 10
+  },
+  "total": 95.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 4.3,
+    "item": "Q2, Q4",
+    "quote": "absent",
+    "reason": "No question on R04 name or duplicate lunch R08; weights 2 of 7 missing (optional Q5 included)."
+   }
+  ]
+ },
+ {
+  "review_id": "wjfp",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "womj",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "xxpw",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 9,
+   "summary": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 6,
+    "item": "Q2, Q3, Q4",
+    "quote": "absent",
+    "reason": "Only one formal question (line 10). Resubmission invite 'if you hold a correct receipt in your own name for the 8 Oct lunch or evening meal' given half credit for Q3/Q4; no question on R04 name."
+   }
+  ]
+ },
+ {
+  "review_id": "ybev",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "yjqy",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 28.6,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 93.6,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": true,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 1.4,
+    "item": "Item 5",
+    "quote": "L5 ... needs information | 0.00 | held 11.90",
+    "reason": "Key expects approve (either 5 or 8 may be paid, not both); holding both is not an accepted verdict but is routed to a question, so 0.5 credit."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "Approved (corrected total to reimburse): GBP 438.05",
+    "reason": "Key total 449.95; the 11.90 gap stems from the item 5 verdict, so 5 of 10, partial amount 23.40 correct (+5)."
+   }
+  ]
+ },
+ {
+  "review_id": "ypze",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 6,
+   "summary": 10
+  },
+  "total": 91,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 9,
+    "item": "Q2, Q3, Q4",
+    "quote": "absent",
+    "reason": "Only the item 10 question is asked; no question on R04 name, R11 date or the duplicate lunch."
+   }
+  ]
+ },
+ {
+  "review_id": "zzmp",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 10
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2, Q4",
+    "quote": "absent",
+    "reason": "No question on R04 name or duplicate lunch R08 (weights 2 of 6)."
+   }
+  ]
+ }
+]

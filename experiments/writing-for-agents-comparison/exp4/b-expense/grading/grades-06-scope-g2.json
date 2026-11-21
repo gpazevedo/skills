@@ -1,0 +1,634 @@
+[
+ {
+  "review_id": "aqul",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 7,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "padding",
+    "quote": "Receipt R12 ... Was it included by mistake?",
+    "reason": "Question about unlisted receipt R12 has no place in the key's questions; 3-point padding deduction."
+   },
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 (IRANZ duplicate, recommended)",
+    "quote": "absent from claimant questions",
+    "reason": "Item 11 rejected with evidence but no question asking the claimant to remove/explain it (weight 1 of 3)."
+   }
+  ],
+  "total": 92
+ },
+ {
+  "review_id": "bmib",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 (IRANZ duplicate)",
+    "quote": "Notes: 'The approver may want to raise this with the claimant.'",
+    "reason": "Not put to the claimant as a question."
+   }
+  ],
+  "total": 95
+ },
+ {
+  "review_id": "bycz",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 10,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "approve | 342.00 | R05 tax invoice ... This is about 68.40 a head.",
+    "reason": "Item 5 approved with per-head figure but no statement that 6.2 sets no cap and no routing of 'reasonable' to the approver. Key accepts approve only if the review states 6.2 sets no cap, 'reasonable' is the approver's judgement and gives per-head."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "total 763.40",
+    "reason": "Total 763.40 is only right if item 5 is handled per the key's acceptable alternative; here it is arithmetically consistent but follows a verdict error (5 not 10)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 5,
+    "item": "Item 5 ground",
+    "quote": "absent: no mention that 'reasonable' is undefined/for approver",
+    "reason": "Key's reason for item 5 is the 6.2 'reasonable' ambiguity; not given."
+   }
+  ],
+  "total": 87.3
+ },
+ {
+  "review_id": "covg",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 5
+  },
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "Approver summary (about 195 words)",
+    "reason": "Summary is clearly longer than ~120 words (about 195); bloated per rubric (5 not 10)."
+   },
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2",
+    "quote": "Other findings: 'the approver may wish to raise this with the claimant'",
+    "reason": "IRANZ not put to claimant as a question."
+   }
+  ],
+  "total": 90
+ },
+ {
+  "review_id": "cvla",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "The policy sets no per-head cap on working meals (NZD 68.40 per head); \"reasonable\" is not further defined, and nothing on the receipt suggests otherwise.",
+    "reason": "Review decides reasonableness itself and never routes it to the approver. Key accepts approve only if the review states 6.2 sets no cap, 'reasonable' is the approver's judgement and gives per-head."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "total 763.40",
+    "reason": "Total 763.40 is only right if item 5 is handled per the key's acceptable alternative; here it is arithmetically consistent but follows a verdict error (5 not 10)."
+   }
+  ],
+  "total": 92.3
+ },
+ {
+  "review_id": "cxgp",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 28.6,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 5
+  },
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 1.4,
+    "item": "Item 5",
+    "quote": "approved as a \"reasonable\" working meal under clause 6.2 unless you judge otherwise",
+    "reason": "Routes to approver and gives per-head, but never says 6.2 sets no cap; half credit."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "(about 167 words)",
+    "reason": "Summary is clearly longer than ~120 words (about 167); bloated per rubric (5 not 10)."
+   },
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2",
+    "quote": "absent from claimant questions; only in Other findings as fact",
+    "reason": "IRANZ not put to claimant."
+   }
+  ],
+  "total": 88.6
+ },
+ {
+  "review_id": "dfhj",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "(about 190 words)",
+    "reason": "Summary is clearly longer than ~120 words (about 190); bloated per rubric (5 not 10)."
+   }
+  ],
+  "total": 95
+ },
+ {
+  "review_id": "dfnu",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2",
+    "quote": "absent",
+    "reason": "No claimant question about the IRANZ duplicate."
+   }
+  ],
+  "total": 95
+ },
+ {
+  "review_id": "exrs",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 10,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "| 5 | Working dinner ... | approve | 342.00 | Clause 6.2 ... R05 is an itemised invoice for 342.00",
+    "reason": "Approved with no flag, no per-head figure, nothing about 'reasonable'. Key accepts approve only if the review states 6.2 sets no cap, 'reasonable' is the approver's judgement and gives per-head."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "total 763.40",
+    "reason": "Total 763.40 is only right if item 5 is handled per the key's acceptable alternative; here it is arithmetically consistent but follows a verdict error (5 not 10)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 5,
+    "item": "Item 5 ground",
+    "quote": "absent",
+    "reason": "6.2 'reasonable' ambiguity never mentioned."
+   }
+  ],
+  "total": 87.3
+ },
+ {
+  "review_id": "feew",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 12.5,
+   "amounts": 10,
+   "questions": 10,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "The per-person caps in cl. 6.1 and 6.3 do not apply to cl. 6.2 meals.",
+    "reason": "Approved with no per-head figure and no routing of 'reasonable' to the approver. Key accepts approve only if the review states 6.2 sets no cap, 'reasonable' is the approver's judgement and gives per-head."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "total 763.40",
+    "reason": "Total 763.40 is only right if item 5 is handled per the key's acceptable alternative; here it is arithmetically consistent but follows a verdict error (5 not 10)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 2.5,
+    "item": "Item 5 ground",
+    "quote": "per-person caps in cl. 6.1 and 6.3 do not apply",
+    "reason": "Gets that 6.1 does not govern working meals but never raises the 'reasonable' ambiguity; half credit."
+   },
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 (IRANZ duplicate, recommended)",
+    "quote": "absent",
+    "reason": "No question to the claimant to remove or explain the already-reimbursed IRANZ line; it is only rejected, not raised (weight 1 of 3)."
+   }
+  ],
+  "total": 84.8
+ },
+ {
+  "review_id": "hlfl",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 10,
+   "amounts": 10,
+   "questions": 12,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "| 5 ... | Approve | NZD 342.00 | R05 ... clause 6.2 applies (attendees listed)",
+    "reason": "Approved with no flag and no per-head figure. Key accepts approve only if the review states 6.2 sets no cap, 'reasonable' is the approver's judgement and gives per-head."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "total 763.40",
+    "reason": "Total 763.40 is only right if item 5 is handled per the key's acceptable alternative; here it is arithmetically consistent but follows a verdict error (5 not 10)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 5,
+    "item": "Item 5 ground",
+    "quote": "absent",
+    "reason": "6.2 'reasonable' ambiguity not mentioned."
+   },
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "padding",
+    "quote": "3. Receipt R12 ... Please confirm it was included by mistake.",
+    "reason": "Question about unlisted receipt R12 has no place in the key's questions; 3-point padding deduction."
+   }
+  ],
+  "total": 84.3
+ },
+ {
+  "review_id": "jodl",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 12,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "Policy sets no per-head cap on working meals ... 68.40 per head is treated as reasonable.",
+    "reason": "Review itself decides reasonableness; does not leave it to the approver. Key accepts approve only if the review states 6.2 sets no cap, 'reasonable' is the approver's judgement and gives per-head."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "total 763.40",
+    "reason": "Total 763.40 is only right if item 5 is handled per the key's acceptable alternative; here it is arithmetically consistent but follows a verdict error (5 not 10)."
+   },
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "padding",
+    "quote": "3. Receipt R12 ... No action is needed if it was included by mistake",
+    "reason": "Question about unlisted receipt R12 has no place in the key's questions; 3-point padding deduction."
+   }
+  ],
+  "total": 89.3
+ },
+ {
+  "review_id": "mbtl",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "padding",
+    "quote": "3. Receipt R12 ... Please confirm whether it was included by mistake.",
+    "reason": "Question about unlisted receipt R12 has no place in the key's questions; 3-point padding deduction."
+   }
+  ],
+  "total": 97
+ },
+ {
+  "review_id": "nxnw",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Q2 (IRANZ, essential-weight 1 of 5)",
+    "quote": "absent from claimant questions",
+    "reason": "Item 11 rejected, not put to claimant."
+   }
+  ],
+  "total": 97
+ },
+ {
+  "review_id": "sbkx",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [],
+  "total": 100
+ },
+ {
+  "review_id": "togn",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12,
+   "summary": 5
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "padding",
+    "quote": "2. Receipt R12 ... please confirm it is not being claimed",
+    "reason": "Question about unlisted receipt R12 has no place in the key's questions; 3-point padding deduction."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "(about 166 words)",
+    "reason": "Summary is clearly longer than ~120 words (about 166); bloated per rubric (5 not 10)."
+   }
+  ],
+  "total": 92
+ },
+ {
+  "review_id": "vzsh",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12,
+   "summary": 5
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "padding",
+    "quote": "3. Receipt R12 ... Please confirm it was attached in error",
+    "reason": "Question about unlisted receipt R12 has no place in the key's questions; 3-point padding deduction."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "(about 165 words)",
+    "reason": "Summary is clearly longer than ~120 words (about 165); bloated per rubric (5 not 10)."
+   }
+  ],
+  "total": 92
+ },
+ {
+  "review_id": "wjwm",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "padding",
+    "quote": "3. Receipt R12 ... no action is needed unless you intended to claim it",
+    "reason": "Question about unlisted receipt R12 has no place in the key's questions; 3-point padding deduction."
+   }
+  ],
+  "total": 97
+ },
+ {
+  "review_id": "wlgf",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 5
+  },
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "(about 170 words)",
+    "reason": "Summary is clearly longer than ~120 words (about 170); bloated per rubric (5 not 10)."
+   },
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2",
+    "quote": "absent",
+    "reason": "No claimant question about IRANZ duplicate."
+   }
+  ],
+  "total": 90
+ },
+ {
+  "review_id": "yuwa",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12,
+   "summary": 10
+  },
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "padding",
+    "quote": "3. Receipt R12 ... Please confirm it was attached in error.",
+    "reason": "Question about unlisted receipt R12 has no place in the key's questions; 3-point padding deduction."
+   }
+  ],
+  "total": 97
+ }
+]

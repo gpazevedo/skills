@@ -1,0 +1,570 @@
+[
+ {
+  "handoff_id": "cixb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1268,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1268 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "cpdm",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 956,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 956 words after stripping quotes and timestamps, in the 801-1,200 band, so 5 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "eztk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1781,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1781 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fqgq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1036,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1036 words after stripping quotes and timestamps, in the 801-1,200 band, so 5 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fxzr",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1633,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1633 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hcma",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1178,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1178 words after stripping quotes and timestamps, in the 801-1,200 band, so 5 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hgkk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1090,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1090 words after stripping quotes and timestamps, in the 801-1,200 band, so 5 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hrvp",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1788,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1788 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ilfy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1558,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1558 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "meuf",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1735,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1735 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mhjy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1946,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1946 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "moyd",
+  "scores": {
+   "problem": 20,
+   "tried": 8,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 88,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1657,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1657 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   },
+   {
+    "criterion": "tried",
+    "points": 2,
+    "item": "T5 (customer advised not to factory-reset)",
+    "quote": "(absent: the handoff never mentions factory reset)",
+    "reason": "T5 not captured, 1 of 5 T items missing."
+   }
+  ]
+ },
+ {
+  "handoff_id": "odpa",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1693,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1693 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qmat",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 7,
+   "concision": 5
+  },
+  "total": 92,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "handoff_words": 1116,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1116 words after stripping quotes and timestamps, in the 801-1,200 band, so 5 of 10."
+   },
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Request without basis in the files",
+    "quote": "ask what the 14 offline units are used for so the data-retrieval plan",
+    "reason": "The files already give the units' purpose and last-report times (key P2, 01:32 email). Deduct 3 per rubric."
+   }
+  ]
+ },
+ {
+  "handoff_id": "roaw",
+  "scores": {
+   "problem": 18.8,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 88.8,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1621,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1621 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   },
+   {
+    "criterion": "problem",
+    "points": 1.2,
+    "item": "P3 (all 61 updated to 4.7.2, verified)",
+    "quote": "Verified for the 47 online units (TernCloud, 01:32); Reported/stated by agent for the 14 offline",
+    "reason": "Marcus's 01:32 email says all 61 were updated, as read from TernCloud. Downgrading the 14 to reported is the wrong status, so P3 counts 0.5 (20 x 0.5/8 = 1.25, rounded)."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tgxy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 7,
+   "concision": 0
+  },
+  "total": 87,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "handoff_words": 1573,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1573 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   },
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Request without basis in the files",
+    "quote": "When did Darwin last see devices reporting?",
+    "reason": "The files already give the units' purpose and last-report times (key P2, 01:32 email). Deduct 3 per rubric."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tlfu",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1207,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1207 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tqxu",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1560,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1560 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "vojv",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1378,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1378 words after removing quoted strings, blockquotes and timestamps (wc -w), over 1,200, so 0 of 10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "wjut",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1008,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "Prose about 1008 words after stripping quotes and timestamps, in the 801-1,200 band, so 5 of 10."
+   }
+  ]
+ }
+]

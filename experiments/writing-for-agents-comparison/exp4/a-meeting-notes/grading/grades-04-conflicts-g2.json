@@ -1,0 +1,697 @@
+[
+ {
+  "brief_id": "bmud",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.0,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 86.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "none (no matching key action)",
+    "quote": "Finish L3 formwork ... Fri",
+    "reason": "Ivan only 'expects' formwork finished Fri; this is not an action in the notes or key. Deducted 3 as an action the notes do not contain."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov."
+   }
+  ]
+ },
+ {
+  "brief_id": "bnqd",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20.0,
+   "open_questions": 15.0,
+   "handoff": 10
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   }
+  ]
+ },
+ {
+  "brief_id": "cazg",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20.0,
+   "open_questions": 13.75,
+   "handoff": 10
+  },
+  "total": 90.4,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 1.25,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov. Only an implicit link to the pour."
+   }
+  ]
+ },
+ {
+  "brief_id": "duxg",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.0,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 86.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "none (no matching key action)",
+    "quote": "Finish L3 formwork ... Fri",
+    "reason": "Ivan only 'expects' formwork finished Fri; this is not an action in the notes or key. Deducted 3 as an action the notes do not contain."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov."
+   }
+  ]
+ },
+ {
+  "brief_id": "dyrb",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 25.0,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.0,
+   "open_questions": 15.0,
+   "handoff": 10
+  },
+  "total": 97.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "none (no matching key action)",
+    "quote": "Finish L3 formwork ... Fri",
+    "reason": "Ivan only 'expects' formwork finished Fri; this is not an action in the notes or key. Deducted 3 as an action the notes do not contain."
+   }
+  ]
+ },
+ {
+  "brief_id": "gbmf",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.89,
+   "open_questions": 10.0,
+   "handoff": 10
+  },
+  "total": 85.6,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 1.11,
+    "key_id": "A4",
+    "quote": "Wed 11 Nov (revised from Fri 13 Nov; not confirmed with Jenna)",
+    "reason": "Action row adopts Wed 11 Nov as the deadline and closing line says 'None of the contradictions in the notes is left unresolved', so the TMP conflict is presented as settled; half credit on A4 deadline."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q1",
+    "quote": "None of the contradictions in the notes is left unresolved",
+    "reason": "TMP conflict described as resolved."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov."
+   }
+  ]
+ },
+ {
+  "brief_id": "ilfb",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20.0,
+   "open_questions": 15.0,
+   "handoff": 10
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   }
+  ]
+ },
+ {
+  "brief_id": "lojb",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.0,
+   "open_questions": 13.75,
+   "handoff": 10
+  },
+  "total": 87.4,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "none (no matching key action)",
+    "quote": "Finish L3 formwork ... Fri",
+    "reason": "Ivan only 'expects' formwork finished Fri; this is not an action in the notes or key. Deducted 3 as an action the notes do not contain."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 1.25,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov. Only an implicit link to the pour."
+   }
+  ]
+ },
+ {
+  "brief_id": "nvwz",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.0,
+   "open_questions": 13.75,
+   "handoff": 10
+  },
+  "total": 87.4,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "none (no matching key action)",
+    "quote": "Finish L3 formwork ... Fri",
+    "reason": "Ivan only 'expects' formwork finished Fri; this is not an action in the notes or key. Deducted 3 as an action the notes do not contain."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 1.25,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov. Only an implicit link to the pour."
+   }
+  ]
+ },
+ {
+  "brief_id": "omwj",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20.0,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov."
+   }
+  ]
+ },
+ {
+  "brief_id": "phbr",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20.0,
+   "open_questions": 15.0,
+   "handoff": 10
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   }
+  ]
+ },
+ {
+  "brief_id": "qidn",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20.0,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov."
+   }
+  ]
+ },
+ {
+  "brief_id": "qnsc",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20.0,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov."
+   }
+  ]
+ },
+ {
+  "brief_id": "rdru",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 14.78,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 84.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 2.22,
+    "key_id": "A2/A3",
+    "quote": "not stated (Ivan gave the date) / not stated (Carla gave the date)",
+    "reason": "Owners of formwork-ready-for-inspection (Ivan) and reo inspection (Carla) are marked unstated; half credit each."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "none (no matching key action)",
+    "quote": "Finish L3 formwork ... Fri",
+    "reason": "Ivan only 'expects' formwork finished Fri; this is not an action in the notes or key. Deducted 3 as an action the notes do not contain."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov."
+   }
+  ]
+ },
+ {
+  "brief_id": "rlck",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.0,
+   "open_questions": 15.0,
+   "handoff": 10
+  },
+  "total": 88.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "none (no matching key action)",
+    "quote": "Finish L3 formwork ... Fri",
+    "reason": "Ivan only 'expects' formwork finished Fri; this is not an action in the notes or key. Deducted 3 as an action the notes do not contain."
+   }
+  ]
+ },
+ {
+  "brief_id": "sxzz",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.0,
+   "open_questions": 15.0,
+   "handoff": 10
+  },
+  "total": 88.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "none (no matching key action)",
+    "quote": "Finish L3 formwork ... Fri",
+    "reason": "Ivan only 'expects' formwork finished Fri; this is not an action in the notes or key. Deducted 3 as an action the notes do not contain."
+   }
+  ]
+ },
+ {
+  "brief_id": "uams",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.0,
+   "open_questions": 15.0,
+   "handoff": 10
+  },
+  "total": 88.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "none (no matching key action)",
+    "quote": "Finish L3 formwork ... Fri",
+    "reason": "Ivan only 'expects' formwork finished Fri; this is not an action in the notes or key. Deducted 3 as an action the notes do not contain."
+   }
+  ]
+ },
+ {
+  "brief_id": "ulyw",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20.0,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov."
+   }
+  ]
+ },
+ {
+  "brief_id": "xgsv",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20.0,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "No explicit question on whether council can process the TMP in time for pour trucks on 20 Nov."
+   }
+  ]
+ },
+ {
+  "brief_id": "xpdz",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.0,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 86.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "(fallback Mon 23 Nov listed as a proposal / open question, not a decision)",
+    "reason": "D2 is a decision in the key (stated plainly in the notes); brief treats it as not decided, so it is not captured as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 3,
+    "key_id": "none (no matching key action)",
+    "quote": "Finish L3 formwork ... Fri",
+    "reason": "Ivan only 'expects' formwork finished Fri; this is not an action in the notes or key. Deducted 3 as an action the notes do not contain."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q4",
+    "quote": "(expected item absent or only partly surfaced)",
+    "reason": "VAR-014 pending outcome not surfaced as open."
+   }
+  ]
+ }
+]

@@ -1,0 +1,570 @@
+[
+ {
+  "handoff_id": "bccg",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1968,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1494 words (raw wc -w 1968)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bftm",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1247,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1072 words (raw wc -w 1247)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bnhi",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1345,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1167 words (raw wc -w 1345)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bxhx",
+  "scores": {
+   "problem": 20,
+   "tried": 9.2,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1615,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1426 words (raw wc -w 1615)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   },
+   {
+    "criterion": "tried",
+    "points": 0.8,
+    "item": "T6",
+    "quote": "hourly check caught it about 50 minutes later (event only; no statement that the workaround failed or is unsustainable)",
+    "reason": "T6 half credit; 10/6 x 0.5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "dpxg",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2159,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1746 words (raw wc -w 2159)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "htgq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1985,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1418 words (raw wc -w 1985)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ljbu",
+  "scores": {
+   "problem": 20,
+   "tried": 9.2,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 94.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1427,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1134 words (raw wc -w 1427)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   },
+   {
+    "criterion": "tried",
+    "points": 0.8,
+    "item": "T6",
+    "quote": "hourly check caught it about 50 minutes later (event only; no statement that the workaround failed or is unsustainable)",
+    "reason": "T6 half credit; 10/6 x 0.5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "nhrc",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2002,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1472 words (raw wc -w 2002)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "nxpj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1679,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1386 words (raw wc -w 1679)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ohge",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1294,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1142 words (raw wc -w 1294)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "otmt",
+  "scores": {
+   "problem": 20,
+   "tried": 8.3,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 93.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1067,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 945 words (raw wc -w 1067)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   },
+   {
+    "criterion": "tried",
+    "points": 1.7,
+    "item": "T6",
+    "quote": "absent: no statement that the customer's hourly manual dashboard checks failed / are not sustainable",
+    "reason": "Key T6 not captured; 10/6 per missing T item."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qqfc",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1863,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1372 words (raw wc -w 1863)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qysv",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 5,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 1722,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1327 words (raw wc -w 1722)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   },
+   {
+    "criterion": "next_action",
+    "points": 5,
+    "item": "next action",
+    "quote": "Tier 2 ... send the customer the committed update ... ask Peter Dunn ... to test outbound UDP 123 ... If UDP 123 is confirmed open ... GW-03's RTC write error should be treated as a probable hardware fault for replacement.",
+    "reason": "Makes the NTP test the lead action and GW-03 diagnosis/replacement conditional on it, with no interim vat 3 measure; Team Lead notification only in questions. Right direction, key elements missing: partial 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tzlm",
+  "scores": {
+   "problem": 20,
+   "tried": 8.3,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 10
+  },
+  "total": 98.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 957,
+  "deductions": [
+   {
+    "criterion": "tried",
+    "points": 1.7,
+    "item": "T6",
+    "quote": "absent: no statement that the customer's hourly manual dashboard checks failed / are not sustainable",
+    "reason": "Key T6 not captured; 10/6 per missing T item."
+   }
+  ]
+ },
+ {
+  "handoff_id": "unfa",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1263,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1070 words (raw wc -w 1263)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "uski",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1871,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1359 words (raw wc -w 1871)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "uzvz",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1403,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1160 words (raw wc -w 1403)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "vhha",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1728,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1360 words (raw wc -w 1728)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "xgpv",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2033,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1685 words (raw wc -w 2033)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "yftk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1964,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "length bound",
+    "quote": "prose after removing quotes/timestamps/blockquotes: 1636 words (raw wc -w 1964)",
+    "reason": "Rubric: 801-1200 words scores 5, over 1200 scores 0."
+   }
+  ]
+ }
+]

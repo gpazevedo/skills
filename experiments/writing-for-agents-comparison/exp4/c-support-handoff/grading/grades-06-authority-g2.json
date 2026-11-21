@@ -1,0 +1,548 @@
+[
+ {
+  "handoff_id": "acsj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1370,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1370 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "akkn",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1036,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1036 words after removing quoted strings and timestamps (approximate count), over 800; rubric gives 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bhky",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1507,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1507 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "crey",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 790,
+  "deductions": []
+ },
+ {
+  "handoff_id": "fufh",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1564,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1564 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fwza",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1583,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1583 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "gsev",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1666,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1666 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hucy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 942,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 942 words after removing quoted strings and timestamps (approximate count), over 800; rubric gives 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ijdx",
+  "scores": {
+   "problem": 18.3,
+   "tried": 7.5,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 90.8,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1106,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1106 words after removing quoted strings and timestamps (approximate count), over 800; rubric gives 5/10."
+   },
+   {
+    "criterion": "problem",
+    "points": 1.7,
+    "item": "P1",
+    "quote": "Login fault fixed: HPG-StoreManagers mapped to Site Viewer; 9 successful sign-ins",
+    "reason": "Cause (no role mapping for the new group) is not stated, so P1 counted half; 3.33 x 0.5 deducted."
+   },
+   {
+    "criterion": "tried",
+    "points": 2.5,
+    "item": "T1",
+    "quote": "(absent)",
+    "reason": "SSO config and sign-in log review is not listed in Tried so far; mapping fix only appears in the evidence list."
+   }
+  ]
+ },
+ {
+  "handoff_id": "isms",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1440,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1440 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "iyuh",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1484,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1484 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "kgiy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1108,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1108 words after removing quoted strings and timestamps (approximate count), over 800; rubric gives 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "lfzu",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 931,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 931 words after removing quoted strings and timestamps (approximate count), over 800; rubric gives 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "lukw",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1036,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1036 words after removing quoted strings and timestamps (approximate count), over 800; rubric gives 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mxlk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "handoff_words": 1334,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1334 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "niwr",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1460,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1460 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qjiy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1665,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1665 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "rfsb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1056,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1056 words after removing quoted strings and timestamps (approximate count), over 800; rubric gives 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "zkda",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1369,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1369 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "zobk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1381,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision rule",
+    "quote": "(whole handoff)",
+    "reason": "Own prose about 1381 words after removing quoted strings and timestamps (approximate count), over 800 and over 1,200; rubric gives 0/10."
+   }
+  ]
+ }
+]

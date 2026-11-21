@@ -1,0 +1,668 @@
+[
+ {
+  "brief_id": "bmud",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals (not decided) - If Fri 20 Nov is rained out, the pour falls back to Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Council processing time vs use of loading zone for the 20 Nov pour not surfaced."
+   }
+  ]
+ },
+ {
+  "brief_id": "bnqd",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 88.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals not yet decided - Fallback pour date of Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Whether the Thu 12 Nov confirm-by date still applies to the 20 Nov rebooking",
+    "reason": "Notes say 'same confirm-by date'. Invented/padding open question, 3 points per item."
+   }
+  ]
+ },
+ {
+  "brief_id": "cazg",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Decided or proposed? Fallback pour date of Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   }
+  ]
+ },
+ {
+  "brief_id": "duxg",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "The fallback pour date is stated but not recorded as agreed",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Council processing time vs use of loading zone for the 20 Nov pour not surfaced."
+   }
+  ]
+ },
+ {
+  "brief_id": "dyrb",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "gbmf",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.89,
+   "open_questions": 10,
+   "handoff": 10
+  },
+  "total": 85.6,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals not yet decided - Fallback pour date of Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 1.11,
+    "key_id": "A4",
+    "quote": "Wed 11 Nov (revised from Fri 13 Nov; not confirmed with Jenna)",
+    "reason": "Treated as a revision, deadline not marked as conflict (0.5 of 9 actions)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q1",
+    "quote": "None of the contradictions in the notes is left unresolved: ... the TMP deadline change (Fri 13 to Wed 11 Nov) are both recorded as later revisions",
+    "reason": "TMP conflict explicitly denied; only partial credit (Jenna unconfirmed is flagged)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Council processing time vs use of loading zone for the 20 Nov pour not surfaced."
+   }
+  ]
+ },
+ {
+  "brief_id": "ilfb",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals (not decided) - Fallback pour on Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   }
+  ]
+ },
+ {
+  "brief_id": "lojb",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 88.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals not yet decided - Fallback pour date of Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Is the pour date change (Thu to Fri) communicated to the client beyond Lucy being told verbally",
+    "reason": "Lucy was told by Brian in the notes. Invented/padding open question, 3 points per item."
+   }
+  ]
+ },
+ {
+  "brief_id": "nvwz",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 88.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals not yet decided - Rain fallback for the pour: Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Whether the Wed 18 Nov inspection date still works with the pour move",
+    "reason": "Notes answer it: 'no change needed'. Invented/padding open question, 3 points per item."
+   }
+  ]
+ },
+ {
+  "brief_id": "omwj",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9.5,
+   "handoff": 10
+  },
+  "total": 86.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals not decided - Fallback pour date of Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Council processing time vs use of loading zone for the 20 Nov pour not surfaced."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Who carries out the formwork inspection on Tue 17 Nov?",
+    "reason": "Not a gap that matters. Invented/padding open question, 3 points per item."
+   }
+  ]
+ },
+ {
+  "brief_id": "phbr",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Rain fallback: ... recorded without a speaker or agreement wording, so it is treated as a plan not yet confirmed as a decision",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   }
+  ]
+ },
+ {
+  "brief_id": "qidn",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals not yet decided - Rain fallback for the L3 pour",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Council processing time vs use of loading zone for the 20 Nov pour not surfaced."
+   }
+  ]
+ },
+ {
+  "brief_id": "qnsc",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9.5,
+   "handoff": 10
+  },
+  "total": 86.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Whether the Mon 23 Nov rain fallback was agreed ... (Proposed, not decided)",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Council processing time vs use of loading zone for the 20 Nov pour not surfaced."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Council's requirement for the TMP by Wed 11 Nov ... (Reported, not confirmed in the notes)",
+    "reason": "Not a real gap. Invented/padding open question, 3 points per item."
+   }
+  ]
+ },
+ {
+  "brief_id": "rdru",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.78,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 86.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposed, not decided: fallback pour date of Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "actions",
+    "points": 2.22,
+    "key_id": "A2/A3",
+    "quote": "not stated (Ivan gave the date) / not stated (Carla gave the date)",
+    "reason": "Owners marked not stated though notes give Ivan and Carla (0.5 each)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Open question: the L4 handrail sample, deferred to next week's meeting",
+    "reason": "Not a gap. Invented/padding open question, 3 points per item."
+   }
+  ]
+ },
+ {
+  "brief_id": "rlck",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 85.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals not yet decided - Fallback pour date of Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Who inspects the formwork on Tue 17 Nov and the reo on Wed 18 Nov?",
+    "reason": "Not a real gap. Invented/padding open question, 3 points per item."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Steve's 'same confirm-by date' is not restated in the rebooking passage",
+    "reason": "Notes plainly say same confirm-by date. Invented/padding open question, 3 points per item."
+   }
+  ]
+ },
+ {
+  "brief_id": "sxzz",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 88.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals (not yet decided) - Fallback pour date of Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "the concrete and pump booking for the 19th ... whether it was ever made or whether it needs cancelling",
+    "reason": "Speculative gap. Invented/padding open question, 3 points per item."
+   }
+  ]
+ },
+ {
+  "brief_id": "uams",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals (no agreement recorded) - fallback pour date is Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   }
+  ]
+ },
+ {
+  "brief_id": "ulyw",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "P1. Rain fallback date for the pour ... Proposed, not decided",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Council processing time vs use of loading zone for the 20 Nov pour not surfaced."
+   }
+  ]
+ },
+ {
+  "brief_id": "xgsv",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Decided or still proposed? Fallback if Fri is rained out: Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Council processing time vs use of loading zone for the 20 Nov pour not surfaced."
+   }
+  ]
+ },
+ {
+  "brief_id": "xpdz",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.67,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9.5,
+   "handoff": 10
+  },
+  "total": 86.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.33,
+    "key_id": "D2",
+    "quote": "Proposals (not decided): Fallback pour on Mon 23 Nov",
+    "reason": "Rain fallback (Mon 23 Nov, Steve calls by 4am) shown as proposal/open question, not as a decision."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q4",
+    "quote": "(absent)",
+    "reason": "VAR-014 pending outcome not listed as open item (only appears as an action)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "padding",
+    "quote": "Confirm-by date for the rebooking is Thu 12 Nov ... not stated whether Steve has been told of any change",
+    "reason": "Notes say 'same confirm-by date'. Invented/padding open question, 3 points per item."
+   }
+  ]
+ }
+]

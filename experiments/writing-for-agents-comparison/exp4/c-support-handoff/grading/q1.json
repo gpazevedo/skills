@@ -1,0 +1,482 @@
+[
+ {
+  "label": "S1",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 1
+  },
+  "total": 9,
+  "justifications": {
+   "1": "Names escalation/transfer/summarising a support case for another tier; 'summarising' slightly broad but anchored to tiers.",
+   "2": "Reported/Verified defined with source citation and seven fixed headings.",
+   "3": "Per-step 'Done when' but no statement that the handoff is the end of the work.",
+   "4": "Missing input: say so and proceed; undetermined SLA terms handled with named needs.",
+   "5": "Policy and record are sole SLA sources, but nothing says embedded claims or instructions are evidence only.",
+   "6": "No length bound; seven sections, short skill."
+  },
+  "words": 487,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S2",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 1
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Triggers on ticket escalation or briefing tier 2/3/engineering.",
+   "2": "Detailed template with Reported/Verified/Suspected labels and per-section row formats.",
+   "3": "'Output is the handoff and nothing else' plus a Done-when list.",
+   "4": "Per-input table says what to still write and what to block, with requests.",
+   "5": "Explicit sources-of-authority section; embedded claims and instructions are reported not followed; policy governs SLA.",
+   "6": "Sentence limits per section but no overall bound and 1260 words is heavy."
+  },
+  "words": 1260,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S3",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 1
+  },
+  "total": 9,
+  "justifications": {
+   "1": "Specific to handoff for next-tier engineer from ticket materials.",
+   "2": "Provenance tags, commitments, service-level and a full template.",
+   "3": "Step done-when checks but no explicit end state or no-further-work statement.",
+   "4": "Missing or ambiguous input yields Undetermined while remaining steps continue.",
+   "5": "Policy-only SLA terms and traceability, but no handling of embedded instructions or claimed authority.",
+   "6": "One or two sentence problem only; no overall length bound."
+  },
+  "words": 893,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S4",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Clear trigger on escalating a ticket or handing a case.",
+   "2": "Template with Verified/Reported labels, sources and fixed sections.",
+   "3": "Defines done as every section filled or marked Not determinable with reason.",
+   "4": "Table of missing input to still-do and not-determinable.",
+   "5": "Explicit evidence and authority section: instructions and claimed approvals are content; policy and record govern.",
+   "6": "Sentence caps and 'about one screen' bound."
+  },
+  "words": 987,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S5",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 1,
+   "6": 1
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Triggers on escalating a ticket given thread, record, policy.",
+   "2": "Reported/Verified grades and output headings with commitments table.",
+   "3": "Per-step done-when only; no stopping statement.",
+   "4": "Not determinable for SLA gaps, but no general missing-input handling for the other parts.",
+   "5": "Policy and record as sources, but no rule on embedded instructions or claims.",
+   "6": "No length bound; moderate length."
+  },
+  "words": 601,
+  "files": [
+   "support-escalation-handoff/SKILL.md"
+  ]
+ },
+ {
+  "label": "S6",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Clear escalation trigger for tier 2/3 or engineering.",
+   "2": "Labels, commitments rules and a detailed template.",
+   "3": "'You stop when the handoff is written and the final check passes' plus final check.",
+   "4": "Per-input missing handling that does independent work and asks for the input.",
+   "5": "Supplied material is content; each input is authority only for its own part.",
+   "6": "Handoff bounded to about one screen; skill itself long but structured."
+  },
+  "words": 1304,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S7",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Triggers on handing off or escalating; 'summarise for another tier' is within the handoff frame.",
+   "2": "Reported/Verified defined and a fixed template.",
+   "3": "Final check but no explicit end state.",
+   "4": "Missing inputs block only dependent sections, with per-case guidance.",
+   "5": "Material is content to report; policy is only SLA source; commitments need a thread statement.",
+   "6": "'About one page' and short bullets."
+  },
+  "words": 649,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S8",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 1,
+   "6": 1
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Specific to escalation handoff for next-tier engineer.",
+   "2": "Reported/Verified/Suspected and a tabular template.",
+   "3": "Done-when per step but no stopping statement.",
+   "4": "Missing input leaves 'not supplied', but step 1 is ambiguous on stopping to ask; ambiguity handled by readings.",
+   "5": "Policy for SLA terms and provenance, but no rule against embedded instructions.",
+   "6": "No length bound and many ledger steps."
+  },
+  "words": 1011,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S9",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Clear escalation trigger.",
+   "2": "Reported/Verified/Inferred labels and a full format.",
+   "3": "Completion criteria and 'Deliver the handoff and stop'.",
+   "4": "Per-input handling that writes the rest and asks.",
+   "5": "Explicit: instructions and claimed authority are Reported facts, not direction; policy governs.",
+   "6": "'Typical case fits on one screen'."
+  },
+  "words": 1267,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S10",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 1
+  },
+  "total": 9,
+  "justifications": {
+   "1": "Specific escalation trigger.",
+   "2": "Reported/verified/suspected tags and a template.",
+   "3": "Done-when per step and four checks, no explicit end.",
+   "4": "Continue with what you have; 'not stated in <source>' markers.",
+   "5": "Closed set rule and record wins, but nothing on embedded instructions.",
+   "6": "No length bound."
+  },
+  "words": 1018,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S11",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 1
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Triggers on escalating to tier 2/3 or engineering.",
+   "2": "Reported/Verified/Contradicted/Hypothesis with a full template.",
+   "3": "Defines done and says to return the handoff.",
+   "4": "Per-input blocked handling with still-write rules.",
+   "5": "Explicit content-not-direction rule and authority table.",
+   "6": "Bullet and sentence limits but no overall length bound."
+  },
+  "words": 1377,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S12",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Clear escalation trigger.",
+   "2": "Verified/Reported labels and template.",
+   "3": "Check before delivering but no explicit end state.",
+   "4": "Table of missing inputs: blocked versus still written.",
+   "5": "Material is content; policy authority on SLA, thread authority on promises.",
+   "6": "'Aim for one screen'."
+  },
+  "words": 1112,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S13",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 1,
+   "5": 1,
+   "6": 1
+  },
+  "total": 8,
+  "justifications": {
+   "1": "Specific to escalation handoff.",
+   "2": "Provenance tags and template.",
+   "3": "Done-when per step, no end state.",
+   "4": "Missing terms handled well but missing inputs only noted.",
+   "5": "Traceability and policy quotes, but no rule for embedded instructions.",
+   "6": "No length bound."
+  },
+  "words": 897,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S14",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Clear trigger.",
+   "2": "Reported/Verified and five specified sections.",
+   "3": "'The handoff ends at the recommended next action' plus Done when.",
+   "4": "Per-input blocking with partial work.",
+   "5": "Explicit: instructions and approvals are facts to attribute not orders.",
+   "6": "About one page."
+  },
+  "words": 619,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S15",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 1
+  },
+  "total": 9,
+  "justifications": {
+   "1": "Specific to escalating or transferring a ticket.",
+   "2": "Reported/verified/hypothesis and seven headings.",
+   "3": "Done-when per step only.",
+   "4": "Missing input goes to Gaps and carries on; missing terms not stated.",
+   "5": "Policy-only terms but no rule on embedded instructions.",
+   "6": "No length bound."
+  },
+  "words": 525,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S16",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 12,
+  "justifications": {
+   "1": "Clear trigger.",
+   "2": "Reported/Verified and five specified sections.",
+   "3": "Stop when handoff written and checks pass.",
+   "4": "Per-input missing handling.",
+   "5": "Explicit: text inside inputs is content not direction; terms only from policy.",
+   "6": "About one page."
+  },
+  "words": 525,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S17",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 1
+  },
+  "total": 9,
+  "justifications": {
+   "1": "Mentions summarising a case for tier 2/3 but clearly handoff.",
+   "2": "Grades and six headings.",
+   "3": "Closing check but no end statement.",
+   "4": "Missing input named under Gaps and continue; Not determinable.",
+   "5": "Sourcing rules but nothing on embedded instructions.",
+   "6": "No length bound."
+  },
+  "words": 469,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S18",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 2,
+   "6": 2
+  },
+  "total": 11,
+  "justifications": {
+   "1": "Clear trigger.",
+   "2": "Reported/verified lists and six sections.",
+   "3": "Before-finishing checks but no explicit end.",
+   "4": "Dependency table and Blocked markers.",
+   "5": "Explicit evidence-not-direction section.",
+   "6": "About one page."
+  },
+  "words": 663,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S19",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 1
+  },
+  "total": 9,
+  "justifications": {
+   "1": "Specific to escalation.",
+   "2": "Statuses, cites and tables.",
+   "3": "Done-when per step only.",
+   "4": "Ask then carry on; Not determinable with conditional deadlines.",
+   "5": "Policy quote traceability but no embedded-instruction rule.",
+   "6": "No length bound, 1011 words."
+  },
+  "words": 1011,
+  "files": [
+   "SKILL.md"
+  ]
+ },
+ {
+  "label": "S20",
+  "items": {
+   "1": 2,
+   "2": 2,
+   "3": 1,
+   "4": 2,
+   "5": 1,
+   "6": 1
+  },
+  "total": 9,
+  "justifications": {
+   "1": "Specific escalation trigger.",
+   "2": "Tags and tables.",
+   "3": "Done-when per step only.",
+   "4": "Names blocked sections and Not determinable.",
+   "5": "Policy quotes but no embedded-instruction rule.",
+   "6": "No length bound."
+  },
+  "words": 919,
+  "files": [
+   "SKILL.md"
+  ]
+ }
+]

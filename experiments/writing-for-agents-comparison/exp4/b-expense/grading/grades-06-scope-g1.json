@@ -1,0 +1,573 @@
+[
+ {
+  "review_id": "aqul",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 10
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 IRANZ duplicate",
+    "quote": "(absent)",
+    "reason": "Expected question asking claimant to remove or explain INV-88213 (key Q2) is absent; weight 1 of 3."
+   }
+  ]
+ },
+ {
+  "review_id": "bmib",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 10
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 IRANZ duplicate",
+    "quote": "(absent)",
+    "reason": "Expected question asking claimant to remove or explain INV-88213 (key Q2) is absent; weight 1 of 3."
+   }
+  ]
+ },
+ {
+  "review_id": "bycz",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 10,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 87.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "5 | Working dinner, 5 people | 342.00 | approve | 342.00 ... This is about 68.40 a head.",
+    "reason": "Approved 342.00 without stating that 6.2 sets no cap and that 'reasonable' is the approver's judgement, so the key's Approve alternative is not met (key item 5)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 5,
+    "item": "Item 5",
+    "quote": "5 | Working dinner, 5 people | 342.00 | approve | 342.00 ... This is about 68.40 a head.",
+    "reason": "No reason given that 6.2 is a judgement call/no cap flagged; right ground missing (key item 5)."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "763.40",
+    "reason": "Total is wrong only because item 5 was approved without the required flag; arithmetic consistent with own verdicts (5 not 10)."
+   }
+  ]
+ },
+ {
+  "review_id": "covg",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 5
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 IRANZ duplicate",
+    "quote": "(absent)",
+    "reason": "Expected question asking claimant to remove or explain INV-88213 (key Q2) is absent; weight 1 of 3."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "(195 words)",
+    "reason": "Summary clearly bloated (about 195 words, well over the roughly 120 guide)."
+   }
+  ]
+ },
+ {
+  "review_id": "cvla",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 10,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 87.3,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "nothing on the receipt suggests otherwise",
+    "reason": "States no cap and per-head figure but treats the dinner as reasonable itself and never leaves the judgement to the approver; key's alternative needs all three (item 5)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 5,
+    "item": "Item 5",
+    "quote": "nothing on the receipt suggests otherwise",
+    "reason": "Reasonableness decided by reviewer, not routed to the director (key item 5)."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "763.40",
+    "reason": "Total wrong only through item 5 verdict; arithmetic consistent."
+   }
+  ]
+ },
+ {
+  "review_id": "cxgp",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 28.6,
+   "grounds": 12.5,
+   "amounts": 10,
+   "questions": 10,
+   "summary": 10
+  },
+  "total": 86.1,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 1.4,
+    "item": "Item 5",
+    "quote": "approved as a 'reasonable' working meal under clause 6.2 unless you judge otherwise",
+    "reason": "Routes to approver weakly (0.5 credit) but never states that 6.2 sets no cap (key item 5)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 2.5,
+    "item": "Item 5",
+    "quote": "approved as a 'reasonable' working meal",
+    "reason": "Half credit: per-head figure and approver judgement but no statement of the policy gap."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "763.40",
+    "reason": "Alternative total only partly earned, 5 not 10."
+   },
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 IRANZ duplicate",
+    "quote": "(absent)",
+    "reason": "Expected question asking claimant to remove or explain INV-88213 (key Q2) is absent; weight 1 of 3."
+   }
+  ]
+ },
+ {
+  "review_id": "dfhj",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary",
+    "quote": "(190 words)",
+    "reason": "Summary clearly bloated (about 190 words, well over the roughly 120 guide)."
+   }
+  ]
+ },
+ {
+  "review_id": "dfnu",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 10
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 IRANZ duplicate",
+    "quote": "(absent)",
+    "reason": "Expected question asking claimant to remove or explain INV-88213 (key Q2) is absent; weight 1 of 3."
+   }
+  ]
+ },
+ {
+  "review_id": "exrs",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 10,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 87.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "5 | Working dinner ... | approve | 342.00 | Clause 6.2 ... R05 is an itemised invoice for 342.00, 5 covers, with no alcohol",
+    "reason": "Approved 342.00 without stating that 6.2 sets no cap and that 'reasonable' is the approver's judgement, so the key's Approve alternative is not met (key item 5)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 5,
+    "item": "Item 5",
+    "quote": "5 | Working dinner ... | approve | 342.00 | Clause 6.2 ... R05 is an itemised invoice for 342.00, 5 covers, with no alcohol",
+    "reason": "No reason given that 6.2 is a judgement call/no cap flagged; right ground missing (key item 5)."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "763.40",
+    "reason": "Total is wrong only because item 5 was approved without the required flag; arithmetic consistent with own verdicts (5 not 10)."
+   }
+  ]
+ },
+ {
+  "review_id": "feew",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 10,
+   "amounts": 10,
+   "questions": 10,
+   "summary": 10
+  },
+  "total": 82.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "The per-person caps in cl. 6.1 and 6.3 do not apply to cl. 6.2 meals.",
+    "reason": "Approved 342.00 without stating that 6.2 sets no cap and that 'reasonable' is the approver's judgement, so the key's Approve alternative is not met (key item 5)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 5,
+    "item": "Item 5",
+    "quote": "The per-person caps in cl. 6.1 and 6.3 do not apply to cl. 6.2 meals.",
+    "reason": "No reason given that 6.2 is a judgement call/no cap flagged; right ground missing (key item 5)."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "763.40",
+    "reason": "Total is wrong only because item 5 was approved without the required flag; arithmetic consistent with own verdicts (5 not 10)."
+   },
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 IRANZ duplicate",
+    "quote": "(absent)",
+    "reason": "Expected question asking claimant to remove or explain INV-88213 (key Q2) is absent; weight 1 of 3."
+   }
+  ]
+ },
+ {
+  "review_id": "hlfl",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 10,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 87.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "5 | ... | Approve | NZD 342.00 | R05: ... clause 6.2 applies (attendees listed)",
+    "reason": "Approved 342.00 without stating that 6.2 sets no cap and that 'reasonable' is the approver's judgement, so the key's Approve alternative is not met (key item 5)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 5,
+    "item": "Item 5",
+    "quote": "5 | ... | Approve | NZD 342.00 | R05: ... clause 6.2 applies (attendees listed)",
+    "reason": "No reason given that 6.2 is a judgement call/no cap flagged; right ground missing (key item 5)."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "763.40",
+    "reason": "Total is wrong only because item 5 was approved without the required flag; arithmetic consistent with own verdicts (5 not 10)."
+   }
+  ]
+ },
+ {
+  "review_id": "jodl",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 27.3,
+   "grounds": 10,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 87.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 2.7,
+    "item": "Item 5",
+    "quote": "68.40 per head is treated as reasonable",
+    "reason": "Notes no cap and per-head figure but decides reasonableness itself instead of leaving it to the approver (key item 5)."
+   },
+   {
+    "criterion": "grounds",
+    "points": 5,
+    "item": "Item 5",
+    "quote": "68.40 per head is treated as reasonable",
+    "reason": "Judgement not routed to director."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Corrected total",
+    "quote": "763.40",
+    "reason": "Total wrong only via item 5; consistent."
+   }
+  ]
+ },
+ {
+  "review_id": "mbtl",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "nxnw",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12,
+   "summary": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 IRANZ duplicate",
+    "quote": "(absent)",
+    "reason": "Expected question asking claimant to remove or explain INV-88213 (key Q2) is absent; weight 1 of 3."
+   }
+  ]
+ },
+ {
+  "review_id": "sbkx",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "togn",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "vzsh",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "wjwm",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "wlgf",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10,
+   "summary": 10
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Q2 IRANZ duplicate",
+    "quote": "(absent)",
+    "reason": "Expected question asking claimant to remove or explain INV-88213 (key Q2) is absent; weight 1 of 3."
+   }
+  ]
+ },
+ {
+  "review_id": "yuwa",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": true,
+  "usefulness": 5,
+  "deductions": []
+ }
+]

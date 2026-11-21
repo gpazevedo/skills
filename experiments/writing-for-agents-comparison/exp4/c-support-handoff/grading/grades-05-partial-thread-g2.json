@@ -1,0 +1,710 @@
+[
+ {
+  "handoff_id": "aurg",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1622,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,622 words of own prose after removing quotes/timestamps (wc), over 1,200: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "bfra",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 17,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 92,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1091,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Deadline conditionals",
+    "quote": "Business (20 business hours): open, 8h50m remaining",
+    "reason": "Gives conditional statuses and remaining time but no absolute Business/Standard deadlines (6 Nov 09:50, 10 Nov 09:50); 3 points per rubric default."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,091 words: 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "brlw",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 12,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 87,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1020,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "First response met",
+    "quote": "Status: Not determinable.",
+    "reason": "First response stated as met at every level is absent."
+   },
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Conditional deadlines",
+    "quote": "Deadline: Not determinable, for the same reason.",
+    "reason": "Unknown given with no conditional deadlines: partial credit only (5/10)."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,020 words: 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "cmuj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 15,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1350,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Conditional deadlines",
+    "quote": "Resolution deadline and status: cannot determine: support level missing.",
+    "reason": "No conditional deadlines for Enterprise/Business/Standard; partial credit (5/10). First response correctly met."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,350 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "dikl",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1811,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,811 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fehd",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 12,
+   "next_action": 10,
+   "questions": 8,
+   "concision": 10
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 780,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "First response met at every level (key service level, case-specific)",
+    "quote": "Status: not determined.",
+    "reason": "First response met not stated."
+   },
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Conditional deadlines",
+    "quote": "Deadline: not determined.",
+    "reason": "No conditional deadlines: 5/10."
+   },
+   {
+    "criterion": "questions",
+    "points": 2,
+    "item": "Q3 CSM response on credit",
+    "quote": "(absent)",
+    "reason": "No request that Callum Reid answer the credit request; Q3 weight 1 of 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "gezz",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 12,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 82,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1308,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "First response met at every level (key service level, case-specific)",
+    "quote": "Not determinable. Fact: first agent reply was 15:02 UTC, 42 minutes after creation",
+    "reason": "Gives the fact but marks first-response status not determinable, contradicting the key (met at every level)."
+   },
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Conditional deadlines",
+    "quote": "Not determinable: support level not recorded",
+    "reason": "No conditional deadlines: 5/10."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,308 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "gmen",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 8,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 83,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 1160,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Status conditionals / first response met",
+    "quote": "If Business, it would be breached by 8h50m of business time",
+    "reason": "Wrong: key says Business is within target with 8h50m remaining. First response met also not stated."
+   },
+   {
+    "criterion": "service_level",
+    "points": 7,
+    "item": "Deadline",
+    "quote": "Deadline: not determinable",
+    "reason": "No conditional deadlines and one conditional wrong; 3/10."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,160 words: 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "guuc",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 17,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 87,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1474,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Enterprise deadline 2026-11-04 19:50 UTC",
+    "quote": "At 24h elapsed the clock reached 24h at 3 Nov 14:20 + 24h + 5h30m pause = 5 Nov 01:50 UTC",
+    "reason": "Enterprise deadline wrong (should be 4 Nov 19:50) and inconsistent with its own 15h10m overdue; Business and Standard deadlines correct."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,474 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "kftk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1550,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,550 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mjyj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1548,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,548 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ntfr",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 17,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 87,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1761,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Standard deadline 2026-11-10 09:50 UTC",
+    "quote": "if Standard, due 2026-11-09 09:50 UTC",
+    "reason": "Wrong: counts 10 h on Saturday 7 Nov; key gives 10 Nov 09:50. Enterprise and Business deadlines correct."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,761 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qmdk",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1622,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,622 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "stuj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 970,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 970 words: 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tsju",
+  "scores": {
+   "problem": 18,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 14,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 87,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 964,
+  "deductions": [
+   {
+    "criterion": "problem",
+    "points": 2,
+    "item": "P5 contradicted by P1",
+    "quote": "Every card payment has failed since Monday 2 Nov",
+    "reason": "Marked reported but the contradiction with the 7 successes is not flagged (case-specific scoring)."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "First response met at every level (key service level, case-specific)",
+    "quote": "whether that met target also depends on tier",
+    "reason": "Wrong: first response is met at every level."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "Conditional deadlines",
+    "quote": "Enterprise P2: resolution 24h calendar. Would be breached",
+    "reason": "Conditional statuses and time remaining but no absolute deadlines; 3 points per rubric default."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 964 words: 5/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "tvkf",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1410,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,410 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "udcb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 12,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 82,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1439,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "First response met at every level (key service level, case-specific)",
+    "quote": "cannot be compared to any target",
+    "reason": "Wrong: first response met at every level."
+   },
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Conditional deadlines",
+    "quote": "No deadline is given.",
+    "reason": "No conditional deadlines: 5/10."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,439 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "vluq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 12,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 82,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1439,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "First response met at every level (key service level, case-specific)",
+    "quote": "but its target is also not determinable",
+    "reason": "Wrong: first response met at every level."
+   },
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Conditional deadlines",
+    "quote": "Deadline: Not determinable: support level missing.",
+    "reason": "No conditional deadlines: 5/10."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,439 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "xatq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 12,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 82,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1375,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "First response met at every level (key service level, case-specific)",
+    "quote": "First response (policy 3.1): Not determined: tier unknown.",
+    "reason": "First response not stated as met."
+   },
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Conditional deadlines",
+    "quote": "No deadline or status is given, because each depends on the tier.",
+    "reason": "No conditional deadlines: 5/10."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,375 words: 0/10."
+   }
+  ]
+ },
+ {
+  "handoff_id": "yexn",
+  "scores": {
+   "problem": 18,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 10,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 5
+  },
+  "total": 83,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1193,
+  "deductions": [
+   {
+    "criterion": "problem",
+    "points": 2,
+    "item": "P5 contradicted by P1",
+    "quote": "Customer states every card payment has failed since Monday",
+    "reason": "Reported status right but the contradiction with the 7 successes is not flagged."
+   },
+   {
+    "criterion": "service_level",
+    "points": 3,
+    "item": "First response met at every level (key service level, case-specific)",
+    "quote": "Whether it met the target depends on the level.",
+    "reason": "Wrong: first response met at every level."
+   },
+   {
+    "criterion": "service_level",
+    "points": 7,
+    "item": "Enterprise deadline 2026-11-04 19:50 UTC; Standard 10 Nov 09:50",
+    "quote": "breached since about 3 Nov 14:20 + 24h + 5h30 = 5 Nov 07:50 UTC",
+    "reason": "Enterprise deadline wrong; Standard has no deadline; Business correct."
+   },
+   {
+    "criterion": "concision",
+    "points": 5,
+    "item": "Concision",
+    "quote": "(whole handoff)",
+    "reason": "About 1,193 words: 5/10."
+   }
+  ]
+ }
+]

@@ -1,0 +1,543 @@
+[
+ {
+  "brief_id": "bpou",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 16.2,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 96.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A5",
+    "quote": "(absent from action table)",
+    "reason": "Roster extra Saturday flu sessions action (owner unstated or Nora tentative, deadline soon/after accreditation) is absent from the action items; it appears only as a proposal/open question"
+   },
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A8",
+    "quote": "(absent from action table)",
+    "reason": "Reception cover for 14-18 Dec appears only in open questions, not as an action; scored 0 for this key action."
+   }
+  ]
+ },
+ {
+  "brief_id": "bzyk",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.1,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 98.1,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A5",
+    "quote": "(absent from action table)",
+    "reason": "Roster extra Saturday flu sessions action (owner unstated or Nora tentative, deadline soon/after accreditation) is absent from the action items; it appears only as a proposal/open question"
+   }
+  ]
+ },
+ {
+  "brief_id": "dpod",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "gkvb",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "handoff",
+    "points": 5,
+    "key_id": "handoff",
+    "quote": "Handoff summary of about 184 words",
+    "reason": "Clearly longer than the roughly 150-word limit; scored 5 as bloated."
+   }
+  ]
+ },
+ {
+  "brief_id": "isdh",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "lztu",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.1,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 95.1,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A5",
+    "quote": "(absent from action table)",
+    "reason": "Roster extra Saturday flu sessions action (owner unstated or Nora tentative, deadline soon/after accreditation) is absent from the action items; it appears only as a proposal/open question"
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "none",
+    "quote": "For the 1pm close on Thu 24 Dec: who tells patients and staff, and who adjusts bookings for that afternoon?",
+    "reason": "Invented open question with no basis in the notes; 3 points per item as for padding."
+   }
+  ]
+ },
+ {
+  "brief_id": "mtza",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 9.5,
+   "evidence_fidelity": 10,
+   "actions": 18.1,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 87.6,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 3.5,
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe covers after-hours from 1 Dec.",
+    "reason": "Listed as a decision; key N4 low weight so half of 7."
+   },
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "N-none",
+    "quote": "Next meeting is the first Thursday in December.",
+    "reason": "Presented as a decision; not a decision of the meeting and not in the key."
+   },
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A5",
+    "quote": "(absent from action table)",
+    "reason": "Roster extra Saturday flu sessions action (owner unstated or Nora tentative, deadline soon/after accreditation) is absent from the action items; it appears only as a proposal/open question"
+   }
+  ]
+ },
+ {
+  "brief_id": "netl",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.1,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 98.1,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A5",
+    "quote": "(absent from action table)",
+    "reason": "Roster extra Saturday flu sessions action (owner unstated or Nora tentative, deadline soon/after accreditation) is absent from the action items; it appears only as a proposal/open question"
+   }
+  ]
+ },
+ {
+  "brief_id": "nrrn",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "oamr",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "ojgj",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.1,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 98.1,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A5",
+    "quote": "(absent from action table)",
+    "reason": "Roster extra Saturday flu sessions action (owner unstated or Nora tentative, deadline soon/after accreditation) is absent from the action items; it appears only as a proposal/open question"
+   }
+  ]
+ },
+ {
+  "brief_id": "pdxp",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "rkci",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 16.5,
+   "evidence_fidelity": 10,
+   "actions": 14.0,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 90.5,
+  "critical_failures": [
+   {
+    "type": "fabricated_deadline",
+    "key_id": "A1",
+    "quote": "\"before the thing next month would be ideal\" (December)"
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 3.5,
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe covers after-hours from 1 Dec.",
+    "reason": "Listed as a decision; N4 low weight so half of 7."
+   },
+   {
+    "criterion": "actions",
+    "points": 0.95,
+    "key_id": "A1",
+    "quote": "\"before the thing next month would be ideal\" (December)",
+    "reason": "Deadline converted to a month; half credit for A1."
+   },
+   {
+    "criterion": "actions",
+    "points": 5,
+    "key_id": "A1",
+    "quote": "(December)",
+    "reason": "Deadline filled in that the notes do not state, -5."
+   }
+  ]
+ },
+ {
+  "brief_id": "ukop",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 16.2,
+   "open_questions": 12.3,
+   "handoff": 10
+  },
+  "total": 93.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A5",
+    "quote": "(absent from action table)",
+    "reason": "Roster extra Saturday flu sessions action (owner unstated or Nora tentative, deadline soon/after accreditation) is absent from the action items; it appears only as a proposal/open question"
+   },
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A8",
+    "quote": "(absent from action table)",
+    "reason": "Reception cover for 14-18 Dec appears only in open questions, not as an action; scored 0 for this key action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.7,
+    "key_id": "Q2",
+    "quote": "Send a quote ... \"before the thing next month would be ideal\"",
+    "reason": "The unidentified 'thing next month' is never flagged as unclear anywhere; essential item absent."
+   }
+  ]
+ },
+ {
+  "brief_id": "vgqu",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 9.5,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 89.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 3.5,
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe covers after-hours from 1 December.",
+    "reason": "Listed as a decision; N4 low weight so half of 7."
+   },
+   {
+    "criterion": "decision_precision",
+    "points": 7,
+    "key_id": "N-none",
+    "quote": "The next meeting is on the first Thursday in December.",
+    "reason": "Presented as a decision; not in the key."
+   }
+  ]
+ },
+ {
+  "brief_id": "vmgt",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.1,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 98.1,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A5",
+    "quote": "(absent from action table)",
+    "reason": "Roster extra Saturday flu sessions action (owner unstated or Nora tentative, deadline soon/after accreditation) is absent from the action items; it appears only as a proposal/open question"
+   }
+  ]
+ },
+ {
+  "brief_id": "wpoq",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 16.5,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 96.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 3.5,
+    "key_id": "N4",
+    "quote": "Locum Dr Abebe covers after-hours from 1 Dec (recorded as a settled arrangement...)",
+    "reason": "Listed as a decision, though caveated; N4 low weight so half of 7."
+   }
+  ]
+ },
+ {
+  "brief_id": "xorr",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "xusl",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.1,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 98.1,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A5",
+    "quote": "(absent from action table)",
+    "reason": "Roster extra Saturday flu sessions action (owner unstated or Nora tentative, deadline soon/after accreditation) is absent from the action items; it appears only as a proposal/open question"
+   }
+  ]
+ },
+ {
+  "brief_id": "zfjg",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.1,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 98.1,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 1.9,
+    "key_id": "A5",
+    "quote": "(absent from action table)",
+    "reason": "Roster extra Saturday flu sessions action (owner unstated or Nora tentative, deadline soon/after accreditation) is absent from the action items; it appears only as a proposal/open question"
+   }
+  ]
+ }
+]
