@@ -1,6 +1,6 @@
 # Experiment 3 extension: six candidates per condition
 
-Status: pre-registered (2026-11-21), before any new candidate exists.
+Status: complete, verdict inconclusive in all three parts (2026-11-21). Report: [REPORT.md](REPORT.md). Pre-registered before any new candidate existed.
 Parent: [experiment 3 plan](../PLAN.md). Its first-round report stays as written in [../results/REPORT.md](../results/REPORT.md).
 
 ## Why

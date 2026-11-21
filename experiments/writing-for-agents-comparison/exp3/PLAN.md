@@ -1,6 +1,6 @@
 # Experiment 3 plan: original vs revision 2
 
-Status: complete, verdict inconclusive in all three parts (2026-11-21). Report: `results/REPORT.md`. Extension to six candidates per condition: [extension/PLAN.md](extension/PLAN.md).
+Status: complete, verdict inconclusive in all three parts (2026-11-21). Report: `results/REPORT.md`. Extension to six candidates per condition: [extension/PLAN.md](extension/PLAN.md), complete, also inconclusive in all three parts, V2 ahead by 1.5 to 3.1 points ([extension/REPORT.md](extension/REPORT.md)).
 Parents: [experiment 1](../PLAN.md), [experiment 2](../exp2/PLAN.md), [proposal-v2.md](../proposal-v2.md)
 
 ## Question
