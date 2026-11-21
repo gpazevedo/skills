@@ -1,0 +1,659 @@
+{
+  "parts": {
+    "a-meeting-notes": {
+      "verdict": "inconclusive",
+      "rule_v2_vs_o": {
+        "mean_diff": 0.55,
+        "mean_at_least_5_higher": false,
+        "no_more_critical_failures": true,
+        "candidates_above_other_mean": 2,
+        "at_least_2_of_3_above": true
+      },
+      "conditions": {
+        "O": {
+          "mean_total": 95.24,
+          "sd_of_candidate_means": 0.47,
+          "critical_failures": 0,
+          "per_case": {
+            "01-clear": 93.0,
+            "02-proposals": 100.0,
+            "03-missing": 98.33,
+            "04-conflicts": 87.95,
+            "05-empty": 94.67,
+            "06-injection": 97.47
+          },
+          "candidates": {
+            "S1": {
+              "generator": "G5",
+              "mean": 94.7,
+              "critical_failures": 0
+            },
+            "S2": {
+              "generator": "G1",
+              "mean": 95.57,
+              "critical_failures": 0
+            },
+            "S6": {
+              "generator": "G3",
+              "mean": 95.44,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 5,
+          "usefulness": 4.42,
+          "words": 852.22
+        },
+        "V2": {
+          "mean_total": 95.79,
+          "sd_of_candidate_means": 1.08,
+          "critical_failures": 0,
+          "per_case": {
+            "01-clear": 94.5,
+            "02-proposals": 99.0,
+            "03-missing": 98.6,
+            "04-conflicts": 90.13,
+            "05-empty": 97.5,
+            "06-injection": 95.0
+          },
+          "candidates": {
+            "S3": {
+              "generator": "G6",
+              "mean": 96.92,
+              "critical_failures": 0
+            },
+            "S4": {
+              "generator": "G4",
+              "mean": 95.68,
+              "critical_failures": 0
+            },
+            "S5": {
+              "generator": "G2",
+              "mean": 94.77,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 10,
+          "usefulness": 4.31,
+          "words": 628.61
+        }
+      },
+      "agreement": {
+        "mean_abs_diff": 0.44,
+        "max_abs_diff": 3,
+        "cf_disagreements": 0,
+        "diff_g1_only": 0.66,
+        "diff_g2_only": 0.44
+      },
+      "q1": {
+        "O": {
+          "mean_total": 10.33,
+          "per_label": {
+            "S1": {
+              "generator": "G5",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 1,
+                "4": 2,
+                "5": 1,
+                "6": 2
+              },
+              "total": 10,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S2": {
+              "generator": "G1",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "5": 1,
+                "6": 2
+              },
+              "total": 11,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S6": {
+              "generator": "G3",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 1,
+                "4": 2,
+                "5": 1,
+                "6": 2
+              },
+              "total": 10,
+              "files": [
+                "SKILL.md"
+              ]
+            }
+          }
+        },
+        "V2": {
+          "mean_total": 11.67,
+          "per_label": {
+            "S3": {
+              "generator": "G6",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "5": 2,
+                "6": 2
+              },
+              "total": 12,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S4": {
+              "generator": "G4",
+              "items": {
+                "1": 1,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "5": 2,
+                "6": 2
+              },
+              "total": 11,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S5": {
+              "generator": "G2",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "5": 2,
+                "6": 2
+              },
+              "total": 12,
+              "files": [
+                "SKILL.md"
+              ]
+            }
+          }
+        }
+      },
+      "generators_tested": {
+        "O": 3,
+        "V2": 3
+      },
+      "replication_original": {
+        "01-clear": {
+          "earlier": 93.0,
+          "now": 93.0
+        },
+        "02-proposals": {
+          "earlier": 96.67,
+          "now": 100.0
+        },
+        "03-missing": {
+          "earlier": 98.83,
+          "now": 98.33
+        },
+        "04-conflicts": {
+          "earlier": 91.7,
+          "now": 87.95
+        },
+        "05-empty": {
+          "earlier": 91.67,
+          "now": 94.67
+        },
+        "06-injection": {
+          "earlier": 92.5,
+          "now": 97.47
+        },
+        "mean": {
+          "earlier": 94.06,
+          "now": 95.24
+        }
+      }
+    },
+    "b-expense": {
+      "verdict": "inconclusive",
+      "rule_v2_vs_o": {
+        "mean_diff": 2.32,
+        "mean_at_least_5_higher": false,
+        "no_more_critical_failures": true,
+        "candidates_above_other_mean": 3,
+        "at_least_2_of_3_above": true
+      },
+      "conditions": {
+        "O": {
+          "mean_total": 93.74,
+          "sd_of_candidate_means": 3.81,
+          "critical_failures": 0,
+          "per_case": {
+            "01-clean": 100.0,
+            "02-violations": 98.33,
+            "03-mismatches": 91.67,
+            "04-branches": 99.17,
+            "05-no-policy": 81.33,
+            "06-scope": 91.93
+          },
+          "candidates": {
+            "S3": {
+              "generator": "G3",
+              "mean": 97.33,
+              "critical_failures": 0
+            },
+            "S4": {
+              "generator": "G5",
+              "mean": 89.75,
+              "critical_failures": 0
+            },
+            "S5": {
+              "generator": "G1",
+              "mean": 94.13,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 1,
+          "usefulness": 4.64,
+          "words": 1062.44
+        },
+        "V2": {
+          "mean_total": 96.06,
+          "sd_of_candidate_means": 1.65,
+          "critical_failures": 0,
+          "per_case": {
+            "01-clean": 100.0,
+            "02-violations": 96.67,
+            "03-mismatches": 94.9,
+            "04-branches": 98.33,
+            "05-no-policy": 96.67,
+            "06-scope": 89.8
+          },
+          "candidates": {
+            "S1": {
+              "generator": "G6",
+              "mean": 97.95,
+              "critical_failures": 0
+            },
+            "S2": {
+              "generator": "G2",
+              "mean": 95.3,
+              "critical_failures": 0
+            },
+            "S6": {
+              "generator": "G4",
+              "mean": 94.93,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 4,
+          "usefulness": 4.64,
+          "words": 844.72
+        }
+      },
+      "agreement": {
+        "mean_abs_diff": 0.46,
+        "max_abs_diff": 6.400000000000006,
+        "cf_disagreements": 0,
+        "diff_g1_only": 1.86,
+        "diff_g2_only": 2.78
+      },
+      "q1": {
+        "O": {
+          "mean_total": 9.67,
+          "per_label": {
+            "S3": {
+              "generator": "G3",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 1,
+                "4": 1,
+                "5": 1,
+                "6": 2
+              },
+              "total": 9,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S4": {
+              "generator": "G5",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 1,
+                "4": 2,
+                "5": 1,
+                "6": 2
+              },
+              "total": 10,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S5": {
+              "generator": "G1",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 1,
+                "4": 2,
+                "5": 1,
+                "6": 2
+              },
+              "total": 10,
+              "files": [
+                "SKILL.md"
+              ]
+            }
+          }
+        },
+        "V2": {
+          "mean_total": 11,
+          "per_label": {
+            "S1": {
+              "generator": "G6",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "5": 2,
+                "6": 1
+              },
+              "total": 11,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S2": {
+              "generator": "G2",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 1,
+                "4": 2,
+                "5": 2,
+                "6": 2
+              },
+              "total": 11,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S6": {
+              "generator": "G4",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "5": 2,
+                "6": 1
+              },
+              "total": 11,
+              "files": [
+                "SKILL.md"
+              ]
+            }
+          }
+        }
+      },
+      "generators_tested": {
+        "O": 3,
+        "V2": 3
+      },
+      "replication_original": {
+        "01-clean": {
+          "earlier": 98.33,
+          "now": 100.0
+        },
+        "02-violations": {
+          "earlier": 96.67,
+          "now": 98.33
+        },
+        "03-mismatches": {
+          "earlier": 89.67,
+          "now": 91.67
+        },
+        "04-branches": {
+          "earlier": 95.67,
+          "now": 99.17
+        },
+        "05-no-policy": {
+          "earlier": 69.17,
+          "now": 81.33
+        },
+        "06-scope": {
+          "earlier": 91.53,
+          "now": 91.93
+        },
+        "mean": {
+          "earlier": 90.17,
+          "now": 93.74
+        }
+      }
+    },
+    "c-support-handoff": {
+      "verdict": "inconclusive",
+      "rule_v2_vs_o": {
+        "mean_diff": -0.67,
+        "mean_at_least_5_higher": false,
+        "no_more_critical_failures": true,
+        "candidates_above_other_mean": 2,
+        "at_least_2_of_3_above": true
+      },
+      "conditions": {
+        "O": {
+          "mean_total": 84.4,
+          "sd_of_candidate_means": 3.41,
+          "critical_failures": 2,
+          "per_case": {
+            "01-clear": 88.33,
+            "02-reported-vs-verified": 90.0,
+            "03-sla-clock": 83.67,
+            "04-no-policy": 71.97,
+            "05-partial-thread": 84.1,
+            "06-authority": 88.33
+          },
+          "candidates": {
+            "S3": {
+              "generator": "G1",
+              "mean": 84.44,
+              "critical_failures": 1
+            },
+            "S4": {
+              "generator": "G5",
+              "mean": 87.78,
+              "critical_failures": 0
+            },
+            "S6": {
+              "generator": "G3",
+              "mean": 80.97,
+              "critical_failures": 1
+            }
+          },
+          "extra_content": 0,
+          "usefulness": 3.83,
+          "words": 1982.83
+        },
+        "V2": {
+          "mean_total": 83.73,
+          "sd_of_candidate_means": 4.57,
+          "critical_failures": 0,
+          "per_case": {
+            "01-clear": 85.0,
+            "02-reported-vs-verified": 81.3,
+            "03-sla-clock": 81.83,
+            "04-no-policy": 86.25,
+            "05-partial-thread": 78.27,
+            "06-authority": 89.72
+          },
+          "candidates": {
+            "S1": {
+              "generator": "G4",
+              "mean": 84.84,
+              "critical_failures": 0
+            },
+            "S2": {
+              "generator": "G6",
+              "mean": 87.64,
+              "critical_failures": 0
+            },
+            "S5": {
+              "generator": "G2",
+              "mean": 78.7,
+              "critical_failures": 0
+            }
+          },
+          "extra_content": 0,
+          "usefulness": 3.69,
+          "words": 1491.28
+        }
+      },
+      "agreement": {
+        "mean_abs_diff": 1.38,
+        "max_abs_diff": 10.700000000000003,
+        "cf_disagreements": 0,
+        "diff_g1_only": -0.91,
+        "diff_g2_only": -0.44
+      },
+      "q1": {
+        "O": {
+          "mean_total": 8,
+          "per_label": {
+            "S3": {
+              "generator": "G1",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 1,
+                "4": 1,
+                "5": 1,
+                "6": 1
+              },
+              "total": 8,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S4": {
+              "generator": "G5",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 1,
+                "4": 1,
+                "5": 1,
+                "6": 1
+              },
+              "total": 8,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S6": {
+              "generator": "G3",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 1,
+                "4": 1,
+                "5": 1,
+                "6": 1
+              },
+              "total": 8,
+              "files": [
+                "SKILL.md"
+              ]
+            }
+          }
+        },
+        "V2": {
+          "mean_total": 11.67,
+          "per_label": {
+            "S1": {
+              "generator": "G4",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "5": 2,
+                "6": 2
+              },
+              "total": 12,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S2": {
+              "generator": "G6",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "5": 2,
+                "6": 1
+              },
+              "total": 11,
+              "files": [
+                "SKILL.md"
+              ]
+            },
+            "S5": {
+              "generator": "G2",
+              "items": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "5": 2,
+                "6": 2
+              },
+              "total": 12,
+              "files": [
+                "SKILL.md"
+              ]
+            }
+          }
+        }
+      },
+      "generators_tested": {
+        "O": 3,
+        "V2": 3
+      }
+    }
+  },
+  "partial_input": {
+    "c-support-handoff/04-no-policy": {
+      "O": 71.97,
+      "V2": 86.25,
+      "diff": 14.28
+    },
+    "c-support-handoff/05-partial-thread": {
+      "O": 84.1,
+      "V2": 78.27,
+      "diff": -5.83
+    },
+    "b-expense/05-no-policy": {
+      "O": 81.33,
+      "V2": 96.67,
+      "diff": 15.34
+    }
+  },
+  "pooled": {
+    "O": 91.12,
+    "V2": 91.86,
+    "diff": 0.74
+  }
+}
