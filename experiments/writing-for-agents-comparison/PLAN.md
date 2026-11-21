@@ -1,6 +1,6 @@
 # Experiment plan: original vs improved `writing-for-agents`
 
-Status: draft, awaiting approval (2026-11-21)
+Status: approved, running (2026-11-21)
 Branch: `writing-for-agents-improvement` on `gpazevedo/skills`
 
 ## Question
@@ -182,9 +182,9 @@ If the improvement is supported, replace `skills/productivity/writing-for-agents
 
 About 50 fresh agent runs: 6 generations, 36 executions, 7 grading runs and the agreement re-score. Runs within a phase are independent and can go in parallel batches. The two checkpoints are the only points that wait for you.
 
-## Decisions to confirm
+## Decisions (confirmed 2026-11-21)
 
-1. **Meaning of "3 new skills":** 3 generations of the meeting-brief skill per condition (the default here), or 3 different skills?
-2. **Authoring help:** generators get no skill-creator or other authoring guidance in either condition (default), which isolates the effect of `writing-for-agents`.
-3. **Checkpoints:** pause at A (variant diff) and B (cases and rubric), or run straight through?
-4. **Who writes the cases:** I write them by default. Since I also build the improved variant, you could write or edit them instead to remove that source of bias.
+1. **Meaning of "3 new skills":** 3 independent generations of the meeting-brief skill per condition.
+2. **Authoring help:** generators get no skill-creator or other authoring guidance in either condition, which isolates the effect of `writing-for-agents`.
+3. **Checkpoints:** run straight through. Checkpoints A and B are skipped; the variant diff, cases and rubric are reviewed with the final report instead.
+4. **Who writes the cases:** Claude writes the cases and answer keys. Claude also builds the improved variant, so this is recorded as a limitation in the report. To reduce the bias, a fresh agent drafts the cases and answer keys from the skill request and the case table in this plan only, never seeing either variant or the proposal, and Claude then checks the drafts against each other without adding variant-specific tests.
