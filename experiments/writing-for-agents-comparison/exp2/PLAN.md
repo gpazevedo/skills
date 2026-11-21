@@ -1,6 +1,6 @@
 # Experiment 2 plan: a second skill, `expense-claim-review`
 
-Status: approved, running (2026-11-21)
+Status: complete, verdict inconclusive (2026-11-21); see [results/REPORT.md](results/REPORT.md)
 Parent: [../PLAN.md](../PLAN.md) (experiment 1, meeting-notes skill, verdict inconclusive; see [../results/REPORT.md](../results/REPORT.md))
 
 ## Why a second skill

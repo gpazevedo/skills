@@ -1,0 +1,176 @@
+{
+  "n_reviews": 36,
+  "conditions": {
+    "O": {
+      "mean_total": 90.17,
+      "sd_of_candidate_means": 4.26,
+      "critical_failures": 0,
+      "per_criterion": {
+        "coverage": 15.0,
+        "verdict_accuracy": 29.92,
+        "grounds": 13.17,
+        "amounts": 13.06,
+        "questions": 12.36,
+        "summary": 6.67
+      },
+      "per_case": {
+        "01-clean": 98.33,
+        "02-violations": 96.67,
+        "03-mismatches": 89.67,
+        "04-branches": 95.67,
+        "05-no-policy": 69.17,
+        "06-scope": 91.53
+      },
+      "candidates": {
+        "S2": {
+          "generator": "G5",
+          "mean": 94.75,
+          "critical_failures": 0
+        },
+        "S5": {
+          "generator": "G1",
+          "mean": 89.43,
+          "critical_failures": 0
+        },
+        "S6": {
+          "generator": "G3",
+          "mean": 86.33,
+          "critical_failures": 0
+        }
+      },
+      "extra_content": 11,
+      "unneeded_clarification": 0,
+      "usefulness": 4.25,
+      "review_words": 1031.5,
+      "tool_uses": 5.72,
+      "duration_s": 56.77
+    },
+    "I": {
+      "mean_total": 88.31,
+      "sd_of_candidate_means": 1.71,
+      "critical_failures": 0,
+      "per_criterion": {
+        "coverage": 15.0,
+        "verdict_accuracy": 30.0,
+        "grounds": 12.42,
+        "amounts": 12.5,
+        "questions": 12.56,
+        "summary": 5.83
+      },
+      "per_case": {
+        "01-clean": 98.33,
+        "02-violations": 95.0,
+        "03-mismatches": 91.17,
+        "04-branches": 96.17,
+        "05-no-policy": 55.0,
+        "06-scope": 94.17
+      },
+      "candidates": {
+        "S1": {
+          "generator": "G2",
+          "mean": 90.0,
+          "critical_failures": 0
+        },
+        "S3": {
+          "generator": "G6",
+          "mean": 86.58,
+          "critical_failures": 0
+        },
+        "S4": {
+          "generator": "G4",
+          "mean": 88.33,
+          "critical_failures": 0
+        }
+      },
+      "extra_content": 0,
+      "unneeded_clarification": 0,
+      "usefulness": 4.19,
+      "review_words": 951.83,
+      "tool_uses": 6.11,
+      "duration_s": 53.81
+    }
+  },
+  "rule_improved_vs_original": {
+    "mean_diff": -1.86,
+    "mean_at_least_5_higher": false,
+    "no_more_critical_failures": true,
+    "candidates_above_other_mean": 0,
+    "at_least_2_of_3_above": false
+  },
+  "verdict": "inconclusive",
+  "agreement": {
+    "mean_abs_diff": 1.75,
+    "max_abs_diff": 10.0,
+    "critical_failure_disagreements": [],
+    "diff_if_g1_only": -1.78,
+    "diff_if_g2_only": -1.95
+  },
+  "q1": {
+    "O": {
+      "mean_total": 9.33,
+      "per_label": {
+        "S2": {
+          "total": 9,
+          "words": 804,
+          "files": [
+            "SKILL.md"
+          ]
+        },
+        "S5": {
+          "total": 9,
+          "words": 935,
+          "files": [
+            "SKILL.md"
+          ]
+        },
+        "S6": {
+          "total": 10,
+          "words": 1161,
+          "files": [
+            "SKILL.md",
+            "EDGE-CASES.md"
+          ]
+        }
+      }
+    },
+    "I": {
+      "mean_total": 10,
+      "per_label": {
+        "S1": {
+          "total": 10,
+          "words": 953,
+          "files": [
+            "SKILL.md"
+          ]
+        },
+        "S3": {
+          "total": 10,
+          "words": 1079,
+          "files": [
+            "SKILL.md"
+          ]
+        },
+        "S4": {
+          "total": 10,
+          "words": 1149,
+          "files": [
+            "SKILL.md"
+          ]
+        }
+      }
+    }
+  },
+  "pooled_descriptive": {
+    "O": {
+      "exp1": 94.06,
+      "exp2": 90.17,
+      "both": 92.12
+    },
+    "I": {
+      "exp1": 96.72,
+      "exp2": 88.31,
+      "both": 92.51
+    },
+    "diff_both": 0.39
+  }
+}
