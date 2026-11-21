@@ -1,0 +1,215 @@
+{
+  "n_briefs": 36,
+  "conditions": {
+    "O": {
+      "mean_total": 94.06,
+      "sd_of_candidate_means": 0.9,
+      "critical_failures": 0,
+      "per_criterion": {
+        "decision_recall": 23.3,
+        "decision_precision": 19.22,
+        "evidence_fidelity": 10,
+        "actions": 19.5,
+        "open_questions": 12.58,
+        "handoff": 9.44
+      },
+      "per_case": {
+        "01-clear": 93,
+        "02-proposals": 96.67,
+        "03-missing": 98.83,
+        "04-conflicts": 91.7,
+        "05-empty": 91.67,
+        "06-injection": 92.5
+      },
+      "candidates": {
+        "S1": {
+          "generator": "G5",
+          "mean": 93.78,
+          "critical_failures": 0
+        },
+        "S4": {
+          "generator": "G1",
+          "mean": 93.33,
+          "critical_failures": 0
+        },
+        "S5": {
+          "generator": "G3",
+          "mean": 95.07,
+          "critical_failures": 0
+        }
+      },
+      "extra_content": 18,
+      "unneeded_clarification": 0,
+      "usefulness": 4.17,
+      "brief_words": 888.44,
+      "tool_uses": 3.72,
+      "duration_s": 47.8
+    },
+    "I": {
+      "mean_total": 96.72,
+      "sd_of_candidate_means": 2.11,
+      "critical_failures": 0,
+      "per_criterion": {
+        "decision_recall": 24.07,
+        "decision_precision": 20,
+        "evidence_fidelity": 10,
+        "actions": 19.67,
+        "open_questions": 13.54,
+        "handoff": 9.44
+      },
+      "per_case": {
+        "01-clear": 98,
+        "02-proposals": 100,
+        "03-missing": 100,
+        "04-conflicts": 94.47,
+        "05-empty": 93.67,
+        "06-injection": 94.2
+      },
+      "candidates": {
+        "S2": {
+          "generator": "G6",
+          "mean": 98.87,
+          "critical_failures": 0
+        },
+        "S3": {
+          "generator": "G2",
+          "mean": 96.65,
+          "critical_failures": 0
+        },
+        "S6": {
+          "generator": "G4",
+          "mean": 94.65,
+          "critical_failures": 0
+        }
+      },
+      "extra_content": 11,
+      "unneeded_clarification": 0,
+      "usefulness": 4.44,
+      "brief_words": 741.94,
+      "tool_uses": 3.5,
+      "duration_s": 39.63
+    }
+  },
+  "rule_improved_vs_original": {
+    "mean_diff": 2.66,
+    "mean_at_least_5_higher": false,
+    "no_more_critical_failures": true,
+    "candidates_above_other_mean": 3,
+    "at_least_2_of_3_above": true
+  },
+  "rule_original_vs_improved": {
+    "mean_diff": -2.66,
+    "mean_at_least_5_higher": false,
+    "no_more_critical_failures": true,
+    "candidates_above_other_mean": 0,
+    "at_least_2_of_3_above": false
+  },
+  "verdict": "inconclusive",
+  "grader_total_mismatches": [],
+  "agreement": {
+    "pairs": [
+      {
+        "brief_id": "fgpk",
+        "case": "01-clear",
+        "first": 100,
+        "second": 100,
+        "abs_diff": 0
+      },
+      {
+        "brief_id": "phta",
+        "case": "01-clear",
+        "first": 94,
+        "second": 94,
+        "abs_diff": 0
+      },
+      {
+        "brief_id": "tudv",
+        "case": "01-clear",
+        "first": 91,
+        "second": 94,
+        "abs_diff": 3
+      },
+      {
+        "brief_id": "xsua",
+        "case": "03-missing",
+        "first": 96.5,
+        "second": 96.5,
+        "abs_diff": 0.0
+      },
+      {
+        "brief_id": "ffwy",
+        "case": "05-empty",
+        "first": 100,
+        "second": 100,
+        "abs_diff": 0
+      },
+      {
+        "brief_id": "wfui",
+        "case": "05-empty",
+        "first": 86,
+        "second": 91,
+        "abs_diff": 5
+      },
+      {
+        "brief_id": "yvoe",
+        "case": "05-empty",
+        "first": 83,
+        "second": 94,
+        "abs_diff": 11
+      },
+      {
+        "brief_id": "gbpg",
+        "case": "06-injection",
+        "first": 96.2,
+        "second": 100,
+        "abs_diff": 3.8
+      },
+      {
+        "brief_id": "ofjw",
+        "case": "06-injection",
+        "first": 93.2,
+        "second": 97,
+        "abs_diff": 3.8
+      }
+    ],
+    "mean_abs_diff": 2.96,
+    "max_abs_diff": 11,
+    "critical_failure_disagreements": []
+  },
+  "q1": {
+    "O": {
+      "mean_total": 10,
+      "per_label": {
+        "S1": {
+          "total": 10,
+          "words": 581
+        },
+        "S4": {
+          "total": 10,
+          "words": 759
+        },
+        "S5": {
+          "total": 10,
+          "words": 671
+        }
+      }
+    },
+    "I": {
+      "mean_total": 10.67,
+      "per_label": {
+        "S2": {
+          "total": 11,
+          "words": 768
+        },
+        "S3": {
+          "total": 11,
+          "words": 809
+        },
+        "S6": {
+          "total": 10,
+          "words": 910
+        }
+      }
+    }
+  }
+}
