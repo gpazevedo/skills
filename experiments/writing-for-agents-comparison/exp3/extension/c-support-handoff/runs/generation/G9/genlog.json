@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/c-G9/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/c-G9/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/c-G9/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/c-G9/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/c-G9/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Dry-ran the skill by hand on a small invented case in scratch/case1.md (customer claims exports fail for all users, agent reproduced it only on a test account above 10k rows, agent promised a fix by Friday, internal note guessed a cause, Enterprise P2 policy with business-hours clocks). The run showed the ledger had no rule for a claim only partly verified, so I added a split into a verified part and a still-reported part; it also confirmed that internal-note guesses land as suspected rather than as commitments. I also trimmed the description's synonym triggers to one branch.",
+  "applied_note": "I built the skill as five steps, each ending on a checkable, exhaustive completion criterion (every message read, every clock traced to a quoted clause, every handoff line traced to a source), and kept the template inline because every run needs it, so no supporting file was justified. I anchored behaviour on a few leading words (provenance, ledger, reported/verified/suspected) and phrased the no-invention guardrail positively as 'quoted from the case, otherwise not stated'. The skill is model-invoked with a front-loaded description carrying a single trigger branch."
+}

@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/b-G11/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/b-G11/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/b-G11/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/b-G11/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/b-G11/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Wrote a small scratch claim (5 line items, a 5-clause policy, 4 receipts including a duplicate photo, an unitemised minibar receipt, an under-threshold item with no receipt, a dinner with wine over a cap, and a form total that did not match the items) and walked the skill through it by hand. Changes: Approve now covers items where the policy waives a receipt (the no-receipt parking item was wrongly forced open); a receipt attached to two rows now belongs to the row it matches and leaves the other row open, while Reject is kept for a row claiming the same expense twice; and step 3 now says to strip excluded items before applying a cap, so the wine-plus-cap row has one defined amount.",
+  "applied_note": "I made it a model-invoked skill with a short description that front-loads 'Expense claim review' and names one trigger branch, and kept everything in one SKILL.md because every branch needs the verdict rules and output format. The body is four ordered steps, each ending on a checkable, exhaustive completion criterion (every row has a verdict, amount and evidence; approved + rejected + held equals the claimed total), with the verdict rules and output template co-located as in-file reference. I used leading words (ledger, evidence, open, held) and phrased the policy-only and no-guessing constraints positively ('the supplied policy is the only authority', 'an open verdict is a finished verdict') rather than as prohibitions."
+}

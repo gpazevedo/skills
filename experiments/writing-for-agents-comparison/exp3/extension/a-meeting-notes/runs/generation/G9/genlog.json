@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/a-G9/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/a-G9/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/a-G9/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/a-G9/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/a-G9/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Walked the skill by hand through a short scratch set of product-sync notes containing a proposal one person liked, a 'confirmed' launch date later contradicted by another attendee, an action with no deadline, and an ownerless migration question. The walk-through showed the skill did not say what happens to a decision that a later line contradicts without reversing it, so I added a rule moving such items out of Decisions and under contradictions with both quotes.",
+  "applied_note": "I made the skill model-invoked with a short description that front-loads the leading term 'decision brief' and lists only distinct trigger branches, and kept everything in one SKILL.md because every run needs the classification rules and the output format, so nothing qualified for disclosure. Each step ends on a checkable, exhaustive completion criterion (every statement sorted, every decision quoted, every action with owner and deadline fields), and the definitions of decided versus proposed are co-located under one heading. I used positive phrasing with leading words ('unstated', 'evidence', 'contradiction') instead of prohibitions like 'do not guess', and wrote the handoff summary step last so it is built from the verified sections."
+}

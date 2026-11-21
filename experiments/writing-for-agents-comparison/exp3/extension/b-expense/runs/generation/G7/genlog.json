@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/b-G7/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/b-G7/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/b-G7/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/b-G7/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/b-G7/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Walked the draft by hand through a scratch claim (6 line items, 4 receipts, 6-clause policy) with a minibar charge, a two-cover dinner with wine, an under-threshold taxi with no receipt, a duplicated taxi line, a cash USD fare needing an official exchange rate, a fee the policy does not cover, and a form total that did not match its lines. Changes: approve now allows policy-waived receipts; duplicates are marked and held; partially excluded items record the excluded part as a reduction and hold the rest; a Held column and held-amount definition were added so the reconciliation works; facts only the organisation holds (exchange rates) go to Notes; the form-total mismatch is handled in one place (step 5).",
+  "applied_note": "I made it model-invoked with a short description that front-loads the leading words and lists one trigger per branch, and kept everything in one SKILL.md because every branch needs the steps and the output template. Each step ends on a checkable, exhaustive completion criterion (every line item, every receipt, totals reconcile), and the two governing rules are phrased positively around leading words ('the whole rulebook', 'unsettled means open') rather than as prohibitions. I pruned duplicated meaning so each rule, such as the form-total check, lives in one place."
+}

@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/c-G11/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/c-G11/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/c-G11/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/c-G11/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/c-G11/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Wrote a scratch case (scratch/case.md): a PDF-export ticket where the customer claims all 300 users are affected but logs show 2, a Tier 1 agent promises a fix 'by end of day tomorrow' that is then missed, another agent offers a service credit the policy reserves for the account manager, and severity is never set while the policy only defines Business-plan clocks for Sev2. Walking the steps against it worked for provenance and the reported-vs-verified disagreement, but exposed three gaps that I fixed: commitments now carry an explicit Kept/Open/Missed state, a commitment that exceeds what the policy allows its maker is flagged with the clause, and when one missing input (e.g. unset severity) blocks the service-level calculation the skill gives labelled conditional deadlines alongside 'Not determinable'. I also cut the description's synonym triggers down to the single escalation branch.",
+  "applied_note": "I made it a model-invoked skill with a short description whose leading word is 'escalation handoff' and a single trigger branch, and kept everything in one SKILL.md because every run needs the steps, the provenance rules and the output format, so nothing qualified for disclosure. The body co-locates the Verified/Reported/Hypothesis definitions and the 'cite' leading word under one Provenance heading, and each step ends on an exhaustive, checkable completion criterion (every message, every attempt, every commitment, every policy clock), with a final audit step. The no-invention guardrail is phrased positively: every commitment is a verbatim quote and every service-level term a quoted clause, with 'Not determinable' as the stated alternative."
+}

@@ -1,0 +1,12 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/c-G8/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/c-G8/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/c-G8/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/c-G8/request.md"
+  ],
+  "files_written": ["out/SKILL.md"],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no separate agent run) on a scratch case: a ticket with a verified reproduction, a customer claim of an earlier credit promise not in the thread, an embedded 'VP approved P1' instruction, no recorded priority, and a policy silent on clock start; also walked the same case with the policy removed. The walkthrough showed my invented 'at risk under 25%' threshold was itself a made-up service-level term, so I replaced it with met/breached/open-with-time-remaining unless the policy defines at-risk, and I added an 'unclear' status for commitments whose fulfilment the thread does not settle.",
+  "applied_note": "I kept everything every run needs (inputs, evidence labels, steps, output template) in one SKILL.md, wrote the description as a short model-invoked pointer, and put the supplied-material rule beside the definition of verified versus reported evidence. Each step ends on an observable criterion (quoted commitments, cited policy section, or a Not determinable reason), the output is bounded in size and shape, and missing inputs are handled with a table of what can still be done rather than a bare stop, except for the thread, where the stop is justified."
+}

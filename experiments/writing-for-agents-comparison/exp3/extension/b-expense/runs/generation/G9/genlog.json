@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/b-G9/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/b-G9/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/b-G9/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/b-G9/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/b-G9/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Walked the skill by hand through a small scratch claim (dinner over the meal cap with wine on the bill, a taxi with no receipt, a sub-threshold coffee covered by a declaration clause, a hotel receipt in USD with no conversion rule and no accommodation clause). Three changes resulted: Approve now covers items where a clause accepts a declaration instead of a receipt, Needs information for a missing receipt applies only where the policy requires one, and the rejected amount explicitly includes amounts cut from partly approved items so approved + rejected + pending reconciles to the claimed total.",
+  "applied_note": "I made it a model-invoked skill with a short front-loaded description carrying one trigger branch, and kept everything in one SKILL.md because every run needs the verdict rules, steps and output format, so nothing qualified for disclosure. Each step ends on a checkable, exhaustive completion criterion (every item labelled, matched, ruled with evidence, and a reconciling sum), and the verdict definitions are co-located under one heading. Constraints are phrased positively (the supplied policy is the whole rulebook, every rule carries a clause reference, an unsettled verdict stays open) rather than as prohibitions, and I left out instructions the model already follows by default."
+}

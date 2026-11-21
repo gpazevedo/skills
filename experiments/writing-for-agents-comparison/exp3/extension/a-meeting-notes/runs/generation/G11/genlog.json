@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/a-G11/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/a-G11/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/a-G11/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/a-G11/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/a-G11/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Wrote a scratch set of product-sync notes with tricky cases (competing vendor suggestions, 'nobody objected', an unassigned 'someone should' task, conflicting launch dates, a decision followed by a request to revisit, a day name instead of a date) and walked the skill through it by hand. Two gaps surfaced and were fixed: step 4 now defines an owner as a named person or team so 'someone' becomes Not stated, and the brief header takes the date as written rather than forcing a calendar date.",
+  "applied_note": "I made it a model-invoked skill with a short description front-loading the leading phrase 'decision brief' and listing only distinct trigger branches. The body puts ordered steps first, each ending on a checkable completion criterion (verbatim quotes, every action present, a final audit against the notes), with the decision-versus-proposal test and output format as co-located in-file reference since every run needs them, so no disclosed files. I used leading words (decision brief, evidence, unresolved, Not stated) and phrased guardrails positively, e.g. treating uncertain items as proposals rather than banning guessing."
+}

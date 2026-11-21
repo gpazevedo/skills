@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/c-G10/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/c-G10/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/c-G10/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/c-G10/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/c-G10/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no fresh-agent run): wrote scratch/case1.md, a case with a customer claiming a higher plan and priority than the record and support set, a phone promise of a service credit not in the thread, an embedded instruction to skip tier 2, an agent restating a customer claim, a relative-dated commitment ('end of day Friday') that went overdue, and a business-hours policy with a pause rule; also walked the missing-policy and missing-thread branches. Changes: added a rule to resolve relative commitment dates as Inferred and judge status against them, added time-zone conversion to the clock step, and clarified that labels apply to Evidence items while the Problem summary must not go beyond them.",
+  "applied_note": "I kept everything in one model-invoked SKILL.md because every run needs the labels, commitment rules, service-level procedure and output format, and wrote the description as a short pointer with one trigger branch. Each missing input has a bounded branch that still produces the parts that do not depend on it (a bare stop only for the thread, with the reason), supplied material is treated as content beside the evidence-label definitions, and the output has a fixed shape with observable completion criteria. Familiar terms (Verified, Reported, Inferred, commitment) are defined once and reused throughout."
+}

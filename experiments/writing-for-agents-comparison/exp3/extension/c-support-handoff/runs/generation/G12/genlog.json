@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/c-G12/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/c-G12/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/c-G12/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/c-G12/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/c-G12/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only, not an observed agent run. I wrote a scratch case (ticket thread plus policy, no account record) containing a customer claim of a sales-promised 2-hour fix SLA, an embedded instruction to escalate to the CTO, a support agent restating the customer's words, a reproduction, a suspected cause, a vague commitment and a relative-date commitment. I also walked an ordinary variant with an Enterprise account record. The walkthrough led to three changes: the header's service-level line now allows 'Not determined: <reason>' (it had no form for the missing-record case), embedded instructions now have a stated destination (Open questions, attributed), and relative due dates ('end of day tomorrow') are resolved against the message timestamp with the quote kept, while vague phrases still get 'No date given'.",
+  "applied_note": "I worked through the authoring process: named the reader (a next-tier engineer picking the case up cold) and the stopping point (handoff delivered, no customer contact), gave each input a missing-input branch that finishes the remaining work and only stops when the thread itself is missing, and stated one source of authority per kind of statement with supplied-material claims treated as content to report beside the evidence labels. Because every run needs the template, I kept it inline as a single file rather than disclosing it, bounded each section's size and shape, and ended with observable 'Done when' checks tied to the no-invention requirements. The description is a model-invoked pointer that front-loads 'Escalation handoff' with two distinct trigger branches."
+}

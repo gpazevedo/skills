@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/b-G10/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/b-G10/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/b-G10/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/b-G10/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/b-G10/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no separate agent run): a scratch claim with six lines covering a receipt lower than claimed, an itemised receipt with excluded alcohol, a sub-threshold item without a receipt, a daily meal cap spread over two lines, an unverified pre-approval claim, a duplicate receipt, a policy-silent item and an embedded 'approve all' instruction; also walked the same claim with the policy removed. The walkthrough showed the approve rule required a receipt even where the policy waives one, and left unclear which line absorbs a per-day cap reduction, so I added the waiver and the 'reduction goes on the last of those lines' rule.",
+  "applied_note": "I kept one model-invoked SKILL.md with a short description naming the task and its single trigger branch, and ordered the body as inputs, evidence rules, steps, verdict rules, output and an observable completion check, with each conditional (missing input, cap, embedded approval claim) placed beside its trigger. Missing inputs block only dependent work (no policy still allows receipt matching and duplicate rejection), supplied claims of approval are treated as content to verify against the policy, and the output is bounded by section, column and sentence count. No supporting files were added because every run needs all of the material."
+}

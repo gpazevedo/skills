@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/b-G12/request.md",
+    "/tmp/wfa3x-gen/b-G12/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/b-G12/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/b-G12/writing-for-agents/agents/openai.yaml"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/b-G12/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no separate agent run): a scratch claim with six lines against a seven-clause policy, covering a clean approval, a meal capped and with alcohol excluded (reduced approval), a sub-threshold item without receipt, a client dinner with only an asserted approval and a non-itemised slip, a foreign-currency hotel the policy is silent on, a line attached to another line's receipt, an unmatched receipt, a form total that did not match its lines, and an embedded 'all items pre-approved' note; also walked the missing-policy and missing-claim-form branches. Changes: the duplicate rule was rewritten because the first wording would have rejected a line merely attached to the wrong receipt (now it counts as having no receipt and stays open); added that caps apply over their stated period across lines; sharpened the completion check's citation rule and the missing-policy total wording.",
+  "applied_note": "I kept it as one model-invoked SKILL.md with a short description pointer, a common path of numbered steps each ending in a checkable result, the verdict definitions co-located with the 'leave it open' rule, and the treatment of claims inside supplied material placed beside the definition of evidence. Missing inputs are bounded by what remains possible (missing policy or receipts still yields receipt and policy findings; only a missing claim form stops, with the reason stated), and the output is bounded by section order, a five-sentence summary and a reconciling totals check that serves as the completion criterion."
+}

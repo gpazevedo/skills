@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/b-G8/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/b-G8/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/b-G8/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/b-G8/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/b-G8/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no fresh agent run): a scratch claim of five items with a receipt threshold, a meal cap, an alcohol exclusion, an unreceipted hotel with a 'manager approved' note, and a USD invoice claimed in AUD, plus mental checks of a fully compliant claim and a no-policy claim. The walkthrough exposed three gaps that I fixed: Approve required a receipt even when the policy waives one below a threshold; a policy that merely requires receipts was ambiguous between reject and needs information (now needs information, since the receipt can still be supplied); and currency handling conflicted between steps 4 and 5. I also added a 'None.' case for the questions section when nothing is pending.",
+  "applied_note": "I started from reader and purpose (an agent reviewing one claim for an approver, stopping when every item has a cited verdict and the totals reconcile), separated the authority of each input, and put the missing-input branches and the rule for treating notes inside the claim as content beside the inputs they concern. Each step ends on an observable completion criterion, the output has a fixed shape with a five-sentence bound on the summary, and the description is a model-invoked pointer with one trigger branch. I kept everything in one file because every run needs all of it, so nothing qualified for disclosure."
+}

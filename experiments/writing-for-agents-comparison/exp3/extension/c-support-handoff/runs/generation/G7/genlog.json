@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/c-G7/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/c-G7/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/c-G7/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/c-G7/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/c-G7/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Wrote a scratch ticket (customer claims Enterprise but the record says Business, an agent restating the customer, an auto-reply promise, a credit mentioned only in an internal note, an unanswered callback request, and a policy with a business-hours clock that pauses on 'Awaiting customer') and dry-ran the steps by hand. The provenance and commitment rules sorted every item correctly, but the run exposed two gaps that I fixed: the SLA status 'at risk' needed a threshold the policy did not supply, so it became met/open/breached; and the pause rule depended on status history that was not supplied, so step 3 now gives the deadline with and without such a rule and names the missing data. I also added explicit status values for commitments (met, pending, overdue, no date given) because the dry run's 'update by Thursday' promise had no defined way to be marked overdue.",
+  "applied_note": "I made the skill model-invoked with a short description front-loaded on 'Escalation handoff' and one trigger branch, and kept everything in one file because every branch needs the provenance rules and the template. The body is ordered steps, each ending on a checkable, exhaustive completion criterion (every message read, every claim in the ledger, every SLA term quoted or marked not stated), with the reported/verified/suspected tags and the 'ledger' and 'closed set' leading words co-located under one Provenance heading. The ban on inventing commitments and service-level terms is stated positively as a closed set with a 'not stated in <source>' fallback, keeping a single guardrail sentence that explains the cost."
+}

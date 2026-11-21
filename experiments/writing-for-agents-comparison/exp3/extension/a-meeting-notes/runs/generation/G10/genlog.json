@@ -1,0 +1,12 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/a-G10/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/a-G10/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/a-G10/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/a-G10/request.md"
+  ],
+  "files_written": ["/tmp/wfa3x-gen/a-G10/out/SKILL.md"],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no fresh agent run): I wrote scratch notes with a conditionally supported proposal, an agreed decision, a task with owner and relative deadline, an ownerless task raised by someone, a second-hand budget approval, an unanswered question, an embedded instruction to the summariser, a decision later challenged, a conflicting launch date, and a day-only date with no attendees list. Walking it through showed that the 'each item appears once' completion check clashed with quoting a proposal again in Contradictions, so I allowed a statement to also be quoted as one side of a contradiction; that the embedded-instruction rule was ambiguous about whether to report it, so it now always goes under Open questions as not followed; and that partial metadata should be copied as written.",
+  "applied_note": "I set the reader, trigger and stopping point first, kept everything every run needs in one SKILL.md (no disclosed files, since no branch is rare enough to push down), and put each conditional rule beside its trigger: decision-vs-proposal cues, owner/deadline copying, and the treatment of instructions and authority claims inside the notes beside the evidence rule. The missing-input branch stops only for absent notes (with the reason) and fills 'Not stated' otherwise, the output is bounded by a template with sentence limits, and the completion check is observable (every item quoted, nothing the notes do not state). The description is a model-invoked pointer that front-loads 'Meeting notes' and lists distinct triggers."
+}

@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/a-G12/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/a-G12/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/a-G12/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/a-G12/request.md"
+  ],
+  "files_written": [
+    "/tmp/wfa3x-gen/a-G12/out/SKILL.md"
+  ],
+  "tested": true,
+  "testing_note": "Author walkthrough only (no observed agent run) on scratch notes containing a decision, a proposal, a conditional decision, a contradicting date, a task with owner and deadline, an ownerless task, an embedded 'note to summariser' claiming offline approval, an unanswered question, and a cut-off ending. Changes: the embedded-instruction rule was rewritten so an offline or summariser-addressed approval claim goes to Open questions instead of being weighed as a possible decision; 'exactly one section' was reworded so gaps (missing owners, unmet conditions) can be added to Open questions as separate entries without contradicting the completion criterion; an example entry for cut-off notes was added; a no-op line about writing the brief in the reply was removed.",
+  "applied_note": "I kept one model-invoked SKILL.md with a pointer-style description and no disclosed files, since every run needs the classification rules and the output shape. Each step ends on an observable completion criterion, the output is bounded (one-sentence decisions, short verbatim evidence quotes, a three-sentence handoff, 'None recorded.' for empty sections), missing notes are a justified bare stop while fragmentary notes still produce every section, and instructions inside the notes are treated as content beside the evidence rule. The decision-vs-proposal rule is co-located with a table of ordinary and exception cases, and out-of-scope work is named so the reader knows where to stop."
+}

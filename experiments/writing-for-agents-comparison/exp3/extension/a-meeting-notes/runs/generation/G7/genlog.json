@@ -1,0 +1,12 @@
+{
+  "files_read": [
+    "/tmp/wfa3x-gen/a-G7/writing-for-agents/SKILL.md",
+    "/tmp/wfa3x-gen/a-G7/writing-for-agents/SKILL-MECHANICS.md",
+    "/tmp/wfa3x-gen/a-G7/writing-for-agents/agents/openai.yaml",
+    "/tmp/wfa3x-gen/a-G7/request.md"
+  ],
+  "files_written": ["/tmp/wfa3x-gen/a-G7/out/SKILL.md"],
+  "tested": true,
+  "testing_note": "Walked the draft by hand over a short scratch set of product-sync notes containing a proposal later adopted, an agreed decision with no speaker, an action with an owner but vague deadline, an ownerless task, a budget contradiction, and a decision conditional on exec confirmation. The conditional case had no clear rule (\"we'll go with\" is a decision marker but approval was pending), so I added an explicit rule that a call awaiting someone's approval is a proposal with the approver named in an open question.",
+  "applied_note": "I made it a model-invoked skill with a short description front-loading the leading phrase 'decision brief' and one trigger per branch, and kept everything in one SKILL.md because every run needs the classification rules, steps and format. Each step ends on a checkable, exhaustive completion criterion (every statement classified, every action item's owner and deadline filled or marked 'not stated', every name and figure traceable to the notes), and the handoff summary is written last so it cannot drift from the sections. Guidance is phrased positively (classify ambiguous items as proposals, write missing values as 'not stated') rather than as prohibitions against guessing."
+}
