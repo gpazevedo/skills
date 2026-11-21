@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S6-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S6-C1/notes.md"
+  ],
+  "unclear": "The skill does not say how to classify an item that was raised and explicitly parked or deferred (like dark mode here), which is neither clearly a decision nor an open proposal.",
+  "label": "S6",
+  "case": "01-clear",
+  "launch_position": 42,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

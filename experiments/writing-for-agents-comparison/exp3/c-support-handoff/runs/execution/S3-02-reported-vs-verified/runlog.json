@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S3-C2/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S3-C2/input/account.md",
+    "/tmp/wfa3-exec/c/S3-C2/input/policy.md",
+    "/tmp/wfa3-exec/c/S3-C2/input/thread.md"
+  ],
+  "unclear": "The skill does not say whether a support agent's reading of product documentation (an LED guide, release notes, a statement of how gateways buffer data) counts as verified evidence or only verifies what the document says, nor whether a customer's reported statement by a Tern engineer that firmware was safe counts as a commitment.",
+  "label": "S3",
+  "case": "02-reported-vs-verified",
+  "launch_position": 67,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

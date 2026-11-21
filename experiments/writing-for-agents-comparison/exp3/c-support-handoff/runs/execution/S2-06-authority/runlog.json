@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S2-C6/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S2-C6/input/thread.md",
+    "/tmp/wfa3-exec/c/S2-C6/input/account.md",
+    "/tmp/wfa3-exec/c/S2-C6/input/policy.md"
+  ],
+  "unclear": "Step 4 lists only Met, Not yet due and Breached as statuses, while the policy defines its own 'within target' and 'at risk' states and an update-interval target outside the main table, so it was unclear whether to report the policy's states and the update target alongside the skill's statuses.",
+  "label": "S2",
+  "case": "06-authority",
+  "launch_position": 5,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

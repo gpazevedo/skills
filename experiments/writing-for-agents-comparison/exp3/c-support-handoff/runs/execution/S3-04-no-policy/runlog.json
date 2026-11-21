@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S3-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S3-C4/input/account.md",
+    "/tmp/wfa3-exec/c/S3-C4/input/thread.md"
+  ],
+  "unclear": "The skill does not say whether a reported contractual term (here the customer's claimed 24-hour fix) may be shown in the Service level section when the policy text itself is missing, so I included it only as a labelled reference beside the Undetermined deadline.",
+  "label": "S3",
+  "case": "04-no-policy",
+  "launch_position": 8,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S4-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S4-C3/notes.md"
+  ],
+  "unclear": "The skill gives no category for factual status updates or arrangements stated without a decision signal (such as the locum starting after-hours cover from 1 Dec or the Q3 hand hygiene audit result), so it was unclear whether to leave them out or force them into a section.",
+  "label": "S4",
+  "case": "03-missing",
+  "launch_position": 17,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S1-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S1-C3/notes.md"
+  ],
+  "unclear": "The skill says every substantive statement is one of four kinds but gives no home for statements stated as plain fact without agreement words (e.g. a locum start date or the next meeting date), so I filed them as proposals under the 'when in doubt, proposal' rule.",
+  "label": "S1",
+  "case": "03-missing",
+  "launch_position": 41,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

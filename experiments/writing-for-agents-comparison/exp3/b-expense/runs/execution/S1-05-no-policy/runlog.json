@@ -1,0 +1,22 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S1-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S1-C5/input/claim.md",
+    "/tmp/wfa3-exec/b/S1-C5/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S1-C5/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S1-C5/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S1-C5/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S1-C5/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S1-C5/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S1-C5/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S1-C5/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S1-C5/input/receipts/R09.md"
+  ],
+  "unclear": "With no policy supplied, the skill does not define how to compute the 'receipt-supported total' when a receipt amount differs from the claimed amount or a receipt does not match its line, so I counted only the receipt-backed amounts of matching lines.",
+  "label": "S1",
+  "case": "05-no-policy",
+  "launch_position": 96,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

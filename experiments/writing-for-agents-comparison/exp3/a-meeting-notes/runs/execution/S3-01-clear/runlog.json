@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S3-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S3-C1/notes.md"
+  ],
+  "unclear": "The skill does not say whether status statements that record no change (such as the v1 endpoint staying up until Android catches up) count as decisions, or how to word a combined section when only some of its item types (open questions vs proposals vs contradictions) are empty.",
+  "label": "S3",
+  "case": "01-clear",
+  "launch_position": 50,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

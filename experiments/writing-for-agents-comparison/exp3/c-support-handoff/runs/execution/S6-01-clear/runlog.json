@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S6-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S6-C1/input/thread.md",
+    "/tmp/wfa3-exec/c/S6-C1/input/account.md",
+    "/tmp/wfa3-exec/c/S6-C1/input/policy.md"
+  ],
+  "unclear": "The skill says the next action should be a single action but often the most discriminating test depends on a pending commitment (here the 16:00 update to get customer agreement), and it does not say how to handle an action that needs both, nor whether open questions should include points raised as unconfirmed in internal notes rather than explicitly asked.",
+  "label": "S6",
+  "case": "01-clear",
+  "launch_position": 108,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

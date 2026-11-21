@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S6-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S6-C4/notes.md"
+  ],
+  "unclear": "The skill does not say whether a plan stated without a speaker or an agreement marker (such as a fallback date) counts as a decision or a proposal, nor whether an explicitly reversed decision should also be listed as a contradiction.",
+  "label": "S6",
+  "case": "04-conflicts",
+  "launch_position": 26,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

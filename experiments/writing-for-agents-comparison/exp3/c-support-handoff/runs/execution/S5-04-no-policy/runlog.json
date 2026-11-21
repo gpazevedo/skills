@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S5-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S5-C4/input/account.md",
+    "/tmp/wfa3-exec/c/S5-C4/input/thread.md"
+  ],
+  "unclear": "The skill does not say how to treat a commitment's status when the supplied thread export ends long before the as-of time, so it is unclear whether a promise with no recorded fulfilment should be marked missed or not determinable.",
+  "label": "S5",
+  "case": "04-no-policy",
+  "launch_position": 16,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

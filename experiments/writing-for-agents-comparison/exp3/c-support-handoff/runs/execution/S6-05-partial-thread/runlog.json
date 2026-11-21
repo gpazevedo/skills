@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S6-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S6-C5/input/thread.md",
+    "/tmp/wfa3-exec/c/S6-C5/input/account.md",
+    "/tmp/wfa3-exec/c/S6-C5/input/policy.md"
+  ],
+  "unclear": "The skill sets \"now\" to the last thread message's timestamp but does not say whether a later ticket event (here the 11:00 UTC escalation after the 10:40 UTC message) counts, nor how to record a partially supplied input such as a thread export missing messages or an account record with a blank field.",
+  "label": "S6",
+  "case": "05-partial-thread",
+  "launch_position": 14,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

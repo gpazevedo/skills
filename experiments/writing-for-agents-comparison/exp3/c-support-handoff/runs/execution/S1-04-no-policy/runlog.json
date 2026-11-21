@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S1-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S1-C4/input/account.md",
+    "/tmp/wfa3-exec/c/S1-C4/input/thread.md"
+  ],
+  "unclear": "The skill does not say what to use as the current time when the case gives none, how to tag facts that come from the account record rather than the thread, or whether diagnostic checks (as opposed to fix attempts) belong under 'What has been tried' given its fixed result labels.",
+  "label": "S1",
+  "case": "04-no-policy",
+  "launch_position": 24,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

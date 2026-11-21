@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S1-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S1-C4/notes.md"
+  ],
+  "unclear": "The skill does not say whether a decision announced by the person with authority but without words like 'agreed' (e.g. a bolded 'Pour moves to Fri 20 Nov' from the site manager) counts as a decision, or how to treat conditional actions that belong to an unagreed proposal (e.g. the rain-day call).",
+  "label": "S1",
+  "case": "04-conflicts",
+  "launch_position": 99,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

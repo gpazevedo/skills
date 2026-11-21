@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S4-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S4-C5/input/thread.md",
+    "/tmp/wfa3-exec/c/S4-C5/input/account.md",
+    "/tmp/wfa3-exec/c/S4-C5/input/policy.md"
+  ],
+  "unclear": "Step 1 covers a wholly missing input but not one that is present yet incomplete (a blank support-level field, a partial thread export), and step 5 says to stop the calculation where a term is missing without saying whether conditional deadlines for each possible level may be shown, so I showed them as clearly labelled conditional rows.",
+  "label": "S4",
+  "case": "05-partial-thread",
+  "launch_position": 57,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

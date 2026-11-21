@@ -1,0 +1,25 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S1-C2/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/claim.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/policy.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R09.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R10.md",
+    "/tmp/wfa3-exec/b/S1-C2/input/receipts/R11.md"
+  ],
+  "unclear": "The skill does not say how to treat claim-level policy requirements that are not tied to a line item, such as the General Manager approval threshold in clause 2.1, so I reported it only as an approver summary point.",
+  "label": "S1",
+  "case": "02-violations",
+  "launch_position": 6,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

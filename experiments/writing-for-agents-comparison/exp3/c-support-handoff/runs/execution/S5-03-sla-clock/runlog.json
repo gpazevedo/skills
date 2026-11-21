@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S5-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S5-C3/input/thread.md",
+    "/tmp/wfa3-exec/c/S5-C3/input/account.md",
+    "/tmp/wfa3-exec/c/S5-C3/input/policy.md"
+  ],
+  "unclear": "The skill says to take the as-of time from the user or the environment but does not say what to do when the environment clock is earlier than the thread's latest entries, so I treated the as-of time as unknown and asked for it.",
+  "label": "S5",
+  "case": "03-sla-clock",
+  "launch_position": 45,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

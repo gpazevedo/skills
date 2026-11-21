@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S4-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S4-C4/notes.md"
+  ],
+  "unclear": "The skill does not say how to fill the single Deadline cell of an action item when the notes give two conflicting deadlines for it, so I listed both and pointed to the contradiction.",
+  "label": "S4",
+  "case": "04-conflicts",
+  "launch_position": 11,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

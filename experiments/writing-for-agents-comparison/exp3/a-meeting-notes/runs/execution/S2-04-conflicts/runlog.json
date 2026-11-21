@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S2-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S2-C4/notes.md"
+  ],
+  "unclear": "The skill does not say how to treat a later restatement that changes a deadline without an explicit revision signal and without the owner's confirmation (the TMP date), so I treated it as a contradiction rather than a revision.",
+  "label": "S2",
+  "case": "04-conflicts",
+  "launch_position": 52,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S4-C6/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S4-C6/input/thread.md",
+    "/tmp/wfa3-exec/c/S4-C6/input/account.md",
+    "/tmp/wfa3-exec/c/S4-C6/input/policy.md"
+  ],
+  "unclear": "The skill does not say which reference time to measure the service level against when the current date precedes the thread or no handoff time is given, nor how to tag support-side explanatory statements (such as how a device behaves) that are neither customer reports nor direct observations.",
+  "label": "S4",
+  "case": "06-authority",
+  "launch_position": 51,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

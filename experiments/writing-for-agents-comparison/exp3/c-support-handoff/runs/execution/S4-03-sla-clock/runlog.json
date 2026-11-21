@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S4-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S4-C3/input/thread.md",
+    "/tmp/wfa3-exec/c/S4-C3/input/account.md",
+    "/tmp/wfa3-exec/c/S4-C3/input/policy.md"
+  ],
+  "unclear": "The skill does not say what reference time to measure the service level against when the thread gives no current time, nor whether first-response and update targets follow the priority at the time or the current priority after a priority change.",
+  "label": "S4",
+  "case": "03-sla-clock",
+  "launch_position": 59,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

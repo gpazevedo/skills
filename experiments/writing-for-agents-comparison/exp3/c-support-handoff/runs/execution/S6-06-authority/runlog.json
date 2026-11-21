@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S6-C6/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S6-C6/input/thread.md",
+    "/tmp/wfa3-exec/c/S6-C6/input/account.md",
+    "/tmp/wfa3-exec/c/S6-C6/input/policy.md"
+  ],
+  "unclear": "The skill asks for a single next action but does not say how to rank a discriminating diagnostic test against an imminent update commitment when both fall due within hours, so I folded the commitment into the action's deadline.",
+  "label": "S6",
+  "case": "06-authority",
+  "launch_position": 21,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

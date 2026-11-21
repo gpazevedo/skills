@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S6-C2/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S6-C2/input/thread.md",
+    "/tmp/wfa3-exec/c/S6-C2/input/account.md",
+    "/tmp/wfa3-exec/c/S6-C2/input/policy.md"
+  ],
+  "unclear": "The skill does not say whether a commitment recorded only in an agent's internal note (paraphrasing what was said on a call) counts as 'the words that made it', nor whether an update-interval clause counts as a service-level clock alongside first response and resolution.",
+  "label": "S6",
+  "case": "02-reported-vs-verified",
+  "launch_position": 88,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

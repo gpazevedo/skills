@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S5-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S5-C5/notes.md"
+  ],
+  "unclear": "The skill does not say whether pending status items that are not posed as questions (such as Juniper client feedback or the office lease terms) belong under open questions, nor how to handle notes that contain no decisions or actions beyond writing 'None recorded'.",
+  "label": "S5",
+  "case": "05-empty",
+  "launch_position": 70,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

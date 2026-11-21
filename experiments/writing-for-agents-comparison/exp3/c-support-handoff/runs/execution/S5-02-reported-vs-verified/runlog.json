@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S5-C2/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S5-C2/input/thread.md",
+    "/tmp/wfa3-exec/c/S5-C2/input/account.md",
+    "/tmp/wfa3-exec/c/S5-C2/input/policy.md"
+  ],
+  "unclear": "The skill does not say what to do when the as-of time is days after the last thread entry, so it was unclear whether to compute statuses against the environment clock (which I did, flagging it under Gaps) or treat the handoff as written at escalation time.",
+  "label": "S5",
+  "case": "02-reported-vs-verified",
+  "launch_position": 56,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

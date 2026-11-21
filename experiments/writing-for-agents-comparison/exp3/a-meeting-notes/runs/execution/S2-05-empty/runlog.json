@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S2-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S2-C5/notes.md"
+  ],
+  "unclear": "The skill does not say whether group agreement on a fact rather than a course of action (e.g. 'general agreement that the current one is bad') counts as a decision signal, or whether status updates with pending items (e.g. awaiting client feedback, lease terms) belong in open questions.",
+  "label": "S2",
+  "case": "05-empty",
+  "launch_position": 13,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

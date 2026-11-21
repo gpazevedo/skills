@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S3-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S3-C5/notes.md"
+  ],
+  "unclear": "The skill does not say whether pure status updates (e.g. a client's launch date or pending client feedback) should appear anywhere in the brief, or how to mark an open question whose asker is not named given the template's speaker placeholder.",
+  "label": "S3",
+  "case": "05-empty",
+  "launch_position": 85,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

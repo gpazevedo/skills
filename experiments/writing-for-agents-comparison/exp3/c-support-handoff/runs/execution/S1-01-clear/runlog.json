@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S1-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S1-C1/input/thread.md",
+    "/tmp/wfa3-exec/c/S1-C1/input/account.md",
+    "/tmp/wfa3-exec/c/S1-C1/input/policy.md"
+  ],
+  "unclear": "The skill asks for status 'at the current time' but does not say whether that means the wall-clock time or the time of the case snapshot when the supplied export has no 'now', so I computed status as at the last thread entry and flagged it for re-checking.",
+  "label": "S1",
+  "case": "01-clear",
+  "launch_position": 2,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S2-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S2-C1/notes.md"
+  ],
+  "unclear": "The skill does not say whether an explicitly parked or deferred item that also has a follow-up task (like dark mode here) should appear as an action item as well as an open question, or only as an open question.",
+  "label": "S2",
+  "case": "01-clear",
+  "launch_position": 47,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S3-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S3-C5/input/account.md",
+    "/tmp/wfa3-exec/c/S3-C5/input/policy.md",
+    "/tmp/wfa3-exec/c/S3-C5/input/thread.md"
+  ],
+  "unclear": "The skill says to flag a priority mismatch and to compute a deadline beside an Undetermined one only under an 'obvious reading', but does not say whether to list alternative deadlines for every possible missing support level, or how to treat a commitment that a prior agent's later actions already fulfilled after reassignment.",
+  "label": "S3",
+  "case": "05-partial-thread",
+  "launch_position": 73,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,22 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S6-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S6-C5/input/claim.md",
+    "/tmp/wfa3-exec/b/S6-C5/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S6-C5/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S6-C5/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S6-C5/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S6-C5/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S6-C5/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S6-C5/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S6-C5/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S6-C5/input/receipts/R09.md"
+  ],
+  "unclear": "When no policy is supplied the skill sets every verdict to needs information but does not say whether claimant questions should still cover receipt-level problems that would matter under any policy, or whether the four-sentence summary limit still applies when many policy decisions are deferred.",
+  "label": "S6",
+  "case": "05-no-policy",
+  "launch_position": 9,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

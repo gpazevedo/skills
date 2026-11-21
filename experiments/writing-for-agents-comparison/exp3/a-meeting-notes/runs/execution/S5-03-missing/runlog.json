@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S5-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S5-C3/notes.md"
+  ],
+  "unclear": "The skill does not say whether individual task statements phrased as 'needs to' or 'X will' count as decision-like statements that must also appear under Decisions or Proposals, or only as action items, and it gives no format for marking an empty contradictions list within the combined open questions section.",
+  "label": "S5",
+  "case": "03-missing",
+  "launch_position": 23,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

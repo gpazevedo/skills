@@ -1,0 +1,25 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S2-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/claim.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/policy.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R09.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R10.md",
+    "/tmp/wfa3-exec/b/S2-C4/input/receipts/R11.md"
+  ],
+  "unclear": "The skill says to give receipts ids R1, R2, ... but the supplied receipts already carry ids R01 to R11, and it does not say whether to keep those or renumber, nor whether an approval required by the policy for the whole claim (such as Finance Director sign-off) that is not supplied should make items needs information or go only to the approver summary.",
+  "label": "S2",
+  "case": "04-branches",
+  "launch_position": 55,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

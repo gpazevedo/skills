@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S4-C2/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S4-C2/notes.md"
+  ],
+  "unclear": "The skill does not say whether a task the group discussed but nobody took on (such as the volunteer sign-up sheet) belongs in the action items table with owner 'not stated' or only under proposals and open questions.",
+  "label": "S4",
+  "case": "02-proposals",
+  "launch_position": 28,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

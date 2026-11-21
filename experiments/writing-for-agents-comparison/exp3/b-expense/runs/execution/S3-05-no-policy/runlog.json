@@ -1,0 +1,22 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S3-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S3-C5/input/claim.md",
+    "/tmp/wfa3-exec/b/S3-C5/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S3-C5/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S3-C5/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S3-C5/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S3-C5/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S3-C5/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S3-C5/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S3-C5/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S3-C5/input/receipts/R09.md"
+  ],
+  "unclear": "The skill says to ask for a missing input before starting but does not say how to proceed when the policy is missing and no answer can be obtained, and it does not say which claimed total to reconcile against when the form's stated total differs from the sum of its line items.",
+  "label": "S3",
+  "case": "05-no-policy",
+  "launch_position": 104,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

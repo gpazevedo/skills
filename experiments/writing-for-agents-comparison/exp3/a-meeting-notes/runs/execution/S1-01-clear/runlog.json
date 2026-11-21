@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S1-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S1-C1/notes.md"
+  ],
+  "unclear": "The skill does not say how to classify recorded outcomes without agreement words such as 'Parked' or a status statement like 'stays up ... no change there', nor whether a discussed-and-rejected option belongs under Proposals.",
+  "label": "S1",
+  "case": "01-clear",
+  "launch_position": 10,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S3-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S3-C4/notes.md"
+  ],
+  "unclear": "The skill does not say whether a plainly stated plan without settled wording (such as a fallback date) counts as an 'outcome stated as final' decision or as an unclear point to treat as a proposal, nor whether an owner can be taken from a speaker who states their own task date (e.g. 'Ivan: formwork ready for inspection Tue 17 Nov').",
+  "label": "S3",
+  "case": "04-conflicts",
+  "launch_position": 80,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

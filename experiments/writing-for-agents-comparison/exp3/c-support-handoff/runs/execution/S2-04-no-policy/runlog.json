@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S2-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S2-C4/input/account.md",
+    "/tmp/wfa3-exec/c/S2-C4/input/thread.md"
+  ],
+  "unclear": "The skill says to judge service-level status against the current time if known but gives no reference time for marking commitments Kept/Missed/Open, so it was unclear whether to judge the 17:00 UK commitment against the last thread timestamp (Open) or the current date (Missed).",
+  "label": "S2",
+  "case": "04-no-policy",
+  "launch_position": 32,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

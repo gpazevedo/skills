@@ -1,0 +1,24 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S1-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/claim.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/policy.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/receipts/R09.md",
+    "/tmp/wfa3-exec/b/S1-C3/input/receipts/R11.md"
+  ],
+  "unclear": "When a receipt's date falls outside the trip dates and also differs from the claimed date, the skill could support either reject (evidence settles it is outside the trip) or needs information (a date that does not match the line), and I chose needs information.",
+  "label": "S1",
+  "case": "03-mismatches",
+  "launch_position": 34,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,22 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S4-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S4-C5/input/claim.md",
+    "/tmp/wfa3-exec/b/S4-C5/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S4-C5/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S4-C5/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S4-C5/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S4-C5/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S4-C5/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S4-C5/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S4-C5/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S4-C5/input/receipts/R09.md"
+  ],
+  "unclear": "The skill says to ask for a missing policy and stop at Step 1, but does not say what, if anything, the written review should contain in that case (just the question, or the inventory too), so I included the question plus the Step 1 inventory and stopped there.",
+  "label": "S4",
+  "case": "05-no-policy",
+  "launch_position": 101,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

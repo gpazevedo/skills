@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S5-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S5-C1/input/thread.md",
+    "/tmp/wfa3-exec/c/S5-C1/input/account.md",
+    "/tmp/wfa3-exec/c/S5-C1/input/policy.md"
+  ],
+  "unclear": "The skill takes the as-of time from the environment but does not say what to do when that time is far later than the end of the supplied thread, so I used the environment clock and flagged the gap.",
+  "label": "S5",
+  "case": "01-clear",
+  "launch_position": 107,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

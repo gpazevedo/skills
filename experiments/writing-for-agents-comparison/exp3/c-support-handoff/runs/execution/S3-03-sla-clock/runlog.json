@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S3-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S3-C3/input/thread.md",
+    "/tmp/wfa3-exec/c/S3-C3/input/account.md",
+    "/tmp/wfa3-exec/c/S3-C3/input/policy.md"
+  ],
+  "unclear": "The skill does not say whether a support statement that is not a promise (such as telling the customer the hourly checks would cover the weekend) or an already-completed action (such as passing a request to the account manager) counts as a commitment, so I recorded the latter as one and noted the former separately.",
+  "label": "S3",
+  "case": "03-sla-clock",
+  "launch_position": 78,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

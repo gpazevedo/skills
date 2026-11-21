@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S1-C2/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S1-C2/input/thread.md",
+    "/tmp/wfa3-exec/c/S1-C2/input/account.md",
+    "/tmp/wfa3-exec/c/S1-C2/input/policy.md"
+  ],
+  "unclear": "The skill says to state the current time used but does not say whether that is the real clock or the time of the last thread entry, which matters here because the export ends on 16 Nov and the system clock is 21 Nov, so the status flips from within target to breached.",
+  "label": "S1",
+  "case": "02-reported-vs-verified",
+  "launch_position": 15,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

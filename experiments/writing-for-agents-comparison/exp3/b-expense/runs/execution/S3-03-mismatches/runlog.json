@@ -1,0 +1,24 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S3-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/claim.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/policy.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/receipts/R09.md",
+    "/tmp/wfa3-exec/b/S3-C3/input/receipts/R11.md"
+  ],
+  "unclear": "The skill does not say whether a receipt naming another person (line 4) should be Reject under an exclusion clause or Needs information as a receipt that conflicts with the claim, so I chose Reject because clauses 1.2 and 3.4 explicitly exclude it.",
+  "label": "S3",
+  "case": "03-mismatches",
+  "launch_position": 69,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

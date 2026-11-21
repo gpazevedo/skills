@@ -1,0 +1,25 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S6-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/claim.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/policy.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R09.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R10.md",
+    "/tmp/wfa3-exec/b/S6-C1/input/receipts/R11.md"
+  ],
+  "unclear": "The skill does not say what the approver summary should contain when there are no decisions for the approver to make, so I stated that none were needed.",
+  "label": "S6",
+  "case": "01-clean",
+  "launch_position": 44,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

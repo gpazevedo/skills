@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S5-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S5-C5/input/account.md",
+    "/tmp/wfa3-exec/c/S5-C5/input/policy.md",
+    "/tmp/wfa3-exec/c/S5-C5/input/thread.md"
+  ],
+  "unclear": "The skill says to mark the service level not computable when the plan or tier is missing, but does not say whether to still show conditional deadlines per support level or how to treat an as-of time far later than the end of a partial thread export.",
+  "label": "S5",
+  "case": "05-partial-thread",
+  "launch_position": 97,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

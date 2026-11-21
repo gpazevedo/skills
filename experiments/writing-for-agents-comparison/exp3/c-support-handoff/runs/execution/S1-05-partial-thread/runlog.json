@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S1-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S1-C5/input/thread.md",
+    "/tmp/wfa3-exec/c/S1-C5/input/account.md",
+    "/tmp/wfa3-exec/c/S1-C5/input/policy.md"
+  ],
+  "unclear": "The skill covers inputs that are missing outright but not an account record that is present with its support-level field blank, or a thread export that is missing some messages, and it does not say whether the current time should be the real clock time or the latest time in the case.",
+  "label": "S1",
+  "case": "05-partial-thread",
+  "launch_position": 60,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

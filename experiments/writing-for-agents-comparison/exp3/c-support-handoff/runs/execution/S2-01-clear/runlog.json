@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S2-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S2-C1/input/thread.md",
+    "/tmp/wfa3-exec/c/S2-C1/input/account.md",
+    "/tmp/wfa3-exec/c/S2-C1/input/policy.md"
+  ],
+  "unclear": "The skill says to give service-level status against the current time 'if you know it', but does not say whether a session date unrelated to the case counts as knowing it, so I used the last thread timestamp and noted this under Gaps.",
+  "label": "S2",
+  "case": "01-clear",
+  "launch_position": 43,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,22 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S5-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S5-C5/input/claim.md",
+    "/tmp/wfa3-exec/b/S5-C5/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S5-C5/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S5-C5/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S5-C5/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S5-C5/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S5-C5/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S5-C5/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S5-C5/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S5-C5/input/receipts/R09.md"
+  ],
+  "unclear": "The skill says to ask for a missing policy before starting but does not say how to proceed if no answer comes, so it was unclear whether to stop or to review every line as needs information with the policy treated as silent, which is what I did.",
+  "label": "S5",
+  "case": "05-no-policy",
+  "launch_position": 100,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

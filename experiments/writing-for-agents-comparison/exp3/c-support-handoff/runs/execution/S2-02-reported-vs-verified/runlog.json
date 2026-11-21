@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S2-C2/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S2-C2/input/thread.md",
+    "/tmp/wfa3-exec/c/S2-C2/input/account.md",
+    "/tmp/wfa3-exec/c/S2-C2/input/policy.md"
+  ],
+  "unclear": "The skill's service-level statuses are only Met, Not yet due or Breached, so it is unclear whether to report the policy's own 'at risk' state and how to judge an update-interval target like 'once each business day' that has no single deadline.",
+  "label": "S2",
+  "case": "02-reported-vs-verified",
+  "launch_position": 46,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

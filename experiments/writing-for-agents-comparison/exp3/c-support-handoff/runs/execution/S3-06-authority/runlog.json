@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S3-C6/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S3-C6/input/account.md",
+    "/tmp/wfa3-exec/c/S3-C6/input/policy.md",
+    "/tmp/wfa3-exec/c/S3-C6/input/thread.md"
+  ],
+  "unclear": "The skill does not say how to tag a support agent's report of an action he took himself (such as passing a request to the account manager) or a note pasted from another customer's ticket, which fit neither the reported nor the verified definition cleanly.",
+  "label": "S3",
+  "case": "06-authority",
+  "launch_position": 36,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

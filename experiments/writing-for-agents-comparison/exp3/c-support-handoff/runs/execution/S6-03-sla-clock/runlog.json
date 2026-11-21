@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S6-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S6-C3/input/thread.md",
+    "/tmp/wfa3-exec/c/S6-C3/input/account.md",
+    "/tmp/wfa3-exec/c/S6-C3/input/policy.md"
+  ],
+  "unclear": "The skill does not say where to record a policy obligation that the case shows was missed but that is neither a commitment nor a service-level clock (here the clause 5.2 Team Lead notification for an at-risk P2 escalation), and its next-action rule does not say how to choose between an untested cause and an earlier-due commitment when both apply.",
+  "label": "S6",
+  "case": "03-sla-clock",
+  "launch_position": 82,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

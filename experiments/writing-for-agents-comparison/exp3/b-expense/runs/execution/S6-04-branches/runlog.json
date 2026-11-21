@@ -1,0 +1,25 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S6-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/claim.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/policy.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R09.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R10.md",
+    "/tmp/wfa3-exec/b/S6-C4/input/receipts/R11.md"
+  ],
+  "unclear": "The skill does not say whether the difference between the claimant's own currency conversion and the policy-rate conversion counts as a reduction on an approved item or how to show the claimed amount when the claim gives both a foreign-currency and a GBP figure, so I treated the claimant's GBP figure as the claimed amount and the rate difference as a reduction.",
+  "label": "S6",
+  "case": "04-branches",
+  "launch_position": 61,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

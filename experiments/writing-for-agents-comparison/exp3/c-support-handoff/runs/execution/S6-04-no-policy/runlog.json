@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S6-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S6-C4/input/thread.md",
+    "/tmp/wfa3-exec/c/S6-C4/input/account.md"
+  ],
+  "unclear": "Step 4 gives two criteria for the single next action (most discriminating untested cause test versus earliest unmet commitment) with only 'usually' to rank them, so it is unclear which wins when a customer commitment is due within hours, and it does not say whether the owner may be someone other than the next-tier engineer reading the handoff.",
+  "label": "S6",
+  "case": "04-no-policy",
+  "launch_position": 27,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

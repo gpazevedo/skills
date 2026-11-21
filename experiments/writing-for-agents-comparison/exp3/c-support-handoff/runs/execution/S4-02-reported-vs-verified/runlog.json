@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S4-C2/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S4-C2/input/thread.md",
+    "/tmp/wfa3-exec/c/S4-C2/input/account.md",
+    "/tmp/wfa3-exec/c/S4-C2/input/policy.md"
+  ],
+  "unclear": "The skill does not say which reference time to measure the service level against when the handoff is written after the thread ends, and its Reported/Verified tags do not cleanly fit support's own statements of product behaviour (such as the LED guide or local buffering), so I chose the escalation time and tagged those case by case.",
+  "label": "S4",
+  "case": "02-reported-vs-verified",
+  "launch_position": 58,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

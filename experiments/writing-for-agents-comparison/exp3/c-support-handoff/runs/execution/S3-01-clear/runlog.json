@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S3-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S3-C1/input/account.md",
+    "/tmp/wfa3-exec/c/S3-C1/input/policy.md",
+    "/tmp/wfa3-exec/c/S3-C1/input/thread.md"
+  ],
+  "unclear": "The skill asks for one concrete next action but the nearest commitment (16:00 update), the nearest run (07:00 next day) and the key reported-to-verified question all compete, and it does not say how to pick between them or whether a conditional follow-on step is allowed within that one action.",
+  "label": "S3",
+  "case": "01-clear",
+  "launch_position": 87,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

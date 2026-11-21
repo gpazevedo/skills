@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S5-C6/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S5-C6/input/thread.md",
+    "/tmp/wfa3-exec/c/S5-C6/input/account.md",
+    "/tmp/wfa3-exec/c/S5-C6/input/policy.md"
+  ],
+  "unclear": "The skill does not say what to do when the environment clock gives a time that predates the ticket itself, so I treated the as-of time as unknown and gave statuses as at escalation in addition to marking current statuses not computed.",
+  "label": "S5",
+  "case": "06-authority",
+  "launch_position": 30,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

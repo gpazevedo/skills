@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S5-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S5-C1/notes.md"
+  ],
+  "unclear": "The skill does not say whether wording outside both lists, such as \"parked\" or a bare \"Next sync: Tue 10 Nov\", counts as a decision-like statement that must be classified, or whether a contradiction-free notes file should get an explicit \"none\" line inside the combined open questions and contradictions section.",
+  "label": "S5",
+  "case": "01-clear",
+  "launch_position": 20,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

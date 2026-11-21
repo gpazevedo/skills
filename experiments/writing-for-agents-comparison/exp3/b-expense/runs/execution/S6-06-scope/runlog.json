@@ -1,0 +1,28 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S6-C6/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/claim.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/policy.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/email-from-claimant.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/previous-claim-september.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R09.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R10.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R11.md",
+    "/tmp/wfa3-exec/b/S6-C6/input/receipts/R12.md"
+  ],
+  "unclear": "The skill does not say whether an undefined policy judgement word such as \"reasonable\" (clause 6.2) counts as a policy gap that forces needs information, or whether contextual facts like a car park being at a client site must be shown on the receipt itself rather than the claim form.",
+  "label": "S6",
+  "case": "06-scope",
+  "launch_position": 33,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

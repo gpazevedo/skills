@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S1-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S1-C3/input/thread.md",
+    "/tmp/wfa3-exec/c/S1-C3/input/account.md",
+    "/tmp/wfa3-exec/c/S1-C3/input/policy.md"
+  ],
+  "unclear": "The skill says to state the current time used but gives no rule for when the environment clock predates the thread, and its status labels (Met / Within target / Breached) do not include the policy's own 'at risk' category, so I reported status as at the escalation timestamp and noted 'at risk' alongside 'Within target'.",
+  "label": "S1",
+  "case": "03-sla-clock",
+  "launch_position": 106,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

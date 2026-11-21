@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S4-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S4-C1/input/thread.md",
+    "/tmp/wfa3-exec/c/S4-C1/input/account.md",
+    "/tmp/wfa3-exec/c/S4-C1/input/policy.md"
+  ],
+  "unclear": "The skill asks for a reference time and a single 'next deadline' in the header but does not say what to use as the reference time when no current time is supplied, or whether open commitments and update-cadence deadlines count as service-level deadlines for that header field.",
+  "label": "S4",
+  "case": "01-clear",
+  "launch_position": 102,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S2-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S2-C3/input/account.md",
+    "/tmp/wfa3-exec/c/S2-C3/input/policy.md",
+    "/tmp/wfa3-exec/c/S2-C3/input/thread.md"
+  ],
+  "unclear": "The skill's status labels (Met, Not yet due, Breached) do not map onto the policy's own 'at risk' state, and it does not say whether the first-response target should use the priority at the time of response or the later assigned priority, or how to treat a session clock that is earlier than the thread's last timestamp.",
+  "label": "S2",
+  "case": "03-sla-clock",
+  "launch_position": 40,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

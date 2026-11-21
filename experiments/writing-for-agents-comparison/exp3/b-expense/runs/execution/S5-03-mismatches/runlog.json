@@ -1,0 +1,24 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S5-C3/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/policy.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/claim.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/receipts/R09.md",
+    "/tmp/wfa3-exec/b/S5-C3/input/receipts/R11.md"
+  ],
+  "unclear": "The skill says a receipt that contradicts the line is 'needs information' but also says to reject when a quoted clause excludes the item, so it is unclear which applies when the receipt's own date (line 11, 18 October) falls outside the trip and contradicts the claimed date.",
+  "label": "S5",
+  "case": "03-mismatches",
+  "launch_position": 103,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

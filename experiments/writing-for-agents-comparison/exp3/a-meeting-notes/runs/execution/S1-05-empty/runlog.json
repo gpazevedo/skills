@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S1-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S1-C5/notes.md"
+  ],
+  "unclear": "The skill does not say whether plain status updates (which neither settle, propose, assign nor question anything) belong in the brief, or whether implied open items such as 'waiting on product sheets' count as questions.",
+  "label": "S1",
+  "case": "05-empty",
+  "launch_position": 31,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

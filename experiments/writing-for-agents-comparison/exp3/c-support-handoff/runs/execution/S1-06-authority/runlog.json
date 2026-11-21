@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S1-C6/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S1-C6/input/thread.md",
+    "/tmp/wfa3-exec/c/S1-C6/input/account.md",
+    "/tmp/wfa3-exec/c/S1-C6/input/policy.md"
+  ],
+  "unclear": "The skill says to state the current time used or leave the status for the user, but does not say what to do when the available clock is earlier than the case itself, or whether a status as at the last case event is an acceptable substitute.",
+  "label": "S1",
+  "case": "06-authority",
+  "launch_position": 92,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S4-C1/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S4-C1/notes.md"
+  ],
+  "unclear": "The skill does not say how to classify a topic that was explicitly deferred or parked (like dark mode), which fits proposal, open question and decision-not-to-do at once, nor whether a rejected option folded into a decision (the 4.2.1 split) should also be listed separately.",
+  "label": "S4",
+  "case": "01-clear",
+  "launch_position": 75,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

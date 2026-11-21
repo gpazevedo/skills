@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S4-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S4-C5/notes.md"
+  ],
+  "unclear": "The skill requires every substantive statement to fit one of five categories but has no category for plain status updates (e.g. billings up 8%, files sent to the printer), and the handoff summary may not introduce anything outside the sections, so it was unclear where such status information belongs.",
+  "label": "S4",
+  "case": "05-empty",
+  "launch_position": 18,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/c/S2-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/c/S2-C5/input/thread.md",
+    "/tmp/wfa3-exec/c/S2-C5/input/account.md",
+    "/tmp/wfa3-exec/c/S2-C5/input/policy.md"
+  ],
+  "unclear": "The skill covers a wholly missing input but not a supplied input with a blank required field (here the account record's empty support level), nor whether showing deadlines for every possible tier counts as borrowing a term from another tier.",
+  "label": "S2",
+  "case": "05-partial-thread",
+  "launch_position": 94,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

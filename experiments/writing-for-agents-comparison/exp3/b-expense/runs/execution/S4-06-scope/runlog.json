@@ -1,0 +1,28 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S4-C6/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/claim.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/policy.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/email-from-claimant.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/previous-claim-september.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R09.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R10.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R11.md",
+    "/tmp/wfa3-exec/b/S4-C6/input/receipts/R12.md"
+  ],
+  "unclear": "The skill does not say whether a policy term that calls for judgement, such as 'reasonable costs' for a working meal, counts as an ambiguous policy (Needs information) or as an approver decision, nor how to treat supporting documents beyond claim, receipts and policy, such as a previous claim or the claimant's email.",
+  "label": "S4",
+  "case": "06-scope",
+  "launch_position": 3,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

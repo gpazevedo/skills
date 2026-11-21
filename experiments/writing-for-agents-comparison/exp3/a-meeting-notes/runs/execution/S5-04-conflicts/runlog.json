@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S5-C4/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S5-C4/notes.md"
+  ],
+  "unclear": "The skill does not say how to record an action item whose deadline is stated differently in two places, nor whether logistics details stated without closure wording (such as pour volume and pump arrival time) count as decision-like statements that must be classified as proposals.",
+  "label": "S5",
+  "case": "04-conflicts",
+  "launch_position": 63,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

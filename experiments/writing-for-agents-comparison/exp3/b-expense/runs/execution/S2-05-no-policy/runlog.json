@@ -1,0 +1,22 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/b/S2-C5/skill/SKILL.md",
+    "/tmp/wfa3-exec/b/S2-C5/input/claim.md",
+    "/tmp/wfa3-exec/b/S2-C5/input/receipts/R01.md",
+    "/tmp/wfa3-exec/b/S2-C5/input/receipts/R02.md",
+    "/tmp/wfa3-exec/b/S2-C5/input/receipts/R03.md",
+    "/tmp/wfa3-exec/b/S2-C5/input/receipts/R04.md",
+    "/tmp/wfa3-exec/b/S2-C5/input/receipts/R05.md",
+    "/tmp/wfa3-exec/b/S2-C5/input/receipts/R06.md",
+    "/tmp/wfa3-exec/b/S2-C5/input/receipts/R07.md",
+    "/tmp/wfa3-exec/b/S2-C5/input/receipts/R08.md",
+    "/tmp/wfa3-exec/b/S2-C5/input/receipts/R09.md"
+  ],
+  "unclear": "The skill says to give receipts ids R1, R2, ... but does not say whether to keep ids the receipts already carry (here R01 to R09), and with no policy it does not say whether the inventory and matching tables from steps 1 and 2 belong in the output, which lists only four parts.",
+  "label": "S2",
+  "case": "05-no-policy",
+  "launch_position": 54,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

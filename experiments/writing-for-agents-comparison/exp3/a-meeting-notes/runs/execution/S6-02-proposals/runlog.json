@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S6-C2/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S6-C2/notes.md"
+  ],
+  "unclear": "The skill does not say whether a proposal that the notes also leave as an unanswered question (such as the paused ticket price) should appear under both Open questions and Proposed, not decided, or only once.",
+  "label": "S6",
+  "case": "02-proposals",
+  "launch_position": 68,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}

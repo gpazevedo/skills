@@ -1,0 +1,13 @@
+{
+  "files_read": [
+    "/tmp/wfa3-exec/a/S2-C2/skill/SKILL.md",
+    "/tmp/wfa3-exec/a/S2-C2/notes.md"
+  ],
+  "unclear": "The skill does not say whether a commitment conditional on someone else (e.g. 'Will ask them', or a newsletter release date given as the deadline) should be treated as an action item with that date as its deadline, so I judged those cases myself.",
+  "label": "S2",
+  "case": "02-proposals",
+  "launch_position": 1,
+  "reads_outside_sandbox": [],
+  "extra_files_in_sandbox": [],
+  "note": ""
+}
