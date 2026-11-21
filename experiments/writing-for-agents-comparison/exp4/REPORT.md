@@ -32,13 +32,13 @@ V2 is ahead in every part, but only b and c clear 20% on their own. Part a is be
 ## Other measures
 
 - Skill quality checklist (Q1, 12 points): means O 7.6 / V2 11.2 (a), 9.8 / 11.4 (b), 8.7 / 11.5 (c).
-- Output length: V2 outputs are shorter in all three parts (a 687 vs 733 words, b 875 vs 968, c 1,248 vs 1,747).
-- Description trigger test, reported separately: both descriptions scored 20 of 20 hits and 0 false triggers over two runs each. The test has a ceiling effect and cannot separate them.
+- Output length: V2 outputs are shorter in all three parts (mean words, V2 vs O: a 687 vs 733, b 875 vs 968, c 1,248 vs 1,747).
+- Description trigger test, reported separately: both descriptions scored 20 of 20 in all four runs (`trigger-test/RESULTS.json`). The test has a ceiling effect and cannot separate them.
 
 ## Limits
 
-- Same-model generation and grading. Graders disagreed on several deductions (summary length, padding questions), so single scores are noisy, though both graders' scores are averaged.
-- Part c's concision bound and as-of times were set after a dry run, before any candidate existed, and are recorded in the phase 3 commit.
+- Same-model generation and grading. The two graders disagreed on some scores (mean absolute difference 1.59 points in part a, up to 11.4 on one output), so single scores are noisy. Both graders' totals are averaged.
+- Part c's as-of time line and concision bound are pre-registered in `PLAN.md`.
 - The permutation test for the full 30-per-condition design is a Monte Carlo estimate, not exact, as noted in the phase 3 commit.
 - Q1 part a's first run gave generic justifications and was rerun; Q1 b and c were rerun after rate-limit failures. See `GRADE-NOTES.md`.
 - Coordinator subagents could not launch runs; all 216 executions were launched directly. See `EXEC-NOTES.md`.
