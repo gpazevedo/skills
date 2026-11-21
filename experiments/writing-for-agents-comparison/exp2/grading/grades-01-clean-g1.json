@@ -1,0 +1,72 @@
+[
+  {
+    "review_id": "hsax",
+    "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 15, "summary": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [],
+    "notes": "All 11 items approved at the key's amounts (key items 1-11); corrected total AUD 1,583.20 matches key; 'Questions for the claimant: None' matches key (no questions); summary about 95 words, consistent. Grounds: key has no non-plain-approval items and no unsupported concerns are attached, so 15. 'Other findings' is a brief four-bullet checks note, which the key's grading notes say not to penalise. Item 7 per-head figure implied by '3 x 120.00 = AUD 360.00 cap' against 297.00."
+  },
+  {
+    "review_id": "kmlm",
+    "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 15, "summary": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [],
+    "notes": "All 11 items approved at the key's amounts; total AUD 1,583.20 matches key; no questions, as key requires; item 7 states '99.00 AUD per head claimed'. Summary about 134 words, treated as roughly 120 and consistent. 'Claim-level checks' (three bullets) and 'Unmatched receipts: None' are a brief checks note, not substantial extra content."
+  },
+  {
+    "review_id": "kmqn",
+    "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 15, "summary": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [],
+    "notes": "All 11 items approved at the key's amounts; total AUD 1,583.20 matches key; no questions; summary about 115 words, consistent. extra_content true: a 13-bullet 'Policy clauses cited' section quoting the policy, plus a second per-item claimed/approved/rejected/open table and duplicate/mismatch sections, go well beyond the four requested parts and a brief checks note. Usefulness 4 because the length makes it slower for the approver to read, though everything in it is correct."
+  },
+  {
+    "review_id": "phzq",
+    "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 15, "summary": 5},
+    "total": 95.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {"criterion": "summary", "points": 5, "item": "summary for the approver", "quote": "All 11 receipts (R01 to R11) match exactly one line each; none is unmatched or shared. The claim form's stated total of AUD 1,583.20 equals the sum of its lines.", "reason": "Summary is about 169 words in six bullets, well over the rubric's roughly 120-word limit, and repeats verdict counts, totals and receipt cross-checks already given elsewhere; clearly bloated, so 5 instead of 10. It is consistent with the verdicts and the key's total of AUD 1,583.20."}
+    ],
+    "notes": "All 11 items approved at the key's amounts; total AUD 1,583.20 matches key; no questions; item 7 states 'AUD 99.00 per head'."
+  },
+  {
+    "review_id": "sxwd",
+    "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 15, "summary": 5},
+    "total": 95.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {"criterion": "summary", "points": 5, "item": "summary for the approver", "quote": "Megan Lacey claims AUD 1,583.20 for the Adelaide site inspection and client meeting (project HE-2291), and the corrected total to reimburse is also AUD 1,583.20. ... The claim is under AUD 2,000.00, so line manager approval (Tom Arkwright) is sufficient and General Manager approval is not required (Policy 2.1).", "reason": "Summary is about 142 words, not short by the rubric's roughly 120-word standard (about 18 percent over), restating each cap check already in the verdict table; 5 instead of 10. It is consistent with the verdicts and the key's total."}
+    ],
+    "notes": "All 11 items approved at the key's amounts; total $1,583.20 (AUD) matches key; no questions; item 7 per-head 'AUD 99.00 per head' given in summary. Uses '$' in the table, but the summary states AUD and the claim is AUD only, so no amount error."
+  },
+  {
+    "review_id": "xtsz",
+    "scores": {"coverage": 15, "verdict_accuracy": 30, "grounds": 15, "amounts": 15, "questions": 15, "summary": 10},
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [],
+    "notes": "All 11 items approved at the key's amounts; total AUD 1,583.20 matches key; questions 'None' as key requires. Summary about 129 words, treated as roughly 120 and consistent. Header paragraph and one-line receipt cross-check are a brief checks note. Item 7 per-head figure implied by the 360.00 cap for three attendees against 297.00."
+  }
+]

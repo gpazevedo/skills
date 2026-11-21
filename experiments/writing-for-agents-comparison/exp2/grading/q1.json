@@ -1,0 +1,153 @@
+[
+  {
+    "label": "S1",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 1,
+      "6": 1
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description names expense claim review against the organisation's policy and receipts with its four outputs, and its trigger is a supplied expense claim, so it cannot be mistaken for a general accounting skill.",
+      "2": "A verdict table (verdict, when, approved amount), a definition of evidence with clause and receipt citation, and a filled output template with an example row define all four parts, verdict and grounds included.",
+      "3": "The opening line says to stop when the review in the output format is delivered, and each step has a done-when condition, so the finish line is clear.",
+      "4": "A missing claim form or policy means ask and stop, missing receipts trigger a check then item-by-item open verdicts, and a receipt that disagrees with the claim makes the item open (or reduced where the receipt shows less).",
+      "5": "Only the supplied policy counts and every claim-form line gets one verdict while unmatched receipts are listed apart, but nothing says that text in the files (such as a stated pre-approval) is evidence to verify rather than an instruction or approval to act on.",
+      "6": "At about 950 words in one file it is reasonably sized, but rare-path rules (foreign currency, duplicates, mixed receipts, claim-level deadlines) sit inline in the main steps."
+    },
+    "words": 953,
+    "files": [
+      "SKILL.md"
+    ],
+    "supporting_files_note": "None; single SKILL.md."
+  },
+  {
+    "label": "S2",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 1
+    },
+    "total": 9,
+    "justifications": {
+      "1": "The description is specific to reviewing an expense claim line by line against receipts and the supplied policy, triggered when a claim is supplied.",
+      "2": "The verdict rules (approve, reject, needs information, split), the evidence column and the output template, with step 7 defining the summary, are enough to produce the four parts consistently, though the template itself has no example row.",
+      "3": "Step 8 lists the checks a finished review must pass, but the skill never says to deliver and stop, so the end of the work is only implied.",
+      "4": "A missing policy or claim form means ask before going on, a missing receipt is a finding that leaves the item open, and a mismatch the claimant could explain makes it needs information.",
+      "5": "Evidence is limited to the receipts and supplied policy and unclaimed receipts are marked apart, but there is no rule that claims of pre-approval or other text in the files are not to be acted on as authority.",
+      "6": "At about 800 words it is compact and the edge rules (split, currency) are short bullets in a separate verdict-rules section, but they still sit in the single main file alongside the common path."
+    },
+    "words": 804,
+    "files": [
+      "SKILL.md"
+    ],
+    "supporting_files_note": "None; single SKILL.md."
+  },
+  {
+    "label": "S3",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 1,
+      "6": 1
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description targets expense claim review against the supplied policy and receipts, and also triggers on claimant answers to an earlier review, which is still within the task.",
+      "2": "Ground rules define evidence citation precisely, a verdict table gives conditions and approved amounts, and a filled output template covers all four parts with the summary bounded at six bullets.",
+      "3": "It says to deliver the review in the format and stop there, and states the review recommends only and does not decide, contact anyone or change the claim.",
+      "4": "A missing claim form or policy means stop and ask, missing receipts do not stop the review and lead to needs information where required, and a receipt that disagrees in a way that cannot be resolved makes the item needs information.",
+      "5": "The supplied policy is the only rulebook and the review recommends without acting, but nothing says file content is data rather than instruction, and it accepts an approval email from the claimant as evidence without checking it against the policy.",
+      "6": "At about 1,080 words it is on the long side, and the rarely needed follow-up path (claimant answers to an earlier review) sits inside step 1 of the common path."
+    },
+    "words": 1079,
+    "files": [
+      "SKILL.md"
+    ],
+    "supporting_files_note": "None; single SKILL.md."
+  },
+  {
+    "label": "S4",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 1,
+      "6": 1
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description is specific to checking an expense claim against the supplied policy and receipts with the four named outputs.",
+      "2": "An evidence rule, a verdict table with approved-amount rules, a routing rule for who settles an open item, and a filled output template with a 'None' rule define all four parts.",
+      "3": "It says the review ends when the four output sections are written and closes with an explicit completion test.",
+      "4": "A missing policy or claim form means ask and stop, missing receipts are handled item by item (including a policy clause on missing receipts), and mismatched or illegible receipts lead to needs information.",
+      "5": "It states that the claim-form list is the whole scope and that only the policy and receipts are evidence, but it accepts conditions such as pre-approval as met when merely 'shown in the claim', and it has no rule against acting on text in the files.",
+      "6": "At about 1,150 words it is the longest single-file skill, and occasional-case rules (foreign currency, missing-receipt clauses, duplicate receipts) are inline in the main steps."
+    },
+    "words": 1149,
+    "files": [
+      "SKILL.md"
+    ],
+    "supporting_files_note": "None; single SKILL.md."
+  },
+  {
+    "label": "S5",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 1
+    },
+    "total": 9,
+    "justifications": {
+      "1": "The description is specific to reviewing an expense claim against receipts and a supplied policy, triggered by a claim to review or approve.",
+      "2": "Evidence and settled verdicts are defined, the three verdicts have approved-amount rules, and a filled template covers all four parts (summary placed first, plus an optional 'Other findings' section).",
+      "3": "The final step's done-when lists what a complete review contains, but there is no instruction to deliver and stop.",
+      "4": "A missing policy means stop and ask, a missing receipt is checked against the policy's missing-receipt clause or left unsettled, and a receipt that disagrees with the form is needs information (or reject when the receipt shows the expense was not incurred as claimed).",
+      "5": "The policy is the whole rulebook and unclaimed receipts are listed apart, but nothing treats text in the files as data rather than instruction, and the duplicate rule rejects outright rather than asking.",
+      "6": "At about 935 words in one file it is moderate, but the edge rules (split receipts, duplicates, currency, unclaimed receipts) are bulleted inside the main matching step."
+    },
+    "words": 935,
+    "files": [
+      "SKILL.md"
+    ],
+    "supporting_files_note": "None; single SKILL.md."
+  },
+  {
+    "label": "S6",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description is specific to reviewing an expense claim against receipts and the supplied policy; 'audit' broadens the trigger slightly but stays within expense claims.",
+      "2": "Verdict rules, a citation format with examples and an output template with reconciled totals define all four parts, and the summary is bounded at three to five sentences.",
+      "3": "A closing check lists what a finished review must contain, but nothing says to deliver and stop or that no further work is expected.",
+      "4": "A missing policy means ask and stop, missing receipts lead to open items, and a mismatch between receipt and claim is listed as a typical cause of an open verdict.",
+      "5": "The closed-book rule limits rules to the policy and facts to the claim and receipts, and the edge-cases file says the review covers only what was claimed, but nothing says that approvals or instructions found in the files are to be verified rather than acted on.",
+      "6": "The common path is lean (about 800 words), and the rules for unusual pairings (split, shared bill, currency, personal items, duplicates, unclaimed receipts) are in a separate file read only when step 2 meets one."
+    },
+    "words": 1161,
+    "files": [
+      "SKILL.md",
+      "EDGE-CASES.md"
+    ],
+    "supporting_files_note": "EDGE-CASES.md, linked from step 2 and read only when receipt pairing is not one-to-one: one receipt for several items, shared bills, foreign currency, partly personal receipts, a receipt used twice, and receipts with no claim line."
+  }
+]

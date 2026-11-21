@@ -1,0 +1,187 @@
+[
+  {
+    "review_id": "bhsv",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 12,
+      "summary": 5
+    },
+    "total": 92,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2",
+        "quote": "(absent) Questions section contains only '1. #9: please attach Hemi Parata's written pre-approval...'",
+        "reason": "Q2 [recommended] absent: no question to the claimant about the IRANZ invoice INV-88213 already paid on MP-EXP-2026-0931. Weight 1 (verdict is reject, so not essential). Weights: Q1 2 + Q2 1 + approver question on item 5 1 (raised: 'please override if you judge otherwise') + optional fast-track 1 (included: 'clause 3.3 provides for payment in the fortnightly run') = 5; raised 4; 15 x 4/5 = 12."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Of NZD 1,833.40 claimed, NZD 763.40 is approved for payment now ... clause 3.3 provides for payment in the fortnightly run.",
+        "reason": "Summary present and consistent with verdicts and total, but 186 words, well above the roughly 120-word limit, so clearly bloated: 5 instead of 10."
+      }
+    ]
+  },
+  {
+    "review_id": "bqkn",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Verdicts: 8 approve, 2 needs information, 1 reject. Claimed NZD 1,833.40; approved NZD 421.40 ...",
+        "reason": "Summary present and consistent with verdicts and total, but 254 words, well above the roughly 120-word limit, so clearly bloated: 5 instead of 10. Six bullets, including a claim-arithmetic note."
+      }
+    ]
+  },
+  {
+    "review_id": "buwt",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 28.64,
+      "grounds": 15,
+      "amounts": 10,
+      "questions": 12,
+      "summary": 10
+    },
+    "total": 90.6,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "verdict_accuracy",
+        "points": 1.36,
+        "item": "5",
+        "quote": "approve | NZD 342.00 | ... Reasonableness at NZD 68.40 per head is for the director to confirm; summary: 'As director you must also decide whether the NZD 342.00 working dinner ... counts as \"reasonable\" under clause 6.2. I have approved it on that basis.'",
+        "reason": "Key item 5 accepts Approve only if the review states explicitly that 6.2 sets no cap, that 'reasonable' is the approver's judgement, and gives the per-head figure. The per-head figure and the approver's judgement are present, but the review never says 6.2 sets no cap or limit. Verdict not accepted; it is marked uncertain and routed to the director, so it counts 0.5. 30 x 10.5/11 = 28.64."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "total",
+        "quote": "Approved, to reimburse: NZD 763.40",
+        "reason": "763.40 is the key's total only when the item 5 alternative is taken in full. Here it follows from the item 5 verdict error already penalised and is consistent with the review's own verdicts, so 5 instead of 10. No partial amounts invented: +5."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2",
+        "quote": "(absent from questions) Other findings: 'the director may want to raise it with the claimant'",
+        "reason": "Q2 [recommended] absent: no question to the claimant about the IRANZ invoice INV-88213 already paid on MP-EXP-2026-0931. Weight 1 (verdict is reject, so not essential). Weights: Q1 2 + Q2 1 + approver question on item 5 1 (raised in summary) + optional fast-track 1 (included in Other findings, refers to 3.3) = 5; raised 4; 15 x 4/5 = 12."
+      }
+    ]
+  },
+  {
+    "review_id": "iljt",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "The corrected total to reimburse is 763.40 NZD of the 1,833.40 NZD claimed. ... a matter for the fortnightly payment schedule in 3.3.",
+        "reason": "Summary present and consistent with verdicts and total, but 167 words, well above the roughly 120-word limit, so clearly bloated: 5 instead of 10."
+      }
+    ]
+  },
+  {
+    "review_id": "msaf",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 12.5,
+      "summary": 5
+    },
+    "total": 92.5,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 2.5,
+        "item": "Q2",
+        "quote": "(absent) Questions section contains only '1. Item 9: Please attach Hemi Parata's written pre-approval...'",
+        "reason": "Q2 [recommended] absent: no question to the claimant about the IRANZ invoice INV-88213 already paid on MP-EXP-2026-0931. Weight 1 (verdict is reject, so not essential). Weights: Q1 2 + Q2 1 + approver question on item 5 2 (essential, verdict is needs information; raised: 'needs your ruling') + optional fast-track 1 (included: 'cannot go into this week's payment run as the claimant asked unless that is supplied', hotel held, no promise) = 6; raised 5; 15 x 5/6 = 12.5."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Of 11 line items, 8 are approved, 1 is rejected and 2 need information ... No receipt is claimed under more than one line item on this claim.",
+        "reason": "Summary present and consistent with verdicts and total, but 185 words, well above the roughly 120-word limit, so clearly bloated: 5 instead of 10."
+      }
+    ]
+  },
+  {
+    "review_id": "tydb",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 12,
+      "summary": 5
+    },
+    "total": 92,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2",
+        "quote": "(absent) Questions section contains only '1. Item 9: Please attach Hemi Parata's written pre-approval...'",
+        "reason": "Q2 [recommended] absent: no question to the claimant about the IRANZ invoice INV-88213 already paid on MP-EXP-2026-0931. Weight 1 (verdict is reject, so not essential). Weights: Q1 2 + Q2 1 + approver question on item 5 1 (raised: 'Please rule on whether the working dinner (item 5) is \"reasonable\"') + optional fast-track 1 (included, refers to 3.3) = 5; raised 4; 15 x 4/5 = 12."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "The claim totals NZD 1,833.40; NZD 763.40 can be reimbursed now ... has not been processed.",
+        "reason": "Summary present and consistent with verdicts and total, but 207 words, well above the roughly 120-word limit, so clearly bloated: 5 instead of 10."
+      }
+    ]
+  }
+]

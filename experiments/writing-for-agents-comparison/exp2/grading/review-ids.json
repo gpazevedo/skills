@@ -1,0 +1,148 @@
+{
+  "ids": {
+    "xtsz": {
+      "case": "01-clean",
+      "label": "S4"
+    },
+    "kmlm": {
+      "case": "01-clean",
+      "label": "S1"
+    },
+    "kmqn": {
+      "case": "01-clean",
+      "label": "S2"
+    },
+    "phzq": {
+      "case": "01-clean",
+      "label": "S3"
+    },
+    "sxwd": {
+      "case": "01-clean",
+      "label": "S6"
+    },
+    "hsax": {
+      "case": "01-clean",
+      "label": "S5"
+    },
+    "ocwu": {
+      "case": "02-violations",
+      "label": "S3"
+    },
+    "nqyc": {
+      "case": "02-violations",
+      "label": "S6"
+    },
+    "lvox": {
+      "case": "02-violations",
+      "label": "S2"
+    },
+    "jxxf": {
+      "case": "02-violations",
+      "label": "S4"
+    },
+    "mbnw": {
+      "case": "02-violations",
+      "label": "S1"
+    },
+    "ulvf": {
+      "case": "02-violations",
+      "label": "S5"
+    },
+    "osic": {
+      "case": "03-mismatches",
+      "label": "S6"
+    },
+    "uuik": {
+      "case": "03-mismatches",
+      "label": "S3"
+    },
+    "glpx": {
+      "case": "03-mismatches",
+      "label": "S5"
+    },
+    "gzjw": {
+      "case": "03-mismatches",
+      "label": "S4"
+    },
+    "zbxo": {
+      "case": "03-mismatches",
+      "label": "S1"
+    },
+    "ncia": {
+      "case": "03-mismatches",
+      "label": "S2"
+    },
+    "pkxe": {
+      "case": "04-branches",
+      "label": "S4"
+    },
+    "wmnm": {
+      "case": "04-branches",
+      "label": "S5"
+    },
+    "yexb": {
+      "case": "04-branches",
+      "label": "S2"
+    },
+    "pcad": {
+      "case": "04-branches",
+      "label": "S1"
+    },
+    "scry": {
+      "case": "04-branches",
+      "label": "S6"
+    },
+    "ojse": {
+      "case": "04-branches",
+      "label": "S3"
+    },
+    "lewr": {
+      "case": "05-no-policy",
+      "label": "S2"
+    },
+    "lipz": {
+      "case": "05-no-policy",
+      "label": "S6"
+    },
+    "bcey": {
+      "case": "05-no-policy",
+      "label": "S3"
+    },
+    "qbqn": {
+      "case": "05-no-policy",
+      "label": "S5"
+    },
+    "auba": {
+      "case": "05-no-policy",
+      "label": "S1"
+    },
+    "dcow": {
+      "case": "05-no-policy",
+      "label": "S4"
+    },
+    "bqkn": {
+      "case": "06-scope",
+      "label": "S3"
+    },
+    "msaf": {
+      "case": "06-scope",
+      "label": "S4"
+    },
+    "tydb": {
+      "case": "06-scope",
+      "label": "S6"
+    },
+    "iljt": {
+      "case": "06-scope",
+      "label": "S1"
+    },
+    "bhsv": {
+      "case": "06-scope",
+      "label": "S2"
+    },
+    "buwt": {
+      "case": "06-scope",
+      "label": "S5"
+    }
+  }
+}

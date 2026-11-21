@@ -1,0 +1,142 @@
+[
+  {
+    "review_id": "ojse",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 12,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 92,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 3,
+        "item": "1",
+        "quote": "if the approver reads \"incurred\" in Policy 8.1 as the event month, the October rate gives GBP 323.00 instead of GBP 326.80.",
+        "reason": "Attaches a doubt to approved item 1 that the files do not support: R01 shows invoice and payment on 24.09.2026, so 8.1 gives the September rate, and the key calls the October rate (323.00) an error. Rubric deduction of 3 per such approved item."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "(summary section of about 199 words in six bullets)",
+        "reason": "Consistent with verdicts and total, but clearly bloated against the rubric's roughly 120-word limit."
+      }
+    ]
+  },
+  {
+    "review_id": "pcad",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "pkxe",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "the per diem itself (GBP 28.28, clause 7.2 partial-day rate of EUR 42.00 for 12 and 15 October); and the card fees (GBP 26.98, clause 8.4), with a further GBP 19.69 across six EUR items from converting at the clause 8.2 monthly rates",
+        "reason": "Summary is about 163 words (clearly over roughly 120) and double counts the GBP 4.48 per diem rate difference: 28.28 already includes it, so the listed reductions add to 146.81, not the stated 142.33."
+      }
+    ]
+  },
+  {
+    "review_id": "scry",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 12,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 92,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 3,
+        "item": "8",
+        "quote": "the only judgement call is the EUR 7.00 poster tube on item 8, approved here as \"materials for Foundation work\" under Policy 9.1.",
+        "reason": "Key item 8 is a plain approval under 9.1 with R07 itemised 39.00 + 7.00, and the grading notes say item 8 should be approved without invented concerns; flagging the tube to the approver as a judgement call is a concern the files do not support. Rubric deduction of 3 per such approved item."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "(summary section of about 160 words)",
+        "reason": "Consistent with verdicts and total, but clearly bloated against the rubric's roughly 120-word limit."
+      }
+    ]
+  },
+  {
+    "review_id": "wmnm",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "yexb",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]

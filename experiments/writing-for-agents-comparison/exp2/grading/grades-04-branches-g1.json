@@ -1,0 +1,151 @@
+[
+  {
+    "review_id": "ojse",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "- Verdicts: 9 approve (3 at the claimed amount, 6 reduced), 3 reject, 0 needs information. ... - All 11 receipts match a claim line; R11 also supplied the claim form's conversion rate, which Policy 8.1 does not accept.",
+        "reason": "Summary for the approver is about 199 words, well above the rubric's 'roughly 120 words or fewer', so it is not short; consistent with verdicts and total (GBP 1,273.41), so 5 rather than 0."
+      }
+    ]
+  },
+  {
+    "review_id": "pcad",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "pkxe",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Of 12 line items, 9 are approved (3 of them at the claimed amount and 6 reduced), 3 are rejected and none need information. ... Because the corrected total is above GBP 1,000.00, clause 2.3 requires Finance Director approval in addition to the line manager.",
+        "reason": "Summary for the approver is about 163 words, well above the rubric's 'roughly 120 words or fewer', so it is not short; consistent with verdicts and total (GBP 1,273.41), so 5 rather than 0."
+      }
+    ]
+  },
+  {
+    "review_id": "scry",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 12,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 92,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 3,
+        "item": "8",
+        "quote": "the only judgement call is the EUR 7.00 poster tube on item 8, approved here as \"materials for Foundation work\" under Policy 9.1",
+        "reason": "Key item 8 is an ordinary approval under 9.1 (R07 itemised 39.00 + 7.00, approved at cost) and the grading notes say item 8 should be approved without invented concerns; flagging the poster tube to the approver as a judgement call is a concern the files do not support. Rubric fixes 3 points per such item."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Aoife Brennan claimed GBP 1,415.74 for the Berlin forum trip; ... approved here as \"materials for Foundation work\" under Policy 9.1.",
+        "reason": "Summary for the approver is about 160 words, well above the rubric's 'roughly 120 words or fewer', so it is not short; consistent with verdicts and total (GBP 1,273.41), so 5 rather than 0."
+      }
+    ]
+  },
+  {
+    "review_id": "wmnm",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "The corrected total to reimburse is GBP 1,273.41 against GBP 1,415.74 claimed, with GBP 142.33 withheld and nothing pending. ... so the Finance Director must approve this claim as well as the line manager, Marcus Oyelaran (Policy 2.3).",
+        "reason": "Summary for the approver is about 143 words, well above the rubric's 'roughly 120 words or fewer', so it is not short; consistent with verdicts and total (GBP 1,273.41), so 5 rather than 0."
+      }
+    ]
+  },
+  {
+    "review_id": "yexb",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Of GBP 1,415.74 claimed, approve GBP 1,273.41 for reimbursement now, reject GBP 142.33, and nothing is open. ... so it needs Finance Director approval in addition to the line manager's (clause 2.3).",
+        "reason": "Summary for the approver is about 140 words, well above the rubric's 'roughly 120 words or fewer', so it is not short; consistent with verdicts and total (GBP 1,273.41), so 5 rather than 0."
+      }
+    ]
+  }
+]

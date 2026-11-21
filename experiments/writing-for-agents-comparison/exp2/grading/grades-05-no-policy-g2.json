@@ -1,0 +1,257 @@
+[
+  {
+    "review_id": "auba",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 0,
+      "questions": 5.0,
+      "summary": 10
+    },
+    "total": 60.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 15,
+        "item": "4, 8",
+        "quote": "(absent)",
+        "reason": "Grounds scored on receipt problems actually reported (case-specific scoring). Neither the item 4 discrepancy (claimed 24.90, R04 21.90) nor the item 8 receipt mismatch (R08 dated 4 October 2026, Osborne Park) is reported. 0/2."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "total",
+        "quote": "(absent)",
+        "reason": "No receipt-supported total (key: 2,046.80; max 2,099.50) or per-item supported amounts given; no corrected total at all."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Key's partially approved amount for item 4 (21.90) is not given."
+      },
+      {
+        "criterion": "questions",
+        "points": 10,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 [essential, weight 2] raised; Q2 [essential, 2], Q3 [1] and Q4 [1] absent. 15 x 2/6 = 5."
+      }
+    ]
+  },
+  {
+    "review_id": "bcey",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 0,
+      "questions": 5.0,
+      "summary": 10
+    },
+    "total": 60.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 15,
+        "item": "4, 8",
+        "quote": "(absent)",
+        "reason": "Grounds scored on receipt problems actually reported (case-specific scoring). Neither the item 4 discrepancy (claimed 24.90, R04 21.90) nor the item 8 receipt mismatch (R08 dated 4 October 2026, Osborne Park) is reported. 0/2."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "total",
+        "quote": "(absent)",
+        "reason": "No receipt-supported total (key: 2,046.80; max 2,099.50) or per-item supported amounts given; no corrected total at all."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Key's partially approved amount for item 4 (21.90) is not given."
+      },
+      {
+        "criterion": "questions",
+        "points": 10,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 [essential, weight 2] raised; Q2 [essential, 2], Q3 [1] and Q4 [1] absent. 15 x 2/6 = 5."
+      }
+    ]
+  },
+  {
+    "review_id": "dcow",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 0,
+      "questions": 5.0,
+      "summary": 10
+    },
+    "total": 60.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 15,
+        "item": "4, 8",
+        "quote": "(absent)",
+        "reason": "Grounds scored on receipt problems actually reported (case-specific scoring). Neither the item 4 discrepancy (claimed 24.90, R04 21.90) nor the item 8 receipt mismatch (R08 dated 4 October 2026, Osborne Park) is reported. 0/2."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "total",
+        "quote": "(absent)",
+        "reason": "No receipt-supported total (key: 2,046.80; max 2,099.50) or per-item supported amounts given; no corrected total at all."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Key's partially approved amount for item 4 (21.90) is not given."
+      },
+      {
+        "criterion": "questions",
+        "points": 10,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 [essential, weight 2] raised; Q2 [essential, 2], Q3 [1] and Q4 [1] absent. 15 x 2/6 = 5."
+      }
+    ]
+  },
+  {
+    "review_id": "lipz",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 0,
+      "questions": 5.0,
+      "summary": 10
+    },
+    "total": 60.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 15,
+        "item": "4, 8",
+        "quote": "(absent)",
+        "reason": "Grounds scored on receipt problems actually reported (case-specific scoring). Neither the item 4 discrepancy (claimed 24.90, R04 21.90) nor the item 8 receipt mismatch (R08 dated 4 October 2026, Osborne Park) is reported. 0/2."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "total",
+        "quote": "(absent)",
+        "reason": "No receipt-supported total (key: 2,046.80; max 2,099.50) or per-item supported amounts given; no corrected total at all."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Key's partially approved amount for item 4 (21.90) is not given."
+      },
+      {
+        "criterion": "questions",
+        "points": 10,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 [essential, weight 2] raised; Q2 [essential, 2], Q3 [1] and Q4 [1] absent. 15 x 2/6 = 5."
+      }
+    ]
+  },
+  {
+    "review_id": "qbqn",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 0,
+      "questions": 7.5,
+      "summary": 10
+    },
+    "total": 62.5,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 15,
+        "item": "4, 8",
+        "quote": "(absent)",
+        "reason": "Grounds scored on receipt problems actually reported (case-specific scoring). Neither the item 4 discrepancy (claimed 24.90, R04 21.90) nor the item 8 receipt mismatch (R08 dated 4 October 2026, Osborne Park) is reported. 0/2. The inventory tables list R4 at AUD 21.90 and R8 dated 4 October 2026 but never flag either as a problem."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "total",
+        "quote": "Pending: AUD 2,102.50, across 1 to 9",
+        "reason": "Detects the 2,012.50 vs 2,102.50 form error, but gives no receipt-supported total (2,046.80) or per-item supported amounts; pending figure uses claimed amounts including 24.90 and 52.70."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Key's partially approved amount for item 4 (21.90) is not given."
+      },
+      {
+        "criterion": "questions",
+        "points": 7.5,
+        "item": "Q2, Q3",
+        "quote": "(absent)",
+        "reason": "Raised Q1 [essential, 2] and Q4 [recommended, 1, addressed to approver]; Q2 [essential, 2] and Q3 [recommended, 1] absent. 15 x 3/6 = 7.5."
+      }
+    ]
+  },
+  {
+    "review_id": "lewr",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "No expense policy was supplied, so no item can be approved or rejected and the full AUD 2,102.50 is open (reimburse now: AUD 0.00)...",
+        "reason": "Summary is consistent with verdicts and total but is 155 words, beyond the rubric's roughly 120 words, so it does not meet 'short'; scored 5."
+      }
+    ]
+  }
+]

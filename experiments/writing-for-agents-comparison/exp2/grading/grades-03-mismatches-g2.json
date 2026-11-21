@@ -1,0 +1,222 @@
+[
+  {
+    "review_id": "glpx",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 6,
+      "summary": 10
+    },
+    "total": 91,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2",
+        "quote": "(absent from Questions for the claimant; 'Other findings' only states: 'if Ms Priya Natarajan is a colleague whose ticket the claimant paid, she must claim it herself (Policy 1.2)')",
+        "reason": "Key Q2 (weight 1, recommended since item 4 is rejected) is not put to the claimant; the note in Other findings is addressed to the approver, not a question. Total question weight 5 (Q1 2, Q2 1, Q3 1, Q4 1; Q5 optional and not included); raised 2 of 5, so 15 x 2/5 = 6."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q3",
+        "quote": "(absent from Questions for the claimant; Other findings only notes 'R11 (L11) is dated 18 October 2026, ten days after the trip ended')",
+        "reason": "Key Q3 (weight 1, recommended since item 11 is rejected) not asked of the claimant."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q4",
+        "quote": "(absent from Questions for the claimant; Other findings: 'If the claimant bought lunch on 8 October, he can submit the receipt for that lunch as a new item')",
+        "reason": "Key Q4 (weight 1, recommended) not asked of the claimant as a question."
+      }
+    ]
+  },
+  {
+    "review_id": "gzjw",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 12.5,
+      "summary": 5
+    },
+    "total": 92.5,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 2.5,
+        "item": "Q2",
+        "quote": "(no question about the Leeds ticket; summary only says 'a rail ticket in the name of Ms Priya Natarajan ... which she may claim on her own claim')",
+        "reason": "Key Q2 (weight 1, recommended since item 4 is rejected) is absent. Total weight 6 (Q1 2, Q2 1, Q3 2 as essential because item 11 is needs information, Q4 1; Q5 optional and not included); raised 5 of 6, so 15 x 5/6 = 12.5."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "(summary section is 150 words)",
+        "reason": "Summary is present and consistent with verdicts and total but runs 150 words, well over the rubric's roughly 120 words, so it scores 5 rather than 10 as clearly bloated."
+      }
+    ]
+  },
+  {
+    "review_id": "ncia",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 9,
+      "summary": 5
+    },
+    "total": 89,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2",
+        "quote": "(absent; only questions are on #8 and #10)",
+        "reason": "Key Q2 (weight 1, recommended since item 4 is rejected) not raised. Total weight 5 (Q1 2, Q2 1, Q3 1, Q4 1; Q5 optional and not included); raised Q1 and Q4 = 3 of 5, so 15 x 3/5 = 9."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q3",
+        "quote": "(absent; R11 date appears only under 'Other anomalies': 'R11 is dated 18 October although #11 is claimed for 8 October')",
+        "reason": "Key Q3 (weight 1, recommended since item 11 is rejected) not asked of the claimant."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "(summary section is 146 words)",
+        "reason": "Summary is present and consistent with verdicts and total but runs 146 words, well over the rubric's roughly 120 words, so it scores 5 rather than 10 as clearly bloated."
+      }
+    ]
+  },
+  {
+    "review_id": "osic",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 9,
+      "summary": 5
+    },
+    "total": 89,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2",
+        "quote": "(absent; only questions are on item 8 and item 10)",
+        "reason": "Key Q2 (weight 1, recommended since item 4 is rejected) not raised. Total weight 5 (Q1 2, Q2 1, Q3 1, Q4 1; Q5 optional and not included); raised Q1 and Q4 = 3 of 5, so 15 x 3/5 = 9."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q3",
+        "quote": "(absent; summary only says 'If the claimant holds a different receipt for an 8 October meal, it would need to be submitted as new evidence')",
+        "reason": "Key Q3 (weight 1, recommended since item 11 is rejected) not asked of the claimant."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "(summary section is 167 words)",
+        "reason": "Summary is present and consistent with verdicts and total but runs 167 words, well over the rubric's roughly 120 words, so it scores 5 rather than 10 as clearly bloated."
+      }
+    ]
+  },
+  {
+    "review_id": "uuik",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 6,
+      "summary": 5
+    },
+    "total": 86,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q2",
+        "quote": "(absent; the only question is on line 10)",
+        "reason": "Key Q2 (weight 1, recommended since item 4 is rejected) not raised. Total weight 5 (Q1 2, Q2 1, Q3 1, Q4 1; Q5 optional and not included); raised Q1 only = 2 of 5, so 15 x 2/5 = 6."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q3",
+        "quote": "(absent; summary only says 'If the claimant holds a different receipt for the 8 Oct lunch or evening meal ... those could be submitted as new evidence')",
+        "reason": "Key Q3 (weight 1, recommended since item 11 is rejected) not asked of the claimant."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Q4",
+        "quote": "(absent from Questions for the claimant)",
+        "reason": "Key Q4 (weight 1, recommended) not asked of the claimant."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "(summary section is 184 words)",
+        "reason": "Summary is present and consistent with verdicts and total but runs 184 words, well over the rubric's roughly 120 words, so it scores 5 rather than 10 as clearly bloated."
+      }
+    ]
+  },
+  {
+    "review_id": "zbxo",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "(summary section is 162 words)",
+        "reason": "Summary is present and consistent with verdicts and total but runs 162 words, well over the rubric's roughly 120 words, so it scores 5 rather than 10 as clearly bloated."
+      }
+    ]
+  }
+]

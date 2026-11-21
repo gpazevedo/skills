@@ -1,0 +1,208 @@
+[
+  {
+    "review_id": "glpx",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 6.0,
+      "summary": 10
+    },
+    "total": 91.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 9.0,
+        "item": "Q2, Q3, Q4",
+        "quote": "Questions for the claimant: 1. L10: Can you provide either the receipt for the GBP 14.00 cash taxi ...",
+        "reason": "Only Q1 [essential, weight 2] is raised with the claimant. Q2 (R04 in Ms Natarajan's name; recommended, weight 1, since item 4 is rejected), Q3 (R11 dated 18 Oct; recommended, weight 1) and Q4 (same Station Deli receipt for items 5 and 8; recommended, weight 1) are not put to the claimant; related conditional notes appear only under 'Other findings' as statements to the approver ('If the claimant bought lunch on 8 October, he can submit the receipt'), not as questions. Q5 optional, not included. Score 15 x 2/5 = 6.0."
+      }
+    ]
+  },
+  {
+    "review_id": "gzjw",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 12.5,
+      "summary": 5
+    },
+    "total": 92.5,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 2.5,
+        "item": "Q2",
+        "quote": "(absent: no question about R04 / Ms Priya Natarajan; summary only says 'which she may claim on her own claim')",
+        "reason": "Q2 not raised (recommended, weight 1, item 4 rejected). Raised: Q1 [essential, 2], Q3 (essential because item 11 is needs information, 2), Q4 ('Please supply the receipt for your lunch on 8 October 2026', 1). Q5 optional, not included. Score 15 x 5/6 = 12.5."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Of 11 line items, 7 are approved (one reduced), 1 is rejected and 3 need information. ...",
+        "reason": "Summary section is 150 words, well above the rubric's 'roughly 120 words or fewer'; scored as present but clearly bloated (5 of 10). Content is consistent with verdicts and total."
+      },
+      {
+        "criterion": "amounts",
+        "points": 0,
+        "item": "8",
+        "quote": "Open, pending information: GBP 53.20",
+        "reason": "No points deducted: the pay-now total (449.95) matches the key and item 8 is not approved, but the open/pending figure includes item 8's 11.90, which the key says must never add to any total. Recorded for grader reconciliation."
+      }
+    ]
+  },
+  {
+    "review_id": "ncia",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 9.0,
+      "summary": 5
+    },
+    "total": 89.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 6.0,
+        "item": "Q2, Q3",
+        "quote": "(absent: questions cover only #8 and #10)",
+        "reason": "Q2 (R04 in another person's name; recommended, weight 1, item 4 rejected) and Q3 (R11 dated 18 Oct; recommended, weight 1, item 11 rejected) not raised. Raised: Q1 [essential, 2] and Q4 ('Please supply the receipt for your lunch on 8 October 2026', 1). Q5 optional, not included. Score 15 x 3/5 = 9.0."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Of GBP 539.35 claimed, GBP 449.95 is approved for payment now, GBP 63.50 is rejected and GBP 25.90 is open. ...",
+        "reason": "Summary section is 146 words, well above the rubric's 'roughly 120 words or fewer'; scored as present but clearly bloated (5 of 10). Content is consistent with verdicts and total."
+      },
+      {
+        "criterion": "amounts",
+        "points": 0,
+        "item": "8",
+        "quote": "Open: GBP 25.90",
+        "reason": "No points deducted: the pay-now total (449.95) matches the key and item 8 is not approved, but the open/pending figure includes item 8's 11.90, which the key says must never add to any total. Recorded for grader reconciliation."
+      }
+    ]
+  },
+  {
+    "review_id": "osic",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 9.0,
+      "summary": 5
+    },
+    "total": 89.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 6.0,
+        "item": "Q2, Q3",
+        "quote": "(absent: questions cover only item 8 and item 10)",
+        "reason": "Q2 (R04 in Ms Natarajan's name; recommended, weight 1) and Q3 (R11 dated 18 Oct; recommended, weight 1) not raised with the claimant; the summary's 'If the claimant holds a different receipt for an 8 October meal, it would need to be submitted' is a note to the approver, not a question. Raised: Q1 [essential, 2], Q4 ('Was there a separate lunch on 8 October?', 1). Q5 optional, not included. Score 15 x 3/5 = 9.0."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Daniel Reyes claimed GBP 539.35; the corrected total to reimburse now is GBP 449.95, with GBP 63.50 rejected and GBP 25.90 held open. ...",
+        "reason": "Summary section is 167 words, well above the rubric's 'roughly 120 words or fewer'; scored as present but clearly bloated (5 of 10). Content is consistent with verdicts and total."
+      },
+      {
+        "criterion": "amounts",
+        "points": 0,
+        "item": "8",
+        "quote": "Open:     GBP 25.90 (item 8 GBP 11.90; item 10 GBP 14.00)",
+        "reason": "No points deducted: the pay-now total (449.95) matches the key and item 8 is not approved, but the open/pending figure includes item 8's 11.90, which the key says must never add to any total. Recorded for grader reconciliation."
+      }
+    ]
+  },
+  {
+    "review_id": "uuik",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 6.0,
+      "summary": 5
+    },
+    "total": 86.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 9.0,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent: the only question is '1. Line 10: please supply the receipt for the GBP 14.00 cash taxi ...')",
+        "reason": "Only Q1 [essential, 2] raised. Q2, Q3 and Q4 (each recommended, weight 1) not put to the claimant; the summary's 'If the claimant holds a different receipt ... those could be submitted as new evidence' is a note to the approver, not a question. Q5 optional, not included. Score 15 x 2/5 = 6.0."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "- Verdicts: 7 approve (one of them reduced), 3 reject, 1 needs information across 11 lines. ...",
+        "reason": "Summary section is 184 words, well above the rubric's 'roughly 120 words or fewer'; scored as present but clearly bloated (5 of 10). Content is consistent with verdicts and total."
+      }
+    ]
+  },
+  {
+    "review_id": "zbxo",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "The corrected total to reimburse is 449.95 GBP of the 539.35 GBP claimed, with 53.20 GBP pending. ...",
+        "reason": "Summary section is 162 words, well above the rubric's 'roughly 120 words or fewer'; scored as present but clearly bloated (5 of 10). Content is consistent with verdicts and total."
+      },
+      {
+        "criterion": "amounts",
+        "points": 0,
+        "item": "8",
+        "quote": "Pending, needs information: 53.20 GBP (items 8, 10, 11)",
+        "reason": "No points deducted: the pay-now total (449.95) matches the key and item 8 is not approved, but the open/pending figure includes item 8's 11.90, which the key says must never add to any total. Recorded for grader reconciliation."
+      }
+    ]
+  }
+]

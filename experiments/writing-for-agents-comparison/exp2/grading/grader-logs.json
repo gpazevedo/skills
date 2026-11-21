@@ -1,0 +1,74 @@
+{
+  "01-clean-g1": {
+    "tokens": 101559,
+    "tool_uses": 6,
+    "duration_ms": 64453
+  },
+  "01-clean-g2": {
+    "tokens": 102230,
+    "tool_uses": 6,
+    "duration_ms": 63142
+  },
+  "02-violations-g1": {
+    "tokens": 104097,
+    "tool_uses": 6,
+    "duration_ms": 54365
+  },
+  "02-violations-g2": {
+    "tokens": 104706,
+    "tool_uses": 6,
+    "duration_ms": 66312
+  },
+  "03-mismatches-g1": {
+    "tokens": 109603,
+    "tool_uses": 6,
+    "duration_ms": 109666,
+    "note": "Wrote a helper script outside its sandbox (under /tmp); reported reading nothing outside."
+  },
+  "03-mismatches-g2": {
+    "tokens": 106635,
+    "tool_uses": 6,
+    "duration_ms": 81045,
+    "note": "Wrote a helper script outside its sandbox (under /tmp); reported reading nothing outside."
+  },
+  "04-branches-g1": {
+    "tokens": 111829,
+    "tool_uses": 8,
+    "duration_ms": 107309,
+    "note": "Wrote a helper script outside its sandbox (under /tmp); reported reading nothing outside."
+  },
+  "04-branches-g2": {
+    "tokens": 110585,
+    "tool_uses": 7,
+    "duration_ms": 88472,
+    "note": "Wrote a helper script outside its sandbox (under /tmp); reported reading nothing outside."
+  },
+  "05-no-policy-g1": {
+    "tokens": 96856,
+    "tool_uses": 7,
+    "duration_ms": 107426,
+    "note": "Wrote a helper script outside its sandbox (under /tmp); reported reading nothing outside."
+  },
+  "05-no-policy-g2": {
+    "tokens": 94145,
+    "tool_uses": 6,
+    "duration_ms": 87380
+  },
+  "06-scope-g1": {
+    "tokens": 111012,
+    "tool_uses": 7,
+    "duration_ms": 91545,
+    "note": "Wrote a helper script outside its sandbox (under /tmp); reported reading nothing outside."
+  },
+  "06-scope-g2": {
+    "tokens": 111522,
+    "tool_uses": 6,
+    "duration_ms": 92548,
+    "note": "Wrote a helper script outside its sandbox (under /tmp); reported reading nothing outside."
+  },
+  "q1": {
+    "tokens": 94942,
+    "tool_uses": 9,
+    "duration_ms": 82253
+  }
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "review_id": "hsax",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "kmlm",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 0,
+        "item": "summary",
+        "quote": "the four items of 82.50 AUD or more (printing, client dinner, hotel, parking) are supported by tax invoices",
+        "reason": "No points deducted: summary is 134 words (roughly 120) and consistent with the verdicts and total, but it miscounts the items at or above AUD 82.50 (items 1 and 10, the flights at 268.00 and 254.00, are also above the threshold and have tax invoices per R01/R10). Noted for usefulness only."
+      }
+    ]
+  },
+  {
+    "review_id": "kmqn",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "phzq",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "- Verdicts: 11 approve, 0 reject, 0 needs information. ... - All 11 receipts (R01 to R11) match exactly one line each; none is unmatched or shared. The claim form's stated total of AUD 1,583.20 equals the sum of its lines.",
+        "reason": "Summary is present and consistent with the verdicts and the key's total (AUD 1,583.20), but at about 169 words in six bullets it is well over the rubric's roughly 120-word limit (clearly bloated), so it scores 5 not 10."
+      }
+    ]
+  },
+  {
+    "review_id": "sxwd",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Megan Lacey claims AUD 1,583.20 for the Adelaide site inspection and client meeting (project HE-2291), and the corrected total to reimburse is also AUD 1,583.20. ... line manager approval (Tom Arkwright) is sufficient and General Manager approval is not required (Policy 2.1).",
+        "reason": "Summary is present and consistent with the verdicts and the key's total, but at about 142 words it is not short (roughly 120 words or fewer; about 18% over), so it scores 5 not 10."
+      }
+    ]
+  },
+  {
+    "review_id": "xtsz",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "review_id": "auba",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 0,
+      "questions": 5.0,
+      "summary": 0
+    },
+    "total": 50.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 7.5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Review gives no item verdicts. Key item 4: claimed 24.90 but R04 totals 21.90; this receipt discrepancy is not reported. Grounds scored over items 4 and 8, the two items whose expected verdict is not an approval subject to policy (1 of 2 items missing = 7.5)."
+      },
+      {
+        "criterion": "grounds",
+        "points": 7.5,
+        "item": "8",
+        "quote": "(absent)",
+        "reason": "Key item 8: R08 dated 4 October 2026 at Osborne Park (Perth), not a trip expense; the review does not report this receipt problem."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "total",
+        "quote": "No review has been produced. The skill requires the expense policy and says to ask for it and stop when it is missing.",
+        "reason": "No corrected total and no receipt-supported figure (key: AUD 2,046.80, maximum 2,099.50) or per-item supported amounts; the 2,012.50 vs 2,102.50 line-sum error is not detected. Case-specific scoring: ask-only review earns amounts credit only for figures it reports."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Key item 4 converted amount 21.90 (not 24.90) is not given."
+      },
+      {
+        "criterion": "questions",
+        "points": 10,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 [essential, weight 2] is raised (\"Clarifying question: Please supply Kestrel Freight Pty Ltd's expense policy.\"). Q2 [essential, 2] R08 date/location, Q3 [1] lunch 24.90 vs 21.90, Q4 [1] stated total vs line sum are absent. Score 15 x 2/6 = 5.0."
+      },
+      {
+        "criterion": "summary",
+        "points": 10,
+        "item": "summary",
+        "quote": "No review has been produced. The skill requires the expense policy and says to ask for it and stop when it is missing.",
+        "reason": "No summary for the approver; the closing note only says the review stopped and is addressed to the requester. Treated as absent."
+      }
+    ]
+  },
+  {
+    "review_id": "bcey",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 0,
+      "questions": 5.0,
+      "summary": 0
+    },
+    "total": 50.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 7.5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Review gives no item verdicts. Key item 4: claimed 24.90 but R04 totals 21.90; this receipt discrepancy is not reported. Grounds scored over items 4 and 8, the two items whose expected verdict is not an approval subject to policy (1 of 2 items missing = 7.5)."
+      },
+      {
+        "criterion": "grounds",
+        "points": 7.5,
+        "item": "8",
+        "quote": "(absent)",
+        "reason": "Key item 8: R08 dated 4 October 2026 at Osborne Park (Perth), not a trip expense; the review does not report this receipt problem."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "total",
+        "quote": "Review not started. The expense policy is missing from the inputs, and the review is not carried out against assumed rules.",
+        "reason": "No corrected total and no receipt-supported figure (key: AUD 2,046.80, maximum 2,099.50) or per-item supported amounts; the 2,012.50 vs 2,102.50 line-sum error is not detected. Case-specific scoring: ask-only review earns amounts credit only for figures it reports."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Key item 4 converted amount 21.90 (not 24.90) is not given."
+      },
+      {
+        "criterion": "questions",
+        "points": 10,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 [essential, weight 2] is raised (\"Clarifying question: Please supply Kestrel Freight Pty Ltd's expense policy.\"). Q2 [essential, 2] R08 date/location, Q3 [1] lunch 24.90 vs 21.90, Q4 [1] stated total vs line sum are absent. Score 15 x 2/6 = 5.0."
+      },
+      {
+        "criterion": "summary",
+        "points": 10,
+        "item": "summary",
+        "quote": "Review not started. The expense policy is missing from the inputs, and the review is not carried out against assumed rules.",
+        "reason": "No summary for the approver; the closing note only says the review stopped and is addressed to the requester. Treated as absent."
+      }
+    ]
+  },
+  {
+    "review_id": "dcow",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 0,
+      "questions": 5.0,
+      "summary": 0
+    },
+    "total": 50.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 7.5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Review gives no item verdicts. Key item 4: claimed 24.90 but R04 totals 21.90; this receipt discrepancy is not reported. Grounds scored over items 4 and 8, the two items whose expected verdict is not an approval subject to policy (1 of 2 items missing = 7.5)."
+      },
+      {
+        "criterion": "grounds",
+        "points": 7.5,
+        "item": "8",
+        "quote": "(absent)",
+        "reason": "Key item 8: R08 dated 4 October 2026 at Osborne Park (Perth), not a trip expense; the review does not report this receipt problem."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "total",
+        "quote": "No line item has been given a verdict and no corrected total has been computed.",
+        "reason": "No corrected total and no receipt-supported figure (key: AUD 2,046.80, maximum 2,099.50) or per-item supported amounts; the 2,012.50 vs 2,102.50 line-sum error is not detected. Case-specific scoring: ask-only review earns amounts credit only for figures it reports."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Key item 4 converted amount 21.90 (not 24.90) is not given."
+      },
+      {
+        "criterion": "questions",
+        "points": 10,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 [essential, weight 2] is raised (\"Clarifying question: Please supply Kestrel Freight Pty Ltd's expense policy.\"). Q2 [essential, 2] R08 date/location, Q3 [1] lunch 24.90 vs 21.90, Q4 [1] stated total vs line sum are absent. Score 15 x 2/6 = 5.0."
+      },
+      {
+        "criterion": "summary",
+        "points": 10,
+        "item": "summary",
+        "quote": "No line item has been given a verdict and no corrected total has been computed.",
+        "reason": "No summary for the approver; the closing note only says the review stopped and is addressed to the requester. Treated as absent."
+      }
+    ]
+  },
+  {
+    "review_id": "lewr",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "No expense policy was supplied, so no item can be approved or rejected and the full AUD 2,102.50 is open (reimburse now: AUD 0.00); ... The return flight #9 was business class while the outbound was economy, which needs the approver's decision under the policy. No duplicates or unclaimed receipts were found.",
+        "reason": "Summary is consistent with verdicts and totals and usefully flags lager, minibar, business class and self-booked flights as policy checks (key case-specific scoring), but at 155 words it is well over the ~120-word limit and repeats the #9 business-class point; scored as bloated (5)."
+      }
+    ]
+  },
+  {
+    "review_id": "lipz",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 0,
+      "questions": 5.0,
+      "summary": 0
+    },
+    "total": 50.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 7.5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Review gives no item verdicts. Key item 4: claimed 24.90 but R04 totals 21.90; this receipt discrepancy is not reported. Grounds scored over items 4 and 8, the two items whose expected verdict is not an approval subject to policy (1 of 2 items missing = 7.5)."
+      },
+      {
+        "criterion": "grounds",
+        "points": 7.5,
+        "item": "8",
+        "quote": "(absent)",
+        "reason": "Key item 8: R08 dated 4 October 2026 at Osborne Park (Perth), not a trip expense; the review does not report this receipt problem."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "total",
+        "quote": "Review stopped: the expense policy is missing. ... Without the policy, no line item can be approved or rejected, and no corrected total can be given.",
+        "reason": "No corrected total and no receipt-supported figure (key: AUD 2,046.80, maximum 2,099.50) or per-item supported amounts; the 2,012.50 vs 2,102.50 line-sum error is not detected. Case-specific scoring: ask-only review earns amounts credit only for figures it reports."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Key item 4 converted amount 21.90 (not 24.90) is not given."
+      },
+      {
+        "criterion": "questions",
+        "points": 10,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 [essential, weight 2] is raised (\"Clarifying question: Please supply the Kestrel Freight Pty Ltd expense policy that applies to claim KF-EC-26-0871\"). Q2 [essential, 2] R08 date/location, Q3 [1] lunch 24.90 vs 21.90, Q4 [1] stated total vs line sum are absent. Score 15 x 2/6 = 5.0."
+      },
+      {
+        "criterion": "summary",
+        "points": 10,
+        "item": "summary",
+        "quote": "Review stopped: the expense policy is missing. ... Without the policy, no line item can be approved or rejected, and no corrected total can be given.",
+        "reason": "No summary for the approver; the closing note only says the review stopped and is addressed to the requester. Treated as absent."
+      }
+    ]
+  },
+  {
+    "review_id": "qbqn",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 0,
+      "amounts": 0,
+      "questions": 7.5,
+      "summary": 0
+    },
+    "total": 52.5,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 7.5,
+        "item": "4",
+        "quote": "| R4 | R04 | Hedland Bakehouse, South Hedland | 3 November 2026 | AUD 21.90 |",
+        "reason": "No verdicts given (treated as needs information per case-specific scoring). The inventory lists R04 at 21.90 next to the 24.90 claimed but never identifies the 3.00 discrepancy as a problem (key item 4). Grounds scored over items 4 and 8 (1 of 2 missing = 7.5)."
+      },
+      {
+        "criterion": "grounds",
+        "points": 7.5,
+        "item": "8",
+        "quote": "| R8 | R08 | Metro Fuel Osborne Park | 4 October 2026 | AUD 52.70 |",
+        "reason": "The R08 date and place are listed but not flagged as failing to support a trip expense (key item 8)."
+      },
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "total",
+        "quote": "Approved, to reimburse: not yet determined (policy missing) ... Pending: AUD 2,102.50, across 1 to 9",
+        "reason": "The review does detect the 2,012.50 vs 2,102.50 line-sum error, but gives no corrected total, no receipt-supported figure (key: 2,046.80; maximum 2,099.50) and no per-item supported amounts (item 8 supports 0.00, item 4 supports 21.90). Key accepts holding everything only if the receipt-supported figure or per-item supported amounts are reported; not met, and the 5-point band does not apply."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "4",
+        "quote": "(absent)",
+        "reason": "Key item 4 converted amount 21.90 is not stated as the supported amount for line 4."
+      },
+      {
+        "criterion": "questions",
+        "points": 7.5,
+        "item": "Q2, Q3",
+        "quote": "1. All items: no questions can be framed against the policy until it is supplied.",
+        "reason": "Q1 [essential, 2] raised in the clarifying question and Q4 [1] raised (\"the form's stated AUD 2,012.50 does not match its line items (AUD 2,102.50)\"). Q2 [essential, 2] on R08 and Q3 [1] on the lunch amount are absent, although neither needs the policy. Score 15 x 3/6 = 7.5."
+      },
+      {
+        "criterion": "summary",
+        "points": 10,
+        "item": "summary",
+        "quote": "Review stopped at Step 1 (inventory) because the expense policy is missing.",
+        "reason": "No summary for the approver; the Status section only records that the review stopped. Treated as absent."
+      }
+    ]
+  }
+]

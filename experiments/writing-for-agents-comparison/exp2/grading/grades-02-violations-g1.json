@@ -1,0 +1,144 @@
+[
+  {
+    "review_id": "jxxf",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Of 11 line items, 7 are approved (one reduced), 2 rejected and 2 need information from the claimant.",
+        "reason": "Summary is present and consistent with the verdicts and total, but runs to about 167 words, well beyond the rubric's 'roughly 120 words or fewer', so it scores 5 (bloated) rather than 10."
+      }
+    ]
+  },
+  {
+    "review_id": "lvox",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Of AUD 3,266.70 claimed, AUD 1,438.30 is approved to reimburse now, AUD 1,320.00 is rejected and AUD 508.40 is open.",
+        "reason": "Summary is present and consistent with the verdicts and total, but runs to about 185 words, well beyond the rubric's 'roughly 120 words or fewer', so it scores 5 (bloated) rather than 10."
+      }
+    ]
+  },
+  {
+    "review_id": "mbnw",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "The corrected total to reimburse is 1,438.30 AUD against 3,266.70 AUD claimed.",
+        "reason": "Summary is present and consistent with the verdicts and total, but runs to about 152 words, well beyond the rubric's 'roughly 120 words or fewer', so it scores 5 (bloated) rather than 10."
+      }
+    ]
+  },
+  {
+    "review_id": "nqyc",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "The claim totals $3,266.70; $1,438.30 is approved now, $1,320.00 is rejected and $508.40 is held open.",
+        "reason": "Summary is present and consistent with the verdicts and total, but runs to about 155 words, well beyond the rubric's 'roughly 120 words or fewer', so it scores 5 (bloated) rather than 10."
+      }
+    ]
+  },
+  {
+    "review_id": "ocwu",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "summary",
+        "quote": "Verdicts: 7 approve (line 9 reduced), 2 reject, 2 needs information, across 11 lines.",
+        "reason": "Summary is present and consistent with the verdicts and total, but runs to about 203 words, well beyond the rubric's 'roughly 120 words or fewer', so it scores 5 (bloated) rather than 10."
+      }
+    ]
+  },
+  {
+    "review_id": "ulvf",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]
