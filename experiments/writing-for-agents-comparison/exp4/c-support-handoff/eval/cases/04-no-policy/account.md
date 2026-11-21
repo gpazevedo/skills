@@ -1,0 +1,21 @@
+# Account record: Lindqvist Marine Supplies Ltd
+
+- Account ID: LMS-0855
+- Plan: Quillbill Trade (annual subscription)
+- Support level: Enterprise (terms in Master Services Agreement, Schedule 3)
+- Contract term: 1 January 2026 to 31 December 2027
+- Data region: UK
+- Base currency: GBP
+- Invoice currencies enabled: GBP, EUR, NOK
+- VAT settings: UK standard rate; VAT rounding per line
+- Products:
+  - Quillbill Invoicing (cloud)
+  - Sandbox environment (copy of production settings, refreshed monthly)
+- Contacts:
+  - Marta Kowalczyk, Finance Controller: primary contact, marta.kowalczyk@lindqvistmarine.example
+  - Erik Lindqvist, Director: contract contact, erik.lindqvist@lindqvistmarine.example
+- Customer Success Manager: Owen Pryce
+- Open credits: None
+- Account flags: External audit on site 12 to 13 November 2026 (noted by CSM)
+- Recent tickets:
+  - QB-196320: P3, NOK currency formatting on PDF invoices. Resolved 21 August 2026.
