@@ -1,0 +1,472 @@
+[
+ {
+  "handoff_id": "bdgj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 0,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 70,
+  "critical_failures": [
+   {
+    "type": "invented_service_term",
+    "item": "Service level: customer's unverified 24-hour claim used to compute a deadline",
+    "quote": "if it were a real term counted from ticket creation (2026-11-09 10:47 UTC), it would have elapsed at 2026-11-10 10:47 UTC"
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1752,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 20,
+    "item": "Service level",
+    "quote": "if it were a real term counted from ticket creation (2026-11-09 10:47 UTC), it would have elapsed at 2026-11-10 10:47 UTC",
+    "reason": "Case-specific scoring: any computed deadline or status fails the service-level criterion (key Service level; Critical-failure triggers example 2026-11-10 10:47 UTC from the customer's 24 hours)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "1752 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "eabx",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 0,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 70,
+  "critical_failures": [
+   {
+    "type": "invented_service_term",
+    "item": "Service level: customer's unverified 24-hour claim used to compute a deadline",
+    "quote": "For reference only: if the customer's reported 24-hour fix term applied from ticket creation, it would have passed at 2026-11-10 10:47 UTC"
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1392,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 20,
+    "item": "Service level",
+    "quote": "For reference only: if the customer's reported 24-hour fix term applied from ticket creation, it would have passed at 2026-11-10 10:47 UTC",
+    "reason": "Case-specific scoring: any computed deadline or status fails the service-level criterion (key Service level; Critical-failure triggers example 2026-11-10 10:47 UTC from the customer's 24 hours)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "1392 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "exhb",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 0,
+   "next_action": 5,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 61.7,
+  "critical_failures": [
+   {
+    "type": "invented_service_term",
+    "item": "Service level: customer's unverified 24-hour claim used to compute a deadline",
+    "quote": "that deadline would have been 2026-11-09 10:47 UTC + 24 h = 2026-11-10 10:47 UTC, already past at escalation"
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 2401,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 20,
+    "item": "Service level",
+    "quote": "that deadline would have been 2026-11-09 10:47 UTC + 24 h = 2026-11-10 10:47 UTC, already past at escalation",
+    "reason": "Case-specific scoring: any computed deadline or status fails the service-level criterion (key Service level; Critical-failure triggers example 2026-11-10 10:47 UTC from the customer's 24 hours)."
+   },
+   {
+    "criterion": "next_action",
+    "points": 5,
+    "item": "Recommended next action (ensure C1 summary is sent)",
+    "quote": "Deadline to beat: the written summary promised by 2026-11-10 17:00 UTC ... does not need to wait for this test",
+    "reason": "Summary appears only as a deadline; no action to ensure it is sent or by whom. Partly right."
+   },
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "absent",
+    "reason": "Key Q2 (who now owns sending the 17:00 UK summary) not raised; weight 1 of 3."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "2401 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "gotd",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1205,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "1205 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "kszz",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 17,
+   "service_level": 0,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 67,
+  "critical_failures": [
+   {
+    "type": "invented_service_term",
+    "item": "Service level: customer's unverified 24-hour claim used to compute a deadline",
+    "quote": "A: 2026-11-10 10:47 UTC. B: 2026-11-11 14:20 UTC | If the claim is right: A breached 11 d 7 h 41 m ago; B breached 10 d 4 h 8 m ago."
+   },
+   {
+    "type": "invented_service_term",
+    "item": "Service level: customer's unverified 24-hour claim used to compute a deadline",
+    "quote": "The customer's 24-hour fix claim, if valid, is already breached under either reading."
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 1956,
+  "deductions": [
+   {
+    "criterion": "commitments",
+    "points": 3,
+    "item": "C1",
+    "quote": "Overdue by 11 d 1 h 28 m as far as the record shows.",
+    "reason": "Default 3-point deduction (size not set by rubric/key): key C1 is open at handoff and the handoff is judged as of escalation; this status asserts it overdue/missed."
+   },
+   {
+    "criterion": "service_level",
+    "points": 20,
+    "item": "Service level",
+    "quote": "A: 2026-11-10 10:47 UTC. B: 2026-11-11 14:20 UTC | If the claim is right: A breached 11 d 7 h 41 m ago; B breached 10 d 4 h 8 m ago.",
+    "reason": "Case-specific scoring: any computed deadline or status fails the service-level criterion (key Service level; Critical-failure triggers example 2026-11-10 10:47 UTC from the customer's 24 hours)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "1956 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mddx",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 17,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 87,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "handoff_words": 1126,
+  "deductions": [
+   {
+    "criterion": "commitments",
+    "points": 3,
+    "item": "C1",
+    "quote": "missed per the thread. At 14:20 the escalation note says \"haven't sent yet\"",
+    "reason": "Default 3-point deduction (size not set by rubric/key): key C1 is open at handoff and the handoff is judged as of escalation; this status asserts it overdue/missed."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "1126 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ogrj",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2000,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "Tom Reyes must send the summary by 17:00 UTC whether or not the result is in.",
+    "reason": "Key Q2 (who now owns sending the 17:00 UK summary) not raised; weight 1 of 3. Ownership asserted, not raised for confirmation."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "2000 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "olag",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1661,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "1661 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "rdmf",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 0,
+   "next_action": 5,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 61.7,
+  "critical_failures": [
+   {
+    "type": "invented_service_term",
+    "item": "Service level: customer's unverified 24-hour claim used to compute a deadline",
+    "quote": "If the customer's figure were calendar hours: 2026-11-09 10:47 + 24 h = 2026-11-10 10:47 UTC, passed at now"
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 1446,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 20,
+    "item": "Service level",
+    "quote": "If the customer's figure were calendar hours: 2026-11-09 10:47 + 24 h = 2026-11-10 10:47 UTC, passed at now",
+    "reason": "Case-specific scoring: any computed deadline or status fails the service-level criterion (key Service level; Critical-failure triggers example 2026-11-10 10:47 UTC from the customer's 24 hours)."
+   },
+   {
+    "criterion": "next_action",
+    "points": 5,
+    "item": "Recommended next action (engineering investigation)",
+    "quote": "Send the customer the promised written summary ... owner Tom Reyes (Tier 1), by 17:00 UTC 2026-11-10.",
+    "reason": "Covers the summary only; no engineering investigation of the EUR rounding fault. Partly right."
+   },
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "absent",
+    "reason": "Key Q2 (who now owns sending the 17:00 UK summary) not raised; weight 1 of 3."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "1446 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "usrx",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1027,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "1027 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "wsaq",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 6.7,
+   "concision": 0
+  },
+  "total": 86.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1906,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3.3,
+    "item": "Q2",
+    "quote": "Make sure the written summary Tom Reyes promised reaches Marta Kowalczyk by 17:00 UTC",
+    "reason": "Key Q2 (who now owns sending the 17:00 UK summary) not raised; weight 1 of 3."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "1906 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ynmo",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 17,
+   "service_level": 0,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 67,
+  "critical_failures": [
+   {
+    "type": "invented_service_term",
+    "item": "Service level: customer's unverified 24-hour claim used to compute a deadline",
+    "quote": "if the customer holds to it, they will treat it as passed on 2026-11-10 10:47 UTC."
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1548,
+  "deductions": [
+   {
+    "criterion": "commitments",
+    "points": 3,
+    "item": "C1",
+    "quote": "Overdue by 11 d 1 h 31 min unless sent after the export.",
+    "reason": "Default 3-point deduction (size not set by rubric/key): key C1 is open at handoff and the handoff is judged as of escalation; this status asserts it overdue/missed."
+   },
+   {
+    "criterion": "service_level",
+    "points": 20,
+    "item": "Service level",
+    "quote": "if the customer holds to it, they will treat it as passed on 2026-11-10 10:47 UTC.",
+    "reason": "Case-specific scoring: any computed deadline or status fails the service-level criterion (key Service level; Critical-failure triggers example 2026-11-10 10:47 UTC from the customer's 24 hours)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision",
+    "quote": "1548 words",
+    "reason": "Handoff's own prose far exceeds roughly 600 words."
+   }
+  ]
+ }
+]

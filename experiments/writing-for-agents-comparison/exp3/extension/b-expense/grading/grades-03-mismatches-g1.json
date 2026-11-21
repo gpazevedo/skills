@@ -1,0 +1,315 @@
+[
+  {
+    "review_id": "eguk",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 12.5,
+      "summary": 10
+    },
+    "total": 97.5,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 2.5,
+        "item": "Q2",
+        "quote": "(absent)",
+        "reason": "Item 4 rejected so Q2 is recommended (weight 1); not raised. Weights raised 5 of 6 (Q1 2, Q3 essential 2 since item 11 is needs information, Q4 1)."
+      }
+    ]
+  },
+  {
+    "review_id": "gczy",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15.0,
+      "summary": 10
+    },
+    "total": 100.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "gupq",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 12.5,
+      "summary": 5
+    },
+    "total": 92.5,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 2.5,
+        "item": "Q2",
+        "quote": "(absent)",
+        "reason": "Item 4 rejected so Q2 weight 1; not raised. Raised Q1 (2), Q3 essential (2, item 11 needs information), Q4 (1): 5 of 6."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary",
+        "quote": "Daniel Reyes claimed GBP 539.35 ... decide whether items 8 and 11 are rejected outright",
+        "reason": "Summary is about 170 words, clearly over the roughly 120-word limit; scored 5 as bloated."
+      }
+    ]
+  },
+  {
+    "review_id": "hdth",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 6.0,
+      "summary": 5
+    },
+    "total": 86.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 9,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 raised ('Please send a missing-receipt declaration ...'). Q2 (1), Q3 (1, items 4 and 11 rejected) and Q4 (1) absent: 2 of 5."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary",
+        "quote": "Daniel Reyes claimed GBP 539.35 ... the policy leaves no other decision to the approver.",
+        "reason": "Summary is about 161 words, clearly over the roughly 120-word limit; scored 5 as bloated."
+      }
+    ]
+  },
+  {
+    "review_id": "kppp",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 9.0,
+      "summary": 10
+    },
+    "total": 94.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 6,
+        "item": "Q2, Q3",
+        "quote": "(absent)",
+        "reason": "Items 4 and 11 rejected so Q2 and Q3 are recommended (weight 1 each); neither raised. Raised Q1 (2) and Q4 (1): 3 of 5."
+      }
+    ]
+  },
+  {
+    "review_id": "ldeh",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 10.71,
+      "summary": 10
+    },
+    "total": 95.7,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 4.29,
+        "item": "Q2, Q4",
+        "quote": "(absent)",
+        "reason": "Q2 (item 4 rejected, weight 1) and Q4 (weight 1) not raised. Raised Q1 (2), Q3 essential (2, item 11 needs information) and optional Q5 (1, counted because included: 'Line 7: the claim is GBP 28.40 but the Rosa's Trattoria receipt totals GBP 23.40'): 5 of 7."
+      }
+    ]
+  },
+  {
+    "review_id": "nmcw",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15.0,
+      "summary": 5
+    },
+    "total": 95.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary",
+        "quote": "Reimburse GBP 449.95 now ... check future claims more carefully before submission.",
+        "reason": "Summary is about 150 words, clearly over the roughly 120-word limit; scored 5 as bloated."
+      }
+    ]
+  },
+  {
+    "review_id": "nnci",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 9.0,
+      "summary": 10
+    },
+    "total": 94.0,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 6,
+        "item": "Q2, Q3",
+        "quote": "(absent)",
+        "reason": "Items 4 and 11 rejected so Q2 and Q3 weight 1 each; neither raised as a question (R04 only noted under 'Other findings'). Raised Q1 (2), Q4 (1): 3 of 5."
+      }
+    ]
+  },
+  {
+    "review_id": "rjak",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 28.64,
+      "grounds": 15,
+      "amounts": 10,
+      "questions": 15.0,
+      "summary": 10
+    },
+    "total": 93.6,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "verdict_accuracy",
+        "points": 1.36,
+        "item": "Item 5",
+        "quote": "L5 | ... | needs information | 0.00 | 11.90 | R05: Station Deli ... R08 (offered for L8) is the same receipt",
+        "reason": "Key expects Approve for item 5 with no alternative; review holds it but explicitly marks it uncertain and routes it to question 1, so it counts 0.5."
+      },
+      {
+        "criterion": "amounts",
+        "points": 5,
+        "item": "Expected total",
+        "quote": "Approved (corrected total to reimburse): GBP 438.05",
+        "reason": "Key total is 449.95; 438.05 differs only by holding item 5 (11.90), a verdict error already penalised, and is consistent with the review's own verdicts: 5 instead of 10."
+      }
+    ]
+  },
+  {
+    "review_id": "ttzm",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 6.0,
+      "summary": 10
+    },
+    "total": 91.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 9,
+        "item": "Q2, Q3, Q4",
+        "quote": "(absent)",
+        "reason": "Only Q1 raised. Q2 (1), Q3 (1, items 4 and 11 rejected) and Q4 (1) absent: 2 of 5."
+      }
+    ]
+  },
+  {
+    "review_id": "ytyk",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 10.0,
+      "summary": 10
+    },
+    "total": 95.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Q2, Q3",
+        "quote": "(absent)",
+        "reason": "Items 4 and 11 rejected so Q2 and Q3 weight 1 each; neither raised. Raised Q1 (2), Q4 (1) and optional Q5 (1, counted because included: 'Item 7: R07 shows GBP 23.40 but GBP 28.40 was claimed'): 4 of 6."
+      }
+    ]
+  },
+  {
+    "review_id": "zifr",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 10.0,
+      "summary": 10
+    },
+    "total": 95.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Q2, Q4",
+        "quote": "(absent)",
+        "reason": "Q2 (item 4 rejected, weight 1) and Q4 (weight 1) not raised. Raised Q1 (2) and Q3 essential (2, item 11 needs information): 4 of 6."
+      }
+    ]
+  }
+]

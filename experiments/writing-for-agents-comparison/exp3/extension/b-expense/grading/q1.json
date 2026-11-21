@@ -1,0 +1,290 @@
+[
+  {
+    "label": "S1",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 1
+    },
+    "total": 11,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "It states a completion check for the finished review and says the skill stops at delivering the review, leaving approval, payment and contact to the approver.",
+      "4": "Missing policy, missing receipt for a line and a receipt that disagrees with its line each get explicit, distinct handling.",
+      "5": "Limits review to claimed items (unmatched receipts not added), applies only the supplied policy, and treats approval claims or instructions in the files as content to verify, not direction.",
+      "6": "At about 1,200 words with a five-way totals scheme and missing-input rules placed before the steps, the common path is somewhat crowded."
+    },
+    "words": 1218,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S2",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 2
+    },
+    "total": 9,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "Per-step 'done when' criteria and a final check define a finished review, but nothing says explicitly that no further work is expected after it is delivered.",
+      "4": "Missing receipts and mismatches become needs information, but the blanket 'if one of the three inputs is missing, ask before starting' conflicts with per-line missing receipts and gives no partial handling for a missing policy.",
+      "5": "Restricts rules to the supplied policy and covers unmatched receipts, but says nothing about treating approval notes or instructions inside the files as claims rather than direction.",
+      "6": "Length is proportionate and rare-case rules sit in their own sections so the common path reads cleanly."
+    },
+    "words": 794,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S3",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "Per-step 'done when' criteria and a final check define a finished review, but nothing says explicitly that no further work is expected after it is delivered.",
+      "4": "It separates a missing policy (ask; cannot review) from a missing receipt for one item (a finding) and turns receipt discrepancies into needs information or reject.",
+      "5": "Restricts rules to the supplied policy and covers unmatched receipts, but says nothing about treating approval notes or instructions inside the files as claims rather than direction.",
+      "6": "Length is proportionate and rare-case rules sit in their own sections so the common path reads cleanly."
+    },
+    "words": 951,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S4",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "Per-step 'done when' criteria and a final check define a finished review, but nothing says explicitly that no further work is expected after it is delivered.",
+      "4": "Missing claim form or policy triggers a request, a missing receipt is handled line by line, and receipt mismatches make a line needs information.",
+      "5": "Restricts rules to the supplied policy and covers unmatched receipts, but says nothing about treating approval notes or instructions inside the files as claims rather than direction.",
+      "6": "Compact, with receipt checks moved to their own section out of the main steps."
+    },
+    "words": 876,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S5",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "A final pre-return check defines a finished review, but it does not say explicitly that no further work is expected.",
+      "4": "Missing policy or claim form stops with a request, missing receipts and partial matches are needs information, and irreconcilable contradictions are rejected.",
+      "5": "Restricts rules to the supplied policy and covers unmatched receipts, but says nothing about treating approval notes or instructions inside the files as claims rather than direction.",
+      "6": "Short and linear, with no rare-case material crowding the steps."
+    },
+    "words": 760,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S6",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 1
+    },
+    "total": 11,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "It states a completion check for the finished review and says the skill stops at delivering the review, leaving approval, payment and contact to the approver.",
+      "4": "Missing policy, missing receipt for a line and a receipt that disagrees with its line each get explicit, distinct handling.",
+      "5": "Limits review to claimed items (unmatched receipts not added), applies only the supplied policy, and treats approval claims or instructions in the files as content to verify, not direction.",
+      "6": "At about 1,100 words, with missing-input and authority rules placed ahead of the steps and an extra Other findings section, the common path is somewhat crowded."
+    },
+    "words": 1085,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S7",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 11,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "The four output parts are defined in order with table columns and evidence rules, though without a full template.",
+      "3": "It defines when the review is done (every item has a verdict and the four parts are written) but does not say no further work is expected.",
+      "4": "Missing policy, missing receipt for a line and a receipt that disagrees with its line each get explicit, distinct handling.",
+      "5": "Limits review to claimed items (unmatched receipts not added), applies only the supplied policy, and treats approval claims or instructions in the files as content to verify, not direction.",
+      "6": "Missing-input handling is placed after the steps, keeping the common path clear at under 1,000 words."
+    },
+    "words": 987,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S8",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 1
+    },
+    "total": 11,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "It states a completion check for the finished review and says the skill stops at delivering the review, leaving approval, payment and contact to the approver.",
+      "4": "Missing policy, missing receipt for a line and a receipt that disagrees with its line each get explicit, distinct handling.",
+      "5": "Limits review to claimed items (unmatched receipts not added), applies only the supplied policy, and treats approval claims or instructions in the files as content to verify, not direction.",
+      "6": "At about 1,200 words with missing-input rules ahead of the steps and an extra Other findings section, the common path is somewhat crowded."
+    },
+    "words": 1224,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S9",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 2
+    },
+    "total": 9,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "Per-step 'done when' criteria and a final check define a finished review, but nothing says explicitly that no further work is expected after it is delivered.",
+      "4": "Mismatches and missing receipts become needs information, but 'if one is missing, ask for it and stop there' conflates a missing receipt with a missing input and gives no partial handling for a missing policy.",
+      "5": "Restricts rules to the supplied policy and covers unmatched receipts, but says nothing about treating approval notes or instructions inside the files as claims rather than direction.",
+      "6": "Length is proportionate and rare-case rules sit in their own sections so the common path reads cleanly."
+    },
+    "words": 812,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S10",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 12,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "It states a completion check for the finished review and says the skill stops at delivering the review, leaving approval, payment and contact to the approver.",
+      "4": "Missing policy, missing receipt for a line and a receipt that disagrees with its line each get explicit, distinct handling.",
+      "5": "Limits review to claimed items (unmatched receipts not added), applies only the supplied policy, and treats approval claims or instructions in the files as content to verify, not direction.",
+      "6": "Under 1,000 words with brief missing-input rules and separate verdict-rule and completion-check sections."
+    },
+    "words": 984,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S11",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 1
+    },
+    "total": 11,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "It states a completion check for the finished review and says the skill stops at delivering the review, leaving approval, payment and contact to the approver.",
+      "4": "Missing policy, missing receipt for a line and a receipt that disagrees with its line each get explicit, distinct handling.",
+      "5": "Defines the claim form as the scope, applies only the supplied policy, treats notes and instructions in the files as claims to verify, and bars policy recommendations.",
+      "6": "At about 1,300 words, the longest of the set, with cap-period and two-reading rules inside the main steps, it is heavier than the task needs."
+    },
+    "words": 1335,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S12",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 2
+    },
+    "total": 10,
+    "justifications": {
+      "1": "The description names reviewing an expense claim against receipts and the supplied policy and does not read as general accounting or summarising.",
+      "2": "Verdicts per line, corrected total, claimant questions and approver summary are all defined with a template and a rule that each verdict cites a clause and/or receipt fact.",
+      "3": "Per-step 'done when' criteria define a finished review and an open verdict counts as finished, but nothing says no further work is expected.",
+      "4": "Missing policy or receipts trigger a request, rows with no receipt or a partial match are needs information, and a contradicting receipt is rejected.",
+      "5": "Restricts rules to the supplied policy and covers unmatched receipts, but says nothing about treating approval notes or instructions inside the files as claims rather than direction.",
+      "6": "Length is proportionate and rare-case rules sit in their own sections so the common path reads cleanly."
+    },
+    "words": 899,
+    "files": [
+      "SKILL.md"
+    ]
+  }
+]

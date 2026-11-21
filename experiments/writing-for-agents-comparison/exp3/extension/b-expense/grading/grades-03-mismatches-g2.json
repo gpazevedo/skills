@@ -1,0 +1,315 @@
+[
+ {
+  "review_id": "eguk",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12.5,
+   "summary": 10
+  },
+  "total": 97.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 2.5,
+    "item": "Key Q2 (item 4, recommended, weight 1)",
+    "quote": "absent",
+    "reason": "No question about the Leeds ticket in Ms Natarajan's name; raised weight 5 of 6 (Q1 2, Q3 2 as item 11 is needs information, Q4 1)."
+   }
+  ]
+ },
+ {
+  "review_id": "gczy",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "gupq",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 12.5,
+   "summary": 5
+  },
+  "total": 92.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 2.5,
+    "item": "Key Q2 (item 4, recommended, weight 1)",
+    "quote": "absent",
+    "reason": "No question about the Leeds ticket; raised Q1, Q3 (essential, item 11 needs information), Q4: weight 5 of 6."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "Daniel Reyes claimed GBP 539.35 for the Manchester workshop trip ... decide whether items 8 and 11 are rejected outright",
+    "reason": "Summary is about 170 words, well over the roughly 120-word limit, so scored as bloated (5 of 10)."
+   }
+  ]
+ },
+ {
+  "review_id": "hdth",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 6.0,
+   "summary": 5
+  },
+  "total": 86.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 9,
+    "item": "Key Q2, Q3, Q4 (each recommended, weight 1; items 4 and 11 rejected)",
+    "quote": "absent; only question is \"Line 10: Please send a missing-receipt declaration\"",
+    "reason": "Only Q1 (weight 2) raised of total weight 5."
+   },
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "Daniel Reyes claimed GBP 539.35 ... the policy leaves no other decision to the approver.",
+    "reason": "Summary is about 161 words, well over the roughly 120-word limit, so scored as bloated (5 of 10)."
+   }
+  ]
+ },
+ {
+  "review_id": "kppp",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 9.0,
+   "summary": 10
+  },
+  "total": 94.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 6,
+    "item": "Key Q2 and Q3 (recommended, weight 1 each; items 4 and 11 rejected)",
+    "quote": "absent",
+    "reason": "Raised Q1 (2) and Q4 via \"Please supply the receipt for the lunch you bought on 8 October 2026\" (1): weight 3 of 5."
+   }
+  ]
+ },
+ {
+  "review_id": "ldeh",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10.71,
+   "summary": 10
+  },
+  "total": 95.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 4.29,
+    "item": "Key Q2 (recommended, weight 1) and Q4 (recommended, weight 1)",
+    "quote": "absent",
+    "reason": "Raised Q1 (2), Q3 (2, essential as item 11 is needs information) and optional Q5 \"Line 7: the claim is GBP 28.40 but the Rosa's Trattoria receipt totals GBP 23.40\" (1, counted since included): weight 5 of 7."
+   }
+  ]
+ },
+ {
+  "review_id": "nmcw",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "Reimburse GBP 449.95 now ... the approver may want to ask the claimant to check future claims more carefully before submission.",
+    "reason": "Summary is about 150 words, well over the roughly 120-word limit, so scored as bloated (5 of 10)."
+   }
+  ]
+ },
+ {
+  "review_id": "nnci",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 9.0,
+   "summary": 10
+  },
+  "total": 94.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 6,
+    "item": "Key Q2 and Q3 (recommended, weight 1 each; items 4 and 11 rejected)",
+    "quote": "absent",
+    "reason": "Raised Q1 (2) and Q4 via item 8 question (1): weight 3 of 5."
+   }
+  ]
+ },
+ {
+  "review_id": "rjak",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 28.64,
+   "grounds": 15,
+   "amounts": 10,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 93.6,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "verdict_accuracy",
+    "points": 1.36,
+    "item": "Item 5 (expected Approve, no alternatives)",
+    "quote": "| L5 | ... | needs information | 0.00 | 11.90 |",
+    "reason": "Key expects item 5 approved; review holds it but explicitly routes the uncertainty to question 1, so counted 0.5 (10.5 of 11 items)."
+   },
+   {
+    "criterion": "amounts",
+    "points": 5,
+    "item": "Expected total GBP 449.95",
+    "quote": "Approved (corrected total to reimburse): GBP 438.05",
+    "reason": "Total wrong only because item 5 was held (449.95 - 11.90 = 438.05), arithmetically consistent with its own verdicts: 5 of 10. Item 7 at 23.40 earns the 5 partial-amount points."
+   }
+  ]
+ },
+ {
+  "review_id": "ttzm",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 6.0,
+   "summary": 10
+  },
+  "total": 91.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 9,
+    "item": "Key Q2, Q3, Q4 (each recommended, weight 1; items 4, 8, 11 rejected)",
+    "quote": "absent; only question concerns item 10",
+    "reason": "Only Q1 (weight 2) raised of total weight 5."
+   }
+  ]
+ },
+ {
+  "review_id": "ytyk",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10.0,
+   "summary": 10
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Key Q2 and Q3 (recommended, weight 1 each; items 4 and 11 rejected)",
+    "quote": "absent",
+    "reason": "Raised Q1 (2), Q4 via item 8 question (1), optional Q5 \"Item 7: R07 shows GBP 23.40 but GBP 28.40 was claimed\" (1, counted since included): weight 4 of 6."
+   }
+  ]
+ },
+ {
+  "review_id": "zifr",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 10.0,
+   "summary": 10
+  },
+  "total": 95.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Key Q2 (recommended, weight 1) and Q4 (recommended, weight 1)",
+    "quote": "absent",
+    "reason": "Raised Q1 (2) and Q3 (2, essential as item 11 is needs information): weight 4 of 6."
+   }
+  ]
+ }
+]

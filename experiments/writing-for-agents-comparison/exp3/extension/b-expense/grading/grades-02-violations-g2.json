@@ -1,0 +1,254 @@
+[
+  {
+    "review_id": "asac",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "(summary section is 159 words)",
+        "reason": "Summary is present and consistent with verdicts and total (AUD 1,438.30) but clearly exceeds the rubric's roughly 120-word limit, so it is scored as bloated (5 of 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "iklu",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "jgxu",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "kaxp",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "ldau",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "(summary section is 186 words)",
+        "reason": "Summary is present and consistent with verdicts and total (AUD 1,438.30) but clearly exceeds the rubric's roughly 120-word limit, so it is scored as bloated (5 of 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "mvmc",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "odnt",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "(summary section is 168 words)",
+        "reason": "Summary is present and consistent with verdicts and total (AUD 1,438.30) but clearly exceeds the rubric's roughly 120-word limit, so it is scored as bloated (5 of 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "omzm",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "osrf",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "(summary section is 157 words)",
+        "reason": "Summary is present and consistent with verdicts and total (AUD 1,438.30) but clearly exceeds the rubric's roughly 120-word limit, so it is scored as bloated (5 of 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "pxno",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "(summary section is 154 words)",
+        "reason": "Summary is present and consistent with verdicts and total (AUD 1,438.30) but clearly exceeds the rubric's roughly 120-word limit, so it is scored as bloated (5 of 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "xobb",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "(summary section is 173 words)",
+        "reason": "Summary is present and consistent with verdicts and total (AUD 1,438.30) but clearly exceeds the rubric's roughly 120-word limit, so it is scored as bloated (5 of 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "zcix",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "brief_id": "blui",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "kumz",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "orno",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "prdn",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "qtdo",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "scka",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "terc",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "tnjc",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 17,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "actions",
+        "points": 3,
+        "key_id": "N7",
+        "quote": "| Set up a volunteer sign-up sheet on the school app | Not stated | Not stated |",
+        "reason": "Action not contained in the notes (key actions A1 to A5 only; notes say \"Nobody took it on yet\" and the app sheet is an unadopted suggestion, N7). Rubric deducts 3 per action the notes do not contain. Not counted as a fabricated decision because the brief elsewhere lists the app sheet as a proposal not decided."
+      }
+    ]
+  },
+  {
+    "brief_id": "tytk",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "uiuy",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "zbtu",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 17,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "actions",
+        "points": 3,
+        "key_id": "Q6",
+        "quote": "| Arrange roughly 25 volunteers across the day | not stated | not stated |",
+        "reason": "Action not contained in the notes as an assigned action (key actions A1 to A5 only; notes record a need and \"Nobody took it on yet\", which the key treats as open question Q6). Rubric deducts 3 per action the notes do not contain. Owner and deadline are correctly marked not stated, so no fabrication."
+      }
+    ]
+  },
+  {
+    "brief_id": "zqzd",
+    "case": "02-proposals",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]

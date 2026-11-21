@@ -1,0 +1,362 @@
+[
+  {
+    "brief_id": "bzsq",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 5
+    },
+    "total": 86,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (padding); not Q1-Q4",
+        "quote": "Coastline TV spot: who will act on the client's notes on the voiceover pacing, and by when?",
+        "reason": "Invented open question not raised in the notes (voiceover notes are status; no gap about ownership is raised in the notes); key treats brief-writer follow-ups as padding; 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (padding); not Q1-Q4",
+        "quote": "Tasha is off from Mon 14 Dec, back in Jan: who covers her responsibilities (including the lease and the Halden renewal) while she is away?",
+        "reason": "Invented open question not raised in the notes (cover for Tasha is never discussed); key treats brief-writer follow-ups as padding; 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (padding); not Q1-Q4",
+        "quote": "Halden retainer spend is about 70% of the monthly hours so far: does this need any action?",
+        "reason": "Invented open question not raised in the notes (70% spend is reported as status with no concern raised); key treats brief-writer follow-ups as padding; 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "(whole brief, 563 words)",
+        "reason": "Key grading note: a brief noticeably longer than the notes (424 words) loses the conciseness mark; brief is 563 words (>20% longer), so handoff scored as bloated (5)."
+      }
+    ]
+  },
+  {
+    "brief_id": "crmt",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "hixs",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "kjmo",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "kxck",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "(whole brief, 707 words)",
+        "reason": "Key grading note: a brief noticeably longer than the notes (424 words) loses the conciseness mark; brief is 707 words (>20% longer), so handoff scored as bloated (5)."
+      }
+    ]
+  },
+  {
+    "brief_id": "nvyf",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12,
+      "handoff": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (padding); not Q1-Q4",
+        "quote": "Coastline TV spot: client gave \"a few notes on the voiceover pacing\"; no owner or deadline recorded for addressing them.",
+        "reason": "Invented open question not raised in the notes (voiceover notes are status; no gap about ownership is raised in the notes); key treats brief-writer follow-ups as padding; 3 points per item, as the rubric does for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "qtgj",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "(whole brief, 528 words)",
+        "reason": "Key grading note: a brief noticeably longer than the notes (424 words) loses the conciseness mark; brief is 528 words (>20% longer), so handoff scored as bloated (5)."
+      }
+    ]
+  },
+  {
+    "brief_id": "segp",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12,
+      "handoff": 5
+    },
+    "total": 92,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (padding); not Q1-Q4",
+        "quote": "Response to the Coastline client's voiceover pacing notes on the TV spot (Detail missing: no owner or next step recorded).",
+        "reason": "Invented open question not raised in the notes (voiceover notes are status; no gap about ownership is raised in the notes); key treats brief-writer follow-ups as padding; 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "(whole brief, 593 words)",
+        "reason": "Key grading note: a brief noticeably longer than the notes (424 words) loses the conciseness mark; brief is 593 words (>20% longer), so handoff scored as bloated (5)."
+      }
+    ]
+  },
+  {
+    "brief_id": "srep",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 11,
+      "open_questions": 15,
+      "handoff": 5
+    },
+    "total": 86,
+    "critical_failures": [
+      {
+        "type": "invented_content_empty_case",
+        "key_id": "Action items: None",
+        "quote": "Finish Coastline website copy (about 60% done) | Yuki | unstated"
+      },
+      {
+        "type": "invented_content_empty_case",
+        "key_id": "Action items: None",
+        "quote": "Address client notes on Coastline TV spot voiceover pacing | unstated | unstated"
+      },
+      {
+        "type": "invented_content_empty_case",
+        "key_id": "Action items: None",
+        "quote": "Follow up on Juniper round 2 feedback | unstated | unstated"
+      }
+    ],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "deductions": [
+      {
+        "criterion": "actions",
+        "points": 3,
+        "key_id": "Action items: None",
+        "quote": "Finish Coastline website copy (about 60% done) | Yuki | unstated",
+        "reason": "Action-table row in the Action items section built from a status line; key says any item in the actions section is a major error, including owner-unstated actions created from status lines. -3 per action the notes do not contain."
+      },
+      {
+        "criterion": "actions",
+        "points": 3,
+        "key_id": "Action items: None",
+        "quote": "Address client notes on Coastline TV spot voiceover pacing | unstated | unstated",
+        "reason": "Action-table row in the Action items section built from a status line; key says any item in the actions section is a major error, including owner-unstated actions created from status lines. -3 per action the notes do not contain."
+      },
+      {
+        "criterion": "actions",
+        "points": 3,
+        "key_id": "Action items: None",
+        "quote": "Follow up on Juniper round 2 feedback | unstated | unstated",
+        "reason": "Action-table row in the Action items section built from a status line; key says any item in the actions section is a major error, including owner-unstated actions created from status lines. -3 per action the notes do not contain."
+      },
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "(whole brief, 623 words)",
+        "reason": "Key grading note: a brief noticeably longer than the notes (424 words) loses the conciseness mark; brief is 623 words (>20% longer), so handoff scored as bloated (5)."
+      }
+    ]
+  },
+  {
+    "brief_id": "vzqq",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "handoff",
+        "points": 5,
+        "key_id": "Grading notes (conciseness)",
+        "quote": "(whole brief, 576 words)",
+        "reason": "Key grading note: a brief noticeably longer than the notes (424 words) loses the conciseness mark; brief is 576 words (>20% longer), so handoff scored as bloated (5)."
+      }
+    ]
+  },
+  {
+    "brief_id": "xigl",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12,
+      "handoff": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (padding); not Q1-Q4",
+        "quote": "Who will address the Coastline client's notes on voiceover pacing? No task or owner is recorded (Ben)",
+        "reason": "Invented open question not raised in the notes (voiceover notes are status; no gap about ownership is raised in the notes); key treats brief-writer follow-ups as padding; 3 points per item, as the rubric does for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "zszm",
+    "case": "05-empty",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (padding); not Q1-Q4",
+        "quote": "Coastline Credit Union TV spot: client gave \"a few notes on the voiceover pacing\". No owner or deadline recorded for addressing them.",
+        "reason": "Invented open question not raised in the notes (voiceover notes are status; no gap about ownership is raised in the notes); key treats brief-writer follow-ups as padding; 3 points per item, as the rubric does for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Grading notes (padding); not Q1-Q4",
+        "quote": "Cover while Tasha is away (from Mon 14 Dec, back in Jan): no arrangements recorded.",
+        "reason": "Invented open question not raised in the notes (cover for Tasha is never discussed); key treats brief-writer follow-ups as padding; 3 points per item, as the rubric does for an invented action."
+      }
+    ]
+  }
+]

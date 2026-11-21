@@ -1,0 +1,262 @@
+[
+  {
+    "review_id": "axdm",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "The corrected total is GBP 1,273.41 against GBP 1,415.74 claimed ... and no embedded instructions were found in the documents.",
+        "reason": "Summary is about 152 words, well over the rubric's roughly 120 words, so 'clearly bloated'; content is consistent with verdicts and total (GBP 1,273.41)."
+      }
+    ]
+  },
+  {
+    "review_id": "diqg",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "The claim of GBP 1,415.74 is approved at GBP 1,273.41 ... it needs Finance Director approval in addition to the line manager's (policy 2.3).",
+        "reason": "Summary is about 150 words, well over the rubric's roughly 120 words, so 'clearly bloated'; content is consistent with verdicts and total (GBP 1,273.41)."
+      }
+    ]
+  },
+  {
+    "review_id": "hpmk",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 12,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 3,
+        "item": "Key item 8 (poster printing, approve, 9.1; key grading note: ordinary items 2, 3, 8, 9, 11 approved without invented concerns)",
+        "quote": "Policy gap the approver may want to clarify: clause 9.1 does not say whether carrying items such as the poster tube (EUR 7.00 within L8) count as \"materials for Foundation work\". ... if the approver disagrees, reduce L8 by GBP 5.95",
+        "reason": "Concern attached to an approved item that the key says should be approved without concerns; 9.1 covers printing and materials. Rubric fixes 3 points per such item."
+      }
+    ]
+  },
+  {
+    "review_id": "jodj",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "Aoife Brennan claims GBP 1,415.74 for the Berlin forum trip ... the claim needs Finance Director approval as well as the line manager's.",
+        "reason": "Summary is about 160 words, well over the rubric's roughly 120 words, so 'clearly bloated'; content is consistent with verdicts and total (GBP 1,273.41)."
+      }
+    ]
+  },
+  {
+    "review_id": "leng",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "Reimburse GBP 1,273.41 now; nothing is pending. ... and the claim was submitted on 26 October, within the 30-day limit of clause 2.1.",
+        "reason": "Summary is about 169 words, well over the rubric's roughly 120 words, so 'clearly bloated'; content is consistent with verdicts and total (GBP 1,273.41)."
+      }
+    ]
+  },
+  {
+    "review_id": "mlae",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "mzzd",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "pfgo",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver",
+        "quote": "Reimburse GBP 1,273.41 of the GBP 1,415.74 claimed; ... The claimant may want a note on the fixed-rate and per diem rules, since three of the four rejection causes come from them.",
+        "reason": "Summary is about 160 words, well over the rubric's roughly 120 words, so 'clearly bloated'; content is consistent with verdicts and total (GBP 1,273.41)."
+      }
+    ]
+  },
+  {
+    "review_id": "pyev",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "wdhe",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "znwu",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver (key: 9 approved, 6 of them re-converted or reduced; 3 rejected)",
+        "quote": "Verdicts: 10 approve (7 of them at a reduced amount), 3 reject, 0 needs information.",
+        "reason": "Summary is inconsistent with the review's own 12 verdicts (9 approve, 6 reduced, 3 reject) and is also about 159 words, over the roughly 120-word limit; scored 5."
+      }
+    ]
+  },
+  {
+    "review_id": "zwrf",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]

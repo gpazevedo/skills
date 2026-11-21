@@ -1,0 +1,354 @@
+[
+ {
+  "handoff_id": "brzl",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 10,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 80.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1880,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 10,
+    "item": "Service level: Status within target (as of escalation 2026-11-16 03:50 UTC)",
+    "quote": "Status: breached as of 2026-11-21 18:41 UTC",
+    "reason": "Handoff reports only 'breached by 17 h 25 min of business hours (as of 2026-11-21 18:41 UTC ...)' and never gives the status at escalation; key judges as of escalation 2026-11-16 03:50 UTC, status within target."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 1880 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fquz",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 15,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 85.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1296,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Service level: Status within target (as of escalation 2026-11-16 03:50 UTC)",
+    "quote": "Status: Breached: 17 h 25 min business hours over at 2026-11-21 15:22 UTC, if still unresolved",
+    "reason": "Headline status is breached as of the system clock; it does state 'At the end of the export (16 Nov 03:50 UTC) the ticket was Within target', which matches the key, so half credit (size not set by rubric)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 1296 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hpyy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 3258,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 3258 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hrke",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 15,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 85.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2419,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Service level: Status within target (as of escalation 2026-11-16 03:50 UTC)",
+    "quote": "Resolution ... Breached, 17 h 25 min business time since breach",
+    "reason": "Headline status is breached as of 2026-11-21; it does note 'at escalation (03:50 UTC 16 Nov) 2 h 45 min of 27 h had elapsed, so the ticket was not at risk', consistent with the key's within target, so half credit (size not set by rubric)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 2419 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "kisv",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2066,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 2066 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ncqm",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2025,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 2025 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "onso",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2167,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 2167 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qffd",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2611,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 2611 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "sfzm",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1799,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 1799 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "wjqu",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2444,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 2444 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "zloe",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "handoff_words": 1155,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 1155 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ },
+ {
+  "handoff_id": "zwsw",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 15,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 85.0,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1356,
+  "deductions": [
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Service level: Status within target (as of escalation 2026-11-16 03:50 UTC)",
+    "quote": "deadline Thu 19 Nov 01:05 UTC / 09:05 AWST ... | breached by 17h25m business hours",
+    "reason": "Status given as breached as of 2026-11-21; only the Gaps note that at escalation 'the ticket was not at risk' matches the key's within target, so half credit (size not set by rubric)."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(whole handoff, 1356 words)",
+    "reason": "Handoff's own prose is well beyond roughly 600 words even excluding quoted evidence and timestamps."
+   }
+  ]
+ }
+]

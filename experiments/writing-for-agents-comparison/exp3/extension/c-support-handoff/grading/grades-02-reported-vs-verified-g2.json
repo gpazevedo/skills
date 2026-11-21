@@ -1,0 +1,347 @@
+[
+ {
+  "handoff_id": "brzl",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 10,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 80,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 1880,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 1880 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   },
+   {
+    "criterion": "service_level",
+    "points": 10,
+    "item": "Service level: Status within target (as of escalation 2026-11-16 03:50 UTC)",
+    "quote": "Status as of 2026-11-21 18:41 UTC (2026-11-22 02:41 AWST, Sunday): breached by 17 h 25 min of business hours",
+    "reason": "Key judges the handoff as of escalation, when the status is within target; the handoff's stated status is breached (computed against a later environment clock). Deadline 2026-11-19 01:05 UTC matches, so the deadline half is kept."
+   }
+  ]
+ },
+ {
+  "handoff_id": "fquz",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1296,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 1296 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hpyy",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 3258,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 3258 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hrke",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 10,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 80,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 2419,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 2419 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   },
+   {
+    "criterion": "service_level",
+    "points": 10,
+    "item": "Service level: Status within target (as of escalation 2026-11-16 03:50 UTC)",
+    "quote": "Resolution ... Breached, 17 h 25 min business time since breach (2 days 17 h 30 min calendar)",
+    "reason": "Key judges the handoff as of escalation, when the status is within target; the handoff's stated status is breached (computed against a later environment clock). Deadline 2026-11-19 01:05 UTC matches, so the deadline half is kept."
+   }
+  ]
+ },
+ {
+  "handoff_id": "kisv",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2066,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 2066 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ncqm",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2025,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 2025 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "onso",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2167,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 2167 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "qffd",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2611,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 2611 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "sfzm",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1799,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 1799 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "wjqu",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2444,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 2444 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "zloe",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1155,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 1155 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "zwsw",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 10,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 80,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 1356,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric)",
+    "quote": "(handoff is 1356 words)",
+    "reason": "Well beyond roughly 600 words of the handoff's own prose even after excluding quotes and timestamps; a next-tier engineer cannot act from it in about a minute."
+   },
+   {
+    "criterion": "service_level",
+    "points": 10,
+    "item": "Service level: Status within target (as of escalation 2026-11-16 03:50 UTC)",
+    "quote": "deadline Thu 19 Nov 01:05 UTC / 09:05 AWST ... | breached by 17h25m business hours (Thu 8h25m + Fri 9h)",
+    "reason": "Key judges the handoff as of escalation, when the status is within target; the handoff's stated status is breached (computed against a later environment clock). Deadline 2026-11-19 01:05 UTC matches, so the deadline half is kept."
+   }
+  ]
+ }
+]

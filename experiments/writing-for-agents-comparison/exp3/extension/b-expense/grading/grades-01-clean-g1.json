@@ -1,0 +1,250 @@
+[
+  {
+    "review_id": "cgni",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "gpwn",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "hpls",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "jysf",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "kabe",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "qdpl",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 5,
+      "questions": 12,
+      "summary": 5
+    },
+    "total": 82,
+    "critical_failures": [
+      {
+        "type": "fabricated_evidence",
+        "item": "Expected total / claimed total (key: AUD 1,583.20, sum of the eleven lines; critical-failure triggers: reporting a mismatch not in the files, and a corrected total other than AUD 1,583.20)",
+        "quote": "Claimed: AUD 1,583.40 (sum of the 11 line items; form states AUD 1,583.20; the line items exceed the stated total by AUD 0.20) ... Approved to reimburse now: AUD 1,583.40"
+      }
+    ],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "Expected total AUD 1,583.20",
+        "quote": "Approved to reimburse now: AUD 1,583.40",
+        "reason": "Corrected total does not match the key and the error is arithmetic, not a consequence of verdict errors (all eleven verdicts are Approve at claimed amounts, which sum to 1,583.20), so 0 of 10; the 5 for per-item amounts is kept as every approved amount matches the key."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Questions for the claimant: key says none",
+        "quote": "Form total: the 11 line items add to AUD 1,583.40 but the form states AUD 1,583.20. Please confirm the stated total is an addition error ... and correct the form total to AUD 1,583.40.",
+        "reason": "Padding question with no basis in the files (the form total is correct). Rubric fixes 3 points per padding question."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary for the approver; expected total AUD 1,583.20",
+        "quote": "so AUD 1,583.40 can be reimbursed now ... The only issue is arithmetic: the form's stated total of AUD 1,583.20 is AUD 0.20 less than the sum of its line items ... the approver may choose to pay AUD 1,583.40 now or pay the stated AUD 1,583.20",
+        "reason": "Summary is present but reports a wrong total and a non-existent discrepancy, and at about 150 words is over the roughly 120-word guide; scored 5."
+      }
+    ]
+  },
+  {
+    "review_id": "stnn",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "tspg",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 12,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 3,
+        "item": "6 Printing A1 drawings (key: Approve, 9.1 and 3.2 met)",
+        "quote": "L6 includes a drawing tube (AUD 9.00) alongside the printing. It is treated as \"materials bought for company work\" under clause 9.1; the approver may wish to confirm that reading, as clause 9.1 does not name packaging.",
+        "reason": "Concern attached to an approved item that the files do not support; the key approves the full 84.00 under 9.1 with no caveat. Rubric fixes 3 points per such concern."
+      }
+    ]
+  },
+  {
+    "review_id": "vohd",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 12,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 3,
+        "item": "5 Lunch 4 Aug (key: Approve, 6.1 lunch cap 40.00, R05 36.50)",
+        "quote": "Item 5 (R05) lists two food items (chicken focaccia and garden salad) and does not state the number of covers. Nothing shows it was for anyone other than the claimant, and it is within the lunch cap, so it is approved; the approver may wish to note it.",
+        "reason": "Concern attached to an approved item that the files do not support; the policy has no covers requirement and the key approves without caveat. Rubric fixes 3 points per such concern."
+      }
+    ]
+  },
+  {
+    "review_id": "wqms",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "xodp",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "ybje",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]

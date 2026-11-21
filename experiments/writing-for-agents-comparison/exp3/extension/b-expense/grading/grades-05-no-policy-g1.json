@@ -1,0 +1,335 @@
+[
+ {
+  "review_id": "avtn",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, 153 words)",
+    "reason": "summary is 153 words, well over the rubric's 'roughly 120 words or fewer'; consistent with verdicts but bloated, so 5 not 10"
+   }
+  ]
+ },
+ {
+  "review_id": "eenr",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, 182 words)",
+    "reason": "summary is 182 words, well over the rubric's 'roughly 120 words or fewer'; consistent with verdicts but bloated, so 5 not 10"
+   }
+  ]
+ },
+ {
+  "review_id": "fbsz",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 0,
+   "amounts": 0,
+   "questions": 5,
+   "summary": 0
+  },
+  "total": 50,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 2,
+  "deductions": [
+   {
+    "criterion": "grounds",
+    "points": 15,
+    "item": "Items 4 and 8 (R04 21.90 vs 24.90; R08 dated 4 Oct 2026, Osborne Park)",
+    "quote": "(absent)",
+    "reason": "Key case-specific scoring: a policy-only review earns grounds credit only for receipt problems it reports; neither discrepancy is reported"
+   },
+   {
+    "criterion": "amounts",
+    "points": 15,
+    "item": "Expected total 2,046.80 / 2,099.50; line-sum error 2,102.50 vs 2,012.50; item 4 at 21.90",
+    "quote": "(absent)",
+    "reason": "No receipt-supported figure, per-item amounts or total error reported"
+   },
+   {
+    "criterion": "questions",
+    "points": 10,
+    "item": "Q2 [essential], Q3, Q4",
+    "quote": "(absent)",
+    "reason": "Only Q1 (policy) raised: 2/6 weight"
+   },
+   {
+    "criterion": "summary",
+    "points": 10,
+    "item": "Summary for the approver",
+    "quote": "The review is on hold until the expense policy is supplied.",
+    "reason": "No summary for the approver; a one-line hold notice is not a summary of verdicts and total"
+   }
+  ]
+ },
+ {
+  "review_id": "hfmf",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, 172 words)",
+    "reason": "summary is 172 words, well over the rubric's 'roughly 120 words or fewer'; consistent with verdicts but bloated, so 5 not 10"
+   }
+  ]
+ },
+ {
+  "review_id": "nmrv",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": []
+ },
+ {
+  "review_id": "noxv",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 9,
+   "summary": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Padding (no key question)",
+    "quote": "Line 2: please confirm the hire car class and supply any pre-approval for car hire, if required.",
+    "reason": "R02 states the vehicle class (compact) and nothing in the files suggests a pre-approval requirement; no basis in the files, 3 points per rubric default"
+   },
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Padding (no key question)",
+    "quote": "Line 5: please confirm this fuel was for the hire car under agreement RA-220917.",
+    "reason": "R05 fully matches the line (South Hedland, 3 Nov, 88.40); no basis in the files, 3 points per rubric default"
+   }
+  ]
+ },
+ {
+  "review_id": "utul",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, 166 words)",
+    "reason": "summary is 166 words, well over the rubric's 'roughly 120 words or fewer'; consistent with verdicts but bloated, so 5 not 10"
+   }
+  ]
+ },
+ {
+  "review_id": "wenz",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 0,
+   "amounts": 0,
+   "questions": 7.5,
+   "summary": 0
+  },
+  "total": 52.5,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 2,
+  "deductions": [
+   {
+    "criterion": "grounds",
+    "points": 15,
+    "item": "Items 4 and 8",
+    "quote": "R04 | Hedland Bakehouse, South Hedland | 3 November 2026 | AUD 21.90 ... R08 | Metro Fuel Osborne Park | 4 October 2026 | AUD 52.70",
+    "reason": "Receipt details are listed in an inventory table but never identified as discrepancies against items 4 and 8; no reason given for either item"
+   },
+   {
+    "criterion": "amounts",
+    "points": 15,
+    "item": "Expected total 2,046.80 / per-item supported amounts; item 4 at 21.90",
+    "quote": "No verdicts, approved amounts, corrected total or approver summary are given until the policy is supplied.",
+    "reason": "Line-sum error is detected, but no receipt-supported total or per-item supported amounts are given"
+   },
+   {
+    "criterion": "questions",
+    "points": 7.5,
+    "item": "Q2 [essential], Q3",
+    "quote": "(absent)",
+    "reason": "Q1 asked; Q4 total mismatch stated in inventory (counted); Q2 and Q3 absent: 3/6 weight"
+   },
+   {
+    "criterion": "summary",
+    "points": 10,
+    "item": "Summary for the approver",
+    "quote": "No verdicts, approved amounts, corrected total or approver summary are given",
+    "reason": "Summary absent"
+   }
+  ]
+ },
+ {
+  "review_id": "wgno",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, 173 words)",
+    "reason": "summary is 173 words, well over the rubric's 'roughly 120 words or fewer'; consistent with verdicts but bloated, so 5 not 10"
+   }
+  ]
+ },
+ {
+  "review_id": "wley",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "review_id": "xxml",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, 200 words)",
+    "reason": "summary is 200 words, well over the rubric's 'roughly 120 words or fewer'; consistent with verdicts but bloated, so 5 not 10"
+   }
+  ]
+ },
+ {
+  "review_id": "zmzc",
+  "scores": {
+   "coverage": 15,
+   "verdict_accuracy": 30,
+   "grounds": 15,
+   "amounts": 15,
+   "questions": 15,
+   "summary": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "summary",
+    "points": 5,
+    "item": "Summary for the approver",
+    "quote": "(summary section, 168 words)",
+    "reason": "summary is 168 words, well over the rubric's 'roughly 120 words or fewer'; consistent with verdicts but bloated, so 5 not 10"
+   }
+  ]
+ }
+]

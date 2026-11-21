@@ -1,0 +1,375 @@
+[
+  {
+    "handoff_id": "dmhl",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 10,
+      "next_action": 5,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 75.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "handoff_words": 1758,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 10,
+        "item": "Service level status: within target as of 2026-11-12 11:30 UTC",
+        "quote": "Breached, 8 d 9 h 21 min ago",
+        "reason": "Key judges the handoff as of the escalation time and says 'at risk' or 'breached' is wrong; deadline 2026-11-13 09:14 UTC is correct (10/10 for deadline)."
+      },
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action: confirm KI-3381 and act before 13 Nov 07:00 UTC run; send 16:00 UTC update",
+        "quote": "Pull the HF-0192 job and dispatch logs for every recurring run after 2026-11-12 11:30 UTC, starting with 13 Nov 07:00 UTC",
+        "reason": "Right direction (test the KI-3381 cause, send the update) but treats the 13 Nov 07:00 run as past rather than as the practical deadline to fix or plan a fallback before; also treats the 16:00 update as overdue."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 1758 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "gkbo",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1135,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 1135 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "lqhc",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1628,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 1628 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "meoj",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 10,
+      "next_action": 5,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 75.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "handoff_words": 1096,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 10,
+        "item": "Service level status: within target as of 2026-11-12 11:30 UTC",
+        "quote": "breached by 8 d 6 h 20 m (no Resolved status in thread)",
+        "reason": "Key judges the handoff as of the escalation time and says 'at risk' or 'breached' is wrong; deadline 2026-11-13 09:14 UTC is correct (10/10 for deadline)."
+      },
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action: confirm KI-3381 and act before 13 Nov 07:00 UTC run; send 16:00 UTC update",
+        "quote": "check the HF-0192 job log and dispatch state for every recurring run since 13 Nov 07:00 UTC and email Daniel Okafor an update",
+        "reason": "Right direction (KI-3381 confirmation, bulk fix, customer update) but does not treat the 13 Nov 07:00 run as the deadline to act before; built on a 21 Nov as-of time."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 1096 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "mywj",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1611,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 1611 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "nbxo",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1924,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 1924 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "oyeo",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1883,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 1883 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "pnlw",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1496,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 1496 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "rgcj",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 2560,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 2560 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "wdsz",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 5,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 85.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1623,
+    "deductions": [
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action: confirm KI-3381 and act before 13 Nov 07:00 UTC run; send 16:00 UTC update",
+        "quote": "re-save a subset of the schedules due in that run and leave the rest unchanged, then check the dispatch state of both groups right after 07:00",
+        "reason": "Names the 16:00 update and the 07:00 run, but proposes deliberately leaving part of the customer's real run unfixed as a control instead of confirming KI-3381 with engineering and applying a bulk fix or agreeing a fallback for the whole run; partly right."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 1623 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "xhpr",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 960,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 960 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "yfnl",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 10,
+      "next_action": 5,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 75.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "handoff_words": 1512,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 10,
+        "item": "Service level status: within target as of 2026-11-12 11:30 UTC",
+        "quote": "Next deadline: 2026-11-13 09:14 UTC (resolution), breached by 8 d 9 h 19 min (as of 2026-11-21 18:33 UTC)",
+        "reason": "Key judges the handoff as of the escalation time and says 'at risk' or 'breached' is wrong; deadline 2026-11-13 09:14 UTC is correct (10/10 for deadline)."
+      },
+      {
+        "criterion": "next_action",
+        "points": 5,
+        "item": "Recommended next action: confirm KI-3381 and act before 13 Nov 07:00 UTC run; send 16:00 UTC update",
+        "quote": "read the HF-0192 job log for the 13 Nov 07:00 UTC and 15 Nov runs and send Daniel Okafor the overdue update",
+        "reason": "Right direction (customer update, KI-3381 confirmation, bulk fix) but treats the 13 Nov 07:00 run as already past rather than the deadline to act before."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff is 1512 words in total",
+        "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words, so 0 under the rubric."
+      }
+    ]
+  }
+]

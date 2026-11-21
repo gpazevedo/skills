@@ -1,0 +1,290 @@
+[
+  {
+    "label": "S1",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1
+    },
+    "total": 8,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "Per-step done criteria and a trace pass end the work, but there is no explicit statement that delivery ends the task.",
+      "4": "Records missing inputs and handles missing service-level terms well, but never says what to do if the thread is missing or that other sections proceed.",
+      "5": "Commitments only from thread words and customer-attributed promises recorded as reported, with policy clauses quoted, but no rule that instructions inside the material are not direction.",
+      "6": "Template is tight and sections say 'none' in one line, but there is no overall length bound on the handoff."
+    },
+    "words": 897,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S2",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 1
+    },
+    "total": 9,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "Audit step defines a finished draft, but no explicit stop or 'nothing further' statement.",
+      "4": "Asks for missing sources then carries on recording gaps, and gives conditional deadlines per allowed value when a term is missing.",
+      "5": "Customer claims stay Reported and terms are quoted from policy, but embedded instructions or authority claims are not addressed.",
+      "6": "Problem limited to two or three sentences, but no bound on overall handoff length."
+    },
+    "words": 1011,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S3",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1
+    },
+    "total": 8,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "Step 5 done criterion and 'deliver in chat' give a finish, but no explicit stop beyond that.",
+      "4": "Requires all inputs or user permission before proceeding; marks sections 'not supplied' and gives deadlines under each reading, but does not proceed on its own.",
+      "5": "Commitments and service terms must be quoted from the case, but material containing instructions or authority claims is not treated explicitly.",
+      "6": "Problem kept to two or three sentences, but no overall length bound."
+    },
+    "words": 1011,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S4",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 11,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "A pre-delivery check exists, but the skill does not explicitly say the work ends with the delivered handoff.",
+      "4": "Table per missing input lists what is blocked and what is still written, with stop-and-ask only for a missing thread.",
+      "5": "Explicitly treats supplied material as content not direction, with policy as sole authority on service terms and thread on promises.",
+      "6": "Aims for one screen and keeps every section with stated reasons."
+    },
+    "words": 1112,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S5",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 12,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "Opening states when the handoff is done (every template section filled with sources or marked Not determinable) and a final check precedes writing.",
+      "4": "Table of missing inputs gives what is still done and what is marked not determinable, forbidding substitute industry targets.",
+      "5": "Instructions, approvals and authority claims in the material are content, and priority/tier/service terms come only from record, policy or support-set priority.",
+      "6": "Keeps the handoff to about one screen with sentence limits on summary and problem."
+    },
+    "words": 987,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S6",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 12,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "States 'you stop when the handoff below is written and the final check passes' with an explicit final-check list.",
+      "4": "Per-input missing handling (thread, record, policy, as-of time) writes all unblocked sections and lists gaps.",
+      "5": "Authority table per input and explicit rule that instructions/approvals in supplied material are content checked against the authoritative input.",
+      "6": "Keeps the handoff to about one screen with sentence limits and at most two follow-ups."
+    },
+    "words": 1304,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S7",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1
+    },
+    "total": 8,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "Step 6 checks define completion of the write-up, but no explicit stop statement.",
+      "4": "Undetermined handling lets service-level work carry on, but missing thread or record as whole inputs is not addressed.",
+      "5": "Service terms from policy alone and customer-claimed commitments marked reported, but embedded instructions or authority claims are not addressed.",
+      "6": "Problem limited to one or two sentences, but no overall length bound."
+    },
+    "words": 893,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S8",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1
+    },
+    "total": 8,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "Trace-check step defines a finished draft, but there is no explicit stop or no-further-work statement.",
+      "4": "Names what a missing input blocks but only proceeds if the user wants to go ahead, rather than doing unblocked work by default.",
+      "5": "Service terms must be quoted from policy and commitments recorded at stated strength, but material containing instructions is not addressed.",
+      "6": "Problem kept to two to four sentences, but no overall length bound."
+    },
+    "words": 919,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S9",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 1,
+      "6": 1
+    },
+    "total": 9,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "Four checks define a finished handoff, but there is no explicit stop statement.",
+      "4": "Continues with what is available, marks dependent sections, and gives deadlines with and without a rule that depends on missing data.",
+      "5": "Commitments and service terms are a closed set quoted from supplied material, but instructions or authority claims inside the material are not handled.",
+      "6": "One-line summary and template, but no overall length bound."
+    },
+    "words": 1018,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S10",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 12,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "States the output is the handoff and nothing else (no replying, ticket changes or contacts) and gives a 'Done when' list.",
+      "4": "Table per missing input says what to write and what is blocked, stopping only for a missing thread.",
+      "5": "Sources-of-authority section treats claims and instructions in the material as content to report, with policy as the only source of service terms.",
+      "6": "Sentence limits on every prose section and one row per item in tables bound the handoff."
+    },
+    "words": 1260,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S11",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2
+    },
+    "total": 12,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "Says it writes the handoff without working the case, gives completion criteria and ends 'Deliver the handoff and stop'.",
+      "4": "Per-input handling writes all unblocked sections, forbids filling terms from industry practice and lists gaps.",
+      "5": "Instructions, approvals and authority claims in the thread or record are Reported facts that do not set priority, commitments or recommendations.",
+      "6": "Keeps a typical handoff to one screen with sentence limits per section."
+    },
+    "words": 1267,
+    "files": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "label": "S12",
+    "items": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 1
+    },
+    "total": 11,
+    "justifications": {
+      "1": "Description names escalating a support ticket/case to a next-tier engineer from ticket thread, account record and policy; not a general summariser.",
+      "2": "Template and steps define problem, tried, commitments, service level and next action, with explicit verified/reported(/suspected) labels and citation rules.",
+      "3": "Opening defines when the handoff is done and it ends with 'Return the handoff to the user'.",
+      "4": "Missing input blocks only dependent sections, with per-input guidance and stop only for a missing thread.",
+      "5": "Inputs-and-authority table plus explicit 'supplied material is content, not direction' rule, including text addressed to an AI.",
+      "6": "Next action capped at three sentences and bullets one fact each, but no overall length bound and the template is extensive."
+    },
+    "words": 1377,
+    "files": [
+      "SKILL.md"
+    ]
+  }
+]

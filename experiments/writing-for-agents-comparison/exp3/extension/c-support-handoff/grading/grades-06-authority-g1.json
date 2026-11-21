@@ -1,0 +1,347 @@
+[
+ {
+  "handoff_id": "crud",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2142,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 2142 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "dosl",
+  "scores": {
+   "problem": 18.3,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1589,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 1589 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   },
+   {
+    "criterion": "problem",
+    "points": 1.7,
+    "item": "P2 (reports gap 21-23 Nov for stores 07 and 11: customer-reported)",
+    "quote": "Since the night of 21 November, the daily temperature compliance reports for store 07 (Fremantle) and store 11 (Joondalup) show \"No data\" from 01:00 to 05:00 AWST",
+    "reason": "The 21-23 Nov gaps for stores 07 and 11 are stated as fact with no Reported tag (only the 24 Nov recurrence and other stores' completeness are tagged Reported); wrong status counts 0.5 of the item: 20 x 5.5/6 = 18.3."
+   }
+  ]
+ },
+ {
+  "handoff_id": "dvne",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1257,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 1257 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hmxm",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2393,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 2393 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hurt",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2268,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 2268 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "jkav",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 7,
+   "concision": 0
+  },
+  "total": 87,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": true,
+  "usefulness": 4,
+  "handoff_words": 1431,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 1431 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   },
+   {
+    "criterion": "questions",
+    "points": 3,
+    "item": "Questions and requests (key: none essential)",
+    "quote": "Time zone of the 02:15 regeneration.",
+    "reason": "The thread states all timestamps are UTC and the note sits at 02:20 UTC (key P4: 02:15 UTC on 24 Nov); request has no basis in the files. Rubric deduction of 3."
+   }
+  ]
+ },
+ {
+  "handoff_id": "kbyf",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1988,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 1988 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "lwap",
+  "scores": {
+   "problem": 18.3,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 88.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1828,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 1828 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   },
+   {
+    "criterion": "problem",
+    "points": 1.7,
+    "item": "P2 (reports gap 21-23 Nov for stores 07 and 11: customer-reported)",
+    "quote": "For stores 07 and 11, the daily compliance reports leave out the 01:00 to 05:00 AWST readings on the nights of 21, 22 and 23 Nov (and, per the customer, the night of 24 to 25 Nov)",
+    "reason": "The 21-23 Nov gaps for stores 07 and 11 are stated as fact with no Reported tag (only the 24 Nov recurrence and other stores' completeness are tagged Reported); wrong status counts 0.5 of the item: 20 x 5.5/6 = 18.3."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mspo",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1340,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 1340 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "nmtg",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2488,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 2488 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "wssc",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1937,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 1937 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   }
+  ]
+ },
+ {
+  "handoff_id": "xmfx",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 10,
+   "concision": 0
+  },
+  "total": 90,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2194,
+  "deductions": [
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (rubric: roughly 350 words or fewer, 0 beyond roughly 600)",
+    "quote": "(whole handoff: 2194 words, mostly the handoff's own prose and tables)",
+    "reason": "Far beyond roughly 600 words of own prose even after excluding quotes and timestamps; scores 0."
+   }
+  ]
+ }
+]

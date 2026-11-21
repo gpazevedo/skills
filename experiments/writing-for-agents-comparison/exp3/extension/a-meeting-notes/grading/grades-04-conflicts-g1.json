@@ -1,0 +1,391 @@
+[
+ {
+  "brief_id": "atta",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "**Open:** The fallback pour date is stated but not recorded as agreed by anyone",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Brief does not surface whether council can process the TMP in time for pour trucks to use the Kestrel St loading zone (weight 1 of 6; 15 x 5/6 = 12.5)."
+   }
+  ]
+ },
+ {
+  "brief_id": "iret",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 18.9,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 88.1,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "Fallback pour date of Mon 23 Nov if Fri 20 Nov is rained out: no one recorded as agreeing",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   },
+   {
+    "criterion": "actions",
+    "points": 1.1,
+    "key_id": "A4",
+    "quote": "Wed 11 Nov (revised from Fri 13 Nov; not confirmed with Jenna)",
+    "reason": "TMP deadline given as a revision to Wed 11 Nov rather than flagged as conflicting; brief states 'None of the contradictions in the notes is left unresolved'. Deadline scored incorrect: A4 = 0.5, actions 20 x 8.5/9 = 18.9."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Brief does not surface whether council can process the TMP in time for pour trucks to use the Kestrel St loading zone (weight 1 of 6; 15 x 5/6 = 12.5)."
+   }
+  ]
+ },
+ {
+  "brief_id": "kgsi",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "it is treated as a plan not yet confirmed as a decision",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   }
+  ]
+ },
+ {
+  "brief_id": "lpek",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "Rain fallback for the L3 pour: Mon 23 Nov if Fri 20 Nov is rained out ... (listed under 'Proposals not yet decided')",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Brief does not surface whether council can process the TMP in time for pour trucks to use the Kestrel St loading zone (weight 1 of 6; 15 x 5/6 = 12.5)."
+   }
+  ]
+ },
+ {
+  "brief_id": "pyek",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "Decided or still proposed? \"Fallback if Fri is rained out: Mon 23 Nov.\" No assent is recorded for the fallback date.",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Brief does not surface whether council can process the TMP in time for pour trucks to use the Kestrel St loading zone (weight 1 of 6; 15 x 5/6 = 12.5)."
+   }
+  ]
+ },
+ {
+  "brief_id": "rusg",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "If Fri 20 Nov is rained out, the pour falls back to Mon 23 Nov ... Status: no outcome recorded (listed under 'Proposals (not decided)')",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Brief does not surface whether council can process the TMP in time for pour trucks to use the Kestrel St loading zone (weight 1 of 6; 15 x 5/6 = 12.5)."
+   }
+  ]
+ },
+ {
+  "brief_id": "smcm",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "Decided or proposed? Fallback pour date of Mon 23 Nov if Friday is rained out. The notes state it but record no agreement or speaker.",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   }
+  ]
+ },
+ {
+  "brief_id": "tgan",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 91.7,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "If Fri 20 Nov is rained out, the fallback pour date is Mon 23 Nov ... the notes record this plan but no agreement to it.",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   }
+  ]
+ },
+ {
+  "brief_id": "tgkk",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": true,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "Fallback pour date of Mon 23 Nov if Fri 20 Nov is rained out (recorded without a decision marker ...)",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Brief does not surface whether council can process the TMP in time for pour trucks to use the Kestrel St loading zone (weight 1 of 6; 15 x 5/6 = 12.5)."
+   }
+  ]
+ },
+ {
+  "brief_id": "vxzz",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "Whether the Mon 23 Nov rain fallback was agreed: the notes state it but record no acceptance (Proposed, not decided).",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Brief does not surface whether council can process the TMP in time for pour trucks to use the Kestrel St loading zone (weight 1 of 6; 15 x 5/6 = 12.5)."
+   }
+  ]
+ },
+ {
+  "brief_id": "ylph",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12.5,
+   "handoff": 10
+  },
+  "total": 89.2,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "P1. Rain fallback date for the pour ... Status: the notes record no speaker and no agreement for this fallback",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 2.5,
+    "key_id": "Q3",
+    "quote": "(absent)",
+    "reason": "Brief does not surface whether council can process the TMP in time for pour trucks to use the Kestrel St loading zone (weight 1 of 6; 15 x 5/6 = 12.5)."
+   }
+  ]
+ },
+ {
+  "brief_id": "ypuu",
+  "case": "04-conflicts",
+  "scores": {
+   "decision_recall": 16.7,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 17.8,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 89.4,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_recall",
+    "points": 8.3,
+    "key_id": "D2",
+    "quote": "Proposed, not decided: fallback pour date of Mon 23 Nov if Fri 20 Nov is rained out",
+    "reason": "Rain fallback Mon 23 Nov (Steve calls by 4am) is a key decision but the brief presents it as not agreed/proposed rather than as a decision; 2 of 3 key decisions captured (25 x 2/3 = 16.7)."
+   },
+   {
+    "criterion": "actions",
+    "points": 1.1,
+    "key_id": "A2",
+    "quote": "Have L3 formwork ready for inspection | not stated (Ivan gave the date)",
+    "reason": "Notes give Ivan as owner ('Ivan: formwork ready for inspection Tue 17 Nov'); owner scored incorrect, A2 = 0.5."
+   },
+   {
+    "criterion": "actions",
+    "points": 1.1,
+    "key_id": "A3",
+    "quote": "Reo inspection | not stated (Carla gave the date)",
+    "reason": "Notes give Carla as owner ('Carla: reo inspection Wed 18 Nov, morning'); owner scored incorrect, A3 = 0.5. Actions 20 x 8/9 = 17.8."
+   }
+  ]
+ }
+]

@@ -1,0 +1,438 @@
+[
+  {
+    "handoff_id": "cicr",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 7,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 82,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2157,
+    "deductions": [
+      {
+        "criterion": "next_action",
+        "points": 3,
+        "item": "Recommended next action (interim vat 3 measure; NTP follow-up for GW-01/02)",
+        "quote": "Tier 2 (Field Systems Engineering) to confirm or rule out the suspected hardware fault behind GW-03's \"TIME_SET_REJECTED: RTC write error\" and settle how vat 3's alarm will be restored",
+        "reason": "Partly right (5): right direction on GW-03 but no interim alarm measure and no NTP follow-up for GW-01/02 anywhere as an action; +2 extra credit for flagging the policy 5.2 Team Lead notification (key grading note)."
+      },
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 2157 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "gwmz",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1796,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 1796 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "hjjp",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 2698,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 2698 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "ibse",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2360,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 2360 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "jhmf",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1847,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 1847 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "paza",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1905,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 1905 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "ugbh",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2262,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 2262 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "vozp",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1378,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 1378 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "zuzw",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 2602,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 2602 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "mssg",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 15,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 80,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 1538,
+    "deductions": [
+      {
+        "criterion": "service_level",
+        "points": 5,
+        "item": "Service level status: at risk",
+        "quote": "Status at 2026-11-24 06:00 UTC: Within target: 6 h 20 min business time remaining, which policy 4.4 classes as \"at risk\"",
+        "reason": "Deadline correct (10). Status is labelled 'Within target' while the same line says policy classes it as at risk; key's case-specific scoring gives partial credit for a correct deadline with status 'within target'. Size of partial credit not fixed; 5 of 10 awarded for status."
+      },
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 1538 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "pdgo",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 13,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 78,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 2977,
+    "deductions": [
+      {
+        "criterion": "commitments",
+        "points": 7,
+        "item": "X2 (\"No rush before Monday\" is not a commitment)",
+        "quote": "| \"No rush before Monday; the hourly checks cover you over the weekend.\" | Hannah Odum (Tier 1) | 2026-11-20 07:20 UTC | Weekend of 21 to 22 Nov | Missed (assurance of an outcome; ...",
+        "reason": "An item from 'Not commitments' presented as a commitment (listed in the commitments table with status Missed); rubric subtracts 7."
+      },
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 2977 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  },
+  {
+    "handoff_id": "vmew",
+    "scores": {
+      "problem": 20,
+      "tried": 8.3,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 5,
+      "concision": 0
+    },
+    "total": 83.3,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1296,
+    "deductions": [
+      {
+        "criterion": "tried",
+        "points": 1.7,
+        "item": "T6 (customer workaround: hourly manual dashboard checks; did not prevent the 22 Nov loss, not sustainable)",
+        "quote": "(absent)",
+        "reason": "Hourly checks as the customer's workaround and their failure are not reported; the only mention is forward-looking ('vat 3 needs manual checks until GW-03 is fixed'). 5 of 6 T items: 10 x 5/6 = 8.3."
+      },
+      {
+        "criterion": "questions",
+        "points": 5,
+        "item": "Questions: whether the customer can host a replacement gateway quickly",
+        "quote": "(absent)",
+        "reason": "One of two useful (weight 1) items not raised; 10 x 1/2 = 5."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision",
+        "quote": "(handoff is 1296 words)",
+        "reason": "Well beyond roughly 600 words of the handoff's own prose even excluding quoted evidence and timestamps; next-tier engineer cannot act in about a minute."
+      }
+    ]
+  }
+]

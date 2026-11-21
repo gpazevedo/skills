@@ -1,0 +1,257 @@
+[
+ {
+  "brief_id": "axmo",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "cetm",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 16.5,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 96.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 3.5,
+    "key_id": "N4",
+    "quote": "3. Locum Dr Abebe covers after-hours from 1 December.",
+    "reason": "Locum cover is listed under Decisions but is in the key's Not decisions list (N4); N4 is low weight, so the 7-point deduction counts half (3.5). Not a critical failure: the fact itself is supported by the notes."
+   }
+  ]
+ },
+ {
+  "brief_id": "czew",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "ittd",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 16.5,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 96.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 3.5,
+    "key_id": "N4",
+    "quote": "3. Locum Dr Abebe covers after-hours from 1 Dec (recorded as a settled arrangement rather than an agreement made in the meeting).",
+    "reason": "Locum cover is listed under Decisions but is in the key's Not decisions list (N4); N4 is low weight, so the 7-point deduction counts half (3.5). Not a critical failure: the fact itself is supported by the notes."
+   }
+  ]
+ },
+ {
+  "brief_id": "jgig",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "ltmy",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "lyjb",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 5
+  },
+  "total": 95,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": [
+   {
+    "criterion": "handoff",
+    "points": 5,
+    "key_id": "n/a",
+    "quote": "The meeting agreed to move SMS appointment reminders from 24h to 48h ... which the surveyor has not confirmed.",
+    "reason": "Handoff summary is 184 words, well over the rubric's roughly 150-word limit; scored as bloated (5)."
+   }
+  ]
+ },
+ {
+  "brief_id": "tgeg",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 16.5,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 5
+  },
+  "total": 91.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "decision_precision",
+    "points": 3.5,
+    "key_id": "N4",
+    "quote": "3. Locum Dr Abebe covers after-hours from 1 Dec.",
+    "reason": "Locum cover is listed under Decisions but is in the key's Not decisions list (N4); N4 is low weight, so the 7-point deduction counts half (3.5). Not a critical failure: the fact itself is supported by the notes."
+   },
+   {
+    "criterion": "handoff",
+    "points": 5,
+    "key_id": "N4",
+    "quote": "Two things were agreed: SMS reminders move to 48h ... and the clinic closes at 1pm on Thu 24 Dec; locum Dr Abebe covers after-hours from 1 Dec",
+    "reason": "Handoff says two things were agreed while the Decisions section lists three (including the locum), so it is inconsistent with the rest of the brief."
+   }
+  ]
+ },
+ {
+  "brief_id": "upma",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "uwpk",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "zqlk",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ },
+ {
+  "brief_id": "zzez",
+  "case": "03-missing",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 15,
+   "handoff": 10
+  },
+  "total": 100,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 5,
+  "deductions": []
+ }
+]

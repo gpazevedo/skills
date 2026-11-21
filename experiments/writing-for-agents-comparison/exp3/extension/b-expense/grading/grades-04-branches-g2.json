@@ -1,0 +1,262 @@
+[
+  {
+    "review_id": "axdm",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary / Expected total",
+        "quote": "Summary for the approver section (whole)",
+        "reason": "Summary for the approver is about 152 words, well over the rubric's roughly 120 words, so clearly bloated (5 not 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "diqg",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary / Expected total",
+        "quote": "Summary for the approver section (whole)",
+        "reason": "Summary for the approver is about 150 words, well over the rubric's roughly 120 words, so clearly bloated (5 not 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "hpmk",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 12,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 3,
+        "item": "Item 8 (poster printing, ordinary approve per grading notes)",
+        "quote": "Policy gap the approver may want to clarify: clause 9.1 does not say whether carrying items such as the poster tube (EUR 7.00 within L8) count as \"materials for Foundation work\". ... if the approver disagrees, reduce L8 by GBP 5.95",
+        "reason": "Concern attached to an approved item that the key says should be approved without invented concerns; 9.1 covers printing and materials and the key accepts the full EUR 46.00. Rubric fixes 3 points per such concern."
+      }
+    ]
+  },
+  {
+    "review_id": "jodj",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary / Expected total",
+        "quote": "Summary for the approver section (whole)",
+        "reason": "Summary for the approver is about 160 words, well over the rubric's roughly 120 words, so clearly bloated (5 not 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "leng",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": true,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary / Expected total",
+        "quote": "Summary for the approver section (whole)",
+        "reason": "Summary for the approver is about 169 words, well over the rubric's roughly 120 words, so clearly bloated (5 not 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "mlae",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "mzzd",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "pfgo",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary / Expected total",
+        "quote": "Summary for the approver section (whole)",
+        "reason": "Summary for the approver is about 160 words, well over the rubric's roughly 120 words, so clearly bloated (5 not 10)."
+      }
+    ]
+  },
+  {
+    "review_id": "pyev",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "wdhe",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "znwu",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 5
+    },
+    "total": 95,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Summary / Expected total",
+        "quote": "Verdicts: 10 approve (7 of them at a reduced amount), 3 reject, 0 needs information.",
+        "reason": "Summary for the approver is about 159 words, well over the rubric's roughly 120 words, so clearly bloated (5 not 10). It is also inconsistent with the verdicts: the table has 9 approvals (6 reduced) and 3 rejections, not 10 and 7."
+      }
+    ]
+  },
+  {
+    "review_id": "zwrf",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  }
+]

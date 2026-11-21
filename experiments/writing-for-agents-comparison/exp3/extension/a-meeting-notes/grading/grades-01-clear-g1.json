@@ -1,0 +1,438 @@
+[
+  {
+    "brief_id": "bldq",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3)",
+        "quote": "When the old v1 pricing endpoint can be retired; it stays up until Android catches up, and no date is given for that",
+        "reason": "v1 endpoint retirement timing: the notes report existing behaviour ('no change there', N3), not an unresolved meeting issue. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "How the Apple Pay SDK review failure on the sandbox account will be resolved for 4.3; no owner or plan is recorded",
+        "reason": "Apple Pay SDK review resolution: not a gap the meeting left open; Apple Pay was moved to 4.3. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "dmcu",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 10
+    },
+    "total": 91,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Who works on the Apple Pay SDK update that is failing review, now that it moves to 4.3?",
+        "reason": "Apple Pay SDK review resolution: not a gap the meeting left open; Apple Pay was moved to 4.3. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3)",
+        "quote": "When will the v1 pricing endpoint be retired?",
+        "reason": "v1 endpoint retirement timing: the notes report existing behaviour ('no change there', N3), not an unresolved meeting issue. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Who removes the old map workaround that dropping iOS 15 allows, and when?",
+        "reason": "Map workaround removal: the key names 'Tom to remove the map workaround' as an invented item; raising it as an open question is the same invention. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "gesc",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 10
+    },
+    "total": 91,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3)",
+        "quote": "Was keeping the v1 pricing endpoint up until Android catches up a decision, and when is Android expected to catch up?",
+        "reason": "v1 endpoint retirement timing: the notes report existing behaviour ('no change there', N3), not an unresolved meeting issue. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Is the next sync on Tue 10 Nov confirmed?",
+        "reason": "Next sync confirmation: the notes state it plainly ('Next sync: Tue 10 Nov, same time'); mentioning it is acceptable but casting doubt on it invents an unresolved issue. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "How will the Apple Pay SDK update that is failing review on the sandbox account be resolved for 4.3?",
+        "reason": "Apple Pay SDK review resolution: not a gap the meeting left open; Apple Pay was moved to 4.3. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "ipmr",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 13,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 10
+    },
+    "total": 84,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_precision",
+        "points": 7,
+        "key_id": "N1",
+        "quote": "4. Dark mode is parked and not included in 4.2.",
+        "reason": "Dark mode is in the key's 'Not decisions' list (N1); the wording 'not in 4.2' is an acceptable consequence of parking, but the brief lists it as a decision in the Decisions section, so the rubric's 7-point deduction applies. Not recorded as a critical failure because the stated content is supported by the notes ('Parked, not for 4.2')."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Apple Pay: \"SDK update still failing review on the sandbox account.\" No owner or deadline is recorded for resolving this before 4.3",
+        "reason": "Apple Pay SDK review resolution: not a gap the meeting left open; Apple Pay was moved to 4.3. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3)",
+        "quote": "The old v1 pricing endpoint \"stays up until Android catches up\"; no date or owner is recorded for retiring it.",
+        "reason": "v1 endpoint retirement timing: the notes report existing behaviour ('no change there', N3), not an unresolved meeting issue. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "the notes do not say whether that window is enough.",
+        "reason": "Release candidate/regression timing doubt: an invented schedule concern of the 'is 16 Nov realistic?' kind the key calls padding. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "kxro",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "meqm",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Apple Pay: the SDK update is \"still failing review on the sandbox account\"; the notes give no owner or plan for resolving it before 4.3.",
+        "reason": "Apple Pay SDK review resolution: not a gap the meeting left open; Apple Pay was moved to 4.3. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Regression start depends on staging: ... the notes do not say when everything is expected to be on staging beyond the pricing API (Fri 6 Nov).",
+        "reason": "Release candidate/regression timing doubt: an invented schedule concern of the 'is 16 Nov realistic?' kind the key calls padding. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "mnto",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 15,
+      "handoff": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "brief_id": "nrlx",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 0,
+      "handoff": 10
+    },
+    "total": 85,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Who cuts the 4.2 release candidate, and by when?",
+        "reason": "Release candidate/regression timing doubt: an invented schedule concern of the 'is 16 Nov realistic?' kind the key calls padding. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Who submits 4.2 to the App Store for the Mon 16 Nov release? Owner: not stated.",
+        "reason": "App Store submission owner: not discussed in the notes; invented gap. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "When does 4.3 ship, and who owns getting the Apple Pay SDK update through review on the sandbox account?",
+        "reason": "Apple Pay SDK review resolution: not a gap the meeting left open; Apple Pay was moved to 4.3. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Is removing the old map workaround part of 4.2, and if so who does it and by when?",
+        "reason": "Map workaround removal: the key names 'Tom to remove the map workaround' as an invented item; raising it as an open question is the same invention. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3)",
+        "quote": "How long does the v1 pricing endpoint stay up?",
+        "reason": "v1 endpoint retirement timing: the notes report existing behaviour ('no change there', N3), not an unresolved meeting issue. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "nxse",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 13,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 3,
+      "handoff": 10
+    },
+    "total": 81,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "decision_precision",
+        "points": 7,
+        "key_id": "N1",
+        "quote": "4. Dark mode is not in 4.2; it is parked.",
+        "reason": "Dark mode is in the key's 'Not decisions' list (N1); the wording 'not in 4.2' is an acceptable consequence of parking, but the brief lists it as a decision in the Decisions section, so the rubric's 7-point deduction applies. Not recorded as a critical failure because the stated content is supported by the notes ('Parked, not for 4.2')."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Regression timing. ... or what happens to the Mon 16 Nov date if any input slips.",
+        "reason": "Release candidate/regression timing doubt: an invented schedule concern of the 'is 16 Nov realistic?' kind the key calls padding. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Apple Pay for 4.3. ... the notes record no owner or deadline for getting it through review for 4.3.",
+        "reason": "Apple Pay SDK review resolution: not a gap the meeting left open; Apple Pay was moved to 4.3. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Removing the old map workaround. ... record no owner or deadline for it.",
+        "reason": "Map workaround removal: the key names 'Tom to remove the map workaround' as an invented item; raising it as an open question is the same invention. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3)",
+        "quote": "Pricing API v1 retirement. ... the notes give no date for Android catching up.",
+        "reason": "v1 endpoint retirement timing: the notes report existing behaviour ('no change there', N3), not an unresolved meeting issue. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "odxt",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 12,
+      "handoff": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Apple Pay's SDK update is still failing review on the sandbox account; the notes record no owner or next step for fixing it ahead of 4.3.",
+        "reason": "Apple Pay SDK review resolution: not a gap the meeting left open; Apple Pay was moved to 4.3. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "tzse",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 9,
+      "handoff": 10
+    },
+    "total": 94,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Marcus needs everything on staging before he starts regression, but the notes give no date by which the full 4.2 release candidate ... will be on staging",
+        "reason": "Release candidate/regression timing doubt: an invented schedule concern of the 'is 16 Nov realistic?' kind the key calls padding. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3)",
+        "quote": "The old pricing v1 endpoint stays up \"until Android catches up\"; no date for that is stated",
+        "reason": "v1 endpoint retirement timing: the notes report existing behaviour ('no change there', N3), not an unresolved meeting issue. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      }
+    ]
+  },
+  {
+    "brief_id": "uyra",
+    "case": "01-clear",
+    "scores": {
+      "decision_recall": 25,
+      "decision_precision": 20,
+      "evidence_fidelity": 10,
+      "actions": 20,
+      "open_questions": 6,
+      "handoff": 10
+    },
+    "total": 91,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Q1. Who cuts the 4.2 release candidate, and by when, so that \"everything\" is on staging before Marcus starts regression?",
+        "reason": "Release candidate/regression timing doubt: an invented schedule concern of the 'is 16 Nov realistic?' kind the key calls padding. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None",
+        "quote": "Q2. Who carries out the iOS 16 minimum change for 4.2 (including removing the old map workaround Tom mentioned)?",
+        "reason": "Map workaround removal: the key names 'Tom to remove the map workaround' as an invented item; raising it as an open question is the same invention. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      },
+      {
+        "criterion": "open_questions",
+        "points": 3,
+        "key_id": "Open questions: None (N3)",
+        "quote": "Q3. When will Android \"catch up\" so the old pricing v1 endpoint can be retired?",
+        "reason": "v1 endpoint retirement timing: the notes report existing behaviour ('no change there', N3), not an unresolved meeting issue. The key lists no open questions and calls invented unresolved issues padding; 3 points per item, matching the rubric's per-item deduction for an invented action."
+      }
+    ]
+  }
+]

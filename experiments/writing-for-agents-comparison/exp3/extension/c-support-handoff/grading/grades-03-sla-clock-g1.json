@@ -1,0 +1,438 @@
+[
+ {
+  "handoff_id": "cicr",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 5,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 80,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2156,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 2156 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   },
+   {
+    "criterion": "next_action",
+    "points": 5,
+    "item": "Recommended next action: NTP investigation for GW-01/02 drift and interim vat 3 alarm measure",
+    "quote": "Tier 2 (Field Systems Engineering) to confirm or rule out the suspected hardware fault behind GW-03's \"TIME_SET_REJECTED: RTC write error\" and settle how vat 3's alarm will be restored, then report the outcome to Aroha Ngata in the committed update",
+    "reason": "Right direction (GW-03 diagnosis, promised update, deadline) but no action anywhere on the unexplained NTP failure on VLAN 30 or an interim alarm for vat 3; partly right = 5."
+   }
+  ]
+ },
+ {
+  "handoff_id": "gwmz",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1796,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 1796 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "hjjp",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 2698,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 2698 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ibse",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2360,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 2360 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "jhmf",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1845,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 1845 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "mssg",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 15,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 80,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 1538,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 1538 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   },
+   {
+    "criterion": "service_level",
+    "points": 5,
+    "item": "Service level status: at risk",
+    "quote": "Status at 2026-11-24 06:00 UTC: Within target: 6 h 20 min business time remaining, which policy 4.4 classes as \"at risk\"",
+    "reason": "Deadline correct (10/10), but the status label given is 'Within target', contradicting the at-risk classification in the same sentence; key gives partial credit for correct deadline with 'within target', so 5 of 10 on status."
+   }
+  ]
+ },
+ {
+  "handoff_id": "paza",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1904,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 1904 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "pdgo",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 13,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 78,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "handoff_words": 2974,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 2974 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   },
+   {
+    "criterion": "commitments",
+    "points": 7,
+    "item": "X2 (not a commitment): 'No rush before Monday'",
+    "quote": "| \"No rush before Monday; the hourly checks cover you over the weekend.\" | Hannah Odum (Tier 1) | 2026-11-20 07:20 UTC | Weekend of 21 to 22 Nov | Missed (assurance of an outcome; ...",
+    "reason": "Listed in the commitments table as a (missed) commitment; key X2 says it is a remark, not a commitment. Rubric: subtract 7."
+   }
+  ]
+ },
+ {
+  "handoff_id": "ugbh",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2262,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 2262 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "vmew",
+  "scores": {
+   "problem": 20,
+   "tried": 8.3,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 83.3,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1296,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 1296 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   },
+   {
+    "criterion": "tried",
+    "points": 1.7,
+    "item": "T6: customer's hourly manual dashboard checks, which did not prevent the 22 Nov loss",
+    "quote": "(absent)",
+    "reason": "Neither the Tried list nor the problem evidence mentions the hourly-check workaround or its failure; 5 of 6 T items captured."
+   }
+  ]
+ },
+ {
+  "handoff_id": "vozp",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 1372,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 1372 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   }
+  ]
+ },
+ {
+  "handoff_id": "zuzw",
+  "scores": {
+   "problem": 20,
+   "tried": 10,
+   "commitments": 20,
+   "service_level": 20,
+   "next_action": 10,
+   "questions": 5,
+   "concision": 0
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "handoff_words": 2602,
+  "deductions": [
+   {
+    "criterion": "questions",
+    "points": 5,
+    "item": "Questions: useful item 'whether the customer can host a replacement gateway quickly'",
+    "quote": "(absent)",
+    "reason": "Key lists two useful items of weight 1 each; only the Joel Brandt compensation-response item is raised, so 10 x 1/2 = 5."
+   },
+   {
+    "criterion": "concision",
+    "points": 10,
+    "item": "Concision (350/600-word bounds)",
+    "quote": "(handoff is 2602 words in total)",
+    "reason": "Own prose, even excluding quoted evidence and timestamps, is well beyond roughly 600 words; a next-tier engineer could not act from it in about a minute."
+   }
+  ]
+ }
+]

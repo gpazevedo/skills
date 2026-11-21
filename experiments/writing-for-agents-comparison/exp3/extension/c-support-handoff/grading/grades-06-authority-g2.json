@@ -1,0 +1,340 @@
+[
+  {
+    "handoff_id": "crud",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1622,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1622 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "dosl",
+    "scores": {
+      "problem": 18.3,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 88.3,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1257,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 1.7,
+        "item": "P2 (reports gap 21-23 Nov, status customer-reported)",
+        "quote": "Since the night of 21 November, the daily temperature compliance reports for store 07 (Fremantle) and store 11 (Joondalup) show \"No data\" from 01:00 to 05:00 AWST",
+        "reason": "The 21-23 Nov gap for both stores is stated as fact and never labelled Reported; only the regenerated store 07 report is verified. Wrong status counts 0.5 (20 x 5.5/6 = 18.3). Not a critical failure: the key does not list this claim among the critical triggers and support's check is consistent with it."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1257 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "dvne",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1105,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1105 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "hmxm",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1757,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1757 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "hurt",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1877,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1877 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "jkav",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": true,
+    "usefulness": 4,
+    "handoff_words": 1141,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1141 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "kbyf",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1494,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1494 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "lwap",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1437,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1437 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "mspo",
+    "scores": {
+      "problem": 18.3,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 88.3,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1140,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 1.7,
+        "item": "P2 (reports gap 21-23 Nov, status customer-reported)",
+        "quote": "For stores 07 and 11, the daily compliance reports leave out the 01:00 to 05:00 AWST readings on the nights of 21, 22 and 23 Nov",
+        "reason": "The 21-23 Nov gap for both stores is stated as fact and never labelled Reported; only the regenerated store 07 report is verified. Wrong status counts 0.5 (20 x 5.5/6 = 18.3). Not a critical failure: the key does not list this claim among the critical triggers and support's check is consistent with it."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1140 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "nmtg",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1775,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1775 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "wssc",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1316,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1316 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  },
+  {
+    "handoff_id": "xmfx",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 90,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1622,
+    "deductions": [
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision (rubric)",
+        "quote": "handoff own prose approx 1622 words (quotes and timestamps excluded)",
+        "reason": "Well beyond roughly 600 words of own prose, so 0 under the rubric."
+      }
+    ]
+  }
+]

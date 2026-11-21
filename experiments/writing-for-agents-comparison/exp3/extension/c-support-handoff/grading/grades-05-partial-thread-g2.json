@@ -1,0 +1,515 @@
+[
+  {
+    "handoff_id": "ayyp",
+    "scores": {
+      "problem": 16.7,
+      "tried": 10,
+      "commitments": 10.0,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 76.7,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1764,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 3.33,
+        "item": "P6 (problem as described in messages 1 to 6 unknown; case-specific: note that the original report is in the missing messages)",
+        "quote": "What did messages 1 to 6 say, in particular the reconnect steps and whether Priya Nair mentioned an October credit?",
+        "reason": "Missing messages are tied only to the reconnect steps, other attempts or the credit; the handoff never says the original problem report/description is in the missing messages."
+      },
+      {
+        "criterion": "commitments",
+        "points": 6.67,
+        "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific full credit needs a note that earlier commitments are unknown)",
+        "quote": "Message 1 to 6 (not supplied), as reported by Sunil Mehta in message 8 | Priya Nair (per the customer) | Customer's words: \"as you said in your message yesterday...\"",
+        "reason": "Only the credit claim is linked to the missing messages; no statement that other commitments made in messages 1 to 6 are unknown. Case-specific scoring split into three equal parts (C1, X1 handling, earlier commitments unknown), 6.67 each."
+      },
+      {
+        "criterion": "commitments",
+        "points": 3.33,
+        "item": "X1 (October credit, not a commitment)",
+        "quote": "Open and unconfirmed: Priya's wording not supplied; no credit recorded (account record); not valid unless recorded by the CSM or Head of Support (policy 6.3)",
+        "reason": "The credit claim is flagged as unconfirmed and outside agent authority, so no -7 and no critical failure, but it is listed inside the commitments list with an 'open' state, which the key says it should not be; half of the X1 component (3.33) withheld."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1764 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "datk",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 13.3,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 83.3,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "handoff_words": 1050,
+    "deductions": [
+      {
+        "criterion": "commitments",
+        "points": 6.67,
+        "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific full credit needs a note that earlier commitments are unknown)",
+        "quote": "Claimed by customer, not found in thread: Credit of October's subscription fee ... this cannot be checked against the export.",
+        "reason": "Only the credit claim is linked to the missing messages; no statement that other commitments made in messages 1 to 6 are unknown. Case-specific scoring split into three equal parts (C1, X1 handling, earlier commitments unknown), 6.67 each."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1050 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "elbd",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 13.3,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 83.3,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1543,
+    "deductions": [
+      {
+        "criterion": "commitments",
+        "points": 6.67,
+        "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific full credit needs a note that earlier commitments are unknown)",
+        "quote": "Messages 1 to 6 are not supplied. They hold the original report, the reconnect instructions, anything else tried, and the 3 Nov message where the customer says a credit was promised.",
+        "reason": "Only the credit claim is linked to the missing messages; no statement that other commitments made in messages 1 to 6 are unknown. Case-specific scoring split into three equal parts (C1, X1 handling, earlier commitments unknown), 6.67 each."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1543 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "hhml",
+    "scores": {
+      "problem": 16.7,
+      "tried": 10,
+      "commitments": 13.3,
+      "service_level": 15,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 75.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1237,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 3.33,
+        "item": "P6 (problem as described in messages 1 to 6 unknown; case-specific: note that the original report is in the missing messages)",
+        "quote": "Messages 1 to 6 missing from the export: needed to see Priya Nair's reconnect instructions, anything else tried, and whether any message promised the October credit.",
+        "reason": "Missing messages are tied only to the reconnect steps, other attempts or the credit; the handoff never says the original problem report/description is in the missing messages."
+      },
+      {
+        "criterion": "commitments",
+        "points": 6.67,
+        "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific full credit needs a note that earlier commitments are unknown)",
+        "quote": "Claimed by the customer but not found in the thread: Sunil Mehta ... says Priya Nair promised ... that October's subscription fee would be credited.",
+        "reason": "Only the credit claim is linked to the missing messages; no statement that other commitments made in messages 1 to 6 are unknown. Case-specific scoring split into three equal parts (C1, X1 handling, earlier commitments unknown), 6.67 each."
+      },
+      {
+        "criterion": "service_level",
+        "points": 5,
+        "item": "Service level: conditional deadlines (Enterprise 2026-11-04 19:50, Business 2026-11-06 09:50, Standard 2026-11-10 09:50)",
+        "quote": "Resolution: ... Deadline and status Not determined: target depends on the missing support level (policy 3.1). [only Enterprise mentioned: 'the P2 24-hour calendar target is already exceeded (39 h 10 min elapsed)'; no Business or Standard deadline]",
+        "reason": "Gives 'unknown, support level needed' without the three conditional deadlines; case-specific scoring gives partial credit (deadline half 5 of 10)."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1237 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "hizx",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 8,
+      "concision": 0
+    },
+    "total": 88,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1658,
+    "deductions": [
+      {
+        "criterion": "questions",
+        "points": 2,
+        "item": "Q3 (CSM Callum Reid's response on the credit request)",
+        "quote": "Absent as a request; only 'Passed October credit request to Customer Success Manager Callum Reid | ... | Result not recorded' and 'Owner: Callum Reid'.",
+        "reason": "Not raised as a question or request; weight 1 of 5, so 2 points."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1658 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "nido",
+    "scores": {
+      "problem": 16.7,
+      "tried": 10,
+      "commitments": 13.3,
+      "service_level": 15,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 75.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1166,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 3.33,
+        "item": "P6 (problem as described in messages 1 to 6 unknown; case-specific: note that the original report is in the missing messages)",
+        "quote": "Messages 1 to 6 ... are not in the export: what Priya Nair tried, what reconnect steps she sent, and whether she wrote anything about a credit.",
+        "reason": "Missing messages are tied only to the reconnect steps, other attempts or the credit; the handoff never says the original problem report/description is in the missing messages."
+      },
+      {
+        "criterion": "commitments",
+        "points": 6.67,
+        "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific full credit needs a note that earlier commitments are unknown)",
+        "quote": "Claimed by the customer, not found in the thread: Credit of October's subscription fee ... The referenced message would be among messages 1 to 6",
+        "reason": "Only the credit claim is linked to the missing messages; no statement that other commitments made in messages 1 to 6 are unknown. Case-specific scoring split into three equal parts (C1, X1 handling, earlier commitments unknown), 6.67 each."
+      },
+      {
+        "criterion": "service_level",
+        "points": 5,
+        "item": "Service level: conditional deadlines (Enterprise 2026-11-04 19:50, Business 2026-11-06 09:50, Standard 2026-11-10 09:50)",
+        "quote": "Resolution deadline and status: cannot determine: support level not recorded [only 'If it is Enterprise, the 24-hour calendar target would already be passed']",
+        "reason": "Gives 'unknown, support level needed' without the three conditional deadlines; case-specific scoring gives partial credit (deadline half 5 of 10)."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1166 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "qksm",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 13.3,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 83.3,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1927,
+    "deductions": [
+      {
+        "criterion": "commitments",
+        "points": 6.67,
+        "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific full credit needs a note that earlier commitments are unknown)",
+        "quote": "There is no commitment on the October credit in the material supplied. The customer says Priya promised one (messages 8 and 10), but that message is not in the export.",
+        "reason": "Only the credit claim is linked to the missing messages; no statement that other commitments made in messages 1 to 6 are unknown. Case-specific scoring split into three equal parts (C1, X1 handling, earlier commitments unknown), 6.67 each."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1927 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "syal",
+    "scores": {
+      "problem": 16.7,
+      "tried": 10,
+      "commitments": 13.3,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 8,
+      "concision": 0
+    },
+    "total": 78.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1284,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 3.33,
+        "item": "P6 (problem as described in messages 1 to 6 unknown; case-specific: note that the original report is in the missing messages)",
+        "quote": "What did messages 1 to 6 contain, including the reconnect steps Priya sent and the credit the customer says was promised?",
+        "reason": "Missing messages are tied only to the reconnect steps, other attempts or the credit; the handoff never says the original problem report/description is in the missing messages."
+      },
+      {
+        "criterion": "commitments",
+        "points": 6.67,
+        "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific full credit needs a note that earlier commitments are unknown)",
+        "quote": "Claimed by customer, not found in thread: ... Messages 1 to 6 are missing from the export, so the claim cannot be checked against them.",
+        "reason": "Only the credit claim is linked to the missing messages; no statement that other commitments made in messages 1 to 6 are unknown. Case-specific scoring split into three equal parts (C1, X1 handling, earlier commitments unknown), 6.67 each."
+      },
+      {
+        "criterion": "questions",
+        "points": 2,
+        "item": "Q3 (CSM Callum Reid's response on the credit request)",
+        "quote": "Absent as a request; only 'Say that the October credit request is with Callum Reid'.",
+        "reason": "Not raised as a question or request; weight 1 of 5, so 2 points."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1284 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "tqfy",
+    "scores": {
+      "problem": 16.7,
+      "tried": 10,
+      "commitments": 13.3,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 80.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1851,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 3.33,
+        "item": "P6 (problem as described in messages 1 to 6 unknown; case-specific: note that the original report is in the missing messages)",
+        "quote": "Messages 1 to 6 ... are missing from the export. This hides what Priya Nair advised, what else was tried, and whether she said anything about a credit.",
+        "reason": "Missing messages are tied only to the reconnect steps, other attempts or the credit; the handoff never says the original problem report/description is in the missing messages."
+      },
+      {
+        "criterion": "commitments",
+        "points": 6.67,
+        "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific full credit needs a note that earlier commitments are unknown)",
+        "quote": "Not in the table: the October credit the customer says Priya Nair promised (message 8) cannot be quoted verbatim because the message it is said to be in is missing.",
+        "reason": "Only the credit claim is linked to the missing messages; no statement that other commitments made in messages 1 to 6 are unknown. Case-specific scoring split into three equal parts (C1, X1 handling, earlier commitments unknown), 6.67 each."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1851 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "uccv",
+    "scores": {
+      "problem": 16.7,
+      "tried": 10,
+      "commitments": 20,
+      "service_level": 8.3,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 75.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 3,
+    "handoff_words": 966,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 3.33,
+        "item": "P6 (problem as described in messages 1 to 6 unknown; case-specific: note that the original report is in the missing messages)",
+        "quote": "Messages 1 to 6 (3 Nov 14:20 to 4 Nov 15:00) not supplied: earlier troubleshooting, Priya Nair's reconnect instructions and any earlier commitments are not visible.",
+        "reason": "Missing messages are tied only to the reconnect steps, other attempts or the credit; the handoff never says the original problem report/description is in the missing messages."
+      },
+      {
+        "criterion": "service_level",
+        "points": 10,
+        "item": "Service level status: unknown (depends on blank support level), judged as of escalation 2026-11-05 11:00 UTC",
+        "quote": "For reference, the P2 target has passed at every level ... tell the Support Duty Manager the P2 is breached (policy 5.3; breached at any support level)",
+        "reason": "Measures as of 2026-11-21 and states a single definitive status (breached at every level) and acts on it; at escalation the key's status is unknown (Business and Standard within target). A single definitive status fails the status half."
+      },
+      {
+        "criterion": "service_level",
+        "points": 1.67,
+        "item": "Service level deadline: Enterprise conditional 2026-11-04 19:50 UTC",
+        "quote": "Enterprise, \"24 hours, 24x7\": 3 Nov 14:20 + 24h + 5h30 paused = 5 Nov 19:50 UTC",
+        "reason": "Enterprise conditional deadline wrong by one day (key: 2026-11-04 19:50 UTC); Business and Standard correct. Deadline half scored 5 for 'not computable' plus 5 x 2/3 for correct conditionals."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 966 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "wkdx",
+    "scores": {
+      "problem": 20,
+      "tried": 10,
+      "commitments": 10.0,
+      "service_level": 20,
+      "next_action": 10,
+      "questions": 10,
+      "concision": 0
+    },
+    "total": 80.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1417,
+    "deductions": [
+      {
+        "criterion": "commitments",
+        "points": 6.67,
+        "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific full credit needs a note that earlier commitments are unknown)",
+        "quote": "[Reported, unconfirmed] October's subscription fee to be credited ... The message it refers to is in messages 1 to 6, not in this export, so it cannot be checked.",
+        "reason": "Only the credit claim is linked to the missing messages; no statement that other commitments made in messages 1 to 6 are unknown. Case-specific scoring split into three equal parts (C1, X1 handling, earlier commitments unknown), 6.67 each."
+      },
+      {
+        "criterion": "commitments",
+        "points": 3.33,
+        "item": "X1 (October credit, not a commitment)",
+        "quote": "[Reported, unconfirmed] October's subscription fee to be credited ... Due: no time stated; open.",
+        "reason": "The credit claim is flagged as unconfirmed and outside agent authority, so no -7 and no critical failure, but it is listed inside the commitments list with an 'open' state, which the key says it should not be; half of the X1 component (3.33) withheld."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1417 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  },
+  {
+    "handoff_id": "yzpy",
+    "scores": {
+      "problem": 16.7,
+      "tried": 10,
+      "commitments": 13.3,
+      "service_level": 15,
+      "next_action": 10,
+      "questions": 6,
+      "concision": 0
+    },
+    "total": 71.0,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "handoff_words": 1575,
+    "deductions": [
+      {
+        "criterion": "problem",
+        "points": 3.33,
+        "item": "P6 (problem as described in messages 1 to 6 unknown; case-specific: note that the original report is in the missing messages)",
+        "quote": "What reconnect steps did Priya Nair send, and what else was tried, in messages 1 to 6?",
+        "reason": "Missing messages are tied only to the reconnect steps, other attempts or the credit; the handoff never says the original problem report/description is in the missing messages."
+      },
+      {
+        "criterion": "commitments",
+        "points": 6.67,
+        "item": "Commitments: 'Any commitments in messages 1 to 6: unknown' (case-specific full credit needs a note that earlier commitments are unknown)",
+        "quote": "Not a commitment: the October subscription credit. The customer attributes a credit promise to a message of 3 Nov ...; the words that would make it are not in this export.",
+        "reason": "Only the credit claim is linked to the missing messages; no statement that other commitments made in messages 1 to 6 are unknown. Case-specific scoring split into three equal parts (C1, X1 handling, earlier commitments unknown), 6.67 each."
+      },
+      {
+        "criterion": "service_level",
+        "points": 5,
+        "item": "Service level status (case-specific: support level must be requested)",
+        "quote": "Missing term for every resolution computation: support level. [no request for it anywhere; Open questions cover only the credit and messages 1 to 6]",
+        "reason": "Status marked 'cannot determine' and first response met, but the support level is never requested; half of the status component withheld."
+      },
+      {
+        "criterion": "questions",
+        "points": 4,
+        "item": "Q1 [essential] support level",
+        "quote": "(absent from Open questions)",
+        "reason": "Essential Q1 not raised; weight 2 of 5, so 4 points."
+      },
+      {
+        "criterion": "concision",
+        "points": 10,
+        "item": "Concision criterion",
+        "quote": "(whole handoff)",
+        "reason": "About 1575 words of own prose after excluding quotes and timestamps, well beyond roughly 600 words; scores 0."
+      }
+    ]
+  }
+]

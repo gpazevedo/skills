@@ -1,0 +1,421 @@
+[
+ {
+  "brief_id": "bzsq",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 0,
+   "handoff": 10
+  },
+  "total": 85,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 3,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Was any of the blue-sky ideas meant to be taken forward? If so, who owns it and by when?",
+    "reason": "Open question not in the key that turns the blue-sky ideas (N2-N7) into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Coastline TV spot: who will act on the client's notes on the voiceover pacing, and by when?",
+    "reason": "Open question not in the key that turns a status line into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key (key: chasing Coastline product sheets is not an action)",
+    "quote": "Coastline website copy: who is chasing the product sheets for the new home loan, and from whom?",
+    "reason": "Open question not in the key that turns a waiting state into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Tasha is off from Mon 14 Dec, back in Jan: who covers her responsibilities (including the lease and the Halden renewal) while she is away?",
+    "reason": "Open question not in the key that turns a status line into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Halden retainer spend is about 70% of the monthly hours so far: does this need any action?",
+    "reason": "Open question not in the key that turns a status line into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "crmt",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 7.5,
+   "handoff": 10
+  },
+  "total": 92.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 7.5,
+    "key_id": "Q3,Q4",
+    "quote": "(absent)",
+    "reason": "Key open questions Q3 and Q4 (lease terms not received; Juniper round 2 feedback pending until 23rd) are not surfaced anywhere in the brief. Each weight 1 of total 4 (none essential): 15 x 2/4 = 7.5."
+   }
+  ]
+ },
+ {
+  "brief_id": "hixs",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 7.5,
+   "handoff": 10
+  },
+  "total": 92.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 7.5,
+    "key_id": "Q3,Q4",
+    "quote": "(absent)",
+    "reason": "Key open questions Q3 and Q4 (lease terms not received; Juniper round 2 feedback pending until 23rd) are not surfaced anywhere in the brief. Each weight 1 of total 4 (none essential): 15 x 2/4 = 7.5."
+   }
+  ]
+ },
+ {
+  "brief_id": "kjmo",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 4.5,
+   "handoff": 10
+  },
+  "total": 89.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 7.5,
+    "key_id": "Q3,Q4",
+    "quote": "(absent)",
+    "reason": "Key open questions Q3 and Q4 (lease terms not received; Juniper round 2 feedback pending until 23rd) are not surfaced anywhere in the brief. Each weight 1 of total 4 (none essential): 15 x 2/4 = 7.5."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Question: Who will follow up on any of the blue-sky ideas? No owner is named for any of them.",
+    "reason": "Open question not in the key that turns the blue-sky ideas (N2-N7) into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "kxck",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key (key: chasing Coastline product sheets is not an action)",
+    "quote": "Who is chasing the product sheets for the new home loan that the Coastline website copy is waiting on?",
+    "reason": "Open question not in the key that turns a waiting state into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Will any of the proposals above (open studio night, podcast, newsletter, show and tell, coffee machine) go ahead, and who would own them?",
+    "reason": "Open question not in the key that turns the blue-sky ideas (N2-N7) into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "nvyf",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Coastline TV spot: client gave \"a few notes on the voiceover pacing\"; no owner or deadline recorded for addressing them.",
+    "reason": "Open question not in the key that turns a status line into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key (key: chasing Coastline product sheets is not an action)",
+    "quote": "No owner or deadline recorded for getting the product sheets.",
+    "reason": "Open question not in the key that turns a waiting state into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "qtgj",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 7.5,
+   "handoff": 10
+  },
+  "total": 92.5,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 7.5,
+    "key_id": "Q3,Q4",
+    "quote": "(absent)",
+    "reason": "Key open questions Q3 and Q4 (lease terms not received; Juniper round 2 feedback pending until 23rd) are not surfaced anywhere in the brief. Each weight 1 of total 4 (none essential): 15 x 2/4 = 7.5."
+   }
+  ]
+ },
+ {
+  "brief_id": "segp",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 9,
+   "handoff": 10
+  },
+  "total": 94,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key (key: chasing Coastline product sheets is not an action)",
+    "quote": "Product sheets for the new home loan, needed to finish Coastline website copy (Detail missing: no owner or date for getting them).",
+    "reason": "Open question not in the key that turns a waiting state into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Response to the Coastline client's voiceover pacing notes on the TV spot (Detail missing: no owner or next step recorded).",
+    "reason": "Open question not in the key that turns a status line into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "srep",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 0,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 77,
+  "critical_failures": [
+   {
+    "type": "invented_content_empty_case",
+    "key_id": "not in key (status line)",
+    "quote": "Finish Coastline website copy (about 60% done) | Yuki | unstated"
+   },
+   {
+    "type": "invented_content_empty_case",
+    "key_id": "not in key (status line)",
+    "quote": "Address client notes on Coastline TV spot voiceover pacing | unstated | unstated"
+   },
+   {
+    "type": "invented_content_empty_case",
+    "key_id": "not in key (key: chasing Juniper for feedback must NOT be an action)",
+    "quote": "Follow up on Juniper round 2 feedback | unstated | unstated"
+   }
+  ],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 2,
+  "deductions": [
+   {
+    "criterion": "actions",
+    "points": 20,
+    "key_id": "Action items: None",
+    "quote": "| Action | Owner | Deadline | Notes | ... (3 rows)",
+    "reason": "Key has no actions; 20 only when the brief lists none and invents none. The brief lists three action rows under Action items built from status lines (grading notes: 'actions with owner TBD created from status lines' are a major error). Further -3 per invented action would apply but the criterion is already at its minimum of 0."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Owners and deadlines for the in-progress items in the action table above are unstated in the notes.",
+    "reason": "Open question not in the key that turns status lines into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "vzqq",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 12,
+   "handoff": 10
+  },
+  "total": 97,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key (key: chasing Coastline product sheets is not an action)",
+    "quote": "Coastline website copy is blocked: \"Waiting on the product sheets for the new home loan\"; the notes do not say who is chasing them",
+    "reason": "Open question not in the key that turns a waiting state into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "xigl",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 6,
+   "handoff": 10
+  },
+  "total": 91,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Was any of the ideas list (open studio night, show and tell, four-day weeks, coffee machine and others) taken forward?",
+    "reason": "Open question not in the key that turns the blue-sky ideas (N2-N7) into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Who will address the Coastline client's notes on voiceover pacing? No task or owner is recorded",
+    "reason": "Open question not in the key that turns a status line into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key (key: chasing Coastline product sheets is not an action)",
+    "quote": "Coastline website copy (about 60% done) is waiting on the new home loan product sheets; no one is named to chase them",
+    "reason": "Open question not in the key that turns a waiting state into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   }
+  ]
+ },
+ {
+  "brief_id": "zszm",
+  "case": "05-empty",
+  "scores": {
+   "decision_recall": 25,
+   "decision_precision": 20,
+   "evidence_fidelity": 10,
+   "actions": 20,
+   "open_questions": 6,
+   "handoff": 10
+  },
+  "total": 91,
+  "critical_failures": [],
+  "extra_content": false,
+  "unneeded_clarification": false,
+  "usefulness": 4,
+  "deductions": [
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Coastline Credit Union TV spot: client gave \"a few notes on the voiceover pacing\". No owner or deadline recorded for addressing them.",
+    "reason": "Open question not in the key that turns a status line into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key (key: chasing Coastline product sheets is not an action)",
+    "quote": "Not stated who is chasing the product sheets or by when.",
+    "reason": "Open question not in the key that turns a waiting state into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   },
+   {
+    "criterion": "open_questions",
+    "points": 3,
+    "key_id": "not in key",
+    "quote": "Cover while Tasha is away (from Mon 14 Dec, back in Jan): no arrangements recorded.",
+    "reason": "Open question not in the key that turns a status line into an implied follow-up; the key and grading notes treat such items as padding ('should not pad those sections'). Size not fixed by rubric or key, so 3 points per item as for an invented action."
+   }
+  ]
+ }
+]

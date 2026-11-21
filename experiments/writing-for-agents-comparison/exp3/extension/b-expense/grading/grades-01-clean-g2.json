@@ -1,0 +1,255 @@
+[
+  {
+    "review_id": "cgni",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "gpwn",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "hpls",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "jysf",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "kabe",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "stnn",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "wqms",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "xodp",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "ybje",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 100,
+    "critical_failures": [],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 5,
+    "deductions": []
+  },
+  {
+    "review_id": "tspg",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 12,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 3,
+        "item": "Item 6 printing (key: Approve, 9.1 and 3.2 met, no concern)",
+        "quote": "L6 includes a drawing tube (AUD 9.00) alongside the printing. ... the approver may wish to confirm that reading, as clause 9.1 does not name packaging.",
+        "reason": "Concern attached to an approved item that the files do not support: 9.1 covers 'materials bought for company work' and the key approves 84.00 without qualification. Rubric's fixed 3-point deduction."
+      }
+    ]
+  },
+  {
+    "review_id": "vohd",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 12,
+      "amounts": 15,
+      "questions": 15,
+      "summary": 10
+    },
+    "total": 97,
+    "critical_failures": [],
+    "extra_content": true,
+    "unneeded_clarification": false,
+    "usefulness": 4,
+    "deductions": [
+      {
+        "criterion": "grounds",
+        "points": 3,
+        "item": "Item 5 lunch (key: Approve, 6.1 cap 40.00, no concern)",
+        "quote": "Item 5 (R05) lists two food items (chicken focaccia and garden salad) and does not state the number of covers. ... the approver may wish to note it.",
+        "reason": "Concern attached to an approved item that the files do not support; nothing suggests a shared meal and the key raises no issue. Rubric's fixed 3-point deduction."
+      }
+    ]
+  },
+  {
+    "review_id": "qdpl",
+    "scores": {
+      "coverage": 15,
+      "verdict_accuracy": 30,
+      "grounds": 15,
+      "amounts": 5,
+      "questions": 12,
+      "summary": 5
+    },
+    "total": 82,
+    "critical_failures": [
+      {
+        "type": "fabricated_evidence",
+        "item": "Claim total / key critical-failure trigger: reporting a mismatch not in the files",
+        "quote": "Claimed: AUD 1,583.40 (sum of the 11 line items; form states AUD 1,583.20; the line items exceed the stated total by AUD 0.20)"
+      },
+      {
+        "type": "wrong_corrected_total (key trigger)",
+        "item": "Key expected total AUD 1,583.20; key trigger: a corrected total other than AUD 1,583.20",
+        "quote": "Approved to reimburse now: AUD 1,583.40"
+      }
+    ],
+    "extra_content": false,
+    "unneeded_clarification": false,
+    "usefulness": 2,
+    "deductions": [
+      {
+        "criterion": "amounts",
+        "points": 10,
+        "item": "Expected total AUD 1,583.20",
+        "quote": "Approved to reimburse now: AUD 1,583.40",
+        "reason": "Total wrong because of an arithmetic error, not a verdict error, so 0 of 10; +5 retained since no partial amounts were invented."
+      },
+      {
+        "criterion": "questions",
+        "points": 3,
+        "item": "Key: no questions for the claimant",
+        "quote": "Form total: the 11 line items add to AUD 1,583.40 but the form states AUD 1,583.20.",
+        "reason": "Question with no basis in the files (the lines sum to 1,583.20); padding deduction of 3."
+      },
+      {
+        "criterion": "summary",
+        "points": 5,
+        "item": "Expected total AUD 1,583.20",
+        "quote": "so AUD 1,583.40 can be reimbursed now ... the form's stated total of AUD 1,583.20 is AUD 0.20 less than the sum of its line items",
+        "reason": "Summary is about 150 words and built around a non-existent discrepancy and wrong total, so inconsistent with the correct total and bloated: 5 of 10."
+      }
+    ]
+  }
+]
