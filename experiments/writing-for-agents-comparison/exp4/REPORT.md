@@ -2,7 +2,7 @@
 
 ## Verdict: supported
 
-All three pre-registered conditions hold (`wfa4/preregistered` tag, `PLAN.md`):
+All three pre-registered conditions hold (commit `59242e2`, `PLAN.md`):
 
 | Condition | Result | Met |
 |---|---|---|
@@ -42,6 +42,7 @@ V2 is ahead in every part, but only b and c clear 20% on their own. Part a is be
 - The permutation test for the full 30-per-condition design is a Monte Carlo estimate, not exact, as noted in the phase 3 commit.
 - Q1 part a's first run gave generic justifications and was rerun; Q1 b and c were rerun after rate-limit failures. See `GRADE-NOTES.md`.
 - Coordinator subagents could not launch runs; all 216 executions were launched directly. See `EXEC-NOTES.md`.
+- Counts: 216 is the number of runs executed in this experiment (parts a and b: 8 new candidates x 6 cases each; part c: all 20 candidates x 6 cases, rerun because its cases changed). Parts a and b reused the stored outputs of their 12 earlier candidates and regraded them, so the graded outputs total 20 x 6 x 3 = 360, each scored by two graders (36 case-grader runs, plus 3 Q1 runs).
 
 ## Action taken
 

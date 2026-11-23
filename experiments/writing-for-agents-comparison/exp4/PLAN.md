@@ -1,6 +1,6 @@
 # Experiment 4 plan: the decisive test of revision 2
 
-Status: pre-registered (tag `wfa4/preregistered`), 2026-11-21. Igor approved the plan ("Execute this plan"). Parent: [experiment 3 extension](../exp3/extension/PLAN.md).
+Status: pre-registered (commit `59242e2`), 2026-11-21. Igor approved the plan ("Execute this plan"). Parent: [experiment 3 extension](../exp3/extension/PLAN.md).
 Branch: `writing-for-agents-improvement` on `gpazevedo/skills`, under `experiments/writing-for-agents-comparison/exp4/`.
 
 ## Question
@@ -72,7 +72,7 @@ The mirror image, with O ahead by the same margin (O's error reduction relative 
 
 1. **Recover the repo.** Done: branch checked out at `6e40b11`, six existing tags verified.
 2. **Fix part c.** Done: as-of time in every case; dry run set the length bound.
-3. **Pre-register.** This plan, the decision rule, the corrected part-c cases and the length bound, the protocol prompts, harness and analysis, the trigger-test protocol, and `EVAL-CHECKSUMS`. Tag `wfa4/preregistered`. After this tag, changes to cases, keys, rubric or rule need Igor's approval.
+3. **Pre-register.** This plan, the decision rule, the corrected part-c cases and the length bound, the protocol prompts, harness and analysis, the trigger-test protocol, and `EVAL-CHECKSUMS`. Commit it as `59242e2`. After this commit, changes to cases, keys, rubric or rule need Igor's approval.
 4. **Generate.** 24 fresh generators, alternating O and V2, each in a sandbox holding only its variant and the skill request.
 5. **Execute.** Seal a new label map for the 20 candidates per part and commit its hash. Then run the 216 executions.
 6. **Check the description.** Run [trigger-test/PROTOCOL.md](trigger-test/PROTOCOL.md). Report it separately from the verdict.
